@@ -1,1 +1,178 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <table>
+    <tr>
+      <td>
+        <input id="on_off_soprano" type="checkbox" value="checked" onclick="on_off(this);" checked />
+      </td>
+      <td>Soprano</td>
+      <td>
+        <input id="volume_soprano" type="range" value="100" min="0" max="100" oninput="volume_adjust(this);" />
+      </td>
+      <td>
+        <audio id="soprano" controls src="https://dl.dropboxusercontent.com/s/nm59yqvw9a9aoau/soprano.mp3" type="audio/mpeg" oncanplaythrough="can_play()"
+          style="visibility:hidden" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input id="on_off_alto" type="checkbox" value="On" onclick="on_off(this);" checked />
+      </td>
+      <td>Alto</td>
+      <td>
+        <input id="volume_alto" type="range" value="100" min="0" max="100" oninput="volume_adjust(this);" />
+      </td>
+      <td>
+        <audio id="alto" controls src="https://dl.dropboxusercontent.com/s/ffb72mvb2m4no5m/alto.mp3" type="audio/mpeg" oncanplaythrough="can_play()"
+          style="visibility:hidden" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input id="on_off_tenor" type="checkbox" value="On" onclick="on_off(this);" checked />
+      </td>
+      <td>Tenor</td>
+      <td>
+        <input id="volume_tenor" type="range" value="100" min="0" max="100" oninput="volume_adjust(this);" />
+      </td>
+      <td>
+        <audio id="tenor" controls src="https://dl.dropboxusercontent.com/s/0pfperor22u23qv/tenor.mp3" type="audio/mpeg" oncanplaythrough="can_play()"
+          style="visibility:hidden" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input id="on_off_bass" type="checkbox" value="On" onclick="on_off(this);" checked />
+      </td>
+      <td>Bass</td>
+      <td>
+        <input id="volume_bass" type="range" value="100" min="0" max="100" oninput="volume_adjust(this);" />
+      </td>
+      <td>
+        <audio id="bass" controls src="https://dl.dropboxusercontent.com/s/grlc3lss5k8kt56/bass.mp3" type="audio/mpeg" oncanplaythrough="can_play()"
+          style="visibility:hidden" />
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <input id="playPause" type="button" value="Play" disabled="disabled" onclick="playAudio();" />
+  <input id="position" type="range" value="0" max="100" min="0" disabled="disabled" onchange="position_adjust(this);" onmousedown="position_on_mouse_down()"
+    onmouseup="position_on_mouse_up()" />
+
+  <br />
+  <br />
+  <a target="_blank" href="https://dl.dropboxusercontent.com/s/xu88wz13clxdsc9/music.pdf" type="application/pdf">sheet music</a>
+
+  <br />
+  <br />
+  <input id="debug" type="button" value="Debug" onclick="debug();" />
+
+  <script type="application/javascript">
+    var s = document.getElementById("soprano");
+    var a = document.getElementById("alto");
+    var t = document.getElementById("tenor");
+    var b = document.getElementById("bass");
+
+    var can_play_count = 0;
+    function can_play() {
+      can_play_count += 1;
+      if (can_play_count == 4) {
+        playPause.disabled = false;
+        position.disabled = false;
+      }
+    }
+
+    function playAudio() {
+      if (playPause.value == "Play") {
+        s.play();
+        a.play();
+        t.play();
+        b.play();
+        playPause.value = "Pause";
+      } else {
+        s.pause();
+        a.pause();
+        t.pause();
+        b.pause();
+        playPause.value = "Play";
+      }
+    }
+
+    function position_adjust(slider) {
+      var percent = slider.value / slider.max;
+      var newTime = s.duration * percent;
+      s.currentTime = Math.min(newTime, s.duration);
+      a.currentTime = Math.min(newTime, a.duration);
+      t.currentTime = Math.min(newTime, t.duration);
+      b.currentTime = Math.min(newTime, b.duration);
+    }
+    position_mouse_is_down = false;
+    function position_on_mouse_down() {
+      position_mouse_is_down = true;
+    }
+    function position_on_mouse_up() {
+      position_mouse_is_down = false;
+    }
+    window.setInterval(synchronize_position, 250);
+    function synchronize_position() {
+      if (!position_mouse_is_down) {
+        position.value = (s.currentTime / s.duration) * 100.0;
+      }
+    }
+
+    function on_off(checkbox) {
+      soundtrack = null;
+      switch (checkbox.id) {
+        case "on_off_soprano":
+          soundtrack = s;
+          break;
+        case "on_off_alto":
+          soundtrack = a;
+          break;
+        case "on_off_tenor":
+          soundtrack = t;
+          break;
+        case "on_off_bass":
+          soundtrack = b;
+          break;
+      }
+      soundtrack.muted = !soundtrack.muted;
+    }
+
+    function volume_adjust(slider) {
+      soundtrack = null;
+      switch (slider.id) {
+        case "volume_soprano":
+          soundtrack = s;
+          break;
+        case "volume_alto":
+          soundtrack = a;
+          break;
+        case "volume_tenor":
+          soundtrack = t;
+          break;
+        case "volume_bass":
+          soundtrack = b;
+          break;
+      }
+      soundtrack.volume = slider.value / slider.max;
+    }
+
+    soundtracks_visible = false;
+    function debug() {
+      soundtracks_visible = !soundtracks_visible;
+      visibility = soundtracks_visible ? "visible" : "hidden";
+      s.style.visibility = visibility;
+      a.style.visibility = visibility;
+      t.style.visibility = visibility;
+      b.style.visibility = visibility;
+    }
+  </script>
+
+</body>
+
+</html>
