@@ -45,13 +45,26 @@ class VoiceStream:
         self.voice = voice
         self.volume = volumes[self.voice]
 
+    def map_note_using_key(self, note):
+        note_type = note if type(note) is type else type(note)
+        new_note_type = self.song.key[note_type]
+        if new_note_type:
+            note_type = new_note_type
+        if type(note) is type:
+            return note_type()
+        elif type(note) == note_type:
+            return note
+        else:
+            return note_type(note.beats)
+
     def __iter__(self):
         if self.volume > 0:
+            if type(self.song.key) is type:
+                self.song.key = self.song.key()
             tick = 0
-            for measure in self.song:
+            for measure in self.song.notes:
                 for note in measure[self.voice]:
-                    if type(note) is type:
-                        note = note()
+                    note = self.map_note_using_key(note)
                     note_ticks = note.beats * ticks_per_beat
                     if type(note) != notes.R:
                         on = tick
@@ -106,7 +119,7 @@ def midi_track(note_events):
 
 
 def midi_from_module(module, volumes):
-    events = list(generate_note_events(module.song, volumes))
+    events = list(generate_note_events(module, volumes))
     return midi_header(track_count=1) + midi_track(events)
 
 

@@ -1,12 +1,14 @@
+from notes import *
+import keys
+
 name = "From Heav'n O Praise the Lord"
 number = "CC 192"
 psalm = 148
 beats_per_measure = 4
 tempo = 120
+key = keys.C
 
-from notes import *
-
-song = [
+notes = [
     [
         [G4],
         [G4],

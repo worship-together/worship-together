@@ -1,12 +1,14 @@
+from notes import *
+import keys
+
 name = "With All My Heart My Thanks I'll Bring"
 number = "CC 182"
 psalm = 138
 beats_per_measure = 4
 tempo = 120
+key = keys.C
 
-from notes import *
-
-song = [
+notes = [
     [
         [E4(2), E4, E4],
         [C4(2), C4, C4],

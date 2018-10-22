@@ -1,11 +1,12 @@
 from notes import *
+import keys
 
 name = "With All My Heart My Thanks I'll Bring"
 number = "CC 150"
 psalm = 110
 beats_per_measure = 4
 tempo = 120
-key = Key.BF
+key = keys.B_Flat
 
 # jython representation
 # beats_in_first_measure = 1
@@ -20,7 +21,7 @@ key = Key.BF
 # line1 = [zip(soprano1p, soprano1d), zip(alto1p, alto1d),
 #          zip(tenor1p, tenor1d), zip(bass1p, bass1d)]
 
-song = [
+notes = [
     [
         [F4],
         [D4],

@@ -9,31 +9,6 @@ REQUIREMENTS
 
 import enum
 
-
-class Key(enum.Enum):
-    C  = 0
-    CS = 1
-    DF = 2
-    D  = 3
-    DS = 4
-    EF = 5
-    E  = 6
-    ES = 7
-    FF = 8
-    F  = 9
-    FS = 10
-    GF = 11
-    G  = 12
-    GS = 13
-    AF = 14
-    A  = 15
-    AS = 16
-    BF = 17
-    B  = 18
-    BS = 19
-    CF = 20
-
-
 class Note:
     def __init__(self, pitch, beats, accidental=False):
         self.pitch = pitch
@@ -470,6 +445,9 @@ class A5b(Note):
 class A5(Note):
     def __init__(self, beats=1):
         super().__init__(81, beats)
+class B5b(Note):
+    def __init__(self, beats=1):
+        super().__init__(82, beats, accidental=True)
 class B5(Note):
     def __init__(self, beats=1):
         super().__init__(83, beats)
@@ -480,18 +458,27 @@ class C6(Note):
 class D6(Note):
     def __init__(self, beats=1):
         super().__init__(86, beats)
+class E6b(Note):
+    def __init__(self, beats=1):
+        super().__init__(87, beats)
 class E6(Note):
     def __init__(self, beats=1):
         super().__init__(88, beats)
 class F6(Note):
     def __init__(self, beats=1):
         super().__init__(89, beats)
+class F6s(Note):
+    def __init__(self, beats=1):
+        super().__init__(90, beats, accidental=True)
 class G6(Note):
     def __init__(self, beats=1):
         super().__init__(91, beats)
 class A6(Note):
     def __init__(self, beats=1):
         super().__init__(93, beats)
+class B6b(Note):
+    def __init__(self, beats=1):
+        super().__init__(94, beats, accidental=True)
 class B6(Note):
     def __init__(self, beats=1):
         super().__init__(95, beats)
@@ -502,18 +489,27 @@ class C7(Note):
 class D7(Note):
     def __init__(self, beats=1):
         super().__init__(98, beats)
+class E7b(Note):
+    def __init__(self, beats=1):
+        super().__init__(99, beats, accidental=True)
 class E7(Note):
     def __init__(self, beats=1):
         super().__init__(100, beats)
 class F7(Note):
     def __init__(self, beats=1):
         super().__init__(101, beats)
+class F7s(Note):
+    def __init__(self, beats=1):
+        super().__init__(102, beats, accidental=True)
 class G7(Note):
     def __init__(self, beats=1):
         super().__init__(103, beats)
 class A7(Note):
     def __init__(self, beats=1):
         super().__init__(105, beats)
+class B7b(Note):
+    def __init__(self, beats=1):
+        super().__init__(106, beats)
 class B7(Note):
     def __init__(self, beats=1):
         super().__init__(107, beats)

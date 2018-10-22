@@ -16,7 +16,7 @@ class Event():
         self.tick = tick
 
     def to_bytes(self):
-        tick = _get_var_len(self.tick)
+        tick = _get_var_len(int(self.tick))
         return tick
 
 

@@ -3,6 +3,13 @@ import os
 import shutil
 
 from notes import *
+import keys
+
+midi.Song('cc_334.py').write_midi('cc_334.midi', [60, 60, 60, 60])
+midi.Song('cc_182.py').write_midi('cc_182.midi', [60, 60, 60, 60])
+midi.Song('cc_192.py').write_midi('cc_192.midi', [60, 60, 60, 60])
+midi.Song('cc_150.py').write_midi('cc_150.midi', [60, 60, 60, 60])
+midi.Song('cc_368.py').write_midi('cc_368.midi', [60, 60, 60, 60])
 
 
 def generate_midi(input):
@@ -28,7 +35,6 @@ def size(filename):
 
 if __name__ == '__main__':
     try:
-        midi.Song('cc_182.py').write_midi('cc_182.midi', [60, 60, 60, 60])
         shutil.copy('test.py', 'songs/test.py')
         generate_midi('test.py')
         assert size('soprano.midi') < size('full.midi') / 2
@@ -39,7 +45,9 @@ if __name__ == '__main__':
     finally:
         delete_midi()
 
-song = [
+key = keys.C
+
+notes = [
     [
         [E4(2), E4, E4],
         [C4(2), C4, C4],
