@@ -62,8 +62,13 @@ class VoiceStream:
             if type(self.song.key) is type:
                 self.song.key = self.song.key()
             tick = 0
-            for measure in self.song.notes:
+            for measure in self.song.measures:
                 for note in measure[self.voice]:
+                    if type(note) is type:
+                        note_name = note.__name__
+                    else:
+                        note_name = type(note).__name__
+                    print(note_name)
                     note = self.map_note_using_key(note)
                     note_ticks = note.beats * ticks_per_beat
                     if type(note) != notes.R:
@@ -150,6 +155,10 @@ class Song:
     def write_midi(self, filename, volumes=[60, 60, 60, 60]):
         with open(filename, 'wb') as file:
             file.write(midi_from_module(self.module, volumes))
+
+    @property
+    def measures(self):
+        return self.module.measures
 
 
 songs = [Song(filename)

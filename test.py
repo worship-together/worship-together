@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
 key = keys.C
 
-notes = [
+measures = [
     [
         [E4(2), E4, E4],
         [C4(2), C4, C4],

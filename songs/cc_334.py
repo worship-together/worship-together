@@ -12,7 +12,7 @@ beats_per_measure = 4
 tempo = 120
 key = keys.F
 
-notes = [
+measures = [
     [
         [C4],
         [A3],

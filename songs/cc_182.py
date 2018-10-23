@@ -8,7 +8,7 @@ beats_per_measure = 4
 tempo = 120
 key = keys.C
 
-notes = [
+measures = [
     [
         [E4(2), E4, E4],
         [C4(2), C4, C4],

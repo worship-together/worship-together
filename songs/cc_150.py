@@ -21,7 +21,7 @@ key = keys.B_Flat
 # line1 = [zip(soprano1p, soprano1d), zip(alto1p, alto1d),
 #          zip(tenor1p, tenor1d), zip(bass1p, bass1d)]
 
-notes = [
+measures = [
     [
         [F4],
         [D4],
