@@ -10,515 +10,515 @@ REQUIREMENTS
 import enum
 
 class Note:
-    def __init__(self, pitch, beats, accidental=None):
-        self.pitch = pitch
-        self.beats = beats
-        self.accidental = accidental
-
+	def __init__(self, pitch, beats, accidental=None):
+		self.pitch = pitch
+		self.beats = beats
+		self.accidental = accidental
+		
 class R(Note):
-    def __init__(self, beats=1):
-        super().__init__(0, beats)
+	def __init__(self, beats=1):
+		super().__init__(0, beats)
 class A0(Note):
-    def __init__(self, beats=1):
-        super().__init__(21, beats)
+	def __init__(self, beats=1):
+		super().__init__(21, beats)
 class A0n(Note):
-    def __init__(self, beats=1):
-        super().__init__(21, beats, accidental='n')
+	def __init__(self, beats=1):
+		super().__init__(21, beats, accidental='n')
 class A0s(Note):
-    def __init__(self, beats=1):
-        super().__init__(22, beats, accidental='#')
+	def __init__(self, beats=1):
+		super().__init__(22, beats, accidental='#')
 class B0b(Note):
-    def __init__(self, beats=1):
-        super().__init__(22, beats, accidental='b')
+	def __init__(self, beats=1):
+		super().__init__(22, beats, accidental='b')
 class B0(Note):
-    def __init__(self, beats=1):
-        super().__init__(23, beats)
+	def __init__(self, beats=1):
+		super().__init__(23, beats)
 class B0n(Note):
-    def __init__(self, beats=1):
-        super().__init__(23, beats, accidental='n')
+	def __init__(self, beats=1):
+		super().__init__(23, beats, accidental='n')
 class B0s(Note):
-    def __init__(self, beats=1):
-        super().__init__(24, beats, accidental='#')
+	def __init__(self, beats=1):
+		super().__init__(24, beats, accidental='#')
 class C1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(23, beats, accidental='b')
+	def __init__(self, beats=1):
+		super().__init__(23, beats, accidental='b')
 class C1(Note):
-    def __init__(self, beats=1):
-        super().__init__(24, beats)
+	def __init__(self, beats=1):
+		super().__init__(24, beats)
 class C1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(24, beats, accidental='n')
+	def __init__(self, beats=1):
+		super().__init__(24, beats, accidental='n')
 class C1s(Note):
-    def __init__(self, beats=1):
-        super().__init__(25, beats, accidental='#')
+	def __init__(self, beats=1):
+		super().__init__(25, beats, accidental='#')
 class D1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(25, beats, accidental='b')
+	def __init__(self, beats=1):
+		super().__init__(25, beats, accidental='b')
 class D1(Note):
-    def __init__(self, beats=1):
-        super().__init__(26, beats)
+	def __init__(self, beats=1):
+		super().__init__(26, beats)
 class D1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(26, beats, accidental='n')
+	def __init__(self, beats=1):
+		super().__init__(26, beats, accidental='n')
 class D1s(Note):
-    def __init__(self, beats=1):
-        super().__init__(27, beats, accidental='#')
+	def __init__(self, beats=1):
+		super().__init__(27, beats, accidental='#')
 class E1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(27, beats, accidental='b')
+	def __init__(self, beats=1):
+		super().__init__(27, beats, accidental='b')
 class E1(Note):
-    def __init__(self, beats=1):
-        super().__init__(28, beats)
+	def __init__(self, beats=1):
+		super().__init__(28, beats)
 class E1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(28, beats, accidental='n')
+	def __init__(self, beats=1):
+		super().__init__(28, beats, accidental='n')
 class E1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(29, beats, accidental='#')
+	def __init__(self, beats=1):
+		super().__init__(29, beats, accidental='#')
 class F1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(28, beats, accidental='b')
+	def __init__(self, beats=1):
+		super().__init__(28, beats, accidental='b')
 class F1(Note):
-    def __init__(self, beats=1):
-        super().__init__(29, beats)
+	def __init__(self, beats=1):
+		super().__init__(29, beats)
 class F1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(29, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(29, beats, accidental=True)
 class F1s(Note):
-    def __init__(self, beats=1):
-        super().__init__(30, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(30, beats, accidental=True)
 class G1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(30, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(30, beats, accidental=True)
 class G1(Note):
-    def __init__(self, beats=1):
-        super().__init__(31, beats)
+	def __init__(self, beats=1):
+		super().__init__(31, beats)
 class G1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(31, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(31, beats, accidental=True)
 class G1s(Note):
-    def __init__(self, beats=1):
-        super().__init__(32, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(32, beats, accidental=True)
 class A1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(32, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(32, beats, accidental=True)
 class A1(Note):
-    def __init__(self, beats=1):
-        super().__init__(33, beats)
+	def __init__(self, beats=1):
+		super().__init__(33, beats)
 class A1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(34, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(34, beats, accidental=True)
 class A1s(Note):
-    def __init__(self, beats=1):
-        super().__init__(34, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(34, beats, accidental=True)
 class B1b(Note):
-    def __init__(self, beats=1):
-        super().__init__(34, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(34, beats, accidental=True)
 class B1(Note):
-    def __init__(self, beats=1):
-        super().__init__(35, beats)
+	def __init__(self, beats=1):
+		super().__init__(35, beats)
 class B1n(Note):
-    def __init__(self, beats=1):
-        super().__init__(35, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(35, beats, accidental=True)
 class B1s(Note):
-    def __init__(self, beats=1):
-        super().__init__(36, beats, accidental=True)
-
+	def __init__(self, beats=1):
+		super().__init__(36, beats, accidental=True)
+		
 class C2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(35, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(35, beats, accidental=True)
 class C2(Note):
-    def __init__(self, beats=1):
-        super().__init__(36, beats)
+	def __init__(self, beats=1):
+		super().__init__(36, beats)
 class C2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(36, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(36, beats, accidental=True)
 class C2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(37, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(37, beats, accidental=True)
 class D2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(37, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(37, beats, accidental=True)
 class D2(Note):
-    def __init__(self, beats=1):
-        super().__init__(38, beats)
+	def __init__(self, beats=1):
+		super().__init__(38, beats)
 class D2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(38, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(38, beats, accidental=True)
 class D2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(39, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(39, beats, accidental=True)
 class E2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(39, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(39, beats, accidental=True)
 class E2(Note):
-    def __init__(self, beats=1):
-        super().__init__(40, beats)
+	def __init__(self, beats=1):
+		super().__init__(40, beats)
 class E2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(40, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(40, beats, accidental=True)
 class E2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(41, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(41, beats, accidental=True)
 class F2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(40, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(40, beats, accidental=True)
 class F2(Note):
-    def __init__(self, beats=1):
-        super().__init__(41, beats)
+	def __init__(self, beats=1):
+		super().__init__(41, beats)
 class F2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(41, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(41, beats, accidental=True)
 class F2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(42, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(42, beats, accidental=True)
 class G2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(42, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(42, beats, accidental=True)
 class G2(Note):
-    def __init__(self, beats=1):
-        super().__init__(43, beats)
+	def __init__(self, beats=1):
+		super().__init__(43, beats)
 class G2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(43, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(43, beats, accidental=True)
 class G2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(44, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(44, beats, accidental=True)
 class A2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(44, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(44, beats, accidental=True)
 class A2(Note):
-    def __init__(self, beats=1):
-        super().__init__(45, beats)
+	def __init__(self, beats=1):
+		super().__init__(45, beats)
 class A2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(45, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(45, beats, accidental=True)
 class A2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(46, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(46, beats, accidental=True)
 class B2b(Note):
-    def __init__(self, beats=1):
-        super().__init__(46, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(46, beats, accidental=True)
 class B2(Note):
-    def __init__(self, beats=1):
-        super().__init__(47, beats)
+	def __init__(self, beats=1):
+		super().__init__(47, beats)
 class B2n(Note):
-    def __init__(self, beats=1):
-        super().__init__(47, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(47, beats, accidental=True)
 class B2s(Note):
-    def __init__(self, beats=1):
-        super().__init__(48, beats, accidental=True)
-
+	def __init__(self, beats=1):
+		super().__init__(48, beats, accidental=True)
+		
 class C3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(47, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(47, beats, accidental=True)
 class C3(Note):
-    def __init__(self, beats=1):
-        super().__init__(48, beats)
+	def __init__(self, beats=1):
+		super().__init__(48, beats)
 class C3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(48, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(48, beats, accidental=True)
 class C3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(49, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(49, beats, accidental=True)
 class D3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(49, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(49, beats, accidental=True)
 class D3(Note):
-    def __init__(self, beats=1):
-        super().__init__(50, beats)
+	def __init__(self, beats=1):
+		super().__init__(50, beats)
 class D3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(51, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(51, beats, accidental=True)
 class D3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(52, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(52, beats, accidental=True)
 class E3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(51, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(51, beats, accidental=True)
 class E3(Note):
-    def __init__(self, beats=1):
-        super().__init__(52, beats)
+	def __init__(self, beats=1):
+		super().__init__(52, beats)
 class E3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(52, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(52, beats, accidental=True)
 class E3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(53, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(53, beats, accidental=True)
 class F3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(52, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(52, beats, accidental=True)
 class F3(Note):
-    def __init__(self, beats=1):
-        super().__init__(53, beats)
+	def __init__(self, beats=1):
+		super().__init__(53, beats)
 class F3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(54, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(54, beats, accidental=True)
 class F3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(54, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(54, beats, accidental=True)
 class G3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(54, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(54, beats, accidental=True)
 class G3(Note):
-    def __init__(self, beats=1):
-        super().__init__(55, beats)
+	def __init__(self, beats=1):
+		super().__init__(55, beats)
 class G3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(56, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(56, beats, accidental=True)
 class G3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(56, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(56, beats, accidental=True)
 class A3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(56, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(56, beats, accidental=True)
 class A3(Note):
-    def __init__(self, beats=1):
-        super().__init__(57, beats)
+	def __init__(self, beats=1):
+		super().__init__(57, beats)
 class A3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(57, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(57, beats, accidental=True)
 class A3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(58, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(58, beats, accidental=True)
 class B3b(Note):
-    def __init__(self, beats=1):
-        super().__init__(58, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(58, beats, accidental=True)
 class B3(Note):
-    def __init__(self, beats=1):
-        super().__init__(59, beats)
+	def __init__(self, beats=1):
+		super().__init__(59, beats)
 class B3n(Note):
-    def __init__(self, beats=1):
-        super().__init__(59, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(59, beats, accidental=True)
 class B3s(Note):
-    def __init__(self, beats=1):
-        super().__init__(60, beats, accidental=True)
-
+	def __init__(self, beats=1):
+		super().__init__(60, beats, accidental=True)
+		
 class C4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(59, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(59, beats, accidental=True)
 class C4(Note):
-    def __init__(self, beats=1):
-        super().__init__(60, beats)
+	def __init__(self, beats=1):
+		super().__init__(60, beats)
 class C4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(60, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(60, beats, accidental=True)
 class C4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(61, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(61, beats, accidental=True)
 class D4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(61, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(61, beats, accidental=True)
 class D4(Note):
-    def __init__(self, beats=1):
-        super().__init__(62, beats)
+	def __init__(self, beats=1):
+		super().__init__(62, beats)
 class D4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(62, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(62, beats, accidental=True)
 class D4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(63, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(63, beats, accidental=True)
 class E4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(63, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(63, beats, accidental=True)
 class E4(Note):
-    def __init__(self, beats=1):
-        super().__init__(64, beats)
+	def __init__(self, beats=1):
+		super().__init__(64, beats)
 class E4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(64, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(64, beats, accidental=True)
 class E4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(65, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(65, beats, accidental=True)
 class F4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(64, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(64, beats, accidental=True)
 class F4(Note):
-    def __init__(self, beats=1):
-        super().__init__(65, beats)
+	def __init__(self, beats=1):
+		super().__init__(65, beats)
 class F4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(65, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(65, beats, accidental=True)
 class F4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(66, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(66, beats, accidental=True)
 class G4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(66, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(66, beats, accidental=True)
 class G4(Note):
-    def __init__(self, beats=1):
-        super().__init__(67, beats)
+	def __init__(self, beats=1):
+		super().__init__(67, beats)
 class G4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(67, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(67, beats, accidental=True)
 class G4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(68, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(68, beats, accidental=True)
 class A4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(68, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(68, beats, accidental=True)
 class A4(Note):
-    def __init__(self, beats=1):
-        super().__init__(69, beats)
+	def __init__(self, beats=1):
+		super().__init__(69, beats)
 class A4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(69, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(69, beats, accidental=True)
 class A4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(70, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(70, beats, accidental=True)
 class B4b(Note):
-    def __init__(self, beats=1):
-        super().__init__(70, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(70, beats, accidental=True)
 class B4(Note):
-    def __init__(self, beats=1):
-        super().__init__(71, beats)
+	def __init__(self, beats=1):
+		super().__init__(71, beats)
 class B4n(Note):
-    def __init__(self, beats=1):
-        super().__init__(71, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(71, beats, accidental=True)
 class B4s(Note):
-    def __init__(self, beats=1):
-        super().__init__(72, beats, accidental=True)
-
+	def __init__(self, beats=1):
+		super().__init__(72, beats, accidental=True)
+		
 class C5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(71, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(71, beats, accidental=True)
 class C5(Note):
-    def __init__(self, beats=1):
-        super().__init__(72, beats)
+	def __init__(self, beats=1):
+		super().__init__(72, beats)
 class C5n(Note):
-    def __init__(self, beats=1):
-        super().__init__(72, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(72, beats, accidental=True)
 class C5s(Note):
-    def __init__(self, beats=1):
-        super().__init__(73, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(73, beats, accidental=True)
 class D5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(73, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(73, beats, accidental=True)
 class D5(Note):
-    def __init__(self, beats=1):
-        super().__init__(74, beats)
+	def __init__(self, beats=1):
+		super().__init__(74, beats)
 class D5n(Note):
-    def __init__(self, beats=1):
-        super().__init__(74, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(74, beats, accidental=True)
 class D5s(Note):
-    def __init__(self, beats=1):
-        super().__init__(75, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(75, beats, accidental=True)
 class E5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(75, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(75, beats, accidental=True)
 class E5(Note):
-    def __init__(self, beats=1):
-        super().__init__(76, beats)
+	def __init__(self, beats=1):
+		super().__init__(76, beats)
 class E5n(Note):
-    def __init__(self, beats=1):
-        super().__init__(76, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(76, beats, accidental=True)
 class E5s(Note):
-    def __init__(self, beats=1):
-        super().__init__(77, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(77, beats, accidental=True)
 class F5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(76, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(76, beats, accidental=True)
 class F5(Note):
-    def __init__(self, beats=1):
-        super().__init__(77, beats)
+	def __init__(self, beats=1):
+		super().__init__(77, beats)
 class F5n(Note):
-    def __init__(self, beats=1):
-        super().__init__(77, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(77, beats, accidental=True)
 class F5s(Note):
-    def __init__(self, beats=1):
-        super().__init__(78, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(78, beats, accidental=True)
 class G5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(78, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(78, beats, accidental=True)
 class G5(Note):
-    def __init__(self, beats=1):
-        super().__init__(79, beats)
+	def __init__(self, beats=1):
+		super().__init__(79, beats)
 class G5n(Note):
-    def __init__(self, beats=1):
-        super().__init__(79, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(79, beats, accidental=True)
 class G5s(Note):
-    def __init__(self, beats=1):
-        super().__init__(80, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(80, beats, accidental=True)
 class A5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(80, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(80, beats, accidental=True)
 class A5(Note):
-    def __init__(self, beats=1):
-        super().__init__(81, beats)
+	def __init__(self, beats=1):
+		super().__init__(81, beats)
 class B5b(Note):
-    def __init__(self, beats=1):
-        super().__init__(82, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(82, beats, accidental=True)
 class B5(Note):
-    def __init__(self, beats=1):
-        super().__init__(83, beats)
-
+	def __init__(self, beats=1):
+		super().__init__(83, beats)
+		
 class C6(Note):
-    def __init__(self, beats=1):
-        super().__init__(84, beats)
+	def __init__(self, beats=1):
+		super().__init__(84, beats)
 class D6(Note):
-    def __init__(self, beats=1):
-        super().__init__(86, beats)
+	def __init__(self, beats=1):
+		super().__init__(86, beats)
 class E6b(Note):
-    def __init__(self, beats=1):
-        super().__init__(87, beats)
+	def __init__(self, beats=1):
+		super().__init__(87, beats)
 class E6(Note):
-    def __init__(self, beats=1):
-        super().__init__(88, beats)
+	def __init__(self, beats=1):
+		super().__init__(88, beats)
 class F6(Note):
-    def __init__(self, beats=1):
-        super().__init__(89, beats)
+	def __init__(self, beats=1):
+		super().__init__(89, beats)
 class F6s(Note):
-    def __init__(self, beats=1):
-        super().__init__(90, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(90, beats, accidental=True)
 class G6(Note):
-    def __init__(self, beats=1):
-        super().__init__(91, beats)
+	def __init__(self, beats=1):
+		super().__init__(91, beats)
 class A6(Note):
-    def __init__(self, beats=1):
-        super().__init__(93, beats)
+	def __init__(self, beats=1):
+		super().__init__(93, beats)
 class B6b(Note):
-    def __init__(self, beats=1):
-        super().__init__(94, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(94, beats, accidental=True)
 class B6(Note):
-    def __init__(self, beats=1):
-        super().__init__(95, beats)
-
+	def __init__(self, beats=1):
+		super().__init__(95, beats)
+		
 class C7(Note):
-    def __init__(self, beats=1):
-        super().__init__(96, beats)
+	def __init__(self, beats=1):
+		super().__init__(96, beats)
 class D7(Note):
-    def __init__(self, beats=1):
-        super().__init__(98, beats)
+	def __init__(self, beats=1):
+		super().__init__(98, beats)
 class E7b(Note):
-    def __init__(self, beats=1):
-        super().__init__(99, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(99, beats, accidental=True)
 class E7(Note):
-    def __init__(self, beats=1):
-        super().__init__(100, beats)
+	def __init__(self, beats=1):
+		super().__init__(100, beats)
 class F7(Note):
-    def __init__(self, beats=1):
-        super().__init__(101, beats)
+	def __init__(self, beats=1):
+		super().__init__(101, beats)
 class F7s(Note):
-    def __init__(self, beats=1):
-        super().__init__(102, beats, accidental=True)
+	def __init__(self, beats=1):
+		super().__init__(102, beats, accidental=True)
 class G7(Note):
-    def __init__(self, beats=1):
-        super().__init__(103, beats)
+	def __init__(self, beats=1):
+		super().__init__(103, beats)
 class A7(Note):
-    def __init__(self, beats=1):
-        super().__init__(105, beats)
+	def __init__(self, beats=1):
+		super().__init__(105, beats)
 class B7b(Note):
-    def __init__(self, beats=1):
-        super().__init__(106, beats)
+	def __init__(self, beats=1):
+		super().__init__(106, beats)
 class B7(Note):
-    def __init__(self, beats=1):
-        super().__init__(107, beats)
-
+	def __init__(self, beats=1):
+		super().__init__(107, beats)
+		
 class C8(Note):
-    def __init__(self, beats=1):
-        super().__init__(108, beats)
-
-
+	def __init__(self, beats=1):
+		super().__init__(108, beats)
+		
+		
 # **************************************
 #
 #  jithon representation
@@ -763,3 +763,4 @@ class C8(Note):
 # EN = 0.5
 # DSN = 0.375
 # SN = 0.25
+
