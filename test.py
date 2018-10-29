@@ -47,6 +47,7 @@ if __name__ == '__main__':
 		delete_midi()
 		
 key = keys.C
+tempo = 120
 
 measures = [
     [
