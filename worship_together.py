@@ -25,7 +25,8 @@ def switched(sender):
 
 
 def adjust_time(sender):
-	print(sender.value * song_length)
+	global player
+	player.current_time = sender.value * player.duration
 
 
 def play_pause(sender):
