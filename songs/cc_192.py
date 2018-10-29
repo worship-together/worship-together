@@ -1,7 +1,7 @@
 from notes import *
 import keys
 
-name = "From Heav'n O Praise the Lord"
+name = "From Heav'n O Praise the Lord (unfinished)"
 number = "CC 192"
 psalm = 148
 beats_per_measure = 4
