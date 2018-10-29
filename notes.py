@@ -14,6 +14,7 @@ class Note:
         self.pitch = pitch
         self.beats = beats
         self.accidental = accidental
+        self.fermata_beats = 0
 
 class R(Note):
     def __init__(self, beats=1):
@@ -518,6 +519,12 @@ class C8(Note):
     def __init__(self, beats=1):
         super().__init__(108, beats)
 
+
+def fermata(note, additional_beats=1):
+    if type(note) is type:
+        note = note()
+    note.fermata_beats = additional_beats
+    return note
 
 # **************************************
 #

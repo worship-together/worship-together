@@ -70,7 +70,8 @@ class VoiceStream:
                         note_name = type(note).__name__
                     print(note_name)
                     note = self.map_note_using_key(note)
-                    note_ticks = note.beats * ticks_per_beat
+                    note_ticks = (note.beats + note.fermata_beats) * \
+                                 ticks_per_beat
                     if type(note) != notes.R:
                         on = tick
                         off = tick + note_ticks - ticks_between_beats

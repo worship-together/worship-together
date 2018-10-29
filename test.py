@@ -10,6 +10,7 @@ midi.Song('cc_182.py').write_midi('cc_182.midi', [60, 60, 60, 60])
 midi.Song('cc_192.py').write_midi('cc_192.midi', [60, 60, 60, 60])
 midi.Song('cc_150.py').write_midi('cc_150.midi', [60, 60, 60, 60])
 midi.Song('cc_368.py').write_midi('cc_368.midi', [60, 60, 60, 60])
+midi.Song('cc_074.py').write_midi('cc_074.midi', [60, 60, 60, 60])
 
 
 def generate_midi(input):
