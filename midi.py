@@ -68,7 +68,6 @@ class VoiceStream:
 						note_name = note.__name__
 					else:
 						note_name = type(note).__name__
-					print(note_name)
 					note = self.map_note_using_key(note)
 					note_ticks = (note.beats + note.fermata_beats) * \
                                  ticks_per_beat
