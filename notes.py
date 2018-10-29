@@ -453,9 +453,18 @@ class B5(Note):
 	def __init__(self, beats=1):
 		super().__init__(83, beats)
 
+class C6b(Note):
+	def __init__(self, beats=1):
+		super().__init__(83, beats, accidental='b')
 class C6(Note):
 	def __init__(self, beats=1):
 		super().__init__(84, beats)
+class C6n(Note):
+	def __init__(self, beats=1):
+		super().__init__(84, beats, accidental='n')
+class C6s(Note):
+	def __init__(self, beats=1):
+		super().__init__(85, beats, accidental='#')
 class D6(Note):
 	def __init__(self, beats=1):
 		super().__init__(86, beats)
@@ -484,9 +493,18 @@ class B6(Note):
 	def __init__(self, beats=1):
 		super().__init__(95, beats)
 
+class C7b(Note):
+	def __init__(self, beats=1):
+		super().__init__(96, beats, accidental='b')
 class C7(Note):
 	def __init__(self, beats=1):
 		super().__init__(96, beats)
+class C7n(Note):
+	def __init__(self, beats=1):
+		super().__init__(96, beats, accidental='n')
+class C7s(Note):
+	def __init__(self, beats=1):
+		super().__init__(96, beats, accidental='#')
 class D7(Note):
 	def __init__(self, beats=1):
 		super().__init__(98, beats)
