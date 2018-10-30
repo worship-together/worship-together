@@ -24,6 +24,12 @@ def switched(sender):
 		print(sender.name + ' off')
 
 
+def change_tempo(sender):
+	global player
+	player.rate = 2 * sender.value
+	print(player.rate)
+	
+
 def adjust_time(sender):
 	global player
 	player.current_time = sender.value * player.duration
@@ -42,6 +48,7 @@ def play_pause(sender):
 		song.write_midi('output.midi', volumes)
 		player = sound.MIDIPlayer('output.midi')
 		player.play()
+		#player.rate
 		print('Playing')
 	
 def adjust_volume(sender):
