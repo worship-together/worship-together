@@ -8,13 +8,13 @@
         "frame" : "{{65, 7}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "soprano_label",
+          "font_size" : 18,
           "frame" : "{{437, 368}, {150, 32}}",
           "uuid" : "73F60F45-F751-4559-8B8E-CE7D07B243E5",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Soprano",
-          "font_size" : 18,
+          "name" : "soprano_label",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -90,13 +90,13 @@
         "frame" : "{{65, 46}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "alto_label",
+          "font_size" : 18,
           "frame" : "{{437, 368}, {150, 32}}",
           "uuid" : "A7E5A8C5-84F1-4946-9C3D-224D086FA9AA",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Alto",
-          "font_size" : 18,
+          "name" : "alto_label",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -108,13 +108,13 @@
         "frame" : "{{65, 85}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "tenor_label",
+          "font_size" : 18,
           "frame" : "{{437, 368}, {150, 32}}",
           "uuid" : "222E319B-217A-4B6D-8C4B-4045FEB48FAF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Tenor",
-          "font_size" : 18,
+          "name" : "tenor_label",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -126,13 +126,13 @@
         "frame" : "{{65, 124}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "bass_label",
+          "font_size" : 18,
           "frame" : "{{437, 368}, {150, 32}}",
           "uuid" : "455243F4-E426-4840-B402-F35D5A8101DF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Bass",
-          "font_size" : 18,
+          "name" : "bass_label",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -238,16 +238,51 @@
           "name" : "time_adjuster"
         },
         "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{65, 205}, {329, 34}}",
+        "class" : "Slider",
+        "attributes" : {
+          "action" : "change_tempo",
+          "flex" : "W",
+          "frame" : "{{100, 114}, {200, 34}}",
+          "uuid" : "20EA9EC3-EB00-4997-A3B4-B9B56A95C5D5",
+          "class" : "Slider",
+          "value" : 0.5,
+          "name" : "tempo_slider"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 205}, {51, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "tempo_label",
+          "frame" : "{{125, 115}, {150, 32}}",
+          "uuid" : "10997F16-F73D-496F-9793-A220799C72C9",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Tempo",
+          "font_size" : 12,
+          "font_name" : "<System>"
+        },
+        "selected" : false
       }
     ],
-    "frame" : "{{0, 0}, {400, 203}}",
+    "frame" : "{{0, 0}, {400, 248}}",
     "class" : "View",
     "attributes" : {
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
       "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "name" : "",
-      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
       "flex" : ""
     },
     "selected" : false
