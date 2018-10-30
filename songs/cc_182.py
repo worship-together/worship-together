@@ -1,7 +1,7 @@
 from notes import *
 import keys
 
-name = "With All My Heart My Thanks I'll Bring"
+name = "With All My Heart My Thanks I'll Bring (unfinished)"
 number = "CC 182"
 psalm = 138
 beats_per_measure = 4

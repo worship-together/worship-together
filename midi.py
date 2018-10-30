@@ -68,7 +68,6 @@ class VoiceStream:
 						note_name = note.__name__
 					else:
 						note_name = type(note).__name__
-					print(note_name)
 					note = self.map_note_using_key(note)
 					note_ticks = (note.beats + note.fermata_beats) * \
                                  ticks_per_beat
@@ -124,9 +123,9 @@ def midi_track(tempo, note_events):
 	return track_magic_number + track_len + event_bytes
 
 
-def midi_from_module(module, volumes):
+def midi_from_module(module, volumes, tempo_multiplier):
 	events = list(generate_note_events(module, volumes))
-	return midi_header(track_count=1) + midi_track(module.tempo, events)
+	return midi_header(track_count=1) + midi_track(module.tempo * tempo_multiplier, events)
 
 
 def import_song(filename):
@@ -153,9 +152,9 @@ class Song:
 	def __repr__(self):
 		return self.number + ': ' + self.name
 
-	def write_midi(self, filename, volumes=[60, 60, 60, 60]):
+	def write_midi(self, filename, volumes=[60, 60, 60, 60], tempo_multiplier=1.0):
 		with open(filename, 'wb') as file:
-			file.write(midi_from_module(self.module, volumes))
+			file.write(midi_from_module(self.module, volumes, tempo_multiplier))
 
 	@property
 	def measures(self):
