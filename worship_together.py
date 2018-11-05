@@ -15,6 +15,8 @@ soprano_volume = 60
 alto_volume = 60
 tenor_volume = 60
 bass_volume = 60
+rate = 1
+position = 0
 
 
 def switched(sender):
@@ -24,15 +26,21 @@ def switched(sender):
 		print(sender.name + ' off')
 
 
+def change_tempo(sender):
+	player.rate = 2 * sender.value
+	rate = 2 * sender.value
+	
+
 def adjust_time(sender):
 	global player
 	player.current_time = sender.value * player.duration
 
 
 def play_pause(sender):
-	global song, player
+	global song, player, rate, position
 	if sender.title == 'Pause':
 		sender.title = 'Play'
+		position = player.current_time
 		player.stop()
 		print('Paused')
 	else:
@@ -42,6 +50,11 @@ def play_pause(sender):
 		song.write_midi('output.midi', volumes)
 		player = sound.MIDIPlayer('output.midi')
 		player.play()
+		if position == player.duration:
+			player.current_time = 0
+		else:
+			player.current_time = position
+		player.rate = rate
 		print('Playing')
 	
 def adjust_volume(sender):
