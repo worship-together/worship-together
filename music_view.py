@@ -14,12 +14,17 @@ bass_lines = []
 for i in range(0, 5):
 	treble_lines.append(screen_height * (screen_padding*((i+7)/8)))
 	bass_lines.append(screen_height - (screen_height * (screen_padding*((i+7)/8))))
-	
-#middle_treble_line = screen_height *
-# The main SketchView contains a PathView for the current
-# line and an ImageView for rendering completed strokes.
-# It also manages the 'Clear' and 'Save' ButtonItems that
-# are shown in the title bar.
+step = (treble_lines[1] - treble_lines[0]) / 2
+C0_treble_y = treble_lines[4] + step + ((step * 7) * 4)
+
+
+def create_index(note_name):
+	note_name.split()
+	index = ord(note_name[0]) - ord('C')
+	if index < 0:
+		index += 7
+	return index + (int(note_name[1]) * 7)
+
 
 class MusicView(ui.View):
 	def __init__(self, width=1024, height=1024):
@@ -44,33 +49,19 @@ class MusicView(ui.View):
 				else:
 					note_name = type(note).__name__
 				print(note_name)
+				note_index = create_index(note_name)
+				print(note_index)
 				
-				note_name.split()
-				#if note_name[1] == ''
-				note_index = ord(note_name[0]) - ord('A')
-				
-				self.note = ui.Path.oval(origin, treble_lines[4], 150 * screen_padding, 90 * screen_padding)
+				self.note = ui.Path.oval(origin, C0_treble_y - (note_index * step), 3 * step, 2 * step)
+				print(C0_treble_y - (note_index * step))
 				self.note.fill()
 				ui.set_color('black')
-				origin += 50
-				
-			#self.note1 = ui.Path.oval(50,50,25,15)
-			#self.note2 = ui.Path.oval(100,57,25,15)
-				
-			#self.note1.fill()
-			#self.note2.fill()
-			#ui.set_color('black')
-		
+				origin += note_gap
+			
 			self.staff.stroke()
 			self.note.stroke()
 			
-			#self.note2.stroke()
 			
-			#play_pause = ui.
-			
-			
-# We use a square canvas, so that the same image
-# can be used in portrait and landscape orientation.
 canvas_size = max(screen_width, screen_height)
 
 sv = MusicView(canvas_size, canvas_size)
