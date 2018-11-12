@@ -27,8 +27,9 @@ def switched(sender):
 
 
 def change_tempo(sender):
-	player.rate = 2 * sender.value
-	rate = 2 * sender.value
+	player.rate = 0.5 + sender.value
+	rate = 0.5 + sender.value
+	print(rate)
 	
 
 def adjust_time(sender):

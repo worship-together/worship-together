@@ -28,6 +28,7 @@ def create_index(note_name):
 
 class MusicView(ui.View):
 	def __init__(self, width=1024, height=1024):
+		self.frame = (0, 0, width, height)
 		self.bg_color = 'white'
 		
 	def draw(self):
@@ -61,10 +62,7 @@ class MusicView(ui.View):
 			self.staff.stroke()
 			self.note.stroke()
 			
-			
-canvas_size = max(screen_width, screen_height)
 
-sv = MusicView(canvas_size, canvas_size)
-sv.name = 'Sketch'
-sv.present('fullscreen')
-
+music_view = MusicView(screen_width * 2, screen_height)
+music_view.name = 'Sketch'
+music_view.present('fullscreen')
