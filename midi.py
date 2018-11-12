@@ -26,7 +26,7 @@ import notes
 import events
 
 ticks_per_beat = 1024
-ticks_between_beats = 34
+ticks_between_beats = 0 # 34
 
 
 class Voice(enum.IntEnum):
@@ -55,20 +55,24 @@ class VoiceStream:
 		elif type(note) == note_type:
 			return note
 		else:
-			return note_type(note.beats)
+			new_note = note_type(note.beats)
+			new_note.fermata_beats = note.fermata_beats
+			return new_note
 
 	def __iter__(self):
 		if self.volume > 0:
 			if type(self.song.key) is type:
 				self.song.key = self.song.key()
 			tick = 0
-			for measure in self.song.measures:
+			for measure_num, measure in enumerate(self.song.measures):
+				total_measure_beats = 0
 				for note in measure[self.voice]:
 					if type(note) is type:
 						note_name = note.__name__
 					else:
 						note_name = type(note).__name__
 					note = self.map_note_using_key(note)
+					total_measure_beats += note.beats
 					note_ticks = (note.beats + note.fermata_beats) * \
                                  ticks_per_beat
 					if type(note) != notes.R:
@@ -77,6 +81,13 @@ class VoiceStream:
 						yield events.NoteOnEvent(self.voice, on, note.pitch)
 						yield events.NoteOffEvent(self.voice, off, note.pitch)
 					tick += note_ticks
+				if (self.song.beats_per_measure > 0 and
+				    total_measure_beats != self.song.beats_per_measure and
+				    measure_num != 0 and
+				    measure_num != len(self.song.measures) - 1):
+					raise RuntimeError(f'{beats} beats for {self.voice.name} '
+					                   f'in measure {measure_num + 1}, '
+					                   f'expected {self.song.beats_per_measure}')	
 
 
 def make_tick_relative(events):
