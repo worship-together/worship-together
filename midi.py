@@ -89,13 +89,14 @@ class VoiceStream:
 					beat_value = 4.0 / self.song.beat_value
 				expected_total_time = (self.song.beats_per_measure *
 				                       beat_value)
-				if (total_measure_beats != expected_total_time and
-				    measure_num != 0 and
-				    measure_num != len(self.song.measures) - 1):
-					raise RuntimeError(f'{total_measure_beats} beats for '
-					                   f'{self.voice.name} in measure '
-					                   f'{measure_num + 1}, expected '
-					                   f'{expected_total_time}')
+				if total_measure_beats != expected_total_time:
+					first_measure = measure_num == 0
+					last_measure = measure_num == len(self.song.measures) - 1
+					if not first_measure and not last_measure:
+						raise RuntimeError(f'{total_measure_beats} beats for '
+						                   f'{self.voice.name} in measure '
+						                   f'{measure_num + 1}, expected '
+						                   f'{expected_total_time}')
 
 
 def make_tick_relative(events):

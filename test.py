@@ -96,10 +96,10 @@ Key        C
 Signature  4:4
 Tempo      120
 
-Soprano    e/2 e e | g/2. c+ | c+ a a f | e/2 d R
-Alto       c/2 c c | e/2. c  | f/2  f d | c/2 b R
-Tenor      g/2 g g | c/2. g  | a  c c a | g/2.  R
-Bass       c/2 c c | c/2. e  | f/2  f/2 | g/2.  R
+Soprano    e/2 e e | g/2. c+ | c+ a a f | e/2 d R | d#/1              | a
+Alto       c/2 c c | e/2. c  | f/2  f d | c/2 b R | bb. c/8 d/2       | b
+Tenor      g/2 g g | c/2. g  | a  c c a | g/2.  R | en(3)             | c
+Bass       c/2 c c | c/2. e  | f/2  f/2 | g/2.  R | g#+/32.(3.8125)   | d
 
 Verse      With all my heart my thanks I'll bring,
 Verse      For though a - bove Thy name a - dored

@@ -37,12 +37,12 @@ note_re = re.compile(r'(?P<name>[a-gR])' +
 					 r'(?P<octave_shift>[\+\-])?'
                      r'(/(?P<note_value>[0-9]+))?'
                      r'(?P<dot>\.)?'
-                     r'(\((?P<fermata>[0-9](\.[0-9])?)\))?')
+                     r'(\((?P<fermata>[0-9]+(\.[0-9]+)?)\))?')
 time_signature_re = re.compile(r'(?P<beats_per_measure>[1-9])\s*:\s*'
                                r'(?P<beat_value>[1-9])')
 
 
-def create_note(voice, octave_shift, short_name):
+def create_note(voice, octave_shift, short_name, accidental):
 	short_name = short_name.upper()
 	if short_name == 'R':
 		octave = ''
@@ -72,7 +72,8 @@ def parse_notes(beat_value, voice, line):
 			match = note_re.match(symbol)
 			short_name = match.group('name')
 			octave_shift = match.group('octave_shift')
-			note_name = create_note(voice, octave_shift, short_name)
+			accidental = match.group('accidental')
+			note_name = create_note(voice, octave_shift, short_name, accidental)
 			note_type = getattr(notes, note_name)
 			note_value = match.group('note_value')
 			beats = 1.0
@@ -80,6 +81,9 @@ def parse_notes(beat_value, voice, line):
 				beats = beat_value / int(note_value)
 			if match.group('dot'):
 				beats = beats * 1.5
+			fermata = match.group('fermata')
+			if fermata:
+				beats += float(fermata)
 			note = note_type(beats)
 			measures[-1].append(note)
 	return measures
