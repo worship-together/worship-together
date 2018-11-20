@@ -24,6 +24,7 @@ import importlib
 
 import notes
 import events
+import parser
 
 ticks_per_beat = 1024
 ticks_between_beats = 0 # 34
@@ -81,13 +82,20 @@ class VoiceStream:
 						yield events.NoteOnEvent(self.voice, on, note.pitch)
 						yield events.NoteOffEvent(self.voice, off, note.pitch)
 					tick += note_ticks
-				if (self.song.beats_per_measure > 0 and
-				    total_measure_beats != self.song.beats_per_measure and
+				# TBD: should not count note beats, but note values
+				#      note values must always sum to 1.0
+				beat_value = 1.0
+				if hasattr(self.song, 'beat_value'):
+					beat_value = 4.0 / self.song.beat_value
+				expected_total_time = (self.song.beats_per_measure *
+				                       beat_value)
+				if (total_measure_beats != expected_total_time and
 				    measure_num != 0 and
 				    measure_num != len(self.song.measures) - 1):
-					raise RuntimeError(f'{beats} beats for {self.voice.name} '
-					                   f'in measure {measure_num + 1}, '
-					                   f'expected {self.song.beats_per_measure}')	
+					raise RuntimeError(f'{total_measure_beats} beats for '
+					                   f'{self.voice.name} in measure '
+					                   f'{measure_num + 1}, expected '
+					                   f'{expected_total_time}')
 
 
 def make_tick_relative(events):
@@ -150,7 +158,11 @@ def is_song(filename):
 
 class Song:
 	def __init__(self, filename):
-		self.module = import_song(filename)
+		if filename.lower().endswith('.py'):
+			self.module = import_song(filename)
+		else:
+			song_path = os.path.join('songs', filename)
+			self.module = parser.parse_song(song_path)
 
 	@property
 	def name(self):
