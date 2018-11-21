@@ -6,10 +6,12 @@ import glob
 from notes import *
 import keys
 
-midi.Song('cc_334.py').write_midi('cc_334.midi', [60, 60, 60, 60])
+midi.Song('cc_008').write_midi('cc_008.midi', [60, 60, 60, 60])
+midi.Song('cc_345').write_midi('cc_345.midi', [60, 60, 60, 60])
+midi.Song('cc_150.py').write_midi('cc_150.midi', [60, 60, 60, 60])
 midi.Song('cc_182.py').write_midi('cc_182.midi', [60, 60, 60, 60])
 midi.Song('cc_192.py').write_midi('cc_192.midi', [60, 60, 60, 60])
-midi.Song('cc_150.py').write_midi('cc_150.midi', [60, 60, 60, 60])
+midi.Song('cc_334.py').write_midi('cc_334.midi', [60, 60, 60, 60])
 midi.Song('cc_368.py').write_midi('cc_368.midi', [60, 60, 60, 60])
 midi.Song('cc_074.py').write_midi('cc_074.midi', [60, 60, 60, 60])
 
@@ -113,6 +115,8 @@ if __name__ == '__main__':
 		with open('songs/test', 'w') as song_file:
 			song_file.write(new_file_format)
 		test_song('test')
+		song = midi.Song('test')
+		assert type(song.measures[-2][0][0]) == D4s
 		print('success')
 	finally:
 		delete_midi()

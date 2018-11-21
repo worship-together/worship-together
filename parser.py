@@ -38,7 +38,7 @@ note_re = re.compile(r'(?P<name>[a-gR])' +
                      r'(/(?P<note_value>[0-9]+))?'
                      r'(?P<dot>\.)?'
                      r'(\((?P<fermata>[0-9]+(\.[0-9]+)?)\))?')
-time_signature_re = re.compile(r'(?P<beats_per_measure>[1-9])\s*:\s*'
+time_signature_re = re.compile(r'(?P<beats_per_measure>[0-9])\s*:\s*'
                                r'(?P<beat_value>[1-9])')
 
 
@@ -59,7 +59,11 @@ def create_note(voice, octave_shift, short_name, accidental):
 			octave += 1
 		elif octave_shift == '-':
 			octave -= 1
-	return short_name + str(octave)
+	if accidental == '#':
+		accidental = 's'
+	elif not accidental:
+		accidental = ''
+	return short_name + str(octave) + accidental
 
 
 def parse_notes(beat_value, voice, line):
@@ -89,11 +93,15 @@ def parse_notes(beat_value, voice, line):
 	return measures
 
 
+def is_comment(line):
+	return line[0] == '#'
+
 def parse_song(filename):
 	with open(filename, 'r') as song_file:
 		attributes = {}
 		for number, line in enumerate(song_file):
-			if line.strip():
+			line = line.strip()
+			if line and not is_comment(line):
 				match = attribute_re.match(line)
 				if match:
 					name = match.group('name').lower()
@@ -107,7 +115,8 @@ def parse_song(filename):
 						attributes['beats_per_measure'] = int(beats_per_measure)
 						attributes['beat_value'] = int(beat_value)
 					elif name in ['soprano', 'alto', 'tenor', 'bass']:
-						value = parse_notes(beat_value, name, raw_value)
+						value = attributes[name] if name in attributes else []
+						value += parse_notes(beat_value, name, raw_value)
 					else:
 						value = raw_value
 					attributes[name] = value
