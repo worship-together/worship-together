@@ -24,7 +24,7 @@ import importlib
 
 import notes
 import events
-import parser
+import song_parser
 
 ticks_per_beat = 1024
 ticks_between_beats = 0 # 34
@@ -157,8 +157,8 @@ def import_song(filename):
 
 
 def is_song(filename):
-	non_songs = ['__init__.py', 'test.py']
-	return filename.endswith('.py') and filename not in non_songs
+	non_songs = ['__init__.py', 'test.py', '__pycache__']
+	return filename not in non_songs
 
 
 class Song:
@@ -167,7 +167,7 @@ class Song:
 			self.module = import_song(filename)
 		else:
 			song_path = os.path.join('songs', filename)
-			self.module = parser.parse_song(song_path)
+			self.module = song_parser.parse_song(song_path)
 
 	@property
 	def name(self):
