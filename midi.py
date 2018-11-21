@@ -100,7 +100,8 @@ class VoiceStream:
 					raise RuntimeError(f'{total_measure_beats} beats for '
 					                   f'{self.voice.name} in measure '
 					                   f'{measure_num + 1}, expected '
-					                   f'{expected_total_time}')
+					                   f'{expected_total_time} '
+					                   f'({self.song.number} {self.song.name})')
 
 
 def make_tick_relative(events):

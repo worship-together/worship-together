@@ -4,10 +4,10 @@ Author     W. W. J. VanOene, 1972; rev.
 Tune       NE VEUILLES PAS, O SIRE (7 7 6, 7 7 6)
 Composer   Genevan Psalter, 1542
 Harmony    Claude Goudimel, 1564; alt.
-Number     8
+Number     CC 8
 Key        G
 Signature  0 : 4
-Tempo      120
+Tempo      180
 
 # Soporano e to d
 # Alto     a to g
@@ -15,9 +15,9 @@ Tempo      120
 # Bass     a to g
 
 Soprano    e/2 e e d-/2 d-/2 e g/2 f  g/2. R b/2 b d
-Alto       d/2 c c b/2  g-/2 e/2 d/2  d/2. R g/2 g g
-Tenor      g/2 a a f/2   b/2 c/2 a/2  b/2. R d/2 d b
-Bass       e/2 a a b/w  g-/2 c/2 d/2 g-/2. R g/2 g g
+Alto       d/2 c c  b/2 g-/2 e/2 d/2  d/2. R g/2 g g
+Tenor      g/2 a a  f/2  b/2 c/2 a/2  b/2. R d/2 d b
+Bass       e/2 a a  b/2 g-/2 c/2 d/2 g-/2. R g/2 g g
 
 Soprano    c+ b  a/2  g/2. R d-/2 e g f e b/2. R
 Alto       g  g/2  f  g/2. R  b/2 c d d b d/2. R
