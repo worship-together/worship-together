@@ -60,7 +60,7 @@ def draw_notes(self, voice, measures, clef):
 
 def calculate_length():
 	global origin
-	song = [song for song in midi.songs if '334' in str(song)][0]
+	song = [song for song in midi.songs if '362' in str(song)][0]
 	end = origin
 	for measure in song.measures:
 		voice_selected = measure[midi.Voice.Soprano]
@@ -77,7 +77,7 @@ class MusicView(ui.View):
 	def draw(self):
 		global origin
 			
-		song = [song for song in midi.songs if '334' in str(song)][0]
+		song = [song for song in midi.songs if '362' in str(song)][0]
 		draw_notes(self, midi.Voice.Soprano, song.measures, 'treble')
 		draw_notes(self, midi.Voice.Alto, song.measures, 'treble')
 		draw_notes(self, midi.Voice.Tenor, song.measures, 'bass')
