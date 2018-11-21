@@ -142,5 +142,5 @@ def parse_song(filename):
 		                              attributes['tenor'],
 		                              attributes['bass'])]
 		song = NewSong(attributes)
-		print(song.measures)
+		#print(song.measures)
 		return song
