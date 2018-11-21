@@ -16,6 +16,9 @@ class Note:
 		self.accidental = accidental
 		self.fermata_beats = 0
 
+	def __repr__(self):
+		return type(self).__name__ + '(' + str(self.beats) + ')'
+
 class R(Note):
 	def __init__(self, beats=1):
 		super().__init__(0, beats)

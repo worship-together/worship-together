@@ -4,6 +4,7 @@ import midi
 screen_width, screen_height = ui.get_screen_size()
 notes_drawn = 0
 screen_padding = 1/6#of the screen
+song_number = '362'
 note_gap = 100
 origin = 50
 end = origin
@@ -39,7 +40,7 @@ assert create_index('C8') == 56
 assert create_index('R') == -1
 
 
-def draw_notes(self, voice, measures, clef):
+def draw_notes(self, voice, measures, clef_C0, tail_direction):
 	global origin, end
 	position = origin
 	for measure in measures:
@@ -50,17 +51,25 @@ def draw_notes(self, voice, measures, clef):
 			else:
 				note_name = type(note).__name__
 			note_index = create_index(note_name)
-			if clef == 'treble':
-				self.note = ui.Path.oval(position, C0_treble_y - (note_index * step), 3 * step, 2 * step)
-			else:
-				self.note = ui.Path.oval(position, C0_bass_y - (note_index * step), 3 * step, 2 * step)
-			self.note.fill()
+			self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
+			self.note_tail = ui.Path()
+			self.note_tail.move_to(
+				position + (((tail_direction * 1.5) + 1.5) * step), 
+				(clef_C0 - (note_index * step)) + step)
+			self.note_tail.line_to(
+				position + (((tail_direction * 1.5) + 1.5) * step),
+				((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
+			self.note_tail.stroke()
+			self.note_dot.fill()
 			ui.set_color('black')
-			position += note_gap
+			if note != None and type(note) is type:
+				position += note_gap * note().beats
+			elif note != None:
+				position += note_gap * note.beats
 
 def calculate_length():
 	global origin
-	song = [song for song in midi.songs if '362' in str(song)][0]
+	song = [song for song in midi.songs if song_number in str(song)][0]
 	end = origin
 	for measure in song.measures:
 		voice_selected = measure[midi.Voice.Soprano]
@@ -77,11 +86,11 @@ class MusicView(ui.View):
 	def draw(self):
 		global origin
 			
-		song = [song for song in midi.songs if '362' in str(song)][0]
-		draw_notes(self, midi.Voice.Soprano, song.measures, 'treble')
-		draw_notes(self, midi.Voice.Alto, song.measures, 'treble')
-		draw_notes(self, midi.Voice.Tenor, song.measures, 'bass')
-		draw_notes(self, midi.Voice.Bass, song.measures, 'bass')
+		song = [song for song in midi.songs if song_number in str(song)][0]
+		draw_notes(self, midi.Voice.Soprano, song.measures, C0_treble_y, 1)
+		draw_notes(self, midi.Voice.Alto, song.measures, C0_treble_y, -1)
+		draw_notes(self, midi.Voice.Tenor, song.measures, C0_bass_y, 1)
+		draw_notes(self, midi.Voice.Bass, song.measures, C0_bass_y, -1)
 				
 		self.staff = ui.Path()
 		for i in range(0, 5):
@@ -91,7 +100,8 @@ class MusicView(ui.View):
 			self.staff.line_to(calculate_length(), bass_lines[i])
 			
 		self.staff.stroke()
-		self.note.stroke()
+
+
 			
 			
 music_view = MusicView(calculate_length(), screen_height)

@@ -68,6 +68,10 @@ def adjust_volume(sender):
 		tenor_volume = sender.value * 120
 	else:
 		bass_volume = sender.value * 120
+		
+#def bring_up_scrollview():
+	
+		
 satb_page = ui.load_view('midi_ui')
 print(type(satb_page.subviews))
 # find button
