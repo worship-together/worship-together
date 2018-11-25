@@ -21,11 +21,11 @@ class Event():
 		
 		
 class NoteEvent(Event):
-	def __init__(self, voice, tick, pitch):
+	def __init__(self, voice, tick, pitch, velocity):
 		super().__init__(tick)
 		self.voice = voice
 		self.pitch = pitch
-		self.velocity = default_velocity
+		self.velocity = velocity
 		
 	def __repr__(self):
 		return f'({self.voice.name:7} {self.tick:4}, {self.pitch:2}, ' \
