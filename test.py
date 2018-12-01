@@ -20,7 +20,7 @@ midi.Song('cc_074.py').write_midi('cc_074.midi', [60, 60, 60, 60])
 def generate_midi(input):
 	midi.Song(input).write_midi('full.midi', [60, 60, 60, 60])
 	midi.Song(input).write_midi('soprano.midi', [60, 0, 0, 0])
-	midi.Song(input).write_midi('soprano_bass.midi', [60, 0, 0, 60])
+	midi.Song(input).write_midi('soprano_bass.midi', [30, 0, 0, 60])
 	
 	
 def remove(filename):

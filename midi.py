@@ -41,10 +41,10 @@ class Voice(enum.IntEnum):
 class VoiceStream:
 	"""Stream of events for one voice for whole song"""
 
-	def __init__(self, song, voice, volumes):
+	def __init__(self, song, voice, velocity):
 		self.song = song
 		self.voice = voice
-		self.volume = volumes[self.voice]
+		self.velocity = velocity[self.voice]
 
 	def map_note_using_key(self, note):
 		note_type = note if type(note) is type else type(note)
@@ -61,7 +61,7 @@ class VoiceStream:
 			return new_note
 
 	def __iter__(self):
-		if self.volume > 0:
+		if self.velocity > 0:
 			if type(self.song.key) is type:
 				self.song.key = self.song.key()
 			tick = 0
@@ -79,8 +79,10 @@ class VoiceStream:
 					if type(note) != notes.R:
 						on = tick
 						off = tick + note_ticks - ticks_between_beats
-						yield events.NoteOnEvent(self.voice, on, note.pitch)
-						yield events.NoteOffEvent(self.voice, off, note.pitch)
+						yield events.NoteOnEvent(self.voice, on, note.pitch,
+						                         self.velocity)
+						yield events.NoteOffEvent(self.voice, off, note.pitch,
+						                          self.velocity)
 					tick += note_ticks
 				self.verify_beats_per_measure(measure_num, total_measure_beats)
 
@@ -107,15 +109,17 @@ class VoiceStream:
 def make_tick_relative(events):
 	prev_tick = 0
 	for event in events:
-		yield type(event)(event.voice, event.tick - prev_tick, event.pitch)
+		yield type(event)(event.voice, event.tick - prev_tick, event.pitch,
+		                  event.velocity)
 		prev_tick = event.tick
 
 
-def generate_note_events(song, volumes):
-	events = itertools.chain(VoiceStream(song, Voice.Soprano, volumes),
-	VoiceStream(song, Voice.Alto, volumes),
-	VoiceStream(song, Voice.Tenor, volumes),
-	VoiceStream(song, Voice.Bass, volumes))
+def generate_note_events(song, velocities):
+	events = itertools.chain(
+		VoiceStream(song, Voice.Soprano, velocities),
+		VoiceStream(song, Voice.Alto, velocities),
+		VoiceStream(song, Voice.Tenor, velocities),
+		VoiceStream(song, Voice.Bass, velocities))
 	sorted_events = sorted(events, key=lambda event: (event.tick, event.voice))
 	return make_tick_relative(sorted_events)
 
@@ -148,8 +152,8 @@ def midi_track(tempo, note_events):
 	return track_magic_number + track_len + event_bytes
 
 
-def midi_from_module(module, volumes, tempo_multiplier):
-	events = list(generate_note_events(module, volumes))
+def midi_from_module(module, velocities, tempo_multiplier):
+	events = list(generate_note_events(module, velocities))
 	return midi_header(track_count=1) + midi_track(module.tempo * tempo_multiplier, events)
 
 
@@ -177,6 +181,10 @@ class Song:
 	@property
 	def number(self):
 		return self.module.number
+
+	@property
+	def psalm(self):
+		return self.module.psalm if hasattr(self.module, 'psalm') else None
 
 	def __repr__(self):
 		return self.number + ': ' + self.name
