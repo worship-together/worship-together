@@ -5,7 +5,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{65, 7}, {76, 31}}",
+        "frame" : "{{6, 7}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
           "name" : "soprano_label",
@@ -23,71 +23,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 7}, {51, 31}}",
-        "class" : "Switch",
-        "attributes" : {
-          "action" : "switched",
-          "frame" : "{{487, 369}, {51, 31}}",
-          "value" : true,
-          "class" : "Switch",
-          "name" : "soprano_switch",
-          "uuid" : "0E06C1F5-1BE9-4D25-AE3F-CC7574BFB14D"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{6, 46}, {51, 31}}",
-        "class" : "Switch",
-        "attributes" : {
-          "action" : "switched",
-          "frame" : "{{487, 369}, {51, 31}}",
-          "value" : true,
-          "class" : "Switch",
-          "name" : "alto_switch",
-          "uuid" : "3E33E9C1-889D-48C1-9077-6957E29E8299"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{6, 85}, {51, 31}}",
-        "class" : "Switch",
-        "attributes" : {
-          "action" : "switched",
-          "frame" : "{{487, 369}, {51, 31}}",
-          "value" : true,
-          "class" : "Switch",
-          "name" : "tenor_switch",
-          "uuid" : "1C986453-1D61-410E-BA6A-2C3E96E962EC"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{6, 124}, {51, 31}}",
-        "class" : "Switch",
-        "attributes" : {
-          "action" : "switched",
-          "frame" : "{{487, 369}, {51, 31}}",
-          "value" : true,
-          "class" : "Switch",
-          "name" : "bass_switch",
-          "uuid" : "64E97F34-EA10-4E9D-927D-3B13FECAE2DC"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{65, 46}, {76, 31}}",
+        "frame" : "{{6, 46}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
           "name" : "alto_label",
@@ -105,7 +41,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{65, 85}, {76, 31}}",
+        "frame" : "{{6, 85}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
           "name" : "tenor_label",
@@ -123,7 +59,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{65, 124}, {76, 31}}",
+        "frame" : "{{6, 124}, {76, 31}}",
         "class" : "Label",
         "attributes" : {
           "name" : "bass_label",
@@ -141,10 +77,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{149, 124}, {245, 34}}",
+        "frame" : "{{90, 124}, {304, 34}}",
         "class" : "Slider",
         "attributes" : {
-          "action" : "adjust_volume",
+          "action" : "",
           "flex" : "W",
           "frame" : "{{412, 367}, {200, 34}}",
           "uuid" : "3D51F696-B334-4D5A-8019-CEF29DA69BDA",
@@ -152,16 +88,16 @@
           "value" : 0.5,
           "name" : "bass_volume"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
 
         ],
-        "frame" : "{{149, 85}, {245, 34}}",
+        "frame" : "{{90, 85}, {304, 34}}",
         "class" : "Slider",
         "attributes" : {
-          "action" : "adjust_volume",
+          "action" : "",
           "flex" : "W",
           "frame" : "{{412, 367}, {200, 34}}",
           "uuid" : "331A88B6-2E34-4BA8-AFA6-C1B1FCA88DE7",
@@ -175,10 +111,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{149, 43}, {245, 34}}",
+        "frame" : "{{90, 43}, {304, 34}}",
         "class" : "Slider",
         "attributes" : {
-          "action" : "adjust_volume",
+          "action" : "",
           "flex" : "W",
           "frame" : "{{412, 367}, {200, 34}}",
           "uuid" : "CF305F46-F2D9-46E4-B1BA-890E45229C4F",
@@ -192,10 +128,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{149, 7}, {245, 34}}",
+        "frame" : "{{90, 7}, {304, 34}}",
         "class" : "Slider",
         "attributes" : {
-          "action" : "adjust_volume",
+          "action" : "",
           "flex" : "W",
           "frame" : "{{412, 367}, {200, 34}}",
           "uuid" : "8FF33F85-F0D3-425C-BAAE-21A084CE6C88",
@@ -209,7 +145,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 163}, {51, 34}}",
+        "frame" : "{{6, 163}, {76, 34}}",
         "class" : "Button",
         "attributes" : {
           "action" : "play_pause",
@@ -226,15 +162,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{65, 163}, {329, 34}}",
+        "frame" : "{{90, 163}, {304, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "adjust_time",
           "flex" : "W",
+          "continuous" : false,
           "frame" : "{{100, 122}, {200, 34}}",
           "uuid" : "4069A055-7B8E-482F-8655-B2E01736613E",
           "class" : "Slider",
-          "value" : 0.5,
+          "value" : 0,
           "name" : "time_adjuster"
         },
         "selected" : false
@@ -243,7 +180,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{65, 205}, {244, 34}}",
+        "frame" : "{{90, 205}, {219, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "change_tempo",
@@ -260,10 +197,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 205}, {51, 32}}",
+        "frame" : "{{6, 205}, {76, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 12,
+          "font_size" : 18,
           "frame" : "{{125, 115}, {150, 32}}",
           "uuid" : "10997F16-F73D-496F-9793-A220799C72C9",
           "class" : "Label",
@@ -289,16 +226,16 @@
           "name" : "view",
           "font_size" : 15
         },
-        "selected" : true
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {400, 248}}",
     "class" : "View",
     "attributes" : {
-      "name" : "",
-      "enabled" : true,
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "name" : "",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "flex" : ""
     },
