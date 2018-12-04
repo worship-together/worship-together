@@ -23,10 +23,10 @@ if time is adjusted, slider is done being moved, so play
 """
 def write_midi(song, player):
 	song.write_midi('output.midi', [
-		get_subview('soprano_volume').value * 120, 
-		get_subview('alto_volume').value * 120, 
-		get_subview('tenor_volume').value * 120, 
-		get_subview('bass_volume').value * 120])
+		int(get_subview('soprano_volume').value * 120), 
+		int(get_subview('alto_volume').value * 120), 
+		int(get_subview('tenor_volume').value * 120), 
+		int(get_subview('bass_volume').value * 120)])
 
 
 def play():
