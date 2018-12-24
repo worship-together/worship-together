@@ -1,11 +1,11 @@
 import ui
-#import enum
 import itertools
 import struct
 import os
 import importlib
 import sound
 import midi
+import sheet_music
 
 exiting = False
 player = None
@@ -16,11 +16,12 @@ dragging = False
 last_position = 0.0000000
 satb_page = None
 
-"""
-if last position is different than current position, slider is being moved
-pause and do not move slider if slider is being moved
-if time is adjusted, slider is done being moved, so play
-"""
+def bring_up_sheet_music(sender):
+	sheet_music.song = song
+	music = sheet_music.MyView()
+	music.present('fullscreen')
+
+
 def write_midi(song, player):
 	song.write_midi('output.midi', [
 		int(get_subview('soprano_volume').value * 120), 
@@ -30,11 +31,13 @@ def write_midi(song, player):
 
 
 def play():
-	player.play()
+	if player:
+		player.play()
 	
 	
 def stop():
-	player.stop()
+	if player:
+		player.stop()
 
 
 def get_subview(name):
@@ -44,10 +47,15 @@ def get_subview(name):
 	raise RuntimeError(f'nutn is namd {name}')
 
 def track_time(slider):
-	global player, dragging, last_position
+	global player, dragging, last_position, rate
 	if player and not dragging:
 		if slider.value == last_position:
 			slider.value = player.current_time / player.duration
+			if slider.value == 1:
+				player.current_time = 0
+				player.rate = rate
+				play()
+				slider.value = player.current_time / player.duration
 			last_position = slider.value
 		else:
 			dragging = True
@@ -55,10 +63,12 @@ def track_time(slider):
 			# if is_playing:
 			# 	was_playing = True
 			# 	stop()
-			# rate = get_subview('tempo_slider').value + 0.5
-	if not exiting:
+			# rate = get_subview('tempo_slider').value + 
+	if exiting:
+		stop()
+	else:
 		ui.delay(lambda: track_time(slider), 0.05)
-
+	
 
 def change_tempo(sender):
 	player.rate = sender.value + 0.5
@@ -106,8 +116,10 @@ def play_pause(sender):
 		player.rate = get_subview('tempo_slider').value + 0.5
 		
 		
-def bring_up_scrollview(sender):
-	scrollvew.present('fullscreen')
+def adjust_volume(sender):
+	play_pause(get_subview('play_button'))
+	play_pause(get_subview('play_button'))
+
 
 
 def present_song(sender):
@@ -146,7 +158,7 @@ song_list = ui.ListDataSource(midi.songs)
 song_list.action = present_song
 table.data_source = table.delegate = song_list
 screen_width, screen_height = ui.get_screen_size()
-table.frame = 0, 0, screen_width, screen_height
+table.row_height = 40
+table.frame = 0, 0, screen_width, len(midi.songs) * table.row_height
 start_screen.add_subview(table)
 start_screen.present('fullscreen')
-
