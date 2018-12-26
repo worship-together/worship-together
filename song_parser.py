@@ -30,6 +30,8 @@ class NewSong:
 		self.beats_per_measure = attributes['beats_per_measure']
 		self.beat_value = attributes['beat_value']
 		self.tempo = int(attributes['tempo'])
+		if 'psalm' in attributes:
+			self.psalm = attributes['psalm']
 
 
 attribute_re = re.compile(r'(?P<name>[a-zA-Z]+)\s+(?P<value>[^\n]+)')
