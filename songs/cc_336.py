@@ -1,7 +1,7 @@
 from notes import *
 import keys
 
-name = 'A Mighty Fortress Is Our God'
+name = 'A Mighty Fortress Is Our God (unfinished)'
 author = 'Martin Luther, 1529'
 tune = 'EIN FESTE BURG (8 7. 8 7. 6 6. )'
 composer = 'Martin Luther, 1529'

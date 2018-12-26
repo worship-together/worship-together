@@ -43,12 +43,6 @@ class D_Sharp(Key):
 		raise NotImplemented()
 		
 		
-class E_Flat(Key):
-	def __init__(self):
-		super().__init__()
-		raise NotImplemented()
-		
-		
 class E(Key):
 	def __init__(self):
 		super().__init__()
@@ -114,6 +108,12 @@ class B_Flat(F):
 		super().__init__()
 		self.notes.update({E1:E1b, E2:E2b, E3:E3b, E4:E4b, E5:E5b, E6:E6b, E7:E7b})
 		
+		
+class E_Flat(B_Flat):
+	def __init__(self):
+		super().__init__()
+		self.notes.update({A1:A1b, A2:A2b, A3:A3b, A4:A4b, A5:A5b, A6:A6b, A7:A7b})
+				
 		
 class B(Key):
 	def __init__(self):

@@ -135,6 +135,8 @@ class StartScreen(ui.View):
 	def will_close(self):
 		global exiting
 		exiting = True
+		if player:
+			stop()
 
 
 satb_page = ui.load_view('midi_ui')

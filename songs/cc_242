@@ -16,10 +16,10 @@ Tempo      120
 # Tenor    e to d
 # Bass     a to g
 
-Soprano    c/2  | c  c d  c | c/2 a/2 b/2 | a  g/2 f/2 e   | f/2
-Alto       a+/2 | a+ f f  f | e/2 d/2 d/2 | c/2 d. a/8 c/2 | c/2
-Tenor      c/2  | c  a b  a | g/2 f/2 f/2 | a c b  a/2 g   | a/2
-Bass       f/2  | f  f b+ f | c/2 d/2 b/2 | f e    d/2 c/2 | f/2
+Soprano    c/2  | c  c d  c | c/2 a/2 b/2 | a  g/2 f/2 e   | f/2(0.2)
+Alto       a+/2 | a+ f f  f | e/2 d/2 d/2 | c/2 d. a/8 c/2 | c/2(0.2)
+Tenor      c/2  | c  a b  a | g/2 f/2 f/2 | a c b  a/2 g   | a/2(0.2)
+Bass       f/2  | f  f b+ f | c/2 d/2 b/2 | f e    d/2 c/2 | f/2(0.2)
 
 Soprano    c/2  | c  c d  c | c/2 a/2 b/2 | a  g/2 f/2 e   | f/2
 Alto       a+/2 | a+ f f  f | e/2 d/2 d/2 | c/2 d. a/8 c/2 | c/2

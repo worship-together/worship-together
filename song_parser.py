@@ -50,7 +50,7 @@ def create_note(voice, octave_shift, short_name, accidental):
 	if short_name == 'R':
 		octave = ''
 	else:
-		if voice == 'soprano':
+		if voice == 'soprano' or voice == 'unison':
 			octave = 5 if short_name >= 'C' and short_name <= 'D' else 4
 		elif voice == 'alto':
 			octave = 3 if short_name >= 'A' and short_name <= 'B' else 4
@@ -117,7 +117,7 @@ def parse_line(line, attributes):
 				attributes['beats_per_measure'] = int(beats_per_measure)
 				attributes['beat_value'] = int(beat_value)
 				value = raw_value
-			elif name in ['soprano', 'alto', 'tenor', 'bass']:
+			elif name in ['soprano', 'alto', 'tenor', 'bass', 'unison']:
 				value = attributes[name] if name in attributes else []
 				value += parse_notes(attributes['beat_value'], name, raw_value)
 			else:
@@ -136,11 +136,15 @@ def parse_song(filename):
 				raise RuntimeError(
 					f'Error parsing file {filename}@{number+1}: {line} ' +
 					str(e))
-		attributes['measures'] = [measure for measure in
-		                          zip(attributes['soprano'],
-		                              attributes['alto'],
-		                              attributes['tenor'],
-		                              attributes['bass'])]
+		if 'unison' in attributes:
+			attributes['measures'] = [(measure, [], [], [])
+			                          for measure in attributes['unison']]
+		else:
+			attributes['measures'] = [measure for measure in
+		                            zip(attributes['soprano'],
+		                                attributes['alto'],
+		                                attributes['tenor'],
+		                                attributes['bass'])]
 		song = NewSong(attributes)
 		#print(song.measures)
 		return song

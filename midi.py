@@ -84,7 +84,8 @@ class VoiceStream:
 						yield events.NoteOffEvent(self.voice, off, note.pitch,
 						                          self.velocity)
 					tick += note_ticks
-				self.verify_beats_per_measure(measure_num, total_measure_beats)
+				if total_measure_beats > 0:
+					self.verify_beats_per_measure(measure_num, total_measure_beats)
 
 	def verify_beats_per_measure(self, measure_num, total_measure_beats):
 		# TBD: should not count note beats, but note values
