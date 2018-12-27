@@ -124,5 +124,3 @@ class MyView(ui.View):
 		self.sv.content_size = (calculate_length(), h)
 		self.sv.add_subview(music_view)
 		self.add_subview(self.sv)
-view = MyView()
-view.present('fullscreen')

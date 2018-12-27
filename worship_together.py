@@ -1,8 +1,4 @@
 import ui
-import itertools
-import struct
-import os
-import importlib
 import sound
 import midi
 import sheet_music
@@ -15,14 +11,14 @@ tracking_song = False
 dragging = False
 last_position = 0.0000000
 satb_page = None
+song = None
 
 def bring_up_sheet_music(sender):
 	sheet_music.song = song
 	music = sheet_music.MyView()
 	music.present('fullscreen')
 
-
-def write_midi(song, player):
+def write_midi(song):
 	song.write_midi('output.midi', [
 		int(get_subview('soprano_volume').value * 120), 
 		int(get_subview('alto_volume').value * 120), 
@@ -40,6 +36,10 @@ def stop():
 		player.stop()
 
 
+def playing():
+	return get_subview('play_button').title == 'Pause'
+	
+	
 def get_subview(name):
 	for subview in satb_page.subviews:
 		if subview.name == name:
@@ -47,7 +47,7 @@ def get_subview(name):
 	raise RuntimeError(f'nutn is namd {name}')
 
 def track_time(slider):
-	global player, dragging, last_position, rate
+	global player, dragging, last_position, rate, position
 	if player and not dragging:
 		if slider.value == last_position:
 			slider.value = player.current_time / player.duration
@@ -60,10 +60,6 @@ def track_time(slider):
 		else:
 			dragging = True
 			position = player.current_time
-			# if is_playing:
-			# 	was_playing = True
-			# 	stop()
-			# rate = get_subview('tempo_slider').value + 
 	if exiting:
 		stop()
 	else:
@@ -81,51 +77,36 @@ def adjust_time(slider):
 		position = player.current_time
 		last_position = slider.value
 		dragging = False
-		# if was_playing:
-		# 	was_playing = False
-		# 	play()
-		# get_subview('time_adjuster').value = player.current_time / player.duration
-		# print(last_position)
-		# print(get_subview('time_adjuster').value)
-		# write_midi(song, player)
-		# player = sound.MIDIPlayer('output.midi')
-		# if position == player.duration:
-		# 	player.current_time = 0
-		# else:
-		# 	player.current_time = position
-		# player.play()
-		# player.rate = get_subview('tempo_slider').value + 0.5
-	
+		
 
 def play_pause(sender):
 	global song, player, rate, position
-	if sender.title == 'Pause':
+	if playing():
 		sender.title = 'Play'
 		position = player.current_time
 		rate = player.rate
 		stop()
 	else:
 		sender.title = 'Pause'
-		write_midi(song, player)
+		write_midi(song)
 		player = sound.MIDIPlayer('output.midi')
-		if position == player.duration:
-			player.current_time = 0
-		else:
-			player.current_time = position
+		adjust_time(get_subview('time_adjuster'))
 		play()
 		player.rate = get_subview('tempo_slider').value + 0.5
 		
 		
 def adjust_volume(sender):
-	play_pause(get_subview('play_button'))
-	play_pause(get_subview('play_button'))
+	global player
+	if player != None and playing():
+		play_pause(get_subview('play_button'))
+		play_pause(get_subview('play_button'))
 
 
 
 def present_song(sender):
 	global song, player, tracking_song, position, dragging, last_position
 	song = sender.items[sender.selected_row]
-	write_midi(song, player)
+	# write_midi(song)
 	play_button = get_subview('play_button')
 	if play_button.title == 'Pause':
 		play_pause(play_button)
@@ -147,8 +128,6 @@ class StartScreen(ui.View):
 	def will_close(self):
 		global exiting
 		exiting = True
-		if player:
-			stop()
 
 
 satb_page = ui.load_view('midi_ui')
