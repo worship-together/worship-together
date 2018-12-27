@@ -101,11 +101,21 @@ service = FileService(
     account_key='33TG6/7zK8TmKHmlSRthHpGxve8YJfu3M9ut77vn0lUy'
                 'B2ZQqfL8ZdDiucbB8MAyg59707Mcxywhy2fFG/ISZA==')
 share = 'songs'
+upload_suffix = ".UPLOAD"
+
+
+def upload_files(local_dir, remote_dir):
+    for file in os.listdir(local_dir):
+        if file.endswith(upload_suffix):
+            new_name = file[:-(len(upload_suffix))]
+            old_path = local_dir+'/'+file
+            new_path = local_dir+'/'+new_name
+            os.rename(old_path, new_path)
+            service.create_file_from_path(share, remote_dir, new_name, new_path)
 
 
 def synchronize(local_dir, remote_dir):
-    pass
-
+    upload_files(local_dir, remote_dir)
 
 #
 # VERIFICATION
@@ -119,6 +129,8 @@ def delete_all_local_and_remote():
         shutil.rmtree(test_dir)
     os.mkdir(test_dir)
     if service.exists(share, test_dir):
+        for file in service.list_directories_and_files(share, test_dir):
+            service.delete_file(share, test_dir, file.name)
         service.delete_directory(share, test_dir)
     service.create_directory(share, test_dir)
 
@@ -134,8 +146,12 @@ def verify_file_uploaded(name, content):
         assert not file_found
         assert file.name == name
         file_found = True
-        remote_content = service.get_file_to_text(share, test_dir, name)
-        assert remote_content == content
+        remote = service.get_file_to_text(share, test_dir, name)
+        if remote.content != content:
+            print(f'remote content different from local content for {name}:')
+            print(f'remote content: {remote.content}')
+            print(f'local content: {content}')
+            assert remote.content == content
     assert file_found
 
 
@@ -173,6 +189,13 @@ def test_local_to_remote_upload():
 
 if __name__ == '__main__':
     test_local_to_remote_upload()
+    #service.create_file_from_text('songs', '', f'a,\'blah', 'Verse: Hello')
+    #verify_file_uploaded(f'a,\'blah', 'Verse: Hello')
+    #service.copy_file()
+    #service.delete_file()
+    #service.copy_file(self, share_name, directory_name, file_name, copy_source, metadata, timeout)
+    #service.delete_file(self, share_name, directory_name, file_name, timeout)
+    #service.create_file(self, share_name, directory_name, file_name, content_length, content_settings, metadata, timeout)
 
 
 #
