@@ -14,8 +14,7 @@ satb_page = None
 song = None
 
 def bring_up_sheet_music(sender):
-	sheet_music.song = song
-	music = sheet_music.MyView()
+	music = sheet_music.MyView(song)
 	music.present('fullscreen')
 
 def write_midi(song):

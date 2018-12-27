@@ -6,7 +6,6 @@ notes_drawn = 0
 screen_padding = 1/6#of the screen
 note_gap = 125
 origin = 100
-song = [song for song in midi.songs if '219' in str(song)][0]
 
 treble_lines = []
 bass_lines = []
@@ -36,8 +35,7 @@ assert create_index('C8') == 56
 assert create_index('R') == -1
 
 
-def calculate_length():
-	global origin, song
+def calculate_length(song):
 	end = origin
 	for measure in song.measures:
 		voice_selected = measure[midi.Voice.Soprano]
@@ -51,25 +49,24 @@ def calculate_length():
 			
 
 class MusicView(ui.View):
-	def __init__(self, width=1024, height=1024):
+	def __init__(self, song, width=1024, height=1024):
+		self.song = song
+		self.width = width
 		self.frame = (0, 0, width, height)
 		self.bg_color = 'white'
 				
 	def draw(self):
-		global origin, song
-			
-		
-		self.draw_notes(midi.Voice.Soprano, song.measures, C0_treble_y, 1)
-		self.draw_notes(midi.Voice.Alto, song.measures, C0_treble_y, -1)
-		self.draw_notes(midi.Voice.Tenor, song.measures, C0_bass_y, 1)
-		self.draw_notes(midi.Voice.Bass, song.measures, C0_bass_y, -1)
+		self.draw_notes(midi.Voice.Soprano, self.song.measures, C0_treble_y, 1)
+		self.draw_notes(midi.Voice.Alto, self.song.measures, C0_treble_y, -1)
+		self.draw_notes(midi.Voice.Tenor, self.song.measures, C0_bass_y, 1)
+		self.draw_notes(midi.Voice.Bass, self.song.measures, C0_bass_y, -1)
 				
 		self.staff = ui.Path()
 		for i in range(0, 5):
 			self.staff.move_to(0, treble_lines[i])
-			self.staff.line_to(calculate_length(), treble_lines[i])
+			self.staff.line_to(self.width, treble_lines[i])
 			self.staff.move_to(0, bass_lines[i])
-			self.staff.line_to(calculate_length(), bass_lines[i])
+			self.staff.line_to(self.width, bass_lines[i])
 			
 		self.staff.stroke()
 	
@@ -110,17 +107,13 @@ class MusicView(ui.View):
 				position += note_gap * note_beats
 
 
-			
-			
-music_view = MusicView(calculate_length(), screen_height)
-
-
 class MyView(ui.View):
-	def __init__(self):
+	def __init__(self, song):
 		w, h = ui.get_screen_size()
 		self.sv = ui.ScrollView()
 		self.sv.width = w
 		self.sv.height = h
-		self.sv.content_size = (calculate_length(), h)
-		self.sv.add_subview(music_view)
+		length = calculate_length(song)
+		self.sv.content_size = (length, h)
+		self.sv.add_subview(MusicView(song, length, screen_height))
 		self.add_subview(self.sv)
