@@ -14,8 +14,7 @@ satb_page = None
 song = None
 
 def bring_up_sheet_music(sender):
-	sheet_music.song = song
-	music = sheet_music.MyView()
+	music = sheet_music.MyView(song)
 	music.present('fullscreen')
 
 def write_midi(song):
@@ -143,3 +142,4 @@ table.row_height = 40
 table.frame = 0, 0, screen_width, len(midi.songs) * table.row_height
 start_screen.add_subview(table)
 start_screen.present('fullscreen')
+
