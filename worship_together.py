@@ -2,6 +2,8 @@ import ui
 import sound
 import midi
 import sheet_music
+import storage
+from objc_util import *
 
 exiting = False
 player = None
@@ -135,6 +137,16 @@ start_screen = StartScreen()
 start_screen.background_color = 'white'
 
 table = ui.TableView()
+btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:coffee_32']]
+btn_container = ui.View(frame=(0, 0, len(btn_images)*32, 44))
+btn = ui.Button(image=ui.Image.named('iob:loop_256'))
+btn.frame = (64, 0, 32, 44)
+btn.action = storage.synchronize()
+btn_container.add_subview(btn)
+
+btn_item = ui.ButtonItem()
+btn_item_objc = ObjCInstance(btn_item)
+btn_item_objc.customView = ObjCInstance(btn_container)
 song_list = ui.ListDataSource(midi.songs)
 song_list.action = present_song
 table.data_source = table.delegate = song_list
@@ -142,4 +154,5 @@ screen_width, screen_height = ui.get_screen_size()
 table.row_height = 40
 table.frame = 0, 0, screen_width, len(midi.songs) * table.row_height
 start_screen.add_subview(table)
+start_screen.right_button_items = [btn_item]
 start_screen.present('fullscreen')
