@@ -140,7 +140,7 @@ btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:c
 btn_container = ui.View(frame=(0, 0, len(btn_images)*32, 44))
 btn = ui.Button(image=ui.Image.named('iob:loop_256'))
 btn.frame = (64, 0, 32, 44)
-btn.action = storage.synchronize()
+btn.action = lambda sender: storage.synchronize('songs', 'songs')
 btn_container.add_subview(btn)
 
 btn_item = ui.ButtonItem()

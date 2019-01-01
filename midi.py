@@ -104,7 +104,7 @@ class VoiceStream:
 					                   f'{self.voice.name} in measure '
 					                   f'{measure_num + 1}, expected '
 					                   f'{expected_total_time} '
-					                   f'({self.song.number} {self.song.name})')
+					                   f'({self.song})')
 
 
 def make_tick_relative(events):
@@ -163,29 +163,31 @@ def import_song(filename):
 
 
 def is_song(filename):
-	non_songs = ['__init__.py', 'test.py', '__pycache__']
+	non_songs = ['__init__.py', 'test.py', '__pycache__', 'last_upload']
 	return filename not in non_songs
 
 
 class Song:
 	def __init__(self, filename):
+		print(filename)
 		song_path = os.path.join('songs', filename)
 		self.module = song_parser.parse_song(song_path)
 
 	@property
-	def name(self):
-		return self.module.name
+	def title(self):
+		return self.module.title
 
 	@property
-	def number(self):
-		return self.module.number
+	def page(self):
+		return self.module.page if hasattr(self.module, 'page') else None
 
 	@property
 	def psalm(self):
 		return self.module.psalm if hasattr(self.module, 'psalm') else None
 
 	def __repr__(self):
-		return self.number + ': ' + self.name
+		prefix = (self.page + ': ') if self.page else ''
+		return prefix + self.title
 
 	def write_midi(self, filename, volumes=[60, 60, 60, 60], tempo_multiplier=1.0):
 		with open(filename, 'wb') as file:
