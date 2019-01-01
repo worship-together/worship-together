@@ -23,8 +23,9 @@ import notes
 
 class NewSong:
 	def __init__(self, attributes):
-		self.name = attributes['name']
-		self.number = attributes['number']
+		self.title = attributes['title']
+		if 'page' in attributes:
+			self.page = attributes['page']
 		self.key = attributes['key']
 		self.measures = attributes['measures']
 		self.beats_per_measure = attributes['beats_per_measure']
@@ -34,7 +35,7 @@ class NewSong:
 			self.psalm = attributes['psalm']
 
 
-attribute_re = re.compile(r'(?P<name>[a-zA-Z]+)\s+(?P<value>[^\n]+)')
+attribute_re = re.compile(r'(?P<name>[a-zA-Z\-]+)\s+(?P<value>[^\n]+)')
 note_re = re.compile(r'^'
                      r'(?P<name>[a-gR])' +
 					 r'(?P<accidental>[#bn])?'
@@ -43,8 +44,8 @@ note_re = re.compile(r'^'
                      r'(?P<dot>\.)?'
                      r'(\((?P<fermata>[0-9]+(\.[0-9]+)?)\))?'
                      r'$')
-time_signature_re = re.compile(r'(?P<beats_per_measure>[0-9])\s*:\s*'
-                               r'(?P<beat_value>[1-9])')
+rhythm_re = re.compile(r'(?P<beats_per_measure>[0-9])\s*:\s*'
+                       r'(?P<beat_value>[1-9])')
 
 
 def create_note(voice, octave_shift, short_name, accidental):
@@ -111,16 +112,23 @@ def parse_line(line, attributes):
 			name = match.group('name').lower()
 			raw_value = match.group('value')
 			if name == 'key':
+				if len(raw_value) > 1:
+					if raw_value.endswith('b'):
+						raw_value = raw_value[0:-1] + '_Flat'
+					elif raw_value.endswith('#'):
+						raw_value = raw_value[0:-1] + '_Sharp'
 				value = getattr(keys, raw_value)
-			elif name == 'signature':
-				signature = time_signature_re.match(raw_value)
-				beats_per_measure = signature.group('beats_per_measure')
-				beat_value = int(signature.group('beat_value'))
+			elif name == 'rhythm':
+				rhythm = rhythm_re.match(raw_value)
+				beats_per_measure = rhythm.group('beats_per_measure')
+				beat_value = int(rhythm.group('beat_value'))
 				attributes['beats_per_measure'] = int(beats_per_measure)
 				attributes['beat_value'] = int(beat_value)
 				value = raw_value
 			elif name in ['soprano', 'alto', 'tenor', 'bass', 'unison']:
 				value = attributes[name] if name in attributes else []
+				if 'beat_value' not in attributes:
+					raise RuntimeError('missing "rhythm" attribute')
 				value += parse_notes(attributes['beat_value'], name, raw_value)
 			else:
 				value = raw_value

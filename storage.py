@@ -150,7 +150,7 @@ def synchronize(local_dir, remote_dir):
 # VERIFICATION
 #
 
-test_dir = 'test'
+test_dir = 'test2'
 
 
 def delete_all_local_and_remote(create_dir=True):

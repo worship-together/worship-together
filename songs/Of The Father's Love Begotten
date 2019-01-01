@@ -1,17 +1,19 @@
-Name       Of the Father\'s Love Begotten
-Author     W. W. J. VanOene, 1972; rev.
-Tune       NE VEUILLES PAS, O SIRE (7 7 6, 7 7 6)
-Composer   Genevan Psalter, 1542
-Harmony    Claude Goudimel, 1564; alt.
-Number     CC 8
-Key        C
-Signature  0 : 4
-Tempo      60
+title      Of the Father's Love Begotten
+page       CC 8
+author     W. W. J. VanOene, 1972; rev.
 
-# Soporano e to d
-# Alto     a to g
-# Tenor    e to d
-# Bass     a to g
+tune       NE VEUILLES PAS, O SIRE
+metre      7 7 6, 7 7 6
+composer   Genevan Psalter, 1542
+harmony    Claude Goudimel, 1564; alt.
+key        C
+rhythm     0 : 4
+tempo      60
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
 
 Soprano    e/8 f/8 g/8 a/8  g/8 f/8 g/8 f/8 e | g/8 a/8  b/8  c/8  b/8  g/8  a/8  b
 Alto       e/8 f/8 g/8 a+/8 g/8 f/8 g/8 f/8 e | g/8 a+/8 b+/8 c+/8 b+/8 g+/8 a+/8 b+

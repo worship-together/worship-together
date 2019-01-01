@@ -7,14 +7,19 @@ from notes import *
 import keys
 import midi
 
-midi.Song('cc_008').write_midi('cc_008.midi', [60, 60, 60, 60])
-midi.Song('cc_345').write_midi('cc_345.midi', [60, 60, 60, 60])
-midi.Song('cc_150.py').write_midi('cc_150.midi', [60, 60, 60, 60])
-midi.Song('cc_182.py').write_midi('cc_182.midi', [60, 60, 60, 60])
-midi.Song('cc_192.py').write_midi('cc_192.midi', [60, 60, 60, 60])
-midi.Song('cc_334.py').write_midi('cc_334.midi', [60, 60, 60, 60])
-midi.Song('cc_368.py').write_midi('cc_368.midi', [60, 60, 60, 60])
-midi.Song('cc_074.py').write_midi('cc_074.midi', [60, 60, 60, 60])
+def song_file(prefix):
+	return os.path.basename(glob.glob('songs/' + prefix)[0])
+
+midi.Song(song_file('008*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('219*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('242*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('246*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('250*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('312*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('345*')).write_midi('345.midi', [60, 60, 60, 60])
+midi.Song(song_file('416*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('Of The Father*')).write_midi('008.midi', [60, 60, 60, 60])
+midi.Song(song_file('On This Day*')).write_midi('008.midi', [60, 60, 60, 60])
 
 
 def generate_midi(input):
@@ -48,72 +53,38 @@ def test_song(filename):
 
 
 # ****************************************************************************
-#  Old File Format
-#
-name = "Test Song"
-number = "test.py"
-Author = "The Book of Psalms for Singing, 1973"
-key = keys.C
-beats_per_measure = 4
-tempo = 120
-
-measures = [
-    [
-        [E4(2), E4, E4],
-        [C4(2), C4, C4],
-        [G3(2), G3, G3],
-        [C3(2), C3, C3]
-    ],
-    [
-        [G4(3), C5],
-        [E4(3), C4],
-        [C4(3), G3],
-        [C3(3), E3]
-    ],
-    [
-        [C5, A4, A4, F4],
-        [F4(2), F4, D4],
-        [A3, C4, C4, A3],
-        [F3(2), F3(2)]
-    ],
-    [
-        [E4(2), D4, R],
-        [C4(2), B3, R],
-        [G3(3), R],
-        [G3(3), R]
-    ]
-]
-
-
-# ****************************************************************************
 #
 #  New File Format
 #
 
 new_file_format = """
-Name       Test Song
-Number     test
-Author     The Book of Psalms for Singing, 1973
-Tune       WESLEY (L.M.)
-Composer   Isaac B. Woodbury
-Key        C
-Signature  4:4
-Tempo      120
+title      Test Song
+page       342
+author     The Book of Psalms for Singing, 1973
 
-Soprano    e/2 e e | g/2. c+ | c+ a a f | e/2 d R | d#/1               | a
-Alto       c/2 c c | e/2. c  | f/2  f d | c/2 b R | bb. c/8 d/2        | b
-Tenor      g/2 g g | c/2. g  | a  c c a | g/2.  R | en-(3) f/2.        | c
-Bass       c/1 | c/1  | f/1 | g/1   | g#+/32.(1.2) f/64 a/16 c/8 d e f | d
+tune       WESLEY (L.M.)
+composer   Isaac B. Woodbury
+key        C
+rhythm     4:4
+tempo      120
 
-Verse      With all my heart my thanks I'll bring,
-Verse      For though a - bove Thy name a - dored
-Verse      All kings of earth shall thanks ac - cord 
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    e/2 e e | g/2. c+ | c+ a a f | e/2 d R | d#/1               | a
+alto       c/2 c c | e/2. c  | f/2  f d | c/2 b R | bb. c/8 d/2        | b
+tenor      g/2 g g | c/2. g  | a  c c a | g/2.  R | en-(3) f/2.        | c
+bass       c/1 | c/1  | f/1 | g/1   | g#+/32.(1.2) f/64 a/16 c/8 d e f | d
+
+verse      With all my heart my thanks I'll bring,
+verse      For though a - bove Thy name a - dored
+verse      All kings of earth shall thanks ac - cord 
 """
 
 if __name__ == '__main__':
 	try:
-		shutil.copy('test.py', 'songs/test.py')
-		test_song('test.py')
 		with open('songs/test', 'w') as song_file:
 			song_file.write(new_file_format)
 		test_song('test')

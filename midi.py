@@ -169,11 +169,8 @@ def is_song(filename):
 
 class Song:
 	def __init__(self, filename):
-		if filename.lower().endswith('.py'):
-			self.module = import_song(filename)
-		else:
-			song_path = os.path.join('songs', filename)
-			self.module = song_parser.parse_song(song_path)
+		song_path = os.path.join('songs', filename)
+		self.module = song_parser.parse_song(song_path)
 
 	@property
 	def name(self):

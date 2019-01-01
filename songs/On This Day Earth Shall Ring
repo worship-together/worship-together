@@ -1,43 +1,43 @@
-Name       On This Day Earth Shall Ring
-Author     anon. 16th Century
-Translator Jane M. Joseph
-Tune       Personent Hodie
-Composer   anon. 16th Century 
-Harmony    Edward L Stauff
-Number     M 1
-Key        C
-Signature  4 : 4
-Tempo      180
+title      On This Day Earth Shall Ring
+author     anon. 16th Century
+translator Jane M. Joseph
 
-# Soporano e to d
-# Alto     a to g
-# Tenor    e to d
-# Bass     a to g
+tune       Personent Hodie
+composer   anon. 16th Century
+harmony    Edward L Stauff
+key        C
+rhythm     4 : 4
+tempo      180
 
-Soprano    d- d- a/2 | g  g  a/2  | a a d/2 | b c a/2 | g a c/2
-Alto       d  d  d/2 | d  d  e/2  | f f f/2 | d e c/2 | e e e/2
-Tenor      f  f  a/2 | bb bb a/2  | a a a/2 | g g c/2 | c c c/2
-Bass       d  d  f/2 | e  e  c#/2 | d d f/2 | g g f/2 | c c a/2
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
 
-Soprano    g a f/2 | e d- e c- | d-/2 d-/2 | e f g c- | d-/2 d-/2
-Alto       e e c/2 | c d  c a  | a/2  a/2  | c c c c  | b/2  b/2
-Tenor      b c a/2 | g g  e e  | f/2  f/2  | g g g e  | g/2  g/2
-Bass       e e f/2 | c b  a a  | d/2  d/2  | c d e c  | g-/2 g-/2
+soprano    d- d- a/2 | g  g  a/2  | a a d/2 | b c a/2 | g a c/2
+alto       d  d  d/2 | d  d  e/2  | f f f/2 | d e c/2 | e e e/2
+tenor      f  f  a/2 | bb bb a/2  | a a a/2 | g g c/2 | c c c/2
+bass       d  d  f/2 | e  e  c#/2 | d d f/2 | g g f/2 | c c a/2
 
-Soprano    e f g/2 | g/2 g/2 | f g a/2 | a/2 a/2 | e f g/2 | f e  d-/2 | e d- d- c- | d-/2 d-/2
-Alto       c c c/2 | c/2 b/2 | d d d/2 | d/2 c/2 | c d e/2 | d c# d/2  | c d  a  a  | a/2  a/2
-Tenor      g g g/2 | g/2 g/2 | a a a/2 | a/2 a/2 | g g c/2 | a a  a/2  | g g  e  e  | f/2  f/2
-Bass       c d e/2 | e/2 e/2 | d e f/2 | f/2 f/2 | e d c/2 | d e  f/2  | c b  a  a  | d/2  d/2
+soprano    g a f/2 | e d- e c- | d-/2 d-/2 | e f g c- | d-/2 d-/2
+alto       e e c/2 | c d  c a  | a/2  a/2  | c c c c  | b/2  b/2
+tenor      b c a/2 | g g  e e  | f/2  f/2  | g g g e  | g/2  g/2
+bass       e e f/2 | c b  a a  | d/2  d/2  | c d e c  | g-/2 g-/2
 
-Verse      On    this   day      earth shall ring   with  the   song  chil - dren  sing   to     the  Lord,
-Verse      His   the    doom,    ours  the   mirth; when  he    came  down   to    earth, Beth - le - hem
-Verse      God's bright start,   o'er  his   head,  Wise  Men   three to     him   led;   kneel  they low
-Verse      On    this   day.     an -  gels  sing;  with  their song  earth  shall ring,  prai - sing  Christ,
+soprano    e f g/2 | g/2 g/2 | f g a/2 | a/2 a/2 | e f g/2 | f e  d-/2 | e d- d- c- | d-/2 d-/2
+alto       c c c/2 | c/2 b/2 | d d d/2 | d/2 c/2 | c d e/2 | d c# d/2  | c d  a  a  | a/2  a/2
+tenor      g g g/2 | g/2 g/2 | a a a/2 | a/2 a/2 | g g c/2 | a a  a/2  | g g  e  e  | f/2  f/2
+bass       c d e/2 | e/2 e/2 | d e f/2 | f/2 f/2 | e d c/2 | d e  f/2  | c b  a  a  | d/2  d/2
 
-Verse      Christ our   King,  born on    earth to   save us,  him    the Fa - ther  gave us.
-Verse      saw    his   birth; ox   and   ass   be - side him  from   the cold would hide him.
-Verse      by     his   bed,   lay  their gifts be - fore him, praise him and  a -   dore him.
-Verse      hea -  ven's King,  born on    earth to   save us;  peace  and love he    gave us.
+verse      On    this   day      earth shall ring   with  the   song  chil - dren  sing   to     the  Lord,
+verse      His   the    doom,    ours  the   mirth; when  he    came  down   to    earth, Beth - le - hem
+verse      God's bright start,   o'er  his   head,  Wise  Men   three to     him   led;   kneel  they low
+verse      On    this   day.     an -  gels  sing;  with  their song  earth  shall ring,  prai - sing  Christ,
 
-Verse      Id - e - o - o - o, id - e - o - o - o, Id - e - o glo - ri - a in ex - cel - sis De - o!
+verse      Christ our   King,  born on    earth to   save us,  him    the Fa - ther  gave us.
+verse      saw    his   birth; ox   and   ass   be - side him  from   the cold would hide him.
+verse      by     his   bed,   lay  their gifts be - fore him, praise him and  a -   dore him.
+verse      hea -  ven's King,  born on    earth to   save us;  peace  and love he    gave us.
+
+verse      Id - e - o - o - o, id - e - o - o - o, Id - e - o glo - ri - a in ex - cel - sis De - o!
 
