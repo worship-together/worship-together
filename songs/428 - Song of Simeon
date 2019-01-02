@@ -11,12 +11,19 @@ key        D
 rhythm     0 : 4
 tempo      180
 
-voice      soprano E4 to D5
+voice      unison E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano
-alto
-tenor
-bass
+unison     d-/2 d- d- d- f g a b a a b d c b/2 a a a f g e d-/2
+
+unison     d- d- d- d- f f g a b a a b d c b/2 a a a
+
+unison     f g f d- e e d-/2 d- a/2 g f e f a b a/2
+
+unison     a b a g f e a d- g f e d- d-/2 a a f f g a a
+
+unison     a a b a f f f g e d-/2 a a d- g f e f f
+
+unison     a a b a g f e f f f e a f d- g f e d-/2
