@@ -1,7 +1,18 @@
-import midi
+#!/usr/bin/env python3
+"""
+Test Song Parsing
+
+Usage:
+	test.py [--upload | --delete] [<song> ...]
+
+Options:
+	--upload      Upload specified song(s) to remote
+	--delete      Delete specified song(s) from local and remote
+"""
+
 import os
-import shutil
 import glob
+import docopt
 
 from notes import *
 import keys
@@ -83,23 +94,55 @@ verse      For though a - bove Thy name a - dored
 verse      All kings of earth shall thanks ac - cord 
 """
 
-if __name__ == '__main__':
+
+def run_storage_tests():
 	try:
 		with open('songs/test', 'w') as song_file:
 			song_file.write(new_file_format)
 		test_song('test')
 		song = midi.Song('test')
 		assert type(song.measures[-2][midi.Voice.Soprano.value][0]) == D5s
-		assert      song.measures[-2][midi.Voice.Soprano.value][0].beats == 4
+		assert song.measures[-2][midi.Voice.Soprano.value][0].beats == 4
 		assert type(song.measures[-2][midi.Voice.Alto.value][0]) == B3b
-		assert      song.measures[-2][midi.Voice.Alto.value][1].beats == 0.5
-		assert      song.measures[-2][midi.Voice.Alto.value][2].beats == 2.0
+		assert song.measures[-2][midi.Voice.Alto.value][1].beats == 0.5
+		assert song.measures[-2][midi.Voice.Alto.value][2].beats == 2.0
 		assert type(song.measures[-2][midi.Voice.Tenor.value][0]) == E2n
-		assert      song.measures[-2][midi.Voice.Tenor.value][0].beats == 1.0
+		assert song.measures[-2][midi.Voice.Tenor.value][0].beats == 1.0
 		assert song.measures[-2][midi.Voice.Tenor.value][0].fermata_beats == 3.0
 		assert type(song.measures[-2][midi.Voice.Bass.value][0]) == G4s
-		assert      song.measures[-2][midi.Voice.Bass.value][0].beats == 0.1875
+		assert song.measures[-2][midi.Voice.Bass.value][0].beats == 0.1875
 		assert song.measures[-2][midi.Voice.Bass.value][0].fermata_beats == 1.2
-		print('success')
 	finally:
 		delete_midi()
+
+
+def upload(songs):
+	pass
+
+
+def download(songs):
+	pass
+
+
+def test(songs):
+	for song in songs:
+		if not os.path.exists(song):
+			exit('Song "' + song + '" does not exist.')
+		print('Testing ' + song)
+		try:
+			test_song(os.path.basename(song))
+		finally:
+			delete_midi()
+
+
+if __name__ == '__main__':
+	arguments = docopt.docopt(__doc__)
+	if arguments['--upload']:
+		upload(arguments['<song>'])
+	elif arguments['--delete']:
+		download(arguments['<song>'])
+	elif arguments['<song>']:
+		test(arguments['<song>'])
+	else:
+		run_storage_tests()
+	print('success')
