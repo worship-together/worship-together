@@ -15,7 +15,15 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano
+soprano    d-/2 f e | d-/2 f a | b/2 b/2 | a/1
 alto
 tenor
 bass
+
+soprano    a/2 b c | d/2 c b | a/2 f/2 | e/1
+alto
+tenor
+
+soprano    f/2 f e | d- b- d- e | f/2 a2 | b/1
+
+soprano    b/2 d b | a/2 f d- | f/2 e/2 | d-/1
