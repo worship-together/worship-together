@@ -17,10 +17,10 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-unison    d- e f g | a/2  a g | a/2 a/2 | a a b c |
+unison    d- e f g | a/2  a g | a/2 a/2 | a a b c
 
-unison    b/2  a g | a/1      | d e f g | a/2 a g | a/2 a/2 |
+unison    b/2  a g | a/1      | d e f g | a/2 a g | a/2 a/2
 
-unison    a a ab c | b/2  a g | a/1     | a a d a |
+unison    a a ab c | b/2  a g | a/1     | a a d a
 
-unison    g/2.   f | d- f a f | e/1     | a a d a | g/2 e f | d-/1 |
+unison    g/2.   f | d- f a f | e/1     | a a d a | g/2 e f | d-/1
