@@ -106,6 +106,11 @@ upload_suffix = ".UPLOAD"
 delete_suffix = ".DELETE"
 
 
+def upload_file(remote_dir, remote_file, local_file_path):
+	service.create_file_from_path(share, remote_dir,
+	                              remote_file, local_file_path)
+
+
 def upload_files(local_dir, remote_dir):
 	for file in os.listdir(local_dir):
 		if file.endswith(upload_suffix):
@@ -113,7 +118,7 @@ def upload_files(local_dir, remote_dir):
 			old_path = local_dir+'/'+file
 			new_path = local_dir+'/'+new_name
 			os.rename(old_path, new_path)
-			service.create_file_from_path(share, remote_dir, new_name, new_path)
+			upload_file(remote_dir, new_name, new_path)
 			
 			
 def download_files(local_dir, remote_dir):
@@ -133,12 +138,17 @@ def download_files(local_dir, remote_dir):
 #        if not service.exists(share, directory_name=remote_dir, file_name=file):
 #            os.remove(local_dir+'/'+file)
 
+
+def delete_remote_file(remote_dir, remote_file):
+	service.delete_file(share, remote_dir, remote_file)
+
+
 def delete_files(local_dir, remote_dir):
 	for file in os.listdir(local_dir):
 		if file.endswith(delete_suffix) or not service.exists(share, directory_name=remote_dir, file_name=file):
 			os.remove(local_dir+'/'+file)
 			if service.exists(share, directory_name=remote_dir, file_name=file[:-(len(delete_suffix))]):
-				service.delete_file(share, remote_dir, file[:-(len(delete_suffix))])
+				delete_remote_file(remote_dir, file[:-(len(delete_suffix))])
 				
 				
 def synchronize(local_dir, remote_dir):
@@ -281,7 +291,12 @@ def test_remote_to_local_download():
 	assert not remote_file_exists('file b')
 	
 	
-	
+
+def list_all_remote_files(remote_dir):
+	for file in service.list_directories_and_files(share, remote_dir):
+		print(file.name)
+
+
 	# create_remote_file('file a', 'content a')
 	# create_remote_file('file b', 'content b')
 	# create_local_file('file c', 'content c')

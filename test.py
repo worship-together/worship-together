@@ -3,11 +3,12 @@
 Test Song Parsing
 
 Usage:
-	test.py [--upload | --delete] [<song> ...]
+	test.py [--upload | --delete | --list] [<song> ...]
 
 Options:
 	--upload      Upload specified song(s) to remote
-	--delete      Delete specified song(s) from local and remote
+	--delete      Delete specified song(s) from remote
+	--list        List all songs on remote
 """
 
 import os
@@ -17,6 +18,7 @@ import docopt
 from notes import *
 import keys
 import midi
+import storage
 
 def song_file(prefix):
 	return os.path.basename(glob.glob('songs/' + prefix)[0])
@@ -116,31 +118,48 @@ def run_storage_tests():
 		delete_midi()
 
 
+def check_songs(songs):
+	for song in arguments['<song>']:
+		if not os.path.exists(song):
+			exit('Song "' + song + '" does not exist.')
+
+
+def test_and_delete_midi(song):
+	try:
+		print('Testing ' + song)
+		test_song(os.path.basename(song))
+	finally:
+		delete_midi()
+
+
 def upload(songs):
-	pass
+	for song in songs:
+		test_and_delete_midi(song)
+		print('Uploading ' + song)
+		storage.upload_file('songs', os.path.basename(song), song)
 
 
-def download(songs):
-	pass
+def delete(songs):
+	for song in songs:
+		print('Deleting ' + song)
+		storage.delete_remote_file('songs', os.path.basename(song))
 
 
 def test(songs):
 	for song in songs:
-		if not os.path.exists(song):
-			exit('Song "' + song + '" does not exist.')
-		print('Testing ' + song)
-		try:
-			test_song(os.path.basename(song))
-		finally:
-			delete_midi()
+		test_and_delete_midi(song)
 
 
 if __name__ == '__main__':
 	arguments = docopt.docopt(__doc__)
-	if arguments['--upload']:
+	if arguments['<song>']:
+		check_songs(arguments['<song>'])
+	if arguments['--list']:
+		storage.list_all_remote_files('songs')
+	elif arguments['--upload']:
 		upload(arguments['<song>'])
 	elif arguments['--delete']:
-		download(arguments['<song>'])
+		delete(arguments['<song>'])
 	elif arguments['<song>']:
 		test(arguments['<song>'])
 	else:
