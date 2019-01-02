@@ -1,12 +1,13 @@
 title      Let All Mortal Flesh Keep Silence
 hymnal     Cantus Christi
 page       241
-author
+author     Liturgy of St. James
+translator Gerard Moultrie, 1864
 
-tune
-metre
-composer
-harmony
+tune       PICARDY
+metre      8 7. 8 7. 8 7
+composer   French traditional carol, 17th century
+harmony    arr. Ralph Vaughan Williams, 1906
 key        F
 rhythm     4 : 4
 tempo      180
@@ -16,6 +17,10 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-unison    d- e f g | a/2 a g | a/2 a/2 | a a b c |
+unison    d- e f g | a/2  a g | a/2 a/2 | a a b c |
 
-unison    b/2  a g | a/1     | d e f g | a/2 a g |
+unison    b/2  a g | a/1      | d e f g | a/2 a g | a/2 a/2 |
+
+unison    a a ab c | b/2  a g | a/1     | a a d a |
+
+unison    g/2.   f | d- f a f | e/1     | a a d a | g/2 e f | d-/1 |
