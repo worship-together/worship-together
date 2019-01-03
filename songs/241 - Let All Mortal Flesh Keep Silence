@@ -12,10 +12,11 @@ key        F
 rhythm     4 : 4
 tempo      180
 
-voice      unison  E4 to D5
+voice      soprano  E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+voice      unison  E4 to D5
 
 unison    d- e f g | a/2  a g | a/2 a/2 | a a b c
 
