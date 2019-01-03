@@ -151,8 +151,7 @@ song_list.action = present_song
 table.data_source = table.delegate = song_list
 screen_width, screen_height = ui.get_screen_size()
 table.row_height = 40
-table.frame = 0, 0, screen_width, len(midi.songs) * table.row_height
+table.frame = 0, 0, screen_width, screen_height - 64
 start_screen.add_subview(table)
 start_screen.right_button_items = [btn_item]
 start_screen.present('fullscreen')
-
