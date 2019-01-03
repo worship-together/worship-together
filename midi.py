@@ -169,7 +169,6 @@ def is_song(filename):
 
 class Song:
 	def __init__(self, filename):
-		print(filename)
 		song_path = os.path.join('songs', filename)
 		self.module = song_parser.parse_song(song_path)
 
