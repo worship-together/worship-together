@@ -1,0 +1,32 @@
+title      Silent Night, Holy Night
+hymnal     Cantus Christi
+page       245
+author     Joseph Mohr, 1818
+translator John Freeman Young, 1863
+
+tune       STILLE NACHT
+metre      Irregular
+composer   Franz Gruber, 1818
+key        Bb
+rhythm     6 : 4
+tempo      180
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    f. g/8 f d-/2. | f. g/8 f d-/2. | c/2 c a/2. | b/2 b f/2. | g/2 g b. a/8 g
+alto       d. e/8 d b/2.  | d. e/8 d b/2.  | e/2 e e/2. | d/2 d d/2. | e/2 e g. f/8 e
+tenor      b/2    b f/2.  | b/2    b f/2.  | a/2 a c/2. | b/2 f b/2. | b/2 b g. a/8 b
+bass       b/2    b b/2.  | b/2    b b/2.  | f/2 f f/2. | b/2 b b/2. | e/2 e e/2    e
+
+soprano    f. g/8 f d-/2. | g/2 g b. a/8 g | f. g/8 f d-/2.
+alto       d. e/8 d b/2.  | b/2 e g. f/8 e | d. e/8 d b/2.
+tenor      b. b/8 b f/2.  | e/2 b g. a/8 b | b. b/8 b f/2.
+bass       b. b/8 b b/2.  | e/2 e e. e/8 e | b. b/8 b b/2.
+
+soprano    c/2 c e+. c/8 a | b/2. d/2. | b f d- f. e/8 c- | b-/1.
+alto       e/2 e c.  e/8 e | d/2. f/2. | d/2 b  a. a/8 a  | b/1.
+tenor      a/2 a a.  a/8 c | b/2. b/2. | f/2 f  f. f/8 e  | d/1.
+bass       f/2 f f.  f/8 f | b/2. b/2. | b/2 b  f. f/8 f  | b/1.

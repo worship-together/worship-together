@@ -1,0 +1,41 @@
+title      The First Noel
+hymnal     Cantus Christi
+page       248
+author     English carol from Davies Gilbert's "Some Ancient Christmas Carols", 1823
+
+tune       THE FIRST NOWELL
+metre      Irregular
+composer   Traditional English carol from William Sandys' "Christmas Carols, Ancient and Modern", 1833
+key        D
+rhythm     3 : 4
+tempo      180
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    f/8 e/8 | d-. e/8 f/8 g/8 | a/2  b/8 c/8 | d  c  b       | a/2  b/8 c/8
+alto       c       | d/2     d       | e/2  g       | a+ a+ g/8 f/8 | e/2  g/8 g/8
+tenor      a/8 g/8 | f/2     b       | c/2  d       | d  d  d       | c/2  d/8 d/8
+bass       a       | d/2     b       | a a+ g       | f  f  g       | a+/2 g/8 a+/8
+
+soprano    d  c  b | a  b c  | d       a  g | f/2 f/8 e/8 | d-. e/8 f/8 g/8
+alto       f  f  g | a+ d g  | a+      f  e | d/2 c       | d/2     d/8 d/8
+tenor      d  d  d | d  d e+ | d       d  a | a/2 a/8 g/8 | g/2     b/8 b/8
+bass       b+ a+ g | f  g e  | f/8 g/8 a+ a | d/2 a       | d/2     b/8 b/8
+
+soprano    a/2 b/8 c/8 | d  c  b       | a/2  b/8 c/8  | d  c  b | a  b c
+alto       e/2  g      | a+ a+ g/8 f/8 | e/2  g/8 g/8  | f  f  g | a+ d g
+tenor      c/2  d      | d  d  d       | c/2  d/8 d/8  | d  d  d | d  d e+
+bass       a a+ g      | f  f  g       | a+/2 g/8 a+/8 | b+ a+ g | f  g e
+
+soprano    d       a  g | f/2 f/8 e/8 | d-. e/8 f/8 g/8 | a/2 d/8 c/8 | b/2     b
+alto       a+      f  e | d/2 c       | d/2     d       | c d f       | g/2     g
+tenor      d       d  a | a/2 a/8 g/8 | f/2     b       | a/2 a       | b. c/8  d/8 e+/8
+bass       f/8 g/8 a+ a | d/2 a       | d/2     b       | f/2 d       | g. a+/8 b+/8 c+/8
+
+soprano    a/2.      | d  c  b | a  b  c  | d       a  g | f/2
+alto       f    a+/2 | f  f  g | f/2   g  | a+      d  c | d/2
+tenor      f+/2 e+   | d  d  d | d  f+ e+ | d       f+ a | a/2
+bass       d+/2 c+   | b+ a+ g | d+ d  e  | f/8 g/8 a+ a | d/2

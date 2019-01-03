@@ -196,6 +196,10 @@ class Song:
 	def measures(self):
 		return self.module.measures
 
+	@property
+	def is_unison(self):
+		return self.module.is_unison
+
 
 songs = [Song(filename)
          for filename in os.listdir('./songs')
