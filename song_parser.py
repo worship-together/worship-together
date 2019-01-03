@@ -33,6 +33,7 @@ class NewSong:
 		self.tempo = int(attributes['tempo'])
 		if 'psalm' in attributes:
 			self.psalm = attributes['psalm']
+		self.is_unison = 'unison' in attributes
 
 
 attribute_re = re.compile(r'(?P<name>[a-zA-Z\-]+)\s+(?P<value>[^\n]+)')

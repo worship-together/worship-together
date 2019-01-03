@@ -7,6 +7,10 @@ class Key:
 		
 	def __getitem__(self, item):
 		return self.notes[item] if item in self.notes else None
+
+	def _not_implemented(self):
+		raise NotImplementedError('Key ' + self.__class__.__name__ +
+		                          ' not yet implemented')
 		
 		
 class C(Key):
@@ -16,13 +20,13 @@ class C(Key):
 class C_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class D_Flat(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class G(Key):
@@ -40,25 +44,25 @@ class D(G):
 class D_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class E(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class E_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class F_Flat(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class F(Key):
@@ -70,37 +74,37 @@ class F(Key):
 class F_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class G_Flat(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class G_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class A_Flat(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class A(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class A_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class B_Flat(F):
@@ -118,17 +122,17 @@ class E_Flat(B_Flat):
 class B(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class B_Sharp(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 		
 		
 class C_Flat(Key):
 	def __init__(self):
 		super().__init__()
-		raise NotImplemented()
+		self._not_implemented()
 
