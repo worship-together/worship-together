@@ -15,19 +15,22 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    a | a a g# a | c b d- g | f e/8 f/8 g c- | a/2. a
-alto       c | c c bn c | eb d b d | c c c c | c/2. c
-tenor      f | f f f f | f# g g b | a g/8 a/8 b b | a/2. f
-bass       f | f f f f | b b b b | c c c c | f-/2. f
+soprano    a | a a g# a | c  b d- g | f e/8 f/8 g c- | a/2.  a
+alto       c | c c bn c | eb d b  d | c c       c c  | c/2.  c
+tenor      f | f f f  f | f# g g  b | a g/8 a/8 b b  | a/2.  f
+bass       f | f f f  f | b  b b  b | c c       c c  | f-/2. f
 
-soprano    a a d c | c b d- g | f e/8 f/8 a g | f/2. a
-alto       c f f# f# | g d b d | c c e e | f/2. f
-tenor      f a a d | d d d b | a g#/8 a/8 c b | a/2. c
+soprano    a a  d  c  | c b d- g | f e/8 f/8  a g | f/2. a
+alto       c f  f# f# | g d b  d | c c        e e | f/2. f
+tenor      f a  a  d  | d d d  b | a g#/8 a/8 c b | a/2. c
+bass       f eb d  d  | g g g- b | c.     c/8 c c | f/2. f
 
-soprano    a a g f | e/2 e e | d- e f g | a/2. a
-alto       f f e d | c#/2 c# c# | d e f d | e/2. f
-tenor      c a b bn | c#/2 c# a | d- e f d | c#/2. cn
+soprano    a a g f  | e/2  e  e  | d- e f g  | a/2.  a
+alto       f f e d  | c#/2 c# c# | d  e f d  | e/2.  f
+tenor      c a b bn | c#/2 c# a  | d- e f d  | c#/2. cn
+bass       f f g g# | a+/2 a+ a  | d  e f b+ | a+/2. f
 
-soprano    a a g# a | c b d- d | c f a. g/8 | f/2.
-alto       c c bn c | d d b d/8 e/8 | f bn c. bb/8 | a/2.
-tenor      c a f f | f# g g b | a g/8 f/8 f. e/8 | f/2.
+soprano    a a g# a | c  b d- d       | c f       a. g/8  | f/2.
+alto       c c bn c | d  d b  d/8 e/8 | f bn      c. bb/8 | a/2.
+tenor      c a f  f | f# g g  b       | a g/8 f/8 f. e/8  | f/2.
+bass       f f f  f | b  b b  b       | c d       c. c/8  | f-/2.
