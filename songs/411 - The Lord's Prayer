@@ -13,7 +13,7 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-unison     f/8 g/8 a+/8 a+/8 | g/8 b/8 a/8 g f a/8 g/8 f/8 f/8 g/8 a/8 g/8 a/8 g | a/8 b/8 a/8 g f
+unison     f/8 g/8 a/8 a/8(1.5) | g/8 b/8 a/8 g f a/8 g/8 f/8 f/8 g/8 a/8 g/8 a/8 g | a/8 b/8 a/8 g f
 
 unison     g/8 a/8 g/8 g f g/8 a/8 g/8 g/8 f/8 f/8 g/8 a/8 g/8 a/8 g | f/8 g/8 a/8 b/8 a/8 g/8 a/8 g f
 
