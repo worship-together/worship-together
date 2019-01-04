@@ -17,7 +17,7 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    f | g. a/8 g | e f g | f. e/8 d- | e c- g
+soprano    g | g. a/8 g | e f g | f. e/8 d- | e c- g
 alto       c | c. c/8 c | c c c | c. c/8 b  | c c  e
 tenor      e | e. f/8 e | g g g | a. a/8 b  | g e  g
 bass       c | c. c/8 c | c d e | d. d/8 g  | c c  c
@@ -32,7 +32,7 @@ alto       d. d/8 d | c c c | c/2 b/8 b/8     | c c c
 tenor      b. a/8 g | g g g | a/2 g/8 g/8     | g e e
 bass       f. f/8 f | e e e | d/2 g/8 g/8     | c c c
 
-soprano    f. g/8  a/8  f/8 | g. f/8 e | f d-. c/8 | c/2
+soprano    f. g/8  a/8  f/8 | g. f/8 e | f d-. c-/8 | c-/2
 alto       c. c/8  c/8  c/8 | d  d   c | c b.  c/8 | c/2
 tenor      f. e/8  f/8  f/8 | d  g   g | f f.  e/8 | e/2
 bass       a. g-/8 f-/8 a/8 | b  b   c | d g-. c/8 | c/2
