@@ -163,7 +163,11 @@ def import_song(filename):
 
 
 def is_song(filename):
-	non_songs = ['__init__.py', 'test.py', '__pycache__', 'last_upload']
+	non_songs = ['__init__.py',
+	             'test.py',
+	             '__pycache__',
+	             'last_upload',
+	             'shared_tunes']
 	return filename not in non_songs
 
 
