@@ -12,6 +12,8 @@ key        Eb
 rhythm     0 : 4
 tempo      80
 
+status     header  tune  checked
+
 voice      unison   E4 to D5
 voice      piano-a  A3 to G4
 voice      piano-t  E3 to D4
