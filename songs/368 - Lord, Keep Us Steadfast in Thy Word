@@ -16,17 +16,17 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    e/2 g e | d- e g f | e/2 g/2 | a  a b g
-alto       b/2 e a | b  c e d | b/2 e/2 | g  f d e
-tenor      g/2 b e | f  a b b | g/2 b/2 | e+ d b b
-bass
+soprano    e/2 g e | d- e g f | e/2  g/2 | a  a b g
+alto       b/2 e a | b  c e d | b/2  e/2 | g  f d e
+tenor      g/2 b e | f  a b b | g/2  b/2 | e+ d b b
+bass       e/2 e c | b a g- b | e-/2 e/2 | c  d g e
 
-soprano    a a b/2 | b/2 c b | d b a a
-alto       f e d/2 | d/2 e d | d g g f
-tenor
-bass
+soprano    a a b/2 | b/2  c b | d b a  a
+alto       f e d/2 | d/2  e d | d g g  f
+tenor      d a f/2 | g/2  g g | a d e+ d
+bass       d c b/2 | g-/2 c g | f g c  d
 
-soprano    g/2 b/2 | g a g f | e d- e/2
-alto       d/2 d/2 | e e d d | b b  b/2
-tenor
-bass
+soprano    g/2  b/2 | g a g f | e d- e/2
+alto       d/2  d/2 | e e d d | b b  b/2
+tenor      b/2  g/2 | g c b a | g f  g/2
+bass       g-/2 g/2 | c a b d | e b e-/2
