@@ -150,12 +150,14 @@ def parse_song(filename):
 		if 'unison' in attributes:
 			attributes['measures'] = [(measure, [], [], [])
 			                          for measure in attributes['unison']]
-		else:
+		elif 'soprano' in attributes:
 			attributes['measures'] = [measure for measure in
 		                            zip(attributes['soprano'],
 		                                attributes['alto'],
 		                                attributes['tenor'],
 		                                attributes['bass'])]
+		else:
+			attributes['measures'] = []
 		song = NewSong(attributes)
 		#print(song.measures)
 		return song
