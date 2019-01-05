@@ -133,13 +133,17 @@ def test_and_delete_midi(song):
 
 
 def upload(songs):
+	tunes = []
 	if not songs:
 		songs = glob.glob('songs/*')
+		tunes = glob.glob('tunes/*')
 	for song in songs:
 		if midi.is_song(os.path.basename(song)):
 			test_and_delete_midi(song)
 			print('Uploading ' + song)
 			storage.upload_file('songs', os.path.basename(song), song)
+	for tune in tunes:
+		storage.upload_file('tunes', os.path.basename(tune), tune)
 
 
 def delete(songs):
