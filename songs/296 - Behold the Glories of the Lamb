@@ -3,46 +3,6 @@ hymnal     Cantus Christi
 page       296
 author     Isaac Watts, c. 1688
 
-tune       DESERT (LYINGHAM)
-metre      C.M. rep.
-composer   Thomas Jarman, c. 1803
-key        G
-rhythm     4 : 4
-tempo      180
+import     tunes/DESERT LYINGHAM
 
 status     header  tune
-
-voice      soprano E4 to D5
-voice      alto    A3 to G4
-voice      tenor   E3 to D4
-voice      bass    A2 to G3
-
-soprano    g/2 b. c/8 | d/8 e+/8 d/8 c/8 b c  | b g a f
-alto       d/2 g. g/8 | g/2.               g  | g d d/2
-tenor      b/2 d. c/8 | d/2.               e+ | d b c a
-bass       g/2 g. g/8 | g/2.               c  | d/2 d/2
-
-soprano    g/2.  b | c  b a g  | a/2. a | b/8 a/8 b/8 c/8 d  e+
-alto       d/2.  g | f  g d g  | f/2. f | g/2.               g
-tenor      b/2.  d | d  d d c# | a/2. d | d/2             b  b
-bass       g-/2. g | a+ g f e  | d/2. d | g/2.               e
-
-soprano    d/2  c#/2 | d/1 | d/2 d  d | b. a/8 g b
-alto       f/2  g/2  | f/1 | g/2 a+ f | g/2.     g
-tenor      a/2  a/2  | a/1 | b/2 a  d | d. c/8 b d
-bass       a+/2 a/2  | d/1 | g/2 f  d | g/2.     g
-
-soprano    c  b a g | a/2. R | R/2.    g
-alto       g/2  f g | f/2. R | R/1
-tenor      e+ d c b | d/2. R | R/1
-bass       g/2.   g | d/2. d | g a+ b+ g
-
-soprano    c c c c | b/2.  b | a a a a
-alto       R/2.  e | d d d g | f/2.  f
-tenor      R/1     | R/2.  d | d d d d
-bass       e/2.  c | g g g g | d/2.  d
-
-soprano    d/2.    d | e+ d  c   b | a/2.  a | g/1
-alto       g f  g/2  | g/2   f   g | g/2 f/2 | g/1
-tenor      b c  d  b | c     d/2 d | d/2.  c | b/1
-bass       g a+ b+ g | c+ b+ a+  g | d/2 d/2 | g/1
