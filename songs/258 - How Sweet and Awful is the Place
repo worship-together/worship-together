@@ -3,6 +3,8 @@ hymnal     Cantus Christi
 page       258
 author     Isaac Watts, Hymns and Sacred Songs, 1707
 
+status     header  tune
+
 tune       ST. COLUMBIA
 metre      C.M.
 composer   Old Irish hymn melody
@@ -22,10 +24,10 @@ alto       b/2 | e/1     e/2 | d/1 e f | f/2 e/2 d/2 | c/1 c d
 tenor      g a | b/1     a/2 | f/1 e b | b/1     b/2 | g/1 a/2
 bass       e/2 | e/2 d/2 c/2 | b/1 c d | e/1     b/2 | c/1 a/2
 
-soprano    g/1     a/2 | b/1 a b c | b/1(2) b/2 | e+/1     c/2 | b/1      a/2
-alto       e/1     e/2 | e/1  c/2 | e/1(2) d/2 | e/1      e/2 | e/1      f/2
-tenor      b/1     c/2 | b/1  e/2 | g/1(2) b a | g/1      a/2 | b/1      c/2
-bass       e/2 d/2 c/2 | g-/1 a/2 | e/1(2) b/2 | c/2  b/2 a/2 | a/2 g-/2 f-/2
+soprano    g/1     a/2 | b/1  a/6 b/6 c/6 | b/1(2) b/2 | e+/1     c/2 | b/1      a/2
+alto       e/1     e/2 | e/1  c/2         | e/1(2) d/2 | e/1      e/2 | e/1      f/2
+tenor      b/1     c/2 | b/1  e/2         | g/1(2) b a | g/1      a/2 | b/1      c/2
+bass       e/2 d/2 c/2 | g-/1 a/2         | e/1(2) b/2 | c/2  b/2 a/2 | a/2 g-/2 f-/2
 
 soprano    g/1     f/2 | e/1 g/2 | b/1      a/2 | g/1 f/2 | e/1
 alto       f/2 e/2 d/2 | e/1 e/2 | e/1      e/2 | e/1 d/2 | e/1
