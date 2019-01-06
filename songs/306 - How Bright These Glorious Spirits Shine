@@ -5,4 +5,4 @@ author     Scottish Psalter, 1929
 
 import     tunes/PETERSHAM
 
-status     header  tune
+status     header  tune  checked

@@ -3,7 +3,7 @@ hymnal     Cantus Christi
 page       258
 author     Isaac Watts, Hymns and Sacred Songs, 1707
 
-status     header  tune
+status     header  tune  checked
 
 tune       ST. COLUMBIA
 metre      C.M.
