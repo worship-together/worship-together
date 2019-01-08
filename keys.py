@@ -68,7 +68,7 @@ class F_Flat(Key):
 class F(Key):
 	def __init__(self):
 		super().__init__()
-		self.notes.update({B0:B0b, B1:B1b, B2:B2b, B3:B3b, B4:B4b, B5:B5b, B6:B6b, B7:B7b})
+		self.notes.update({B1:B1b, B2:B2b, B3:B3b, B4:B4b, B5:B5b, B6:B6b, B7:B7b})
 		
 		
 class F_Sharp(Key):
