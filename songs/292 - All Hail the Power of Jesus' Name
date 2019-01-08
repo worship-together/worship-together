@@ -9,9 +9,9 @@ metre      8 6. 8 6. 8 6
 composer   Oliver Holden, 1793
 key        F
 rhythm     4 : 4
-tempo      180
+tempo      150
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4

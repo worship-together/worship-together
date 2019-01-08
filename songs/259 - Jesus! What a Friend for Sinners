@@ -10,7 +10,7 @@ key        F
 rhythm     3 : 4
 tempo      150
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -29,7 +29,7 @@ bass       f- a c | f/2    f | f e f | c d c | a a+ g       | f/2 a | b d c | f/
 
 soprano    c/2  c  | c b a | b/2 b | b a g | a/2 a | a b c  | c  b a | g/2.
 alto       e/2  e  | f/2 f | f e d | e/2 e | f/2 f | f g a+ | a+ g f | f/2 e
-tenor      a/2  a  | f g a | g/2 g | f a b | a c c | d/2 c  | d/2  d | g/2.
+tenor      a/2  a  | f g a | g/2 g | g a b | a c c | d/2 c  | d/2  d | g/2.
 bass       a+/2 a+ | d/2 d | g/2 g | c/2 c | f/2 e | d b a  | g-/2 b | c/2.
 
 soprano    c  a c  | b g b    | a f a | g/8 a/8 b/8 a/8 g       | c/2 c | d c b | a/2 g | f/2.

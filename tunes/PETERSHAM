@@ -1,16 +1,9 @@
-title      All Peoples, Clap Your Hands for Joy
-hymnal     Cantus Christi
-page       87
-author     The Book of Psalms for Singing, 1973
-
 tune       PETERSHAM
 metre      C.M.D.
 composer   Clement W. Poole, 1875
 key        D
 rhythm     4 : 4
-tempo      180
-
-status     header  tune
+tempo      150
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4

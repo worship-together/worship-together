@@ -1,0 +1,36 @@
+tune       AUSTRIAN HYMN
+metre      8 7. 8 7. D.
+composer   Franz Joseph Haydn, 1797
+key        Eb
+rhythm     4 : 4
+tempo      130
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    e. f/8 g f | a g f/8 d-/8 e | c b a g
+alto       b. b/8 e d | b b b        b | e e f e
+tenor      g. a/8 b b | f g a        g | a b b b
+bass       e. e/8 e b | d e b        e | a g d e
+
+soprano    f g/8 e/8 b/2 | e. f/8 g f | a g f/8 d-/8 e | c b a g
+alto       c e       d/2 | b. b/8 e d | b b b        b | e e f e
+tenor      c c       b/2 | g. a/8 b b | f g a        g | a b b b
+bass       a an      b/2 | e. e/8 e b | d e b        e | a g d e
+
+soprano    f g/8 e/8 b/2 | f  g f/8 d-/8 b- | a g f/8 d-/8 b-
+alto       c e       d/2 | b  b b        b  | b b b        b
+tenor      c c       b/2 | d- e d-       d- | f g d-       d-
+bass       a an      b/2 | b  b b        b  | d e b        b/8 a/8
+
+soprano    b  a       g. g/8 | an. an/8 b/2 | e+. d/8 c  b
+alto       b  c/8 d/8 e. e/8 | e.  e/8  d/2 | e.  e/8 e  e
+tenor      g  f       e. c/8 | c.  c/8  b/2 | b.  b/8 a  g
+bass       g- a/8 b/8 c. c/8 | f.  f/8  b/2 | g.  g/8 a+ e
+
+soprano    c.  b/8 b/8 a/8 g | f g/8 a/8 b/8 c/8 a/8 f/8 | e g/8 f/8 e/2
+alto       e.  e/8 d       e | d d       e       c       | b d       e/2
+tenor      a.  b/8 b       b | b b       b/8 e/8 c/8 a/8 | g b/8 a/8 g/2
+bass       a+. g/8 f       e | b a       g-      a       | b b       e/2

@@ -19,6 +19,7 @@ import re
 
 import keys
 import notes
+import os
 
 
 class NewSong:
@@ -133,13 +134,20 @@ def parse_line(line, attributes):
 				value += parse_notes(attributes['beat_value'], name, raw_value)
 			else:
 				value = raw_value
+				if name in attributes:
+					non_list_attributes = [ 'tempo', 'beats' ]
+					if name in non_list_attributes:
+						raise RuntimeError('Error: Multiple {name} attributes')
+					if not attributes[name] is list:
+						value = [attributes[name], value]
+					else:
+						value = attributes[name].append(value)
 			attributes[name] = value
 		else:
 			raise RuntimeError('Cannot parse attribute')
 
-def parse_song(filename):
+def _parse_lines(filename, attributes):
 	with open(filename, 'r') as song_file:
-		attributes = {}
 		for number, line in enumerate(song_file):
 			try:
 				parse_line(line, attributes)
@@ -147,17 +155,30 @@ def parse_song(filename):
 				raise RuntimeError(
 					f'Error parsing file {filename}@{number+1}: {line} ' +
 					str(e))
-		if 'unison' in attributes:
-			attributes['measures'] = [(measure, [], [], [])
-			                          for measure in attributes['unison']]
-		elif 'soprano' in attributes:
-			attributes['measures'] = [measure for measure in
-		                            zip(attributes['soprano'],
-		                                attributes['alto'],
-		                                attributes['tenor'],
-		                                attributes['bass'])]
-		else:
-			attributes['measures'] = []
-		song = NewSong(attributes)
-		#print(song.measures)
-		return song
+	if 'import' in attributes:
+		imports = attributes['import']
+		attributes.pop('import')
+		for _import in imports if isinstance(imports, list) else [imports]:
+			try:
+				_parse_lines(_import, attributes)
+			except Exception as e:
+				raise RuntimeError(
+					f'Error importing {_import} from {filename}: ' + str(e))
+
+def parse_song(filename):
+	attributes={}
+	_parse_lines(filename, attributes)
+	if 'unison' in attributes:
+		attributes['measures'] = [(measure, [], [], [])
+		                          for measure in attributes['unison']]
+	elif 'soprano' in attributes:
+		attributes['measures'] = [measure for measure in
+	                            zip(attributes['soprano'],
+	                                attributes['alto'],
+	                                attributes['tenor'],
+	                                attributes['bass'])]
+	else:
+		attributes['measures'] = []
+	song = NewSong(attributes)
+	#print(song.measures)
+	return song
