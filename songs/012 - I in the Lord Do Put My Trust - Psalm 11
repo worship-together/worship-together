@@ -8,9 +8,9 @@ metre      C.M.
 composer   "Ravenscroft's Psalter", 1621
 key        F
 rhythm     0 : 4
-tempo      140
+tempo      120
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -30,4 +30,4 @@ bass       b+      a+ g g | f/2 | e/2 | f d e c
 soprano    f g e/2 | b/2    | a a g g       | f/2
 alto       f d c/2 | d. e/8 | f f f e       | f/2
 tenor      a b g/2 | g/2    | c a d c/8 b/8 | a/2
-bass       d b c/2 | g-/2   | a d b c       | g-/2
+bass       d b c/2 | g-/2   | a d b c       | f-/2

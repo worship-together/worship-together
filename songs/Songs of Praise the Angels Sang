@@ -5,13 +5,13 @@ author     David Erb, 2013
 composer   James Montgomery, 1819
 key        C
 rhythm     4 : 4
-tempo      180
+tempo      140
 
-status     header  tune
+status     header  tune  checked
 
 soprano    c- c g c- | e g     bb/2 | a g a/8 b/8 c | b  a   g/2
 alto       c  e c c  | c c     d e  | f e e       e | d. c/8 b/2
-tenor      c  g g e  | g e      g/2 | c c c/8 b/8 a | g  f#  e/2
+tenor      c  g g e  | g e      g/2 | c c c/8 b/8 a | g  f#  a/2
 bass       c  c e c  | bb. a/8 g-/2 | f- c   a    a | d  d  g-/2
 
 soprano    d- f e/8 f/8 g | g f# g/2 | a/8 g/8 a/8 b/8 c c- | f/8 e/8 d- c-/2

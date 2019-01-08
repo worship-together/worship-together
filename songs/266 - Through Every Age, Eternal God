@@ -6,7 +6,7 @@ author     Isaac Watts, 1719
 tune       AMANDA
 metre      L.M.
 composer   Justin Morgan, 1790
-key        C
+key        G
 #correct the key it should be A-flat
 rhythm     0 : 4
 tempo      150
@@ -21,7 +21,7 @@ voice      bass    A2 to G3
 soprano    f/2 | a/1 g/2  | c/1        c/2         | a. b/8 c/2 b g  | f/1
 alto       c/2 | c/1 eb/2 | c/2    f/2 e c         | a. b/8 c/2 c/2  | c/1
 tenor      f/2 | c/1 b/2  | a. b/8 c/2 a/6 g/6 f/6 | e. f/8     c-/2 | f/1
-bass       f/2 | f/1 en/2 | f/1        f-/2        | a/1        c/2  | f-/2
+bass       f/2 | f/1 en/2 | f/1        f-/2        | a/1        c/2  | f-/1
 
 soprano    a/2 a a | b/2      c  a | f/2 f/2 | g/1
 alto       f/2 f f | e.  f/8  e  e | f/2 f/2 | e/1
