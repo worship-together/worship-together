@@ -8,7 +8,7 @@ metre      C.M.
 composer   William Croft, 1678-1727
 composer   Tate and Brady's "Supplement to New Version", 1708
 key        C
-rhythm     4 : 4
+rhythm     0 : 4
 tempo      180
 
 status     header
@@ -17,3 +17,13 @@ voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g/2 | e a       g c | c b c/2 | g/2 | c g a f# | g/2 b/2
+alto       c/2 | c c/8 d/8 e e | d d e/2 | e/2 | e e e d  | d/2 d/2
+tenor      e/2 | g a/8 b/8 c c | a g g/2 | c/2 | c b a a  | b/2 g/2
+bass       c/2 | c f      e a+ | f g c/2 | c/2 | a e c d  | g/2 g/2
+
+soprano    c a d b | c  a   b/2 | g/2  | a c d b | c/2
+alto       e c f d | e. d/8 b/2 | c/2  | f e d d | e/2
+tenor      g a a g | g  a  g#/2 | gn/2 | f g a g | g/2
+bass       c f d g | c  f   e/2 | e/2  | d c f g | c/2
