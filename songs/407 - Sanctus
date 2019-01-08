@@ -3,13 +3,33 @@ hymnal     Cantus Christi
 page       407
 
 composer   Franz Schubert, "Deutsche Messe", 1827
-key        E
+key        Eb
 rhythm     3 : 4
 tempo      180
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g/2 g | f/2 g | a/2. | g/2. | f/2 f | f/2 g | e/2. | f/2 R
+alto       e/2 e | d/2 e | e/2. | e/2. | e/2 e | d/2 d | b/2. | d/2 R
+tenor      b/2 b | b/2 b | c/2. | b/2. | c/2 c | a/2 b | g/2. | b/2 R
+bass       e/2 e | b/2 e | a/2. | e/2. | a/2 a | b/2 b | e/2. | b/2 R
+
+soprano    g/2 g | f/2 g  | a/2. | g/2. | f/2 f | f/2 g | e/2. | e R/2
+alto       e/2 e | d/2 e  | e/2. | e/2. | e/2 e | d/2 d | b/2. | b R/2
+tenor      b/2 b | b/2 db | c/2. | b/2. | a/2 a | a/2 b | g/2. | g R/2
+bass       e/2 e | b/2 b  | a/2. | e/2. | b/2 b | b/2 b | e/2. | e R/2
+
+soprano    b/2 b | b/2  b  | c/2.  | a/2. | a/2 b | g/2 e  | f/2. | f R/2
+alto       e/2 e | f/2  f  | en/2. | f/2. | f/2 f | e/2 e  | d/2. | d R/2
+tenor      g/2 g | g/2  g  | g/2 c | c/2. | b/2 b | b/2 b  | b/2. | b R/2
+bass       e/2 e | db/2 db | c/2.  | f/2. | d/2 d | e/2 g- | b/2. | b R/2
+
+soprano    g/2  g  | f/2  e  | a/2.  | g/2. | c/2 f | f/2 g | e/2. | e R/2
+alto       db/2 db | db/2 db | c e/2 | e/2. | e/2 e | d/2 d | b/2. | b R/2
+tenor      b/2  b  | a/2  g  | a c/2 | b/2. | c/2 c | a/2 b | g/2. | g R/2
+bass       e/2  e  | e/2  e  | a/2.  | e/2. | a/2 a | b/2 b | e/2. | e R/2
