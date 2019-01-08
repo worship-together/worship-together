@@ -11,9 +11,24 @@ key        G
 rhythm     3 : 4
 tempo      180
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    d- | g/2 a | b/8. a/16 g b | d/8. e+/16 d c | b/2  b
+alto       b  | d/2 f | g/8. f/16 g g | g/2          f | g/2  g
+tenor      g  | d/2 d | d/8. c/16 b d | b/8. c/16  b a | g/2  d
+bass       g- | b/2 d | g/8. a/16 b g | d/2          d | g-/2 g
+
+soprano    a/2 c  | b/8. a/16 g f | g/2  d | d/2         b  | c/2          e+
+alto       e/2 a+ | g/8. e/16 d d | d/2  g | a+        g g  | g/8. fn/16 e g
+tenor      c/2 e+ | d/8. c/16 b a | b/2  b | d/8. c/16 b d  | c/2          g
+bass       c/2 a  | b/8. c/16 d d | g-/2 g | f         g fn | e/8. d/16 c  c
+
+soprano    d         c b        | a/2 d       | g a b | c  b a       | g/2
+alto       d/8. e/16 f g        | f/2 f       | g d g | g/2  f       | g/2
+tenor      g         a b/8 c#/8 | d/2 d/8 c/8 | b d d | e+ d d/8 c/8 | b/2
+bass       b         a g-       | d/2 d       | e f g | c  d d       | g-/2

@@ -1,0 +1,33 @@
+title      Gloria Patri
+hymnal     Cantus Christi
+page       436
+author     2nd century
+
+tune       GLORIA PATRI
+metre      Irreg.
+composer   Charles Meineke, 1844
+key        G
+rhythm     4 : 4
+tempo      150
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g. g/8 g g/8 g/8 | a a/2. | a/2 a d | a a  a g
+alto       d. d/8 d d/8 d/8 | f f/2. | f/2 f f | d c# d e
+tenor      b. b/8 b b/8 b/8 | d d/2. | a/2 a a | f g  a b
+bass       g. g/8 g g/8 g/8 | d d/2. | d/2 d d | d e  f g
+
+soprano    f/2 e/2  | d-/2. d-/8 d-/8 | g g g b  | b a/2 d- | a. a/8 a c
+alto       d/2 c#/2 | d/2.  d/8  d/8  | d d d d  | d d/2 d  | d. d/8 d d
+tenor      a/2 g/2  | f/2.  d-/8 d-/8 | b b g g  | g f/2 d- | f. f/8 f f
+bass       a/2 a/2  | d/2.  d/8  d/8  | g d b g- | d d/2 d  | d. d/8 d d
+
+soprano    c  b/2  R | g/2 b  g | e/2 c-/2 | d-/2 f/2 | g/1
+alto       d  d/2  R | g/2 b+ g | e/2 c/2  | d/2  c/2 | b/1
+tenor      g  g/2  R | g/2 b  g | e/2 c-/2 | d-/2 a/2 | g/1
+bass       g- g-/2 R | g/2 b+ g | e/2 c/2  | d/2  d/2 | g-/1
