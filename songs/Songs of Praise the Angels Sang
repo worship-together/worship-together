@@ -1,13 +1,20 @@
-title      When I Survey the Wondrous Cross
+title      Songs of Praise the Angels Sang
 hymnal     Cantus Christi
-page       267
-author     Isaac Watts, 1707
+author     David Erb, 2013
 
-tune       HAMBURG
-metre      L.M.
-composer   Lowell Mason, 1824
-key        F
+composer   James Montgomery, 1819
+key        C
 rhythm     4 : 4
-tempo      160
+tempo      180
 
-status     header  tune  checked
+status     header  tune
+
+soprano    c- c g c- | e g     bb/2 | a g a/8 b/8 c | b  a   g/2
+alto       c  e c c  | c c    d  e  | f e e       e | d. c/8 b/8
+tenor      c  g g e  | g e      g/2 | c c c/8 b/8 a | g  f#  e/8
+bass       c  c e c  | bb. a/8 g-/2 | f- c   a    a | d  d  g-/2
+
+soprano    d- f e/8 f/8 g | g f# g/2 | a/8 g/8 a/8 b/8 c c- | f/8 e/8 d- c-/2
+alto       d  d c       b | d d  d/2 | f       c       c c  | d       b   c/2
+tenor      f  a a       g | a a  b/2 | c       c       g a  | a   g/8 f/8 e/2
+bass       d  d a       e | d d  g/2 | f       f       e a  | d       g-  c/2
