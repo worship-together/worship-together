@@ -6,8 +6,7 @@ author     Isaac Watts, 1719
 tune       AMANDA
 metre      L.M.
 composer   Justin Morgan, 1790
-key        G
-#correct the key it should be A-flat
+key        Ab
 rhythm     0 : 4
 tempo      150
 
