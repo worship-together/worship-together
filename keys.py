@@ -94,7 +94,7 @@ class A_Flat(Key):
 		super().__init__()
 		self.notes.update({B1:B1b, B2:B2b, B3:B3b, B4:B4b, B5:B5b, B6:B6b, B7:B7b},
 						  {A1:A1b, A2:A2b, A3:A3b, A4:A4b, A5:A5b, A6:A6b, A7:A7b},
-						  {D1:D1b, D2:D2b, D3:D3b, D4:D4b, D5:D5b, D6:D6b, D7:D7b},
+						  {D1:D1b, D2:D2b, D3:D3b, D4:D4b, D5:D5b, D6:D6b},
 						  {E1:E1b, E2:E2b, E3:E3b, E4:E4b, E5:E5b, E6:E6b, E7:E7b})
 		
 		
