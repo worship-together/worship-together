@@ -1,0 +1,26 @@
+tune       CONSOLATION
+metre      8 6. 8 6. 8 6
+composer   John Wyeth, "Repository of Sacred Music, II", 1813
+key        Ab
+rhythm     4 : 4
+tempo      180
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    c- | f g a b/8 a/8 | g f/8 e/8 c- c- | f g  a b  | c/2. a/8 b/8
+alto       c  | c c f f       | e c       c  c  | d en f g  | a+/2.      f
+tenor      c  | a c a d       | c c       b  a  | a c c eb+ | e+/2.      d
+bass       c+ | f e d b       | c e g  f/8  e/8 | d c f eb  | a+/2.      d
+
+soprano    c d/8 c/8 b a | g f/8 e/8 c- c- | f g a/8 f/8 g | f/2. a/8 b/8
+alto       a+ a+     g f | e c       c  c  | c e f       e | c/2.       f
+tenor      e+ e+    e+ c | c c       b  a  | a c b       b | c/2.       f
+bass       a+ a+     e f | c e g  f/8 a+/8 | f e d       e | f/2.       d
+
+soprano    c d/8 c/8 b a | g f/8 e/8 c- c- | f g a/8 f/8 g | f/2.
+alto       e f       g f | e c       c  c  | d d c/8 f/8 e | c/2.
+tenor      g b       g c | b a       a  g  | a b a       b | a/2.
+bass       c b       e f | g a+/8 g/8 f e  | d b c       e | f/2.

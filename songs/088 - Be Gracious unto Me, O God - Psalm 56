@@ -3,4 +3,6 @@ hymnal     Cantus Christi
 page       88
 author     "The Book of Psalms for Singing", 1973
 
-status     header
+import     tune/CONSOLATION
+
+status     header  tune
