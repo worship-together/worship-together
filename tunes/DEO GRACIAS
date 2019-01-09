@@ -1,0 +1,15 @@
+tune       DEO GRACIAS
+key        F
+rhythm     3 : 4
+tempo      130
+
+voice      unison E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+unison     d | d/2 c | d/2 c | c bn/2 | a/2 d | d c a
+
+unison     g a g/8 d-/8 | f e/2 | d-/2 a | c/2 c | d c b
+
+unison     a g/2 | f/2 f | a/2 a | g/2 f | f e/2 | d-/2
