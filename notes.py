@@ -526,6 +526,9 @@ class C7n(Note):
 class C7s(Note):
 	def __init__(self, beats=1):
 		super().__init__(96, beats, accidental='#')
+class D7b(Note):
+	def __init__(self, beats=1):
+		super().__init__(97, beats, accidental='b')
 class D7(Note):
 	def __init__(self, beats=1):
 		super().__init__(98, beats)

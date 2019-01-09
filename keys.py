@@ -104,19 +104,19 @@ class A_Sharp(Key):
 class B_Flat(F):
 	def __init__(self):
 		super().__init__()
-		self.notes.update({E1:E1b, E2:E2b, E3:E3b, E4:E4b, E5:E5b, E6:E6b, E7:E7b})
+		self.notes.update({E1: E1b, E2: E2b, E3: E3b, E4: E4b, E5: E5b, E6: E6b, E7: E7b})
 		
 		
 class E_Flat(B_Flat):
 	def __init__(self):
 		super().__init__()
-		self.notes.update({A1:A1b, A2:A2b, A3:A3b, A4:A4b, A5:A5b, A6:A6b, A7:A7b})
+		self.notes.update({A1: A1b, A2: A2b, A3: A3b, A4: A4b, A5: A5b, A6: A6b, A7: A7b})
 
 
 class A_Flat(E_Flat):
 	def __init__(self):
 		super().__init__()
-		self.notes.update({D1:D1b, D2:D2b, D3:D3b, D4:D4b, D5:D5b, D6:D6b})
+		self.notes.update({D1: D1b, D2: D2b, D3: D3b, D4: D4b, D5: D5b, D6: D6b, D7: D7b})
 
 		
 class B(Key):

@@ -1,20 +1,20 @@
-8 213
+8 213                Need 8
 20 104               Not sing
-34 330
+34 330               34 Done
 35 258               Done
-41 90 151
-51 146
+41 90 151            Not sing
+51 146               Not sing
 54 114 183           Not sing
-58 98
+58 98                Not sing
 66 100               Done
-76 226
+76 226               Done
 87 306               Done
-88 373
+88 373               88 Done
 90 41 151            Not sing
 92 93                too different
 93 92                too different
 94 136 154 206       Done
-98 58
+98 58                Not sing
 100 66               Done
 104 20               Not sing
 110 152              Not sing
@@ -22,21 +22,21 @@
 124 304              Done
 134 296              Done
 136 94 154 206       Done
-139 437
+139 437              too different
 140 169 188          Not sing
 146 51               Not sing
 151 41 90            Not sing
 152 110              Not sing
 154 94 136 206       Done
-169 140 188
-183 54 114
-186 390
-188 140 169
+169 140 188          Not sing
+183 54 114           Not sing
+186 390              Not sing
+188 140 169          Not sing
 206 94 136 154       Done
 212 252              Done
-213 8
+213 8                Need 8
 219 259              Done
-226 76
+226 76               Done
 252 212              Done
 258 35               Done
 259 219              Done
@@ -45,15 +45,15 @@
 296 134              Done
 304 124              Done
 306 87               Done
-317 320
-320 317
-330 34
+317 320              Done
+320 317              Done
+330 34               34 Done
 336 338              too different
 338 336              too different
 368 375              Done
-373 88
+373 88               88 Done
 375 368              Done
-379 425
-390 186
-425 379
-437 139
+379 425              Not sing
+390 186              Not sing
+425 379              Not sing
+437 139              Too different

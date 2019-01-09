@@ -1,0 +1,32 @@
+tune       CREATION
+metre      8 8. 8 8. 8 8
+composer   Franz Joseph Haydn, 1798
+composer   arr. Isaac B. Woodbury
+key        G
+rhythm     4 : 4
+tempo      140
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d- | g/2.  g | a/2. a  | b g  e a | g/2 f d-/8 e/8 | f g a b
+alto       b  | b/2.  d | d/2. d  | d/2  e/2 | d/2.  d        | d/2 d/2
+tenor      d- | d-/2. g | f/2. a  | g/2  g c | b/2 a f/8  g/8 | a g f g
+bass       g- | g-/2. b | d/2. f- | g- b c a | d/2.  d        | c b a g-
+
+soprano    c/2  b/2  | b a g f  | g/2.  d- | d-/2. d- | g/2. g | a/2. a | b/2. a
+alto       d/2  d/2  | d c b a- | b/2.  d  | d/2.  d  | b/2. b | d/2. d | g/2. f
+tenor      a/2  g/2  | e/2 d-/2 | d-/2. d- | d-/2. d- | g/2. g | f/2. f | g/2. d
+bass       f-/2 g-/2 | c/2 d/2  | g-/2. d  | d/2.  d  | d/2. d | d/2. d | d/2. d
+
+soprano    b c  d  b | a b  c  a | b c  d  b | a/2. d- | d-/2. d-
+alto       g a+ b+ g | f g  a+ f | g a+ b+ g | f/2. d  | d/2.  d
+tenor      d/2.    d | d/2. d    | d/2. d    | d/2. f  | f g f a
+bass       d/2.    d | d/2. d    | d/2. d    | d/2. d  | d e d c
+
+soprano    g/2.   g | a/2. a | b/2. a | b  c d b  | a b  c a | g/2  f/2 | g/2.
+alto       d c b  d | d/2. d | d/2. d | d/2.   d  | c d  e c | b/2  d/2 | d/2.
+tenor      g/2.   g | f/2. f | g/2. f | g  f g d- | e g# a e | d-/2 a c | b/2.
+bass       b a g- b | d/2. d | g/2. d | g- a b g- | c b  a c | d/2  d/2 | g-/2.
