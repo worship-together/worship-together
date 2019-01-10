@@ -1,18 +1,34 @@
 title      Ah, Holy Jesus, How Hast Thou Offended
 hymnal     Cantus Christi
-page       267
-author     Isaac Watts, 1707
+page       255
+author     Johann Heermann, 1630
+translator Robert Bridges, Yattendon Hymnal, 1899
 
-tune       HAMBURG
-metre      L.M.
-composer   Lowell Mason, 1824
-key        F
+tune       HERZLIEBSTER JESU
+metre      11 11. 11 5
+composer   Johann Cruger, 1640
+key        Bb
 rhythm     4 : 4
-tempo      160
+tempo      150
 
-status     header  tune  checked
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g/2 g g | f/2 d-/2 | g a b b | c/2 a/2
+alto       d/2 e e | d/2 b/2  | d d g f | e/2 d/2
+tenor      b/2 c c | a/2 g/2  | b a g b | g/2 f#/2
+bass       g/2 c c | d/2 g-/2 | g f e d | c/2 d/2
+
+soprano    a/2  b c  | d/2 b/2 | e+ e+ d d | c/2 b/2 | b/2  a g
+alto       d/2  d f  | f/2 g/2 | g  g  f f | f/2 d/2 | g/2  f e
+tenor      f#/2 g a  | b/2 b/2 | c  b  a b | b a b/2 | d/2  d b
+bass       d/2  g fn | b/2 e/2 | c  c  d d | f/2 b/2 | g-/2 d e
+
+soprano    f/2 d-/2 | f f g  f | e/2 d-/2 | d/2 c b  | a/2  g/2
+alto       d/2 b/2  | d c d  d | c b a/2  | d/2 e d  | d/2  b/2
+tenor      b/2 f/2  | f a b  b | g/2 f#/2 | f b g g  | g f# g/2
+bass       b/2 b/2  | b a g- b | c/2 d/2  | b/2 c g- | d/2  g-/2
