@@ -1,0 +1,38 @@
+title      The Son of God Goes Forth to War
+hymnal     Cantus Christi
+page       282
+author     Reginald Heber, 1827
+
+tune       GREYOAKS
+metre      C.M.D.
+composer   Gregory D. Wilbur, 1994
+key        G
+rhythm     3 : 4
+tempo      180
+
+status     header
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    e/8 | b- e/8 e e/16 f/16 | g/8. f/16 e/8 d- b-/8 | e.    b. | a/8. g/16 f/8 e e/8
+alto       e/8 | b  e/8 e c/16 d/16 | e/8. d/16 c/8 a  b/8  | b.    e. | f/8. e/16 d/8 b b/8
+tenor      e/8 | b- e/8 e a         | g/8 a/8   g/8 f  f/8  | g.    g. | a/8 b/8   a/8 g a/8
+bass       e/8 | b  e/8 e d/8       | c         c/8 d  d/8  | e d/8 c. | d         d/8 e f/8
+
+soprano    b- e/8 e e/16 f/16 | g/8. g/16 e/8 d- b-/8 | e.    g. | a/8. g/16 a/8 b.
+alto       b  b/8 b c/16 d/16 | e/8. d/16 c/8 a  b/8  | b.    e. | f/8. e/16 f/8 e.
+tenor      g  a/8 g a/8       | g/8 a/8   g/8 f  f/8  | g.    g. | a         d/8 b.
+bass       e  f/8 e d/8       | c         c/8 d  d/8  | e d/8 c. | d/8 e/8   f/8 e g/8
+
+soprano    e+.            d b/8 | b/8. a/16 g/8 a       g/16 a/16 | b e+/8 d/8. c/16 b/8 | a g/8 e e/8
+alto       g.             g g/8 | g/8. f/16 e/8 f       e/16 f/16 | e g/8  f         g/8 | f d/8 c c/8
+tenor      e+.            d d/8 | e+        b/8 d       d/8       | g g/8  a         a/8 | d b/8 c b/8
+bass       c+/8 b+/8 a+/8 g f/8 | e/8 f/8   g/8 f/8 e/8 d/8       | c c/8  d         e/8 | f f/8 g g/8
+
+soprano    e+  e+/8 e+     e+/8 | d/8. c/16   b/8  a g/16 b/16 | b/8. a/16 g/8 a/8 f | e. e
+alto       c+  b+/8 a+     a+/8 | b+/8. a+/16 g/8  f g/16 f/16 | e/8. f/16 e/8 f/8 d | b. b
+tenor      c/8 d/8  e+/8 d d/8  | d           e+/8 d d/8       | e+        b/8 d/8 a | g. g
+bass       a+       g/8  f f/8  | g           g/8  a a/8       | g/8 f/8   e/8 d/8 d | e. e

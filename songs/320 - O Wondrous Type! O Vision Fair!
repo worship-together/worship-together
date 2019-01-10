@@ -4,6 +4,6 @@ page       320
 author     Sarum Breviary, 1495
 translator John Mason Neale, 1851; alt.
 
-status     header  tune
+status     header  tune  checked
 
 import     tunes/DEO GRACIAS

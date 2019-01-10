@@ -3,6 +3,6 @@ hymnal     Cantus Christi
 page       34
 author     The Book of Psalms for Singing, 1973
 
-status     header  tune
+status     header  tune  checked
 
 import     tunes/CREATION
