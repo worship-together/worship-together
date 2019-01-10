@@ -11,7 +11,7 @@ key        Bb
 rhythm     4 : 4
 tempo      150
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -23,10 +23,10 @@ alto       d/2 e e | d/2 b/2  | d d g f | e/2 d/2
 tenor      b/2 c c | a/2 g/2  | b a g b | g/2 f#/2
 bass       g/2 c c | d/2 g-/2 | g f e d | c/2 d/2
 
-soprano    a/2  b c  | d/2 b/2 | e+ e+ d d | c/2 b/2 | b/2  a g
-alto       d/2  d f  | f/2 g/2 | g  g  f f | f/2 d/2 | g/2  f e
-tenor      f#/2 g a  | b/2 b/2 | c  b  a b | b a b/2 | d/2  d b
-bass       d/2  g fn | b/2 e/2 | c  c  d d | f/2 b/2 | g-/2 d e
+soprano    a/2  b c | d/2 b/2 | e+ e+ d d | c/2 b/2 | b/2  a g
+alto       d/2  d f | f/2 g/2 | g  g  f f | f/2 d/2 | g/2  f e
+tenor      f#/2 g a | b/2 b/2 | c  b  a b | b a b/2 | d/2  d b
+bass       d/2  g f | b/2 e/2 | c  c  d d | f/2 b/2 | g-/2 d e
 
 soprano    f/2 d-/2 | f f g  f | e/2 d-/2 | d/2 c b  | a/2  g/2
 alto       d/2 b/2  | d c d  d | c b a/2  | d/2 e d  | d/2  b/2
