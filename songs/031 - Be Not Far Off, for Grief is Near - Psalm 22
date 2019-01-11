@@ -1,0 +1,39 @@
+title      Be Not Far Off, for Grief is Near
+hymnal     Cantus Christi
+page       31
+author     The Book of Psalms for Singing, 1973
+
+tune       KINGSFOLD
+metre      C.M.D.
+composer   Melody collected by Lucy Broadwood
+harmony    Ralph Vaughan Williams, 1906
+key        G
+rhythm     4 : 4
+tempo      180
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g/8 f/8 | e e       e d- | g g a g/8 a/8 | b  b a/8 g/8 e | d-/2.  g/8 f/8
+alto       e       | b b       c a  | d b d d/8 f/8 | g  g  e c      | a/2. d
+tenor      b/8 a/8 | g g       g f  | g g f g/8 c/8 | b  d  c g      | g/2  f g
+bass       e       | e e/8 d/8 c c  | b e d b/8 a/8 | g- g- a c      | d/2. b
+
+soprano    e e       e       d- | g g  a       g/8 a/8  | b  b a/8 g/8 e       | e/2. b/8 c/8
+alto       d c       c/8 b/8 a  | d c# d       d/8 cn/8 | b  d c       c       | b/2. e
+tenor      g g       g       f  | g g  f       g/8 f/8  | g  g e       e/8 f/8 | g/2. g
+bass       c c/8 b/8 a       d  | b e  d/8 c/8 b/8 a/8  | g- b c       a       | e/2. e
+
+soprano    d b  b/8 a/8 g | a       a b/2  | b  b/8  a/8 g e       | d-/2.   g/8 f/8
+alto       f f  g/8 d/8 d | e       d d/2  | g  g/8  f/8 d c/8 b/8 | a/2.    d
+tenor      b d  d/8 c/8 b | a/8 g/8 f g/2  | d  d/8  c/8 b g       | g/2   f g
+bass       b b+ e/8 f/8 g | c       d g-/2 | g- g-/8 a/8 b c       | d/2.    b
+
+soprano    e e       e/8 d-/8 e/8 f/8 | g       g        a g/8 a/8  | b  b a/8 g/8 e | e/2.
+alto       d d       c        c       | d       d/8 c#/8 d d/8 cn/8 | b  d e       c | b/2.
+tenor      g g       a        c       | b/8 a/8 g        f g/8 f/8  | g  f e e/8 f/8 | g/2.
+bass       c c/8 b/8 a        a+      | g/8 f/8 e        d b/8 a/8  | g- b c       a | e/2.
