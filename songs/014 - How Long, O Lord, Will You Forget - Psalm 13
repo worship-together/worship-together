@@ -10,14 +10,14 @@ key        F
 rhythm     0 : 4
 tempo      130
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    d-/2 a g e/2 g/2  e c- d-/2
+soprano    d-/2 a g f/2 g/2  e c- d-/2
 alto       a/2  c c d/2 d/2  c a  a/2
 tenor      f/2  e e a/2 g/2  e e  f/2
 bass       d/2  a c d/2 g-/2 a a  d/2
