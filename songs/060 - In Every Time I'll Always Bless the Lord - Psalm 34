@@ -8,9 +8,9 @@ metre      10 10. 10 10. 10 10
 composer   John Wainwright, 1750
 key        C
 rhythm     4 : 4
-tempo      130
+tempo      180
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -30,7 +30,7 @@ bass       e g c  f | g/2 g-/2 | c/1 | c/2 c  e | f/2. e | d d c f-
 soprano    b/1  | b/2  c  b | a g# a b | c/2 b/2  | a/1 | a/2 g f  | e/2 c-/2
 alto       d/1  | e/2  e  f | e d  c f | e/2 e d  | c/1 | c/2 d b  | c/2 c/2
 tenor      g/1  | g#/2 a  d | c b  a a | a/2 g#/2 | a/1 | e/2 g g  | g/2 g/2
-bass       f-/1 | e/2  a+ d | e e  f d | e/2 e/2  | a/1 | a/2 b g- | c/2 e/2
+bass       g-/1 | e/2  a+ d | e e  f d | e/2 e/2  | a/1 | a/2 b g- | c/2 e/2
 
 soprano    f e d- c- | g/2.  g | a/2 b/2 | c d e+ d | c/2 b/2  | c/1
 alto       b c f- a  | b/2.  c | c/2 d/2 | c f e  f | e/2 d/2  | e/1
