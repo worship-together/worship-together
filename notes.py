@@ -257,7 +257,7 @@ class F3(Note):
 		super().__init__(53, beats)
 class F3n(Note):
 	def __init__(self, beats=1):
-		super().__init__(54, beats, accidental=True)
+		super().__init__(53, beats, accidental=True)
 class F3s(Note):
 	def __init__(self, beats=1):
 		super().__init__(54, beats, accidental=True)
