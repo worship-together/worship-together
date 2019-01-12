@@ -9,11 +9,11 @@ translator Joseph Augustus Siess, 1873 (st. 4)
 tune       SCHONSTER HERR JESU (CRUSADER'S HYMN)
 metre      5 5 8. 5 5 8
 composer   Silesan melody, pub. Leipzig, 1842
-key        E
+key        Eb
 rhythm     4 : 4
 tempo      180
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
