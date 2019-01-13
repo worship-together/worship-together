@@ -4,6 +4,7 @@ import midi
 import sheet_music
 import storage
 from objc_util import *
+import os
 
 exiting = False
 player = None
@@ -20,7 +21,7 @@ def bring_up_sheet_music(sender):
 	music.present('fullscreen')
 
 def write_midi(song):
-	song.write_midi('output.midi', [
+	midi.Song(song).write_midi('output.midi', [
 		int(get_subview('soprano_volume').value * 120), 
 		int(get_subview('alto_volume').value * 120), 
 		int(get_subview('tenor_volume').value * 120), 
@@ -28,13 +29,17 @@ def write_midi(song):
 
 
 def play():
+	global rate
 	if player:
 		player.play()
+		player.rate = rate
 	
 	
 def stop():
+	global rate
 	if player:
 		player.stop()
+		rate = player.rate
 
 
 def playing():
@@ -52,9 +57,9 @@ def track_time(slider):
 	if player and not dragging:
 		if slider.value == last_position:
 			slider.value = player.current_time / player.duration
-			if slider.value == 1:
+			if slider.value == 1 and get_subview('play_button').title == 'Pause':
 				player.current_time = 0
-				player.rate = rate
+				rate = player.rate
 				play()
 				slider.value = player.current_time / player.duration
 			last_position = slider.value
@@ -69,6 +74,7 @@ def track_time(slider):
 
 def change_tempo(sender):
 	player.rate = sender.value + 0.5
+	print(player.rate)
 
 
 def adjust_time(slider):
@@ -149,7 +155,7 @@ btn_container.add_subview(btn)
 btn_item = ui.ButtonItem()
 btn_item_objc = ObjCInstance(btn_item)
 btn_item_objc.customView = ObjCInstance(btn_container)
-song_list = ui.ListDataSource(midi.songs)
+song_list = ui.ListDataSource(os.listdir('./songs')[:-1])
 song_list.action = present_song
 table.data_source = table.delegate = song_list
 screen_width, screen_height = ui.get_screen_size()

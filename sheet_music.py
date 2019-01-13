@@ -37,7 +37,7 @@ assert create_index('R') == -1
 
 def calculate_length(song):
 	end = origin
-	for measure in song.measures:
+	for measure in midi.Song(song).measures:
 		voice_selected = measure[midi.Voice.Soprano]
 		for note in voice_selected:
 			if type(note) is type:
@@ -56,10 +56,11 @@ class MusicView(ui.View):
 		self.bg_color = 'white'
 				
 	def draw(self):
-		self.draw_notes(midi.Voice.Soprano, self.song.measures, C0_treble_y, 1)
-		self.draw_notes(midi.Voice.Alto, self.song.measures, C0_treble_y, -1)
-		self.draw_notes(midi.Voice.Tenor, self.song.measures, C0_bass_y, 1)
-		self.draw_notes(midi.Voice.Bass, self.song.measures, C0_bass_y, -1)
+		measures = midi.Song(self.song).measures
+		self.draw_notes(midi.Voice.Soprano, measures, C0_treble_y, 1)
+		self.draw_notes(midi.Voice.Alto, measures, C0_treble_y, -1)
+		self.draw_notes(midi.Voice.Tenor, measures, C0_bass_y, 1)
+		self.draw_notes(midi.Voice.Bass, measures, C0_bass_y, -1)
 				
 		self.staff = ui.Path()
 		for i in range(0, 5):
