@@ -9,9 +9,9 @@ metre      8 7. 8 7. D. rep.
 composer   Robert Lowry, 1875
 key        Ab
 rhythm     3 : 4
-tempo      160
+tempo      100
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -33,7 +33,7 @@ alto       c. d/8 c/8 d/8 | c c e/8 e/8 | e.  c/8  f/8  e/8  | e/2 e/8  e/8
 tenor      a. a/8 a/8 a/8 | a a a/8 g/8 | a.  a/8  a/8  a/8  | g/2 a/8  b/8
 bass       a. a/8 a/8 a/8 | a a c/8 e/8 | a+. a+/8 a+/8 a+/8 | e/2 a+/8 a+/8
 
-soprano    d.  c/8 b/8 a/8 | b a g/8 f/8 | e/8 a/8 c b | c/2  c/8  d/8
+soprano    e+. c/8 b/8 a/8 | b a g/8 f/8 | e/8 a/8 c b | c/2  c/8  d/8
 alto       e.  e/8 e/8 e/8 | d f e/8 d/8 | c/8 c/8 e e | e/2  e/8  e/8
 tenor      c.  a/8 g/8 a/8 | f a a/8 a/8 | a/8 a/8 a g | a/2  a/8  b/8
 bass       a+. a/8 b/8 c/8 | d d d/8 d/8 | e/8 e/8 e e | a+/2 a+/8 a+/8
