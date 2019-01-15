@@ -1,0 +1,36 @@
+title      Word and Water, Bread and Wine
+author     Douglas Wilson, 2005
+
+tune       COWPER
+meter      L.M.
+composer   Oliver Holden, 1803
+key        G
+rhythm     4 : 4
+tempo      150
+
+status     header
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    b/2 | b b g g | g f g. a/8 | b b c c | b b b/2 | b/2 R/2
+alto       b/2 | e e d d | b a b. c/8 | b e e e | d# d# e/2 | e/2 R/2
+tenor      e/2 | g g b b | e d# e. f/8 | g e a g | f f e/2 | e/2 R/2
+bass       e/2 | e e g g | e b e. d/8 | g- g- a a | b b e/2 | e/2 g/2
+
+soprano    R/1 | R/2. b | d b g g | b a g a
+alto       R/1 | R/1 | R/2. g | g f e f
+tenor      R/2. g | a g f e | b b e | g a b a
+bass       a+ g f e | d d d e | b/2 b c | d/2. d
+
+soprano    b/2. b | d b e+ b | g f e e | b g b e+
+alto       d d d/2 | R/1 | R/2. b | b b b b
+tenor      g g g/2 | R/1 | R/2. b | d b e+ b
+bass       g- g- g- g | g g e e | b b e g | g g e e
+
+soprano    d d g g | f. a/8 d b | b/2 b/2 | b/1
+alto       b d e d | d. f/8 f g | e/2 d#/2 | e/1
+tenor      g a b g | a. a/8 a b | g/2 f/2 | e/1
+bass       g f e b | d. d/8 d g- | b/2 b/2 | e/1
