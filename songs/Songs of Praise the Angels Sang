@@ -9,6 +9,11 @@ tempo      140
 
 status     header  tune  checked
 
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
 soprano    c- c g c- | e g     bb/2 | a g a/8 b/8 c | b  a   g/2
 alto       c  e c c  | c c     d e  | f e e       e | d. c/8 b/2
 tenor      c  g g e  | g e      g/2 | c c c/8 b/8 a | g  f#  g/2
