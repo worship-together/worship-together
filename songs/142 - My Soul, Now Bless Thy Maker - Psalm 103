@@ -1,0 +1,59 @@
+title      My Soul, Now Bless Thy Maker
+hymnal     Cantus Christi
+page       142
+author     Thomas Ken, 1709
+
+tune       NUN LOB, MEIN SEEL
+metre      7 8. 7 8. 7 6. 7 6. 7 6. 7 6
+composer   Johann Kugelmann's Concentus Novi, Augsburg, 1540
+harmony    Heinrich Schutz, 1661
+key        Ab
+rhythm     0 : 4
+tempo      170
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    a  | a/2  g f/2 e | a/2 b c/2  c  | c/2  c  c/2  b
+alto       e  | e/2  e c/2 c | c/2 e e/2  a+ | a+/2 a+ a+/2 g
+tenor      c  | c/2  b a/2 g | f a g a/2  e+ | e+/2 e+ e+/2 e+
+bass       a+ | a+/2 e f/2 c | f/2 e a+/2 a+ | a+/2 a+ a+/2 e
+
+soprano    a b/2 | a/2. a/2 a  | a/2  g f/2 e | a/2 b c/2  c
+alto       f/2 g | e/2. e/2 e  | e/2  e c/2 c | c/2 e e/2  a+
+tenor      c d b | c/2. c/2 c  | c/2  b a/2 g | f a g a/2  e+
+bass       f d e | a/2. a/2 a+ | a+/2 e f/2 c | f/2 e a+/2 a+
+
+soprano    c/2  c  c/2  b  | a b/2 | a/2. a/2 a | a/2 c  b/2  c
+alto       a+/2 a+ a+/2 g  | f/2 g | e/2. e/2 e | f/2 a+ g/2  g
+tenor      e+/2 e+ e+/2 e+ | c d b | c/2. c/2 c | d/2 e+ e+/2 e+
+bass       a+/2 a+ a+/2 e  | f d e | a/2. a/2 a | d/2 a  e/2  c
+
+soprano    a/2       g         f/2  a | b/2  g a f/2  | e/2.  e/2  e
+alto       f/2       en        f/2  f | f/2  e e dn/2 | e/2.  e/2  b
+tenor      c/2.                c/2  c | f/2  b c b/2  | b/2.  b/2  g
+bass       f-/8 g-/8 a/8 b/8 c f-/2 f | dn/2 e a b/2  | e-/2. e-/2 e
+
+soprano    a/2 a b/2 b | c/2.     a/2 c | d/2   d  c/2 c  | b/2. b/2 b
+alto       d/2 e d/2 b | e/2.     d/2 e | f/2   gb gb f/2 | f/2. f/2 e
+tenor      f/2 e f/2 g | a. g/8 e f/2 e | d- b- b  b/2 an | b/2. b/2 g
+bass       d/2 c b/2 e | a/2.     d/2 c | b  b+ gb e  f/2 | b/2. b/2 e
+
+soprano    c/2  c d/2  d | e+/2.          a/2 c  | b/2 g a f/2
+alto       e/2  f f gb a | gb/2.          f/2 a+ | f/2 e e dn/2
+tenor      a/2  a a b  d | d. c/16 b/16 c d/2 e+ | d/2 c c b/2
+bass       a+/2 f d gb f | e/2.           d/2 a   | b/2 c a b/2
+
+soprano    e/2.  e/2  e | a/2 g  f/2 e  | b/2.  b/2  c  | d  c  b a/2 g
+alto       e/2.  e/2  c | e/2 c  a/2 c  | f/2.  g/2  a+ | a+/2  f e f e
+tenor      b/2.  b/2  a | c/2 e+ d/2 e+ | dn/2. e+/2 e+ | f+ e+ d c b/2
+bass       e-/2. e-/2 a | a/2 c  d/2 a  | b/2.  e/2  a  | d  a  b c d e
+
+soprano    a/2 b  c/2  c  | d  c  b a/2 g | a/2. a/2
+alto       c/2 b  e/2  a+ | a+/2  f e f e | e/2. e/2
+tenor      a/2 e+ c/2  e+ | f+ e+ d c b/2 | c/2. c/2
+bass       f/2 g  a+/2 a  | d  a  b c d e | a/2. a/2
