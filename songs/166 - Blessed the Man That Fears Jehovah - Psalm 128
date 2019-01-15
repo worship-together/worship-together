@@ -9,9 +9,9 @@ metre      8 7. 8 7. D. rep.
 composer   Robert Lowry, 1875
 key        Ab
 rhythm     3 : 4
-tempo      150
+tempo      120
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
