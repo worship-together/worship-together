@@ -15,8 +15,8 @@ status     header
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
-voice      tenor   E3 to D4
-voice      bass    A2 to G3
+#voice      tenor   E3 to D4
+#voice      bass    A2 to G3
 
 soprano    a | a/2 g f/2 e | a/2 b c/2 c | c/2 c c/2 b
 alto       e | e/2 e c/2 c | c/2 e e/2 a+ | a+/2 a+ a+/2 g
@@ -38,4 +38,5 @@ alto       e/2 f f gb a | gb/2. f/2 a+ | f/2 e e dn/2
 
 soprano    e/2. e/2 e | a/2 g f/2 e | b/2. b/2 c | d c b a/2 g
 alto       e/2. e/2 c | e/2
+
 soprano    a/2 b c/2 c | d c b a/2 g | a/2. a/2
