@@ -155,7 +155,8 @@ btn_container.add_subview(btn)
 btn_item = ui.ButtonItem()
 btn_item_objc = ObjCInstance(btn_item)
 btn_item_objc.customView = ObjCInstance(btn_container)
-song_list = ui.ListDataSource(os.listdir('./songs')[:-1])
+song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
+song_list = ui.ListDataSource(sorted(song_files))
 song_list.action = present_song
 table.data_source = table.delegate = song_list
 screen_width, screen_height = ui.get_screen_size()
