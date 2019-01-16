@@ -9,7 +9,7 @@ metre      8 7. 8 7. 8 7. 8 7. 7
 composer   Heinrich Schutz, 1661
 key        G
 rhythm     0 : 4
-tempo      130
+tempo      160
 
 status     header
 
@@ -18,7 +18,18 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano
-alto
+soprano    d-/2 g/2 a b/2 d d c# d/2 | a/2 b/2 d c/2 b/2 a/2 g/2
+alto       b/2 e/2 f g/2 a+ g e f/2 | f/2 g/2 d e/2 g f/2 g/2
 tenor
 bass
+
+soprano
+
+soprano    b/2 a/2 a a/2 b c b a/2 | f/2 g/2 a f/2 g e/2 d-/2
+alto       d/2 fn/2 fn fn/2 d g g f#/2 | d/2 e/2 e d/2 d c#/2 d/2
+
+soprano    a/2 b/2 g b/2 d c b a/2 | g/2 a/2 b c/2 b a/2 b/2
+alto       d/2 d/2 c d/2 d e e e/2 | e/2 f/2 g# a+/2 e e/2 g#/2
+
+soprano    b/2 g/2 f e/2 d- g/1 g/1
+alto       d/2 e/2 d b/2 d c/1 b/1
