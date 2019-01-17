@@ -33,7 +33,7 @@ alto       d d f d | e/2 c/2 | d/2  d/2
 tenor      a g f g | g/2 a/2 | b/2  a/2
 bass       f g d b | c/2 a/2 | g-/2 f/2
 
-soprano    b g        a c       b       a       g/1  | g/2 g/2
-alto       d g        f e/8 f/8 g       f       d/1  | e/2 d/2
-tenor      g b/8 c#/8 d e+ |     d       d/8 c/8 b/1  | c/2 b/2
-bass       g e        d a       b/8 c/8 d       g-/1 | c/2 g-/2
+soprano    b g        a c  | b/2 a/2 | g/2
+alto       d g f e/8 f/8   | g/2 f/2 | d/2
+tenor      g b/8 c#/8 d e+ | d/2 d c | b/2
+bass       g e        d a  | b c d/2 | g-/2
