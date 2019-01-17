@@ -1,0 +1,34 @@
+title      All People That on Earth Do Dwell
+hymnal     Cantus Christi
+page       139
+author     William Kethe, 1561
+
+tune       OLD HUNDREDTH
+metre      L.M.
+composer   Genevan Psalter, 1551
+composer   Louis Bourgeois, 1510-1561
+key        G
+rhythm     4 : 4
+tempo      150
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g/2 | g f e d- | g/2 a/2 | b/2 b/2
+alto       d/2 | d d b b  | b/2 d/2 | d/2 d/2
+tenor      b/2 | b a g f  | g/2 f/2 | g/2 g/2
+bass       g/2 | g d e b  | e/2 d/2 | g/2 g/2
+
+soprano    b b a g | c/2  b/2 | a/2 g/2
+alto       d g f g | g/2  g/2 | f/2 g/2
+tenor      b d d b | e+/2 d/2 | d/2 b/2
+bass       g g d e | c/2 g-/2 | d/2 e/2
+
+soprano    a b a g e       f g/2.
+alto       f g f d e       d d/2.
+tenor      d d d d c/8 b/8 a b/2.
+bass       d g d b c       c g/2.
