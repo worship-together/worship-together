@@ -77,9 +77,16 @@ def create_note(voice, octave_shift, short_name, accidental):
 def parse_notes(beat_value, voice, line):
 	measures = list()
 	measures.append([])
+	prev_note = None
 	for symbol in line.split():
 		if symbol == '|':
 			measures.append([])
+		elif symbol == '=':
+			if prev_note:
+				prev_note.tie = True
+		elif symbol == '-':
+			if prev_note:
+				prev_note.slur = True
 		else:
 			match = note_re.match(symbol)
 			if not match:
@@ -99,6 +106,11 @@ def parse_notes(beat_value, voice, line):
 			fermata = match.group('fermata')
 			if fermata:
 				note.fermata_beats = float(fermata)
+			if prev_note and prev_note.tie and type(prev_note) != type(note):
+				raise RuntimeError('Cannot tie two different pitches (' +
+								   type(prev_note).__name__ + ' & ' +
+								   type(note).__name__ + ')')
+			prev_note = note
 			measures[-1].append(note)
 	return measures
 
