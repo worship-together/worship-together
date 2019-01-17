@@ -10,7 +10,7 @@ composer   Strasbourg, 1539
 harmony    Claude Goudimel, 1564; alt.
 key        F
 rhythm     0 : 4
-tempo      120
+tempo      130
 
 status     header  tune
 
@@ -24,7 +24,7 @@ alto       d/2 a  a  a  c b/2  a/2.  R a/2  a  a  a/2  d/2  c#/2. R
 tenor      f/2 f  e  d- a f/2  f/2.  R d-/2 f  e  d-/2 d-/2 e/2.  R
 bass       d/2 d  c# d  a b/2  f-/2. R d/2  d  c# d/2  b/2  a/2.  R
 
-soprano    a/2 g  a bn c b/2  a/2. R d/2 c a c/2 bn/2 a/2. R
+soprano    a/2 g  a bn c bn/2 a/2. R d/2 c a c/2 bn/2 a/2. R x
 alto       e/2 e  c e  e e/2  c/2. R f/2 f c e/2 e/2  c/2. R
 tenor      c/2 bn a g  a/2 g# a/2. R a/2 a f g a/2 g# a/2. R
 bass       a/2 e  f e  a e/2  a/2. R d/2 f f c/2 e/2  a/2. R
