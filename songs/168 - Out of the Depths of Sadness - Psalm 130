@@ -1,0 +1,40 @@
+title      Out of the Depths of Sadness
+hymnal     Cantus Christi
+page       168
+author     Dewey Westra, 1931; rev.
+psalm      130
+
+tune       DU FONS DE MA PENSEE
+metre      7 6. 7 6. 7 6. 7 6
+composer   Strasbourg, 1539
+harmony    Claude Goudimel, 1564; alt.
+key        F
+rhythm     0 : 4
+tempo      130
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    a/2 d- e  f  e d-/2 c-/2. R f/2  d- e  f/2  g/2  a/2.  R
+alto       d/2 a  a  a  c b/2  a/2.  R a/2  a  a  a/2  d/2  c#/2. R
+tenor      f/2 f  e  d- a f/2  f/2.  R d-/2 f  e  d-/2 d-/2 e/2.  R
+bass       d/2 d  c# d  a b/2  f-/2. R d/2  d  c# d/2  b/2  a/2.  R
+
+soprano    a/2 g  a bn c bn/2 a/2. R d/2 c a c/2 bn/2 a/2. R
+alto       e/2 e  c e  e e/2  c/2. R f/2 f c e/2 e/2  c/2. R
+tenor      c/2 bn a g  a/2 g# a/2. R a/2 a f g a/2 g# a/2. R
+bass       a/2 e  f e  a e/2  a/2. R d/2 f f c/2 e/2  a/2. R
+
+soprano    a/2 c/2 a/2  g f e/2  d-/2. R g/2  f e d- d- c-/2. R
+alto       d/2 e/2 f/2  e d c#/2 a/2.  R d/2  d c b  b  a/2.  R
+tenor      f/2 g/2 c/2  c a a/2  f/2.  R b/2  a a f  g  e/2.  R
+bass       d/2 c/2 f-/2 c d a/2  d/2.  R f-/2 d a b  g- a/2.  R
+
+soprano    f/2  f g a b g/2 f/2.  R a/2  g f g/2  e/2 d-/1
+alto       a/2  d e f f e/2 c/2.  R f/2  e d e d/2 c# d/1
+tenor      d-/2 a c c d c/2 a/2.  R c/2  c a b/2  a/2 a/1
+bass       d/2  d c f b c/2 f-/2. R f-/2 c d g-/2 a/2 d/1

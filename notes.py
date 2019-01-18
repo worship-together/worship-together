@@ -15,6 +15,8 @@ class Note:
 		self.beats = beats
 		self.accidental = accidental
 		self.fermata_beats = 0
+		self.tie = False
+		self.slur = False
 
 	def __repr__(self):
 		return type(self).__name__ + '(' + str(self.beats) + ')'

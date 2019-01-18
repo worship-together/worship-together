@@ -68,23 +68,24 @@ class VoiceStream:
 			tick = 0
 			for measure_num, measure in enumerate(self.song.measures):
 				total_measure_beats = 0
+				tied_beats = 0
 				for note in measure[self.voice]:
-					if type(note) is type:
-						note_name = note.__name__
+					if note.tie:
+						tied_beats += note.beats
 					else:
-						note_name = type(note).__name__
-					note = self.map_note_using_key(note)
-					total_measure_beats += note.beats
-					note_ticks = (note.beats + note.fermata_beats) * \
-                                 ticks_per_beat
-					if type(note) != notes.R:
-						on = tick
-						off = tick + note_ticks - ticks_between_beats
-						yield events.NoteOnEvent(self.voice, on, note.pitch,
-						                         self.velocity)
-						yield events.NoteOffEvent(self.voice, off, note.pitch,
-						                          self.velocity)
-					tick += note_ticks
+						note = self.map_note_using_key(note)
+						total_measure_beats += tied_beats + note.beats
+						note_ticks = (tied_beats + note.beats + note.fermata_beats) * \
+									 ticks_per_beat
+						tied_beats = 0
+						if type(note) != notes.R:
+							on = tick
+							off = tick + note_ticks - ticks_between_beats
+							yield events.NoteOnEvent(self.voice, on, note.pitch,
+													 self.velocity)
+							yield events.NoteOffEvent(self.voice, off, note.pitch,
+													  self.velocity)
+						tick += note_ticks
 				if total_measure_beats > 0:
 					self.verify_beats_per_measure(measure_num, total_measure_beats)
 
