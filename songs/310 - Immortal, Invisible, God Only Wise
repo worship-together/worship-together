@@ -1,0 +1,30 @@
+title      Immortal, Invisible, God Only Wise
+hymnal     Cantus Christi
+page       310
+author     Walter Chalmers Smith, 1867
+
+tune       ST. DENIO (JOANNA)
+metre      11 11. 11 11
+composer   "Caniadau y Cyssegr", John Roberts, 1839
+key        G
+rhythm     3 : 4
+tempo      180
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g | e c- a | f d- g | b b a       | g/2 g
+alto       d | c c  e | d d  b | d d d/8 c/8 | b/2 d
+
+soprano    e c- a | f d- g | b b a       | g/2 g
+alto       c c  e | d d  b | d d d/8 c/8 | b/2 d
+
+soprano    b b d  | b g g | b b d | a/2 b
+alto       g g a+ | d d d | d e d | d/2 d
+
+soprano    g e a | f d- g | b b a | g/2
+alto       e c e | d d  b |
