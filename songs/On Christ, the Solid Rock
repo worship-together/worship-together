@@ -6,6 +6,7 @@ key        G
 rhythm     4 : 4
 tempo      130
 
+#tune needs a key change
 status     header  tune  checked
 
 voice      soprano E4 to D5
