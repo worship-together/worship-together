@@ -1,0 +1,39 @@
+title      O Worship the King
+hymnal     Cantus Christi
+page       321
+author     Robert Grant, 1833; alt.
+
+tune       LYONS
+metre      10 10. 11 11
+composer   attr. Johann Michael Haydn (1737-1806)
+composer   arr. William Gardiner's Sacred Melodies, 1815
+key        Ab
+rhythm     3 : 4
+tempo      140
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    e | a a b | c/2  a | d d c  | b/2 e
+alto       c | e e e | e/2  e | d e e  | e/2 e/8 d/8
+tenor      a | c a g | a/2  a | a b a  | g/2 g
+bass       a | a c e | a+/2 c | f g a+ | e/2 e
+
+soprano    a a b | c/2  d | e+/8. d/16 c b | a/2 e
+alto       c e e | e/2  f | e/8. f/16  e d | c/2 e
+tenor      a a g | a/2  a | a          a g | a/2 g
+bass       a c e | a+/2 f | c/8.  d/16 e e | a/2 e
+
+soprano    e e f  | g g a | b b c  | d/2 e
+alto       e e dn | d d c | b e a+ | g/2 e/8 d/8
+tenor      g g a  | b b a | g g a  | b/2 g
+bass       e e e  | e e e | e e e  | e/2 e
+
+soprano    a a b | c  c  d | e+/8. d/16 c b | a/2
+alto       c e e | e  e  f | e/8.  f/16 e d | c/2
+tenor      a a g | a  a  a | a          a g | a/2
+bass       a c e | a+ a+ f | c/8. d/16  e e | a/2
