@@ -1,0 +1,38 @@
+title      Lord, Teach Us How to Pray Aright
+hymnal     Cantus Christi
+page       372
+author     James Montgomery, 1818
+
+tune       FIRST MODE MELODY
+metre      C.M.D.
+composer   Thomas Tallis, 1567
+key        G
+rhythm     0 : 4
+tempo      130
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    e e e d#-/2 e g/2 f  f/2  | f f/2       b b a#/2 b/2 R
+alto       b b b b/2   b e/2 c# dn/2 | d c#. d/8 - e f/2  f f/2 R
+tenor      e g g f/2   e b/2 a  b/2  | f a/2       b c#/2 c b/2 R
+bass       e e e b/2   e e/2 f  b/2  | b f/2       g f/2  f b/2 R
+
+soprano    b b b a/2  a  g. f/8 - e   d#-/2 | e f/2  f e/2 d#- e/2 R
+alto       f f f f/2  c# d        b/2 b/2   | b c#/2 d b/2 b   b/2 R
+tenor      b b b c#/2 a  b        g/2 f/2   | g a/2  f g f/2   e/2 R
+bass       b b b f/2.    b        e e b/2   | e a/2  d e b/2   e/2 R
+
+soprano    g g g g/2 g g/2 f g/2  | g d/2      d a. g/8 - e a/2 R
+alto       e e e e/2 e e d/2 d/2  | d d. e/8 - f d - e e    f/2 R
+tenor      b b b b/2 b c a/2 g/2  | g b/2      a d/2   c#   d/2 R
+bass       e e e e/2 e c d/2 g-/2 | g g/2      d f e/2      d/2 R
+
+soprano    b b b c/2  b a. - g/8 g f/2 | a g/2    f e/2 d#- e/2.
+alto       g g g g/2  g e/2      c d/2 | d d/2    d b/2 b   b/2.
+tenor      d d d e+/2 d c/2      g a/2 | f b/2    a g  f/2  e/2.
+bass       g g g c/2  g c e/2      d/2 | d b. c/8 d g- b/2  e/2.
