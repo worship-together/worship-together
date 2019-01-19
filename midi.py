@@ -66,9 +66,9 @@ class VoiceStream:
 			if type(self.song.key) is type:
 				self.song.key = self.song.key()
 			tick = 0
+			tied_beats = 0
 			for measure_num, measure in enumerate(self.song.measures):
 				total_measure_beats = 0
-				tied_beats = 0
 				for note in measure[self.voice]:
 					if note.tie:
 						tied_beats += note.beats
