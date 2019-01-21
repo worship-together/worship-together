@@ -11,7 +11,7 @@ key        C
 rhythm     0 : 4
 tempo      190
 
-status     header  tune  checked
+status     header  tune  double  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -44,9 +44,9 @@ tenor      a/2 a a a/2 f#/2 g g  fn d- e/2 g/2.  R
 bass       d/2 d d a/2 d/2  c g- d  b  a/2 g-/2. R
 
 soprano    d-/2 f g a/2 b/2  c  d  c  b  a/2.  R
-alto       a/2  d e f/2 g/2  a+ a+ a+ g# a/2.  R
+alto       a/2  d e f/2 g/2  a+ a+ a+ g# a+/2.  R
 tenor      f/2  a c c/2 e+/2 e+ f+ e+ e+ e+/2. R
-bass       d/2  d c f/2 e/2  a  d  e  e  a/2.  R
+bass       d/2  d c f/2 e/2  a+  d  e  e  a/2.  R
 
 soprano    d/2 d d c/2 a/2 c b  a g  a/2 d-/2. R
 alto       f/2 f f e/2 d/2 e d  d d  c/2 b/2.  R
@@ -56,4 +56,4 @@ bass       d/2 d d a/2 d/2 c g- d b  a/2 g-/2. R
 soprano    d-/2 f g a/2  g/2 g f g/2  e/2 d-/1
 alto       a/2  d e f/2  e/2 e d e d/2 c# d/1
 tenor      f/2  a c c/2  c/2 c a bb/2 a/2 a/1
-bass       d/2  d c f-/2 c/2 c d f-/2 a/2 d/1
+bass       d/2  d c f-/2 c/2 c d g-/2 a/2 d/1
