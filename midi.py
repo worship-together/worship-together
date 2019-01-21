@@ -16,7 +16,6 @@ DESIGN
   - And which type of event it is (on vs off)
 """
 
-import enum
 import itertools
 import struct
 import os
@@ -32,7 +31,7 @@ ticks_per_beat = 1024
 ticks_between_beats = 0 # 34
 
 
-class Voice(enum.IntEnum):
+class Voice:
 	Soprano = 0
 	Alto = 1
 	Tenor = 2
@@ -115,11 +114,11 @@ class VoiceStream:
 				first_measure = measure_num == 0
 				last_measure = measure_num == count(self.song.measures) - 1
 				if not first_measure and not last_measure:
-					raise RuntimeError(f'{total_measure_beats} beats for '
-					                   f'{self.voice.name} in measure '
-					                   f'{measure_num + 1}, expected '
-					                   f'{expected_total_time} '
-					                   f'({self.song})')
+					raise RuntimeError(str(total_measure_beats) + ' beats for ' +
+					                   str(self.voice.name) + ' in measure ' +
+					                   str(measure_num + 1) + ', expected ' +
+					                   str(expected_total_time) + ' ' +
+					                   str(self.song))
 
 
 def make_tick_relative(events):

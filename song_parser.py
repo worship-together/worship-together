@@ -170,8 +170,8 @@ def _parse_lines(filename, attributes):
 				parse_line(line, attributes)
 			except Exception as e:
 				raise RuntimeError(
-					f'Error parsing file {filename}@{number+1}: {line} ' +
-					str(e))
+					'Error parsing file ' + filename + '@' +
+                    str(number+1) + ': ' + str(line) + ' ' + str(e))
 	if 'import' in attributes:
 		imports = attributes['import']
 		attributes.pop('import')
@@ -180,7 +180,7 @@ def _parse_lines(filename, attributes):
 				_parse_lines(_import, attributes)
 			except Exception as e:
 				raise RuntimeError(
-					f'Error importing {_import} from {filename}: ' + str(e))
+					'Error importing ' + _import + ' from ' + filename + ': ' + str(e))
 
 def parse_song(filename):
 	attributes={}

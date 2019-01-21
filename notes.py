@@ -7,9 +7,7 @@ REQUIREMENTS
 - Capture time signature, measures & slurs (through the words)
 """
 
-import enum
-
-class Note:
+class Note(object):
 	def __init__(self, pitch, beats, accidental=None):
 		self.pitch = pitch
 		self.beats = beats
@@ -23,31 +21,31 @@ class Note:
 
 class R(Note):
 	def __init__(self, beats=1):
-		super().__init__(0, beats)
+		super(R, self).__init__(0, beats)
 class A0(Note):
 	def __init__(self, beats=1):
-		super().__init__(21, beats)
+		super(A0, self).__init__(21, beats)
 class A0n(Note):
 	def __init__(self, beats=1):
-		super().__init__(21, beats, accidental='n')
+		super(A0n, self).__init__(21, beats, accidental='n')
 class A0s(Note):
 	def __init__(self, beats=1):
-		super().__init__(22, beats, accidental='#')
+		super(A0s, self).__init__(22, beats, accidental='#')
 class B0b(Note):
 	def __init__(self, beats=1):
-		super().__init__(22, beats, accidental='b')
+		super(B0b, self).__init__(22, beats, accidental='b')
 class B0(Note):
 	def __init__(self, beats=1):
-		super().__init__(23, beats)
+		super(B0, self).__init__(23, beats)
 class B0n(Note):
 	def __init__(self, beats=1):
-		super().__init__(23, beats, accidental='n')
+		super(B0n, self).__init__(23, beats, accidental='n')
 class B0s(Note):
 	def __init__(self, beats=1):
-		super().__init__(24, beats, accidental='#')
+		super(B0s, self).__init__(24, beats, accidental='#')
 class C1b(Note):
 	def __init__(self, beats=1):
-		super().__init__(23, beats, accidental='b')
+		super(C1b, self).__init__(23, beats, accidental='b')
 class C1(Note):
 	def __init__(self, beats=1):
 		super().__init__(24, beats)
