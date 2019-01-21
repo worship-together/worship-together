@@ -50,7 +50,7 @@ class D_Sharp(Key):
 class E(Key):
 	def __init__(self):
 		super().__init__()
-		self._not_implemented()
+		self.notes.update({D1:D1s, D2:D2s, D3:D3s, D4:D4s, D5:D5s, D6:D6s, D7:D7s})
 		
 		
 class E_Sharp(Key):
@@ -92,7 +92,7 @@ class G_Sharp(Key):
 class A(Key):
 	def __init__(self):
 		super().__init__()
-		self._not_implemented()
+		self.notes.update({G1:G1s, G2:G2s, G3:G3s, G4:G4s, G5:G5s, G6:G6s, G7:G7s})
 		
 		
 class A_Sharp(Key):

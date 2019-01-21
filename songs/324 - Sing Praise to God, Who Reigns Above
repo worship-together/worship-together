@@ -1,0 +1,44 @@
+title      Sing Praise to God, Who Reigns Above
+hymnal     Cantus Christi
+page       324
+author     Johann J. Schutz, 1675
+translator Frances Elizabeth Cox, 1864
+
+tune       MIT FREUDEN ZART
+metre      8 7. 8 7. 8 8 7
+composer   Bohemian Brethren's Kirchengesange, 1566
+key        D
+rhythm     6 : 4
+tempo      150
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d-/2 | f g a/2 d/2  | c  b a/2    b. a/8
+alto       a/2  | d c d/2 d/2  | d  d d/2    d#/2
+tenor      f/2  | a a a/2 a/2  | a  g f/2    f  b
+bass       d/2  | d e f/2 f-/2 | g- b d - cn b/2
+
+soprano    g f       e/2    f - g | e/2      d-/2 d-/2 | f g a/2 d/2
+alto       e d       c/2    d/2   | d - c    d/2  a/2  | d c d/2 d/2
+tenor      b a       a/2    a   b | a. - g/8 f/2  f/2  | a a a/2 a/2
+bass       e f/8 g/8 a+ - g f - e | a/2      d/2  d/2  | d e f/2 f-/2
+
+soprano    c  b a/2    b. - a/8 | g f       e/2    f - g | e/2      d-/2 d/2
+alto       d  d d/2    d#/2     | e d       c/2    d/2   | d - c    d/2  f/2
+tenor      a  g f/2    f - b    | b a       a/2    a - b | a. - g/8 f/2  b/2
+bass       g- b d - cn b/2      | e f/8 g/8 a+ - g f - e | a/2      d/2  b/2
+
+soprano    c b  a/2 d/2 | c b  a/2 a/2     | d- e f/2 d-/2
+alto       f e# c/2 d/2 | e e  e/2 c/2     | d  c d/2 d/2
+tenor      a g# f/2 f/2 | a g# c/2 a/2     | a  g a/2 f/2
+bass       c c  f/2 b/2 | c e  a/2 a+ - gn | f  e d/2 d - c
+
+soprano    f g# a/2     a/2       | b g e/2    f - g | e/2      d-/2
+alto       d d  c/2     d/2       | d d c/2    d/2   | d - c    a/2
+tenor      b b  a/2     d. - cn/8 | b b a/2    a - b | a. - g/8 f/2
+bass       b e  a+ - gn f/2       | g e a+ - g f - e | a+ a     d/2
