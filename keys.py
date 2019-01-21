@@ -29,7 +29,7 @@ class D_Flat(Key):
 		self._not_implemented()
 		
 		
-class G(Key):
+class G(C):
 	def __init__(self):
 		super().__init__()
 		self.notes.update({F1:F1s, F2:F2s, F3:F3s, F4:F4s, F5:F5s, F6:F6s, F7:F7s})
@@ -42,18 +42,6 @@ class D(G):
 		
 		
 class D_Sharp(Key):
-	def __init__(self):
-		super().__init__()
-		self._not_implemented()
-		
-		
-class E(Key):
-	def __init__(self):
-		super().__init__()
-		self.notes.update({D1:D1s, D2:D2s, D3:D3s, D4:D4s, D5:D5s, D6:D6s, D7:D7s})
-		
-		
-class E_Sharp(Key):
 	def __init__(self):
 		super().__init__()
 		self._not_implemented()
@@ -89,7 +77,7 @@ class G_Sharp(Key):
 		self._not_implemented()
 
 
-class A(Key):
+class A(D):
 	def __init__(self):
 		super().__init__()
 		self.notes.update({G1:G1s, G2:G2s, G3:G3s, G4:G4s, G5:G5s, G6:G6s, G7:G7s})
@@ -99,8 +87,20 @@ class A_Sharp(Key):
 	def __init__(self):
 		super().__init__()
 		self._not_implemented()
-		
-		
+
+
+class E(A):
+    def __init__(self):
+        super().__init__()
+        self.notes.update({D1: D1s, D2: D2s, D3: D3s, D4: D4s, D5: D5s, D6: D6s, D7: D7s})
+
+
+class E_Sharp(Key):
+    def __init__(self):
+        super().__init__()
+        self._not_implemented()
+
+
 class B_Flat(F):
 	def __init__(self):
 		super().__init__()
