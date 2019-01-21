@@ -503,6 +503,9 @@ class F6s(Note):
 class G6(Note):
 	def __init__(self, beats=1):
 		super().__init__(91, beats)
+class G6s(Note):
+	def __init__(self, beats=1):
+		super().__init__(92, beats, accidental='#')
 class A6b(Note):
 	def __init__(self, beats=1):
 		super().__init__(92, beats, accidental='b')
@@ -534,6 +537,9 @@ class D7b(Note):
 class D7(Note):
 	def __init__(self, beats=1):
 		super().__init__(98, beats)
+class D7s(Note):
+	def __init__(self, beats=1, accidental='#'):
+		super().__init__(99, beats)
 class E7b(Note):
 	def __init__(self, beats=1):
 		super().__init__(99, beats, accidental='b')
@@ -549,6 +555,9 @@ class F7s(Note):
 class G7(Note):
 	def __init__(self, beats=1):
 		super().__init__(103, beats)
+class G7s(Note):
+	def __init__(self, beats=1):
+		super().__init__(104, beats, accidental='#')
 class A7b(Note):
 	def __init__(self, beats=1):
 		super().__init__(104, beats, accidental='b')

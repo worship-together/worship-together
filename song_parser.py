@@ -74,8 +74,9 @@ def create_note(voice, octave_shift, short_name, accidental):
 	return short_name + str(octave) + accidental
 
 
-def parse_notes(beat_value, voice, line):
+def parse_notes(beat_value, key, voice, line):
 	measures = list()
+	measures.append(key)
 	measures.append([])
 	prev_note = None
 	for symbol in line.split():
@@ -143,7 +144,11 @@ def parse_line(line, attributes):
 				value = attributes[name] if name in attributes else []
 				if 'beat_value' not in attributes:
 					raise RuntimeError('missing "rhythm" attribute')
-				value += parse_notes(attributes['beat_value'], name, raw_value)
+				elif 'key' not in attributes:
+					raise RuntimeError('key must be declared before notes')
+				beat_value = attributes['beat_value']
+				key = attributes['key']
+				value += parse_notes(beat_value, key, name, raw_value)
 			else:
 				value = raw_value
 				if name in attributes:

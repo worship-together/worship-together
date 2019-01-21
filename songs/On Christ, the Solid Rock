@@ -23,6 +23,8 @@ alto       b  b/8 c/8 d        d        | e d         d d | e         e         
 tenor      d- g/8 a/8 b        g        | c b         a b | b/8 - a/8 g          f  b  | g f  e(1) R
 bass       R  g-      g-/8 a/8 b/8 g-/8 | a b/8 - c/8 d b | e         g-/8 - a/8 b  b  | c d  e(1) b
 
+key        E
+
 soprano    R/1                   | R/1                   | R/2.                   b  | b/8 b/8 b/8 b/8 c#  e+ | d#/2   e+/2
 alto       R/1                   | R/2.               c# | f#/8 f#/8 f#/8 f#/8 e  f# | g# - f#         e/2    | f#/2   e/2
 tenor      R/2.               b  | b/8 b/8 b/8 b/8 c# e+ | d#/2                a/2   | g# - b          a - c# | b - a  g#/2
