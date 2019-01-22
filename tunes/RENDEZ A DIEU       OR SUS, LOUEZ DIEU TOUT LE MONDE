@@ -11,10 +11,10 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    g/2  e d- g g a c   b/2  a/2.  R
-alto       d/2  c b  e e f a/2 g#   a+/2. R
-tenor      b/2  a f  e b d e+  e+/2 e+/2. R
-bass       g-/2 a b  c e d a   e/2  a/2.  R
+soprano    g/2  e d- g g a c  b/2  a/2.  R
+alto       d/2  c b  e e f a+/2 g# a+/2. R
+tenor      b/2  a f  e b d e+ e+/2 e+/2. R
+bass       g-/2 a b  c e d a  e/2  a/2.  R
 
 soprano    d/2  b  b  g c  b/2 a/2 g/2.  R
 alto       b+/2 g  g  e a+/2 g/2 f g/2.  R
@@ -22,7 +22,7 @@ tenor      g+/2 d  d  c e+ d/2 d/2 b/2.  R
 bass       g-/2 g- g- c a  b/2 d/2 g-/2. R
 
 soprano    g/2  e d- g g a c  b/2  a/2.  R
-alto       d/2  c b  e e f a/2 g#  a+/2. R
+alto       d/2  c b  e e f a+/2 g#  a+/2. R
 tenor      b/2  a f  e b d e+ e+/2 c#/2. R
 bass       g-/2 a b  c e d a  e/2  a/2.  R
 
@@ -42,7 +42,7 @@ tenor      g/2  b  b  a a/2 g/2 f g/2.  R
 bass       g-/2 g- g- d a e/2 d/2 g-/2. R
 
 soprano    g/2 g a b g c  c  b/2  a/2. R
-alto       d/2 e f g e a  g  g/2  f/2. R
+alto       d/2 e f g e a+ g  g/2  f/2. R
 tenor      b/2 b d d c e+ e+ d/2  d/2. R
 bass       g/2 e d g c a  c  g-/2 d/2. R
 

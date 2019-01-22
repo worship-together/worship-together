@@ -76,36 +76,37 @@ class MusicView(ui.View):
 		position = origin
 		for measure in measures:
 			voice_selected = measure[voice]
-			for note in voice_selected:
-				if type(note) is type:
-					note_name = note.__name__
-					note_beats = note().beats
-				else:
-					note_name = type(note).__name__
-					note_beats = note.beats
-				note_index = create_index(note_name)
-				if not note_index == -1:
-					self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
-					self.note_dot.stroke()
-					ui.set_color('black')
-					if note_beats < 2:
-						self.note_dot.fill()
-					if note_beats < 4:
-						self.note_tail = ui.Path()
-						self.note_tail.move_to(
-							position + (((tail_direction * 1.5) + 1.5) * step), 
-							(clef_C0 - (note_index * step)) + step)
-						self.note_tail.line_to(
-							position + (((tail_direction * 1.5) + 1.5) * step),
-							((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
-						self.note_tail.stroke()
-				else:
-					rest = ui.Label()
-					rest.center = position, 30
-					rest.text = 'Rest'
-					rest.font = 'Helvetica', 30
-					self.add_subview(rest)
-				position += note_gap * note_beats
+			if isinstance(voice_selected, list):
+				for note in voice_selected:
+					if type(note) is type:
+						note_name = note.__name__
+						note_beats = note().beats
+					else:
+						note_name = type(note).__name__
+						note_beats = note.beats
+					note_index = create_index(note_name)
+					if not note_index == -1:
+						self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
+						self.note_dot.stroke()
+						ui.set_color('black')
+						if note_beats < 2:
+							self.note_dot.fill()
+						if note_beats < 4:
+							self.note_tail = ui.Path()
+							self.note_tail.move_to(
+								position + (((tail_direction * 1.5) + 1.5) * step),
+								(clef_C0 - (note_index * step)) + step)
+							self.note_tail.line_to(
+								position + (((tail_direction * 1.5) + 1.5) * step),
+								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
+							self.note_tail.stroke()
+					else:
+						rest = ui.Label()
+						rest.center = position, 30
+						rest.text = 'Rest'
+						rest.font = 'Helvetica', 30
+						self.add_subview(rest)
+					position += note_gap * note_beats
 
 
 class MyView(ui.View):

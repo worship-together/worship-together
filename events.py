@@ -11,7 +11,7 @@ import struct
 default_velocity = 60
 
 
-class Event():
+class Event(object):
 	def __init__(self, tick=0):
 		self.tick = tick
 		
@@ -22,25 +22,26 @@ class Event():
 		
 class NoteEvent(Event):
 	def __init__(self, voice, tick, pitch, velocity):
-		super().__init__(tick)
+		super(NoteEvent, self).__init__(tick)
 		self.voice = voice
 		self.pitch = pitch
 		self.velocity = velocity
 		
 	def __repr__(self):
-		return f'({self.voice.name:7} {self.tick:4}, {self.pitch:2}, ' \
-		f'{"On" if type(self) == NoteOnEvent else "Off"})'
+		return '(%7s %4s, %2s, %s' % \
+		    	self.voice.name, self.tick, self.pitch, \
+				"On" if type(self) == NoteOnEvent else "Off"
 		
 	def code(self):
 		raise NotImplementedError('must override code method')
 		
 	def to_bytes(self):
 		code = self.code()
-		channel = self.voice.value
+		channel = self.voice
 		sts_msg = struct.pack('B', (code & 0xf0) + (channel & 0x0f))
 		pitch = struct.pack('B', self.pitch)
 		velocity = struct.pack('B', self.velocity)
-		return super().to_bytes() + sts_msg + pitch + velocity
+		return super(NoteEvent, self).to_bytes() + sts_msg + pitch + velocity
 		
 		
 class NoteOnEvent(NoteEvent):
@@ -59,7 +60,7 @@ class RestEvent(Event):
 	
 class MetaEvent(Event):
 	def __init__(self, code, data):
-		super().__init__()
+		super(MetaEvent, self).__init__()
 		self.code = code
 		self.data = data
 		
@@ -67,22 +68,22 @@ class MetaEvent(Event):
 		code_bytes = struct.pack('BB', 0xff, self.code)
 		data_len = struct.pack('B', len(self.data))
 		data_bytes = array.array('B', self.data).tobytes()
-		return super().to_bytes() + code_bytes + data_len + data_bytes
+		return super(MetaEvent, self).to_bytes() + code_bytes + data_len + data_bytes
 		
 		
 class SmpteOffsetEvent(MetaEvent):
 	def __init__(self):
-		super().__init__(code=0x54, data=[0, 0, 0, 0, 0])
+		super(SmpteOffsetEvent, self).__init__(code=0x54, data=[0, 0, 0, 0, 0])
 		
 		
 class TimeSignatureEvent(MetaEvent):
 	def __init__(self):
-		super().__init__(code=0x58, data=[4, 2, 24, 8])
+		super(TimeSignatureEvent, self).__init__(code=0x58, data=[4, 2, 24, 8])
 		
 		
 class KeySignatureEvent(MetaEvent):
 	def __init__(self):
-		super().__init__(code=0x59, data=[0, 0])
+		super(KeySignatureEvent, self).__init__(code=0x59, data=[0, 0])
 		
 		
 class SetTempoEvent(MetaEvent):
@@ -92,12 +93,12 @@ class SetTempoEvent(MetaEvent):
 		data_0 = microseconds_per_beat & 0xFF
 		data_1 = (microseconds_per_beat & 0xFF00) >> 8
 		data_2 = (microseconds_per_beat & 0xFF0000) >> 16
-		super().__init__(code=0x51, data=[data_2, data_1, data_0])
+		super(SetTempoEvent, self).__init__(code=0x51, data=[data_2, data_1, data_0])
 		
 		
 class EndOfTrackEvent(MetaEvent):
 	def __init__(self):
-		super().__init__(code=0x2F, data=[])
+		super(EndOfTrackEvent, self).__init__(code=0x2F, data=[])
 		self.tick = 34
 		
 def _get_var_len(value, low_order_byte=True):

@@ -3,6 +3,6 @@ hymnal     Cantus Christi
 page       100
 author     W. W. J. VanOene, 1972
 
-status     header  tune  checked
+status     header  tune  double  checked
 
 import     tunes/DU MALIN LE MESCHANT VOULIOR         QUE DIEU SE MONSTRE SEULEMENT

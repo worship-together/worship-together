@@ -16,7 +16,6 @@ DESIGN
   - And which type of event it is (on vs off)
 """
 
-import enum
 import itertools
 import struct
 import os
@@ -26,12 +25,13 @@ import math
 import notes
 import events
 import song_parser
+import keys
 
 ticks_per_beat = 1024
 ticks_between_beats = 0 # 34
 
 
-class Voice(enum.IntEnum):
+class Voice:
 	Soprano = 0
 	Alto = 1
 	Tenor = 2
@@ -47,9 +47,9 @@ class VoiceStream:
 		self.voice = voice
 		self.velocity = velocity[self.voice]
 
-	def map_note_using_key(self, note):
+	def map_note_using_key(self, key, note):
 		note_type = note if type(note) is type else type(note)
-		new_note_type = self.song.key[note_type]
+		new_note_type = key[note_type]
 		if new_note_type:
 			note_type = new_note_type
 		if type(note) is type:
@@ -61,37 +61,49 @@ class VoiceStream:
 			new_note.fermata_beats = note.fermata_beats
 			return new_note
 
+	@classmethod
+	def resolve_key(cls, key):
+		if type(key) is type:
+			key = key()
+		return key
+
 	def __iter__(self):
 		if self.velocity > 0:
-			if type(self.song.key) is type:
-				self.song.key = self.song.key()
+			key = VoiceStream.resolve_key(self.song.key)
 			tick = 0
-			for measure_num, measure in enumerate(self.song.measures):
-				total_measure_beats = 0
-				tied_beats = 0
-				for note in measure[self.voice]:
-					if note.tie:
-						tied_beats += note.beats
-					else:
-						note = self.map_note_using_key(note)
-						total_measure_beats += tied_beats + note.beats
-						note_ticks = (tied_beats + note.beats + note.fermata_beats) * \
-									 ticks_per_beat
-						tied_beats = 0
-						if type(note) != notes.R:
-							on = tick
-							off = tick + note_ticks - ticks_between_beats
-							yield events.NoteOnEvent(self.voice, on, note.pitch,
-													 self.velocity)
-							yield events.NoteOffEvent(self.voice, off, note.pitch,
-													  self.velocity)
-						tick += note_ticks
-				if total_measure_beats > 0:
-					self.verify_beats_per_measure(measure_num, total_measure_beats)
+			tied_beats = 0
+			measure_num = 0
+			for measure in [measure[self.voice] for measure in self.song.measures]:
+				# some 'measures' are key changes...
+				if isinstance(measure, keys.Key) or type(measure) is type:
+					key = VoiceStream.resolve_key(measure)
+				else:
+					total_measure_beats = 0
+					for note in measure:
+						if note.tie:
+							tied_beats += note.beats
+						else:
+							note = self.map_note_using_key(key, note)
+							total_measure_beats += tied_beats + note.beats
+							note_ticks = (tied_beats + note.beats + note.fermata_beats) * \
+										 ticks_per_beat
+							tied_beats = 0
+							if type(note) != notes.R:
+								on = tick
+								off = tick + note_ticks - ticks_between_beats
+								yield events.NoteOnEvent(self.voice, on, note.pitch,
+														 self.velocity)
+								yield events.NoteOffEvent(self.voice, off, note.pitch,
+														  self.velocity)
+							tick += note_ticks
+					if total_measure_beats > 0:
+						self.verify_beats_per_measure(measure_num, total_measure_beats)
+					measure_num += 1
 
 	def verify_beats_per_measure(self, measure_num, total_measure_beats):
 		# TBD: should not count note beats, but note values
 		#      note values must always sum to 1.0
+		count = lambda measures: sum(1 for m in measures if isinstance(m[0], list))
 		if self.song.beats_per_measure > 0:
 			beat_value = 1.0
 			if hasattr(self.song, 'beat_value'):
@@ -100,13 +112,13 @@ class VoiceStream:
 			                       beat_value)
 			if not math.isclose(total_measure_beats, expected_total_time):
 				first_measure = measure_num == 0
-				last_measure = measure_num == len(self.song.measures) - 1
+				last_measure = measure_num == count(self.song.measures) - 1
 				if not first_measure and not last_measure:
-					raise RuntimeError(f'{total_measure_beats} beats for '
-					                   f'{self.voice.name} in measure '
-					                   f'{measure_num + 1}, expected '
-					                   f'{expected_total_time} '
-					                   f'({self.song})')
+					raise RuntimeError(str(total_measure_beats) + ' beats for ' +
+					                   str(self.voice.name) + ' in measure ' +
+					                   str(measure_num + 1) + ', expected ' +
+					                   str(expected_total_time) + ' ' +
+					                   str(self.song))
 
 
 def make_tick_relative(events):

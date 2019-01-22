@@ -4,7 +4,7 @@ composer   Franz Joseph Haydn, 1798
 composer   arr. Isaac B. Woodbury
 key        G
 rhythm     4 : 4
-tempo      140
+tempo      160
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -17,7 +17,7 @@ tenor      d- | d-/2. g | f/2. a  | g/2  g c | b/2 a f/8  g/8 | a g f g
 bass       g- | g-/2. b | d/2. f- | g- b c a | d/2.  d        | c b a g-
 
 soprano    c/2  b/2  | b a g f  | g/2.  d- | d-/2. d- | g/2. g | a/2. a | b/2. a
-alto       d/2  d/2  | d c b a- | b/2.  d  | d/2.  d  | b/2. b | d/2. d | g/2. f
+alto       d/2  d/2  | d c b a  | b/2.  d  | d/2.  d  | b/2. b | d/2. d | g/2. f
 tenor      a/2  g/2  | e/2 d-/2 | d-/2. d- | d-/2. d- | g/2. g | f/2. f | g/2. d
 bass       f-/2 g-/2 | c/2 d/2  | g-/2. d  | d/2.  d  | d/2. d | d/2. d | d/2. d
 

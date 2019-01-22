@@ -100,17 +100,17 @@ def test_all_songs():
 			song_file.write(new_file_format)
 		test_song('test')
 		song = midi.Song('test')
-		assert type(song.measures[-2][midi.Voice.Soprano.value][0]) == D5s
-		assert song.measures[-2][midi.Voice.Soprano.value][0].beats == 4
-		assert type(song.measures[-2][midi.Voice.Alto.value][0]) == B3b
-		assert song.measures[-2][midi.Voice.Alto.value][1].beats == 0.5
-		assert song.measures[-2][midi.Voice.Alto.value][2].beats == 2.0
-		assert type(song.measures[-2][midi.Voice.Tenor.value][0]) == E2n
-		assert song.measures[-2][midi.Voice.Tenor.value][0].beats == 1.0
-		assert song.measures[-2][midi.Voice.Tenor.value][0].fermata_beats == 3.0
-		assert type(song.measures[-2][midi.Voice.Bass.value][0]) == G4s
-		assert song.measures[-2][midi.Voice.Bass.value][0].beats == 0.1875
-		assert song.measures[-2][midi.Voice.Bass.value][0].fermata_beats == 1.2
+		assert type(song.measures[-2][midi.Voice.Soprano][0]) == D5s
+		assert song.measures[-2][midi.Voice.Soprano][0].beats == 4
+		assert type(song.measures[-2][midi.Voice.Alto][0]) == B3b
+		assert song.measures[-2][midi.Voice.Alto][1].beats == 0.5
+		assert song.measures[-2][midi.Voice.Alto][2].beats == 2.0
+		assert type(song.measures[-2][midi.Voice.Tenor][0]) == E2n
+		assert song.measures[-2][midi.Voice.Tenor][0].beats == 1.0
+		assert song.measures[-2][midi.Voice.Tenor][0].fermata_beats == 3.0
+		assert type(song.measures[-2][midi.Voice.Bass][0]) == G4s
+		assert song.measures[-2][midi.Voice.Bass][0].beats == 0.1875
+		assert song.measures[-2][midi.Voice.Bass][0].fermata_beats == 1.2
 		for song in os.listdir('./songs'):
 			if midi.is_song(song):
 				test_song(song)
