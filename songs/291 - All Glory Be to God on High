@@ -1,0 +1,40 @@
+title      All Glory Be to God on High
+hymnal     Cantus Christi
+page       291
+author     Nikolaus Decius, 1525
+translator Catherine Winkworth, 1863; alt.
+
+tune       ALLEIN GOTT IN DER HOH
+metre      8 7. 8 7. 8 8 7
+composer   attr. Nikolaus Decius, 1539
+harmony    Hieronymus Praetorius, 1604
+key        G
+rhythm     6 : 4
+tempo      150
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g | b/2 c  d/2   c  | b/2    a  b/2 b  | b/2 a c. - b/8  a
+alto       d | g/2 g  g - d a+ | f - g  e  e/2 g  | g/2 f g/2       fn
+tenor      b | d/2 e+ d - b c  | d - e+ c  b/2 e+ | d/2 d e+. - d/8 c
+bass       g | g/2 c  g/2   a+ | b+ - g a+ e/2 e  | g/2 d c/2       fn
+
+soprano    g/2 - f g/2  g | b/2 c  d/2   c  | b/2    a  b/2 b  | b/2 a c. - b/8  a
+alto       d/2.    b/2  d | g/2 g  g - d a+ | f - g  e  e/2 g  | g/2 f g/2       fn
+tenor      b a/2   g/2  b | d/2 e+ d - b c  | d - e+ c  b/2 e+ | d/2 d e+. - d/8 c
+bass       g - d/2 g-/2 g | g/2 c  g/2   a+ | b+ - g a+ e/2 e  | g/2 d c/2       fn
+
+soprano    g/2 - f g/2  g | g/2 a c/2    b | a/2    g# a/2  a
+alto       d/2.    b/2  d | d/2 f g - a+ g | e - fn e  c#/2 e
+tenor      b a/2   g/2  b | b/2 d e+/2   d | c   b/2   a/2  c
+bass       g d/2   g-/2 g | g/2 d c - a  b | c - d  e  a/2  a+
+
+soprano    b/2 c  d/2             c  | b/2    a  b/2 g | a. - b/8 c  b/2    a | g/2 - f   g/2
+alto       g/2 g  a+/2            a+ | f - g  e  e/2 d | f. - g/8 g  g/2    e | d   e   d b/2
+tenor      d/2 e+ a/2             c  | d/2    c  b/2 b | d. - d/8 e+ d/2    c | b - a/2   g/2
+bass       g/2 e  d/8 e/8 f/8 d/8 a+ | b+ - g a+ e/2 g | d. - g/8 c  g - g- a | b - c - d g-/2

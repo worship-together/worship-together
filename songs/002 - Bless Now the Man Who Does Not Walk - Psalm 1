@@ -1,0 +1,38 @@
+title      Bless Now the Man Who Does Not Walk
+hymnal     Cantus Christi
+page       2
+author     Douglas Wilson, 2000
+
+tune       WER NICHT SITZT IM GOTTLOSEN RAT
+metre      L.M.
+composer   Heinrich Schutz, 1661
+key        C
+rhythm     0 : 4
+tempo      180
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g/2 g/2 c- e/2 g g f e/2
+alto       c/2 c/2 a  c/2 d e d b/2
+tenor      e/2 g/2 f  g/2 g e a g#/2
+bass       c/2 e/2 f  c/2 b c d e/2
+
+soprano    g/2 a/2 b c/2 b  a a  g/2
+alto       e/2 c/2 d e/2 d  d d  d/2
+tenor      b/2 a/2 f g/2 g  g f# g/2
+bass       e/2 f/2 d c/2 g- d d  g-/2
+
+soprano    g/2 e/2 a  g/2 c c b  c/2
+alto       c/2 c/2 c  c/2 e e e  e/2
+tenor      e/2 g/2 f  e/2 a a g# a/2
+bass       c/2 c/2 f- c/2 a e e  a/2
+
+soprano    a/2 b/2 c d/2 g a b c/1
+alto       f/2 d/2 g f/2 e c g e/1
+tenor      c/2 b/2 g a/2 c a d c/1
+bass       f/2 g/2 e d/2 e f g c/1
