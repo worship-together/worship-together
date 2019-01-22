@@ -39,12 +39,13 @@ def calculate_length(song):
 	end = origin
 	for measure in midi.Song(song).measures:
 		voice_selected = measure[midi.Voice.Soprano]
-		for note in voice_selected:
-			if type(note) is type:
-				note_beats = note().beats
-			else:
-				note_beats = note.beats
-			end += note_gap * note_beats
+		if isinstance(voice_selected, list):
+			for note in voice_selected:
+				if type(note) is type:
+					note_beats = note().beats
+				else:
+					note_beats = note.beats
+				end += note_gap * note_beats
 	return end
 			
 
