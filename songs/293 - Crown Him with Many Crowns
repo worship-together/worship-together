@@ -1,0 +1,39 @@
+title      Crown Him with Many Crowns
+hymnal     Cantus Christi
+page       293
+author     Matthew Bridges, 1851
+author     st. 2, Godfrey Thring, 1874
+
+tune       DIADEMATA
+metre      S.M.D.
+composer   George J. Elvey, 1868
+key        D
+rhythm     4 : 4
+tempo      120
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d- d-/8 d-/8 f f | b/2.  b | a d- g f | e/2. e
+alto       a  a/8  a/8  d d | d/2.  d | d d  c d | c/2. c
+tenor      f  f/8  f/8  f f | g/2.  g | a b  g a | a/2. a
+bass       d  d/8  d/8  b b | g-/2. g | f g  e d | a/2. a
+
+soprano    f a b a | g# f/8 e/8 a d  | c d b b  | a/2.  a
+alto       d e d d | b  b       e d  | e f b e  | c/2.  c
+tenor      a a f f | g# g#      a g# | a a a g# | a/2.  a
+bass       d c b d | e  d       c b  | a d e e  | a+/2. g
+
+soprano    a f e d- | b/2. b  | b  g# f e  | c/2.  c
+alto       d d c d  | d/2. d# | e  e  d d  | c/2.  e
+tenor      a a g a  | b/2. a  | g# b  a b  | a/2.  a
+bass       f d e f  | g/2. f  | e  e  f g# | a+/2. g
+
+soprano    d. c/8 b a | g e  f a  | g  f e  e   | d-/1
+alto       d  d   d d | d c  d d  | d  d d  c   | d/1
+tenor      a  a   g a | b a  a a  | b  a a. g/8 | f/1
+bass       f  f   g f | e a+ d f- | g- d a  a   | d/1
