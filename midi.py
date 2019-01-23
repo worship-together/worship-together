@@ -38,6 +38,19 @@ class Voice:
 	Bass = 3
 	Count = 4
 
+	@staticmethod
+	def to_string(voice):
+		if voice == 0:
+			return "Soprano"
+		elif voice == 1:
+			return "Alto"
+		elif voice == 2:
+			return "Tenor"
+		elif voice == 3:
+			return "Bass"
+		else:
+			return str(voice)
+
 
 class VoiceStream:
 	"""Stream of events for one voice for whole song"""
@@ -115,7 +128,7 @@ class VoiceStream:
 				last_measure = measure_num == count(self.song.measures) - 1
 				if not first_measure and not last_measure:
 					raise RuntimeError(str(total_measure_beats) + ' beats for ' +
-					                   str(self.voice.name) + ' in measure ' +
+					                   Voice.to_string(self.voice) + ' in measure ' +
 					                   str(measure_num + 1) + ', expected ' +
 					                   str(expected_total_time) + ' ' +
 					                   str(self.song))
