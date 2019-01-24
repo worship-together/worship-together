@@ -1,0 +1,28 @@
+title      Jesus, the Very Thought of Thee
+hymnal     Cantus Christi
+page       359
+author     attr. Bernard of Clairvaux, 1091-1153
+
+tune       ST. AGNES
+metre      C.M.
+composer   John B. Dykes, 1866
+key        G
+rhythm     3 : 4
+tempo      140
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    b b b | a/2 b | c/2   f | g/2. | d- d- d- | b/2 a  | a/2.
+alto       d d d | e/2 d | c - e d | d/2. | d  d  d  | d/2 c# | d/2.
+tenor      b b g | c/2 g | a/2   a | b/2. | c  b  a  | g/2 g  | f/2.
+bass       g g b | c/2 b | a/2   d | g/2. | a+ g  f  | g/2 e  | d/2.
+
+soprano    c c b  | a/2 g  | f/2 e  | d-/2.   | d- e g | b/2   a | g/2.
+alto       e e d  | c/2 c# | d/2 c# | d/2.    | d  d c | b - d c | b/2.
+tenor      e f g# | a/2 a  | a/2 g  | f/2.    | g  g g | g/2   f | g/2.
+bass       a a a  | a/2 a  | d/2 d  | d/2 - c | b  c e | d/2   d | g-/2.

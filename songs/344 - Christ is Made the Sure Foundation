@@ -12,7 +12,7 @@ key        A
 rhythm     6 : 4
 tempo      140
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
