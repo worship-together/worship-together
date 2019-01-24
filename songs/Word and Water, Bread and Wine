@@ -15,10 +15,10 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    b/2 | b b g g | g f  g. a/8 | b  b  c c | b  b  b/2 | = b/2 R/2
-alto       b/2 | e e d d | b a  b. c/8 | b  e  e e | d# d# e/2 | = e/2 R/2
-tenor      e/2 | g g b b | e d# e. f/8 | g  e  a g | f  f  e/2 | = e/2 R/2
-bass       e/2 | e e g g | e b  e. d/8 | g- g- a a | b  b  e/2 | = e/2 g/2
+soprano    b/2 | b b g g | g f  g. a/8 | b  b  c c | b  b  b/2 | b/2 R/2
+alto       b/2 | e e d d | b a  b. c/8 | b  e  e e | d# d# e/2 | e/2 R/2
+tenor      e/2 | g g b b | e d# e. f/8 | g  e  a g | f  f  e/2 | e/2 R/2
+bass       e/2 | e e g g | e b  e. d/8 | g- g- a a | b  b  e/2 | e/2 g/2
 
 soprano    R/1      | R/2.  b | d b g g | b a g a
 alto       R/1      | R/1     | R/2.  g | g f e f
