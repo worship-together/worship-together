@@ -50,18 +50,18 @@ def get_subview(name):
 	for subview in satb_page.subviews:
 		if subview.name == name:
 			return subview
-	raise RuntimeError(f'nutn is namd {name}')
+	raise RuntimeError('nutn is namd ' + name)
 
 def track_time(slider):
 	global player, dragging, last_position, rate, position
 	if player and not dragging:
 		if slider.value == last_position:
-			slider.value = player.current_time / player.duration
+			slider.value = player.current_time / float(player.duration)
 			if slider.value == 1 and get_subview('play_button').title == 'Pause':
 				player.current_time = 0
 				rate = player.rate
 				play()
-				slider.value = player.current_time / player.duration
+				slider.value = player.current_time / float(player.duration)
 			last_position = slider.value
 		else:
 			dragging = True

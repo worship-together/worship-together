@@ -100,7 +100,7 @@ def parse_notes(beat_value, key, voice, line):
 			note_value = match.group('note_value')
 			beats = 1.0
 			if note_value:
-				beats = beat_value / int(note_value)
+				beats = beat_value / float(note_value)
 			if match.group('dot'):
 				beats = beats * 1.5
 			note = note_type(beats)

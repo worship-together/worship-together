@@ -7,6 +7,7 @@ REQUIREMENTS
 
 import array
 import struct
+import platform
 
 default_velocity = 60
 
@@ -67,7 +68,10 @@ class MetaEvent(Event):
 	def to_bytes(self):
 		code_bytes = struct.pack('BB', 0xff, self.code)
 		data_len = struct.pack('B', len(self.data))
-		data_bytes = array.array('B', self.data).tobytes()
+		if int(platform.python_version()[:1]) == 3:
+			data_bytes = array.array('B', self.data).tobytes()
+		else:
+			data_bytes = ''.join(chr(x) for x in self.data)
 		return super(MetaEvent, self).to_bytes() + code_bytes + data_len + data_bytes
 		
 		
