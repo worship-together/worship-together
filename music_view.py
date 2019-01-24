@@ -2,6 +2,7 @@ import ui
 import photos
 import console
 import midi
+import inspect
 
 
 screen_width, screen_height = ui.get_screen_size()
@@ -14,7 +15,7 @@ bass_lines = []
 for i in range(0, 5):
 	treble_lines.append(screen_height * (screen_padding*((i+7)/8)))
 	bass_lines.append(screen_height - (screen_height * (screen_padding*((i+7)/8))))
-step = (treble_lines[1] - treble_lines[0]) / 2
+step = (treble_lines[1] - treble_lines[0]) / 2.0
 C0_treble_y = treble_lines[4] + step + ((step * 7) * 4)
 
 
@@ -45,7 +46,7 @@ class MusicView(ui.View):
 		for measure in song.measures:
 			soprano = measure[midi.Voice.Soprano]
 			for note in soprano:
-				if type(note) is type:
+				if inspect.isclass(note):
 					note_name = note.__name__
 				else:
 					note_name = type(note).__name__

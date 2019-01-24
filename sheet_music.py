@@ -1,5 +1,6 @@
 import ui
 import midi
+import inspect
 
 screen_width, screen_height = ui.get_screen_size()
 notes_drawn = 0
@@ -41,7 +42,7 @@ def calculate_length(song):
 		voice_selected = measure[midi.Voice.Soprano]
 		if isinstance(voice_selected, list):
 			for note in voice_selected:
-				if type(note) is type:
+				if inspect.isclass(note):
 					note_beats = note().beats
 				else:
 					note_beats = note.beats
@@ -79,7 +80,7 @@ class MusicView(ui.View):
 			voice_selected = measure[voice]
 			if isinstance(voice_selected, list):
 				for note in voice_selected:
-					if type(note) is type:
+					if inspect.isclass(note):
 						note_name = note.__name__
 						note_beats = note().beats
 					else:

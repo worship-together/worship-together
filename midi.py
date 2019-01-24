@@ -21,6 +21,7 @@ import struct
 import os
 import importlib
 import math
+import inspect
 
 import notes
 import events
@@ -30,6 +31,8 @@ import keys
 ticks_per_beat = 1024
 ticks_between_beats = 0 # 34
 
+def isclose(p_1, p_2):
+	return abs(p_1 - p_2) < 0.000001
 
 class Voice:
 	Soprano = 0
@@ -61,11 +64,11 @@ class VoiceStream:
 		self.velocity = velocity[self.voice]
 
 	def map_note_using_key(self, key, note):
-		note_type = note if type(note) is type else type(note)
+		note_type = note if inspect.isclass(note) else type(note)
 		new_note_type = key[note_type]
 		if new_note_type:
 			note_type = new_note_type
-		if type(note) is type:
+		if inspect.isclass(note):
 			return note_type()
 		elif type(note) == note_type:
 			return note
@@ -76,7 +79,7 @@ class VoiceStream:
 
 	@classmethod
 	def resolve_key(cls, key):
-		if type(key) is type:
+		if inspect.isclass(key):
 			key = key()
 		return key
 
@@ -88,7 +91,7 @@ class VoiceStream:
 			measure_num = 0
 			for measure in [measure[self.voice] for measure in self.song.measures]:
 				# some 'measures' are key changes...
-				if isinstance(measure, keys.Key) or type(measure) is type:
+				if isinstance(measure, keys.Key) or inspect.isclass(measure):
 					key = VoiceStream.resolve_key(measure)
 				else:
 					total_measure_beats = 0
@@ -120,10 +123,10 @@ class VoiceStream:
 		if self.song.beats_per_measure > 0:
 			beat_value = 1.0
 			if hasattr(self.song, 'beat_value'):
-				beat_value = 4.0 / self.song.beat_value
+				beat_value = 4.0 / float(self.song.beat_value)
 			expected_total_time = (self.song.beats_per_measure *
 			                       beat_value)
-			if not math.isclose(total_measure_beats, expected_total_time):
+			if not isclose(total_measure_beats, expected_total_time):
 				first_measure = measure_num == 0
 				last_measure = measure_num == count(self.song.measures) - 1
 				if not first_measure and not last_measure:

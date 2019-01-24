@@ -50,15 +50,19 @@ def size(filename):
 
 
 def test_song(filename):
-	try:
-		song = generate_midi(filename)
-		if not song.is_unison:
-			assert size('soprano.midi') < size('full.midi') / 2
-			assert size('soprano.midi') > size('full.midi') / 5
-			assert size('soprano_bass.midi') < size('full.midi') * 3 / 4
-			assert size('soprano_bass.midi') > size('full.midi') / 3
-	except Exception as e:
-		print(filename + ': ' + str(e))
+	#try:
+	song = generate_midi(filename)
+	if not song.is_unison and size('full.midi') > 100:
+		#print(filename)
+		#print(size('full.midi'))
+		#print(size('soprano.midi'))
+		#print()
+		assert size('soprano.midi') < size('full.midi') / 2.0
+		assert size('soprano.midi') > size('full.midi') / 5.0
+		assert size('soprano_bass.midi') < size('full.midi') * 3.0 / 4.0
+		assert size('soprano_bass.midi') > size('full.midi') / 3.0
+	#except Exception as e:
+	#	print(filename + ': ' + str(e))
 
 
 

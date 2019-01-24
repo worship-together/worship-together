@@ -193,9 +193,9 @@ def verify_file_uploaded(name, content):
 		file_found = True
 		remote = service.get_file_to_text(share, test_dir, name)
 		if remote.content != content:
-			print(f'remote content different from local content for {name}:')
-			print(f'remote content: {remote.content}')
-			print(f'local content: {content}')
+			print('remote content different from local content for ' + name + ':')
+			print('remote content: ' + remote.content)
+			print('local content: ' + content)
 			assert remote.content == content
 	assert file_found
 	
