@@ -75,6 +75,8 @@ class VoiceStream:
 		else:
 			new_note = note_type(note.beats)
 			new_note.fermata_beats = note.fermata_beats
+			new_note.tie = note.tie
+			new_note.slur = note.slur
 			return new_note
 
 	@classmethod
@@ -96,13 +98,13 @@ class VoiceStream:
 				else:
 					total_measure_beats = 0
 					for note in measure:
+						note = self.map_note_using_key(key, note)
+						total_measure_beats += note.beats
 						if note.tie:
 							tied_beats += note.beats
 						else:
-							note = self.map_note_using_key(key, note)
-							total_measure_beats += tied_beats + note.beats
-							note_ticks = (tied_beats + note.beats + note.fermata_beats) * \
-										 ticks_per_beat
+							modified_beats = note.beats + tied_beats + note.fermata_beats
+							note_ticks = modified_beats * ticks_per_beat
 							tied_beats = 0
 							if type(note) != notes.R:
 								on = tick
@@ -112,15 +114,14 @@ class VoiceStream:
 								yield events.NoteOffEvent(self.voice, off, note.pitch,
 														  self.velocity)
 							tick += note_ticks
-					if total_measure_beats > 0:
-						self.verify_beats_per_measure(measure_num, total_measure_beats)
+					self.verify_beats_per_measure(measure_num, total_measure_beats)
 					measure_num += 1
 
 	def verify_beats_per_measure(self, measure_num, total_measure_beats):
 		# TBD: should not count note beats, but note values
 		#      note values must always sum to 1.0
 		count = lambda measures: sum(1 for m in measures if isinstance(m[0], list))
-		if self.song.beats_per_measure > 0:
+		if total_measure_beats > 0 and self.song.beats_per_measure > 0:
 			beat_value = 1.0
 			if hasattr(self.song, 'beat_value'):
 				beat_value = 4.0 / float(self.song.beat_value)
