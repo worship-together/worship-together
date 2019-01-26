@@ -1,0 +1,40 @@
+title      All Glory, Laud, and Honor
+hymnal     Cantus Christi
+page       268
+author     Theodulph of Orleans, c. 820
+translator John Mason Neale, 1854; alt.
+
+tune       ST. THEODULPH [VALET WILL ICH DIR GEBEN]
+metre      7 6. 7 6. D.
+composer   Melchior Teschner, c. 1614
+harmony    J.S. Bach
+key        C
+rhythm     4 : 4
+tempo      150
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    c- | g g a b   | c/2 c e+ | d  c c b  | c/2. c-
+alto       g- | c e f e   | e/2 e a+ | a+ f e d  | e/2. g-
+tenor      e  | g c c b   | a/2 a c  | a  a g g  | g/2. e/8 f/8
+bass       c  | e c f g#- | a/2 a a+ | f  d g g- | c/2. c/8 d/8
+
+soprano    c- | g g a b   | c/2 c e+ | d  c c b  | c/2. c
+alto       g- | c e f e   | e/2 e a+ | a+ f e d  | e/2. e
+tenor      e  | g c c b   | a/2 a c  | a  a g g  | g/2. g
+bass       c  | e c f g#- | a/2 a a+ | f  d g g- | c/2. c
+
+soprano    e+ e+ d  c   | b - a  g b        | c       b a  a       | g/2. g
+alto       g  a+ a+ f#  | g - f# d g        | g       g g  f#      | d/2. d
+tenor      c  c  d  d   | d - c  b d        | c       d e+ d/8 c/8 | b/2. g
+bass       e  c  f  g#- | a/2    a a+/8 g/8 | f/8 e/8 d g  g-      | c/2. b
+
+soprano    e g  a       g  | g - f e g  | f e  d- d-      | c-/2.
+alto       c e  f       e  | e - d c c  | c c  c  b       | g-/2.
+tenor      g c  c       bb | a/2   a e  | f g  a  g/8 f/8 | e/2.
+bass       c bb a/8 b/8 c# | d/2   a bb | a g- f- g-      | c/2.
