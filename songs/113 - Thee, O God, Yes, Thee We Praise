@@ -1,0 +1,38 @@
+title      Thee, O God, Yes, Thee We Praise
+hymnal     Cantus Christi
+page       113
+author     W. van der Kamp, 1972; and others
+
+tune       O SEIGNER, LOUE SERA
+metre      7 7. 7 7. 7 7
+composer   Genevan Psalter, 1562
+key        F
+rhythm     0 : 4
+tempo      150
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    c/2  b/2 a d  c/2  b/2 a d  c/2  b/2
+alto       a+/2 g/2 f b  a/2  g/2 f b  a/2  g/2
+tenor      f+/2 d/2 d f+ f+/2 d/2 d f+ f+/2 d/2
+bass       f/2  g/2 d b  f/2  g/2 d b  f/2  g/2
+
+soprano    a/2 g g f/2. R f/2 a/2 g c c bn c/2
+alto       f/2 e e f/2. R c/2 f/2 e e f d  e/2
+tenor      d c c/2 c/2. R a/2 c/2 c g a g  g/2
+bass       d f c/2 f/2. R f/2 f/2 c c f g  c/2
+
+soprano    d  d  c  a  b b a/2.  R c/2 b/2 a c
+alto       b+ b+ a+ a+ g g f#/2. R f/2 d/2 f e
+tenor      f+ f+ f+ f+ d d d/2.  R a/2 g/2 d g
+bass       b  b  f  f  g g d/2.  R f/2 g/2 d c
+
+soprano    b  a g/2. R a/2 c/2  f b a/2 g/2 f/1
+alto       g  f e/2. R f/2 a+/2 f g/2 f/2 e f/1
+tenor      g  c c/2. R c/2 f+/2 a d c/2 c/2 c/1
+bass       eb f c/2. R f/2 f/2  d b f/2 c/2 f/1
