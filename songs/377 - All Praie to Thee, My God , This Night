@@ -1,0 +1,43 @@
+title      All Praise to Thee, My God, This Night
+hymnal     Cantus Christi
+page       377
+author     Thomas Ken, 1709
+
+tune       TALLIS' CANNON [EIGHTH MODE MELODY]
+metre      L.M.D.
+composer   Thomas Tallis, 1567
+key        G
+rhythm     4 : 4
+tempo      130
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d- | d- d- d- g  | g f g  g | a a b  g
+alto       g- | a  a  b  g- | c a d  d | e d d  d
+tenor      g  | g  f  g  g  | a a b  g | g f g  g
+bass       g  | d  d  g- b  | a a g- b | c d g- b
+
+soprano    g f g  g | a   a   b g | c  c  b b
+alto       c a d  d | fn. e/8 d d | c  a  d d
+tenor      a a b  g | c   c   b b | a  a  g g
+bass       a a g- g | g   fn  g g | a+ fn g g-
+
+soprano    a   a   g  g | c c  b b | a  a  g d
+alto       fn. e/8 d  d | c a  d g | e  fn d g
+tenor      c   c   b  b | a a  g d | c  a  b b
+bass       a   fn- g- g | g fn g g | a+ fn g g-
+
+soprano    c a b  b | a  a  g d  | c a b  b  | a a g d-
+alto       e f g  g | e  fn d g  | e f g  g  | e d b d
+tenor      a a g  d | c  a  b b  | a a g  d- | e f g b
+bass       c d g- g | a+ fn g g- | c d g- b  | c d e b
+
+soprano    e f g  b  | a a g  d-  | e f g/2
+alto       c a b  b  | e f b. d/8 | c a b/2
+tenor      a a g  d- | e f g  b   | a a g/2
+bass       c d g- g- | c d e  g   | c d g-/2
