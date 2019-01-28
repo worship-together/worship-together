@@ -5,6 +5,7 @@ import sheet_music
 import storage
 from objc_util import *
 import os
+import sound
 
 exiting = False
 player = None

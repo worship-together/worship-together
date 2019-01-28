@@ -5,7 +5,8 @@ screen_width, screen_height = ui.get_screen_size()
 notes_drawn = 0
 screen_padding = 1/6#of the screen
 note_gap = 125
-origin = 100
+origin = screen_width / 2
+next_note_tied = False
 
 treble_lines = []
 bass_lines = []
@@ -45,6 +46,7 @@ def calculate_length(song):
 			else:
 				note_beats = note.beats
 			end += note_gap * note_beats
+	end += note_gap * 3
 	return end
 			
 
@@ -72,14 +74,21 @@ class MusicView(ui.View):
 		self.staff.stroke()
 	
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
-		global origin, end
+		global origin, end, next_note_tied
 		position = origin
 		for measure in measures:
+			position -= note_gap / 2
+			measure_bar = ui.Path()
+			measure_bar.move_to(position, treble_lines[0])
+			measure_bar.line_to(position, bass_lines[0])
+			measure_bar.stroke()
+			position += note_gap / 2
 			voice_selected = measure[voice]
 			for note in voice_selected:
 				if type(note) is type:
 					note_name = note.__name__
 					note_beats = note().beats
+					next_note_tied = note().tied
 				else:
 					note_name = type(note).__name__
 					note_beats = note.beats
@@ -99,6 +108,12 @@ class MusicView(ui.View):
 							position + (((tail_direction * 1.5) + 1.5) * step),
 							((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
 						self.note_tail.stroke()
+					if not note_beats == 3 and note_beats % 1.5 == 0:
+						self.note_dotted = ui.Path()
+						self.note_dotted = ui.Path.oval(position + (4 * step), clef_C0 - ((note_index - 0.6) * step), 0.4 * step, 0.4 * step)
+						self.note_dotted.stroke()
+						ui.set_color('black')
+						self.note_dotted.fill()
 				else:
 					rest = ui.Label()
 					rest.center = position, 30
@@ -106,7 +121,7 @@ class MusicView(ui.View):
 					rest.font = 'Helvetica', 30
 					self.add_subview(rest)
 				position += note_gap * note_beats
-
+			
 
 class MyView(ui.View):
 	def __init__(self, song):
