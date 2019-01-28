@@ -1,5 +1,6 @@
 import ui
 import midi
+import inspect
 
 screen_width, screen_height = ui.get_screen_size()
 notes_drawn = 0
@@ -40,13 +41,13 @@ def calculate_length(song):
 	end = origin
 	for measure in midi.Song(song).measures:
 		voice_selected = measure[midi.Voice.Soprano]
-		for note in voice_selected:
-			if type(note) is type:
-				note_beats = note().beats
-			else:
-				note_beats = note.beats
-			end += note_gap * note_beats
-	end += note_gap * 3
+		if isinstance(voice_selected, list):
+			for note in voice_selected:
+				if inspect.isclass(note):
+					note_beats = note().beats
+				else:
+					note_beats = note.beats
+				end += note_gap * note_beats
 	return end
 			
 
@@ -84,44 +85,38 @@ class MusicView(ui.View):
 			measure_bar.stroke()
 			position += note_gap / 2
 			voice_selected = measure[voice]
-			for note in voice_selected:
-				if type(note) is type:
-					note_name = note.__name__
-					note_beats = note().beats
-					next_note_tied = note().tied
-				else:
-					note_name = type(note).__name__
-					note_beats = note.beats
-				note_index = create_index(note_name)
-				if not note_index == -1:
-					self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
-					self.note_dot.stroke()
-					ui.set_color('black')
-					if note_beats < 2:
-						self.note_dot.fill()
-					if note_beats < 4:
-						self.note_tail = ui.Path()
-						self.note_tail.move_to(
-							position + (((tail_direction * 1.5) + 1.5) * step), 
-							(clef_C0 - (note_index * step)) + step)
-						self.note_tail.line_to(
-							position + (((tail_direction * 1.5) + 1.5) * step),
-							((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
-						self.note_tail.stroke()
-					if not note_beats == 3 and note_beats % 1.5 == 0:
-						self.note_dotted = ui.Path()
-						self.note_dotted = ui.Path.oval(position + (4 * step), clef_C0 - ((note_index - 0.6) * step), 0.4 * step, 0.4 * step)
-						self.note_dotted.stroke()
+			if isinstance(voice_selected, list):
+				for note in voice_selected:
+					if inspect.isclass(note):
+						note_name = note.__name__
+						note_beats = note().beats
+					else:
+						note_name = type(note).__name__
+						note_beats = note.beats
+					note_index = create_index(note_name)
+					if not note_index == -1:
+						self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
+						self.note_dot.stroke()
 						ui.set_color('black')
-						self.note_dotted.fill()
-				else:
-					rest = ui.Label()
-					rest.center = position, 30
-					rest.text = 'Rest'
-					rest.font = 'Helvetica', 30
-					self.add_subview(rest)
-				position += note_gap * note_beats
-			
+						if note_beats < 2:
+							self.note_dot.fill()
+						if note_beats < 4:
+							self.note_tail = ui.Path()
+							self.note_tail.move_to(
+								position + (((tail_direction * 1.5) + 1.5) * step),
+								(clef_C0 - (note_index * step)) + step)
+							self.note_tail.line_to(
+								position + (((tail_direction * 1.5) + 1.5) * step),
+								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
+							self.note_tail.stroke()
+					else:
+						rest = ui.Label()
+						rest.center = position, 30
+						rest.text = 'Rest'
+						rest.font = 'Helvetica', 30
+						self.add_subview(rest)
+					position += note_gap * note_beats
+
 
 class MyView(ui.View):
 	def __init__(self, song):

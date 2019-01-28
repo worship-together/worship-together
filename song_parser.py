@@ -74,12 +74,20 @@ def create_note(voice, octave_shift, short_name, accidental):
 	return short_name + str(octave) + accidental
 
 
-def parse_notes(beat_value, voice, line):
+def parse_notes(beat_value, key, voice, line):
 	measures = list()
+	measures.append(key)
 	measures.append([])
+	prev_note = None
 	for symbol in line.split():
 		if symbol == '|':
 			measures.append([])
+		elif symbol == '=':
+			if prev_note:
+				prev_note.tie = True
+		elif symbol == '-':
+			if prev_note:
+				prev_note.slur = True
 		else:
 			match = note_re.match(symbol)
 			if not match:
@@ -92,13 +100,18 @@ def parse_notes(beat_value, voice, line):
 			note_value = match.group('note_value')
 			beats = 1.0
 			if note_value:
-				beats = beat_value / int(note_value)
+				beats = beat_value / float(note_value)
 			if match.group('dot'):
 				beats = beats * 1.5
 			note = note_type(beats)
 			fermata = match.group('fermata')
 			if fermata:
 				note.fermata_beats = float(fermata)
+			if prev_note and prev_note.tie and type(prev_note) != type(note):
+				raise RuntimeError('Cannot tie two different pitches (' +
+								   type(prev_note).__name__ + ' & ' +
+								   type(note).__name__ + ')')
+			prev_note = note
 			measures[-1].append(note)
 	return measures
 
@@ -131,7 +144,11 @@ def parse_line(line, attributes):
 				value = attributes[name] if name in attributes else []
 				if 'beat_value' not in attributes:
 					raise RuntimeError('missing "rhythm" attribute')
-				value += parse_notes(attributes['beat_value'], name, raw_value)
+				elif 'key' not in attributes:
+					raise RuntimeError('key must be declared before notes')
+				beat_value = attributes['beat_value']
+				key = attributes['key']
+				value += parse_notes(beat_value, key, name, raw_value)
 			else:
 				value = raw_value
 				if name in attributes:
@@ -153,8 +170,8 @@ def _parse_lines(filename, attributes):
 				parse_line(line, attributes)
 			except Exception as e:
 				raise RuntimeError(
-					f'Error parsing file {filename}@{number+1}: {line} ' +
-					str(e))
+					'Error parsing file ' + filename + '@' +
+                    str(number+1) + ': ' + str(line) + ' ' + str(e))
 	if 'import' in attributes:
 		imports = attributes['import']
 		attributes.pop('import')
@@ -163,7 +180,7 @@ def _parse_lines(filename, attributes):
 				_parse_lines(_import, attributes)
 			except Exception as e:
 				raise RuntimeError(
-					f'Error importing {_import} from {filename}: ' + str(e))
+					'Error importing ' + _import + ' from ' + filename + ': ' + str(e))
 
 def parse_song(filename):
 	attributes={}

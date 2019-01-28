@@ -1,0 +1,40 @@
+title      Hallelujah! Praise the Lord
+hymnal     Cantus Christi
+page       196
+author     Dewey Westra, 1931; rev.
+psalm      150
+
+tune       OR SOIT LOUE L'ETERNEL
+metre      7 7. 7 7 8. 7 7 8
+composer   "Genevan Psalter", 1562
+harmony    Claude Goudimel, 1564; alt.
+key        D
+rhythm     0 : 4
+tempo      150
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d-/2 f/2 e d- f g a/2 d-/2 f/2 e d- f g a/2. R
+alto       d/2  d/2 c a  d b e/2 a/2  d/2 c a  d b e/2. R
+tenor      a/2  a/2 a f  d d c/2 f/2  a/2 a f  d d c/2. R
+bass       d/2  d/2 a d  b b a/2 d/2  d/2 a d  b b a/2. R
+
+soprano    f/2 b/2 a d  d  c  d/2  a/2 d/2 b  a a g# a/2. R
+alto       d/2 f/2 f a+ b+ a+ a+/2 f/2 f/2 g  f e e  f/2. R
+tenor      a/2 d/2 c f+ e+ e+ f+/2 d/2 a/2 d  d c b  d/2. R
+bass       d/2 b/2 f f  g  a+ d/2  d/2 d/2 g- d a e  d/2. R
+
+soprano    f/2 a/2 b  a g  f e/2 d-/2. R d-/2 g/2  f e f g a/2. R
+alto       d/2 f/2 g  e e  a a/2 a/2.  R b/2  d/2  d a d e f/2. R
+tenor      a/2 d/2 d  c e+ d/2 c d/2.  R f/2  b/2  a a b b d/2. R
+bass       d/2 d/2 g- a cn d a/2 d/2.  R b/2  g-/2 d c b e d/2. R
+
+soprano    d-/2 g/2  f e f g a/2. R d/2 b/2  a g f d- e/2 d-/1
+alto       b/2  d/2  d a d e f/2. R f/2 g/2  f e d d/2  c d/1
+tenor      f/2  b/2  a a b b d/2. R a/2 d/2  d b b f  a/2 a/1
+bass       b/2  g-/2 d c b e d/2. R d/2 g-/2 d e b b  a/2 d/1

@@ -14,6 +14,7 @@ DESIGN
 """
 
 import midi
+import inspect
 
 song = [song for song in midi.songs if '334' in str(song)][0]
 print(song)
@@ -21,7 +22,7 @@ print(song)
 for measure in song.measures:
     soprano = measure[midi.Voice.Soprano]
     for note in soprano:
-        if type(note) is type:
+        if inspect.isclass(note):
             note_name = note.__name__
         else:
             note_name = type(note).__name__

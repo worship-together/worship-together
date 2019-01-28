@@ -1,0 +1,44 @@
+title      Now Rest Beneath Night's Shadow
+hymnal     Cantus Christi
+page       380
+author     Paul Gerhardt, 1648
+translator composite
+
+tune       INNSBRUCK, ICH MUSS DICH LASSEN
+metre      7 7 6. 7 7 6
+composer   Heinrich Isaac, 15th century
+key        F
+rhythm     0 : 4
+tempo      150
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    R/2 f/2 f g a/2  c/2            b/2 a/2 | R a c. b/8
+alto       c/1     d e f/2  c    f/2 - e       f/2 | R c a  a
+tenor      R/2 f/2 a b c/2  a/2            b/2 c/2 | R c c. d/8
+bass       f/1     d g f a+ a+ - g/8 - f/8 g/2 f/2 | R f f  f
+
+soprano    g/2   a/2 f/2               e/2  | R f g  f e f g/2  | R g
+alto       d/2   a   a/2 - g-/8 - f-/8 g-/2 | R d d  d c d b/2  | R d
+tenor      eb+/2 d   c/2 - bn          c/2  | R a b  a g a g/2  | R g
+bass       eb/2  f/2 d/2               c/2  | R d g- d e d g-/2 | R g
+
+soprano    f g a/2  c/2            b/2 a/2 | R a c. b/8 g/2   a/2             f/2 e/2
+alto       d e f/2  c    f/2 - e       f/2 | R c a  a   b/2   a a/2 - g-/8 - f-/8 g-/2
+tenor      a b c/2  a/2            b/2 c/2 | R c c. d/8 eb+/2 d c/2 - bn          c/2
+bass       d g f a+ a+ - g/8 - f/8 g/2 f/2 | R f f  f   eb/2  f/2             d/2 c/2
+
+soprano    R e f g a/2 - b. - a/8 - g/8 - f/8 - g. - f/8 - f/2 e   f/2
+alto       R g f e f/2 - f. - e/8 - d/8 - c/8 - d - c - b      c/2 c/2
+tenor      R c a b c/2 - d - b. - a/8 - g/8 - f/8 - e - f      g/2 f/2
+bass       R c d g f/2 - b/2 - R - b - c - d                   c/2 f-/2
+
+soprano    R e f g a/2 - b. - a/8 - g/8 - f/8 - g. - f/8 - f/2 e   f/2
+alto       R g f e f/2 - f. - e/8 - d/8 - c/8 - d - c - b      c/2 c/2
+tenor      R c a b c/2 - d - b. - a/8 - g/8 - f/8 - e - f      g/2 f/2
+bass       R c d g f/2 - b/2 - R - b - c - d                   c/2 f-/2

@@ -1,0 +1,38 @@
+title      Stricken  Smitten, and Afflicted
+hymnal     Cantus Christi
+page       365
+author     Thomas Kelly, 1804; alt.
+
+tune       O MEIN JESU, ICH MUSS STERBEN
+metre      8 7. 8 7. D.
+composer   "Geistliche Volkslieder", Paderborn, 1850
+key        Bb
+rhythm     6 : 4
+tempo      130
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g a  | b/2 b/2 c b  | a/2 a/2  b a  | g/2 a/2 g f# | g/1  g a
+alto       d d  | d/2 e/2 e d  | d/2 d/2  d d  | b/2 e/2 d d  | d/1  d d
+tenor      b a  | g/2 g/2 g g  | g/2 f#/2 g f# | g/2 c/2 b a  | b/1  b a
+bass       g f# | g/2 e/2 c g- | d/2 d/2  g d  | e/2 c/2 d d  | g-/1 g f#
+
+soprano    b/2 b/2 c b  | a/2 a/2  b a  | g/2 a/2 g f# | g/1  b c
+alto       d/2 e/2 e d  | d/2 d/2  d d  | b/2 e/2 d d  | d/1  d f
+tenor      g/2 g/2 g g  | g/2 f#/2 g f# | g/2 c/2 b a  | b/1  g a
+bass       g/2 e/2 c g- | d/2 d/2  g d  | e/2 c/2 d d  | g-/1 g f
+
+soprano    d/2  d/2 e+ d | c/2 c/2 d  c | b/2 b/2 c b  | a/1  g  f#
+alto       f/2  g/2 g  f | f/2 f/2 f  f | d/2 e/2 e d  | d/1  d  d
+tenor      b/2  b/2 b  b | b/2 a/2 b  a | g/2 g/2 g g  | f#/1 b  a
+bass       b+/2 g/2 e  b | f/2 f/2 b+ f | g/2 e/2 c g- | d/1  g- d
+
+soprano    g/2 b/2 a  g | a/2 a/2  b a | g/2 a/2 g f# | g/1
+alto       d/2 d/2 d  b | d/2 d/2  d d | e/2 e/2 d d  | d/1
+tenor      b/2 g/2 f# g | g/2 f#/2 g a | b/2 c/2 b a  | b/1
+bass       g/2 g/2 d  e | d/2 d/2  g f | e/2 c/2 d d  | g-/1

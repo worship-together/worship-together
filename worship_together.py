@@ -51,18 +51,18 @@ def get_subview(name):
 	for subview in satb_page.subviews:
 		if subview.name == name:
 			return subview
-	raise RuntimeError(f'nutn is namd {name}')
+	raise RuntimeError('nutn is namd ' + name)
 
 def track_time(slider):
 	global player, dragging, last_position, rate, position
 	if player and not dragging:
 		if slider.value == last_position:
-			slider.value = player.current_time / player.duration
+			slider.value = player.current_time / float(player.duration)
 			if slider.value == 1 and get_subview('play_button').title == 'Pause':
 				player.current_time = 0
 				rate = player.rate
 				play()
-				slider.value = player.current_time / player.duration
+				slider.value = player.current_time / float(player.duration)
 			last_position = slider.value
 		else:
 			dragging = True
@@ -156,7 +156,8 @@ btn_container.add_subview(btn)
 btn_item = ui.ButtonItem()
 btn_item_objc = ObjCInstance(btn_item)
 btn_item_objc.customView = ObjCInstance(btn_container)
-song_list = ui.ListDataSource(os.listdir('./songs')[:-1])
+song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
+song_list = ui.ListDataSource(sorted(song_files))
 song_list.action = present_song
 table.data_source = table.delegate = song_list
 screen_width, screen_height = ui.get_screen_size()
