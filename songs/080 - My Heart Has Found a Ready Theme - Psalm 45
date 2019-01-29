@@ -11,9 +11,44 @@ key        Eb
 rhythm     0 : 4
 tempo      130
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    f/1  c-/2 db-/2 c-/2 f/2  en. - f/8 - g  f en/2. | f g/2
+alto       c/1  a/2  b/2   g-/2 f-/2 g-. - f-/8 - c c c/2.  | c e/2
+tenor      a/1  f/2  f/2   e/2  a/2  c. - b/8 - g   a g/2.  | a b/2
+bass       f-/1 f-/2 b/2   c/2  db/2 c. - d/8 - en  f c/2.  | f e/2
+
+soprano    b/2. a/2 g/2 f/2 - en       f/1  | f/1  c-/2 db-/2 c-/2 f/2
+alto       f/2  e/2 e/2 c/1            c/1  | c/1  a/2  b/2   g-/2 f-/2
+tenor      db/2 c/2 b/2 a/2 - g/2      f/1  | a/1  f/2  f/2   e/2  a/2
+bass       b/2  c/2 e/2 a. - b/8 - c/2 f-/1 | f-/1 f-/2 b/2   c/2  db/2
+
+soprano    en. - f/8 - g  f en/2. | f g/2 b/2. a/2 g/2 f/2 - en       f/1
+alto       g-. - f-/8 - c c c/2.  | c e/2 f/2  e/2 e/2 c/1            c/1
+tenor      c. - b/8 - g   a g/2.  | a b/2 db/2 c/2 b/2 a/2 - g/2      f/1
+bass       c. - d/8 - en  f c/2.  | f e/2 b/2  c/2 e/2 a. - b/8 - c/2 f-/1
+
+soprano    a/2  a  e f/2 | b/2  b  f# g/2  | bn/2 c  b c/2
+alto       c/2  c  c d/2 | b/2  d  d  d/2  | g/2  f  g en/2
+tenor      f/2  f  g b/2 | d/2  g  an bn/2 | d/2  c  d c/2
+bass       f-/2 f- c b/2 | g-/2 g- d  g-/2 | g/2  a+ g c/2
+
+soprano    an/2 b an b/2 | c/2 b a b c a/2 g/2  | c db/2 c
+alto       f/2  d f  d/2 | e/2 e c e e c/2 c/2  | e f/2  e
+tenor      c/2  b c  b/2 | e/2 g f g g f/2 en/2 | a f/2  g
+bass       f/2  g f  b/2 | a/2 e f e c f/2 c/2  | a db/2 e
+
+soprano    a/2 b  c/2  a g/2  | e+ b/2 e+ db/2 c/2 b/2 a/2
+alto       c/2 b  e/2  f b/2  | c  e/2 g  f/2  e/2 e/2 e/2
+tenor      a/2 e+ c/2  d e+/2 | e  g/2 c  a/2  a/2 g/2 a/2
+bass       f/2 g  a+/2 f e/2  | a  e/2 c  db/2 a/2 e/2 a/2
+
+soprano    c  a/2 b g f/2 e/2 | g b/2   c  a g/2  f/1.
+alto       e  f/2 f e d/2 e/2 | e f/2   g  f en/2 f/1.
+tenor      a  c/2 f b b/2 b/2 | b f - b g  c c/2  c/1.
+bass       a+ f/2 d e b/2 e/2 | e d/2   en f c/2  f-/1.
