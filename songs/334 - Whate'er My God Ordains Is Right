@@ -12,9 +12,29 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    c- | f g a b       | c. b/8 a  d       | c  b       a       b
+alto       a  | c c c f       | f  e   c  b/8 a/8 | g- d       c       d
+tenor      f  | a g f f/8 g/8 | a  g   f  f       | e  f/8 g/8 a/8 e/8 f
+bass       f- | f e f d       | a  c   f- b       | c  d/8 e/8 f       b
+
+soprano    g/2   f  c- | f g a b       | c. b/8 a  d       | c  b       a       b
+alto       c/2   c  a  | c c c f       | f  e   c  b/8 a/8 | g- d       c       d
+tenor      f - e a  f  | a g f f/8 g/8 | a  g   f  f       | e  f/8 g/8 a/8 e/8 f
+bass       c/2   f- f- | f e f d       | a  c   f- b       | c  d/8 e/8 f       b
+
+soprano    g/2   f  c | d       d       g g | c       c        f a       | g  f        e        f
+alto       c/2   c  f | f       g/8 f/8 e e | f.          eb/8 d c       | bn a        g-       a
+tenor      f - e a  f | b/8 a/8 g       c c | c/8 b/8 a/8 c/8  b a/8 f/8 | d- c-       c-/8 e/8 d-/8 c-/8
+bass       c/2   f- f | b       bn      c b | a       a        b f-      | g- a/8 bn/8 c        f-
+
+soprano    d- d-  c- c  | b         a         g       a        | g  g  f(2)
+alto       g- g-  g- f- | f-/8 g-/8 a/8  b/8  c       c        | c  c  c(2)
+tenor      c- bn- e  c- | d-        c-/8 d-/8 e       f        | f  e  a(2)
+bass       g- g-  c- a  | d/8  e/8  f         c/8 b/8 a/8 f-/8 | c- c- f-(2)
