@@ -11,10 +11,29 @@ key        C
 rhythm     4 : 4
 tempo      180
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
+soprano    c-. d-/8 e c- | e f g  g | c b/8 a/8 g e+
+alto       g-. b/8  c c  | c c d  d | e f       d g
+tenor      e.  g/8  g g  | g a c  b | c c       b c
+bass       c.  g-/8 c e  | c a g- g | c f       g e
+
+soprano    d  d c/2 | c-. d-/8 e c- | e f g  g
+alto       a+ g e/2 | g-. b/8  c c  | c c d  d
+tenor      c  b c/2 | e.  g/8  g g  | g a c  b
+bass       f  g c/2 | c.  g-/8 c e  | c a g- g
+
+soprano    c b/8 a/8 g e+ | d  d c/2 | e+. e+/8 d d
+alto       e f       d g  | a+ g e/2 | g.  g/8  g g
+tenor      c c       b c  | c  b c/2 | c.  c/8  c b
+bass       c f       g e  | f  g c/2 | c.  e/8  g g
+
+soprano    c  c       b  b  | a. a/8 g c | d b c/2
+alto       e  e       e  e  | c. f/8 e g | f d e/2
+tenor      a  a       g# g# | a. c/8 c c | a g g/2
+bass       a+ c/8 d/8 e  e  | f. f/8 c e | f g c/2
