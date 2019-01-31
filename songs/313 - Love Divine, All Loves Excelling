@@ -6,11 +6,11 @@ author     Charles Wesley, 1747
 tune       BEECHER
 metre      8 7. 8 7. D.
 composer   John Zundel, 1870
-key        Ab
+key        Bb
 rhythm     4 : 4
-tempo      150
+tempo      140
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -24,7 +24,7 @@ bass       b b b       b | b f       f b | e e e e | f f-      b/2
 
 soprano    f f g       f | d c/8 d/8 c  b | g e+ d b | a g/8 a/8 b/2
 alto       d d e       d | f e/8 f/8 e  d | e g  f f | e e       d/2
-tenor      b b g/8 a/8 b | b a       a  b | b b  b d | c g       g/2
+tenor      b b g/8 a/8 b | b a       a  b | b b  b d | c f       f/2
 bass       b b b       b | b f       f# g | e e  f f | f f-      b/2
 
 soprano    b  b b a  | g a/8 g/8 f# d- | d d e+ d | c c/8 d/8 c/2

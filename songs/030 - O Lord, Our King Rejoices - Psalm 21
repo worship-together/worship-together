@@ -7,8 +7,8 @@ psalm      21
 tune       HOCH FREUET SICH DER KONIG
 metre      7 6. 7 6. 7 7 6
 composer   Heinrich Schutz, 1628
-key        G
-rhythm     12 : 4
+key        F
+rhythm     0 : 4
 tempo      180
 
 status     header  tune
@@ -23,10 +23,10 @@ alto       c c/2 c c/2 f e/2. e/2 | f  b/2  c d c/2   c/2. - c/2
 tenor      f a/2 g f/2 f g/2. c/2 | a  g/2  f f a/2   f/2. - f/2
 bass       f f/2 e f/2 d c/2. c/2 | f- g-/2 a b c/2 f-/2. - f-/2
 
-soprano    c- d-/2 e f/2  g  a/2. e/2 | a g/2  f e  e/2    d-/2. - d/2
-alto       a  a/2  a a/2  d c#/2. c/2 | d g-/2 a b  a/2     a/2. - a/2
-tenor      f  f/2  e d-/2 d- e/2. a/2 | f e/2 d- d- c#-/2 d-/2. - d-/2
-bass       f  d/2 #c d/2  b  a/2. a/2 | d- e-/2 f- g- a/2 d-/2. - d-/2
+soprano    c- d-/2 e  f/2  g  a/2. e/2 | a g/2  f e  e/2    d-/2. - d/2
+alto       a  a/2  a  a/2  d c#/2. c/2 | d g-/2 a b  a/2     a/2. - a/2
+tenor      f  f/2  e  d-/2 d- e/2. a/2 | f e/2 d- d- c#-/2 d-/2. - d-/2
+bass       f  d/2  c# d/2  b  a/2. a/2 | d- e-/2 f- g- a/2 d-/2. - d-/2
 
 soprano    a  g/2 f  g/2  a b/2. g/2 | g f/2  e  f/2  g a/2. f/2
 alto       a  c/2 a  c/2  c d/2. c/2 | c a/2  a  a/2  c c/2. c/2

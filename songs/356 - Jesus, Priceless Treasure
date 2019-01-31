@@ -12,12 +12,22 @@ key        Eb
 rhythm     4 : 4
 tempo      120
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g g f        e    | d-/2          c-/2 | g       an       b g
+alto       e d c/8 bn/8 c    | c - bn        g-/2 | e/8 d/8 c        b b
+tenor      c g a/8 d-/8 e    | a - g/8 - f/8 e/2  | c/8 b/8 an/8 g/8 f e/8 f/8
+bass       c b a.       g-/8 | f- - g-       c/2  | c       f/8  e/8 d e/8 d/8
+
+soprano    c/2                   bn/2 | c/8 d/8 e+      d. d/8 | c/1
+alto       e/8 - f/8 - g         g/2  | e/8 f/8 g       g. f/8 | e/1
+tenor      g - e+                d/2  | c       c       c  bn  | g/1
+bass       c/8 - d/8 - e/8 - f/8 g/2  | a+      g/8 f/8 g  g-  | c/1
 
 soprano    g g f        e    | d-/2          c-/2 | g       an       b g
 alto       e d c/8 bn/8 c    | c - bn        g-/2 | e/8 d/8 c        b b
