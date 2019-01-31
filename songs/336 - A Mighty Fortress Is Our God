@@ -1,0 +1,20 @@
+title      A Mighty Fortress Is Our God
+hymnal     Cantus Christi
+page       336
+author     Martin Luther, 1529
+translator Fredrick H. Hedge, 1853
+
+tune       EIN FESTE BURG
+metre      8 7. 8 7. 6 6. 6 6 7
+composer   Martin Luther, 1529
+harmony    Heinrich Schutz, "The Becker Psalter", 1661; alt.
+key        C
+rhythm     0 : 4
+tempo      180
+
+status     header
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
