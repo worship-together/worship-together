@@ -1,0 +1,41 @@
+title      Gloria in Excelsis
+hymnal     Cantus Christi
+page       396
+author     unknown
+
+tune       LUX ET ORIGO
+metre      Irregular
+composer   10th c. Plainsong
+composer   Nicolaus Decius, Allein Gott in der Hoh sei Ehr
+composer   adapted, Regina H. Fryxell, 1958; alt.
+key        F
+rhythm     0 : 4
+tempo      100
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+voice      unison  E4 to D5
+
+unison     f/8 - g/8 - a b/8 c b/8 a/8 g/8 a | a/8 a/8 g/8 a/8 b a/8 g/8 f/8 g/8 f
+
+unison     f/8 f/8 g/8 a/8 b/8 c b/8 b/8 a/8 g/8 a | a/8 c/8 b/8 c/8 b/8 a
+
+unison     f/8 a/8 c/8 b/8 c/8 b/8 a/8 c/8 b/8 a/8 g f | g/8 g/8 a a/8 g/8 c
+
+unison     b/8 a/8 g/8 f/8 g/8 f f | f/8 g/8 a/8 a/8 a/8 g/8 a/8 b/8 a/8 g
+
+unison     f/8 g/8 a | c/8 b/8 c/8 b/8 a c/8 b/8 c/8 b/8 a b/8 a/8 g/8 a a
+
+unison     a/8 a/8 g/8 a/8 b/8 a g g/8 g/8 f f/8 g/8 f/8 f/8 g a | a/8 a/8 a/8 g/8 a/8
+
+unison     b/8 a/8 g g/8 g/8 f d-/8 f g/8 a | a/8 a/8 f/8 f/8 f/8 f/8 g/8 g/8 g/8
+
+unison     a/8 f/8 a a g/8 a/8 b/8 a/8 g/8 g/8 f/8 g/8 a | f/8 g g/8 g/8 a/8 b b
+
+unison     b/8 b/8 a/8 g/8 g/8 f#/8 g | g/8 a/8 a/8 b/8 c b/8 b/8 a/8 g/8 a
+
+unison     f/8 f/8 g/8 - f/8 - g/8 - a g/8 a/8 c/8 b/8 c/8 b/8 a g/8 f/8 g f | e f
