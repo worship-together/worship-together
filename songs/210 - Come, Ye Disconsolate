@@ -12,7 +12,7 @@ key        C
 rhythm     4 : 4
 tempo      130
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -24,7 +24,7 @@ alto       c/2 c c  | c. c/8 c/2 | c/2       c f | e/2 c/2
 tenor      e/2 g e  | f. e/8 e/2 | c/2       c g | g/2 e/2
 bass       c/2 c c  | c. c/8 c/2 | a+. - e/8 f d | c/2 c/2
 
-soprano    e/2 e e  | f. f/8 a/2  | g/2 f# f# | f/1
+soprano    e/2 e e  | f. f/8 a/2  | g/2 f# f# | g/1
 alto       c/2 c c  | c. c/8 f/2  | d/2 c  c  | b/1
 tenor      g/2 g g  | c. c/8 c/2  | b/2 a  a  | g/1
 bass       c/2 c bb | a. a/8 f-/2 | d/2 d  d  | g-/1
