@@ -1,15 +1,23 @@
 title      Psalm 117
-hymnal     Cantus Christi
-author     David Erb, 2013
+hymnal     Cantica Sanctorum
+author     King James Version; alt.
 
-composer   James Montgomery, 1819
+composer   David R. Erb, 2005
 key        C
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header
 
-voice      soprano E4 to D5
+voice      unison  E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+unison     c-/8 - d-/8 e/8 - f/8 g f/8 g/8 | a/2 g/2 | c g f/8 - e/8 d-/8 - c-/8 | d- - f e/2
+
+unison     e g e c-/8 c-/8 | f/2 e e | e/2 g/2 | g/2 g g
+
+unison     c c/8 c/8 c c | c/2 c c | g/2 - c/2 - | b/2 c/2
+
+unison     c- c-/8 c-/8 c-/2 | f f/8 f/8 c-/2 | c-/2  c- c- | g/2 c-/2
