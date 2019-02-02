@@ -1,0 +1,60 @@
+title      Blest Is the Man Whose Trespass Is Forgiven
+hymnal     Cantus Christi
+page       56
+author     William Helder, 1980
+psalm      32
+
+tune       O BIENHEUREUX CELUI DONT LES COMMISES
+metre      11 11. 10 10. 11 11. 10 10
+composer   Strasbourg, 1539
+harmony    Claude Goudimel, 1564; alt.
+key        D
+rhythm     0 : 4
+tempo      170
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d-/2 f/2 g/2 a/2 a/2 a f g a b/2  f
+alto       a/2  d/2 e/2 f/2 e/2 f d d f g/2  f
+tenor      f/2  b/2 b/2 d/2 c/2 d a b c d/2  d
+bass       d/2  b/2 e/2 d/2 a/2 d d b a g-/2 d
+
+soprano    g f f e/2 a/2 b  a  g  f e/2 d-/2. R
+alto       e e d e/2 f/2 g  f  e  d/2 c d/2.  R
+tenor      b b b b/2 d/2 d  cn cn a a/2 a/2.  R
+bass       e b b e/2 d/2 g- a  cn d a/2 a/2.  R
+
+soprano    d-/2 f g a/2 a/2 b  a g g f/2. R
+alto       a/2  d e e/2 f/2 g  f e e d#/2. R
+tenor      f/2  b b c/2 d/2 d  d b b b/2.  R
+bass       d/2  b e a/2 d/2 g- d e e b/2.  R
+
+soprano    a/2 g  f e/2 f/2 g  f d-/2 e/2 d-/2. R
+alto       d/2 d  d c/2 d/2 d  f/2 d/2  c d/2.  R
+tenor      f/2 b  a a/2 a/2 b  a f/2  a/2 a/2.  R
+bass       d/2 g- d a/2 d/2 g- a b/2  a/2 d/2.  R
+
+soprano    d/2  d  d  c/2  a/2 b c  d  c  b/2  a/2.  R
+alto       a+/2 a+ a+ a+/2 f/2 f a+ a+ a+/2 g# a+/2. R
+tenor      f+/2 f+ f+ e+/2 d/2 d e+ f+ e+ e+/2 e+/2. R
+bass       d/2  d  d  a+/2 d/2 b a  d  a  e/2  a/2.  R
+
+soprano    a/2 a a b/2  a/2 g b a g f/2  e/2. R
+alto       f/2 e f g/2  f/2 e f f e/2 d# e/2. R
+tenor      d/2 c d d/2  d/2 b d d b b/2  b/2. R
+bass       d/2 a d g-/2 d/2 e b d e b/2  e/2. R
+
+soprano    a/2 a a b/2  d/2  c  a b  b  a/2.  R
+alto       f/2 f f g/2  a+/2 a+ f g  g  a+/2. R
+tenor      d/2 c c e+/2 f+/2 f+ c e+ e+ c/2.  R
+bass       d/2 f f e/2  d/2  f  f e  e  a/2.  R
+
+soprano    a/2 b  b  a/2 g/2  f e d-/2 e/2 d-/1
+alto       f/2 g  g  f/2 d/2  d c b d/2  c d/1
+tenor      d/2 d  d  d/2 b/2  a a f/2  a/2 a/1
+bass       d/2 g- g- d/2 g-/2 d a b/2  a/2 d/1
