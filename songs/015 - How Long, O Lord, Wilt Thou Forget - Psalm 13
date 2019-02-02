@@ -1,0 +1,45 @@
+title      How Long, O Lord, Wilt Thou Forget
+hymnal     Cantus Christi
+page       215
+author     W. van der Kamp, 1972
+psalm      13
+
+tune       JUSQUES A QUAND AS ESTABLI
+metre      8 8. 9 9. 8
+composer   Genevan Psalter, 1542
+harmony    Claude Goudimel, 1564; alt.
+key        C
+rhythm     0 : 4
+tempo      130
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d-/2 d- d- f f g g a/2. R
+alto       d/2  a  bb a f f e f/2. R
+tenor      a/2  f  g  a a c c c/2. R
+bass       d/2  d  g- d d c c f/2. R
+
+soprano    a/2  b c  a d/2  c  b/2  a/2.  R
+alto       f#/2 g g  f a+/2 a+ g#/2 a+/2. R
+tenor      d/2  d e+ d f+/2 e+ e+/2 e+/2. R
+bass       d/2  g c  d d/2  a  e/2  a/2.  R
+
+soprano    a/2 g f e f g a  g/2 f/2.  R
+alto       f/2 e d c d e f/2  e f/2.  R
+tenor      c/2 c a a a c c  c/2 c/2.  R
+bass       f/2 c d a d c f- c/2 f-/2. R
+
+soprano    f/2 g g a/2 c/2  c  b  a/2 - f/2  e/2. R
+alto       d/2 e e f/2 g/2  g  g  f/2 - d/2  c/2. R
+tenor      a/2 c b d/2 e+/2 e+ d  d/2 - a/2  a/2. R
+bass       d/2 c e d/2 c/2  c  g- d/2 - a+/2 a/2. R
+
+soprano    a/2 g e g/2  f d- e/2 d-/1
+alto       e/2 e c d/2  d d/2 c# d/1
+tenor      c/2 c g bb/2 a a  a/2 a/1
+bass       a/2 c c g-/2 d d  a/2 d/1
