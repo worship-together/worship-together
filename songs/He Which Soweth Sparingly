@@ -13,7 +13,7 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    R/1     | f f f f | b a b g
+soprano    R/1     | g g g g | b a b g
 alto       d d d d | e d e c | d/2 g c
 tenor      R/1     | g g g c | b c d g
 bass       d d d d | c b c e | g/2 g e
