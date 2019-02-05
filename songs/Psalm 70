@@ -7,25 +7,37 @@ key        F
 rhythm     4 : 4
 tempo      120
 
-status     header
+status     header  tune
 
-voice      soprano  E4 to D5
+voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+voice      unison  E4 to D5
 
-soprano    d- | d-/8 - c-/8 d-/8 - e/8 d- c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - g/8 f e/8 d-/8 c | d-/1
+unison     d- | d-/8 - c-/8 d-/8 - e/8 d- c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - g/8 f e/8 d-/8 c | d-/1
 
-soprano    a/8 g/8 a/8 b/8 a g/8 f/8 | e d-/2 d- | a/2 f/2 | e/1
+unison     a/8 g/8 a/8 b/8 a g/8 f/8 | e d-/2 d- | a/2 f/2 | e/1
 
-soprano    a/8 g/8 a/8 b/8 a g/8 f/8 | e d-/2 d-/8 d-/8 | c-/2 d-/2 | e/1
+unison     a/8 g/8 a/8 b/8 a g/8 f/8 | e d-/2 d-/8 d-/8 | c-/2 d-/2 | e/1
 
-soprano    a/8 g/8 a/8 b/8 a g/8 - f/8 | g/8 f/8 e d- d- | a/8 - g/8 f e/8 - d-/8 c- | d-/1
+unison     a/8 g/8 a/8 b/8 a g/8 - f/8 | g/8 f/8 e d- d- | a/8 - g/8 f e/8 - d-/8 c- | d-/1
 
-soprano    d- d- e e | f/8 - e/8 f/8 g/8 a f/8 f/8 | g/2 f/2
+soprano    d- d- e e | f/8 - e/8 f/8 g/8 a f/8 f/8 | g/2    f/2
+alto       d  d  d d | d         d/8 d/8 f c/8 c/8 | d/2    d/2
+tenor      d  d  c c | b         b/8 b/8 a f/8 f/8 | b/2    b - a
+bass       d  d  d d | d         d/8 d/8 c a/8 a/8 | g- - a b/2
 
-soprano    e/2. e | f/8 - e/8 f/8 g/8 a f/8 f/8 | b a g f
+soprano    e/2. e  | f/8 - e/8 f/8 g/8  a         f/8 f/8 | b  a   g f
+alto       c/2 c/2 | c         f/8 f/8  f         c/8 a/8 | b  c   d f
+tenor      g g g/2 | f         c        c         a/8 c/8 | d. c/8 b a
+bass       c/2 b/2 | a         a/8 g-/8 f-/8 g-/8 a/8 a/8 | g- a   b d
 
-soprano    c/2 b/2 | a/2. a | b/2 c/2 | d/2 d/2 | d/2.(2) d-
+soprano    c/2   b/2   | a/2.  a | b/2     c/2   | d/2      d/2 | d/2.(2)  d-
+alto       f - e d - e | c#/2. c | d/2     c/2   |   f - d  e/2 | f#/2.(2) R
+tenor      g/2   g/2   | a a a a | a - g - f - e | - d- - f g/2 | a/2.(2)  R
+bass       c/2   g-/2  | a/2.  a | g-/2    a/2   | b/2      c/2 | d/2.(2)  R
 
-soprano    d-/8 - c-/8 d-/8 - e/8 d- c-/8 - d-/8 | f/8 - e/8 d-/2 d-
+unison     d-/8 - c-/8 d-/8 - e/8 d- c-/8 - d-/8 | f/8 - e/8 d-/2 d-
+
+unison    d-/8 - c-/8 d-/8 - e/8 d-/8 d-/8 c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - g/8 f e/8 - d-/8 c- | d-/2.
