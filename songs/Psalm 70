@@ -7,7 +7,7 @@ key        F
 rhythm     4 : 4
 tempo      120
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -15,10 +15,10 @@ voice      tenor   E3 to D4
 voice      bass    A2 to G3
 voice      unison  E4 to D5
 
-soprano    d-  | d-/8 - c-/8 d-/8 - e/8 d- c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - g/8 f e/8 d-/8 c- | d-/1
-alto       R/1 | R/1                                 | R/1             | R/1                     | R/1
-tenor      R/1 | R/1                                 | R/1             | R/1                     | R/1
-bass       R/1 | R/1                                 | R/1             | R/1                     | R/1
+soprano    d- | d-/8 - c-/8 d-/8 - e/8 d- c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - g/8 f e/8 d-/8 c- | d-/1
+alto       R  | R/1                                 | R/1             | R/1                     | R/1
+tenor      R  | R/1                                 | R/1             | R/1                     | R/1
+bass       R  | R/1                                 | R/1             | R/1                     | R/1
 
 soprano    a/8 g/8 a/8 b/8 a g/8 f/8 | e d-/2 d- | a/2 f/2 | e/1
 alto       R/1                       | R/1       | R/1     | R/1
