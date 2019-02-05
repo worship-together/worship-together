@@ -50,12 +50,12 @@ alto       f - e d - e | c#/2. c | d/2     c/2   |   f - d  e/2 | f#/2.(2) R
 tenor      g/2   g/2   | a a a a | a - g - f - e | - d- - f g/2 | a/2.(2)  R
 bass       c/2   g-/2  | a/2.  a | g-/2    a/2   | b/2      c/2 | d/2.(2)  R
 
-soprano    d-/8 - c-/8 d-/8 - e/8 d- c-/8 - d-/8 | f/8 - e/8 d-/2 d-
-alto       R/1                                   | R/1
-tenor      R/1                                   | R/1
-bass       R/1                                   | R/1
+soprano    d-/8 - c-/8 d-/8 - e/8 d- c-/8 - d-/8 | f/8 - e/8 d-/2 d- | f e d-/8 - e/8 f/8 - g/8 | a/2. d-
+alto       R/1                                   | R/1               | R/1                      | R/1
+tenor      R/1                                   | R/1               | R/1                      | R/1
+bass       R/1                                   | R/1               | R/1                      | R/1
 
 soprano    d-/8 - c-/8 d-/8 - e/8 d-/8 d-/8 c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - g/8 f e/8 - d-/8 c- | d-/2.
-alto       R/1 |                                      | R/1             | R/1                       | R/1
-tenor      R/1 |                                      | R/1             | R/1                       | R/1
-bass       R/1 |                                      | R/1             | R/1                       | R/1
+alto       R/1                                        | R/1             | R/1                       | R/1
+tenor      R/1                                        | R/1             | R/1                       | R/1
+bass       R/1                                        | R/1             | R/1                       | R/1
