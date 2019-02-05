@@ -1,0 +1,54 @@
+tune       DIEU NOUS SOIT DOUX ET FAVORABLE [RESVEILLLEZ VOUS, CHACUN FIDELE]
+metre      9 8. 9 8. 6 6 5. 6 6 5
+composer   Genevan Psalter, 1543
+harmony    Claude Goudimel, 1564; alt.
+key        C
+rhythm     0 : 4
+tempo      160
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d-/2 a a c  b  a g f/2 e/2.  R
+alto       d/2  f f a+ g  f e d/2 c#/2. R
+tenor      a/2  d d e+ e+ c c a/2 a/2.  R
+bass       d/2  d d a  e  f c d/2 a/2.  R
+
+soprano    e/2 f g a d  c/2              b/2    a/2.  R
+alto       c/2 d e f a+ a+ - g#/8 - f#/8 g# g#  a+/2. R
+tenor      a/2 a c c f+ e+/2             e+/2   e+/2. R
+bass       a/2 d c f d  e/2              e/2    a/2.  R
+
+soprano    d-/2 a a c  b  a g f/2 e/2.  R
+alto       d/2  f f a+ g  f e d/2 c#/2. R
+tenor      a/2  d d e+ e+ c c a/2 a/2.  R
+bass       d/2  d d a  e  f c d/2 a/2.  R
+
+soprano    e/2 f g a d  c/2              b/2    a/2.  R
+alto       c/2 d e f a+ a+ - g#/8 - f#/8 g# g#  a+/2. R
+tenor      a/2 a c c f+ e+/2             e+/2   e+/2. R
+bass       a/2 d c f d  e/2              e/2    a/2.  R
+
+soprano    e e g  g  f/2 e/2.  R e e g  g
+alto       c c d  d  d/2 c#/2. R c c d  d
+tenor      g g bb bb a/2 a/2.  R g g bb bb
+bass       c c g- g- d/2 a/2.  R c c g- g-
+
+soprano    f/2 e/2.  R c/2 b a/2 g# a/2.  R
+alto       d/2 c#/2. R e/2 e e e/2  e/2.  R
+tenor      a/2 a/2.  R a/2 g c b/2  c#/2. R
+bass       d/2 a/2.  R a/2 e a e/2  a/2.  R
+
+soprano    d d e+ d c/2 a/2. R e/2 g/2
+alto       f f g  f e/2 d/2. R c/2 e/2
+tenor      a a c  a a/2 f/2. R g/2 c/2
+bass       d d c  d a/2 d/2. R c/2 c/2
+
+soprano    a b  c/2  a/2. R a/2 g f e/2  d-/1
+alto       e g  g/2  f/2. R f/2 e d/2 c# d/1
+tenor      c d  e+/2 d/2. R c/2 c a a/2  a/1
+bass       a g- c/2  d/2. R f/2 c d a/2  d/1
