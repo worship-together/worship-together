@@ -27,9 +27,9 @@ bass       a a b | c/2 d | e/2  e# | f/2. | b  b a
 soprano    b/2  g | g/8 - f/8 - e d#- | e/2 e  | e/2 a | a - g    f
 alto       e/2  e | c - b         b   | b/2 b  | c/2 c | d/2      d
 tenor      b/2  b | b/8 - a/8 - g f   | g/2 e  | e/2 e | e. - f/8 g
-bass       g-/2 c | a - b         b   | e/2 g- |
+bass       g-/2 c | a - b         b   | e/2 g- | a/2 a | b/2      b
 
-soprano    e/2 c | c - b a  | g/2 d | d - c b | a - b g | a/2.
-alto       e/2 e | f/2   f  | e/2 g | a+/2  f | e/2   d | c/2.
-tenor      a/2 a | a - d cn | b/2 b | a/2   d | c - d b | a/2.
-bass
+soprano    e/2 c | c - b a  | g/2 d  | d - c b | a - b g | a/2.
+alto       e/2 e | f/2   f  | e/2 g  | a+/2  f | e/2   d | c/2.
+tenor      a/2 a | a - d cn | b/2 b  | a/2   d | c - d b | a/2.
+bass       c/2 a | d/2   d# | e/2 e# | f/2   d | e/2   e | a/2.
