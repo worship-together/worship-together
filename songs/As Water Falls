@@ -1,0 +1,26 @@
+title      As Water Falls
+hymnal     Cantica Sanctorum
+author     Douglas Wilson, 2012
+
+composer   David R. Erb, 2012
+key        Eb
+rhythm     4 : 4
+tempo      110
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+voice      unison  E4 to D5
+
+soprano    g | g g         e         e | d-        d-         c- c- | c- c- c- f  | d-/2.     d- | e/2                 e/8 - f/8 - g
+alto       g | e e         e/8 - d/8 c | c         bn         c  g- | a  c  c  c  | c bn an   bn | c/2                 b/2
+tenor      g | c b/8 - a/8 g. a/8      | g/8 - f/8 e/8 - d-/8 c- c- | f  g  a  f  | g/2.      f  | e         a         g           e
+bass       g | c c         b         a | g-        g-         c  c  | f- c  f  a+ | g/2  g-/2    | a/8 - b/8 c/8 - d/8 e           e
+
+soprano    a         c         g c- | c- a g  g  | a a  g g  | f/2 e/2 | d-/2 d-/2 | c-/2.
+alto       c         f         e e  | e/2  e/2   | f f  e e  | c/2 c/2 | c/2  b/2  | c/2.
+tenor      f/8 - g/8 a/8 - b/8 c g  | a  c c  c  | c/2.   c  | a/2 a/2 | f/2  f/2  | g/2.
+bass       f         f         c b  | a  a g- g- | f-/2 g-/2 | a/2 a/2 | b/2  b/2  | c/2.
