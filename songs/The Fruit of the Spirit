@@ -7,7 +7,7 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header  tune
+status     header  tune  checked(but unsure)
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
