@@ -1,0 +1,40 @@
+title      O Sacred Head, Now Wounded
+hymnal     Cantus Christi
+page       263
+author     attr. Bernard of Clairvaux, 1153
+translator James Waddell Alexander, 1830
+
+tune       HERZLICH TUT MICH VERLANGEN
+metre      7 6. 7 6. D.
+composer   Hans Leo Hassler, 1601
+harmony    Johann Sebastian Bach, 1729
+key        C
+rhythm     4 : 4
+tempo      90
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    e | a g f       e       | d-/2    e b  | c       c       b/8 a/8 b       | a/2. e
+alto       c | c c c/8 d/8 d/8 c/8 | c - b   c d  | c/8 d/8 e       e       e/8 d/8 | c/2. c
+tenor      g | f g a/8 g/8 g       | a - g   g g# | e       a       a       g#      | a/2. g
+bass       c | f e a/8 b/8 c       | f- - g- c b  | a/8 b/8 c/8 d/8 e       e-      | a/2. c
+
+soprano    e | a g f       e       | d-/2    e b  | c       c       b/8 a/8 b       | a/2. c
+alto       c | c c c/8 d/8 d/8 c/8 | c - b   c d  | c/8 d/8 e       e       e/8 d/8 | c/2. a/8 g/8
+tenor      g | f g a/8 g/8 g       | a - g   g g# | e       a       a       g#      | a/2. e+
+bass       c | f e a/8 b/8 c       | f- - g- c b  | a/8 b/8 c/8 d/8 e       e-      | a/2. a+
+
+soprano    b/8 a/8 g       a       b       | c/2           c g | a g       f       f       | e/2.  c
+alto       f       e/8 d/8 c       f       | f - e/8 - d/8 e e | f e       e       d       | c#/2. d
+tenor      d/8 c/8 b       a/8 g/8 f/8 g/8 | a - g/8 - f/8 g c | c c/8 b/8 a       a       | a/2.  a
+bass       d       e       f/8 e/8 d       | c/2           c c | f c       d/8 e/8 f/8 g/8 | a+/2. f#
+
+soprano    b/8 c/8 d        c        b       | a/2            b  e       | f       e  d- g        | e/2.
+alto       d       d        e        d       | e - d          d  c       | c/8 b/8 c  c  b        | c/2.
+tenor      g       g/8 f#/8 g/8 a/8  b/8 g/8 | e/8 - a/8 - f# g  g       | f       g  a  d-/8 g/8 | g/2.
+bass       g       b        e/8 f#/8 g       | c - d          g- c/8 b/8 | a       g- f- g-       | c-/2.
