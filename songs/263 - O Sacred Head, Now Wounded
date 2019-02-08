@@ -24,10 +24,10 @@ alto       c | c c c/8 d/8 d/8 c/8 | c - b   c d  | c/8 d/8 e       e       e/8 
 tenor      g | f g a/8 g/8 g       | a - g   g g# | e       a       a       g#      | a/2. g
 bass       c | f e a/8 b/8 c       | f- - g- c b  | a/8 b/8 c/8 d/8 e       e-      | a/2. c
 
-soprano    e | a g f       e       | d-/2    e b  | c       c       b/8 a/8 b       | a/2. c
-alto       c | c c c/8 d/8 d/8 c/8 | c - b   c d  | c/8 d/8 e       e       e/8 d/8 | c/2. a/8 g/8
-tenor      g | f g a/8 g/8 g       | a - g   g g# | e       a       a       g#      | a/2. e+
-bass       c | f e a/8 b/8 c       | f- - g- c b  | a/8 b/8 c/8 d/8 e       e-      | a/2. a+
+soprano    a g f       e       | d-/2    e b  | c       c       b/8 a/8 b       | a/2. c
+alto       c c c/8 d/8 d/8 c/8 | c - b   c d  | c/8 d/8 e       e       e/8 d/8 | c/2. a/8 g/8
+tenor      f g a/8 g/8 g       | a - g   g g# | e       a       a       g#      | a/2. e+
+bass       f e a/8 b/8 c       | f- - g- c b  | a/8 b/8 c/8 d/8 e       e-      | a/2. a+
 
 soprano    b/8 a/8 g       a       b       | c/2           c g | a g       f       f       | e/2.  c
 alto       f       e/8 d/8 c       f       | f - e/8 - d/8 e e | f e       e       d       | c#/2. d
