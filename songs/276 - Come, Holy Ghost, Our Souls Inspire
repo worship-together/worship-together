@@ -10,9 +10,9 @@ metre      L.M.
 composer   Plainsong (Mode VIII)
 key        A
 rhythm     0 : 4
-tempo      90
+tempo      80
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -24,7 +24,7 @@ unison     e/8 f/8 e/8 d-/8 e/8 f/8 e/8 a/8 b/8 a
 
 unison     a/8 e/8 f/8 a/8 b/8 a/8 b/8 c/8 b
 
-unison     a/8 b/8 c/8 a/8 g/8 f/8 e/8 a/8 b/8 e/8 f/8 g
+unison     a/8 b/8 c/8 a/8 g/8 f/8 e/8 a/8 b/8 e/8 f/8 a
 
 unison     g/8 a/8 f/8 e/8 d-/8 f/8 f/8 g/8 f/8 e/8 d-/8 e
 
