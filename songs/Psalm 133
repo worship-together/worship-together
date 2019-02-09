@@ -7,7 +7,7 @@ key        F
 rhythm     0 : 4
 tempo      140
 
-status     header
+status     header  tune  checked
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -20,6 +20,6 @@ unison     f g f/8 e/8 d-/2 b | a - g f e f e | d- c- b- a-/2 a
 
 unison     g - f g a a/2 R a g | f g f e f e | e d-/2 R a a
 
-unison     d d c/8 b/8 c c c | b a g a - g f | g a b a a/2 - a R a
+unison     d d c/8 b/8 c c c | b a g a - g f | g a b a a/2 = a R a
 
-unison     a a g/8 b/8 a g f | g g/2 - g/2. | f R e d- c/2 | d/2. - d/2
+unison     a a g/8 b/8 a g f | g g/2 = g/2. | f R e d- c-/2 | d-/2. = d-/2
