@@ -1,0 +1,40 @@
+title      Christ Jesus Lay in Death's Strong Bands
+hymnal     Cantus Christi
+page       269
+author     Martin Luther, 1524
+translator Richard Massie, 1854; alt.
+
+tune       CHRIST LAG IN TODESBANDEN
+metre      8 7. 8 7. 7 8. 7 4
+composer   "Victimae Paschali laudes," c. 1100
+composer   Based on "Christ ist erstanden"
+key        C
+rhythm     8 : 4
+tempo      130
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    a/2 g a c d c b  a  R | a f  g  a  g/8  f/8 e  d- R
+alto       e/2 e c g f e e  c# R | f d  e  f  d        c# d  R
+tenor      c/2 b a g a a g# a  R | c bb bb c  bb/8 a/8 a  f# R
+bass       a/2 e f e d e e  a  R | f bb g- f- g-/8 d/8 a  d  R
+
+soprano    a/2 g a c d c b  a  R | a f  g  a  g/8  f/8 e  d- R
+alto       e/2 e c g f e e  c# R | f d  e  f  d        c# d  R
+tenor      c/2 b a g a a g# a  R | c bb bb c  bb/8 a/8 a  f# R
+bass       a/2 e f e d e e  a  R | f bb g- f- g-/8 d/8 a  d  R
+
+soprano    d- f  g  d- f g  a  | R/8 a/8  d c  d e+ c b  a
+alto       d  d  d  bb d d  c# | R/8 e/8  f e  g g  e e  c#
+tenor      f  bb bb g  a d- e  | R/8 c/8  a a  b b  a g# a
+bass       d  bb g- g  d b  a  | R/8 a+/8 d a+ g e  a e  a
+
+soprano    R/8 a/8 c a c g f/8 - d-/8 - e d- | a g/8 f/8 e        d-/1
+alto       R/8 c/8 e d c e d/8 - b/8 - c# d  | c e/8 d/8 d/8 c#/8 d/1
+tenor      R/8 a/8 g f g c a/2            f  | f c/8 a/8 a        f#/1
+bass       R/8 f/8 c d e c d - a          d  | f c/8 d/8 a        d/1
