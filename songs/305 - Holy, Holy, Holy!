@@ -1,0 +1,38 @@
+title      Holy, Holy, Holy!
+hymnal     Cantus Christi
+page       305
+author     Reginald Heber, 1826
+
+tune       NICAEA
+metre      11 12. 12 10
+composer   John B. Dykes, 1861
+key        D
+rhythm     4 : 4
+tempo      130
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d- d- f  f  | g/2   g/2   | b  b  b b | a/2   f/2
+alto       a  a  d  d  | c - e d - c | b  c  d e | f/2   d/2
+tenor      f  f  d- d- | e - g f - a | g  a  b c | d - a a/2
+bass       d  d  b  b  | a/2   d/2   | g- g- g g | d/2   d/2
+
+soprano    a. a/8 a a | d d  c b | e a b.  a/8 | a/1
+alto       e  e   f e | d e  e f | e c d.  c/8 | c/1
+tenor      a  a   a a | f g# a a | c a g#. a/8 | a/2 - g/2
+bass       c  c   d c | b b  c d | e e e.  a/8 | a/1
+
+soprano    d- d- f  f  | a   a a/2   | b.  b/8  b b | a/2   a/2
+alto       a  a  d  d  | c - e d - c | b   c    d e | f/2   d/2
+tenor      f  f  d- d- | e   g f - a | g   a    b c | d - a f/2
+bass       d  d  b  b  | a   a d/2   | g-. g-/8 g g | d/2   d/2
+
+soprano    d/2   a  a  | b/2  f/2    | g  e  e. d-/8 | d-/1
+alto       d/2   d  d  | d/2  d - cn | b  b  c. d/8  | d/1
+tenor      f - g a  cn | b/2  a/2    | g  g  g. f/8  | f/1
+bass       b/2   g- g- | g-/2 d/2    | g- g- a. d/8  | d/1
