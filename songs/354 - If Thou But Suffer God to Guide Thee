@@ -1,0 +1,39 @@
+title      If Thou But Suffer God to Guide Thee
+hymnal     Cantus Christi
+page       354
+author     Georg Neumark, 1640
+translator Catherine Winkworth, 1855
+
+tune       NEUMARK [WER NUR DEN LIEBEN GOTT]
+metre      9 8. 9 8. 8 8
+composer   Georg Neumark, 1640
+key        Bb
+rhythm     6 : 4
+tempo      150
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d- g a  | b/2 a g/2 a | f d- R f f e
+alto       b  d d  | d/2 d e/2 e | d d  R d d c
+tenor      g  b a  | g/2 a b/2 c | a f  R f b g
+bass       g  g f# | g/2 f e/2 c | d d  R b b c
+
+soprano    d-/2 g g/2 f#  | g/2  R d- g a  | b/2 a g/2 a
+alto       a/2  d e/2 d   | d/2  R b  d d  | d/2 d e/2 e
+tenor      f#/2 g c/2 a   | b/2  R g  b a  | g/2 a b/2 c
+bass       d/2  b c/2 d/2 | g-/2 R g  g f# | g/2 f e/2 c
+
+soprano    f d- R f f e | d/2  g g/2 f# | g/2  R a  b c
+alto       d d  R d d c | c/2  d e/2 d  | d/2  R d  d f
+tenor      a f  R f b g | f#/2 g c/2 a  | b/2  R a  g a
+bass       d d  R b b c | d/2  b c/2 d  | g-/2 R f# g f
+
+soprano    d/2 d c/2 c | b/2. b  a g | f#/2 g g/2 f | g/2.
+alto       f/2 g g/2 f | d/2. f  f d | d/2  b e/2 d | d/2.
+tenor      b/2 b b/2 a | b/2. d  c b | a/2  g a/2 a | bn/2.
+bass       b/2 g e/2 f | b/2. b+ f g | d/2  e c/2 d | g-/2.
