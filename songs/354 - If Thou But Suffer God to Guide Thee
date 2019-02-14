@@ -23,10 +23,10 @@ alto       b  d d  | d/2 d e/2 e | d d  R d d c
 tenor      g  b a  | g/2 a b/2 c | a f  R f b g
 bass       g  g f# | g/2 f e/2 c | d d  R b b c
 
-soprano    d-/2 g g/2 f#  | g/2  R d- g a  | b/2 a g/2 a
-alto       a/2  d e/2 d   | d/2  R b  d d  | d/2 d e/2 e
-tenor      f#/2 g c/2 a   | b/2  R g  b a  | g/2 a b/2 c
-bass       d/2  b c/2 d/2 | g-/2 R g  g f# | g/2 f e/2 c
+soprano    d-/2 g g/2 f# | g/2  R d- g a  | b/2 a g/2 a
+alto       a/2  d e/2 d  | d/2  R b  d d  | d/2 d e/2 e
+tenor      f#/2 g c/2 a  | b/2  R g  b a  | g/2 a b/2 c
+bass       d/2  b c/2 d  | g-/2 R g  g f# | g/2 f e/2 c
 
 soprano    f d- R f f e | d/2  g g/2 f# | g/2  R a  b c
 alto       d d  R d d c | c/2  d e/2 d  | d/2  R d  d f
