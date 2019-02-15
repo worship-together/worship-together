@@ -1,0 +1,59 @@
+title      Lord, Thee I Love with All My Heart
+hymnal     Cantus Christi
+page       362
+author     Martin Schalling, c. 1567
+translator Catherine Winkworth, 1863; alt.
+
+tune       HERZLICH LIEB HAB ICH DICH, O HERR
+metre      8 8 7. 8 8 7. 8 8. 8 8. 4 8 8
+composer   Bernhard Schmid's Orgelbuch, Strasbourg, 1577
+key        Bb
+rhythm     4 : 4
+tempo      100
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    b | a g f e/8 d-/8 | g       g       f b        | a       g       f       e/8  d-/8
+alto       f | f d d c/8 b/8  | b       e       d d        | d/8 c/8 b/8 c/8 d/8 c/8 b/8  a/8
+tenor      d | c b a ab       | g/8 f/8 g/8 a/8 b d-/8 e/8 | f       g/8 a/8 b       e/8  f/8
+bass       b | f g d f        | e       e-      b g-       | d       e       b/8 a/8 g-/8 f-/8
+
+soprano    g       g       f f | g        a       b/8 c/8 d  | c - b/2  a  | b/2. b
+alto       b/8 c/8 c       d d | e/8 g/8  f/8 e/8 d/8 c/8 b  | c/2    d e  | d/2. f
+tenor      g/8 b/8 a/8 g/8 a b | b/8 e+/8 d/8 c/8 b/8 f/8 ab | g/2 - f/2   | f/2. d
+bass       e-      e       d b | e        f       g/8 a/8 b  | e- en- f-/2 | b/2. b
+
+soprano    b | a g f e/8 d-/8 | g       g       f b        | a       g       f       e/8  d-/8
+alto       f | f d d c/8 b/8  | b       e       d d        | d/8 c/8 b/8 c/8 d/8 c/8 b/8  a/8
+tenor      d | c b a ab       | g/8 f/8 g/8 a/8 b d-/8 e/8 | f       g/8 a/8 b       e/8  f/8
+bass       b | f g d f        | e       e-      b g-       | d       e       b/8 a/8 g-/8 f-/8
+
+soprano    g       g       f f | g        a       b/8 c/8 d  | c - b/2  a  | b/2. b
+alto       b/8 c/8 c       d d | e/8 g/8  f/8 e/8 d/8 c/8 b  | c/2    d e  | d/2. d
+tenor      g/8 b/8 a/8 g/8 a b | b/8 e+/8 d/8 c/8 b/8 f/8 ab | g/2 - f/2   | f/2. f
+bass       e-      e       d b | e        f       g/8 a/8 b  | e- en- f-/2 | b/2. b
+
+soprano    b       c b/8 a/8 g/8 a/8 | b        b  a a       | b       c       b/8 a/8 g/8 a/8
+alto       e       e d.          d/8 | c/8 d/8  en f f       | f       e       d       e
+tenor      g       g g/8 a/8 b/8 a/8 | g        c  c c       | f       f       f       c
+bass       e/8 d/8 c g-      g/8 f/8 | en/8 d/8 c  f f/8 e/8 | d/8 c/8 b/8 a/8 b       c
+
+soprano    b/8 d/8 c  a d | d         d       c       b       | b a  b a | b        a       g       f
+alto       f       g  f f | f         g       g       e       | d c  d e | d        c/8 f/8 d       d
+tenor      b/8 a/8 g  c b | b         b       c       c       | f f  f c | f/8 g/8  a       b       a
+bass       d       en f b | b+/8 a+/8 g/8 f/8 e/8 f/8 g/8 e/8 | f f- b c | d/8 en/8 f/8 d/8 b/8 c/8 d/8 b/8
+
+soprano    f       en f  d       | c             b        a  d  | e+/8 d/8 c        d   b
+alto       d       c  c  b       | c/8 d/16 e/16 d/8 en/8 f# g  | g        f#/8 g/8 d   d
+tenor      b/8 a/8 g  a  f/8 g/8 | a             b/8 g/8  d  g  | c/8 b/8  a/8  g/8 a   g
+bass       g-      c  f- b       | f             g        d  bn | c/8 d/8  e        f#- g-
+
+soprano    b        a b(3) b  | b       b c b | b/2.  a    | b/2.
+alto       db/8 c/8 c d(3) d  | e       e e d | c/2   c/2  | d/2.
+tenor      g        f f(3) ab | g/8 a/8 b f f | g/2   f/2  | f/2.
+bass       en       f b(3) b  | e/8 f/8 g a b | en-/2 f-/2 | b-/2.
