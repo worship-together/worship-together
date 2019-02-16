@@ -5,10 +5,10 @@ author     New King James Version
 composer   David R. Erb, 2015
 key        C
 rhythm     0 : 4
-tempo      90
+tempo      100
 #has rhythm change
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -18,7 +18,7 @@ voice      unison  E4 to D5
 
 unison     d-/8 - a/8 d-/8 c-/8 d- c-/8 e/8 | d-/2. d- | e/8 d-/8 e/8 f/8 g f/8 - g/8 | a/1
 
-unison     d-/8 - a/8 d-/8 c-/8 d- c-/8 e/8 | d-/2. d | e/8 - d-/8 e/8 f/8 g f/8 e/8 | d-/2. a-
+unison     d-/8 - a/8 d-/8 c-/8 d- c-/8 e/8 | d-/2. d- | e/8 - d-/8 e/8 f/8 g f/8 e/8 | d-/2. a-
 
 unison     c-/8 - d-/8 d-/8 c-/8 d-/8 c-/8 d-/8 e/8 | f d-/2 d-/8 d-/8 | g/8 f/8 e/8 f/8 g/8 a/8 g/8 - f/8 | e/2. e/8 e/8
 

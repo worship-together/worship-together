@@ -8,7 +8,7 @@ rhythm     0 : 4
 tempo      130
 #tempo change is needed
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -42,6 +42,6 @@ unison     e f g f | g/8 a/8 b c/2 | d/1 | d/2. d-
 
 unison     g/8 - f/8 g/8 a/8 g a/8 b/8 | c/8 - b/8 - a/8 - g/8 - f# d-/8 d-/8 | g/8 - f/8 g/8 a/8 g f | g - a b d-
 
-unison     g/8 - f/8 g/8 a/8 g a/8 b/8 | c/8 - b/8 - a/8 - g/8 f#/2. f
+unison     g/8 - f/8 g/8 a/8 g a/8 b/8 | c/8 - b/8 - a/8 - g/8 f#/2. f#
 
 unison     g/8 - a/8 b/8 - c/8 d c/8 - b/8 | a/8 - b/8 a/8 - g/8 g - f | g/1
