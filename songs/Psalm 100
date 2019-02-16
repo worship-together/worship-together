@@ -1,0 +1,18 @@
+title      Psalm 100
+hymnal     Cantica Sanctorum
+author     New King James Version
+
+composer   David R. Erb, 2013
+key        F
+rhythm     0 : 4
+tempo      120
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+voice      unison  E4 to D5
+
+unison     c- d- e/8 - f/8 g/8 | a g/8 f/8 g - a | g/2 a/2
