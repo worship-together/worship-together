@@ -1,11 +1,11 @@
-title      Psalm 29
+title      Psalm 43
 hymnal     Cantica Sanctorum
 author     New King James Version
 
-composer   David R. Erb, 2014
+composer   David R. Erb, 2015
 key        Gb
 rhythm     4 : 4
-tempo      130
+tempo      120
 
 status     header  tune
 
@@ -14,3 +14,23 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 voice      unison  E4 to D5
+
+unison     g e d-/6 e/6 f/6 | e/2. e | a e b e | c b a/6 b/6 c/6 | b b/2 b/8 a/8
+
+unison     g/8 f/8 e f e/8 d-/8 | e/8 f/8 g f d- | e/2. e
+
+unison     d- e/8 f/8 a g/8 f/8 | g/2 R/8 e/8 e/8 e/8 | f d- e/2
+
+unison     e/8 f/8 g/8 e/8 f e/8 d-/8 | e/8 f/8 g/8 a/8 f d- | c- b- c- a- | b-/2. b-
+
+unison     b a/8 g/8 a b/8 c/8 | b/2. b/8 a/8 | g/8 - f/8 e b a
+
+unison     g/8 f/8 e/8 f/8 g a | f f g/8 f/8 g/8 a/8 | b b- R/8 b-/8 b/8 a/8
+
+unison     g/8 - f/8 e/8 f/8 g f/8 e/8 | f/2. f | g/8 - f/8 e/8 f/8 g a | b/2. b
+
+unison     c b/8 - a/8 b/8 - a/8 g/8 b/8 | a/8 - g/8 - f/8 - a/8 g/8 - f/8 e | b- - e/2 d- | e/1
+
+unison     g/8 f/8 e/8 f/8 g f/8 e/8 | f/2. b- | g/8 f/8 e/8 f/8 g/8 f/8 g/8 a/8 | f b-/2.
+
+unison     g/2 a/2 | b/2. g | c b/8 a/8 b/8 - a/8 g/8 b/8 | a/8 - g/8 f/8 a/8 g/8 f/8 e | b- - e/2 d- | e/1
