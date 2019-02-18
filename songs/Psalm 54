@@ -5,8 +5,7 @@ author     New King James Version
 composer   David R. Erb, 2015
 key        C
 rhythm     0 : 4
-tempo      100
-#has rhythm change
+tempo      120
 
 status     header  tune  checked
 
