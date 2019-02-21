@@ -22,3 +22,47 @@ unison     e/8 e/8 e/8 e/8 e/8 d-/8 e e | e/8 e/8 e/8 e/8 d-/8 e/8 - f/8 | g - f
 unison     a g b a/2 e/8 e/8 | d-/8 e/8 f/8 - d-/8 e/2. e
 
 unison     a/8 g/8 b/8 a a | a/8 - g/8 b/8 a a/8 a/8 | c/8 b/8 g/8 f/8 - d-/8 e/8 f/8 | e/2. e
+
+unison     e e/8 e/8 e/8 d-/8 e/8 f/8 | g f e d- | e/1
+
+unison     a a a a a a a a a g a b a/2 a a a a a a a g a c - b a - g e/2
+
+unison     e | a/8 g/8 b/8 a a | a/8 - g/8 b/8 a a/8 a/8 | c/8 - b/8 g/8 f/8 d-/8 e/8 f/8 | e/2. e
+
+unison     e e e/8 - d-/8 e/8 - f/8 | g f e d- | e/1
+
+unison     a a a a a a a a a g a b a/2
+
+unison     a a a a a a a a a a g a c - b a - g e/2
+
+unison     a a a a a a a a a g a b a/2
+
+unison     a a a a a a a a a a g a c - b a - g e/2
+
+unison     a a a a a a a a a g a b a/2
+
+unison     a a a a a a a a a g a c - b a - g e/2
+
+unison     e/8 d-/8 e/8 f/8 e d- | c- d- e/2 | e/8 - d-/8 e/8 - f/8 g f | e/2 e/8 e/8 e/8 e/8
+
+unison     a - g b a = | a e/8 e/8 d- f | e/2. e
+
+unison     a/8 g/8 a/8 - b/8 a/2 = | a/2 a/8 - g/8 - a/8 - b/8 | c - b a g | e/2 e e
+
+unison     e/8 e/8 e/2 e/8 e/8 | f/2 d-/2 | e/1
+
+unison     a a a a g a b a/2
+
+unison     a g a c - b a - g e/2
+
+unison     a a a a a a a a g a b a/2
+
+unison     a a a a a g a c - b a - g e/2
+
+unison     a a g a b a/2
+
+unison     a a a a a a g a c - b a - g e/2
+
+unison     e/8 e/8 | a/8 - g/8 a/8 b/8 a/2 = | a/2 a/8 g/8 a/8 b/8 | c b a g | e/2 e e
+
+unison     e/8 e/8 e/2 e/8 e/8 | f/2 d-/2 | e f g/8 f/8 e/8 d-/8 | e e/2(1)
