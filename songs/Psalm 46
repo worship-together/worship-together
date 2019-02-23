@@ -18,8 +18,30 @@ voice      unison  E4 to D5
 
 unison     c | c c g/8 - a/8 b | c/8 - b/8 - a g c | b a g/8 e/8 a/8 g/8 | f/8 - e/8 - d- c-(2) c-
 
-unison     c- c- d- d- | eb/2. c-/8 d-/8 | eb d- c- d-/8 e/8 | d-/2. d-
+unison     c- c- d- d- | eb/2. c-/8 d-/8 | eb d- c- d-/8 eb/8 | d-/2. d-
 
-unison     eb f g f/8 e/8 | f eb/8 d-/8 e c- | eb/2 d- c- | d-/2. c-/8 d-/8
+unison     eb f g f/8 eb/8 | f eb/8 d-/8 eb c- | eb/2 d- c- | d-/2. c-/8 d-/8
 
-unison     eb d- c- d-/8 e/8 | d- g-/2 d-/8 d-/8
+unison     eb d- c- d-/8 eb/8 | d- g-/2 d-/8 d-/8 | eb - f - g f/8 - eb/8 | f - eb/8 - d-/8 eb c- | eb/2 - d-/2 | c-/2. c-
+
+unison     e. - f/8 g a = | a g g - f# | g/2 c- g | a g a/8 b/8 c | b/2. g
+
+unison     a - g a - b | c b/8 - a/8 g e | f e d- - c- | g/1 | a - g a - b | c - b/8 - a/8 g c-
+
+unison     f e d- d- | c-/2. c- | c-/2 d-/2 | eb/2. c-/8 - d-/8 | eb - d- c- d-/8 - eb/8 | d-/2. d-
+
+unison     eb - f g f/8 - eb/8 | f eb/8 - d-/8 eb - c- | eb/2 - d-/2 | c-/2. c
+
+unison     c c g/8 - a/8 b | c/8 - b/8 - a g c | b a g/8 e/8 a/8 g/8 | f/8 - e/8 - d- c-/2(1)
+
+unison     e. f/8 g c- | ab - g f g/8 - ab/8 | g/2 e g | ab g/8 f/8 g f/8 - e/8 | f g/8 - ab/8 g c-
+
+unison     f eb/8 - d-/8 eb d-/8 c-/8 | d- c-/8 b-/8 c-(2) c- | c-/2 d-/2 | eb/2. c-/8 - d-/8 | eb d- c- d-/8 - e/8 | d-/2. d-
+
+unison     eb - f - g f/8 e/8 | f - eb/8 - d-/8 - e c- | eb/2 d-/2 | c-/2. c-
+
+unison     e. - f/8 g a = | a g g f# | g/1 | a g a b | c b/8 a/8 g e | f - g - a/2 | g#/1
+
+unison     a g a b | c - b/8 - a/8 - g c- | f - e d-/2 | c-/2. c
+
+unison     c c g/8 - a/8 b | c/8 - b/8 - a g c | b a g/8 e/8 a/8 g/8 | f/8 - e/8 - d- c-(2)
