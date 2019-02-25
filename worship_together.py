@@ -2,7 +2,7 @@ import ui
 import sound
 import midi
 import sheet_music
-import storage
+import sync
 from objc_util import *
 import os
 import sound
@@ -148,8 +148,8 @@ btn_container = ui.View(frame=(0, 0, len(btn_images)*32, 44))
 btn = ui.Button(image=ui.Image.named('iob:loop_256'))
 btn.frame = (64, 0, 32, 44)
 def sync_songs_and_tunes():
-	storage.synchronize('songs', 'songs')
-	storage.synchronize('tunes', 'tunes')
+	sync.synchronize('songs', 'songs')
+	sync.synchronize('tunes', 'tunes')
 btn.action = lambda sender: sync_songs_and_tunes()
 btn_container.add_subview(btn)
 
