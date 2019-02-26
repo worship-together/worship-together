@@ -1,20 +1,34 @@
 title      I to the Hills Will Lift Mine Eyes
 hymnal     Cantus Christi
 page       159
-author     Douglas Wilson, 2000
+author     Scottish Psalter, 1615
 psalm      121
 
-tune       POURQUOI FONT BRUIT
-metre      10 11. 10 11. 11 10. 11 10
-composer   Strasbourg, 1539
-harmony    Claude Goudimel, 1564; alt.
-key        C
+tune       DUNDEE [FRENCH]
+metre      C.M.
+composer   Scottish Psalter, 1615
+key        Eb
 rhythm     0 : 4
-tempo      190
+tempo      150
 
-status     header  tune  double  checked
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    e/2 | g a b  e | f g a/2 | g/2
+alto       b/2 | e e e  c | d e e/2 | e/2
+tenor      g/2 | b c b  g | b b c/2 | b/2
+bass       e/2 | e a g- c | b e a/2 | e/2
+
+soprano    f e e d- | e/2 b/2 | e+ d c b
+alto       d c c b  | b/2 e/2 | g  f e d
+tenor      b g a f  | g/2 g/2 | b  b g f
+bass       b c a b  | e/2 e/2 | e  b c d
+
+soprano    b an b/2 | g/2 | f e        e d- | e/2
+alto       c c  d/2 | b/2 | c g-/8 a/8 b b  | b/2
+tenor      g f  f/2 | g/2 | a e        f f  | g/2
+bass       e f  b/2 | e/2 | a c        b b  | e/2
