@@ -7,9 +7,21 @@ key        G
 rhythm     4 : 4
 tempo      140
 
-status     header
+status     header  tune
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+unison     g/8 f/8 | e b b/8 - a/8 g/8 - f/8 | a/8 - g/8 - f/8 - e/8 d- e/8 - f/8 | g e g a | f/2. g/8 f/8
+
+unison     e b b/8 - a/8 g/8 - f/8 | a/8 g/8 f/8 - e/8 d- e/8 f/8 | g e d- - c- | b-/2. g/8 f/8
+
+unison     e b b/8 - a/8 g/8 - f/8 | a/8 - g/8 f/8 e/8 d- e/8 f/8 | g e g/8 - f/8 e/8 d#-/8 | e/1
+
+unison     b g a b | a/8 - g/8 f/8 g/8 a b/8 a/8 | g g/8 f/8 e/8 f/8 g/8 a/8 |b b/2 b
+
+unison     b g f e | d-/8 - e/8 - f/8 - g/8 - a b/8 a/8 | g e a/8 f/8 e/8 - d-/8
+
+unison     e f g a | b g f e | a - f e - d- | e/2.
