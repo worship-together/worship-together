@@ -1,0 +1,33 @@
+title      Psalm 149
+hymnal     Cantica Sanctorum
+author     New King James Version
+
+composer   David R. Erb, 2006
+key        G
+rhythm     0 : 4
+tempo      130
+
+status     header  tune
+
+voice      unison  E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+unison     d- e g/2 g g g g a g/2 g g g g g g f g e d-/2
+
+unison     d- e/8 g/8 g/8 g/8 g/8 e/8 g/8 a g R | g/8 g/8 g/8 g/8 g/8 g/8 g/8 g/8 f/8 g/8 e/8 d-/8 d- R
+
+unison     g/8 g/8 g/8 g/8 g/8 e/8 g/8 a R | g/8 g/8 g/8 g/8 g/8 g/8 g/8 g/8 g/8 f/8 g/8 e/8 d- R
+
+unison     g g c c b/8 a/8 g/8 b/8 a a R | d-/8 d-/8 e/8 d-/8 e/8 f/8 g/8 e/8 g/8 a/8 a a/2 R
+
+unison     g/8 g/8 g/8 g/8 g/8 e/8 g/8 a g R | g/8 g/8 g/8 g/8 f/8 g/8 e/8 d- R
+
+unison     g/8 g/8 g/8 g/8 g/8 g/8 g/8 g/8 e/8 g/8 a R | g/8 g/8 g/8 g/8 g/8 f/8 g/8 e/8 d- R
+
+unison     g c/8 c/8 c/8 b/8 a/8 b/8 a a R | g c/8 c/8 c/8 b/8 - a/8 g/8 - b/8 a a R
+
+unison     g c c b/8 - a/8 g/8 - b/8 a R | g/8 g/8 c c/8 c/8 b/8 a/8 g/8 - b/8 a a R
+
+unison     g c/8 c/8 c/8 c/8 b/8 a/8 g/8 b/8 a a R | d- e/8 d-/8 e/8 - f/8 g/8 - e/8 g/8 - a/8 a/2. R | c/2 b/2 a/1
