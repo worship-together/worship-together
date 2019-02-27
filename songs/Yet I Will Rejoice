@@ -20,7 +20,7 @@ unison     e b b/8 - a/8 g/8 - f/8 | a/8 g/8 f/8 - e/8 d- e/8 f/8 | g e d- - c- 
 
 unison     e b b/8 - a/8 g/8 - f/8 | a/8 - g/8 f/8 e/8 d- e/8 f/8 | g e g/8 - f/8 e/8 d#-/8 | e/1
 
-unison     b g a b | a/8 - g/8 f/8 g/8 a b/8 a/8 | g g/8 f/8 e/8 f/8 g/8 a/8 |b b/2 b
+unison     b g a b | a/8 - g/8 f/8 g/8 a b/8 a/8 | g g/8 f/8 e/8 f/8 g/8 a/8 | b b/2 b
 
 unison     b g f e | d-/8 - e/8 - f/8 - g/8 - a b/8 a/8 | g e a/8 f/8 e/8 - d-/8
 
