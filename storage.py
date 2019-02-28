@@ -3,84 +3,77 @@ Storage
 
 REQUIREMENTS
 - Store song files locally for playback without Internet
-- Automatically upload/download songs in background when Internet available
-- Support the following song modifications offline:
-    - Create, edit, delete, rename
-- Modifying songs requires a password built into the app
-- Last song update wins (no merging)
-- Songs deleted locally will be deleted from remote when Internet available
-- Songs deleted from remote will be deleted locally
+- Automatically download updated songs from remote to iPad
+  in background when Internet is available
+- Delete songs from iPad that are no longer on remote
+- Support manually uploading updated sons to remote from laptop
+- Delete songs from remote that are no longer on laptop
+- Songs are stored and versioned in git
+
 
 DESIGN
-- Whenever a song is created/edited locally, append ".UPLOAD" to filename
-- Whenever a song is deleted locally, append ".DELETE" to filename
-- Whenever a song is renamed locally, append ".DELETE" to the old filename
-    - and ".UPLOAD" to the new filename
-- Remote contains file named 'last_upload', modified after each upload
-- Local file named 'last_download', modified after each download
-- Periodically synchronize
-    - Cache remote 'last_upload' file modified time
-    - Local to Remote
-        - Enumerate all local files with .UPLOAD suffix
-            - Copy file up to remote without .UPLOAD suffix
-            - If successful, remote .UPLOAD suffix from file
-        - Enumerate all local files with .DELETE suffix
-            - Delete corresponding file from remote
-            - If successful, delete local file
-        - If any files were uploaded or deleted
-            - Modify last_upload file on remote
-    - Remote to Local
-        - If cached 'last_upload' modified time newer than 'last_download'
-            - Enumerate all local and remote files together in order with tuple
-                - Leave gaps for missing local or remote files (tuple diagram)
-                    +---------------+--------------+
-                    |     Local     |    Remote    |
-                    +---------------+--------------+
-                    |               |    File A    |  (Create)
-                    +---------------+--------------+
-                    |    File B     |    File B    |  (Update)
-                    +---------------+--------------+
-                    |    File C     |              |  (Delete)
-                    +---------------+--------------+
-                - If file only on remote, download to local
-                - If file on local & remote _and_ remote is newer
-                    - Download to remote
-                - If file only on local, delete local
-        - Modify local 'last_download' file (regardless)
+- To upload from laptop to remote
+  - Enumerate all local songs
+    - If song does not exist on remote, copy it up to remote
+    - If song on laptop is newer, copy it up to remote
+  - Enumerate all remote songs
+  	- If song does not exist on laptop, delete it from remote
+  - Modify remote last_upload file
+- To download from remote to iPad
+  - If remote last_upload file newer than local last_download file
+	- Enumerate all remote songs
+      - If song does not exist on iPad, copy it from remote
+	  - If song on remote is newer, copy it from remote
+	- Enumerate all local songs
+	  - If song does not exist on remote, delete it from iPad
+	- Modify local last_download file
+
 
 VERIFICATION
 - Use a specific test directory on the local & remote
 - All local & remote files are deleted before each test
-- Local To Remote
-    - Upload
-        - Create two uniquely named local files, one an .UPLOAD suffix
-        - Synchronize
-        - Verify that the file with the .UPLOAD suffix was uploaded
-        - Verify no .UPLOAD suffix on either the local or remote filenames
-    - Delete
-        - Create two uniquely named remote files
-        - Create one local rile with the same name as a remote file
-        - Append the .DELETE suffix to the local file
-        - Synchronize
-        - Verify the local and corresponding remote files were both deleted
-    - Verify after each test that the remote 'last_upload' date was updated
-- Remote To Local
-    - Create two uniquely named remote files
-    - Create two uniquely named local files
-    - One of the local filenames must match a remote & have different content
-    - (same as above diagram)
-    - Make local 'last_download' date newer than remote 'last_upload'
-    - Synchronize
-    - Verify no files have changed, been created, or deleted
-    - Make remote 'last_upload' date newer than local 'last_download'
-    - Synchronize
-    - Verify local file with no corresponding remote is deleted
-    - Verify remote file with no corresponding local is downloaded locally
-    - Verify content of remote file with same name as local has been downloaded
-- Verify after each test that the local 'last_download' newer than 'last_upload'
+- Upload Laptop To Remote
+  - Create Song
+    - Create a local song file
+    - Invoke upload
+    - Verify song file is on remote
+  - Newer Local Song
+    - Create a remote song file
+    - Create a local song file with the same name and different content
+    - Invoke upload
+    - Verify remote song matches local song
+  - Older Local Song
+    - Create a local song file
+    - Create a remote song file with the same name and different content
+    - Invoke upload
+    - Verify remote song does *not* match local song
+  - Delete Song
+    - Create a remote song file
+    - Invoke upload
+    - Verify remote song file is deleted
+  - Verify after each test that remote last_upload file was updated
+- Download Remote to iPad
+  - Create Song
+    - Create a remote song file
+    - Invoke download
+    - Verify song file is copied locally
+  - Newer Remote Song
+    - Create a local song file
+    - Create a remote song file with the same name and different content
+    - Invoke download
+    - Verify local song matches remote song
+  - Older Remote Song
+    - Create a remote song file
+    - Create a local song file with the same name and different content
+    - Invoke download
+    - Verify remote song does *not* match local song
+  - Delete Song
+    - Create a local song file
+    - Invoke download
+    - Verify local song file is deleted
+  - Verify after each test that the local last_download file updated
 
 OPEN QUESTIONS
-- How to access Azure from iPad? (limited set of azure Python libs?)
 - How are file times represented on iPad?
 - How to update in background?
 - How to detect that an Internet connection is available?
@@ -91,6 +84,7 @@ import datetime
 import os
 import shutil
 import time
+import unittest
 
 
 #
@@ -185,6 +179,11 @@ def create_remote_file(name, content):
 	service.create_file_from_text(share, test_dir, name, content)
 	
 	
+def list_all_remote_files(remote_dir):
+	for file in service.list_directories_and_files(share, remote_dir):
+		print(file.name)
+
+
 def verify_file_uploaded(name, content):
 	file_found = False
 	for file in service.list_directories_and_files(share, test_dir):
@@ -292,11 +291,6 @@ def test_remote_to_local_download():
 	
 	
 
-def list_all_remote_files(remote_dir):
-	for file in service.list_directories_and_files(share, remote_dir):
-		print(file.name)
-
-
 	# create_remote_file('file a', 'content a')
 	# create_remote_file('file b', 'content b')
 	# create_local_file('file c', 'content c')
@@ -324,29 +318,6 @@ def list_all_remote_files(remote_dir):
 	# assert os.path.exists('file b')
 	
 	
-	
-	
-#     - Delete
-#         - Create two uniquely named remote files
-#         - Create one local rile with the same name as a remote file
-#         - Append the .DELETE suffix to the local file
-#         - Synchronize
-#         - Verify the local and corresponding remote files were both deleted
-#     - Verify after each test that the remote 'last_upload' date was updated
-# - Remote To Local
-#     - Create two uniquely named remote files
-#     - Create two uniquely named local files
-#     - One of the local filenames must match a remote & have different content
-#     - (same as above diagram)
-#     - Make local 'last_download' date newer than remote 'last_upload'
-#     - Synchronize
-#     - Verify no files have changed, been created, or deleted
-#     - Make remote 'last_upload' date newer than local 'last_download'
-#     - Synchronize
-#     - Verify local file with no corresponding remote is deleted
-#     - Verify remote file with no corresponding local is downloaded locally
-#     - Verify content of remote file with same name as local has been downloaded
-# - Verify after each test that the local 'last_download' newer than 'last_upload'
 
 if __name__ == '__main__':
 	test_local_to_remote_upload()
@@ -354,15 +325,8 @@ if __name__ == '__main__':
 	test_remote_to_local_download()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
-	#service.create_file_from_text('songs', '', f'a,\'blah', 'Verse: Hello')
-	#verify_file_uploaded(f'a,\'blah', 'Verse: Hello')
-	#service.copy_file()
-	#service.delete_file()
-	#service.copy_file(self, share_name, directory_name, file_name, copy_source, metadata, timeout)
-	#service.delete_file(self, share_name, directory_name, file_name, timeout)
-	#service.create_file(self, share_name, directory_name, file_name, content_length, content_settings, metadata, timeout)
-	
-	
+
+
 #
 #  Experimental Code
 #
