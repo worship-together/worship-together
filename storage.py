@@ -6,7 +6,7 @@ REQUIREMENTS
 - Automatically download updated songs from remote to iPad
   in background when Internet is available
 - Delete songs from iPad that are no longer on remote
-- Support manually uploading updated sons to remote from laptop
+- Support manually uploading updated songs to remote from laptop
 - Delete songs from remote that are no longer on laptop
 - Songs are stored and versioned in git
 
@@ -147,7 +147,8 @@ def synchronize(local_dir, remote_dir):
 
 
 def upload_laptop_to_remote(local_dir, remote_dir):
-	pass
+	print("uploading local " + local_dir + " to remote " + remote_dir)
+	# your code goes here...
 
 
 #
@@ -287,7 +288,19 @@ def test_sync_remote_to_local_download():
 	assert not remote_file_exists('file b')
 	
 
+def test_upload_laptop_to_remote_create_song():
+	delete_all_local_and_remote()
+	create_local_file('new_file', 'new file content')
+	upload_laptop_to_remote(test_dir, test_dir)
+	assert remote_file_exists('new_file')
+	# assertion error
+
+
 if __name__ == '__main__':
+	# service.create_directory(share, test_dir)
+	# create_remote_file("my_file", "this is the day that the Lord has made")
+	# list_all_remote_files(test_dir)
+	test_upload_laptop_to_remote_create_song()
 	test_sync_local_to_remote_upload()
 	test_sync_local_to_remote_delete()
 	test_sync_remote_to_local_download()
