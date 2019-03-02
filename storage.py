@@ -208,7 +208,6 @@ def remote_file_deleted(name):
 	return not file_found
 	
 	
-	
 def remote_file_exists(name):
 	for file in service.list_directories_and_files(share, test_dir):
 		if file.name == name:
@@ -309,6 +308,8 @@ def test_upload_laptop_to_remote_older_local_song():
 	create_local_file('new_file', 'new file content')
 	create_remote_file('new_file', 'new file with different content')
 	upload_laptop_to_remote(test_dir, test_dir)
+	for file in os.listdir(test_dir):
+		print(file)
 	# needs verification assertion
 
 
@@ -316,6 +317,7 @@ def test_upload_laptop_to_remote_delete_song():
 	delete_all_local_and_remote()
 	create_remote_file('new_file', 'new file content')
 	upload_laptop_to_remote(test_dir, test_dir)
+	assert remote_file_deleted('new_file')
 	assert not remote_file_exists('new_file')
 	# this has an assertion error
 
@@ -327,12 +329,12 @@ if __name__ == '__main__':
 	#
 	# test_upload_laptop_to_remote_create_song()
 	# test_upload_laptop_to_remote_newer_local_song()
-	# test_upload_laptop_to_remote_older_local_song()
+	test_upload_laptop_to_remote_older_local_song()
 	# test_upload_laptop_to_remote_delete_song()
 	#
-	test_sync_local_to_remote_upload()
-	test_sync_local_to_remote_delete()
-	test_sync_remote_to_local_download()
+	# test_sync_local_to_remote_upload()
+	# test_sync_local_to_remote_delete()
+	# test_sync_remote_to_local_download()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
 
