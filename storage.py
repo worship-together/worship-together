@@ -160,8 +160,13 @@ def new_remote_file_exists(remote_dir, name):
 def upload_laptop_to_remote(local_dir, remote_dir):
 	print("uploading local " + local_dir + " to remote " + remote_dir)
 	for song in os.listdir(local_dir):
-		if new_local_file_exists(local_dir, song) is True & new_remote_file_exists(remote_dir, song) is False:
-			service.copy_file(share, local_dir)
+		if new_remote_file_exists(remote_dir, song) is False:
+			service.create_file_from_text(share, remote_dir, song, 'new song')
+			print('just uploaded ' + song)
+		else:
+			pass
+
+
 
 
 	# your code goes here...
@@ -341,7 +346,8 @@ if __name__ == '__main__':
 	# create_remote_file("my_file", "this is the day that the Lord has made")
 	# list_all_remote_files(test_dir)
 	#
-	test_upload_laptop_to_remote_create_song()
+	upload_laptop_to_remote('songs', 'songs')
+	# test_upload_laptop_to_remote_create_song()
 	# test_upload_laptop_to_remote_newer_local_song()
 	# test_upload_laptop_to_remote_older_local_song()
 	# test_upload_laptop_to_remote_delete_song()
