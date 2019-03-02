@@ -146,8 +146,24 @@ def synchronize(local_dir, remote_dir):
 	sync_download_files(local_dir, remote_dir)
 
 
+def new_local_file_exists(local_dir, name):
+	return os.path.exists(local_dir + '/' + name)
+
+
+def new_remote_file_exists(remote_dir, name):
+	for file in service.list_directories_and_files(share, remote_dir):
+		if file.name == name:
+			return True
+	return False
+
+
 def upload_laptop_to_remote(local_dir, remote_dir):
 	print("uploading local " + local_dir + " to remote " + remote_dir)
+	for song in os.listdir(local_dir):
+		if new_local_file_exists(local_dir, song) is True & new_remote_file_exists(remote_dir, song) is False:
+			service.copy_file(share, local_dir)
+
+
 	# your code goes here...
 
 
@@ -325,14 +341,14 @@ if __name__ == '__main__':
 	# create_remote_file("my_file", "this is the day that the Lord has made")
 	# list_all_remote_files(test_dir)
 	#
-	# test_upload_laptop_to_remote_create_song()
+	test_upload_laptop_to_remote_create_song()
 	# test_upload_laptop_to_remote_newer_local_song()
 	# test_upload_laptop_to_remote_older_local_song()
 	# test_upload_laptop_to_remote_delete_song()
 	#
-	test_sync_local_to_remote_upload()
-	test_sync_local_to_remote_delete()
-	test_sync_remote_to_local_download()
+	# test_sync_local_to_remote_upload()
+	# test_sync_local_to_remote_delete()
+	# test_sync_remote_to_local_download()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
 
