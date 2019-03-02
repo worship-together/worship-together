@@ -293,14 +293,43 @@ def test_upload_laptop_to_remote_create_song():
 	create_local_file('new_file', 'new file content')
 	upload_laptop_to_remote(test_dir, test_dir)
 	assert remote_file_exists('new_file')
-	# assertion error
+	# this has an assertion error
+
+
+def test_upload_laptop_to_remote_newer_local_song():
+	delete_all_local_and_remote()
+	create_remote_file('new_file', 'new file content')
+	create_local_file('new_file', 'new file with different content')
+	upload_laptop_to_remote(test_dir, test_dir)
+	# needs verification assertion
+
+
+def test_upload_laptop_to_remote_older_local_song():
+	delete_all_local_and_remote()
+	create_local_file('new_file', 'new file content')
+	create_remote_file('new_file', 'new file with different content')
+	upload_laptop_to_remote(test_dir, test_dir)
+	# needs verification assertion
+
+
+def test_upload_laptop_to_remote_delete_song():
+	delete_all_local_and_remote()
+	create_remote_file('new_file', 'new file content')
+	upload_laptop_to_remote(test_dir, test_dir)
+	assert not remote_file_exists('new_file')
+	# this has an assertion error
 
 
 if __name__ == '__main__':
 	# service.create_directory(share, test_dir)
 	# create_remote_file("my_file", "this is the day that the Lord has made")
 	# list_all_remote_files(test_dir)
-	test_upload_laptop_to_remote_create_song()
+	#
+	# test_upload_laptop_to_remote_create_song()
+	# test_upload_laptop_to_remote_newer_local_song()
+	# test_upload_laptop_to_remote_older_local_song()
+	# test_upload_laptop_to_remote_delete_song()
+	#
 	test_sync_local_to_remote_upload()
 	test_sync_local_to_remote_delete()
 	test_sync_remote_to_local_download()
