@@ -146,7 +146,11 @@ def synchronize(local_dir, remote_dir):
 	sync_download_files(local_dir, remote_dir)
 
 
-def new_remote_file_exists(remote_dir, name):
+def local_file_exists(name):
+	return os.path.exists(test_dir + '/' + name)
+
+
+def remote_file_exists(remote_dir, name):
 	for file in service.list_directories_and_files(share, remote_dir):
 		if file.name == name:
 			return True
@@ -156,18 +160,21 @@ def new_remote_file_exists(remote_dir, name):
 def upload_laptop_to_remote(local_dir, remote_dir):
 	print("uploading local " + local_dir + " to remote " + remote_dir)
 	for song in os.listdir(local_dir):
-		if new_remote_file_exists(remote_dir, song) is False:
-			# copy to remote_dir
-			pass
+		if remote_file_exists(remote_dir, song) is False:
+			sync_upload_file(remote_dir, song, local_dir + '/' + song)
+			if remote_file_exists(remote_dir, song) is True:  # <- verification
+				print('newly uploaded ' + song)
 		else:
-			pass
-	for song in service.list_directories_and_files(share, remote_dir):
-		pass
-		# if local file exists and not remote, delete remote
-
-
-
-
+			print('old song')
+	# for song in service.list_directories_and_files(share, remote_dir):
+	# 	print(str(local_file_exists(song.name)))
+	# 	print(str(remote_file_exists(remote_dir, song)))
+	# 	if local_file_exists(song.name) is False & remote_file_exists(remote_dir, song) is True:
+	# 		service.delete_file(share, remote_dir, song.name)
+	# 		if remote_file_exists(remote_dir, song) is False:
+	# 			print('successfully deleted ' + song.name + ' from remote')
+	# 	else:
+	# 		print('nothing to delete')
 	# your code goes here...
 
 
@@ -228,14 +235,14 @@ def remote_file_deleted(name):
 	return not file_found
 	
 	
-def remote_file_exists(name):
+def test_if_remote_file_exists(name):
 	for file in service.list_directories_and_files(share, test_dir):
 		if file.name == name:
 			return True
 	return False
 	
 	
-def local_file_exists(name):
+def test_if_local_file_exists(name):
 	return os.path.exists(test_dir + '/' + name)
 
 
@@ -267,9 +274,9 @@ def test_sync_local_to_remote_upload():
 	create_local_file('file b', 'content b')
 	synchronize(test_dir, test_dir)
 	verify_file_uploaded('file a', 'content a')
-	assert local_file_exists('file a')
-	assert not local_file_exists('file a.UPLOAD')
-	assert not remote_file_exists('file b')
+	assert test_if_local_file_exists('file a')
+	assert not test_if_local_file_exists('file a.UPLOAD')
+	assert not test_if_remote_file_exists('file b')
 	
 	
 def test_sync_local_to_remote_delete():
@@ -284,11 +291,11 @@ def test_sync_local_to_remote_delete():
 	assert remote_file_deleted('file a')
 	assert not remote_file_deleted('file b')
 	assert not remote_file_deleted('file c')
-	assert not local_file_exists('file d')
-	assert not local_file_exists('file d.DELETE')
+	assert not test_if_local_file_exists('file d')
+	assert not test_if_local_file_exists('file d.DELETE')
 	assert remote_file_deleted('file d')
-	assert not local_file_exists('file a')
-	assert not local_file_exists('file a.DELETE')
+	assert not test_if_local_file_exists('file a')
+	assert not test_if_local_file_exists('file a.DELETE')
 
 	
 def test_sync_remote_to_local_download():
@@ -302,16 +309,16 @@ def test_sync_remote_to_local_download():
 	local_time_a = get_local_modified_time(test_dir, 'file a')
 	remote_time_a = get_remote_modified_time(test_dir, 'file a')
 	assert local_time_a > remote_time_a
-	assert not local_file_exists('file b')
-	assert local_file_exists('file c')
-	assert not remote_file_exists('file b')
+	assert not test_if_local_file_exists('file b')
+	assert test_if_local_file_exists('file c')
+	assert not test_if_remote_file_exists('file b')
 	
 
 def test_upload_laptop_to_remote_create_song():
 	delete_all_local_and_remote()
 	create_local_file('new_file', 'new file content')
 	upload_laptop_to_remote(test_dir, test_dir)
-	assert remote_file_exists('new_file')
+	assert test_if_remote_file_exists('new_file')
 	# this has an assertion error
 
 
@@ -336,7 +343,7 @@ def test_upload_laptop_to_remote_delete_song():
 	create_remote_file('new_file', 'new file content')
 	upload_laptop_to_remote(test_dir, test_dir)
 	assert remote_file_deleted('new_file')
-	assert not remote_file_exists('new_file')
+	assert not test_if_remote_file_exists('new_file')
 	# this has an assertion error
 
 
