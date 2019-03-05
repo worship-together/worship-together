@@ -166,6 +166,16 @@ def upload_laptop_to_remote(local_dir, remote_dir):
 				print('newly uploaded ' + song)
 		else:
 			print('old song')
+
+        # i don't know if this works but it should update older remote songs
+        # if local_file_exists(song) is True:
+        #     remote_time = get_remote_modified_time(remote_dir, song)
+        #     local_time = get_local_modified_time(local_dir, song)
+        #     if remote_time > local_time:
+        #         sync_upload_file(remote_dir, song, song)
+
+    # under progress...
+    #
 	# for song in service.list_directories_and_files(share, remote_dir):
 	# 	print(str(local_file_exists(song.name)))
 	# 	print(str(remote_file_exists(remote_dir, song)))
@@ -324,18 +334,21 @@ def test_upload_laptop_to_remote_create_song():
 
 def test_upload_laptop_to_remote_newer_local_song():
 	delete_all_local_and_remote()
-	create_remote_file('new_file', 'new file content')
-	create_local_file('new_file', 'new file with different content')
+	create_remote_file('older_file', 'new file content')
+	create_local_file('newer_file', 'new file with newer content')
 	upload_laptop_to_remote(test_dir, test_dir)
 	# needs verification assertion
 
 
 def test_upload_laptop_to_remote_older_local_song():
-	delete_all_local_and_remote()
-	create_local_file('new_file', 'new file content')
-	create_remote_file('new_file', 'new file with different content')
-	upload_laptop_to_remote(test_dir, test_dir)
-	# needs verification assertion
+    delete_all_local_and_remote()
+    create_local_file('older_file', 'new file content')
+    create_remote_file('newer_file', 'new file with older content')
+    upload_laptop_to_remote(test_dir, test_dir)
+    for file in service.list_directories_and_files(share, test_dir):
+        remote_file = file.content
+        local_file = file.content
+        assert local_file == remote_file  # needs verification assertion
 
 
 def test_upload_laptop_to_remote_delete_song():
@@ -353,14 +366,14 @@ if __name__ == '__main__':
 	# list_all_remote_files(test_dir)
 	#
 	# upload_laptop_to_remote('songs', 'songs')
-	# test_upload_laptop_to_remote_create_song()
+	test_upload_laptop_to_remote_create_song()
 	# test_upload_laptop_to_remote_newer_local_song()
-	# test_upload_laptop_to_remote_older_local_song()
+	test_upload_laptop_to_remote_older_local_song()
 	# test_upload_laptop_to_remote_delete_song()
 	#
-	test_sync_local_to_remote_upload()
-	test_sync_local_to_remote_delete()
-	test_sync_remote_to_local_download()
+	# test_sync_local_to_remote_upload()
+	# test_sync_local_to_remote_delete()
+	# test_sync_remote_to_local_download()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
 
