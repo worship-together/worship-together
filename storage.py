@@ -146,8 +146,8 @@ def synchronize(local_dir, remote_dir):
 	sync_download_files(local_dir, remote_dir)
 
 
-def local_file_exists(name):
-	return os.path.exists(test_dir + '/' + name)
+def local_file_exists(local_dir, name):
+	return os.path.exists(local_dir + '/' + name)
 
 
 def remote_file_exists(remote_dir, name):
@@ -161,17 +161,17 @@ def upload_laptop_to_remote(local_dir, remote_dir):
 	print("uploading local " + local_dir + " to remote " + remote_dir)
 	for song in os.listdir(local_dir):
 	# Create local song
-		if local_file_exists(song) is True:
+		if local_file_exists(local_dir, song) is True:
 			if remote_file_exists(remote_dir, song) is False:
 				sync_upload_file(remote_dir, song, local_dir + '/' + song)
 				if remote_file_exists(remote_dir, song) is True:
 					print('newly uploaded ' + song)
 	# Newer local song
-	# 		local_time = get_local_modified_time(local_dir, song)
-	# 		remote_time = get_remote_modified_time(remote_dir, song)
-	# 		if remote_time > local_time:
-	# 			sync_upload_file(remote_dir, song, local_dir + '/' + song)
-	# 			print('updated ' + song)
+			local_time = get_local_modified_time(local_dir, song)
+			remote_time = get_remote_modified_time(remote_dir, song)
+			if remote_time < local_time:
+				sync_upload_file(remote_dir, song, local_dir + '/' + song)
+				print('updated ' + song)
 	# Delete song
 	for song in service.list_directories_and_files(share, remote_dir):
 		if local_file_exists(song.name) is False and remote_file_exists(remote_dir, song.name) is True:
@@ -180,6 +180,7 @@ def upload_laptop_to_remote(local_dir, remote_dir):
 				print('successfully deleted ' + song.name + ' from remote')
 		else:
 			print('nothing to delete')
+	# Update last_upload time
 	time.sleep(1)
 	os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
 									datetime.datetime.timestamp(datetime.datetime.now())))
@@ -327,7 +328,6 @@ def test_upload_laptop_to_remote_create_song():
 	create_local_file('new_file', 'new file content')
 	upload_laptop_to_remote(test_dir, test_dir)
 	assert test_if_remote_file_exists('new_file')
-	# this has an assertion error
 
 
 def test_upload_laptop_to_remote_newer_local_song():
@@ -335,10 +335,13 @@ def test_upload_laptop_to_remote_newer_local_song():
 	create_remote_file('new_file', 'new file content')
 	create_local_file('new_file', 'new file with newer content')
 	upload_laptop_to_remote(test_dir, test_dir)
-	for file in service.list_directories_and_files(share, test_dir):
-		remote_file = file.content
-		local_file = open(test_dir + '/new_file', 'r')
-		assert local_file.read() == remote_file
+	for loc_file in os.listdir(test_dir):
+		local_file = open(test_dir + '/' + loc_file, 'r')
+		for rem_file in service.list_directories_and_files(share, test_dir):
+			remote_file = open(test_dir + '/' + rem_file.name, 'r')
+			print(remote_file.read())
+			print(local_file.read())
+			assert local_file.read() == remote_file.read()
 
 
 def test_upload_laptop_to_remote_older_local_song():
@@ -358,7 +361,6 @@ def test_upload_laptop_to_remote_delete_song():
 	upload_laptop_to_remote(test_dir, test_dir)
 	assert remote_file_deleted('new_file')
 	assert not test_if_remote_file_exists('new_file')
-	# this has an assertion error
 
 
 if __name__ == '__main__':
