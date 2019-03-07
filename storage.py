@@ -174,7 +174,7 @@ def upload_laptop_to_remote(local_dir, remote_dir):
 				print('updated ' + song)
 	# Delete song
 	for song in service.list_directories_and_files(share, remote_dir):
-		if local_file_exists(song.name) is False and remote_file_exists(remote_dir, song.name) is True:
+		if local_file_exists(local_dir, song.name) is False and remote_file_exists(remote_dir, song.name) is True:
 			sync_delete_remote_file(remote_dir, song.name)
 			if remote_file_exists(remote_dir, song) is False:
 				print('successfully deleted ' + song.name + ' from remote')
@@ -335,24 +335,31 @@ def test_upload_laptop_to_remote_newer_local_song():
 	create_remote_file('new_file', 'new file content')
 	create_local_file('new_file', 'new file with newer content')
 	upload_laptop_to_remote(test_dir, test_dir)
-	for loc_file in os.listdir(test_dir):
-		local_file = open(test_dir + '/' + loc_file, 'r')
+	for file in os.listdir(test_dir):
+		local_file = open(test_dir + '/' + file, 'r')
 		for rem_file in service.list_directories_and_files(share, test_dir):
-			remote_file = open(test_dir + '/' + rem_file.name, 'r')
-			print(remote_file.read())
-			print(local_file.read())
-			assert local_file.read() == remote_file.read()
+			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
+			remote_content = remote_file.content
+			local_content = local_file.read()
+			assert remote_content == local_content
+			local_file.close()
 
 
 def test_upload_laptop_to_remote_older_local_song():
 	delete_all_local_and_remote()
-	create_local_file('new_file', 'new file content')
-	create_remote_file('new_file', 'new file with older content')
+	create_remote_file('new_file', 'new file content')
+	create_local_file('new_file', 'new file with older content')
 	upload_laptop_to_remote(test_dir, test_dir)
-	for file in service.list_directories_and_files(share, test_dir):
-		remote_file = file.content
-		local_file = open(test_dir + '/new_file', 'r')
-		assert local_file.read() != remote_file
+	for file in os.listdir(test_dir):
+		local_file = open(test_dir + '/' + file, 'r')
+		for rem_file in service.list_directories_and_files(share, test_dir):
+			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
+			remote_content = remote_file.content
+			local_content = local_file.read()
+			print(remote_content)
+			print(local_content)
+			assert remote_content != local_content
+			local_file.close()
 
 
 def test_upload_laptop_to_remote_delete_song():
@@ -370,13 +377,13 @@ if __name__ == '__main__':
 	#
 	# upload_laptop_to_remote('songs', 'songs')
 	# test_upload_laptop_to_remote_create_song()
-	# test_upload_laptop_to_remote_newer_local_song()
-	# test_upload_laptop_to_remote_older_local_song()
+	test_upload_laptop_to_remote_newer_local_song()
+	test_upload_laptop_to_remote_older_local_song()
 	# test_upload_laptop_to_remote_delete_song()
 	#
-	test_sync_local_to_remote_upload()
-	test_sync_local_to_remote_delete()
-	test_sync_remote_to_local_download()
+	# test_sync_local_to_remote_upload()
+	# test_sync_local_to_remote_delete()
+	# test_sync_remote_to_local_download()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
 
