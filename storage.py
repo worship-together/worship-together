@@ -341,7 +341,10 @@ def test_upload_laptop_to_remote_newer_local_song():
 			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
 			remote_content = remote_file.content
 			local_content = local_file.read()
-			assert remote_content == local_content
+			remote_time = get_remote_modified_time(test_dir, rem_file.name)
+			local_time = get_local_modified_time(test_dir, file)
+			if remote_time < local_time:
+				assert remote_content == local_content
 			local_file.close()
 
 
@@ -356,9 +359,10 @@ def test_upload_laptop_to_remote_older_local_song():
 			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
 			remote_content = remote_file.content
 			local_content = local_file.read()
-			print(remote_content)
-			print(local_content)
-			assert remote_content != local_content
+			remote_time = get_remote_modified_time(test_dir, rem_file.name)
+			local_time = get_local_modified_time(test_dir, file)
+			if remote_time > local_time:
+				assert remote_content != local_content
 			local_file.close()
 
 
@@ -377,13 +381,13 @@ if __name__ == '__main__':
 	#
 	# upload_laptop_to_remote('songs', 'songs')
 	# test_upload_laptop_to_remote_create_song()
-	test_upload_laptop_to_remote_newer_local_song()
-	test_upload_laptop_to_remote_older_local_song()
+	# test_upload_laptop_to_remote_newer_local_song()
+	# test_upload_laptop_to_remote_older_local_song()
 	# test_upload_laptop_to_remote_delete_song()
 	#
-	# test_sync_local_to_remote_upload()
-	# test_sync_local_to_remote_delete()
-	# test_sync_remote_to_local_download()
+	test_sync_local_to_remote_upload()
+	test_sync_local_to_remote_delete()
+	test_sync_remote_to_local_download()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
 
