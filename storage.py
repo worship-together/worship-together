@@ -178,8 +178,6 @@ def upload_laptop_to_remote(local_dir, remote_dir):
 			sync_delete_remote_file(remote_dir, song.name)
 			if remote_file_exists(remote_dir, song) is False:
 				print('successfully deleted ' + song.name + ' from remote')
-		else:
-			print('nothing to delete')
 	# Update last_upload time
 	time.sleep(1)
 	os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
