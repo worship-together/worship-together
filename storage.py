@@ -361,11 +361,7 @@ def test_upload_laptop_to_remote_older_local_song():
 			local_content = local_file.read()
 			remote_time = get_remote_modified_time(test_dir, rem_file.name)
 			local_time = get_local_modified_time(test_dir, file)
-			if remote_time < local_time:
-				print(remote_time)
-				print(remote_content)
-				print(local_time)
-				print(local_content)
+			if remote_time > local_time:
 				assert remote_content != local_content
 			local_file.close()
 
