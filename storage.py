@@ -191,7 +191,7 @@ def upload_laptop_to_remote(local_dir, remote_dir):
 # VERIFICATION
 #
 
-test_dir = 'test2'
+test_dir = 'test'
 
 
 def delete_all_local_and_remote(create_dir=True):
@@ -333,7 +333,12 @@ def test_upload_laptop_to_remote_create_song():
 def test_upload_laptop_to_remote_newer_local_song():
 	delete_all_local_and_remote()
 	create_remote_file('new_file', 'new file content')
+	print('waiting for local clock to exceed remote clock')
+	time.sleep(5)
 	create_local_file('new_file', 'new file with newer content')
+	remote_time = get_remote_modified_time(test_dir, 'new_file')
+	local_time = get_local_modified_time(test_dir, 'new_file')
+	assert remote_time < local_time
 	upload_laptop_to_remote(test_dir, test_dir)
 	for file in os.listdir(test_dir):
 		local_file = open(test_dir + '/' + file, 'r')
@@ -341,17 +346,19 @@ def test_upload_laptop_to_remote_newer_local_song():
 			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
 			remote_content = remote_file.content
 			local_content = local_file.read()
-			remote_time = get_remote_modified_time(test_dir, rem_file.name)
-			local_time = get_local_modified_time(test_dir, file)
-			if remote_time < local_time:
-				assert remote_content == local_content
+			assert remote_content == local_content
 			local_file.close()
 
 
 def test_upload_laptop_to_remote_older_local_song():
 	delete_all_local_and_remote()
-	create_remote_file('new_file', 'new file content')
 	create_local_file('new_file', 'new file with older content')
+	print('waiting for remote clock to exceed local clock')
+	time.sleep(15)
+	create_remote_file('new_file', 'new file content')
+	local_time = get_local_modified_time(test_dir, 'new_file')
+	remote_time = get_remote_modified_time(test_dir, 'new_file')
+	assert local_time < remote_time
 	upload_laptop_to_remote(test_dir, test_dir)
 	for file in os.listdir(test_dir):
 		local_file = open(test_dir + '/' + file, 'r')
@@ -359,10 +366,7 @@ def test_upload_laptop_to_remote_older_local_song():
 			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
 			remote_content = remote_file.content
 			local_content = local_file.read()
-			remote_time = get_remote_modified_time(test_dir, rem_file.name)
-			local_time = get_local_modified_time(test_dir, file)
-			if remote_time > local_time:
-				assert remote_content != local_content
+			assert remote_content != local_content
 			local_file.close()
 
 
@@ -374,20 +378,22 @@ def test_upload_laptop_to_remote_delete_song():
 	assert not test_if_remote_file_exists('new_file')
 
 
-if __name__ == '__main__':
-	# service.create_directory(share, test_dir)
-	# create_remote_file("my_file", "this is the day that the Lord has made")
-	# list_all_remote_files(test_dir)
-	#
-	# upload_laptop_to_remote('songs', 'songs')
-	# test_upload_laptop_to_remote_create_song()
-	# test_upload_laptop_to_remote_newer_local_song()
-	# test_upload_laptop_to_remote_older_local_song()
-	# test_upload_laptop_to_remote_delete_song()
-	#
+def run_upload_tests():
+	test_upload_laptop_to_remote_create_song()
+	test_upload_laptop_to_remote_newer_local_song()
+	test_upload_laptop_to_remote_older_local_song()
+	test_upload_laptop_to_remote_delete_song()
+
+
+def run_sync_tests():
 	test_sync_local_to_remote_upload()
 	test_sync_local_to_remote_delete()
 	test_sync_remote_to_local_download()
+
+
+if __name__ == '__main__':
+	run_upload_tests()
+	run_sync_tests()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
 
