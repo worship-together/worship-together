@@ -179,8 +179,10 @@ def _parse_lines(filename, attributes):
 			try:
 				_parse_lines(_import, attributes)
 			except Exception as e:
-				raise RuntimeError(
-					'Error importing ' + _import + ' from ' + filename + ': ' + str(e))
+				message = 'Error importing ' + _import + ' from ' + filename
+				message += ': ' + str(e)
+				print(message)
+				raise RuntimeError(message)
 
 def parse_song(filename):
 	attributes={}
