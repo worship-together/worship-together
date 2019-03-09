@@ -119,6 +119,12 @@ class G_Flat(D_Flat):
 		self.notes.update({C1:C1b, C2:C2b, C3:C3b, C4:C4b, C5:C5b, C6:C6b, C7:C7b})
 
 
+class C_Flat(G_Flat):
+	def __init__(self):
+		super(C_Flat, self).__init__()
+		self.notes.update({F1:F1b, F2:F2b, F3:F3b, F4:F4b, F5:F5b, F6:F6b})
+
+
 class B(Key):
 	def __init__(self):
 		super(B, self).__init__()
@@ -128,11 +134,5 @@ class B(Key):
 class B_Sharp(Key):
 	def __init__(self):
 		super(B_Sharp, self).__init__()
-		self._not_implemented()
-		
-		
-class C_Flat(Key):
-	def __init__(self):
-		super(C_Flat, self).__init__()
 		self._not_implemented()
 
