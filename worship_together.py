@@ -1,11 +1,8 @@
-import ui
-import sound
+import toga
 import midi
-import sheet_music
+#import sheet_music
 import sync
-from objc_util import *
 import os
-import sound
 
 exiting = False
 player = None
@@ -132,30 +129,27 @@ def present_song(sender):
 		track_time(slider)
 
 
-class StartScreen(ui.View):
+class StartScreen(toga.Box):
 	def will_close(self):
 		global exiting
 		exiting = True
 
 
-satb_page = ui.load_view('midi_ui')
+###################satb_page = ui.load_view('midi_ui') need this
 start_screen = StartScreen()
 start_screen.background_color = 'white'
 
-table = ui.TableView()
-btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:coffee_32']]
-btn_container = ui.View(frame=(0, 0, len(btn_images)*32, 44))
-btn = ui.Button(image=ui.Image.named('iob:loop_256'))
+table = toga.interface.widgets.detailedlist.DetailedList()
+btn = toga.interface.widgets.button.Button(label="Sync")
+#image=toga.interface.widgets.imageview.ImageView('iob:loop_256')
 btn.frame = (64, 0, 32, 44)
 def sync_songs_and_tunes():
 	sync.synchronize('songs', 'songs')
 	sync.synchronize('tunes', 'tunes')
 btn.action = lambda sender: sync_songs_and_tunes()
-btn_container.add_subview(btn)
 
-btn_item = ui.ButtonItem()
-btn_item_objc = ObjCInstance(btn_item)
-btn_item_objc.customView = ObjCInstance(btn_container)
+
+btn_item = toga.interface.widgets.button.Button(label="Huh")
 song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
 song_list = ui.ListDataSource(sorted(song_files))
 song_list.action = present_song
