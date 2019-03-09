@@ -18,6 +18,6 @@ unison     c- d-/8 d-/8 e c- | d-/8 c-/8 d-/8 e/8 f/2 | R d- e f | g/2 f/2
 
 unison     e f/8 f/8 g e | a. - g/8 - f/2 | R f g a | g e/8 f/8 g/2
 
-unison     R g e g | f/8 - e/8 - f/8 - g/8 - a/8 - f/8- g/8 - a/8 - | b/8 - g/8 - a/8 - b/8 c c | c/2 b/2
+unison     R g e g | f/8 - e/8 - f/8 - g/8 - a/8 - f-/8 g/8 - a/8 - | b/8 - g/8 - a/8 - b/8 c c | c/2 b/2
 
 unison     c - b/8 - a/8 g/2 | f. - e/8 d-/2 | g - a - g - f - | e/2 d-/2
