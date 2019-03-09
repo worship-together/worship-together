@@ -14,6 +14,8 @@ Options:
 import os
 import glob
 import docopt
+import traceback
+import sys
 
 from notes import *
 import keys
@@ -53,12 +55,17 @@ def test_song(filename):
 	try:
 		song = generate_midi(filename)
 		if not song.is_unison and size('full.midi') > 100:
-			assert size('soprano.midi') < size('full.midi') / 2.0
+			assert size('soprano.midi') < size('full.midi') / 1.5
 			assert size('soprano.midi') > size('full.midi') / 5.0
 			assert size('soprano_bass.midi') < size('full.midi') * 3.0 / 4.0
 			assert size('soprano_bass.midi') > size('full.midi') / 3.0
+	except AssertionError as e:
+		print(filename + ': AssertionError', file=sys.stderr)
+		traceback.print_exc()
+		print(file=sys.stderr)
 	except Exception as e:
-		print(filename + ': ' + str(e))
+		print(filename + ': ' + str(e), file=sys.stderr)
+		print(file=sys.stderr)
 
 
 
