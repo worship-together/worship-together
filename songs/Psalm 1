@@ -7,7 +7,7 @@ key        C
 rhythm     0 : 4
 tempo      140
 
-status     header  tune
+status     header  tune  checked
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -16,11 +16,11 @@ voice      bass    A2 to G3
 
 unison     e/8 - g#/8 - b/8 - c/8 - b/8 - a/8 g#/8 a/8 g#/2.
 
-unison     g# a/12 - b/12 c/12 b b/8 b/8 a/12 - b/12 c/12 b a/8 a/8 g/8 - a/8 b/2
+unison     g# a/8 - b/8 c/8 b b/8 b/8 a/8 - b/8 c/8 b a/8 a/8 g#/8 - a/8 b/2
 
-unison     b a/8 - b/8 c/8 b b a/12 - b/12 - c/12 - d c b/8 - a/12 g#/12
+unison     b a/8 - b/8 c/8 b b a/8 - b/8 - c/8 - d c b/8 - a/8 g#/8
 
-unison     g# a/12 - b/12 c/12 b b a/12 - b/12 - c/12 b a g#/8 - a/8 b
+unison     g# a/8 - b/8 c/8 b b a/8 - b/8 - c/8 b a g#/8 - a/8 b
 
 unison     R/8 e/8 e/8 e/8 f/8 f/8 a/8 b/8 c/8 - b/8 a/8 f/8 e/2
 
@@ -30,11 +30,11 @@ unison     e/8 - g#/8 b/8 c/8 b/8 - a/8 g#/8 a/8 g#/2
 
 unison     g#/8 a/8 g#/8 f/8 e/8 - g#/8 b/8 c/8 b/8 - a/8 - g#/8 - a/8 g#/2.
 
-unison     g# a/12 - b/12 c/12 b b a/12 - b/12 - c/12 b a g#/8 - a/8 b/2
+unison     g# a/8 - b/8 c/8 b b a/8 - b/8 - c/8 b a g#/8 - a/8 b/2
 
-unison     b a/8 - b/8 - c/8 b b a/12 - b/12 - c/12 - d c b/8 - a/12 g#/12
+unison     b a/8 - b/8 - c/8 b b a/8 - b/8 - c/8 - d c b/8 - a/8 g#/8
 
-unison     g# a/12 - b/12 c/12 b b a/12 - b/12 - c/12 b a g#/8 - a/8 b/2 | e/8 e/8 d-/8 d-/8 e/8 f/8 e/2
+unison     g# a/8 - b/8 c/8 b b a/8 - b/8 - c/8 b a g#/8 - a/8 b/2 | e/8 e/8 d-/8 d-/8 e/8 f/8 e/2
 
 unison     d-/8 d-/8 e/8 f/8 e d-/8 d-/8 e/8 - f/8 - g#/8 - a/8 g#/8 - f/8 e/8 f/8 e/1
 
