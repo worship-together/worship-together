@@ -7,7 +7,7 @@ key        D
 rhythm     0 : 4
 tempo      130
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -25,7 +25,7 @@ unison     d-/8 d-/8 a a/8 c/8 - b/8 a/8 g/8 f | e f g/8 a d c - b a/2.
 
 unison     a c c/8 b/8 a/8 g/8 a a d/8 - c/8 - b/8 - c/8 - b/8 - a/8 - b/8 - a/8 - g/8 - f/8 - e/8 - d-/8 - e/8 - f/8 - g/8 a/8 b/8 c#/2.
 
-unison     a bb a/8 g b a d-/8 g f e/2. | a bb - a/8 g b a d-/8 g - f e/2.
+unison     a bb a/8 g bb a d-/8 g f e/2. | a bb - a/8 g bb a d-/8 g - f e/2.
 
 unison     d-/8 d-/8 a a/8 c/8 - b/8 a/8 g/8 f | e f g/8 a d c - b a/1
 
