@@ -7,7 +7,7 @@ key        F
 rhythm     0 : 4
 tempo      130
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -68,10 +68,10 @@ bass       a+ a+/8. g/16 a+/2 | g/8 - a+/8   b+/8 a+. a+ | a+ a+/8. g/16 a+ a+ |
 
 key        F
 
-soprano    b b/8 a.  a | g/8 - a/8 - b/8 - c.    c  | d/2 = d. = | d/2  R d-
-alto       f f/8 f.  f | g/8 - a+/8 - b+/8 - a+. g  | a+/2 = a+. | a+/2 R d
-tenor      d d/8 c.  c | d. - c.                 e+ | d/2 = d.   | d/2  R d-
-bass       b b/8 f-. f | g-. - a.                a  | d/2 = d. = | d/2  R d
+soprano    b b/8 a.  a | g/8 - a/8 - b/8 - c.    c  | d/2 = d. =   | d/2  R d-
+alto       f f/8 f.  f | g/8 - a+/8 - b+/8 - a+. g  | a+/2 = a+. = | a+/2 R d
+tenor      d d/8 c.  c | d. - c.                 e+ | d/2 = d. =   | d/2  R d-
+bass       b b/8 f-. f | g-. - a.                a  | d/2 = d. =   | d/2  R d
 
 soprano    g g f g/8 | a a R f | b - a g/8 - f/8 g/8 | a a R f
 alto       R/2 R.    | R/1     | R/2 R.              | R/1
@@ -97,7 +97,7 @@ bass       a+ a+/8. g/16 a+/2 | g/8 - a+/8   b+/8 a+. a+      | a+ a+/8.  g/16 a
 
 key        F
 
-soprano    b b/8 a.  a  | g/8 - a/8 - b/8 - c.    c  | d/2 = d =  | d/2  R d-
+soprano    b b/8 a.  a  | g/8 - a/8 - b/8 - c.    c  | d/2 = d. =  | d/2  R d-
 alto       f f/8 f.  f  | g/8 - a+/8 - b+/8 - a+. g  | a+/2 = a+. | a+/2 R d
 tenor      d d/8 c.  c  | d. - c.                 e+ | d/2 - d. = | d/2  R d-
 bass       b b/8 f-. f- | g-. - a.                a  | d/2 = d. = | d/2  R d

@@ -1,4 +1,4 @@
-title      Psalm 6
+etitle      Psalm 6
 hymnal     Cantica Sanctorum
 author     New King James Version
 
@@ -8,7 +8,7 @@ key        G
 rhythm     6 : 4
 tempo      120
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -25,10 +25,10 @@ alto       R/1.                  | R/1.               | R/1.              | R/1.
 tenor      e+. e+ e+/8 e+ d/8 d. | d a/8 b - c/8 b/2. | b. b. b b/8 c b/8 | b d/8 c - b/8 a/2.
 bass       R/1.                  | R/1.               | R/1.              | R/1.
 
-soprano    a. c a/8 g fn/8 fn/8. e/8. | d#/2. e/2. | R. b-. e b-/8 b-. | g. - f. e/2.
-alto       R/1.                       | R/1.       | R/1.              | R/1.
-tenor      a. c a/8 g fn/8 fn/8. e/8. | d#/2. e/2. | R. b-. e b-/8 b-. | g. - f. e/2.
-bass       R/1.                       | R/1.       | R/1.              | R/1.
+soprano    a. c a/8 g fn/8 fn/8. e/8. | d#-/2. e/2. | R. b-. e b-/8 b-. | g. - f. e/2.
+alto       R/1.                       | R/1.        | R/1.              | R/1.
+tenor      a. c a/8 g fn/8 fn/8. e/8. | d#-/2. e/2. | R. b-. e b-/8 b-. | g. - f. e/2.
+bass       R/1.                       | R/1.        | R/1.              | R/1.
 
 soprano    e/8 - g/8 - a/8 b g/8   e.           R  e/8 | e. e+. d/2.  | g/8 - b/8 - c/8 d - b/8     g.            g  g/8  | g. c. b/2.
 alto       e/8 - g/8 - a+/8 b+ g/8 e.           R  e/8 | e. g.  g/2.  | g/8 - b+/8 - c+/8 d+ - b+/8 g.            g  g/8  | g. e. d#/2.
