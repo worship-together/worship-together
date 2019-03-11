@@ -5,7 +5,7 @@ author     King James Version
 composer   David R. Erb, 2013
 key        Eb
 rhythm     0 : 4
-tempo      190
+tempo      160
 
 status     header  tune  checked
 
@@ -17,8 +17,6 @@ voice      bass    A2 to G3
 unison     e g b b b b b b c/2 b c b g b/2
 
 unison     b c b g b c/2 b g f e c- e/2
-
-tempo      160
 
 unison     e c-/8 - b-/8 c-/8 e/8 | f - e e/8 - f/8 | g f e | c-/2. | f - e f | g b g/8 b/8 | c/2. b/2 b
 
