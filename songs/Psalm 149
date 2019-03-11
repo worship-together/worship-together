@@ -7,7 +7,7 @@ key        G
 rhythm     0 : 4
 tempo      130
 
-status     header  tune
+status     header  tune  checked
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -26,7 +26,7 @@ unison     g/8 g/8 g/8 g/8 g/8 e/8 g/8 a g R | g/8 g/8 g/8 g/8 f/8 g/8 e/8 d- R
 
 unison     g/8 g/8 g/8 g/8 g/8 g/8 g/8 g/8 e/8 g/8 a R | g/8 g/8 g/8 g/8 g/8 f/8 g/8 e/8 d- R
 
-unison     g c/8 c/8 c/8 b/8 a/8 b/8 a a R | g c/8 c/8 c/8 b/8 - a/8 g/8 - b/8 a a R
+unison     g c/8 c/8 c/8 b/8 a/8 g/8 b/8 a a R | g c/8 c/8 c/8 b/8 - a/8 g/8 - b/8 a a R
 
 unison     g c c b/8 - a/8 g/8 - b/8 a R | g/8 g/8 c c/8 c/8 b/8 a/8 g/8 - b/8 a a R
 

@@ -5,9 +5,9 @@ author     Zephaniah 3:17 (New King James Version/New American Standard Bible)
 composer   David R. Erb, 2008
 key        C
 rhythm     0 : 4
-tempo      110
+tempo      100
 
-status     header  tune
+status     header  tune  checked
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4

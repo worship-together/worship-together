@@ -7,11 +7,11 @@ psalm      119: 169-176
 tune       RUSSIA
 metre      L.M.
 composer   Daniel Read, 1786
-key        Eb
+key        Bb
 rhythm     4 : 4
-tempo      150
+tempo      130
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4

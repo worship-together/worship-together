@@ -6,9 +6,9 @@ author     New King James Version
 composer   David R. Erb, 2010
 key        C
 rhythm     0 : 4
-tempo      110
+tempo      140
 
-status     header  tune
+status     header  tune  checked
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -29,8 +29,8 @@ unison     e/8 - f/8 - e/8 - d-/8 e f | g# f/8 f/8 e g#/8 g#/8 | a b/8 c/8 d/8 -
 
 unison     e/8 - f/8 - e/8 - d-/8 e d-/8 d-/8 | c- d- e e | f a/8 a/8 c - f | e e/2.
 
-unison     e/8 - f/8 - e/8 - d-/8 e f/8 f/8 | g# f e e | a - g#/8 - a/8 b/8 - a/8 g/8 - f/8 | g#/1
+unison     e/8 - f/8 - e/8 - d-/8 e f/8 f/8 | g# f e e | a - g#/8 - a/8 b/8 - a/8 g#/8 - f/8 | g#/1
 
 unison     e/8 - f/8 - e/8 - d-/8 e d-/8 d-/8 | c- d- e e | f a/8 a/8 c f | e/8 - f/8 e/8 d-/8 e/2
 
-unison     e/8 - f/8 - e/8 - d-/8 e f | g# f/8 f/8 e g | a b/8 c/8 d/8 c/8 b/8 - c/8 | b/2. b | e+/2 d c | b - a g# a | g# g#/2.
+unison     e/8 - f/8 - e/8 - d-/8 e f | g# f/8 f/8 e g# | a b/8 c/8 d/8 c/8 b/8 - c/8 | b/2. b | e+/2 d c | b - a g# a | g# g#/2.

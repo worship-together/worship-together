@@ -7,7 +7,7 @@ key        G
 rhythm     4 : 4
 tempo      130
 
-status     header  tune
+status     header  tune  checked
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
