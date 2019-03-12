@@ -8,7 +8,7 @@ key        G
 rhythm     6 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -64,3 +64,23 @@ soprano    e/8 - b/8 - c/8   d  b/8  e+ - c/8  a.  | b-/8 - f/8 - g/8 a  f/8 b -
 alto       e/8 - b+/8 - c+/8 d+ b+/8 e+ - c+/8 a+. | b/8 - f/8 - g/8  a+ f/8 b+ - g/8 e. | g e/8 a#.  b  g/8 e/8 - f/8 - g/8 - | b.  a.   g-/2.
 tenor      e/8 - b/8 - c/8   d  b/8  e+ - c/8  a.  | b-/8 - f/8 - g/8 a  f/8 b - g/8  e. | g e/8 a#-. b- g/8 e/8 - f/8 - g/8 - | b-. f.   e/2.
 bass       e/8 - b+/8 - c+/8 d+ b+/8 e+ - c+/8 a+. | b/8 - f/8 - g/8  a+ f/8 b+ - g/8 e. | g e/8 a#.  b  g/8 e/8 - f/8 - g/8 - | b.  b.   b/2.
+
+verse      O Lord, do not rebuke me in Your an - ger, Nor chasten me in Your hot dis - plea - sure.  Have
+
+verse      mer - cy on me, O Lord, for I am weak; O Lord, heal me, for my bones are trou - bled.
+
+verse      My soul al - so is greatly trou - bled; But You, O Lord— how long?
+
+verse      Re - turn, O Lord, de - liv - er me!  Oh, save me for Your mer - cies’ sake!
+
+verse      For in death there is no re - mem - brance of You; In the grave who will give You thanks?
+
+verse      I am wea - ry with my groaning; All night I make my bed swim; I drench my couch with my tears.  My
+
+verse      eye wastes away be - cause of grief; It grows old because of all my en - e - mies.  De -
+
+verse      part from me, all you workers of in - iq - ui - ty; For the Lord has heard the voice of my weep - ing.
+
+verse      The Lord has heard my sup - pli - ca - tion; The Lord will re - ceive my pray'r.
+
+verse      Let all my enemies be a - shamed and great - ly trou - bled; Let them turn back and be ashamed sud - den - ly.
