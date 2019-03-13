@@ -7,7 +7,7 @@ key        F
 rhythm     3 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,27 @@ unison     g/2 d- | d-/2 d- | d- d- g | a g f | d-/2 f | f c- d-/8 c-/8 | b- a- 
 unison     g/8 d-/8 d-/2 | d-/8 d-/8 d-/2 | g/8 d-/8 d- d- | c- d- eb | d- f b/8 d/8 | c/8. - b/16 a c | b/8 - a/8 - g/8 - a/8 b/8 - c/8 | d/2.
 
 unison     d/8 b/8 g b | a/8 f#/8 d- f# | g/8 - a/8 - b/8 - a/8 - c/8 - b/8 | a/2 f/8 f/8 | d-/8 c-/8 b- d- | f/8 - g/8 a/2 | g d-/2 | g/2.
+
+verse      O God, You are my God; Ear - ly will I seek You;
+
+verse      My soul thirsts for You; My flesh longs for You In a dry and thirst - y land Where there is no wa - ter.
+
+verse      So I have looked for You in the sanc - tu - a - ry, To see Your pow - er and Your glo - ry.
+
+verse      Be - cause Your lov - ing - kind - ness is bet - ter than life, My lips shall praise You.
+
+verse      Thus I will bless You while I live; I will lift up my hands in Your name.
+
+verse      My soul shall be sat - is - fied as with mar - row and fat - ness, And my mouth shall praise You with joy - ful lips.
+
+verse      When I re - mem - ber You on my bed, I med - i - tate on You in the night watch - es.
+
+verse      Be - cause You have been my help, Therefore in the shad - ow of Your wings I will re - joice.
+
+verse      My soul fol - lows close be - hind You; Your right hand up - holds me.
+
+verse      But those who seek my life, to de - stroy it, Shall go in - to the low - er parts of the earth.
+
+verse      They shall fall by the sword; They shall be a por - tion for jack - als.  But the king shall re - joice in God;
+
+verse      Ev - 'ry - one who swears by Him shall glo - ry; But the mouth of those who speak lies shall be stopped.

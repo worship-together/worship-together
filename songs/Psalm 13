@@ -8,7 +8,7 @@ key        F
 rhythm     6 : 4
 tempo      140
 
-status     header  tune checked
+status     header  tune checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -34,3 +34,21 @@ unison     f/2 f/2. g | e/1 e/2 | f - g - a/2 d-/2 | e/2 e/2 R f | g/2 e/2 g/2 |
 unison     d#- - e - f - d- - e - f - | g/1 e d- | c- - d- - e - c- - d- - e - | f/1 f/2
 
 unison     f/2 e/2 d-/2 | c-/1 d- c- | d- e e/1 | d-/1.
+
+verse      How long, O Lord? Will You for - get me for - ev - er?
+
+verse      How long will You hide Your face from me?  How long shall I take coun - sel in my soul,
+
+verse      Hav - ing sor - row in my heart dai - ly?  How long will my en - e - my be ex - alt - ed ov - er me?
+
+verse      Con - sid - er and hear me, O Lord my God; En - light - en my eyes,
+
+verse      Lest I sleep the sleep of death; Lest my en - e - my say, “I have pre - vailed a - gainst him”;
+
+verse      Lest those who trou - ble me re - joice when I am moved.
+
+verse      But I have trust - ed in Your mer - cy; My heart shall re - joice in Your sal - va - tion.
+
+verse      I will sing to the Lord,
+
+verse      Be - cause He has dealt boun - ti - ful -  ly with me.

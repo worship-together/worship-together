@@ -7,7 +7,7 @@ key        Gb
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -34,3 +34,23 @@ unison     c b/8 - a/8 b/8 - a/8 g/8 b/8 | a/8 - g/8 - f/8 - a/8 g/8 - f/8 e | b
 unison     g/8 f/8 e/8 f/8 g f/8 e/8 | f/2. b- | g/8 f/8 e/8 f/8 g/8 f/8 g/8 a/8 | f b-/2.
 
 unison     g/2 a/2 | b/2. g | c b/8 a/8 b/8 - a/8 g/8 b/8 | a/8 - g/8 f/8 a/8 g/8 f/8 e | b- - e/2 d- | e/1
+
+verse      Vin - di - cate me, O God, And plead my cause a - gainst an un - god - ly nation;
+
+verse      Oh, de - liv - er me from the de - ceit - ful and un - just man!
+
+verse      For You are the God of my strength; Why do You cast me off?
+
+verse      Why do I go mourn - ing be - cause of the op - pres - sion of the en - e - my?
+
+verse      Oh, send out Your light and Your truth!  Let them lead me;
+
+verse      Let them bring me to Your ho - ly hill And to Your tab - er - na - cle.
+
+verse      Then I will go to the al - tar of God, To God my ex - ceed - ing joy;
+
+verse      And on the harp I will praise You, O God, my God.
+
+verse      Why are you cast down, O my soul?  And why are you dis - qui - et - ed with - in me?
+
+verse      Hope in God; For I shall yet praise Him, The help of my countenance and my God.
