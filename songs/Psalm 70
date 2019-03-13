@@ -7,7 +7,7 @@ key        F
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -59,3 +59,21 @@ soprano    d-/8 - c-/8 d-/8 - e/8 d-/8 d-/8 c-/8 d-/8 | f/8 e/8 d-/2 d- | a/8 - 
 alto       R/1                                        | R/1             | R/1                       | R/1
 tenor      R/1                                        | R/1             | R/1                       | R/1
 bass       R/1                                        | R/1             | R/1                       | R/1
+
+verse      Make haste, O God, to de - liv - er me!  Make haste to help me, O Lord!
+
+verse      Let them be a - shamed and con - founded who seek my life;
+
+verse      Let them be turned back and con - fus - ed who de - sire my hurt.
+
+verse      Let them be turned back be - cause of their shame, who say, “A - ha, a - ha!”
+
+verse      Let all those who seek You re - joice and be glad in
+
+verse      You; And let those who love Your sal - va - tion say con -
+
+verse      tin - ual - ly, “Let God be mag - ni - fied!”
+
+verse      But I am poor and need - y; Make haste to me, O God!
+
+verse      You are my help and my del - iv - er - er; O Lord, do not delay.
