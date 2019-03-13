@@ -9,7 +9,7 @@ key        D
 rhythm     4 : 4
 tempo      160
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -115,3 +115,43 @@ soprano    R e e/8  e/8  b-  | c- d- e f = | f/8 - e/8 e/2 d#- | e/1
 alto       R b g-/8 g-/8 f-  | e- b  a c = | c a           b/2 | b/1
 tenor      R g b/8  b    a/8 | g  f  e a = | a/8 - g/8 e   f/2 | e/1
 bass       R e e/8  e/8  d#  | e  b  c a   | c/2           b/2 | e/1
+
+verse      O come, let us sing un - to the Lord; let us heart - i - ly re -
+
+verse      joice in the strength of our sal - va - tion.  Let us come be - fore His
+
+verse      pres - ence with thanks - giv - ing; and show our - selves glad
+
+verse      in Him with psalms.  For the Lord is a great God; and
+
+verse      a great King a - bove all gods.  In His hand are all the cor - ners of the
+
+verse      earth; and the strength of the hills is His al - so.  The sea is His, and
+
+verse      He made it; and His hands pre - par - ed the dry land.  O come, let us
+
+verse      wor - ship and fall down, and kneel be - fore the Lord our Mak - er.  For
+
+verse      He is the Lord our God and we are the peo - ple of His pas - ture,
+
+verse      and the sheep of His hand.  Today if ye will
+
+verse      hear his voice, hard - en not your hearts as in the pro - vo - ca -
+
+verse      tion, and as in the day of temp - ta - tion in the wil - der - ness: When
+
+verse      your fathers tempt - ed Me, prov - ed Me, and saw My work.  For -
+
+verse      ty years long was I griev - ed with this gen - er - a - tion, and said, It
+
+verse      is a peo - ple that do err in their hearts, for they have not known
+
+verse      My ways: un - to whom I swore in My wrath that they should
+
+verse      not en - ter in - to my rest.  Glo - ry be to the
+
+verse      Fa - ther and to the Son and to the Ho - ly
+
+verse      Ghost; as it was in the be - gin - ning, is now
+
+verse      and ev - er shall be, world with - out end.  A - men.

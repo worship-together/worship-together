@@ -11,7 +11,7 @@ key        Bb
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,19 @@ soprano    g  b. a/8 - g  f/2  d- g. f/8 - e d- f  e c- d- d-        d-/2.
 alto       b  b/2      b  b/2  b  b/2      b b  b  b c  b  b         a/2.
 tenor      d- g. f/8 - e  d-/2 f  b. a/8 - g f  d- g g  g  d-/8 en/8 f#/2.
 bass       g- g-/2     g- b/2  b  g- e-/2    b  b e- e- g- g-        d/2.
+
+verse      O    LORD,  my    God,   most ear - nest - ly   I  seek your ho - ly  face,
+verse      The   lov - ing - kind - ness of     my    God  is more than life to  me,
+verse      Be - neath  the   sha  - dow  of    your  wings I  sing  my  joy  and praise.
+
+verse      With - in  your house   a - gain  to    see    the   glo - ries   of   your  grace.
+verse      So     I   will praise you   all  my    days   and   pray   con - tin - ual - ly.
+verse      Your right hand   is   my  strong sup - port through trou - bled nights and  days.
+
+verse      A -  part from you  I  long and  thirst, and naught  can   sat - is - fy;
+verse      In   you   my  soul is sat - is - fied,  my   dark - ness turns  to   light,
+verse      All those who  seek my life will  fall;  my   life    is   in   your  hand.
+
+verse      I     wan - der in     a   des - ert  land  where all    the streams are  dry.
+verse      And   joy - ful med -  i - ta - tions fill   the watch - es    of    the  night.
+verse      God's king  and peo - ple will   re - joice; in   vic - t'ry  they   will stand.
