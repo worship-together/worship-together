@@ -28,13 +28,13 @@ key        Cb
 
 unison     R e e e | e/6 e/6 e/6 e/6 e/6 e/6 | f f g g | a/2 a/2 | g/2 g/2
 
-unison     a/2 b/2 | c/2 c/2 | b b c c | d/2 d/2 | e+/2 d/2 | c c c/2 | d/2 - c/2 | b/2 a/2
+unison     a/2 an/2 | c/2 c/2 | an an c c | d/2 d/2 | dn/2 d/2 | c c c/2 | d/2 - c/2 | an/2 a/2
 
 unison     g/1 - | f/1 | e/1 | e e e/6 e/6 e/6 | e e e/2 | e/2 e e | f/2 g g
 
-unison     a/2 a/2 | g/1 | a a b/2 | c c c/6 c/6 c/6 | b/2 c/2 | d/2 d/2 | e+/2 d d
+unison     a/2 a/2 | g/1 | a a an/2 | c c c/6 c/6 c/6 | b/2 c/2 | d/2 d/2 | dn/2 d d
 
-unison     c/2 c c | d d c c | b/2 a/2 | g/2 g g | f/1 | e/1 | R/1
+unison     c/2 c c | d d c c | an/2 a/2 | g/2 g g | f/1 | e/1 | R/1
 
 key        Eb
 
