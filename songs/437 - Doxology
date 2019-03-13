@@ -11,7 +11,7 @@ key        G
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,11 @@ soprano    d b g a c       b       a       g/1  | g/2 g/2
 alto       d d g f e/8 f/8 g       f       d/1  | e/2 d/2
 tenor      a g b d e+      d       d/8 c/8 b/1  | c/2 b/2
 bass       f g e d a       b/8 c/8 d       g-/1 | c/2 g-/2
+
+verse      Praise God from Whom all bless - ings flow;
+
+verse      Praise Him, all crea - tures here be - low;
+
+verse      Praise Him a - bove, ye heav'n - ly host;
+
+verse      Praise Fa - ther, Son, and Ho - ly Ghost.  A - men

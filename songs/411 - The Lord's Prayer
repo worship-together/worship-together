@@ -8,7 +8,7 @@ key        F
 rhythm     0 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison E4 to D5
 voice      alto    A3 to G4
@@ -24,3 +24,13 @@ unison     g/8 a/8 b/8 a/8 g/8 g/8 f/8 f g/8 g/8 f/8 g/8 a/8 g/8 a/8 g/8 f/8 g g
 unison     d-/8 f/8 g/8 a/8 g/8 f/8 g/8 g/8 f/8 f f/8 f/8 g/8 g/8 g/8 a/8 g/8 f/8 f/8
 
 unison     d-/8 f/8 g/8 g/8 a/8 g f/8 f/8 g/8 g/8 a/8 g/8 f/8 f f/8 g/8 g/8 a/8 g/8 f/8 f | f/8 f g
+
+verse      Our Fa - ther, Who art in heav - en, Hal - low - ed be Thy Name.  Thy king - dom come.
+
+verse      Thy will be done, on earth as it is in heav - en.  Give us this day our dai - ly bread.
+
+verse      And for - give us our tres - pass - es, as we for - give those who tres - pass a - gainst us.
+
+verse      And lead us not in - to temp - ta - tion, But de - liv - er us from e - vil.  For Thine
+
+verse      is the king - dom, and the pow'r and the glo - ry, for - ev - er and ev - er.  A - men

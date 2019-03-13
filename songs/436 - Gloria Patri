@@ -10,7 +10,7 @@ key        G
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,9 @@ soprano    c  b/2  R | g/2 b  g | e/2 c-/2 | d-/2 f/2 | g/1
 alto       d  d/2  R | g/2 b+ g | e/2 c/2  | d/2  c/2 | b/1
 tenor      g  g/2  R | g/2 b  g | e/2 c-/2 | d-/2 a/2 | g/1
 bass       g- g-/2 R | g/2 b+ g | e/2 c/2  | d/2  d/2 | g-/1
+
+verse      Glo - ry be to the Fa - ther, and to the Son, and to the
+
+verse      Ho - ly Ghost; As it was in the be - gin - ning, is now, and ev - er
+
+verse      shall be, world with - out end.  A - men, a - men.

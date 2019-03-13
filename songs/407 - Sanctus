@@ -7,7 +7,7 @@ key        Eb
 rhythm     3 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -33,3 +33,15 @@ soprano    g/2  g  | f/2  e  | a/2.  | g/2. | c/2 f | f/2 g | e/2. | e R/2
 alto       db/2 db | db/2 db | c e/2 | e/2. | e/2 e | d/2 d | b/2. | b R/2
 tenor      b/2  b  | a/2  g  | a c/2 | b/2. | c/2 c | a/2 b | g/2. | g R/2
 bass       e/2  e  | e/2  e  | a/2.  | e/2. | a/2 a | b/2 b | e/2. | e R/2
+
+verse      Ho - ly, ho - ly, ho - ly, Ho - ly is the Lord!
+verse      Ho - ly, ho - ly, ho - ly, Ho - ly is the Lord!
+
+verse      Ho - ly, ho - ly, ho - ly, Wor - shiped and a - dored.
+verse      Ho - ly, ho - ly, ho - ly, Wor - shiped and a - dored.
+
+verse      He   with - out   be - gin - ning, Age - less  and   the   same,
+verse      Lord  of   hosts, the  glo - ry    From   Thy throne out - poured
+
+verse      Is    and   ev - er shall  be, Glo - ry to His Name.
+verse      Fills the earth and heav - ens; Ho - ly is the Lord!
