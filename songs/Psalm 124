@@ -7,7 +7,7 @@ key        F
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  lyrics
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -20,13 +20,13 @@ unison     a a a a a a a a g a f f/2 a a a f g - a g f/2
 
 unison     f/8 e/8 | f d- a/8 f/8 e/8 d-/8 | e/2. e/8 f/8 | g a b/8 a/8 g/8 - f/8 | e/8 - f/8 g/2
 
-unison     a/8 g/8 | f/8 a/8 g/8 f/8 e/8 - g/8 f/8 - e/8 | d-/8 - f/8 - e/8 - d-/8 c#
+unison     a/8 g/8 | f/8 a/8 g/8 f/8 e/8 - g/8 f/8 - e/8 | d-/8 - f/8 - e/8 - d-/8 c#-
 
 unison     a | a/8 g/8 a/8 b/8 a/8 - g/8 a/8 b/8 | a/2.
 
 unison     a/8 g/8 | f/8 - a/8 g/8 - f/8 e/8 g/8 f/8 e/8 | d-/8 - f/8 e/8 - d-/8 c#-/8 - d-/8 e | d-/1
 
-unison     f#/8 - d-/8 e/8 - f/8 g/8 - f#/8 e | f#/2 R/8 d-/8 e/8 f#/8 | g/8 a/8 g/8 f#/8 e/8 - g/8 f/8 e/8 | f#/2.
+unison     f#/8 - d-/8 e/8 - f#/8 g/8 - f#/8 e | f#/2 R/8 d-/8 e/8 f#/8 | g/8 a/8 g/8 f#/8 e/8 - g/8 f#/8 e/8 | f#/2.
 
 unison     a- | g f/8 e/8 f b/8 a/8 | g f/8 e/8 d-/8 - e/8 f/8 g/8 | a a/2
 
