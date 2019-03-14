@@ -7,7 +7,7 @@ key        F
 rhythm     0 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -29,3 +29,19 @@ unison     g/8 f/8 g/8 a/8 g/8 f/8 g/8 a/8 b/8 | a. R a/8
 unison     a/8 g/8 f/8 g/8 f/8 e/8 | f/8 e/8 d-/8 e/8 - d-/8 c-/8 | d-/8 - e/8 f/8 e/8 - d-/8 c-/8 | d-. d-/8 d-/8 c-/8
 
 unison     b-/2. | c-. c-. | d-/2.
+
+verse      Un - to You I lift up my eyes, O You who dwell in the heav'ns.
+
+verse      Be - hold, as the eyes of ser - vants look to the hand of their mas - ters,
+
+verse      As the eyes of a maid to the hand of her mis - tress,
+
+verse      So our eyes look to the Lord our God, Un - til He has mer - cy on us.
+
+verse      Have mer - cy on us, O Lord, have mer - cy on us!
+
+verse      For we are ex - ceed - ing - ly filled with con - tempt.
+
+verse      Our soul is ex - ceed - ing - ly filled with the scorn of those who are at ease,
+
+verse      With the con - tempt of the proud.

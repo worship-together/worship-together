@@ -7,7 +7,7 @@ key        G
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -33,3 +33,23 @@ unison     c- d-/8 d-/8 e/8 - d-/8 e/8 - f/8 | g/2. g/8 - f/8 | e f g/8 f/8 g/8 
 unison     c b/8 a/8 g/8 f/8 g/8 a/8 | a d-/2 a/8 a/8 | c b/8 - a/8 g/8 - f/8 g/8 a/8 | a a/2 a
 
 unison     b a/8 g/8 d d-/8 c-/8 | b-/8 - d-/8 g/8 - a/8 b g/8 a/8 | g/2 f/2 | g/2
+
+verse      I was glad when they said to me, Let us go in - to the house of the Lord.
+
+verse      Our feet have been stand - ing With - in your gates, O Je - ru - sa - lem!
+
+verse      Je - ru - sa - lem is built As a cit - y that is com - pact to - geth - er,
+
+verse      Where the tribes go up, The tribes of the Lord,
+
+verse      To the Test - i - mony of Is - ra - el, To give thanks to the name of the Lord.
+
+verse      For thrones are set there for judg - ment, The thrones of the house of Da - vid.
+
+verse      Pray for the peace of Je - ru - sa - lem: May they pros - per who love you.
+
+verse      Peace be with - in your walls, Pros - per - i - ty with - in your pal - a - ces.
+
+verse      For the sake of my breth - ren and com - pan - ions, I will now say, Peace be with - in you.
+
+verse      Be - cause of the house of the Lord our God I will seek your good.

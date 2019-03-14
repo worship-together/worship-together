@@ -7,7 +7,7 @@ key        Bb
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -29,3 +29,19 @@ unison     b/8 - a/8 g/8 - f/8 | g - d-/2 g | c b/8 - a/8 | a/8 - g/8 - a
 unison     R/8 d-/8 d-/8 d-/8 | d/8 c/8 b/8 a/8 b/8 - a/8 g/8 - a/8 | f#/8 - g/8 a/2 R | d/8 - c/8 b/8 - a/8 b/8 - a/8 g/8 - a/8 | f#/8 - en/8 f#/2 d-
 
 unison     g/8 f/8 g/8 a/8 g a/8 a/8 | b. - a/8 g/2 | g/8 g/8 g g f | g/2.
+
+verse      When the Lord brought back the cap - tiv - i - ty of Zi - on, We were like those who dream.
+
+verse      Then our mouth was filled with laugh - ter, And our tongue with sing - ing.
+
+verse      Then they said a - mong the na - tions, The Lord has done great things for them.
+
+verse      The Lord has done great things for us, And we are glad.
+
+verse      Bring back our cap - tiv - i - ty, O Lord, As the streams in the South.
+
+verse      Those who sow in tears Shall reap in joy.
+
+verse      He who con - tin - u - al - ly goes forth weep - ing, Bear - ing seed for sow - ing,
+
+verse      Shall doubt - less come again with re - joic - ing, Bring - ing his sheaves with him.
