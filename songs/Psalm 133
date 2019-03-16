@@ -7,7 +7,7 @@ key        F
 rhythm     0 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -23,3 +23,13 @@ unison     g - f g a a/2 R a g | f g f e f e | e d-/2 R a a
 unison     d d c/8 b/8 c c c | b a g a - g f | g a b a a/2 = a R a
 
 unison     a a g/8 b/8 a g f | g g/2 = g/2. | f R e d- c-/2 | d-/2. = d-/2
+
+verse      Be - hold, how good and how pleas - ant it is for breth - ren to dwell to - geth - er in u - ni - ty!
+
+verse      It is like the pre - cious oil up - on the head, Run - ning down on the beard,
+
+verse      The beard of Aa - ron, Run - ning down on the edge of his gar - ments.
+
+verse      It is like the dew of Her - mon, De - scend - ing up - on the moun - tains of Zi - on;
+
+verse      For there the Lord com - mand - ed the bless - ing-- Life for - ev - er - more.

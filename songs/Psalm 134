@@ -7,7 +7,7 @@ key        G
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -19,3 +19,9 @@ unison     R d- | g g/8 d-/8 a a/8 d-/8 | b/8 a/8 g/8 f/8 e e/8 f/8 | g/8 d-/8 g
 unison     d/2 d- a | g/8 a/8 b/8 - d/8 c c | b - g - d- d- | g/2 d/2
 
 unison     b g f/2 | e d- c-/2 | d- d-/8 d-/8 a/2 | g/2
+
+verse      Be - hold, bless the Lord, All you servants of the Lord, Who by night stand in the house of the Lord!
+
+verse      Lift up your hands in the sanc - tu - ary, And bless the Lord.
+
+verse      The Lord who made heav'n and earth Bless you from Zi - on!
