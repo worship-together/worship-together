@@ -2,7 +2,7 @@ title      O Love That Will Not Let Me Go
 
 key        C
 rhythm     0 : 4
-tempo      90
+tempo      70
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -26,8 +26,8 @@ bass       g R/8 f/8 e d | g-/2. g- | c R/8 c/8 c R/8 c/8 | d/8 d/8 d/8 d/8 c/8 
 
 key        D
 
-soprano    d- R/8 a-/8 a-/8 b-/8 c-/8 d-/8 | d-/2 c- c-/8 | c-. c-/8 c-/8 d-/8 e/8 f/8 | a/2 g/8 R/8 g
-alto       a R/8 a/8 a/8 b/8 a/8 b/8 | bb/2 a R/8 a/8 | a. a/8 a/8 b/8 b/8 d/8 | d/2 = d/8 R/8 d
+soprano    d- R/8 a-/8 a-/8 b-/8 c-/8 d-/8 | d-/2 c- R/8 c-/8 | c-. c-/8 c-/8 d-/8 e/8 f/8 | a/2 g/8 R/8 g
+alto       a  R/8 a/8  a/8  b/8  a/8  b/8  | bb/2 a  R/8 a/8 | a. a/8 a/8 b/8 b/8 d/8 | d/2 = d/8 R/8 d
 tenor      f R/8 a/8 a/8 g#/8 g/8 ab/8 | g/2 = g R/8 a/8 | g. f/8 g/8 g/8 g/8 a/8 | b/2 = b/8 R/8 b
 bass       d R/8 a+/8 a+/8 g#/8 g/8 f/8 | fn/2 e R/8 a+/8 | g. f/8 e/8 d/8 c/8 b/8 | e/2 = e/8 R/8 e
 
