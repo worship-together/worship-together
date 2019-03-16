@@ -5,31 +5,60 @@ rhythm     0 : 4
 tempo      90
 
 voice      soprano E4 to D5
-# voice      alto    A3 to G4
-# voice      tenor   E3 to D4
-# voice      bass    A2 to G3
-voice      unison  E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
 
-unison     g- | g-. g-/8 g-/8 a-/8 b-/8 c-/8 | c-/2 b-/8 R/8 b- | b-. b-/8 b-/8 c-/8 d-/8 e/8
+soprano    g- | g-. g-/8 g-/8 a-/8 b-/8 c-/8 | c-/2 b-/8 R/8 b- | b-. b-/8 b-/8 c-/8 d-/8 e/8
+alto       g- | g-. g-/8 g-/8 g-/8 f#-/8 f#-/8 | g-/2 = g-/8 R/8 g- | g-. g-/8 g-/8 a/8 b/8 c/8
+tenor      g | e. e/8 e/8 e/8 d-/8 d-/8 | e/2 d-/8 R/8 d- | g. g/8 g/8 g/8 g/8 g/8
+bass       g | c. c/8 c/8 c/8 a/8 a/8 | g-/2 = g-/8 R/8 g- | f. f/8 f/8 e/8 d/8 c/8
 
-unison     g/2 g/8 R/8 f | e. e/8 e/8 d-/8 c-/8 b-/8 | d-/2 c- R/8 c-/8 | c-. c-/8 c-/8 c-/8 b-/8 a-/8
+soprano    g/2 g/8 R/8 f | e. e/8 e/8 d-/8 c-/8 b-/8 | d-/2 c- R/8 c-/8 | c-. c-/8 c-/8 c-/8 b-/8 a-/8
+alto       d/2 = d/8 a/8 b/8 a/8 | d/8 c/8 b c/8 b/8 g#-/8 g#-/8 | g-/2 = g- R/8 g-/8 | a. a/8 a/8 a/8 b/8 a/8
+tenor      g/2 = g/8 a/8 b/8 a/8 | a/2 g#/8 g#/8 e/8 e/8 | e/2 = e R/8 e/8 | f#. f#/8 f#/8 f#/8 f#/8 f#/8
+bass       b/2 = b/8 R. | e/2 e/8 e/8 e/8 e/8 | a/2 = a R/8 a/8 | d. d/8 d/8 d/8 d#/8 f#/8
 
-unison     g- R/8 a-/8 b- c- | e/2. d- | c-/1 | c-/2 c-/8 R/8 c-
+soprano    g- R/8 a-/8 b- c- | e/2. d- | c-/1 | c-/2 c-/8 R/8 c-
+alto       g- R/8 a/8 b a | c. a/8 b b | g- R/8 g-/8 a R/8 a/8 | ab/8 ab/8 ab/8 f-/8 g-/8 R/8 g-
+tenor      g R/8 g/8 g f# | g/8 gb/8 f/2 f | e R/8 e/8 f R/8 f/8 | g/8 f/8 f/8 d-/8 e/8 R/8 e
+bass       g R/8 f/8 e d | g-/2. g- | c R/8 c/8 c R/8 c/8 | d/8 d/8 d/8 d/8 c/8 R/8 c
 
 key        D
 
-unison     d- R/8 a-/8 a-/8 b-/8 c-/8 d-/8 | d-/2 c- c-/8 | c-. c-/8 c-/8 d-/8 e/8 f/8 | a/2 g/8 R/8 g
+soprano    d- R/8 a-/8 a-/8 b-/8 c-/8 d-/8 | d-/2 c- c-/8 | c-. c-/8 c-/8 d-/8 e/8 f/8 | a/2 g/8 R/8 g
+alto       a R/8 a/8 a/8 b/8 a/8 b/8 | bb/2 a R/8 a/8 | a. a/8 a/8 b/8 b/8 d/8 | d/2 = d/8 R/8 d
+tenor      f R/8 a/8 a/8 g#/8 g/8 ab/8 | g/2 = g R/8 a/8 | g. f/8 g/8 g/8 g/8 a/8 | b/2 = b/8 R/8 b
+bass       d R/8 a+/8 a+/8 g#/8 g/8 f/8 | fn/2 e R/8 a+/8 | g. f/8 e/8 d/8 c/8 b/8 | e/2 = e/8 R/8 e
 
-unison     f. f/8 g/8 f/8 e/8 c-/8 | e/2 d- R/8 d-/8 | d-. d-/8 d-/8 d-/8 c-/8 b-/8 | a- R/8 b-/8 c- d-
+soprano    f. f/8 g/8 f/8 e/8 c-/8 | e/2 d- R/8 d-/8 | d-. d-/8 d-/8 d-/8 c-/8 b-/8 | a- R/8 b-/8 c- d-
+alto       d b/8 c/8 c/8 d/8 c/8 c/8 g#-/8 | a/2. R/8 a/8 | b. b/8 b/8 b/8 c/8 b/8 | a R/8 b/8 a b
+tenor      b/8 g#/8 a#/8 a#/8 b/8 a#/8 g#/8 e/8 | f/2. R/8 f/8 | a. a/8 g#/8 g#/8 g#/8 g#/8 | a R/8 b/8 a b
+bass       f. f/8 fn/8 e/8 f-/8 a#/8 | b/2. R/8 b/8 | e. e/8 e/8 e/8 e#/8 g#/8 | R/1
 
-unison     f/2. e | d-/1 | d-/2 a-/8 b-/8 c-/8 d-/8
+soprano    f/2. e | d-/1 | d-/2 a-/8 b-/8 c-/8 d-/8
+alto       d/2. c | a R/8 a/8 b R/8 b/8 | bb/8 bb/8 bb/8 g-/8 f-/8 g-/8 a/8 b/8
+tenor      b/2 ab g | f R/8 f/8 g R/8 g/8 | a/8 g/8 g/8 e/8 d-/8 e/8 f/8 g/8
+bass       R e/8 d/8 bb a | d R/8 d/8 d R/8 d/8 | e/8 e/8 e/8 e/8 d/2
 
 key        Eb
 
-unison     e R/8 b-/8 b-/8 c-/8 d-/8 e/8 | e/2 d-/8 R/8 d- | d-. d-/8 d-/8 e/8 f/8 g/8 | b/2 a/8 R/8 a
+soprano    e R/8 b-/8 b-/8 c-/8 d-/8 e/8 | e/2 d-/8 R/8 d- | d-. d-/8 d-/8 e/8 f/8 g/8 | b/2 a/8 R/8 a
+alto       b R/8 b/8 an/8 an/8 an/8 c/8 | b/2 = b/8 R/8 b | bn. bn/8 b/8 c/8 d/8 e/8 | e/2 = e/8 R/8 e
+tenor      g R/8 g/8 f/8 f/8 f/8 an/8 | a/2 = a/8 R/8 a | a. a/8 a/8 a/8 b/8 c/8 | d/2 c/8 R/8 c
+bass       e R/8 e/8 e/8 e/8 e/8 f/8 | f/2 = f/8 R/8 f | f#. f#/8 f/8 f/8 b+/8 an+/8 | a+/2 = a+/8 R/8 a+
 
-unison     g. g/8 a/8 g/8 f/8 d-/8 | f/2 e R/8 e/8 | e. e/8 e/8 e/8 d-/8 c/8(1) | b(1) R/8 c-/8 d- e
+soprano    g. g/8 a/8 g/8 f/8 d-/8 | f/2 e R/8 e/8 | e. e/8 e/8 e/8 d-/8 c/8(0.5) | b(1) R/8 c-/8 d- e
+alto       d. d/8 f/8 e/8 d/8 d/8 | d/2 c R/8 c/8 | c. c/8 c/8 c/8 b/8 a+/8(0.5) | g(1) R/8 c/8 d c
+tenor      c. c/8 bn/8 c/8 bn/8 bn/8 | b/2 = b R/8 b/8 | b. b/8 an/8 an/8 a/8 d/8(0.5) | e+(1) R/8 c/8 bn b
+bass       g. g/8 g/8 g/8 g/8 f/8 | g/2 = g R/8 g/8 | f. f/8 f/8 f/8 f/8 b+/8 | b+ R/8 c+/8 bn+ b+
 
-unison     g a | b/2 b/2 | e/1 | e/2 e R/8 b-/8
+soprano    g a | b/2 = b/2 | e/1 = | e/2 = e R/8 b-/8
+alto       e/2 | f/2 = f/2 | R. b/8 c R/8 c/8 | cb/8 cb/8 cb/8 a/8 b R/8 b/8
+tenor      c/2 | e+/2 d/2 | R. g/8 a R/8 a/8 | b/8 a/8 a/8 f/8 g R/8 b/8
+bass       an+ a | b+/2 = b+/2 | R. e/8 e R/8 e/8 | f/8 f/8 f/8 f/8 e R/8 b+/8
 
-unison     b- R/8 b-/8 b-/8 c-/8 d- | e/1(1) | e/1
+soprano    b- R/8 b-/8 b-/8 c-/8 d- | e/1(1) | e/1
+alto       b R/8 b/8 b/8 c/8 b | cb/2 b/8 a/8 c(1) | b/1
+tenor      b R/8 b/8 b/8 b/8 a | a gb/8 f/8 = f a(1) | g/1
+bass       b+ R/8 b+/8 b+/8 b+/8 a+ | db/2. f | e-/1
