@@ -10,7 +10,7 @@ key        D
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,21 @@ soprano    e/1 | a/2 b c | d/2.     g | f/2  e/2 | d-/1
 alto       c/1 | d/2 d e | f. e/8 d e | d/2  c/2 | a/1
 tenor      a/1 | a/2 g g | f. g/8 a b | a/2  a g | f/1
 bass       a/1 | f/2 g e | d. e/8 f g | a+/2 a/2 | d/1
+
+verse      Je  -   sus shall reign  wher - e'er the   sun   Does  his   suc -
+verse      To      Him shall end  - less  prayer be   made, And  prais - es
+verse      Peo  -  ple  and  realms  of     ev - 'ry tongue Dwell  on    His
+verse      Bless - ings  a - bound  wher - e'er  He  reigns: The   pri - s'ner
+verse      Let     ev - 'ry  crea - ture   rise  and  bring   Pe - cu -  liar
+
+verse      ces -  sive jour - neys run;    His  king - dom  stretch from  shore  to
+verse      throng  to  crown   His head.   His  Name   like  sweet   per - fume shall
+verse      love   with sweet - est song,   And   in  - fant  voic -  es   shall  pro -
+verse      leaps   to  lose    his chains, The  wea  -  ry   find    e  -  ter - nal
+verse      hon  - ors   to     our King,   An - gels    de - scend  with  songs   a -
+
+verse      shore, Till moons shall wax     and  wane  no   more.
+verse      rise   With  ev -  ery  morn -  ing  sac - ri - fice.
+verse      claim  Their ear - ly   bless - ings on    His  name.
+verse      rest,  And   all   the  sons     of  want  are  blest.
+verse      gain,  And  earth  re - peat    the  loud   a - men!
