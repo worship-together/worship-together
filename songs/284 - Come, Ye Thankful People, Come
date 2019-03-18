@@ -10,7 +10,7 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,23 @@ soprano    d. d/8 b  g   | c. c/8 a/2 | b d c f | a  g   f/2
 alto       d  f#  g  d   | c  e   f/2 | f f f f | f  e   f/2
 tenor      a  d   d  b   | g  c   c/2 | b b c a | c. b/8 a/2
 bass       f# d   g. g/8 | e  c   f/2 | d b a d | c  c   f-/2
+
+verse      Come, ye thank - ful   peo - ple, come, Raise the   song  of   har - vest home;
+verse      All  the world   is   God's  own field, Fruit  un -  to   His praise  to  yield;
+verse      For  the Lord    our   God  shall come, And   shall take  His  har - vest home;
+verse      E -  ven  so,   Lord, quick - ly  come, Bring thy    fi - nal  har - vest home;
+
+verse      All   is   safe - ly   gath - ered in,  Ere  the  win - ter storms be - gin.
+verse      Wheat and tares   to - geth - er   sown Un - to   joy    or  sor - row grown;
+verse      From  His field  shall  in    that day  All  of - fens - es purge   a - way,
+verse      Gath - er  Thou   Thy   peo -  ple in,  Free from sor - row, free  from sin,
+
+verse      God    our  Mak - er    doth pro - vide For  our wants to   be  sup - plied;
+verse      First  the  blade and   then the   ear, Then the full corn shall ap - pear;
+verse      Giv -  ing   an - gels charge at   last  In  the fire  the tares to   cast;
+verse      There, for - ev - er     pu - ri - fied, In  thy gar - ner  to    a - bide;
+
+verse      Come  to  God's   own   tem - ple, come, Raise   the  song   of    har - vest  home.
+verse      Lord  of   har - vest, grant that   we   Whole - some grain  and  pure   may   be.
+verse      But   the fruit - ful  ears   to   store In      His   gar - ner   ev  -  er - more.
+verse      Come, with all   Thine  an - gels, come, Raise   the   glo - rious har - vest  home.

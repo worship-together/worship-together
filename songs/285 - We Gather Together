@@ -12,7 +12,7 @@ key        C
 rhythm     3 : 4
 tempo      160
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,19 @@ soprano    f. g/8  a/8  f/8 | g. f/8 e | f d-. c-/8 | c-/2
 alto       c. c/8  c/8  c/8 | d  d   c | c b.  c/8 | c/2
 tenor      f. e/8  f/8  f/8 | d  g   g | f f.  e/8 | e/2
 bass       a. g-/8 f-/8 a/8 | b  b   c | d g-. c/8 | c/2
+
+verse      We   gath - er to - geth - er   to   ask   the Lord's bless - ing;
+verse      Be - side   us to   guide  us,  our  God   with us    join  - ing,
+verse      We    all   do ex - tol   thee, thou Lead - er  tri -  um  -  phant,
+
+verse      He   chas - tens and    has - tens His  will   to  make known;
+verse      Or - dain - ing, main - tain - ing His  king - dom  di - vine;
+verse      And  pray   that Thou   still  our De - fend - er  wilt   be.
+
+verse      The wick - ed   op - press - ing now cease from dis - tress - ing:
+verse      So  from  the   be -  gin - ning the fight  we  were  win  - ning:
+verse      Let Thy   con - gre - ga -  tion es - cape trib - u -  la -  tion:
+
+verse      Sing prais - es  to  His  name;  He  for - gets  not  His own.
+verse      Thou, Lord, wast at  our  side:      all   glo - ry   be  thine!
+verse      Thy   name   be  ev - er praised!     O    Lord, make us  free!
