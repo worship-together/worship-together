@@ -12,7 +12,7 @@ key        F
 rhythm     0 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    a/2 c b/2 a f g a/2 f/2. R a/2  a  b/2 a  g f/2 e   f/1
 alto       f/2 e g/2 f d e f/2 d/2. R f/2  f  d/2 c  c a   c/2 c/1
 tenor      c/2 c d/2 d a c c/2 b/2. R c/2  c  f/2 f  e f   g/2 f/1
 bass       f/2 c g/2 d d c f/2 b/2. R f-/2 f- b/2 f- c d   c/2 f-/1
+
+verse      Com - fort, com -  fort  ye   my  peo - ple, Speak   ye peace, thus saith our   God;
+verse      Yea,  her   sins   our   God will par - don, Blot - ting  out  each dark  mis - deed;
+verse      For   the   her - ald's voice is  cry - ing   In     the  des - ert  far  and   near,
+verse      Make  ye  straight what long was crook - ed, Make    the rough - er plac - es   plain;
+
+verse      Com - fort those  who   sit   in  dark - ness,  Bowed be - neath their sor - row's load.
+verse      All   that  well  de - served His  an  -  ger    He   no   more   will see    or   heed.
+verse      Bid - ding   all  men    to   re - pen - tance, Since the  king - dom  now    is   here.
+verse      Let   your hearts be    true  and  hum -  ble,   As   be - fits   His   ho -  ly   reign.
+
+verse      Speak ye  to     Je - ru - sa - lem   Of  the   peace that waits for  them;
+verse      She  hath suf - fered man - y a day,  Now her  griefs have passed a - way;
+verse      O    that warn - ing  cry   o - bey!  Now pre - pare  for   God   a   way;
+verse      For  the  glo -  ry   of   the Lord   Now o'er  earth  is   shed  a - broad;
+
+verse      Tell her   that  her  sins    I  cov - er,  And  her  war - fare   now     is   o  -  ver.
+verse      God  will change her   pin - ing sad - ness In - to   ev  -  er - spring - ing glad - ness.
+verse      Let  the   val - leys rise    to meet  him, And  the hills   bow   down    to  greet  him.
+verse      And  all  flesh  shall see   the to -  ken, That His word    is    nev  -  er   bro - ken.

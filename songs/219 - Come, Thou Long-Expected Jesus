@@ -10,7 +10,7 @@ key        F
 rhythm     3 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,15 @@ soprano    c  a c  | b g b    | a f a | g/8 a/8 b/8 a/8 g       | c/2 c | d c b 
 alto       f/2  e  | g/2 g    | f c c | c/2             c       | c f e | d f f | f/2 e | f/2.
 tenor      a  c c  | d/2 c    | c a f | e/8 f/8 g/8 f/8 e       | f a c | b c d | c/2 b | a/2.
 bass       a+ f a+ | g. f/8 e | f/2 a | c/2             c/8 b/8 | a/2 a | b a b | c/2 c | f/2.
+
+verse      Come, Thou long - ex - pect - ed   Je - sus, Born to set  Thy peo - ple free;
+verse      Born  Thy  peo - ple    to    de - liv - er, Born a child and yet    a  King,
+
+verse      From our fears and sins re - lease us; Let us find    our  rest   in  thee.
+verse      Born to  reign in   us  for - ev - er, Now Thy gra - cious king - dom bring.
+
+verse      Is - rael's strength and  con - so - la - tion, Hope of all the earth Thou art;
+verse      By   Thine     own    e - ter - nal Spir - it   Rule in all our hearts a - lone;
+
+verse      Dear De - sire  of    ev - 'ry   na - tion, Joy  of ev - 'ry long - ing  heart.
+verse      By  Thine all - suf - fi - cient mer - it, Raise us to   Thy glo - rious throne.
