@@ -7,7 +7,9 @@ notes_drawn = 0
 screen_padding = 1/6#of the screen
 note_gap = 125
 origin = screen_width / 2
-next_note_tied = False
+note_tied = False
+note_pos = 0, 0
+bars_to_draw = 0
 
 treble_lines = []
 bass_lines = []
@@ -75,7 +77,7 @@ class MusicView(ui.View):
 		self.staff.stroke()
 	
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
-		global origin, end, next_note_tied
+		global origin, end, note_tied, note_pos, bars_to_draw
 		position = origin
 		for measure in measures:
 			position -= note_gap / 2
@@ -87,17 +89,28 @@ class MusicView(ui.View):
 			voice_selected = measure[voice]
 			if isinstance(voice_selected, list):
 				for note in voice_selected:
+					prev_note_pos = note_pos
+					prev_note_tied = note_tied
 					if inspect.isclass(note):
 						note_name = note.__name__
 						note_beats = note().beats
+						note_tied = note().tie
 					else:
 						note_name = type(note).__name__
 						note_beats = note.beats
+						note_tied = note.tie
 					note_index = create_index(note_name)
+					note_pos = position, clef_C0 - (note_index * step)
+					prev_bars_to_draw = bars_to_draw
+					bars_to_draw = int((1/note_beats) / 2)
+					
+					# draw note
 					if not note_index == -1:
 						self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
 						self.note_dot.stroke()
 						ui.set_color('black')
+						
+						# draw tails, hollow/solid notes
 						if note_beats < 2:
 							self.note_dot.fill()
 						if note_beats < 4:
@@ -109,6 +122,32 @@ class MusicView(ui.View):
 								position + (((tail_direction * 1.5) + 1.5) * step),
 								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
 							self.note_tail.stroke()
+							
+						# draw dots
+						if not note_beats == 3 and note_beats % 1.5 == 0:
+							self.note_dotted = ui.Path()
+							self.note_dotted = ui.Path.oval(position + (4 * step), clef_C0 - ((note_index - 0.6) * step), 0.4 * step, 0.4 * step)
+							self.note_dotted.stroke()
+							ui.set_color('black')
+							self.note_dotted.fill()
+						
+						# draw ties	
+						#if prev_note_tied:
+							#self.note_tie = ui.Path()
+							#self.note_tie.move_to(prev_note_pos, clef_C0 - (note_index * step))
+							#self.note_tie.add_quad_curve(position, clef_C0 - (note_index * step), 90, 90)
+							#self.note_tie.stroke()
+							
+						# draw bars
+						if bars_to_draw == prev_bars_to_draw:
+							for bar in range(0, bars_to_draw):
+								self.bar = ui.Path()
+								x, y = prev_note_pos
+								self.bar.move_to(x + (step * 1.5 * (1 + tail_direction)), (y + (step * -6 * tail_direction)) + (step - (tail_direction * step)))
+								x, y = note_pos
+								self.bar.line_to(x + (step * 1.5 * (1 + tail_direction)), (y + (step * -6 * tail_direction)) + (step - (tail_direction * step)))
+								self.bar.stroke()
+						
 					else:
 						rest = ui.Label()
 						rest.center = position, 30
