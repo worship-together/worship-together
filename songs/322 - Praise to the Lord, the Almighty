@@ -11,9 +11,29 @@ key        G
 rhythm     3 : 4
 tempo      130
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g g d | b. a/8 g | f       e d- | e f g
+alto       d e d | d. f/8 e | d       c b  | c c b
+tenor      b b a | d. c/8 b | b/8 a/8 g g  | g a g
+bass       g e f | g. d/8 e | b       c g- | c a e
+
+soprano    a/2.      | g/2.  | g g d | b. a/8 g | f       e d-
+alto       e - d - c | b/2.  | d e d | d. f/8 e | d       c b
+tenor      g - f/2   | g/2.  | b b a | d. c/8 b | b/8 a/8 g g
+bass       c - d/2   | g-/2. | g e f | g. d/8 e | b       c g-
+
+soprano    e f g | a/2.      | g/2.  | d d  d | e+/2. | b c d
+alto       c c b | e - d - c | b/2.  | g a+ g | g/2.  | g g a+
+tenor      g a g | g - f/2   | g/2.  | b a  b | c/2.  | d c a
+bass       c a e | c - d/2   | g-/2. | g f  g | c/2.  | g e f
+
+soprano    d c       b        | a/2. | d- e f | g a b  | a/2.                    | g/2.
+alto       g e/8 f/8 g        | f/2. | d  c c | b e d# | e/2             d/8 c/8 | b/2.
+tenor      b d       d        | d/2. | d  g a | g e f  | e - a/8 - g/8 - f       | g/2.
+bass       g a+      b+/8 g/8 | d/2. | b  c a | e c b  | c/2 - d                 | g-/2.

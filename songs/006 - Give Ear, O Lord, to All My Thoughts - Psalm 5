@@ -1,0 +1,49 @@
+title      Give Ear, O Lord, to All My Thoughts
+hymnal     Cantus Christi
+page       6
+author     Douglas Wilson, 2000
+psalm      5
+
+tune       HERR, NOR, WAS ICH WILL BITTEN DICH
+metre      8 7. 8 7. 8 7. 4 6 7
+composer   Heinrich Schutz, 1661
+key        C
+rhythm     0 : 4
+tempo      190
+
+status     header  tune
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    b/2  c/2 g a/2  e  g  f  e/2  | e/2  f/2
+alto       e/2  e/2 c c/2  a  b  d  c#/2 | c#/2 d/2
+tenor      g#/2 a/2 e f/2  c- e  a  a/2  | a/2  a/2
+bass       e/2  a/2 c f-/2 a  e- f- a/2  | a/2  d/2
+
+soprano    g a/2 a g#/2 a/2 | b/2  c/2 g a/2  e
+alto       e f/2 f e/2  e/2 | e/2  e/2 c c/2  a
+tenor      c c/2 d b/2  a/2 | g#/2 a/2 e f/2  c-
+bass       c f/2 d e/2  a/2 | e/2  a/2 c f-/2 a
+
+soprano    g  f  e/2  | e/2  f/2 g a/2 a g#/2 a/2
+alto       b  d  c#/2 | c#/2 d/2 e f/2 f e/2  e/2
+tenor      e  a  a/2  | a/2  a/2 c c/2 d b/2  a/2
+bass       e- f- a/2  | a/2  d/2 c f/2 d e/2  a/2
+
+soprano    c/2  d/2  b c/2  b a  a  g/2  | g/2  g/2
+alto       a/2  a/2  g g/2  g f# f# g/2  | d/2  e/2
+tenor      e+/2 d/2  d e+/2 d d  d  d/2  | b/2  c/2
+bass       a+/2 f#/2 g e/2  g d  d  g-/2 | g-/2 c/2
+
+soprano    b c/2 c b/2  a/2 | R f/2  a  g/2 f/2  | R a a c
+alto       d c/2 e e/2  e/2 | R d/2  c  c/2 c/2  | R f f e
+tenor      g e/2 a g#/2 a/2 | R d-/2 f  e/2 f/2  | R c c a
+bass       b a/2 c e/2  a/2 | R bb/2 f- c/2 f-/2 | R f f a+
+
+soprano    c b c/2 | b/2 d/2 c b/2  a b/1        a/1
+alto       g d e/2 | d/2 f/2 e e/2  c e/1        e/1
+tenor      d g g/2 | g/2 a/2 a g#/2 a a/2 - g#/2 a/1
+bass       g g c/2 | g/2 d/2 a e/2  f e/1        a/1

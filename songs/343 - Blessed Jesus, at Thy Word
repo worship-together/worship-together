@@ -1,0 +1,40 @@
+title      Blessed Jesus, at Thy Word
+hymnal     Cantus Christi
+page       343
+author     st. 1-3, Tobias Clausnitzer, 1663
+author     st. 4, anon. 1707
+translator Catherine Winkworth, 1858
+
+tune       LIEBSTER JESU
+metre      7 8. 7 8. 8 8
+composer   Johann R. Ahle, 1664
+key        G
+rhythm     4 : 4
+tempo      100
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    b  g a d | b g a/2 | g  g g g
+alto       d  d d d | d e f/2 | d  d e d
+tenor      g  g f a | g b d/2 | b  g c g
+bass       g- b d f | g e d/2 | g- b c b
+
+soprano    a b  a/2   | g/1  | b  g a d | b g a/2
+alto       f g  g - f | d/1  | d  d d d | d e f/2
+tenor      c d  d/2   | b/1  | g  g f a | g b d/2
+bass       a g- d/2   | g-/1 | g- b d f | g e d/2
+
+soprano    g  g g g | a b  a/2   | g/1  | d- d- e  f
+alto       d  d e d | f g  g - f | d/1  | d  d  c# d
+tenor      b  g c g | c d  d/2   | b/1  | b  a  g  a
+bass       g- b c b | a g- d/2   | g-/1 | g  f  e  d
+
+soprano    g a  f d- | g g a b | c  b  a/2   | g/1
+alto       d e  d d  | d e f g | g  g  g - f | d/1
+tenor      b a  a f  | g b d d | e+ d  d/2   | b/1
+bass       b c# d d  | b e d g | c  g- d/2   | g-/1

@@ -1,0 +1,38 @@
+title      The Church's One Foundation
+hymnal     Cantus Christi
+page       327
+author     Samuel John Stone, 1866
+
+tune       AURELIA
+metre      7 6. 7 6. D.
+composer   Samuel Sebastian Wesley, 1864
+key        D
+rhythm     4 : 4
+tempo      130
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    f | f f g f | f/2 e  d- | d- b  a g | f/2. g
+alto       d | d d d d | d/2 c  d  | b  d  d c | d/2. c
+tenor      a | a a b a | a/2 a  a  | e  e  f a | a/2. a
+bass       d | d d d d | a/2 g- f- | g- g- a a | d/2. e
+
+soprano    a d d  c  | c/2  b  a | g a f d- | e/2. e
+alto       d d e  e  | e/2  d  f | f e d d  | c/2. c
+tenor      a a a# a# | a#/2 b  c | d a a g# | a/2. a
+bass       f f f  f- | g-/2 g- a | b c d b  | a/2. a
+
+soprano    f g a b | b/2 a d | d. c/8  b f  | g/2. e
+alto       d c d d | d/2 d f | f. f/8  f f  | e/2. e
+tenor      a a a g | g/2 a b | b. a#/8 b b  | b/2. a
+bass       d e f g | g/2 f b | f. e/8  d d# | e/2. c
+
+soprano    f f g f | f/2  e  d- | d- e  d- c- | d-/2.
+alto       d d d d | b/2  b  b  | b  b  a  a  | a/2.
+tenor      a a b a | a/2  g  g  | g  g  e  g  | f/2.
+bass       d d d d | g-/2 g- g- | e- e- a  a  | d/2.

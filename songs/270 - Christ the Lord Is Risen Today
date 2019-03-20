@@ -11,7 +11,7 @@ key        C
 rhythm     4 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,27 @@ soprano    g/8 a/8 b/8 g/8 c e       | f a  a g | c/8 b/8 c/8 g/8 a/8 b/8 c/8 d/
 alto       b/8 c/8 d/8 b/8 c c       | c f  f e | e/8 f/8 g/8 e/8 f       e/8 d/8 | e g/8 f/8 e/2
 tenor      g       g       g g       | f c  c/2 | g.          c/8 c/8 d/8 g/8 a/8 | g/2       g/2
 bass       g.      f/8     e c/8 b/8 | a f- c/2 | c/8 d/8 e/8 c/8 f/8 d/8 e/8 f/8 | g g-      c/2
+
+verse      Christ the Lord   is   ris'n   to - day,  Al - le - lu - ia!
+verse      Vain   the stone, the  watch, the   seal, Al - le - lu - ia!
+verse      Lives   a - gain  our   glo - rious King, Al - le - lu - ia!
+verse      Soar   we   now  where Christ hath  led,  Al - le - lu - ia!
+verse      Hymns  of praise  then  let    us   sing, Al - le - lu - ia!
+
+verse      Sons   of     men    and  an  -  gels say,   Al - le - lu - ia!
+verse      Christ hath  burst   the gates    of  hell,  Al - le - lu - ia!
+verse      Where,  O    death,  is   now     thy sting? Al - le - lu - ia!
+verse      Fol - l'wing  our    ex - alt  -  ed  Head,  Al - le - lu - ia!
+verse      Un  -  to    Christ, our heav'n - ly  king,  Al - le - lu - ia!
+
+verse      Raise your joys  and   tri - umphs high,  Al - - le - lu - ia!
+verse      Death in   vain  for - bids  him   rise,  Al - - le - lu - ia!
+verse      Once  he   died  our  souls  to    save,  Al - - le - lu - ia!
+verse      Made like  Him,  like  Him   we    rise,  Al - - le - lu - ia!
+verse      Who   en - dured the  cross  and   grave, Al - - le - lu - ia!
+
+verse      Sing,   ye  heav'ns,  and  earth  re - ply,   Al - - - le - lu - ia!
+verse      Christ  has    o  -  pened  par  - a - dise,  Al - - - le - lu - ia!
+verse      Where's thy   vic  -   to - ry,    O   grave? Al - - - le - lu - ia!
+verse      Ours    the  cross,   the  grave,  the skies, Al - - - le - lu - ia!
+verse      Sin  -  ners  to      re - deem    and save,  Al - - - le - lu - ia!

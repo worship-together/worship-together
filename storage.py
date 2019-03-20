@@ -3,89 +3,83 @@ Storage
 
 REQUIREMENTS
 - Store song files locally for playback without Internet
-- Automatically upload/download songs in background when Internet available
-- Support the following song modifications offline:
-    - Create, edit, delete, rename
-- Modifying songs requires a password built into the app
-- Last song update wins (no merging)
-- Songs deleted locally will be deleted from remote when Internet available
-- Songs deleted from remote will be deleted locally
+- Automatically download updated songs from remote to iPad
+  in background when Internet is available
+- Delete songs from iPad that are no longer on remote
+- Support manually uploading updated songs to remote from laptop
+- Delete songs from remote that are no longer on laptop
+- Songs are stored and versioned in git
+
 
 DESIGN
-- Whenever a song is created/edited locally, append ".UPLOAD" to filename
-- Whenever a song is deleted locally, append ".DELETE" to filename
-- Whenever a song is renamed locally, append ".DELETE" to the old filename
-    - and ".UPLOAD" to the new filename
-- Remote contains file named 'last_upload', modified after each upload
-- Local file named 'last_download', modified after each download
-- Periodically synchronize
-    - Cache remote 'last_upload' file modified time
-    - Local to Remote
-        - Enumerate all local files with .UPLOAD suffix
-            - Copy file up to remote without .UPLOAD suffix
-            - If successful, remote .UPLOAD suffix from file
-        - Enumerate all local files with .DELETE suffix
-            - Delete corresponding file from remote
-            - If successful, delete local file
-        - If any files were uploaded or deleted
-            - Modify last_upload file on remote
-    - Remote to Local
-        - If cached 'last_upload' modified time newer than 'last_download'
-            - Enumerate all local and remote files together in order with tuple
-                - Leave gaps for missing local or remote files (tuple diagram)
-                    +---------------+--------------+
-                    |     Local     |    Remote    |
-                    +---------------+--------------+
-                    |               |    File A    |  (Create)
-                    +---------------+--------------+
-                    |    File B     |    File B    |  (Update)
-                    +---------------+--------------+
-                    |    File C     |              |  (Delete)
-                    +---------------+--------------+
-                - If file only on remote, download to local
-                - If file on local & remote _and_ remote is newer
-                    - Download to remote
-                - If file only on local, delete local
-        - Modify local 'last_download' file (regardless)
+- To upload from laptop to remote
+  - Enumerate all local songs
+    - If song does not exist on remote, copy it up to remote
+    - If song on laptop is newer, copy it up to remote
+  - Enumerate all remote songs
+  	- If song does not exist on laptop, delete it from remote
+  - Modify remote last_upload file
+- To download from remote to iPad
+  - If remote last_upload file newer than local last_download file
+	- Enumerate all remote songs
+      - If song does not exist on iPad, copy it from remote
+	  - If song on remote is newer, copy it from remote
+	- Enumerate all local songs
+	  - If song does not exist on remote, delete it from iPad
+	- Modify local last_download file
+
 
 VERIFICATION
 - Use a specific test directory on the local & remote
 - All local & remote files are deleted before each test
-- Local To Remote
-    - Upload
-        - Create two uniquely named local files, one an .UPLOAD suffix
-        - Synchronize
-        - Verify that the file with the .UPLOAD suffix was uploaded
-        - Verify no .UPLOAD suffix on either the local or remote filenames
-    - Delete
-        - Create two uniquely named remote files
-        - Create one local rile with the same name as a remote file
-        - Append the .DELETE suffix to the local file
-        - Synchronize
-        - Verify the local and corresponding remote files were both deleted
-    - Verify after each test that the remote 'last_upload' date was updated
-- Remote To Local
-    - Create two uniquely named remote files
-    - Create two uniquely named local files
-    - One of the local filenames must match a remote & have different content
-    - (same as above diagram)
-    - Make local 'last_download' date newer than remote 'last_upload'
-    - Synchronize
-    - Verify no files have changed, been created, or deleted
-    - Make remote 'last_upload' date newer than local 'last_download'
-    - Synchronize
-    - Verify local file with no corresponding remote is deleted
-    - Verify remote file with no corresponding local is downloaded locally
-    - Verify content of remote file with same name as local has been downloaded
-- Verify after each test that the local 'last_download' newer than 'last_upload'
+- Upload Laptop To Remote
+  - Create Song
+    - Create a local song file
+    - Invoke upload
+    - Verify song file is on remote
+  - Newer Local Song
+    - Create a remote song file
+    - Create a local song file with the same name and different content
+    - Invoke upload
+    - Verify remote song matches local song
+  - Older Local Song
+    - Create a local song file
+    - Create a remote song file with the same name and different content
+    - Invoke upload
+    - Verify remote song does *not* match local song
+  - Delete Song
+    - Create a remote song file
+    - Invoke upload
+    - Verify remote song file is deleted
+  - Verify after each test that remote last_upload file was updated
+- Download Remote to iPad
+  - Create Song
+    - Create a remote song file
+    - Invoke download
+    - Verify song file is copied locally
+  - Newer Remote Song
+    - Create a local song file
+    - Create a remote song file with the same name and different content
+    - Invoke download
+    - Verify local song matches remote song
+  - Older Remote Song
+    - Create a remote song file
+    - Create a local song file with the same name and different content
+    - Invoke download
+    - Verify remote song does *not* match local song
+  - Delete Song
+    - Create a local song file
+    - Invoke download
+    - Verify local song file is deleted
+  - Verify after each test that the local last_download file updated
 
 OPEN QUESTIONS
-- How to access Azure from iPad? (limited set of azure Python libs?)
 - How are file times represented on iPad?
 - How to update in background?
 - How to detect that an Internet connection is available?
 """
 
+import sys
 from azure.storage.file import FileService
 import datetime
 import os
@@ -106,22 +100,21 @@ upload_suffix = ".UPLOAD"
 delete_suffix = ".DELETE"
 
 
-def upload_file(remote_dir, remote_file, local_file_path):
+def sync_upload_file(remote_dir, remote_file, local_file_path):
 	service.create_file_from_path(share, remote_dir,
 	                              remote_file, local_file_path)
 
-
-def upload_files(local_dir, remote_dir):
+def sync_upload_files(local_dir, remote_dir):
 	for file in os.listdir(local_dir):
 		if file.endswith(upload_suffix):
 			new_name = file[:-(len(upload_suffix))]
 			old_path = local_dir+'/'+file
 			new_path = local_dir+'/'+new_name
 			os.rename(old_path, new_path)
-			upload_file(remote_dir, new_name, new_path)
+			sync_upload_file(remote_dir, new_name, new_path)
 			
 			
-def download_files(local_dir, remote_dir):
+def sync_download_files(local_dir, remote_dir):
 	for file in service.list_directories_and_files(share, remote_dir):
 		if os.path.exists(local_dir+'/'+file.name):
 			local_time = get_local_modified_time(local_dir, file.name)
@@ -134,33 +127,71 @@ def download_files(local_dir, remote_dir):
 			service.get_file_to_path(share, remote_dir, file.name, local_dir + '/' + file.name)
 			time.sleep(1)
 			os.utime(local_dir + '/' + file.name, (datetime.datetime.timestamp(datetime.datetime.now()), datetime.datetime.timestamp(datetime.datetime.now())))
-#    for file in os.listdir(local_dir):
-#        if not service.exists(share, directory_name=remote_dir, file_name=file):
-#            os.remove(local_dir+'/'+file)
 
 
-def delete_remote_file(remote_dir, remote_file):
+def sync_delete_remote_file(remote_dir, remote_file):
 	service.delete_file(share, remote_dir, remote_file)
 
 
-def delete_files(local_dir, remote_dir):
+def sync_delete_files(local_dir, remote_dir):
 	for file in os.listdir(local_dir):
 		if file.endswith(delete_suffix) or not service.exists(share, directory_name=remote_dir, file_name=file):
 			os.remove(local_dir+'/'+file)
 			if service.exists(share, directory_name=remote_dir, file_name=file[:-(len(delete_suffix))]):
-				delete_remote_file(remote_dir, file[:-(len(delete_suffix))])
+				sync_delete_remote_file(remote_dir, file[:-(len(delete_suffix))])
 				
 				
 def synchronize(local_dir, remote_dir):
-	upload_files(local_dir, remote_dir)
-	delete_files(local_dir, remote_dir)
-	download_files(local_dir, remote_dir)
-	
+	sync_upload_files(local_dir, remote_dir)
+	sync_delete_files(local_dir, remote_dir)
+	sync_download_files(local_dir, remote_dir)
+
+
+def local_file_exists(local_dir, name):
+	return os.path.exists(local_dir + '/' + name)
+
+
+def remote_file_exists(remote_dir, name):
+	for file in service.list_directories_and_files(share, remote_dir):
+		if file.name == name:
+			return True
+	return False
+
+
+def upload_laptop_to_remote(local_dir, remote_dir):
+	print("uploading local " + local_dir + " to remote " + remote_dir)
+	for song in os.listdir(local_dir):
+		if os.path.isfile(song):
+			# Create local song
+			if local_file_exists(local_dir, song) is True:
+				if remote_file_exists(remote_dir, song) is False:
+					sync_upload_file(remote_dir, song, local_dir + '/' + song)
+					if remote_file_exists(remote_dir, song) is True:
+						print('newly uploaded ' + song)
+				# Newer local song
+				local_time = get_local_modified_time(local_dir, song)
+				remote_time = get_remote_modified_time(remote_dir, song)
+				if remote_time < local_time:
+					sync_upload_file(remote_dir, song, local_dir + '/' + song)
+					print('updated ' + song)
+	# Delete song
+	for song in service.list_directories_and_files(share, remote_dir):
+		if local_file_exists(local_dir, song.name) is False and remote_file_exists(remote_dir, song.name) is True:
+			sync_delete_remote_file(remote_dir, song.name)
+			if remote_file_exists(remote_dir, song) is False:
+				print('successfully deleted ' + song.name + ' from remote')
+	# Update last_upload time
+	time.sleep(1)
+	os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
+									datetime.datetime.timestamp(datetime.datetime.now())))
+	print('modified last_upload file')
+
+
 #
 # VERIFICATION
 #
 
-test_dir = 'test2'
+test_dir = 'test'
 
 
 def delete_all_local_and_remote(create_dir=True):
@@ -185,6 +216,11 @@ def create_remote_file(name, content):
 	service.create_file_from_text(share, test_dir, name, content)
 	
 	
+def list_all_remote_files(remote_dir):
+	for file in service.list_directories_and_files(share, remote_dir):
+		print(file.name)
+
+
 def verify_file_uploaded(name, content):
 	file_found = False
 	for file in service.list_directories_and_files(share, test_dir):
@@ -208,49 +244,15 @@ def remote_file_deleted(name):
 	return not file_found
 	
 	
-	
-def remote_file_exists(name):
+def test_if_remote_file_exists(name):
 	for file in service.list_directories_and_files(share, test_dir):
 		if file.name == name:
 			return True
 	return False
 	
 	
-def local_file_exists(name):
+def test_if_local_file_exists(name):
 	return os.path.exists(test_dir + '/' + name)
-	
-	
-def test_local_to_remote_upload():
-	delete_all_local_and_remote()
-	create_local_file('file a.UPLOAD', 'content a')
-	create_local_file('file b', 'content b')
-	synchronize(test_dir, test_dir)
-	verify_file_uploaded('file a', 'content a')
-	assert local_file_exists('file a')
-	assert not local_file_exists('file a.UPLOAD')
-	assert not remote_file_exists('file b')
-	
-	
-def test_local_to_remote_delete():
-	delete_all_local_and_remote()
-	create_local_file('file a.DELETE', 'content a')
-	create_local_file('file b', 'content b')
-	create_local_file('file d.DELETE', 'content d')
-	create_remote_file('file a', 'content a')
-	create_remote_file('file b', 'content b')
-	create_remote_file('file c', 'content c')
-	synchronize(test_dir, test_dir)
-	assert remote_file_deleted('file a')
-	assert not remote_file_deleted('file b')
-	assert not remote_file_deleted('file c')
-	assert not local_file_exists('file d')
-	assert not local_file_exists('file d.DELETE')
-	assert remote_file_deleted('file d')
-	assert not local_file_exists('file a')
-	assert not local_file_exists('file a.DELETE')
-	
-#        print(f'{file.name}: {file.properties.last_modified}, '
-#              f'{file.properties.content_length}')
 
 
 def calculate_month_days(month):
@@ -262,20 +264,50 @@ def calculate_month_days(month):
 		return calculate_month_days(month - 1) + 28
 	else:
 		return calculate_month_days(month - 1) + 30
-		
-		
+
+
 def get_local_modified_time(dir, file):
 	mtime = os.path.getmtime(dir + '/' + file)
 	dtime = datetime.datetime.fromtimestamp(mtime, datetime.timezone.utc)
 	return dtime.replace(microsecond=0)
-	
-	
+
+
 def get_remote_modified_time(dir, file):
 	dtime = service.get_file_properties(share, dir, file).properties.last_modified
 	return dtime.replace(microsecond=0)
+
+
+def test_sync_local_to_remote_upload():
+	delete_all_local_and_remote()
+	create_local_file('file a.UPLOAD', 'content a')
+	create_local_file('file b', 'content b')
+	synchronize(test_dir, test_dir)
+	verify_file_uploaded('file a', 'content a')
+	assert test_if_local_file_exists('file a')
+	assert not test_if_local_file_exists('file a.UPLOAD')
+	assert not test_if_remote_file_exists('file b')
 	
 	
-def test_remote_to_local_download():
+def test_sync_local_to_remote_delete():
+	delete_all_local_and_remote()
+	create_local_file('file a.DELETE', 'content a')
+	create_local_file('file b', 'content b')
+	create_local_file('file d.DELETE', 'content d')
+	create_remote_file('file a', 'content a')
+	create_remote_file('file b', 'content b')
+	create_remote_file('file c', 'content c')
+	synchronize(test_dir, test_dir)
+	assert remote_file_deleted('file a')
+	assert not remote_file_deleted('file b')
+	assert not remote_file_deleted('file c')
+	assert not test_if_local_file_exists('file d')
+	assert not test_if_local_file_exists('file d.DELETE')
+	assert remote_file_deleted('file d')
+	assert not test_if_local_file_exists('file a')
+	assert not test_if_local_file_exists('file a.DELETE')
+
+	
+def test_sync_remote_to_local_download():
 	delete_all_local_and_remote()
 	create_local_file('file a', 'content a outdated')
 	create_local_file('file b', 'content b')
@@ -286,127 +318,82 @@ def test_remote_to_local_download():
 	local_time_a = get_local_modified_time(test_dir, 'file a')
 	remote_time_a = get_remote_modified_time(test_dir, 'file a')
 	assert local_time_a > remote_time_a
-	assert not local_file_exists('file b')
-	assert local_file_exists('file c')
-	assert not remote_file_exists('file b')
-	
+	assert not test_if_local_file_exists('file b')
+	assert test_if_local_file_exists('file c')
+	assert not test_if_remote_file_exists('file b')
 	
 
-def list_all_remote_files(remote_dir):
-	for file in service.list_directories_and_files(share, remote_dir):
-		print(file.name)
+def test_upload_laptop_to_remote_create_song():
+	delete_all_local_and_remote()
+	create_local_file('new_file', 'new file content')
+	upload_laptop_to_remote(test_dir, test_dir)
+	assert test_if_remote_file_exists('new_file')
 
 
-	# create_remote_file('file a', 'content a')
-	# create_remote_file('file b', 'content b')
-	# create_local_file('file c', 'content c')
-	# create_local_file('file a', 'content a')
-	
-	#synchronize(test_dir, test_dir)
-	#remote_time = service.get_file_properties(share, test_dir, 'file a').properties.last_modified
-	# # remote_year = int(str(remote_time)[:4])
-	# # remote_month = int(str(remote_time)[5:7])
-	# # remote_day = int(str(remote_time)[8:10])
-	# # remote_hour = int(str(remote_time)[11:13])
-	# # remote_minute = int(str(remote_time)[14:16])
-	# # remote_second = int(str(remote_time)[17:19])
-	# print(time.struct_time(tm_year=remote_year, tm_mon=remote_month, tm_mday=remote_day, tm_hour=remote_hour, tm_min=remote_minute,
-	#              tm_sec=remote_second, tm_wday=remote_second, tm_yday=255, tm_isdst=0))
-	# unix = ((remote_year - 1970) * 365 * 24 * 60 * 60) + \
-	#        (calculate_month_days(remote_month) * 24 * 60 * 60) + \
-	#        (remote_day * 24 * 60 * 60) + \
-	#        (remote_hour * 60 * 60) + \
-	#        (remote_minute * 60) + \
-	#        remote_second
-	# print(unix)
-	# print(os.path.getmtime(test_dir + '/' + 'file a'))
-	# assert not os.path.exists('file c')
-	# assert os.path.exists('file b')
-	
-	
-	
-	
-#     - Delete
-#         - Create two uniquely named remote files
-#         - Create one local rile with the same name as a remote file
-#         - Append the .DELETE suffix to the local file
-#         - Synchronize
-#         - Verify the local and corresponding remote files were both deleted
-#     - Verify after each test that the remote 'last_upload' date was updated
-# - Remote To Local
-#     - Create two uniquely named remote files
-#     - Create two uniquely named local files
-#     - One of the local filenames must match a remote & have different content
-#     - (same as above diagram)
-#     - Make local 'last_download' date newer than remote 'last_upload'
-#     - Synchronize
-#     - Verify no files have changed, been created, or deleted
-#     - Make remote 'last_upload' date newer than local 'last_download'
-#     - Synchronize
-#     - Verify local file with no corresponding remote is deleted
-#     - Verify remote file with no corresponding local is downloaded locally
-#     - Verify content of remote file with same name as local has been downloaded
-# - Verify after each test that the local 'last_download' newer than 'last_upload'
+def test_upload_laptop_to_remote_newer_local_song():
+	delete_all_local_and_remote()
+	create_remote_file('new_file', 'new file content')
+	print('waiting for local clock to exceed remote clock')
+	time.sleep(5)
+	create_local_file('new_file', 'new file with newer content')
+	remote_time = get_remote_modified_time(test_dir, 'new_file')
+	local_time = get_local_modified_time(test_dir, 'new_file')
+	assert remote_time < local_time
+	upload_laptop_to_remote(test_dir, test_dir)
+	for file in os.listdir(test_dir):
+		local_file = open(test_dir + '/' + file, 'r')
+		for rem_file in service.list_directories_and_files(share, test_dir):
+			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
+			remote_content = remote_file.content
+			local_content = local_file.read()
+			assert remote_content == local_content
+			local_file.close()
+
+
+def test_upload_laptop_to_remote_older_local_song():
+	delete_all_local_and_remote()
+	create_local_file('new_file', 'new file with older content')
+	print('waiting for remote clock to exceed local clock')
+	time.sleep(15)
+	create_remote_file('new_file', 'new file content')
+	local_time = get_local_modified_time(test_dir, 'new_file')
+	remote_time = get_remote_modified_time(test_dir, 'new_file')
+	assert local_time < remote_time
+	upload_laptop_to_remote(test_dir, test_dir)
+	for file in os.listdir(test_dir):
+		local_file = open(test_dir + '/' + file, 'r')
+		for rem_file in service.list_directories_and_files(share, test_dir):
+			remote_file = service.get_file_to_text(share, test_dir, rem_file.name)
+			remote_content = remote_file.content
+			local_content = local_file.read()
+			assert remote_content != local_content
+			local_file.close()
+
+
+def test_upload_laptop_to_remote_delete_song():
+	delete_all_local_and_remote()
+	create_remote_file('new_file', 'new file content')
+	upload_laptop_to_remote(test_dir, test_dir)
+	assert remote_file_deleted('new_file')
+	assert not test_if_remote_file_exists('new_file')
+
+
+def run_upload_tests():
+	test_upload_laptop_to_remote_create_song()
+	test_upload_laptop_to_remote_newer_local_song()
+	test_upload_laptop_to_remote_older_local_song()
+	test_upload_laptop_to_remote_delete_song()
+
+
+def run_sync_tests():
+	test_sync_local_to_remote_upload()
+	test_sync_local_to_remote_delete()
+	test_sync_remote_to_local_download()
+
 
 if __name__ == '__main__':
-	test_local_to_remote_upload()
-	test_local_to_remote_delete()
-	test_remote_to_local_download()
+	run_upload_tests()
+	run_sync_tests()
 	delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
-	#service.create_file_from_text('songs', '', f'a,\'blah', 'Verse: Hello')
-	#verify_file_uploaded(f'a,\'blah', 'Verse: Hello')
-	#service.copy_file()
-	#service.delete_file()
-	#service.copy_file(self, share_name, directory_name, file_name, copy_source, metadata, timeout)
-	#service.delete_file(self, share_name, directory_name, file_name, timeout)
-	#service.create_file(self, share_name, directory_name, file_name, content_length, content_settings, metadata, timeout)
-	
-	
-#
-#  Experimental Code
-#
-
-# def upload_song(filename):
-#     with open(f'songs/{filename}') as file:
-#         song_text = file.read()
-#     song = midi.Song(filename)
-#     azure_filename = f'{filename} - {song.name}'
-#     print(song.psalm)
-#     if song.psalm:
-#         azure_filename += f' - Psalm {song.psalm}'
-#     service.create_file_from_text('songs', '', azure_filename, song_text)
-#
-# # for i in range(0, 400):
-# #     service.delete_file('songs', '', f'cc {i}')
-# #service.delete_file('songs', '', 'cc_008')
-# #service.create_file_from_text('songs', '', f'a,\'blah', 'Verse: Hello')
-# #service.delete_file('songs', '', 'CC 8 - Chide Me, O LORD, No Longer - 6')
-#
-#def synchronize_songs_with_server():
-#    print('connected')
-#    for file_or_dir in service.list_directories_and_files('songs'):
-#        file  = service.get_file_properties('songs', '', file_or_dir.name)
-#        print(f'{file.name}: {file.properties.last_modified}, '
-#              f'{file.properties.content_length}')
-#        #print(service.get_file_metadata('songs', '', file_or_dir.name))
-#synchronize_songs_with_server()
-#
-# def enumerate_local_songs():
-#     for song_filename in os.listdir('./songs'):
-#         print(song_filename)
-#         local_mtime = os.path.getmtime('./songs/' + song_filename)
-#         print(datetime.datetime.fromtimestamp(local_mtime))
-#
-# # service.set_file_metadata('songs', '', 'cc_008',
-# #                                {'name': 'Chide Me, O LORD, No Longer',
-# #                                 'psalm': '6',
-# #                                 'number': 'CC 8'})
-#  #metadata = service.get_file_metadata('songs', '', 'cc_008')
-# # song = service.get_file_to_text('songs', '', 'cc_008')
-# #print(metadata)
-#
-# # Performance analysis on 400 songs
-# # 0.9727 seconds to print names
-# # 34.20828866958618 to print metadata
 

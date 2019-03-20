@@ -1,0 +1,40 @@
+title      Come Down, O Love Divine
+hymnal     Cantus Christi
+page       278
+author     Bianco da Siena, d. 1434
+translator Richard F. Littledale, 1867
+
+tune       DOWN AMPNEY
+metre      6 6 11. 6 6 11
+composer   Ralph Vaughan Williams, 1906
+key        D
+rhythm     4 : 4
+tempo      180
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+voice      unison  E4 to D5
+
+soprano    d-/2 e f  | a/2   b/2   | a/1 | a/2 b  a | d - c b/2    | a/2 a/2
+alto       a/2  a d  | d - c b - c | d/1 | f/2 f  e | d - e d/2    | c/2 d/2
+tenor      f/2  a d- | e/2   g - e | f/1 | a/2 d- e | f - a a - g# | a/2 f/2
+bass       d/2  c d  | a/2   g-/2  | d/1 | d/2 d  c | b - c e/2    | a/2 d/2
+
+soprano    b  a g f | e d- e f/8 g/8 | e/2      d-/2
+alto       d  c d d | b d  d d       | d - c    d/2
+tenor      g  e g a | g a  b b       | a. - g/8 f/2
+bass       g- a b d | g f  g e       | a/2      d/2
+
+soprano    d/2  c b | a/2   b/2   | a/1  | cn/2  b a | g/2   f/2   | e/2  e/2
+alto       f/2  f d | f/2   e - d | c/1  | e/2   d d | b - c d/2   | c/2  c/2
+tenor      b/2  a b | d - c b/2   | c/1  | g - a b f | g/2   a - b | c/2  a/2
+bass       b+/2 f g | d - f g#/2  | a+/1 | e - f g d | e/2   f - g | a+/2 a - g-
+
+soprano    a  b  a g       | f d- e f/8 g/8 | e/2      d-/2
+alto       d  d  c d/8 e/8 | d d  d d       | d - c    d/2
+tenor      a  g  e b       | a a  b g       | a. - g/8 f/2
+bass       f- g- a b/8 c/8 | d f  g e       | a/2      d/2

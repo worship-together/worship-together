@@ -1,0 +1,51 @@
+title      O Lord, We Praise Thee
+hymnal     Cantus Christi
+page       318
+author     st. 1, author unknown, c. 1400
+author     st 2-3, Marin Luther, 1524
+translator composite
+
+tune       GOTT SEI GELOBET
+metre      11 8. 11 8. 5. 9 9. 6 7. 5
+composer   German melody, c. 1400
+harmony    Lucas Osiander, 1586
+key        C
+rhythm     0 : 4
+tempo      110
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g g/8 g/8  a  g c/8. d/16 c/8 b/8  a  g | a       c g f
+alto       d e/8 d/8  f# d e/8. g/16 e/8 d/8  d  d | f       e e d
+tenor      g c/8 b/8  d  b g/8. b/16 g/8 g/8  f# b | c/8 a/8 g c a
+bass       g c/8 g-/8 d  g c/8. g/16 c/8 g-/8 d  g | f       c c d
+
+soprano    e       d- c- c-/2 | g g/8 g/8  a  g c/8. d/16 c/8 b/8  a  g
+alto       c       b  g- a/2  | d e/8 d/8  f# d e/8. g/16 e/8 d/8  d  d
+tenor      a/8 g/8 g  e  f/2  | g c/8 b/8  d  b g/8. b/16 g/8 g/8  f# b
+bass       a/8 c/8 g- c  f-/2 | g c/8 g-/8 d  g c/8. g/16 c/8 g-/8 d  g
+
+soprano    a       c g f e       d- c- c-/2 | g  g/8 g/8  a/8. - g/16 - f# g/2
+alto       f       e e d c       b  g- a/2  | d  e/8 d/8  f# - d           d/2
+tenor      c/8 a/8 g c a a/8 g/8 g  e  f/2  | b  c/8 b/8  d - a/8 - f#/8   b/2
+bass       f       c c d a/8 c/8 g- c  f-/2 | g- c/8 g-/8 d/2              g-/2
+
+soprano    g g a b c  g/8 g/8  a  g | b c  d  d
+alto       d e c g g  e/8 d/8  f# d | g e  f# g
+tenor      b b a d e+ c/8 b/8  d  b | d c  a  b
+bass       g e f g c  c/8 g-/8 d  g | g a+ d  g
+
+soprano    c/8. b/16  a/8 a/8 g/8. - f/16 - e  d-/2 | e f g/2  e f g/2
+alto       e/8. g/16  f/8 f/8 e/8. - d/16 - c# a/2  | c c d/2  c c d/2
+tenor      g/8. d/16  d/8 c/8 c/8. - a/16 - a  f#/2 | g a b/2  g a b/2
+bass       c/8. g-/16 d/8 f/8 c/8. - d/16 - a  d/2  | c a g-/2 c a g-/2
+
+soprano    d- f e       d- e d- c-/2 | g  g/8 g/8  a/8. - g/16 - f# g/1
+alto       a  d c       b  c b  g-/2 | d  e/8 d/8  f# - d           d/1
+tenor      f  a a/8 g/8 g  g g  e/2  | b  c/8 b/8  d - a            b/1
+bass       d  d a/8 c/8 g- c g- c/2  | g- c/8 g-/8 d/2              g-/1

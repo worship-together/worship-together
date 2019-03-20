@@ -1,0 +1,39 @@
+title      That Easter Day with Joy Was Bright
+hymnal     Cantus Christi
+page       271
+author     Latin hymn, 4th or 5th century
+translator John Mason Neale, 1851; alt.
+
+tune       ERSCHIENEN IST
+metre      8 8. 8 8. 4
+composer   Nikolaus Herman, 1560
+key        C
+rhythm     3 : 4
+tempo      140
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    d- d- d- | a/2 b  | c. - b/8 a  | g/2.
+alto       a  a  a  | c/2 d  | e. - d/8 d  | b/2.
+tenor      f  f  f  | e/2 g  | g/2      f# | g/2.
+bass       d  d  d  | a/2 g- | c. - g/8 d  | g-/2.
+
+soprano    a  b c# | d/2 a | c b/2    | a/2.  | a c a
+alto       d  d e  | f/2 d | e e/2    | c#/2. | d e c
+tenor      f# g g  | a/2 f | a a - g# | a/2.  | f g f
+bass       d  g e  | d/2 d | a e/2    | a/2.  | d c f
+
+soprano    g. - f/8 e | f  d-/2 | c-/2. | c- f  g
+alto       c/2      c | c  b/2  | c/2.  | c  d  e
+tenor      g/2      g | a  g/2  | e/2.  | e  f  bb
+bass       e. - d/8 c | f- g-/2 | c/2.  | c  bb g-
+
+soprano    a/2  g | f c/2 | a/2 g | f. - g/8  e  | d-/2.
+alto       f/2  e | d c/2 | c/2 e | d/2       c# | d/2.
+tenor      c/2  c | a g/2 | f/2 c | a. - bb/8 a  | f#/2.
+bass       f-/2 c | d e/2 | f/2 c | d. - g-/8 a  | d/2.

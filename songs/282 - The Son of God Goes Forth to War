@@ -10,7 +10,7 @@ key        G
 rhythm     3 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,23 @@ soprano    e+  e+/8 e+     e+/8 | d/8. c/16   b/8  a g/16 b/16 | b/8. a/16 g/8 a
 alto       c+  b+/8 a+     a+/8 | b+/8. a+/16 g/8  f g/16 f/16 | e/8. f/16 e/8 f/8 d | b. b
 tenor      c/8 d/8  e+/8 d d/8  | d           e+/8 d d/8       | e+        b/8 d/8 a | g. g
 bass       a+       g/8  f f/8  | g           g/8  a+ a+/8       | g/8 f/8   e/8 d/8 d | e. e
+
+verse      	The Son    of  God    goes  forth to  war,  A     king  - ly   crown  to  gain;
+verse       The mar - tyr  first, whose ea -  gle eye   Could pierce  be - yond   the grave,
+verse       A glo  - rious band,  the   cho - sen few   On    whom   the   Spir - it  came,
+verse	    A no   -  ble  ar  -  my,   men   and boys, The   ma -  tron   and   the  maid,
+
+verse       His blood-red ban - ner streams a - far: Who fol - lows in  His train?
+verse       Who saw   his Mas - ter in      the sky, And called on  Him to  save:
+verse       Twelve val - iant saints, their hope they knew, And mocked the cross and flame.
+verse       A - round the Sav - ior’s throne re - joice, In robes of light ar - rayed.
+
+verse       Who  best can  drink  his cup of  woe,    Tri - um - phant ov -  er  pain,
+verse       Like Him, with par -  don on  his tongue, In   midst of    mor - tal pain,
+verse       They met the ty - rant’s bran - dished steel, The li - on’s gor - y mane
+verse       They climbed the steep as - cent of heav'n, Through per - il, toil, and pain:
+
+verse       Who  pa -   tient bears  his  cross be - low,  He  fol - lows in His   train.
+verse       He   prayed for   them   that did   the wrong: Who fol - lows in His   train?
+verse       They bowed  their necks, the  death to   feel: Who fol - lows in their train?
+verse       O    God,   to    us     may  grace be  given  To  fol - low  in their train.

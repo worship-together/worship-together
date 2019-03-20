@@ -1,0 +1,40 @@
+title      At the Lamb's High Feast We Sing
+hymnal     Cantus Christi
+page       204
+author     Latin hymn, 17th century
+translator Robert Campbell, 1849
+
+tune       ALLE MENSCHEN MUSSEN STERBEN [SALZBURG]
+metre      7 7. 7 7. D.
+composer   Jakob Hintze, 1678
+harmony    J. S. Bach
+key        D
+rhythm     4 : 4
+tempo      140
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    a d       a  b       | a.       g/8 f/2  | a a       g       f | e.      d-/8      d-/2
+alto       d d       d  d       | d        c   d/2  | d d/8 c/8 b/8 c/8 d | d       c         d/2
+tenor      f f/8 g/8 a  g/8 f/8 | e/8 d-/8 e   d-/2 | f f       g       a | b       a/8. g/16 f/2
+bass       d b       f- g-      | a        a   d-/2 | d d       e       f | g/8 e/8 a+/8 a/8  d/2
+
+soprano    a d       a  b       | a.       g/8 f/2  | a a       g       f | e.      d-/8      d-/2
+alto       d d       d  d       | d        c   d/2  | d d/8 c/8 b/8 c/8 d | d       c         d/2
+tenor      f f/8 g/8 a  g/8 f/8 | e/8 d-/8 e   d-/2 | f f       g       a | b       a/8. g/16 f/2
+bass       d b       f- g-      | a        a   d-/2 | d d       e       f | g/8 e/8 a+/8 a/8  d/2
+
+soprano    e e f/8 g#/8 a       | a.     g#/8 a/2 | b.      c/8 d       d       | c. c/8 b/2
+alto       c c d        c       | f  e/8 d/8  c/2 | e/8 f/8 g   f       f       | f. e/8 d/2
+tenor      a a a        a       | b  b        a/2 | g.      a/8 b       b       | b  a#  b/2
+bass       a a d        f/8 e/8 | d  e        a/2 | e       e   b/8 c/8 d/8 e/8 | f  f   b/2
+
+soprano    f f b       a | a        g#       a/2 | b  a       g       f | e.      d-/8      d-/2
+alto       d d d       c | d        d        c/2 | d  d/8 c/8 b/8 c/8 d | d       c         d/2
+tenor      a a g/8 f/8 e | d-/8 f/8 e/8 d-/8 e/2 | g  f       g       a | b       a/8. g/16 f/2
+bass       d d g-      a | b        b        a/2 | g- d       e       f | g/8 e/8 a+/8 a/8  d/2

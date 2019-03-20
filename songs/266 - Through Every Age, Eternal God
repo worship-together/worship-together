@@ -10,7 +10,7 @@ key        Ab
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -46,3 +46,39 @@ soprano    g/2 f a       | g. f/8        e       f       | c/8. d/16 c/8 b/8 a g
 alto       c/2 c f       | f  e          c       a       | c/2.                c | c/1
 tenor      e/2 a f       | c/8. d/16 c/8 b/8 c/8 b/8 a/8 | g/2.                e | f/1
 bass       c/2 a a/8 b/8 | c. d/8        e       f       | c/2.                c | f-/1
+
+verse      Through  ev - 'ry   age,    e -  ter -  nal   God,
+verse      Long    hadst thou reigned ere   time    be - gan,
+verse      But      man, weak  man,   is    born    to   die,
+verse      Death,  like   an    o  -  ver - flow - ing  stream,
+verse      Teach    us,   O    Lord,  how  frail    is   man;
+
+verse      Thou  art   our  rest,   our safe   a - bode;
+verse      Or    dust  was  fash - ioned in - to   man;
+verse      Made   up    of  guilt   and  van - i - ty;
+verse      Sweeps us     a - way;   our life's a   dream-
+verse      And   kind - ly  length - en  out  the  span,
+
+verse      High    was    thy throne ere heav'n   was  made,
+verse      And    long    Thy king - dom  shall   en - dure,
+verse      Thy    dread - ful sen - tence, Lord,  was  just--
+verse      An      emp -  ty  tale--  a    morn - ing  flow'r,
+verse      Till, cleansed by  grace,  we   all    may  be
+
+verse      Or    earth thy hum -  ble  foot - stool laid.
+verse      When  earth and time   shall be     no   more.
+verse      Re -  turn, ye  sin -  ners, to    your  dust.
+verse      Cut   down  and with - er'd  in     an   hour.
+verse      Pre - pared to  die,   and  dwell  with  thee.
+
+verse      High    was    thy throne ere heav'n   was  made,
+verse      And    long    Thy king - dom  shall   en - dure,
+verse      Thy    dread - ful sen - tence, Lord,  was  just--
+verse      An      emp -  ty  tale--  a    morn - ing  flow'r,
+verse      Till, cleansed by  grace,  we   all    may  be
+
+verse      Or    earth thy hum -  ble  foot - stool laid.
+verse      When  earth and time   shall be     no   more.
+verse      Re -  turn, ye  sin -  ners, to    your  dust.
+verse      Cut   down  and with - er'd  in     an   hour.
+verse      Pre - pared to  die,   and  dwell  with  thee.

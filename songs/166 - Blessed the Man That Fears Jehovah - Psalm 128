@@ -11,7 +11,7 @@ key        Ab
 rhythm     3 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -42,3 +42,18 @@ soprano    e+. c/8  b/8 a/8 | b a g/8 f/8 | e/8 a/8 c  b | a/2
 alto       e.  a+/8 g/8 f/8 | f f e/8 d/8 | c/8 e/8 e  e | e/2
 tenor      c.  e+/8 d/8 c/8 | d d a/8 a/8 | a/8 c/8 e+ d | c/2
 bass       a+. a+/8 e/8 f/8 | d d d/8 d/8 | e/8 e/8 e  e | a/2
+
+verse      Blessed the man that fears Je - ho - vah And   that walk - eth   in   His  ways.
+verse      Lo,     on  him that fears Je - ho - vah Shall this bless - ed - ness at - tend
+
+verse      Thou shalt eat  of   thy hands la - bor; And   be pros - pered all    thy days.
+verse      For  Je  - ho - vah, out of     Zi - on,  Shall to thee   His  bless - ing send
+
+verse      Like   a   vine with fruit a -  bound - ing In  thy house thy  wife  is   found
+verse      Thou shalt see  Je -  ru - slem pros - per All thy days  til life shall cease
+
+verse      And  like  ol - ive plants,  thy   chil - dren Com - pass - ing  thy   ta - ble round
+verse      Thou shalt see  thy  chil - drens chil - dren Un  - to      Is - ra - el    be  peace.
+
+verse      And  like  ol - ive plants,  thy   chil - dren Com - pass - ing  thy   ta - ble round
+verse      Thou shalt see  thy  chil - drens chil - dren Un  - to      Is - ra - el    be  peace.

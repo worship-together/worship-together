@@ -10,7 +10,7 @@ key        G
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -20,7 +20,7 @@ voice      bass    A2 to G3
 soprano    g/2  g. a/8 | b/2.  d  | c e f a | g/2.  d- | e a f d-
 alto       b/2  d. d/8 | d/2.  d  | e c c/2 | b/2.  b  | c/2 a/2
 tenor      d-/2 g. f/8 | g/2.  b  | a/2 a f | g/2.  g  | g e a f
-bass       g-/2 b. d/8 | g d b g- | c/2 d/2 | g-/2. g  | c/2 d c
+bass       g-/2 b. d/8 | g d b g- | c/2 d/2 | g-/2. g- | c/2 d c
 
 soprano    g/2 a   g  | f/2 e/2  | d-/1 | d-/2 f g | g/2  f d- | g/2 b/2
 alto       d/2 d/2    | d/2 c#/2 | d/1  | d/2  d d | d/2.   d  | d/2 d/2
@@ -46,3 +46,31 @@ soprano    b/2.  b | e+/2 e+/2 | d/2 c a | g/2 f/2 | g/1
 alto       d d d R | R g   g g | g/2 e/2 | d/2 c/2 | b/1
 tenor      g b b R | R c   c c | b/2 a c | b/2 a/2 | g/1
 bass       g g g R | R c   e c | g/2 c/2 | d/2 d/2 | g-/1
+
+verse      And  can    it   be     that    I  should gain   An  in - t'rest
+verse      'Tis mys - t'ry  all!  Th'Im - mor - tal  dies!  Who can   ex -
+verse      He   left   His  Fa  - ther's throne  a - bove,  So  free, so
+verse      Long my     im - pris - oned   spir - it  lay   Fast bound in
+verse      No   con - dem - na  -  tion   now    I   dread; Je - sus, and
+
+verse      in    the  Sav - ior's blood?  Died  He   for    me,    who caused    His
+verse      plore His strange de - sign?   In    vain the   first - born ser  -   aph
+verse      in -  fi - nite   His  grace;  Hum - bled Him - self--   so  great    His
+verse      sin   and  na - ture's night;  Thine eye  dif - fused    a   quick - 'ning
+verse      all   in   Him    is   mine!   A  -  live in    Him,     my  liv  -   ing
+
+verse      pain?  For   me,  who  Him     to   death  pur - sued?   A - maz - ing
+verse      tries  To   sound the depths   of   love    di - vine.  'Tis mer - cy
+verse      love,  And  bled  for  all    His    cho - sen   race.  'Tis mer - cy
+verse      ray;   I    woke, the  dun -  geon flamed  with  light;  My chains fell
+verse      Head,  And clothed in right - eous - ness   di - vine,  Bold  I    ap -
+
+verse      love!  How    can   it    be   That Thou,  my    God,  should   die   for   me?
+verse      all!   Let   earth   a - dore,  Let  an -  gel  minds    in -  quire   no   more.
+verse      all,   im -  mense  and  free;  For,  O     my   God,    it    found   out  me.
+verse      off,   my    heart  was  free;   I   rose, went forth    and    fol - lowed Thee.
+verse      proach th'e - ter - nal throne, And claim  the  crown, through Christ   my  own.
+
+verse      A - maz - ing love!  How can it
+
+verse      be That Thou, my God, should die for me!

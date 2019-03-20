@@ -12,7 +12,7 @@ key        G
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,25 @@ soprano    a c  b a | g/2. a | b  g e g | a f e d- | e/2.
 alto       g/2.   f | g/2. f | g  d c d | e c b b  | b/2.
 tenor      e+/2 d d | b/2. d | d  g g b | a/2 g f  | g/2.
 bass       c a  b d | e/2. d | g- b c b | c a b b  | e/2.
+
+verse      O come, O come, Em - man - u - el, And ran - som cap - tive
+verse      O come, O come, Thou Lord of might, Who to Thy tribes on
+verse      O come, Thou Rod of Jes - se, free Thine own from Sa - tan's
+verse      O come, Thou Day - spring, come and cheer Our spir - its by Thine
+verse      O come, Thou Key of Da - vid, come, And o - pen wide our
+
+verse      Is - ra - el, That mourns in lone - ly ex - ile here Un -
+verse      Si - nai's height In an - cient times did give the law In
+verse      tyr - an - ny; From depths of hell Thy peo - ple save, And
+verse      ad - vent here; Dis - perse the gloom - y clouds of night, And
+verse      heav'n - ly home.  Make safe the way that leads on high, And
+
+verse      til the Son of God ap - pear.
+verse      cloud and maj - es - ty and awe.
+verse      give them vic - t'ry o'er the grave.
+verse      death's dark shad - ows put to flight.
+verse      close the path to mis - er - y.
+
+verse      Re - joice! Re - joice! Em -
+
+verse      man - u - el Shall come to thee, O Is - ra - el.

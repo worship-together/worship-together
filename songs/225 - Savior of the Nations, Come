@@ -12,7 +12,7 @@ key        Bb
 rhythm     8 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -28,3 +28,17 @@ soprano    b c d b c  b/8 a/8  g/2  | g g f b a/8  g/8 a  g/2
 alto       d f f g g  g/8 f#/8 g/2  | e e d f f#/8 g/8 f# g/2
 tenor      f a b b e+ d        b/2  | b c a d d/8  b/8 a  bn/2
 bass       b f b e c  d        g-/2 | e c d b d        d  g-/2
+
+verse      Sav -  ior   of    the    na -  tions, come,  Vir - gin's Son,  make here   thy   home!
+verse      Not     by   hu -  man  flesh    and  blood,  By     the  Spir - it   of    our   God,
+verse      Won - drous birth!  O     won - drous Child   Of     the  Vir -  gin  un -  de - filed!
+verse      From   the   Fa - ther  forth    He   came    And    re - turn - eth  to    the   same,
+verse      Thou   the   Fa - ther's  on  -  ly    Son,   Hast   o'er sin    the  vic - t'ry   won.
+verse      Praise  to   God   the    Fa  - ther  sing.  Praise  to   God    the  Son,  our   King.
+
+verse      Mar  -  vel  now,    O  heav'n and   earth,  That  the   Lord   chose   such    a    birth.
+verse      Was     the  Word   of   God   made  flesh-- Wom - an's   Off - spring, pure   and   fresh.
+verse      Tho'     by   all   the world  dis - owned, Still   to    be      in   heav'n   en - throned.
+verse      Cap  -  tive lead - ing death  and   hell,   High  the   song     of     tri - umph  swell!
+verse      Bound - less shall  thy king - dom    be;    When  shall  we     its     glo - ries  see?
+verse      Praise   to   God   the Spir - it     be      Ev  - er    and     e  -   ter - nal - ly.

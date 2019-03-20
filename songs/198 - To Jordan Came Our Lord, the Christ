@@ -8,13 +8,43 @@ tune       CHRIST UNSER HERR ZUM JORDAN KAM
 metre      8 7. 8 7. 8 7. 8 7 7
 composer   Martin Luther, 1524
 harmony    Lucas Osiander, 1586
-key        Ab
+key        Bb
 rhythm     0 : 4
-tempo      130
+tempo      140
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    c-/2 e f g f b a  g  | R/8 g/8  b. a/8 g  f
+alto       c/2  c d e d f f  d  | R/8 d/8  e  c   e  d
+tenor      g/2  g b b b d c  b  | R/8 b/8  g  a   b  b
+bass       c/2  c b e b b f- g- | R/8 g-/8 e- f-  e- b
+
+soprano    e - d- c-/2 | c-/2 e f g f b a  g
+alto       c - dn g-/2 | c/2  c d e d f f  d
+tenor      g/2    e/2  | g/2  g b b b d c  b
+bass       c - g- c/2  | c/2  c b e b b f- g-
+
+soprano    R/8 g/8  b. a/8 g  f e - d- c-/2 | R/8 c-/8 f  f d-
+alto       R/8 d/8  e  c   e  d c - dn g-/2 | R/8 a/8  c  d b
+tenor      R/8 b/8  g  a   b  b g/2    e/2  | R/8 f/8  a  b f
+bass       R/8 g-/8 e- f-  e- b c - g- c/2  | R/8 f-/8 f- b b
+
+soprano    g  g f# g  | R/8 g/8  c  c  d b/8 c - b/8 - a g
+alto       d  e d  d  | R/8 d/8  f  f  b d/8 f - d/8 - f d
+tenor      b  c a  b  | R/8 b/8  a  a  f f/8 a - b/8 - d b
+bass       g- c d  g- | R/8 g-/8 f- f- b b/8 f - g/8 - d g-
+
+soprano    R/8 g/8  b  a  g f g        e d- | R/8 c-/8 e f g
+alto       R/8 d/8  d  f  e d e/8 d/8  c bn | R/8 g-/8 c d e
+tenor      R/8 b/8  g  c  c a c/8 g/8  g g  | R/8 e/8  g b b
+bass       R/8 g-/8 g- f- c d c/8 bn/8 c g- | R/8 c/8  c b e
+
+soprano    e/8 f - e/8 - d- c- | R/8 c/8 c  c  d. c/8 b - a           g/1
+alto       b/8 d - c/8 - bn g- | R/8 e/8 f  f  f  f   d - f#          d/1
+tenor      g/8 b - g/8 - g  e  | R/8 g/8 a  a  b  a   b/8. - c/16 - d bn/1
+bass       e/8 b - c/8 - g- c  | R/8 c/8 f- f- b  f   g - d           g-/1

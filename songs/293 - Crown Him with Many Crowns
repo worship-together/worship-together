@@ -11,7 +11,7 @@ key        D
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,27 @@ soprano    d. c/8 b a | g e  f a  | g  f e  e   | d-/1
 alto       d  d   d d | d c  d d  | d  d d  c   | d/1
 tenor      a  a   g a | b a  a a  | b  a a. g/8 | f/1
 bass       f  f   g f | e a+ d f- | g- d a  a   | d/1
+
+verse      Crown Him with man - y crowns, The   Lamb  up  -  on     His throne; Hark!
+verse      Crown Him the  Lord of life!   Who   tri - umphed o’er   the grave,  Who
+verse      Crown Him the  Lord of love!   Be -  hold  His    hands  and side,   Rich
+verse      Crown Him the  Lord of Peace,  Whose pow'r  a     scep - ter sways   From
+verse      Crown Him the  Lord of years,  The   Po -  ten  - tate   of  time,   Cre -
+
+verse      How     the   heav’n - ly   an -  them   drowns   All  mu  - sic   but  its    own!     A -
+verse      rose    vic - tor  -  ious  in     the   strife   For  those  He   came  to    save.    His
+verse      wounds, yet   vis  -   i -  ble     a -  bove,    In   beau - ty   glo - ri -  fied.    No
+verse      pole    to    pole,   that  wars   may   cease,   Ab - sorbed in  prayer and   praise.  His
+verse      a   -   tor   of      the   roll - ing   spheres, In - ef  -  fa - bly   sub - lime.    All
+
+verse      wake,  my   soul   and sing   Of  Him   Who  died   for   thee,  And
+verse      glor - ies  now    we  sing,  Who died, and  rose    on   high,  Who
+verse      an  -  gel  in     the sky    Can ful - ly   bear   that  sight, But
+verse      reign shall know   no  end,   And round His  pierc - ed   feet   Fair
+verse      hail,  Re - deem - er, hail!  For Thou  hast died    for  me;    Thy
+
+verse      hail   Him  as    thy match - less  King   Through   all    e -  ter - ni - ty.
+verse      down - ward bends His burn -  ing   eye    At        mys - ter - ies   so   bright.
+verse      died    e -  ter - nal life    to   bring, And      lives  that  death may  die.
+verse      flow'rs of  Par - a - dise     ex - tend   Their    fra - grance  ev - er   sweet.
+verse      praise and  glo - ry  shall   not   fail   Through - out    e -  ter - ni - ty.

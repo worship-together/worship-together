@@ -7,12 +7,42 @@ tune       SOVEREIGNTY (WONDERS)
 metre      L.M. (with Refrain)
 composer   John Newton, 1725-1807
 key        C
-rhythm     4 : 4
-tempo      130
+rhythm     0 : 4
+tempo      160
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g/2 g a | g - f e - a | g/2 e/2 | d-/2 e - f | g/2 a - b
+alto       c/2 c c | c/2   c/2   | c/2 c/2 | b/2  c - b | c/2 c - d
+tenor      e/2 e f | e - a g - f | e/2 g/2 | g/2  g/2   | g/2 f/2
+bass       c/2 c c | c/2   c/2   | c/2 c/2 | g-/2 c - d | e/2 d/2
+
+soprano    c/2 b/8. - a/16 - g  | g/2 f#/2 | g/1  | g. - f/8 e f | g. - a/8 g   f
+alto       e/2 d/2              | c/2 a/2  | b/1  | e. - d/8 c d | e. - f/8 - e d
+tenor      e/2 g/2              | e/2 d-/2 | d-/1 | c/2      g g | c/2.         g
+bass       c/2 g-/8. - a/16 - b | c/2 d/2  | g-/1 | c/2      c c | c/2.         c
+
+soprano    e - f g - a | g/2. g | a - g f - e | d-. - e/8 - d- a  | a - g g/8 - f/8 - e
+alto       c - d e - f | e/2. e | f - e d - c | b. - c/8 - b   f  | f - e e/8 - d/8 - c
+tenor      g/2   c/2   | c/2. c | c/2   g/2   | g/2.           a  | c/2   g/2
+bass       c/2   c/2   | c/2. c | c/2   b - c | g-/2.          f- | c/2   c/2
+
+soprano    e/2 - d- g | a - g a - b  | c/2.         f | e/2 d-/2 | c-/1
+alto       c/2 - b  c | c/2   a+ - g | g. - f/8 - e d | c/2 b/2  | c/1
+tenor      g/2.     g | f - g f/2    | e. - f/8 - g a | g/2 f/2  | e/1
+bass       g-/2.    e | f - e d/2    | c. - d/8 - e f | g/2 g-/2 | c/1
+
+soprano    c c       c       | b/2 g | g/2           f# | g/2  g  | g       R       g       | a       R       a
+alto       e e       e       | d/2 d | e - d         d  | d/2  d  | e       R       c       | c       R       f
+tenor      g g       g       | g/2 g | c - b         a  | b/2  b  | c       R       bb      | a       R       a
+bass       c c/8 d/8 e/8 f/8 | g/2 b | c/8 - a/8 - d d  | g-/2 g- | c/8 b/8 c/8 d/8 e/8 c/8 | f/8 e/8 d/8 e/8 f/8 d/8
+
+soprano    b        R       b       | c       R        g       | g/2 g        | a/2 d | b/2 b   | c/2.
+alto       d        R       d       | e       R        b       | c/2 e        | c/2 f | d/2 d  | e/2.
+tenor      g        R       g       | g       R        g/8 f/8 | e/2 c/8 bb/8 | a/2 a | g/2 g  | g/2.
+bass       g/8 f#/8 g/8 f/8 e/8 d/8 | c/8 e/8 g/8 f/8  e/8 d/8 | c/2 c        | f/2 d | g/2 g- | c/2.

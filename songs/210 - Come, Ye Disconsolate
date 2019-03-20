@@ -1,0 +1,40 @@
+title      Come, Ye Disconsolate
+hymnal     Cantus Christi
+page       210
+author     st. 1-2, Thomas Moore, 1816
+author     st. 3, Thomas Hastings, 1831
+
+tune       CONSOLATOR
+metre      11 10. 11 10
+composer   Samuel Webbe, Sr.
+composer   Collection of Motetts or Antiphons, London, 1792
+key        C
+rhythm     4 : 4
+tempo      130
+
+status     header  tune  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    g/2 e c- | a. g/8 g/2 | f. - g/8  a b | c/2 g/2
+alto       c/2 c c  | c. c/8 c/2 | c/2       c f | e/2 c/2
+tenor      e/2 g e  | f. e/8 e/2 | c/2       c g | g/2 e/2
+bass       c/2 c c  | c. c/8 c/2 | a+. - e/8 f d | c/2 c/2
+
+soprano    e/2 e e  | f. f/8 a/2  | g/2 f# f# | g/1
+alto       c/2 c c  | c. c/8 f/2  | d/2 c  c  | b/1
+tenor      g/2 g g  | c. c/8 c/2  | b/2 a  a  | g/1
+bass       c/2 c bb | a. a/8 f-/2 | d/2 d  d  | g-/1
+
+soprano    c/2 b a       | g. f/8 e/2 | c/2 d/8 c/8 b/8 a/8 | g. - f/8 e/2
+alto       e/2 f f       | e. d/8 c/2 | e/2 f       f       | e. - d/8 c/2
+tenor      g/2 g a/8 b/8 | c. g/8 g/2 | g/2 a       a       | c. - g/8 g/2
+bass       c/2 c c       | c. c/8 c/2 | c/2 f       f       | c/2      c/2
+
+soprano    g - e+ e+ c | c a/2 f | e/2 d-. c-/8 | c-/1
+alto       e - g  g  e | f f/2 d | c/2 b.  c/8  | c/1
+tenor      g - c  c  g | a c/2 a | g/2 f.  e/8  | e/1
+bass       c/2    c  c | f f/2 f | g/2 g-. c/8  | c/1

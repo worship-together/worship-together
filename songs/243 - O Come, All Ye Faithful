@@ -12,7 +12,7 @@ key        G
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,20 @@ soprano    b/2 a  b | c       b a g        | f/2 g c | b/2 a. g/8  | g/2.
 alto       g/2 f  g | e/8 f/8 g d d/8 c#/8 | d/2 d e | d/2 d. b/8  | b/2.
 tenor      g/2 d- d | c       d a a        | a/2 g/2 | g/2 f. g/8  | g/2.
 bass       R/2.   g | a+      g f e        | d c b c | d/2 d. g-/8 | g/2.
+
+verse      O come, all    ye   faith - ful, joy - ful and   tri - um - phant, O come  ye,  O
+verse        God   of           God,        Light     of         Light           Lo,  He   ab -
+verse        Sing, choirs of    an -  gels, sing  in  ex -  ul  - ta - tion;    Sing, all  ye
+verse        Yea,  Lord,  we   greet  Thee, born this hap - py   morn - ing;     Je - sus, to
+
+verse      come       ye   to   Beth - le - hem.   Come and be - hold Him
+verse      hors      not  the   Vir - gin's womb;  Ver - y       God, be -
+verse      cit - i - zens of  heav'n    a - bove!  Glo - ry to   God,
+verse      Thee       be        glo  - ry  giv'n;  Word  of the  Fa - ther,
+
+verse      born  the King    of    an - gels:
+verse      got - ten, not   cre -  at -  ed:
+verse      in        the    high   -     est:
+verse      now   in  flesh  ap -  pear - ing:
+
+verse      O come, let us a - dore Him, O come, let us a - dore Him, O come, let us a - dore Him, Christ the Lord!

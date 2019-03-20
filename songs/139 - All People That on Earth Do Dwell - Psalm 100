@@ -11,7 +11,7 @@ key        G
 rhythm     4 : 4
 tempo      150
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,18 @@ soprano    b g        a c  | b/2 a/2 | g/2
 alto       d g f e/8 f/8   | g/2 f/2 | d/2
 tenor      g b/8 c#/8 d e+ | d/2 d c | b/2
 bass       g e        d a  | b c d/2 | g-/2
+
+verse      All  peo - ple that on  earth  do  dwell,  Sing
+verse      Know that  the LORD is   God   in - deed;  With -
+verse      O     en - ter then His gates with praise, Ap -
+verse      For  why!  the LORD our  God   is   good;  His
+
+verse      to      the LORD with cheer - ful voice.  Him   serve with mirth, His
+verse      out     our aid   He   did    us  make;    We    are   His folk,  He
+verse      proach with joy  His  courts  un - to;   Praise, laud, and bless  His
+verse      mer  -  cy   is  for - ev -   er  sure;   His   truth  at   all   times
+
+verse      praise forth tell, Come ye    be - fore  him and  re - joice.
+verse      doth    us   feed, And  for   His sheep   He doth us   take.
+verse      Name    al - ways, For  it    is   seem - ly  so  to   do.
+verse      firm  - ly  stood, And shall from  age    to age  en - dure.

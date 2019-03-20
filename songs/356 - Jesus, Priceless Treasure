@@ -10,11 +10,41 @@ composer   Johann Cruger, "Praxis Pietatis Medica", 1653
 harmony    J. S. Bach, 1723
 key        Eb
 rhythm     4 : 4
-tempo      130
+tempo      120
 
-status     header
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    g g f        e    | d-/2          c-/2 | g       an       b g
+alto       e d c/8 bn/8 c    | c - bn        g-/2 | e/8 d/8 c        b b
+tenor      c g a/8 d-/8 e    | a - g/8 - f/8 e/2  | c/8 b/8 an/8 g/8 f e/8 f/8
+bass       c b a.       g-/8 | f- - g-       c/2  | c       f/8  e/8 d e/8 d/8
+
+soprano    c/2                   bn/2 | c/8 d/8 e+      d. d/8 | c/1
+alto       e/8 - f/8 - g         g/2  | e/8 f/8 g       g. f/8 | e/1
+tenor      g - e+                d/2  | c       c       c  bn  | g/1
+bass       c/8 - d/8 - e/8 - f/8 g/2  | a+      g/8 f/8 g  g-  | c/1
+
+soprano    g g f        e    | d-/2          c-/2 | g       an       b g
+alto       e d c/8 bn/8 c    | c - bn        g-/2 | e/8 d/8 c        b b
+tenor      c g a/8 d-/8 e    | a - g/8 - f/8 e/2  | c/8 b/8 an/8 g/8 f e/8 f/8
+bass       c b a.       g-/8 | f- - g-       c/2  | c       f/8  e/8 d e/8 d/8
+
+soprano    c/2                   bn/2 | c/8 d/8 e+      d. d/8 | c/1
+alto       e/8 - f/8 - g         g/2  | e/8 f/8 g       g. f/8 | e/1
+tenor      g - e+                d/2  | c       c       c  bn  | g/1
+bass       c/8 - d/8 - e/8 - f/8 g/2  | a+      g/8 f/8 g  g-  | c/1
+
+soprano    g       g a g | f. f/8     e/2  | g an      b g
+alto       e       e f e | e  d       b/2  | e e       f e/8 f/8
+tenor      c       b b b | c  b/8 a/8 g/2  | b c       b b
+bass       c/8 d/8 e d e | a  b       e-/2 | e d/8 c/8 d e/8 d/8
+
+soprano    c  b/8 an/8 an/2           | g/2  g g        | f        e/8 d-/8 d-/2          | c-/1
+alto       g  g        g - f#         | d/2  e d        | c        c        c - bn        | g-/1
+tenor      e+ d        e+ - d/8 - c/8 | bn/2 c d/8 e+/8 | f+/8 f/8 g        a - g/8 - f/8 | e/1
+bass       c  g-       c - d          | g-/2 c b        | a        g-       f- - g-       | c/1

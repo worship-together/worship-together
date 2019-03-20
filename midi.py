@@ -236,9 +236,3 @@ class Song:
 	@property
 	def is_unison(self):
 		return self.module.is_unison
-
-
-songs = [Song(filename)
-         for filename in os.listdir('./songs')
-         if is_song(filename)]
-
