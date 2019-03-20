@@ -15,16 +15,27 @@ tempo      180
 
 status     header  tune  checked
 
-voice      soprano E4 to D5
-voice      alto    A3 to G4
-voice      tenor   E3 to D4
-voice      bass    A2 to G3
-voice      unison E4 to D5
+voice      unison   E4 to D5
+voice      piano-a  A3 to G4
+voice      piano-t  E3 to D4
+voice      piano-b  A2 to G3
 
-unison     e e f/8 e/8 | c- d- c- | e e f | g/2.
+unison     e e  f/8 e/8 | c-      d- c- | e e f | g/2.
+piano-a    R/2.         | R/2.          | c/2 e | e/2.
+piano-t    b c  b       | a/8 g/8 f  g  | g/2 c | b/2.
+piano-b    g a+ g       | f/8 e/8 d  e  | c b a | e- b c
 
-unison     f f f | f g b | c b g | b/2.
+unison     f f  f | f        g        b       | c  b g | b/2.
+piano-a    b an b | c        d        g/8 f/8 | g  f e | f/2   e
+piano-t    f/2. = | f        b        b       | e+ b b | e+ d  b
+piano-b    d c  b | b/8 an/8 g-/8 f/8 e/8 d/8 | c  d e | b  b+ g
 
-unison     c c/8 d/8 e+/8 d/8 | c b g | b e d- | c-/2 b-
+unison     c  c/8 d/8 e+/8 d/8  | c       b         g        | b e d- | c-/2      b-
+piano-a    e  a+      g         | g/2               d        | f R/2  | R/2.
+piano-t    a  c =     c/8  f+/8 | e+      d         b        | b/2 a  | g a/8 g/8 f
+piano-b    a+ f       c/8  d/8  | e/8 f/8 g/8 an+/8 b+/8 g/8 | d g f  | e f/8 e/8 d
 
-unison     e g b | c/8 b/8 g e/8 g/8 | f e e | e/2.
+unison     e g b       | c/8 b/8 g  e/8 g/8 | f       e e | e/2.
+piano-a    c e d       | e/2.               | c/2.        | b/2.
+piano-t    g/2 f       | g       b/2        | a       g f | g/2.
+piano-b    c/2 b/8 a/8 | g-      e- g-      | a/8 b/8 c a | e-/2.
