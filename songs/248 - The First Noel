@@ -10,7 +10,7 @@ key        D
 rhythm     3 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -41,3 +41,28 @@ soprano    a/2.      | d  c  b | a  b  c  | d       a  g | f/2
 alto       f    a+/2 | f  f  g | f/2   g  | a+      d  c | d/2
 tenor      f+/2 e+   | d  d  d | d  f+ e+ | d       f+ a | a/2
 bass       d+/2 c+   | b+ a+ g | d+ d  e  | f/8 g/8 a+ a | d/2
+
+verse      The  first  No - el   the   an - gel did    say    Was    to
+verse      They look - ed   up   and  saw        a     star   Shin - ing
+verse      And   by    the light of   that     same    star  Three
+verse      This star  drew nigh  to   the      north - west,  O'er
+verse      Then  en - tered in  those Wise      Men    three, Full
+verse      Then  let   us   all with  one       ac  -  cord   Sing
+
+verse      cer -  tain  poor shep - herds in   fields   as  they lay; In   fields where
+verse      in           the  east,        be -  yond        them far;  And   to    the
+verse      Wise         Men  came        from   coun    -   try  far;  To   seek   for  a
+verse      Beth    -    le - hem          it    took        its  rest; And there    it
+verse      rev    -   'rent - ly          up  -  on         the  knee, And   of - fered
+verse      prais   -    es    to          our  heav'n   -    ly  Lord, That hath   made
+
+verse      they   lay  keep - ing their  sheep, On     a  cold   win - ter's night        that    was       so   deep.
+verse      earth   it  gave       great  light, And        so    it     con - tin - ued   both    day       and  night.
+verse      king   was their        in -  tent,  And   to   fol - low    the  star         wher -  ev  -  er it   went.
+verse      did    both stop        and   stay, Right        o -  ver    the  place        where   Je   -    sus  lay.
+verse      there,  in  His        pres - ence, Their      gold          and  myrrh         and   frank   -  in - cense.
+verse      heav'n and earth        of   naught, And       with          His  blood         man - kind      hath  bought.
+
+verse      No - el, No - el, No - el, No -
+
+verse      el, born is the King of Is - ra - el.
