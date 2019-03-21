@@ -11,7 +11,7 @@ key        F
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,19 @@ soprano    d  c       b       a  | b/2.  a       | g f       f e       | f/2.
 alto       d  d       d       f# | g/2.  f/8 e/8 | d a/8 b/8 c c/8 b/8 | a/2.
 tenor      a  g/8 a/8 b/8 c/8 d  | d/2.  c       | b f/8 g/8 a g       | a/2.
 bass       f# e/8 f/8 g       d  | g-/2. a       | b d       c c       | f-/2.
+
+verse      Now thank  we   all    our  God   With heart and hands and voic - es,
+verse      O    may  this bount - eous God Through all  our  life be  near   us,
+verse      All praise and thanks   to  God   The   Fa - ther now  be   giv - en,
+
+verse      Who  won - drous things  has  done,   In  whom  His world  re - joic - es;
+verse      With ev  -  er     joy - ful hearts  And bless - ed peace  to   cheer  us,
+verse      The  Son    and    Him   who reigns, With Them   in high - est  heav - en
+
+verse      Who from our moth - ers' arms Hath blessed  us   on  our    way
+verse      And keep us   in    His grace, And  guide   us  when per - plexed,
+verse      The  one  e - ter - nal  God, Whom  earth  and heav'n a  -  dore;
+
+verse      With count - less gifts of love, And still is  ours  to - day.
+verse      And  free     us  from all ills  In  this world in  the   next.
+verse      For  thus     it   was, is now,  And shall be   ev - er - more.
