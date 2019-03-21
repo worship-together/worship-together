@@ -10,7 +10,7 @@ key        Bb
 rhythm     6 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,23 @@ soprano    g/2 b/2 a  g | a/2 a/2  b a | g/2 a/2 g f# | g/1
 alto       d/2 d/2 d  b | d/2 d/2  d d | e/2 e/2 d d  | d/1
 tenor      b/2 g/2 f# g | g/2 f#/2 g a | b/2 c/2 b a  | b/1
 bass       g/2 g/2 d  e | d/2 d/2  g f | e/2 c/2 d d  | g-/1
+
+verse      Strick - en, smit - ten, and   af - flict -  ed,  See  Him    dy - ing on   the  tree!
+verse      Tell     me,  ye    who  hear Him   groan - ing,  Was there   ev - er grief like His?
+verse      Ye      who think   of   sin  but   light -  ly   Nor  sup - pose  the  e - vil  great
+verse      Here     we  have    a   firm foun - da  -  tion, Here the   ref - uge of   the  lost;
+
+verse      'Tis      the   Christ by   man   re - ject - ed;  Yes, my   soul, 'tis He, 'tis    He!
+verse      Friends through fear   His cause dis - own - ing,  Foes in - sult - ing His  dis - tress;
+verse      Here      may   view   its  na - ture right - ly,  Here its guilt   may es - ti -  mate.
+verse      Christ's  the   Rock   of   our  sal -  va - tion, His  the  name   of which we    boast.
+
+verse      'Tis the long - ex - pect - ed   Proph - et, Da - vid's Son, yet    Da - vid's Lord;
+verse      Man - y hands  were raised  to   wound  Him, None would in - ter - pose   to   save;
+verse      Mark the sac -  ri - fice   ap - point - ed, See   who bears the    aw  - ful  load;
+verse      Lamb of  God,  for   sin - ners  wound - ed, Sac - ri - fice to     can - cel  guilt!
+
+verse      By    His Son    God  now   has    spo - ken: 'Tis the  true  and  faith - ful Word.
+verse      But   the deep - est stroke that pierced Him  Was  the stroke that  Jus - tice gave.
+verse      'Tis  the Word,  the Lord's  A -  noint - ed, Son  of   Man   and   Son    of  God.
+verse      None shall ev  - er    be   con - found - ed  Who  on   Him  their hope   have built.
