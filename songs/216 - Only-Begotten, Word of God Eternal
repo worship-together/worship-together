@@ -12,7 +12,7 @@ key        F
 rhythm     4 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -24,3 +24,24 @@ unison     d-/2 a f | g/2 a/2 | d-. e/8 f g | f e d-/2 | d-/2 a f
 unison     g/2 a/2 | a. g/8 a bn | c bn a/2 | d/2 c d | c b a/2
 
 unison     c. b/8 a b | a g f/2 | a/2 d- e | f/2 e/2 | d-/1
+
+verse      O n -  ly -  be -  got - ten,  Word   of   God    e -  ter -  nal, Lord  of  cre -
+verse      This   is   Thy    tem - ple   here   Thy pres - ence  ho  -  ly;  Here  may Thy
+verse      Here   in   our   sick - ness, heal - ing grace   a - bound - eth, Light in  our
+verse      Hal - lowed this  dwell - ing where   the Lord    a -  bid -  eth, This  is  none
+verse      Lord,  we    be - seech  Thee,  as    we throng  Thy   tem -  ple.  By   Thy past
+verse      God    in  three   Per - sons,  Fa - ther  ev  -  er - last - ing,  Son  co - e -
+
+verse      a   -   tion, mer - ci - ful   and   might -  y:  Hear    now, Thy    ser - vants,
+verse      ser  -  vants, at  the   mys - tic    ban -  quet, Hum -  bly   a -  dor - ing,
+verse      blind - ness,  in  our  toil    re - fresh - ment: Sin     is  for - giv - en,
+verse      oth  -   er   than the  gate    of   heav  -  en; Stran - gers and   pil - grims,
+verse      bless - ings,  by  Thy  pres - ent   boun  -  ty,  Fa  -  vor  Thy  chil - dren,
+verse      ter   -  nal,  ev - er  bless - ed   Spir  -  it: Thine    be  the   glo - ry,
+
+verse      when   their joy - ful   voic -  es  Rise   to    Thy  pres - - - ence.
+verse      take    Thy  bod -  y    bro -  ken, Drink  of    Thy  chal - - - ice.
+verse      hope   o'er fear   pre - vail - eth, Joy     o -  ver   sor - - - row.
+verse      seek -  ing homes   e -  ter -  nal, Pass through its   por - - - tals.
+verse      and    with  ten - der   mer  -  cy  Hear   our    pe -  ti - - - tions.
+verse      praise, and   a  -  do -  ra -  tion, Now   and   for -  ev - - - er.

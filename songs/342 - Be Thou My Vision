@@ -11,7 +11,7 @@ composer   Traditional Irish melody
 harmony    David Evans, 1927
 key        Eb
 rhythm     3 : 4
-tempo      180
+tempo      150
 
 status     header  tune  checked
 
@@ -20,7 +20,7 @@ voice      piano-a  A3 to G4
 voice      piano-t  E3 to D4
 voice      piano-b  A2 to G3
 
-unison     e e  f/8 e/8 | c-      d- c- | e e f | g/2.
+unison     e e  f/8 e/8 | c-      b- c- | e e f | g/2.
 piano-a    R/2.         | R/2.          | c/2 e | e/2.
 piano-t    b c  b       | a/8 g/8 f  g  | g/2 c | b/2.
 piano-b    g a+ g       | f/8 e/8 d  e  | c b a | e- b c

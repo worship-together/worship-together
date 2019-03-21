@@ -11,7 +11,7 @@ key        C
 rhythm     3 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,24 @@ soprano    g/2    f# | b/2  g | g/2 g  | g       g/2  | g/2
 alto       e/2    d  | d/2  d | e/2 g  | g       d/2  | e/2
 tenor      c. b/8 a  | g/2  b | c/2 e+ | d/8 c/8 b/2  | c/2
 bass       c/2    d  | g-/2 g | e/2 c  | g       g-/2 | c/2
+
+verse      O   'twas   a    joy  -  ful sound   to   hear,  Our
+verse      At   Sa - lem's courts   we   must   ap - pear,  With
+verse      O   pray   we    then    for   Sa - lem's peace; For
+verse      May peace with -  in     thy   sa - cred  walls   A
+verse      For  my   dear  breth - ren's sake,  and friends  No
+verse      But most   of    all    I'll  seek   thy  good,  And
+
+verse      tribes de - vout  -  ly   say,   Up,  Is - rael! to     the
+verse      our    as -  sem -  bled pow'rs, In strong and  beau - teous
+verse      they  shall pros - perous  be,  Thou  ho -  ly   ci  -   ty
+verse      con - stant guest    be  found; With plen - ty   and    pros -
+verse      less  than  breth - ren   dear, I'll pray,  May peace    in
+verse      ev  -  er   wish    thee  well, For   Si -  on   and    the
+
+verse      tem  - ple  haste,  And keep   your     fes - tal  day.
+verse      or  -  der  ranged, Like her     u  -   nit - ed  towers.
+verse      of     our   God,   Who bear   true    love   to   thee.
+verse      per  -  i -  ty     Thy  pal -  ac   -  es    be  crowned.
+verse      Sa -  lem's tow'rs   a   con - stant   guest  ap - pear.
+verse      tem - ple's  sake, Where God   vouch - safes  to   dwell.

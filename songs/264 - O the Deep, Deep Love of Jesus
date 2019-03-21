@@ -10,7 +10,7 @@ key        G
 rhythm     8 : 4
 tempo      170
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,19 @@ soprano    e/2  e/6 - f/6 - g/6 f/2  e/2 | f/2 f/6 - g/6 - a/6 g. - f/8 e/2 | b/
 alto       g-/2 e/2             d#/2 e/2 | e/2 d#/2            e/2      e/2 | d/2 d/2             d/2      e/2 | e/2      d#/2 e/1
 tenor      e/2  b/2             b/2  g/2 | c/2 b/2             b. - a/8 g/2 | g/2 f/6 - g/6 - a/6 g. - f/8 e/2 | c. - b/8 a/2  g/1
 bass       c/2  g-/2            b/2  c/2 | a/2 b/2             e/2      e/2 | g/2 d/2             g-/2     c/2 | a/2      b/2  e/1
+
+verse      O the deep, deep love of Je - sus!   Vast, un - meas - ured, bound - less, free;
+verse      O the deep, deep love of Je - sus!  Spread His praise  from  shore    to  shore;
+verse      O the deep, deep love of Je - sus!   Love  of    ev -  'ry   love    the   best:
+
+verse      Rol - ling as    a  might - y   o -  cean   In     its full - ness o -  ver    me.
+verse      How    He lov - eth, ev -  er  lov -  eth, Chang - eth  ne -  ver, ne - ver - more;
+verse      'Tis   an  o - cean vast   of bless - ing, 'Tis     a   ha -  ven giv - ing   rest.
+
+verse      Un - der - neath   me, all   a - round me,    Is the cur - rent   of   Thy love;
+verse      How  He    watch - es  o'er His  loved ones, Died to call  them   all  His own;
+verse      O    the   deep,  deep love of    Je - sus!  'Tis a heav'n  of  heav'ns to  me;
+
+verse      Lead - ing   on - ward, lead - ing  home - ward, To     thy glo - rious rest a - bove!
+verse      How    for  them   He    in -  ter - ced - eth, Watch - eth o'er them from the throne!
+verse      And    it  lifts   me    up    to    glo -  ry,  For     it lifts me up to Thee!

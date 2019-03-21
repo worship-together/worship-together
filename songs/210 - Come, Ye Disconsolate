@@ -12,7 +12,7 @@ key        C
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,19 @@ soprano    g - e+ e+ c | c a/2 f | e/2 d-. c-/8 | c-/1
 alto       e - g  g  e | f f/2 d | c/2 b.  c/8  | c/1
 tenor      g - c  c  g | a c/2 a | g/2 f.  e/8  | e/1
 bass       c/2    c  c | f f/2 f | g/2 g-. c/8  | c/1
+
+verse      Come, ye dis - con - so - late, where - 'er    ye  lan - guish;
+verse      Joy   of the   des - o -  late, light    of   the stray - ing,
+verse      Here see the  Bread  of   Life;  see     wa - ters flow - ing
+
+verse      Come   to  the   mer - cy  seat, fer -  vent - ly kneel.
+verse      Hope   of  the   pen - i - tent, fade - less  and  pure!
+verse      Forth from the throne  of  God,  pure   from   a - bove.
+
+verse      Here bring  your wound - ed  hearts, here tell your an - guish;
+verse      Here speaks the   Com - fort - er,    in  mer - cy say -  ing,
+verse      Come   to   the  feast   of   love;  come, ev - er know - ing
+
+verse      Earth has no sor - row that heaven can - not  heal.
+verse      Earth has no sor - row that heaven can - not  cure.
+verse      Earth has no sor - row but  heaven can   re - move.
