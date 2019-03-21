@@ -1,7 +1,8 @@
 """
 Questions
 - How to do key changes
-- 
+- How to get signature and accidentals
+- fuging tunes
 
 Test cases
 - Fermatad rest
@@ -135,13 +136,14 @@ class MusicView(ui.View):
 			self.staff.line_to(self.width, bass_lines[i])
 			
 		self.staff.stroke()
-		g_clef(self, 400)
-		f_clef(self, 400)
+		#g_clef(self, 40)
+		#f_clef(self, 40)
 			
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
 		global origin, end, note_tied, note_pos, bars_to_draw
 		position = origin
 		for measure in measures:
+			#measure bars
 			position -= note_gap / 2
 			measure_bar = ui.Path()
 			measure_bar.move_to(position, treble_lines[0])
@@ -150,7 +152,11 @@ class MusicView(ui.View):
 			position += note_gap / 2
 			voice_selected = measure[voice]
 			if isinstance(voice_selected, list):
+				loop = 0
+				run = []
 				for note in voice_selected:
+					
+					#define variables
 					prev_note_pos = note_pos
 					prev_note_tied = note_tied
 					if inspect.isclass(note):
@@ -165,28 +171,23 @@ class MusicView(ui.View):
 					note_pos = position, clef_C0 - (note_index * step)
 					prev_bars_to_draw = bars_to_draw
 					bars_to_draw = int((1/note_beats) / 2)
-					
+					if loop + 1 < len(voice_selected):
+						next_bars_to_draw = int((1/(voice_selected[loop + 1]().beats if inspect.isclass(voice_selected[loop + 1]) else voice_selected[loop + 1].beats)) / 2)
+					else:
+						next_bars_to_draw = None
+						
 					# draw note
 					if not note_index == -1:
 						self.note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
 						self.note_dot.stroke()
 						ui.set_color('black')
 						
-						# draw tails, hollow/solid notes
+						# hollow/solid notes
 						if note_beats < 2:
 							self.note_dot.fill()
-						if note_beats < 4:
-							self.note_tail = ui.Path()
-							self.note_tail.move_to(
-								position + (((tail_direction * 1.5) + 1.5) * step),
-								(clef_C0 - (note_index * step)) + step)
-							self.note_tail.line_to(
-								position + (((tail_direction * 1.5) + 1.5) * step),
-								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
-							self.note_tail.stroke()
-							
+														
 						# draw dots
-						if not note_beats == 3 and note_beats % 1.5 == 0:
+						if note_beats % 1.5 == 0:
 							self.note_dotted = ui.Path()
 							self.note_dotted = ui.Path.oval(position + (4 * step), clef_C0 - ((note_index - 0.6) * step), 0.4 * step, 0.4 * step)
 							self.note_dotted.stroke()
@@ -201,30 +202,121 @@ class MusicView(ui.View):
 							#self.note_tie.stroke()
 							
 						# draw bars
-						if bars_to_draw == prev_bars_to_draw:
-							for bar in range(0, bars_to_draw):
-								self.bar = ui.Path()
-								x, y = prev_note_pos
-								self.bar.move_to(x + (step * 1.5 * (1 + tail_direction)), (y + (step * -6 * tail_direction)) + (step - (tail_direction * step)))
+						if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
+							run.append(note_pos)
+						elif not run == []:
+							
+							#run bar
+							for b in range(0, bars_to_draw):
+								bar = ui.Path()
+								offset = step * 2 * b * tail_direction
+								line_thickness = step * tail_direction
+								
+								x, y = run[0]
+								xcoord = x + (step * 1.5 * (1 + tail_direction))
+								tail_length = y + (step * -6 * tail_direction)
+								bar.move_to(xcoord, tail_length + (step - line_thickness) + offset)
+								
 								x, y = note_pos
-								self.bar.line_to(x + (step * 1.5 * (1 + tail_direction)), (y + (step * -6 * tail_direction)) + (step - (tail_direction * step)))
-								self.bar.stroke()
-						
+								xcoord = x + (step * 1.5 * (1 + tail_direction))
+								tail_length = y + (step * -6 * tail_direction)
+								bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
+								bar.line_to(xcoord, tail_length + step + offset)
+								
+								x, y = run[0]
+								xcoord = x + (step * 1.5 * (1 + tail_direction))
+								tail_length = y + (step * -6 * tail_direction)
+								bar.line_to(xcoord, tail_length + step + offset)
+								
+								bar.close()
+								bar.stroke()
+								bar.fill()
+							
+							# tails in bar
+							for run_note in run:
+								note_tail = ui.Path()
+								x, y = run_note
+								fx, fy = run[0]
+								cx, cy = note_pos
+								abs_pos = x - fx
+								run_length = cx - fx
+								run_height = cy - fy
+								note_side = ((tail_direction * 1.5) + 1.5) * step
+								rel_pos = abs_pos / run_length
+								grad_pos = (rel_pos * run_height) + fy
+								tail_length = -7 * step * tail_direction
+								note_tail.move_to(x + note_side, grad_pos + tail_length + step)
+								note_tail.line_to(x + note_side, y + step)
+									#((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
+								note_tail.stroke()
+								
+							run = []
+						else:
+							
+							# note flag
+							for bar in range(0, bars_to_draw):
+								x, y = note_pos
+								flag = ui.Path()
+								
+								x_offset = step * 1.5 * (1 + tail_direction)
+								tail_length = step * -5.5 * tail_direction
+								y_offset = step * 2 * bar * tail_direction
+								y_dis = step - (tail_direction * step)
+								
+								y_pos = y + tail_length + y_dis + y_offset
+								rad = step / 2
+								flag.move_to(x + x_offset, y_pos)
+								flag.add_arc(x + rad + x_offset, y_pos, rad, 3 * tail_direction, 2 * tail_direction, tail_direction < 0)
+								
+								rad = step * 2.5
+								tail_length = step * -2.5 * tail_direction
+								y_pos = y + tail_length + y_dis + y_offset
+								flag.add_arc(x + x_offset, y_pos, rad, 5 * tail_direction, tail_direction, tail_direction > 0)
+								
+								rad = step * 2
+								tail_length = step * -2 * tail_direction
+								y_pos = y + tail_length + y_dis + y_offset
+								flag.add_arc(x + x_offset, y_pos, rad, tail_direction,  4.8 * tail_direction, tail_direction < 0)
+								
+								tail_length = step * -4 * tail_direction
+								y_pos = y + tail_length + y_dis + y_offset
+								flag.line_to(x + x_offset, y_pos)
+								
+								ui.set_color("black")
+								flag.close()
+								flag.stroke()
+								flag.fill()
+								run = []
+								
+						# tails
+						if note_beats < 4 and run == []:
+							note_tail = ui.Path()
+							note_tail.move_to(
+								position + (((tail_direction * 1.5) + 1.5) * step),
+								(clef_C0 - (note_index * step)) + step)
+							note_tail.line_to(
+								position + (((tail_direction * 1.5) + 1.5) * step),
+								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
+							note_tail.stroke()
+					
 					else:
+						
+						#draw rest
 						rest = ui.Label()
 						rest.center = position, 30
 						rest.text = 'Rest'
 						rest.font = 'Helvetica', 30
 						self.add_subview(rest)
+						
+					#increment
 					position += note_gap * note_beats
+					loop += 1
 
 class Signature(ui.View):
 	def __init__(self, width, height):
 		self.width = width
 		self.frame = (0, 0, width, height)
-		self.white = ui.Path.rect(0, 0, width, height)
-		self.bg_color = 'white'
-		
+		self.bg_color = 'white'		
 		
 	def draw(self):
 		self.lines = ui.Path()
@@ -235,12 +327,15 @@ class Signature(ui.View):
 			self.lines.line_to(self.width, bass_lines[i])
 			
 		self.lines.stroke()
-		sharp(self, step * 3, 10, 10)
+		#sharp(self, step * 3, step, 10)
+		g_clef(self, step * 4)
+		f_clef(self, step * 4)
 		
 		
 	
 class MyView(ui.View):
 	def __init__(self, song):
+		self.name = song
 		w, h = ui.get_screen_size()
 		self.sv = ui.ScrollView()
 		self.sv.width = w
