@@ -19,10 +19,10 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    g  | g/2  d- g  | a/2 d-/2 | b a b c | b/2 a/2 | g/2  f e
-alto       d  | d/2  d  b  | d/2 d/2  | d d d e | d/2 d/2 | b c# d c#
-tenor      b  | b/2  g  g  | f/2 a/2  | g a g g | g/2 f/2 | g/2  a a
-bass       g- | g-/2 b  g- | d/2 f/2  | g f g c | d/2 d/2 | e/2  d a
+soprano    g  | g/2  d- g  | a/2 d-/2 | b a b c | b/2 a/4 - g/4 | g/2    f e
+alto       d  | d/2  d  b  | d/2 d/2  | d d d e | d/2 d/4 - b/4 | b - c# d c#
+tenor      b  | b/2  g  g  | f/2 a/2  | g a g g | g/2 f/4 - g/4 | g/2    a a
+bass       g- | g-/2 b  g- | d/2 f/2  | g f g c | d/2 d/4 - e/4 | e/2    d a
 
 soprano    f g a  b  | f/2 e.  d-/8 | d-/1 | d/2  c       b | c/2  b/2
 alto       d/2 d  d  | d/2 c#. d/8  | d/1  | d/2  e/8 f/8 g | e f  g/2
@@ -39,19 +39,21 @@ alto       g/2 f  g | e/8 f/8 g d d/8 c#/8 | d/2 d e | d/2 d. b/8  | b/2.
 tenor      g/2 d- d | c       d a a        | a/2 g/2 | g/2 f. g/8  | g/2.
 bass       R/2.   g | a+      g f e        | d c b c | d/2 d. g-/8 | g/2.
 
-verse      O come, all    ye   faith - ful, joy - ful and   tri - um - phant, O come  ye,  O
-verse        God   of           God,        Light     of         Light           Lo,  He   ab -
-verse        Sing, choirs of    an -  gels, sing  in  ex -  ul  - ta - tion;    Sing, all  ye
-verse        Yea,  Lord,  we   greet  Thee, born this hap - py   morn - ing;     Je - sus, to
+verse      O come, all    ye   faith - ful, joy - ful and   tri - um - phant, O  come  ye,  O
+verse      _ God   of___       God,___      Light___  of___      Light;___    _  Lo,   He   ab -
+verse      _ Sing, choirs of    an -  gels, sing  in  ex -  ul  - ta - tion;  _  Sing, all  ye
+verse      _ Yea,  Lord,  we   greet  Thee, born this hap - py   morn - ing;  _  Je -  sus, to
 
-verse      come       ye   to   Beth - le - hem.   Come and be - hold Him
-verse      hors      not  the   Vir - gin's womb;  Ver - y       God, be -
-verse      cit - i - zens of  heav'n    a - bove!  Glo - ry to   God,
-verse      Thee       be        glo  - ry  giv'n;  Word  of the  Fa - ther,
+verse      come___    ye   to   Beth - le - hem.   Come and be - hold Him
+verse      hors___   not  the   Vir - gin's womb;  Ver - y___    God, be -
+verse      cit - i - zens of  heav'n    a - bove!  Glo - ry to   God,___
+verse      Thee___    be___     glo  - ry  giv'n;  Word  of the  Fa - ther,
 
-verse      born  the King    of    an - gels:
-verse      got - ten, not   cre -  at -  ed:
-verse      in        the    high   -     est:
-verse      now   in  flesh  ap -  pear - ing:
+verse      born  the  King   of    an -   gels:
+verse      got - ten, not    cre - at -   ed:
+verse      in___      the___       high - est:
+verse      now   in   flesh  ap -  pear - ing:
 
-verse      O come, let us a - dore Him, O come, let us a - dore Him, O come, let us a - dore Him, Christ the Lord!
+verse      O come, let us a - dore Him, O come, let us a - dore Him, O come,
+
+verse      let us a - dore Him, Christ the Lord!
