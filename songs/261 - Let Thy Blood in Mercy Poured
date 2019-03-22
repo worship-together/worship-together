@@ -11,7 +11,7 @@ key        C
 rhythm     0 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,15 @@ soprano    e f#      g# a a  g#      a/2 | b  c  d       e+ d  d       c/2
 alto       c d       d  e fn e/8 d/8 c/2 | e  e  g       g  a+ g/8 f/8 e/2
 tenor      a a       b  c b  b       a/2 | g# a  b       c  c  b       c/2
 bass       a d/8 c/8 b  a d  e       f/2 | e  a+ g/8 f/8 e  f  g       c/2
+
+verse      Let   Thy blood   in    mer - cy  poured, Let   Thy  gra - cious  bod - y   bro - ken,
+verse      Thou didst die   that    I   might live; Bless - ed Lord,  Thou cam'st to  save    me;
+verse      By    the thorns that crowned Thy  brow,  By    the spear  wound  and  the nail - ing,
+verse      Wilt Thou  own   the   gift    I  bring?  All    my  pen  -  i - tence  I  give   Thee;
+
+verse      Be   to   me,  O   gra - cious Lord, Of   Thy bound - less love  the    to -  ken.
+verse      All that love of   God   could give  Je - sus  by     His  sor - rows  gave    me.
+verse      By   the pain and death,   I   now  Claim, O Christ,  Thy  love   un - fail - ing.
+verse      Thou art  my  ex - alt -  ed   King, Of   Thy match - less love  for - give    me.
+
+verse      Thou didst give Thy - self for me, Now I give my - self to Thee.
