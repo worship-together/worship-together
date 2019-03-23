@@ -17,19 +17,22 @@ notes_drawn = 0
 screen_padding = 1/6#of the screen
 note_gap = 125
 origin = screen_width / 2
-note_tied = False
+#note_tied = False
 note_pos = 0, 0
 bars_to_draw = 0
 
 treble_lines = []
 bass_lines = []
+s_positions = []
+a_positions = []
+t_positions = []
+b_positions = []
 for i in range(0, 5):
 	treble_lines.append(screen_height * (screen_padding*((i+7)/8)))
 	bass_lines.append(screen_height - (screen_height * (screen_padding*((i+7)/8))))
 step = (treble_lines[1] - treble_lines[0]) / 2
 C0_treble_y = treble_lines[4] + step + ((step * 7) * 4)
 C0_bass_y = (bass_lines[4] - (3 * step)) + ((step * 7) * 4) 
-
 def create_index(note_name):
 	note_name.split()
 	index = ord(note_name[0]) - ord('C')
@@ -157,6 +160,8 @@ class MusicView(ui.View):
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
 		global origin, end, note_tied, note_pos, bars_to_draw
 		position = origin
+		note_width = 1.15
+		note_tied = False
 		for measure in measures:
 			#measure bars
 			position -= note_gap / 2
@@ -169,10 +174,10 @@ class MusicView(ui.View):
 			if isinstance(voice_selected, list):
 				loop = 0
 				run = []
+				note_tied = False
 				for note in voice_selected:
 					
 					#define variables
-					prev_note_pos = note_pos
 					prev_note_tied = note_tied
 					if inspect.isclass(note):
 						note_name = note.__name__
@@ -193,14 +198,30 @@ class MusicView(ui.View):
 						
 					# draw note
 					if not note_index == -1:
-						note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
+						#note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
 						ui.set_color('black')
+						#note_dot.stroke()
+						note_dot = ui.Path()
+						rel_x = position - (step * 0.53)
+						note_y = clef_C0 - (note_index * step)
+						note_dot.move_to(rel_x + step, (step * 2) + note_y)
+						note_dot.add_arc(rel_x + (step * 1.1), (step * 0.3) + note_y, step * 1.7, 1.7, 0.25, False)
+						note_dot.add_arc(rel_x + (step * 2.2), (step * 0.6) + note_y, step * 0.6, 6.9, 5, False)
+						note_dot.add_arc(rel_x + (step * 2.2), (step * 1.7) + note_y, step * 1.7, 4.8, 3.5, False)
+						note_dot.add_arc(rel_x + (step * 1.1), (step * 1.4) + note_y, step * 0.6, 3.5, 2, False)
 						
 						# hollow/solid notes
 						if note_beats < 2:
 							note_dot.fill()
 							note_dot.stroke()
 						else:
+							note_dot.add_arc(rel_x + (step * 1.12), (step * 1.38) + note_y, step * 0.6, 2, 2.8)
+							note_dot.add_arc(rel_x + (step * 2.8), (step * 2.3) + note_y, step * 2.3, 3.5, 4.5)
+							note_dot.add_arc(rel_x + (step * 2.15), (step * 0.65) + note_y, step * 0.6, 5.1, 0)
+							note_dot.add_arc(rel_x + (step * 0.35), (step * -0.6) + note_y, step * 2.6, 0.5, 1.35)
+							note_dot.stroke()
+							note_dot.close()
+							note_dot.fill()
 							#x, y = note_pos
 							#note_dot.move_to(x, y)
 							
@@ -208,7 +229,7 @@ class MusicView(ui.View):
 							#x_offset = step
 							#note_dot.add_arc(x + x_offset, y, rad, 0.1, 1)
 							note_dot.stroke()
-														
+						
 						# draw dots
 						if note_beats % 1.5 == 0:
 							note_dotted = ui.Path()
@@ -218,11 +239,24 @@ class MusicView(ui.View):
 							note_dotted.fill()
 						
 						# draw ties	
-						#if prev_note_tied:
-							#self.note_tie = ui.Path()
-							#self.note_tie.move_to(prev_note_pos, clef_C0 - (note_index * step))
-							#self.note_tie.add_quad_curve(position, clef_C0 - (note_index * step), 90, 90)
-							#self.note_tie.stroke()
+						if prev_note_tied:
+							note_tie = ui.Path()
+							thickness = 3
+							y_pos = clef_C0 - (note_index * step)
+							t_b = step * (1 - tail_direction)
+							curve_y = (step * tail_direction * -2) + t_b
+							prev_note_side = prev_note_pos + (note_width * step * 2)
+							middle = prev_note_side + ((position - prev_note_side) / 2)
+							center_s = 3 * ((middle - prev_note_side) / 200)
+							#print(prev_note_side - middle)
+							note_tie.move_to(position, y_pos + t_b)
+							note_tie.add_quad_curve(middle, y_pos + curve_y, position - (step * center_s), y_pos + curve_y)
+							note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + (step * center_s), y_pos + curve_y)
+							note_tie.add_quad_curve(middle, y_pos + curve_y + ((step * tail_direction) / thickness), prev_note_side + (step * center_s), y_pos + curve_y)
+							note_tie.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
+							#note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + step, y_pos + curve_y)
+							note_tie.fill()
+							note_tie.stroke()
 							
 						# draw bars
 						if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
@@ -236,13 +270,13 @@ class MusicView(ui.View):
 								line_thickness = step * tail_direction
 								
 								x, y = run[0]
-								xcoord = x + (step * 1.5 * (1 + tail_direction))
+								xcoord = x + (step * note_width * (1 + tail_direction))
 								tail_length = y + (step * -6 * tail_direction)
 								bar.move_to(xcoord, tail_length + step + offset)
 								bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
 								
 								x, y = note_pos
-								xcoord = x + (step * 1.5 * (1 + tail_direction))
+								xcoord = x + (step * note_width * (1 + tail_direction))
 								tail_length = y + (step * -6 * tail_direction)
 								bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
 								bar.line_to(xcoord, tail_length + step + offset)
@@ -260,7 +294,7 @@ class MusicView(ui.View):
 								abs_pos = x - fx
 								run_length = cx - fx
 								run_height = cy - fy
-								note_side = ((tail_direction * 1.5) + 1.5) * step
+								note_side = ((tail_direction * note_width) + note_width) * step
 								rel_pos = abs_pos / run_length
 								grad_pos = (rel_pos * run_height) + fy
 								tail_length = -7 * step * tail_direction
@@ -277,9 +311,9 @@ class MusicView(ui.View):
 								x, y = note_pos
 								flag = ui.Path()
 								
-								x_offset = step * 1.5 * (1 + tail_direction)
+								x_offset = step * note_width * (1 + tail_direction)
 								tail_length = step * -5.5 * tail_direction
-								y_offset = step * 2 * bar * tail_direction
+								y_offset = step * 1.5 * bar * tail_direction
 								y_dis = step - (tail_direction * step)
 								
 								y_pos = y + tail_length + y_dis + y_offset
@@ -311,15 +345,43 @@ class MusicView(ui.View):
 						if note_beats < 4 and run == []:
 							note_tail = ui.Path()
 							note_tail.move_to(
-								position + (((tail_direction * 1.5) + 1.5) * step),
+								position + (((tail_direction * note_width) + note_width) * step),
 								(clef_C0 - (note_index * step)) + step)
 							note_tail.line_to(
-								position + (((tail_direction * 1.5) + 1.5) * step),
+								position + (((tail_direction * note_width) + note_width) * step),
 								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
 							note_tail.stroke()
 					
 					else:
-						
+						rests = []
+						rest_beats = note_beats
+						rest_div = 4
+						for i in range(0, 16):
+							while rest_beats - rest_div >= 0:
+								rest_beats -= rest_div
+								rests.append(rest_div)
+							rest_div /= 2
+						for rest_type in rests:
+							if clef_C0 == C0_treble_y:
+								bottom = treble_lines[4]
+							else:
+								bottom = bass_lines[0]
+							if rest_type == 4:
+								rest = ui.Path.rect(position + (note_gap * 1.5), bottom - (step * 4), step * 3, step)
+								rest.fill()
+							if rest_type == 2:
+								rest = ui.Path.rect(position + (note_gap / 2), bottom - (step * 5), step * 3, step)
+								rest.fill()
+							if rest_type == 1:
+								rest = ui.Path()
+								rest.move_to(position - (step / 3), bottom - (step * 7.1))
+								rest.add_arc(position + (step * 2.5), bottom - (step * 4), step * 2, 4, 2.3, False)
+								rest.add_quad_curve(position, bottom - step, position - (step * 0.7), bottom - (step * 2.9))
+								rest.add_quad_curve(position + step, bottom - (step * 2.6), position - (step * 1.7), bottom - (step * 3.9))
+								rest.add_arc(position - (step * 2), bottom - (step * 6), step * 2, 1, 5.7, False)
+								rest.close()
+								rest.stroke()
+								rest.fill()
 						#draw rest
 						rest = ui.Label()
 						rest.center = position, 30
@@ -328,6 +390,7 @@ class MusicView(ui.View):
 						self.add_subview(rest)
 						
 					#increment
+					prev_note_pos = position
 					position += note_gap * note_beats
 					loop += 1
 
