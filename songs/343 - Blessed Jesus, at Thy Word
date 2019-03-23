@@ -12,7 +12,7 @@ key        G
 rhythm     4 : 4
 tempo      100
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    g a  f d- | g g a b | c  b  a/2   | g/1
 alto       d e  d d  | d e f g | g  g  g - f | d/1
 tenor      b a  a f  | g b d d | e+ d  d/2   | b/1
 bass       b c# d d  | b e d g | c  g- d/2   | g-/1
+
+verse      Bless - ed    Je  -  sus,   at     Thy    Word   We     are gath - ered
+verse      All     our   know - ledge, sense, and    sight  Lie    in  deep - est
+verse      Glo  -  rious Lord,  Thy  - self   im  -  part;  Light  of  light, from
+verse      Fa  -   ther, Son,   and    Ho  -  ly     Ghost, Praise to  Thee   and
+
+verse      all    to    hear     Thee.  Let   our  hearts and souls  be  stirred
+verse      dark - ness  shroud - ed,    Till  Thy  Spir - it  breaks our night
+verse      God    pro - ceed  -  ing,   O  -  pen  lips   and ears   and heart;
+verse      ad  -  o  -  ra   -   tion!  Grant that we     Thy Word   may trust
+
+verse      Now  to   seek  and  love   and  fear    Thee.  By    Thy teach - ings
+verse      With the  beams of   truth  un - cloud - ed.    Thou  a - lone    to
+verse      Help us   by    Thy  Spir - it's plead - ing;   Hear  the cry     Thy
+verse      And  ob - tain  true con -  so - la  -   tion   While we  here    be -
+
+verse      pure   and    ho -  ly,  Drawn from earth to  love    Thee   sole  - ly.
+verse      God    canst win    us;  Thou  must work  all good    with - in      us.
+verse      church now   rais - es;  Lord, ac - cept  our prayers and    prais - es.
+verse      low    must  wan -  der, Till  we   sing  Thy prais - es     yon  -  der.

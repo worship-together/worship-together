@@ -10,7 +10,7 @@ key        D
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,31 @@ soprano    f f g f | f/2  e  d- | d- e  d- c- | d-/2.
 alto       d d d d | b/2  b  b  | b  b  a  a  | a/2.
 tenor      a a b a | a/2  g  g  | g  g  e  g  | f/2.
 bass       d d d d | g-/2 g- g- | e- e- a  a  | d/2.
+
+verse      The    church - 's    one     foun - da -  tion  Is   Je - sus  Christ, her  Lord;
+verse      E  -   lect     from  ev  -   'ry    na -  tion, Yet  one  o'er all     the  earth,
+verse      Though with     a     scorn - ful    won - der   Men  see  her  sore    op - pressed,
+verse      The    church   shall nev  -  er     per - ish!  Her  dear Lord to      de - fend,
+verse      'Mid   toil     and   tri  -  bu  -  la -  tion, And  tu - mult of      her  war,
+verse      Yet    she      on    earth   hath   un -  ion   With God  the  Three   in   One,
+
+verse      She is      His   new   cre - a   -  tion By   wa -  ter   and    the   Word:
+verse      Her char  - ter   of    sal - va  -  tion One  Lord, one   faith, one   birth;
+verse      By  schis - ms    rent  a  -  sun -  der, By   her - e  -  sies   dis - tressed,
+verse      To  guide,  sus - tain, and   cher - ish, Is   with  her   to     the   end;
+verse      She waits   the   con - sum - ma  -  tion Of   peace for - ev  -  er -  more;
+verse      And mys  -  tic   sweet com - mun -  ion  With those whose rest   is    won:
+
+verse      From   heav'n He    came  and  sought  her   To    be     His  ho -  ly   bride;
+verse      One    ho  -  ly    name  she  bless - es,   Par - takes  one  ho -  ly   food,
+verse      Yet    saints their watch are  keep -  ing,  Their cry    goes up,   How  long?
+verse      Though there  be    those that hate    her,  And   false  sons in    her  pale,
+verse      Till   with   the   vi -  sion glo  -  rious Her   long - ing  eyes  are  blest,
+verse      O      hap -  py    ones  and  ho  -   ly!   Lord, give   us   grace that we,
+
+verse      With His    own   blood  He    bought  her,  And   for  her life   He    died.
+verse      And  to     one   hope   she   press - es,   With  ev - 'ry grace  en -  dued.
+verse      And  soon   the   night  of    weep -  ing   Shall be   the morn   of    song.
+verse      A -  gainst both  foe    and   trai -  tor   She   ev - er  shall  pre - vail.
+verse      And  the    great church vic - to  -   rious Shall be   the church at    rest.
+verse      Like them,  the   meek   and   low  -  ly,   On    high may dwell  with  thee.
