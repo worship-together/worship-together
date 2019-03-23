@@ -10,7 +10,7 @@ key        C
 rhythm     4 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,19 @@ soprano    c/2.  c- | d- e f g | a b c d | c/2 b/2   | c/2.
 alto       e/2.  c  | b  c c c | c f e d | e/2 d - f | e/2.
 tenor      c/2.  g  | g  g f e | f f g a | g/2 g/2   | g/2.
 bass       a+/2. e  | d  c a c | f d e f | g/2 g-/2  | c/2.
+
+verse      Re - joice, the Lord  is    King:   Your Lord  and  King   a  -  dore!   Re -
+verse      Je - sus,   the Sav - ior,  reigns, The  God   of   truth  and   love;   When
+verse      His  king - dom can - not   fail,   He   rules o'er earth  and   heav'n; The
+verse      He   sits   at  God's right hand    Till all   His  foes   sub - mit,    And
+verse      Re - joice  in  glo - rious hope!   Our  Lord, the  Judge, shall come,   And
+
+verse      joice, give thanks and   sing,   And tri - umph ev -  er - more.
+verse      He     had  purged our   stains, He  took  His  seat  a -  bove.
+verse      keys   of   death  and   hell    Are to    our  Je -  sus  giv'n.
+verse      bow    to   His    com - mand,   And fall  be - neath His  feet.
+verse      take   His  ser -  vants up      To  their e -  ter - nal  home.
+
+verse      Lift up your heart,
+
+verse      Lift up your voice!  Re - joice, a - gain I say, re - joice!
