@@ -11,7 +11,7 @@ key        G
 rhythm     3 : 4
 tempo      65
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,18 @@ alto       f.  b+/8. a+/16 g/8 | f d/8 d          c/8  | b         c/8 b        
 tenor      b.  d           d/8 | d a/8 f          a/8  | g         a/8 f             f/8   | a. g.
 bass       b+. g           g/8 | d d/8 d          d#/8 | e         a/8 b             b/8   | e. e.
 
+verse      What Child is this, who,   laid  to   rest,   On   Mar -  y's  lap  is sleep - ing?
+verse      Why  lies  He  in   such   mean  es - tate, Where   ox    and  ass are feed -  ing?
+verse      So   bring Him in - cense, gold, and  myrrh, Come, peas - ant, king to  own    Him.
+
+verse      Whom  an  -  gels  greet with  an - thems sweet, While shep - herds watch  are   keep - ing?
+verse      Good Chris - tian, fear: for  sin - ners  here    The   si -  lent   Word  is   plead - ing.
+verse      The  King     of   kings sal - va - tion brings;  Let   lov -  ing  hearts en - throne  Him.
+
+verse      This,   this   is   Christ, the   King, Whom shep - herds guard and an - gels sing:
+verse      Nails, spears shall pierce  Him through, The cross   be   borne for me,  for  you.
+verse      Raise, raise    a   song    on    high,  The  vir - gin   sings her lul - a - by.
+
+verse      Haste, haste to  bring Him  laud , The Babe, the Son of Mar - y!
+verse      Hail,  hail  the  Word made flesh, The Babe, the Son of Mar - y!
+verse      Joy,   joy,  for Christ is  born,  The Babe, the Son of Mar - y!

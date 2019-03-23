@@ -11,7 +11,7 @@ key        G
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,21 @@ soprano    b  a   g b | d. c/8 b/2 | e f g c | b  a   g/2
 alto       d. c/8 b e | d d    d/2 | c d d c | d. c/8 b/2
 tenor      g  f   g g | a f    g/2 | g a g g | g  f   g/2
 bass       g  d   e e | f d    g/2 | c c b e | d  d   g-/2
+
+verse      As  with  glad - ness   men   of   old   Did  the  guid - ing  star  be - hold;
+verse      As  with  joy -   ful  steps they  sped   To  that  low - ly   cra - dle - bed,
+verse      As  they   of -  fered gifts most  rare   At  that  cra - dle  rude  and  bare;
+verse      Ho - ly    Je  - sus,   ev -  'ry  day   Keep  us   in    the  nar - row   way;
+verse      In  the  heav'n - ly   coun - try bright Need they  no    cre - at - ed   light;
+
+verse      As   with  joy   they hailed its light, Lead - ing   on  -  ward, beam - ing bright;
+verse      There to  bend   the   knee  be - fore  Him   whom heav'n   and  earth    a - dore;
+verse      So   may   we    with   ho - ly   joy,  Pure,  and  free    from sin's   al - loy,
+verse      And  when earth - ly  things are  past, Bring  our   ran - somed souls   at   last
+verse      Thou its  light, its   joy,  its crown, Thou   its   sun   which  goes   not  down;
+
+verse      So,   most gra  - cious  God,   may   we      Ev -  er - more  be   led     to  thee.
+verse      So    may   we     with  wil -  ling feet     Ev -  er   seek  thy  mer  -  cy  seat.
+verse      All   our  cost - liest treas - ures bring, Christ, to   thee, our heav'n - ly  King.
+verse      Where they need    no   star     to  guide, Where   no  clouds thy  glo  -  ry  hide.
+verse      There for - ev  -  er    may     we  sing     Al -  le -  lu - ias   to     our King.

@@ -13,7 +13,7 @@ key        F
 rhythm     4 : 4
 tempo      110
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -39,3 +39,19 @@ soprano    f/2  e c- | f g       a/8  b/8  c/8 b/8 | a g f(1)
 alto       d/2  c b  | c d/8 e/8 f         f       | f e c(1)
 tenor      a g  g e  | f b       c.            d/8 | c b a(1)
 bass       c bn c bb | a g-      f-/8 g-/8 a/8 b/8 | c c f-(1)
+
+verse      O Bread  of Life from  heav - en,  To wea - ry    pil - grims
+verse      O fount  of grace re - deem - ing, O  riv - er     ev -  er
+verse      O Je -  sus, by  Thee  bid -  den, We here pro - claim  Thee,
+
+verse      giv  -   en;  O   man - na from   a - bove!  The
+verse      stream - ing From Je - sus' ho - ly   side!  Come
+verse      hid   -  den  By forms  of bread and  wine.  Grant,
+
+verse      souls that  hun - ger, feed  Thou, The hearts  that  seek  Thee,
+verse      Thou, Thy - self  be - stow - ing  On  thirst - ing  souls, and
+verse      when  the   veil  is   riv  - en,  we   may     be - hold   in
+
+verse      lead  Thou, With Thy   most  sweet and    ten - der  love.
+verse      flow - ing  Till all   their wants are    sat - is - fied.
+verse      heav - en   Thy  glo - rious coun - te - nance  di - vine.
