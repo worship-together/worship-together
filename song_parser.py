@@ -37,7 +37,7 @@ class NewSong:
 		self.is_unison = 'unison' in attributes
 
 
-attribute_re = re.compile(r'(?P<name>[a-zA-Z\-]+)\s+(?P<value>[^\n]+)')
+attribute_re = re.compile(r'(?P<name>[a-zA-Z\-_]+)\s+(?P<value>[^\n]+)')
 note_re = re.compile(r'^'
                      r'(?P<name>[a-gR])' +
 					 r'(?P<accidental>[#bn])?'
