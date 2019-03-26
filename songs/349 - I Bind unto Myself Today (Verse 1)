@@ -11,7 +11,7 @@ key        Bb
 rhythm     3 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -24,3 +24,9 @@ unison     d- | g/2 g | f - d- f | b - d c | b/2 b | c - a f
 unison     f - a c | b/2 b | a/2 d | g. - a/8 b/8 g/8 | f - d- b-
 
 unison     b/2 f | g - a b/8 c/8 | d/2 c/8 d/8 | b - g a | g/2 g | g/2
+
+verse      I bind un - to my - self to - day The strong name
+
+verse      of the Trin - i - ty, By in - vo - ca - tion
+
+verse      of the same, The Three in One and One in Three.
