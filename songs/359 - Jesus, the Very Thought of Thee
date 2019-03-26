@@ -10,7 +10,7 @@ key        G
 rhythm     3 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -26,3 +26,15 @@ soprano    c c b  | a/2 g  | f/2 e  | d-/2.   | d- e g | b/2   a | g/2.
 alto       e e d  | c/2 c# | d/2 c# | d/2.    | d  d c | b - d c | b/2.
 tenor      e f g# | a/2 a  | a/2 g  | f/2.    | g  g g | g/2   f | g/2.
 bass       a a a  | a/2 a  | d/2 d  | d/2 - c | b  c e | d/2   d | g-/2.
+
+verse      Je - sus,  the ver - y     thought of     Thee   With sweet - ness fills my   breast;
+verse      Nor  voice can sing, nor   heart   can    frame, Nor  can     the  mem - 'ry  find,
+verse      O    Hope  of  ev -  'ry   con  -  trite  heart, O    Joy     of   all   the  meek,
+verse      But  what  to  those who   find?   Ah,    this   Nor  tongue  nor  pen   can  show;
+verse      Je - sus,  our on -  ly    joy     be     Thou,  As   Thou    our  prize wilt be;
+
+verse      But  sweet - er  far   Thy  face  to    see,  And  in      Thy pres - ence  rest.
+verse      A    sweet - er  sound than Thy   blest name, O    Sav  -  ior of     man - kind.
+verse      To   those   who fall, how  kind  Thou  art!  How  good    to  those  who   seek!
+verse      The  love    of  Je -  sus, what  it    is,   None but     His loved  ones  know.
+verse      Je - sus,    be  Thou  our  glo - ry    now,  And  through e - ter -  ni -  ty.

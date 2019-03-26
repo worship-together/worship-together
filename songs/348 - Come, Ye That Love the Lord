@@ -10,7 +10,7 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -26,3 +26,15 @@ soprano    a f g c- | f a c c | d c/8 b/8 a g | f/2.
 alto       c c c c  | c d e f | f f       f e | f/2.
 tenor      f f e g  | a f g c | b c/8 d/8 c b | a/2.
 bass       f a c e  | f d c a | b a/8 b/8 c c | f-/2.
+
+verse      Come, ye    that love  the  Lord,  And   let    your joys be   known;
+verse      Let   those re - fuse  to   sing   That  nev -  er   knew our  God;
+verse      The   men   of   grace have found  Glo - ry     be - gun  be - low;
+verse      The   hill  of   Zi  - on   yields A     thou - sand sa - cred sweets
+verse      Then  let   our  songs a -  bound, And   ev -   'ry  tear be   dry;
+
+verse      Join  in      a    song    with sweet    ac -  cord,  And  thus   sur - round  the throne.
+verse      But   chil  - dren of      the  heav'n - ly    King   May  speak  their joys   a - broad.
+verse      Ce -  les  -  tial fruits  on   earth  - ly    ground From faith  and   hope   may grow.
+verse      Be -  fore    we   reach   the  heav'n - ly    fields Or   walk   the   gold - en  streets.
+verse      We're march - ing  through Im - man   -  uel's ground To   fair - er    worlds on  high.

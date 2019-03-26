@@ -10,7 +10,7 @@ key        Ab
 rhythm     3 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,33 @@ soprano    d/2      c        | b/2  b | c/2   a | d - c  b   | a/2
 alto       f - a+   e/8 f/8  | g/2  e | e/2   c | f - e. d/8 | c/2
 tenor      a. - b/8 c/8 dn/8 | e+/2 g | a/2   a | a/2    g   | a/2
 bass       d - f    a+       | e/2  e | a - c f | d - e  e   | a/2
+
+verse      Let   Chris - tian faith and  hope    dis - pel    The
+verse      He    who     His  Son,  most dear    and   loved, Gave
+verse      Be -  hold    the  best, the  great - est   gift,  Of
+verse      Where is      the  judge who  can     con - demn,  Since
+verse      The   Sav  -  ior  died, but  rose    a  -  gain   Tri -
+verse      Who   then    can  e’er  di - vide    us    more   From
+verse      Let   trou  - bles rise, and  ter  -  rors  frown, And
+verse      Nor   death,  nor  life, nor  earth,  nor   hell,  Nor
+verse      Each  fu   -  ture pe -  riod that    will  bless  As
+
+verse      fears  of    guilt   and  woe;   The     Lord   Al  -  might - y
+verse      up     for   us      to   die,   Shall   He     not    all     things
+verse      ev  -  er -  last -  ing  love!  Be  -   hold   the    pledge  of
+verse      God    hath  jus  -  ti - fied?  Who     shall  charge those   with
+verse      um  -  phant from    the  grave; And     pleads our    cause   at
+verse      Je  -  sus   and     His  love,  Or      break  the    sa  -   cred
+verse      days   of    dark -  ness fall;  Through Him    all    dan  -  gers
+verse      time’s de -  stroy - ing  sway   Can     e’er   ef  -  face    us
+verse      it     has   blessed the  past;  He      loved  us     from    the
+
+verse      is     our   friend, And  who    can  prove  a     foe?
+verse      free - ly    give    That good - ness can    sup - ply?
+verse      peace  be -  low,    And  per -  fect bliss  a  -  bove!
+verse      guilt  or    crime   For  whom   the  Sav -  ior   died?
+verse      God’s  right hand,   Om - ni  -  po - tent   to    save.
+verse      chain  that  binds   The  earth  to   Heav’n a  -  bove?
+verse      we’ll  de -  fy,     And  more   than con -  quer  all.
+verse      from   His   heart   Or   make   His  love   de -  cay.
+verse      first  of    time,   He   loves  us   to     the   last.

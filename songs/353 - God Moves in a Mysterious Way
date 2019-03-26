@@ -10,7 +10,7 @@ key        Bb
 rhythm     6 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,25 @@ soprano    a/1        d/2 | c/1 c/2 | b/1 d/2 | g/1  f/2 | b/1
 alto       f. e/8 d/2 b/2 | a/1 a/2 | b/1 b/2 | b/1  a/2 | b/1
 tenor      a. g/8 f/2 b/2 | c/1 f/2 | g/1 b/2 | d/1  c/2 | b/1
 bass       d. c/8 d/2 b/2 | f/1 f/2 | e/1 g/2 | b+/1 f/2 | b/1
+
+
+verse      God   moves  in    a       mys - te  -  rious way    His
+verse      Deep  in     un -  fath -  om -  a   -  ble   mines  Of
+verse      Ye    fear - ful   saints, fresh cour - age   take;  The
+verse      Judge not    the   Lord    by    fee  - ble   sense, But
+verse      His   pur -  pos - es      will  rip  - en    fast,  Un -
+verse      Blind un  -  be -  lief    is    sure   to    err,   And
+
+verse      won -  ders to     per - form;  He   plants  His  foot -  steps
+verse      nev -  er - fail - ing   skill  He   treas - ures up      His
+verse      clouds ye   so     much  dread  Are  big     with mer  -  cy,
+verse      trust  Him  for    His   grace; Be - hind    a    frown - ing
+verse      fold - ing  ev  -  'ry   hour;  The  bud     may  have    a
+verse      scan   His  work   in    vain;  God  is      His  own     in -
+
+verse      in     the   sea,   And rides   up - on     the    storm.
+verse      bright de -  signs, And works   His  sov -  ereign will.
+verse      and    shall break  In  bless - ings on     your   head.
+verse      prov - i  -  dence  He  hides   a    smil - ing    face.
+verse      bit -  ter   taste, But sweet   will be     the    flower.
+verse      ter -  pre - ter,   and He      will make   it     plain.
