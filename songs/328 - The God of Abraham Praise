@@ -11,7 +11,7 @@ key        Ab
 rhythm     4 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,55 @@ soprano    f g  a b | c b/8 c/8 d c/8 b/8 | a/2 g/2 | f/2.
 alto       c c  c f | f f       d f       | f/2. en | f/2.
 tenor      f en f b | a b/8 a/8 f d       | c d g/2 | a/2.
 bass       a c  f d | a d/8 c/8 b b       | c b c/2 | f-/2.
+
+verse      The    God    of     A    -   brah'm  praise, Who   reigns en  -  throned a  -   bove;
+verse      The    God    of     A    -   brah'm  praise, At    whose  su  -  preme   com -  mand,
+verse      The    God    of     A    -   brah'm  praise, Whose all -  suf -  fi   -  cient  grace
+verse      He     by     Him -  self     hath    sworn,  I     on     His    oath    de  -  pend;
+verse      Though na  -  ture's strength de  -   cay,    And   earth  and    hell    with - stand,
+verse      The    good - ly     land     I       see,    With  peace  and    plen -  ty     blessed;
+verse      There  dwells the    Lord     our     King,   The   Lord   our    Right - eous - ness,
+verse      He     keeps  His    own      se   -  cure,   He    guards them   by      His    side,
+verse      Be  -  fore   the    great    Three - One     They  all    ex  -  ult  -  ing    stand,
+verse      The    God    Who    reigns   on      high    The   great  arch - an  -   gels   sing,
+verse      Be  -  fore   the    Sav   -  ior's   face    The   ran -  somed  na  -   tions  bow,
+verse      The    whole  tri -  um   -   phant   host    Give  thanks to     God     on     high;
+
+verse      An  -  cient   of     ev  -  er -  last -  ing  days,  And     God     of    Love:
+verse      From   earth   I      rise   and   seek    the  joys   At      His     right hand;
+verse      Shall  guide   me     all    my    hap  -  py   days,  In      all     my    ways:
+verse      I      shall,  on     ea  -  gle's wings   up - borne, To      heaven  as -  cend;
+verse      To     Ca  -   naan's bounds I     urge    my   way    At      His     com - mand.
+verse      A      land    of     sa  -  cred  lib  -  er - ty,    And     end  -  less  rest.
+verse      Tri  - um  -   phant  o'er   the   world   and  sin,   The     Prince  of    Peace;
+verse      Ar  -  rays    in     gar -  ments white   and  pure   His     spot -  less  bride:
+verse      And    tell    the    won -  ders  He      hath done   Through all     their land:
+verse      And    Ho  -   ly,    Ho  -  ly,   Ho   -  ly!  cry,   Al  -   might - y     King!
+verse      O'er - whelmed at     His    al -  might - y    grace, For  -  ev   -  er    new:
+verse      Hail,  Fa   -  ther,  Son,   and   Ho  -   ly   Ghost, They    ev   -  er    cry.
+
+verse      Je -  ho   -  vah,     Great   I     Am!      By   earth  and   heav'n   con -  fessed;
+verse      I     all     on       earth   for - sake,    Its  wis -  dom,  fame,    and    power;
+verse      He    calls   a        worm    His   friend!  He   calls  Him - self     my     God!
+verse      I     shall   be   -   hold    His   face,    I    shall  His   power    a   -  dore,
+verse      The   wa  -  'try      deep    I     pass,    With Je  -  sus   in       my     view;
+verse      There milk    and      hon  -  ey    flow,    And  oil    and   wine     a   -  bound,
+verse      On    Zi  -   on's     sa  -   cred  height   His  king - dom   He       main - tains,
+verse      With  streams of       sa  -   cred  bliss,   With groves of    liv   -  ing    joys,
+verse      The   lis   - t'ning   spheres at -  tend     And  swell  the   grow  -  ing    fame;
+verse      Who   was,    and      is,     the   same,    And  ev  -  er -  more     shall  be;
+verse      He    shows   His      prints  of    love     They kin -  dle   to       a      flame!
+verse      Hail, A   -   brah'm's God,    and   mine!    I    join   the   heav'n - ly     lays:
+
+verse      I    bow     and     bless  the   sa  -  cred  Name,  For  -  ev   -   er    bless'd
+verse      And  Him     my      on  -  ly    Por  - tion  make,  My      Shield   and   Tower.
+verse      And  He      shall   save   me    to     the   end    Through Je   -   sus'  blood.
+verse      And  sing    the     won -  ders  of     His   grace  For  -  ev   -   er -  more.
+verse      And  through the     howl - ing   wil  - der - ness   My      way      pur - sue.
+verse      And  trees   of      life   for - ev  -  er    grow   With    mer  -   cy    crowned.
+verse      And  glo  -  rious   with   His   saints in    light  For  -  ev   -   er    reigns.
+verse      With all     the     fruits of    par -  a  -  dise,  He      still    sup - plies.
+verse      And  sing,   in      songs  which nev -  er    end,   The     won  -   drous Name.
+verse      Je - ho   -  vah     Fa  -  ther  Great  I     Am!    We      wor  -   ship  Thee.
+verse      And  sound   through all    the   world  a  -  bove   The     slaugh - tered Lamb.
+verse      All  might   and     maj -  es -  ty    are    Thine, And     end  -   less  praise.
