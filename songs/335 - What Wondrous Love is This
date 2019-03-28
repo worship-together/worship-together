@@ -10,7 +10,7 @@ key        C
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,23 +37,18 @@ alto       a/2  a  c  | c/2 c/2 | c d       e d | e/2 d c | a/1 =  | a/2
 tenor      f/2  f  f  | g/2 f/2 | g f/8 g/8 a b | c/2 g g | f/1 =  | f/2
 bass       d/2  d  d  | c/2 f/2 | e d       c b | a/2 b c | d/1 =  | d/2
 
-verse      What wondrous love is this, O my soul, O my soul,
-what wondrous love is this, O my soul!
-What wondrous love is this that caused the Lord of bliss
-to bear the dreadful curse for my soul, for my soul,
-to bear the dreadful curse for my soul!
-2 When I was sinking down, sinking down, sinking down,
-when I was sinking down, sinking down;
-when I was sinking down beneath God's righteous frown,
-Christ laid aside his crown for my soul, for my soul,
-Christ laid aside his crown for my soul!
-3 To God and to the Lamb, I will sing, I will sing,
-to God and to the Lamb, I will sing;
-to God and to the Lamb, who is the great I AM,
-while millions join the theme, I will sing, I will sing,
-while millions join the theme, I will sing!
-4 And when from death I'm free, I'll sing on, I'll sing on,
-and when from death I'm free, I'll sing on;
-and when from death I'm free, I'll sing and joyful be,
-and through eternity I'll sing on, I'll sing on,
-and through eternity I'll sing on!
+verse      What won - drous love  is  this, O    my   soul, O    my   soul, What
+verse      To   God   and   to    the Lamb, I    will sing, I    will sing, To
+verse      And  when  from  death I'm free, I'll sing on,   I'll sing  on,  And
+
+verse      won - drous love  is  this, O    my   soul!  What won - drous love  is
+verse      God   and   to    the Lamb, I    will sing;  To   God   and   to    the
+verse      when  from  death I'm free, I'll sing on;    And  when  from  death I'm
+
+verse      this  that caused the Lord  of  bliss To    bear    the   dread - ful   curse  for  my
+verse      Lamb, who  is     the great I   AM,   While mil  -  lions join    the   theme, I    will
+verse      free, I'll sing   and joy - ful be,   And   through e  -  ter  -  nit - y      I'll sing
+
+verse      soul, for  my   soul, To    bear    the   dread - ful   curse  for  my   soul!
+verse      sing, I    will sing, While mil  -  lions join    the   theme, I    will sing!
+verse      on,   I'll sing on,   And   through e  -  ter  -  nit - y      I'll sing on!

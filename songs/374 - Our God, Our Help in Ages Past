@@ -11,7 +11,7 @@ key        C
 rhythm     0 : 4
 tempo      150
 
-status     header  tune checked
+status     header  tune checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -27,3 +27,17 @@ soprano    c a d b | c  a   b/2  | g/2 | a c d b | c/2
 alto       e c f d | e. d/8 b/2  | c/2 | f e d d | e/2
 tenor      g a a g | g  a   g#/2 | g/2 | f g a g | g/2
 bass       c f d g | c  f   e/2  | e/2 | d c f g | c/2
+
+verse      Our   God,   our  help   in   a   -  ges past,   Our   hope   for  years  to   come,
+verse      Un -  der    the  shad - ow   of     Thy throne  Thy   saints have dwelt  se - cure;
+verse      Be -  fore   the  hills  in   or  -  der stood,  Or    earth  re - ceived her  frame,
+verse      A     thou - sand a   -  ges  in     Thy sight   Are   like   an   eve -  ning gone;
+verse      Time, like   an   ev  -  er - roll - ing stream, Bears all    its  sons   a -  way;
+verse      Our   God,   our  help   in   a   -  ges past    Our   hope   for  years  to   come:
+
+verse      Our   shel - ter   from   the   storm - y    blast, And  our   e -  ter - nal    home:
+verse      Suf - fi  -  cient is     Thine arm     a -  lone,  And  our   de - fense is     sure.
+verse      From  ev  -  er -  last - ing   Thou    art  God,   To   end - less years the    same.
+verse      Short as     the   watch  that  ends    the  night  Be - fore  the  ris - ing    sun.
+verse      They  fly    for - got -  ten,  as      a    dream  Dies at    the  o  -  p'ning day.
+verse      Be    Thou   our   guard  while trou -  bles last,  And  our   e -  ter - nal    home
