@@ -10,7 +10,7 @@ key        G
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,19 @@ soprano    b b b c/2  b a. - g/8 g f/2 | a g/2    f e/2 d#- e/2.
 alto       g g g g/2  g e/2      c d/2 | d d/2    d b/2 b   b/2.
 tenor      d d d e+/2 d c/2      g a/2 | f b/2    a g  f/2  e/2.
 bass       g g g c/2  g c e/2      d/2 | d b. c/8 d g- b/2  e/2.
+
+verse      Lord, teach  us  how    to  pray  a - right With   rev' - rence and   with  fear.
+verse      God   of     all grace, we  come  to  Thee  With   bro -  ken   con - trite hearts;
+verse      Pa -  tience to  watch, and wait, and weep, Though mer -  cy    lond  de -  lay;
+
+verse      Though dust and   ash  -  es   in     Thy sight, We    may,  we   must   draw near.
+verse      Give,  what thine eye     de - lights to  see,   Truth in    the  in  -  ward parts;
+verse      Cour - age  our   faint - ing  souls  to  keep,  And   trust Thee though Thou slay.
+
+verse      We    per -  ish if   we  cease from pray'r; Oh,  grant      us   pow'r to  pray.
+verse      Faith in     the on - ly  sac - ri - fice    That can        for  sin   a - tone;
+verse      Give  these, and then Thy will  be   done;   Thus strength - ened with  all might,
+
+verse      And when    to  meet   thee we  pre - pare, Lord, meet    us  on     our way.
+verse      To  cast    our hopes, to   fix our   eyes  On    Christ, on  Christ a - lone.
+verse      We, through Thy Spir - it   and Thy   Son,  Shall pray,   and pray   a - right.

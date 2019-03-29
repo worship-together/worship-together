@@ -11,7 +11,7 @@ key        F
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -42,3 +42,28 @@ soprano    R e f g a/2 - b. - a/8 - g/8 - f/8 - g. - f/8 - f/2 e   f/2
 alto       R g f e f/2 - f. - e/8 - d/8 - c/8 - d - c - b      c/2 c/2
 tenor      R c a b c/2 - d - b. - a/8 - g/8 - f/8 - e - f      g/2 f/2
 bass       R c d g f/2 - b/2 - R - b - c - d                   c/2 f-/2
+
+verse      Now  rest be -  neath    night's shad -  ow     The    wood - land,
+verse      The  ra - diant sun      hath    van  -  ished, His    gold - en
+verse      Now  all  the   heav'n - ly      splen - dor    Breaks forth  in
+verse      Lord Je - sus,  who      dost    love    me,    Oh,    spread Thy
+
+verse      field  and   mead - ow:   The  world  in  slum - ber  lies;  But
+verse      rays   are   ban -  ished By   night, the foe    of   day;   But
+verse      star - light ten -  der   From myr -  iad worlds un - known; Thus
+verse      wings  a  -  bove   me    And  shield me  from   a -  larm!  Though
+
+verse      thou,   my    heart, a -  wake   thee, To    prayer and  song be - take  thee,
+verse      Christ, the   Sun    of   glad - ness, Dis - pel -  ling all  my   sad - ness,
+verse      I       shall shine  in   heav - en,   Where crowns of   gold are  giv - en
+verse      e   -   vil   would  as - sail   me,   Thy   mer -  cy   will not  fail  me:
+
+verse      In     praise to   God   a   -  rise,
+verse      With - in     my   heart holds  sway,
+verse      To     cast   be - fore  Thy    throne,
+verse      I      rest   in   Thy   strong arm,
+
+verse      In     praise to   God   a   -  rise.
+verse      With - in     my   heart holds  sway.
+verse      To     cast   be - fore  Thy    throne.
+verse      I      rest   in   Thy   strong arm.
