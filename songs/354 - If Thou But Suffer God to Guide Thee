@@ -11,7 +11,7 @@ key        Bb
 rhythm     6 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,27 @@ soprano    d/2 d c/2 c | b/2. b  a g | f#/2 g g/2 f | g/2.
 alto       f/2 g g/2 f | d/2. f  f d | d/2  b e/2 d | d/2.
 tenor      b/2 b b/2 a | b/2. d  c b | a/2  g a/2 a | bn/2.
 bass       b/2 g e/2 f | b/2. b+ f g | d/2  e c/2 d | g-/2.
+
+verse      If    thou  but   suf -  fer  God   to   guide   thee, And   hope    in
+verse      What  can   these anx -  ious cares a -  vail    thee, These nev  -  er -
+verse      On -  ly    be    still, and  wait  His  lei  -  sure  In    cheer - ful
+verse      All   are   a  -  like   be - fore  the  High -  est;  'Tis  eas  -  y
+verse      Sing, pray, and   keep   His  ways  un - swerv - ing;  In    all     thy
+
+verse      Him    through all     thy   ways,   He'll give  thee   strength, what - e'er be -
+verse      ceas - ing     moans   and   sighs?  What  can   it     help,     if     thou be -
+verse      hope,  with    heart   con - tent    To    take  what - e'er      thy    Fa - ther's
+verse      to     our     God,    we    know,   To    raise thee   up,       though low  thou
+verse      la  -  bor     faith - ful   be,     And   trust His    Word;     though un - de -
+
+verse      tide    thee, And  bear  thee  through the  e -  vil  days;   Who  trusts in
+verse      wail    thee, O'er each  dark  mo  -   ment as   it   flies?  Our  cross  and
+verse      pleas - ure   And  all - dis - cern -  ing  love have sent;   Nor  doubt  our
+verse      li  -   est,  To   make  the   rich    man  poor and  low;    True won -  ders
+verse      serv -  ing,  Thou yet   shalt find    it   true for  thee:   God  nev -  er
+
+verse      God's un -  chang - ing love    Builds on     the  Rock   that naught can   move.
+verse      tri - als   do      but press   The    heav - ier  for    our  bit -  ter - ness.
+verse      in -  most  wants   are known   To     Him    who  chose  us   for    His   own.
+verse      still by    Him     are wrought Who    set -  teth up     and  brings to    naught.
+verse      will  for - sake    in  need    The    soul   that trusts in   Him    in -  deed.

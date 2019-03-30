@@ -12,9 +12,44 @@ key        C
 rhythm     0 : 4
 tempo      180
 
-status     header
+status     header  tune
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
+
+soprano    R c c/2 c/2 g/2 a  c/2 - b a/2  g/2
+alto       R e e/2 e/2 e/2 e  f/2 - d d/2  d/2
+tenor      R g g/2 a/2 b/2 c  a/2 - g f#/2 g/2
+bass       R c c/2 a/2 e/2 a+ f/2 - g d/2  g-/2
+
+soprano    R c b/2 a/2 g/2 a  f/2 - e - d-/2              c-/2
+alto       R c e/2 c/2 e/2 f  d. - c/8 - c/2 - b          c/2
+tenor      R e g/2 a/2 c/2 c  bb. - a/8 - g/8 - f/8 - g/2 g/2
+bass       R a e/2 f/2 c/2 f- bb/2 - c - g-/2             c/2
+
+soprano    R c c/2 c/2 g/2 a  c/2 - b a/2  g/2
+alto       R e e/2 e/2 e/2 e  f/2 - d d/2  d/2
+tenor      R g g/2 a/2 b/2 c  a/2 - g f#/2 g/2
+bass       R c c/2 a/2 e/2 a+ f/2 - g d/2  g-/2
+
+soprano    R c b/2 a/2 g/2 a  f/2 - e - d-/2              c-/2
+alto       R c e/2 c/2 e/2 f  d. - c/8 - c/8 - b          c/2
+tenor      R e g/2 a/2 c/2 c  bb. - a/8 - g/8 - f/8 - g/2 g/2
+bass       R a e/2 f/2 c/2 f- bb/2 - c - g-/2             c/2
+
+soprano    R c- e. - f/8 - g a/2 g/2        f# g/2  | c-/2 g g a/2 b/2 c/2  R/2
+alto       R g- c/2.         e d/2        d/2  d/2  | e/2  e e c/2 g/2 g/2  R/2
+tenor      R e  g. - f/8 - e c b/2        a/2  b/2  | g/2  c c a/2 d/2 e+/2 R/2
+bass       R c  c/2.         a b. - c/8 - d d  g-/2 | c/2  e e f/2 g/2 c/2  R/2
+
+soprano    b/2 c/2  b/2 a  a  g/2  | a/2 a/2 g a/2 f e/2
+alto       g/2 g/2  g/2 f# f# g/2  | f/2 f/2 e e/2 d c#/2
+tenor      d/2 e+/2 d/2 d  d  b/2  | c/2 c/2 c c/2 a c#/2
+bass       g/2 c/2  g/2 d  d  g-/2 | f/2 f/2 c a/2 d a/2
+
+soprano    R c b/2 a/2 g/2 a  f/2 - e - d-/2              c-/1
+alto       R c e/2 c/2 e/2 f  d. - c/8 - c/2 - b          c/1
+tenor      R e g/2 a/2 c/2 c  bb. - a/8 - g/8 - f/8 - g/2 g/1
+bass       R a e/2 f/2 c/2 f- bb/2 - c - g-/2             c/1

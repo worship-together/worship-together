@@ -12,7 +12,7 @@ key        A
 rhythm     6 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,27 @@ soprano    b/2   g  a/2   g  | f/2    g a. - g/8 f | f/2   e# f/2.
 alto       d - f e# b - d c  | b - a  c d - e#   c | d/2   c  c/2.
 tenor      f/2   b  g - f e# | f/2    e f - b    a | b - a g  a#/2.
 bass       b - c d  d - b c  | f- - c a b - c    d | c - b c  f-/2.
+
+verse      Christ is      made  the  sure  foun - da -  tion, Christ the  Head  and
+verse      All    that    ded - i -  cat - ed     cit - y,    Dear - ly   loved of
+verse      To     this    tem - ple, where we     call  Thee, Come,  O    Lord  of
+verse      Here   vouch - safe  to   all   Thy    ser - vants What   they ask   of
+verse      Laud   and     hon - or   to    the    Fa -  ther, Laud   and  hon - or
+
+verse      Cor -  ner - stone, Cho - sen  of     the  Lord  and   pre -  cious,
+verse      God    on    high,  In    ex - ul  -  tant ju -  bi -  la  -  tion
+verse      hosts, to -  day:   With  thy  wont - ed   lov - ing - kind - ness
+verse      Thee   to    gain,  What  they gain   from Thee  for - ev  -  er
+verse      to     the   Son,   Laud  and  hon -  or   to    the   Spir - it,
+
+verse      Bind - ing   all     the church in   one;  Ho - ly     Zi  -  on's
+verse      Pours  per - pet  -  ual mel -  o -  dy;   God  the    One    in
+verse      Hear   Thy   peo  -  ple as     they pray; And  Thy    full - est
+verse      With   the   bless - ed  to     re - tain, And  here - af  -  ter
+verse      Ev  -  er    Three   and ev  -  er   One,  One  in     might, and
+
+verse      help  for - ev -  er,  And   her    Con - fi - dence a  -  lone.
+verse      Three a  -  dor - ing  In    glad   hymns e -  ter - nal - ly.
+verse      ben - e  -  dic - tion Shed  with - in    its  walls al -  way.
+verse      in    Thy   glo - ry   Ev -  er  -  more  with Thee  to    reign.
+verse      One   in    glo - ry,  While un  -  end - ing  a  -  ges   run.
