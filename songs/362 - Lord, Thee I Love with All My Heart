@@ -11,7 +11,7 @@ key        Bb
 rhythm     4 : 4
 tempo      100
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -57,3 +57,35 @@ soprano    b        a b(3) b  | b       b c b | b/2.  a    | b/2.
 alto       db/8 c/8 c d(3) d  | e       e e d | c/2   c/2  | d/2.
 tenor      g        f f(3) ab | g/8 a/8 b f f | g/2   f/2  | f/2.
 bass       en       f b(3) b  | e/8 f/8 g a b | en-/2 f-/2 | b-/2.
+
+verse      Lord, Thee  I     love with  all    my   heart; I  pray  Thee,  ne'er from
+verse      Yea,  Lord, 'twas Thy  rich  boun - ty   gave   My bod - y,     soul, and
+verse      Lord, let   at    last Thine an  -  gels come,  To A  -  bram's bos - om
+
+verse      me   de - part, With ten - der  mer - cy   cheer    me.
+verse      all  I    have  In   this  poor life  of   la - - - bor.
+verse      bear me   home, That I     may  die   un - fear  -  ing;
+
+verse      Earth has   no   plea - sure I      would share, Yea, heav'n it - self were
+verse      Lord, grant that I      in   ev  -  'ry   place  May  glo -  ri - fy   Thy
+verse      And   in    its  nar -  row  cham - ber   keep   My   bod -  y    safe in
+
+verse      void    and bare  If   Thou, Lord, wert  not  near    me.
+verse      lav  -  ish grace And  help  and   serve my   neigh - bor.
+verse      peace - ful sleep Un - til   Thy   re -  ap - pear -  ing.
+
+verse      And should my    heart for   sor - row  break, My   trust in   Thee no
+verse      Let no     false doc - trine me    be - guile; Let  Sa -  tan  not  my
+verse      And then   from  death a  -  wak - en   me,    That these mine eyes with
+
+verse      one  could shake.  Thou art      the por - tion   I     have  sought; Thy pre - cious blood my
+verse      soul de -  file.   Give strength and pa -  tience un -  to    me      To  bear  my    cross and
+verse      joy  may   see,    O    Son      of  God,  Thy    glo - rious face,   My  Sav - ior   and   my
+
+verse      soul  has bought.  Lord Je - sus Christ, My God    and  Lord, my
+verse      fol - low Thee.    Lord Je - sus Christ, My God    and  Lord, my
+verse      fount of grace.    Lord Je - sus Christ, my prayer at - tend, my
+
+verse      God    and  Lord, For - sake  me   not!   I    trust  Thy  Word.
+verse      God    and  Lord, In    death Thy  com -  fort still  af - ford.
+verse      prayer at - tend, And   I     will praise Thee with - out  end.

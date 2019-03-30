@@ -10,7 +10,7 @@ key        D
 rhythm     0 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -24,3 +24,35 @@ unison     b/2. b | c b a a | d c b a | a f/2 g#
 unison     a/2. a | cn b g/2. g | b a d-/2.
 
 unison     e | f g a f | f/2 e/2 | d-/2. R
+
+verse      My     song  is   love   un -  known,  My    Sav - ior’s love    to
+verse      He     came  from His    blest throne, Sal - va -  tion  to      be -
+verse      Some - times they strew  His   way,    And   His   sweet prais - es
+verse      Why,   what  hath my     Lord  done?   What  makes this  rage    and
+verse      They   rise, and  needs  will  have    My    dear  Lord  sent    a -
+verse      In     life, no   house, no    home    My    Lord  on    earth   might
+verse      Here   might I    stay   and   sing,   No    sto - ry    so      di -
+
+verse      me,     Love  to      the   love  -  less shown, That  they     might love  -  ly
+verse      stow;   But   men     made  strange, and  none   The   longed - for   Christ   would
+verse      sing;   Re -  sound - ing   all      the  day    Ho -  san   -  nas   to       their
+verse      spite?  He    made    the   lame     to   run,   He    gave     the   blind    their
+verse      way;    A     mur  -  der - er       they save,  The   Prince   of    Life     they
+verse      have;   In    death,  no    friend - ly   tomb   But   what     a     strang - er
+verse      vine;   Nev - er      was   love,    dear King,  Nev - er       was   grief    like
+
+verse      be.     O     who     am    I,      that   for    my     sake
+verse      know.   But   oh,     my    Friend, my     Friend in  -  deed,
+verse      King.   Then  Cru  -  ci -  fy!     is     all    their  breath,
+verse      sight.  Sweet in  -   jur - ies!    Yet    they   at     these
+verse      slay.   Yet   cheer - ful   He      to     suf -  f'ring goes,
+verse      gave.   What  may     I     say?    Heav'n was    His    home,
+verse      thine.  This  is      my    Friend, in     whose  sweet  praise
+
+verse      My     Lord   should take    frail   flesh   and   die?
+verse      Who    at     my     need    His     life    did   spend!
+verse      And    for    His    death   they    thirst  and   cry.
+verse      Them - selves dis -  please, And     'gainst Him   rise.
+verse      That   He     His    foes    from    thence  might free.
+verse      But    mine   the    tomb    where - in      He    lay.
+verse      I      all    my     days    could   glad -  ly    spend.

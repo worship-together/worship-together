@@ -12,7 +12,7 @@ key        C
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -53,3 +53,31 @@ soprano    c. - b/8 - a. - g/8 - f - e - d- | e f  g  f e d- c- d-/1
 alto       e - d - e/2 - c/2 - a            | c d  d  c c a  a  a/1
 tenor      a - b - c - b - a - g - f        | g bb bb a g f  e  f/1
 bass       a/2. - e - f - c - d             | c bb g- a c d  a  d/1
+
+verse      We all be -  lieve in  one  true God,   Who cre - a  -  ted
+verse      We all be -  lieve in  Je - sus  Christ His own   Son,  our
+verse      We all con - fess  the Ho - ly   Ghost, Who sweet grace and
+
+verse      earth and   heav - en, The Fa - ther, Who   to    us      in  love
+verse      Lord, pos - sess - ing An  e -  qual  God - head, throne, and might,
+verse      com - fort  giv -  eth And with the   Fa -  ther  and     the Son
+
+verse      Hath   the right of  chil - dren giv  -  en;  He   both soul    and
+verse      Source of  ev -  'ry grace  and  bless - ing; Born of   Mar  -  y,
+verse      In     e - ter - nal glo -  ry   liv  -  eth; Who  the  Church, His
+
+verse      bod - y      feed - eth,  All   we   need  He   doth pro - vide   us;
+verse      vir - gin    moth - er,   By    the  pow - er   of   the   Spir - it,
+verse      own   cre -  a   -  tion, Keeps in   un -  i -  ty   of    spir - it.
+
+verse      He   through snares and  per - ils   lead -  eth, Watch - ing that no
+verse      Word made    flesh, our  eld - er    Broth - er;  That    the lost might
+verse      Here for  -  give - ness and   sal - va  -   tion Dai  -  ly  come through
+
+verse      harm be - tide  us;  He  car - eth   for   us  day   and
+verse      life in - her - it,  Was cru - ci -  fied  for sin - ful
+verse      Je - sus' mer - it.  All flesh shall rise, and we    shall
+
+verse      night; All things are  gov - erned by    His   might.
+verse      men    And raised by   God   to    life  a  -  gain.
+verse      be     In  bliss  with God   e  -  ter - nal - ly.
