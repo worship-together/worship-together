@@ -10,9 +10,9 @@ composer   Martin Luther, 1529
 harmony    J. S. Bach, 1628; alt.
 key        C
 rhythm     4 : 4
-tempo      180
+tempo      100
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
