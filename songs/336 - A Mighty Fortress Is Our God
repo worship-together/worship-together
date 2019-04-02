@@ -12,7 +12,7 @@ key        C
 rhythm     0 : 4
 tempo      180
 
-status     header  tune
+status     header  tune  checked
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -53,3 +53,38 @@ soprano    R c b/2 a/2 g/2 a  f/2 - e - d-/2              c-/1
 alto       R c e/2 c/2 e/2 f  d. - c/8 - c/2 - b          c/1
 tenor      R e g/2 a/2 c/2 c  bb. - a/8 - g/8 - f/8 - g/2 g/1
 bass       R a e/2 f/2 c/2 f- bb/2 - c - g-/2             c/1
+
+verse      A    might - y    for -  tress is       our   God,
+verse      Did  we      in   our    own   strength con - fide,
+verse      And  though  this world, with  dev   -  ils   filled,
+verse      That word    a -  bove   all   earth  - ly    pow'rs,
+
+verse      A      bul   -  wark nev - er   fail - ing;
+verse      Our    striv -  ing  would be   los -  ing,
+verse      Should threat - en   to    un - do     us,
+verse      No     thanks   to   them, a -  bid -  eth;
+
+verse      Our  help - er  He    a - mid   the  flood
+verse      Were not    the right Man on    our  side,
+verse      We   will   not fear, for God   hath willed
+verse      The  Spir - it  and   the gifts are  ours
+
+verse      Of      mor - tal ills  pre - vail -  ing:
+verse      The     Man   of  God's own   choos - ing.
+verse      His     truth to  tri - umph  through us;
+verse      Through Him   Who with  us    sid  -  eth;
+
+verse      For  still  our an  -  cient foe   Doth   seek   to   work us   woe;
+verse      Dost ask    who that   may   be?   Christ Je  -  sus, it   is   He;
+verse      The  Prince of  Dark - ness  grim, We     trem - ble  not  for  him;
+verse      Let  goods  and kin -  dred  go,   This   mor -  tal  life al - so;
+
+verse      His  craft and pow'r are  great, And,  armed with cru - el  hate,
+verse      Lord Sab - a - oth   His  name,  From  age   to   age   the same,
+verse      His  rage  we  can   en - dure,  For   lo,   his  doom  is  sure,
+verse      The  bod - y   they  may  kill:  God's truth a -  bid - eth still,
+
+verse      On  earth  is   not  his   e  -  qual.
+verse      And He     must win  the   bat - tle.
+verse      One lit -  tle  word shall fell  him.
+verse      His king - dom  is   for - ev -  er.
