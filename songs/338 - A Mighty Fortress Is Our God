@@ -12,7 +12,7 @@ key        C
 rhythm     4 : 4
 tempo      100
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -48,3 +48,33 @@ soprano    e/2.  c       | b       a       g             a/8 g/8 | f/8 - e/8 - d
 alto       c#/2. e       | d       c/8 f/8 f/8 e/16 d/16 e       | f/8 - a/8 - b  g-(3)
 tenor      a/2.  a/8 g/8 | f/8 g/8 a       d/8 b/8       c       | c - g/8 - f/8  e(3)
 bass       a/2.  a       | d/8 e/8 f/8 d/8 b/8 g-/8      c/8 b/8 | a/8 - f/8 - g- c(3)
+
+verse      A    might - y    for -  tress is       our   God,    A
+verse      Did  we      in   our    own   strength con - fide,   Our
+verse      And  though  this world, with  dev   -  ils   filled, Should
+verse      That word    a -  bove   all   earth  - ly    pow'rs, No
+
+verse      bul   -  wark nev - er   fail - ing; Our  help - er  He    a -
+verse      striv -  ing  would be   los -  ing, Were not    the right Man
+verse      threat - en   to    un - do     us,  We   will   not fear, for
+verse      thanks   to   them, a -  bid -  eth; The  Spir - it  and   the
+
+verse      mid   the  flood  Of      mor - tal ills  pre - vail -  ing:  For
+verse      on    our  side,  The     Man   of  God's own   choos - ing.  Dost
+verse      God   hath willed His     truth to  tri - umph  through us;   The
+verse      gifts are  ours   Through Him   Who with  us    sid  -  eth;  Let
+
+verse      still  our an  -  cient foe   Doth   seek   to   work us
+verse      ask    who that   may   be?   Christ Je  -  sus, it   is
+verse      Prince of  Dark - ness  grim, We     trem - ble  not  for
+verse      goods  and kin -  dred  go,   This   mor -  tal  life al -
+
+verse      woe; His  craft and pow'r are  great, And,  armed with cru - el
+verse      He;  Lord Sab - a - oth   His  name,  From  age   to   age   the
+verse      him; His  rage  we  can   en - dure,  For   lo,   his  doom  is
+verse      so;  The  bod - y   they  may  kill:  God's truth a -  bid - eth
+
+verse      hate,  On  earth  is   not  his   e  -  qual.
+verse      same,  And He     must win  the   bat - tle.
+verse      sure,  One lit -  tle  word shall fell  him.
+verse      still, His king - dom  is   for - ev -  er.

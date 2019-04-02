@@ -10,7 +10,7 @@ key        F
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  double  checked
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -41,3 +41,23 @@ soprano    a/2 e f  g/2 a g f/2 e/2  d-/1
 alto       d/2 c c  e/2 e/2 d/2 d c# d/1
 tenor      f/2 g a  c/2 c/2 a/2 a/2  a/1
 bass       d/2 c f- c/2 a c d/2 a/2  d/1
+
+verse      How long,  O    Lord, will You   for - get?
+verse      How long   will all   my   foes  ex -  ult?
+verse      Why should my   foes  my   for - tress scale?
+
+verse      I   lift my   prayer to   You   and  yet
+verse      Why must they taunt  and  still in - sult?
+verse      Why do   you  let    them still as - sail?
+
+verse      You do   not  hear    my med -  i  -  ta -  tion;
+verse      O   LORD my   God,    my prayer con - sid - er,
+verse      But I    have trust - ed your   sal - va -  tion,
+
+verse      You   still re - fuse  my   sup - pli - ca -  tion.
+verse      Sus - tain  my   eyes, my   cry   con - sid - er,
+verse      And   I     re - joice with ex -  ul -  ta -  tion;
+
+verse      I    live  in    sor -  row and     re -  gret.
+verse      Lest I     come  down   to  death's cold  vault.
+verse      I    sing; God's boun - ty  will    pre - vail.
