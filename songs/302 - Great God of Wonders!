@@ -10,7 +10,7 @@ key        C
 rhythm     0 : 4
 tempo      160
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -46,3 +46,35 @@ soprano    b        R       b       | c       R        g       | g/2 g        | 
 alto       d        R       d       | e       R        b       | c/2 e        | c/2 f | d/2 d  | e/2.
 tenor      g        R       g       | g       R        g/8 f/8 | e/2 c/8 bb/8 | a/2 a | g/2 g  | g/2.
 bass       g/8 f#/8 g/8 f/8 e/8 d/8 | c/8 e/8 g/8 f/8  e/8 d/8 | c/2 c        | f/2 d | g/2 g- | c/2.
+
+verse      Great God   of   won   -  ders!  All    Thy   ways   Are  match - less,
+verse      Such  dire  of - fens  -  es     to     for - give,  Such guilt - y,
+verse      In    won - der  lost,    with   trem - bling joy    We   take    the
+verse      O     may   this strange, this   wond - rous  grace, This match - less
+
+verse      god - like and   di - vine;  But   the fair  glo - ries
+verse      dar - ing  worms to   spare; This  is  Thy   grand pre -
+verse      par - don  of    our  God;   Par - don for   sins  of
+verse      mir - a -  cle   of   love,  Fill  the whole earth with
+
+verse      of      Thy grace   More god - like    and    un - ri  -  valed
+verse      rog  -  a - tive,   And  in    the     hon -  or   none   shall
+verse      deep -  est dye,    A    par - don     sealed with Je  -  sus'
+verse      grate - ful praise, And  all   th'an - gel -  ic   choirs a -
+
+verse      shine, More god - like    and    un - ri  -  valed shine:
+verse      share, And  in    the     hon -  or   none   shall share:
+verse      blood, A    par - don     sealed with Je  -  sus'  blood:
+verse      bove,  And  all   th'an - gel -  ic   choirs a  -  bove:
+
+verse      Who is a par - d'ning God like Thee?  Or who has grace so
+
+verse      rich and free?  Or who has grace so rich and free?
+
+
+
+
+
+
+
+

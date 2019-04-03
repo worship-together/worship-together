@@ -12,7 +12,7 @@ key        G
 rhythm     6 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    b/2 c  d/2             c  | b/2    a  b/2 g | a. - b/8 c  b/2    a | 
 alto       g/2 g  a+/2            a+ | f - g  e  e/2 d | f. - g/8 g  g/2    e | d   e   d b/2
 tenor      d/2 e+ a/2             c  | d/2    c  b/2 b | d. - d/8 e+ d/2    c | b - a/2   g/2
 bass       g/2 e  d/8 e/8 f/8 d/8 a+ | b+ - g a+ e/2 g | d. - g/8 c  g - g- a | b - c - d g-/2
+
+verse      All glo  -  ry  be      to   God   on    high,  Who  hath  our    race   be -
+verse      We  praise, we  wor  -  ship Thee, we    trust, And  give  Thee   thanks for -
+verse      O   Je   -  sus Christ, our  God   and   Lord,  Be - got - ten    of     the
+verse      O   Ho   -  ly  Spir -  it,  pre - cious Gift,  Thou Com - fort - er     un -
+
+verse      friend - ed!   To   us   no    harm   shall now   come nigh,   The strife at   last    is
+verse      ev   -   er,   O    Fa - ther, that   Thy   rule  is   just    And wise,  and  chang - es
+verse      Fa   -   ther, O    Thou Who   hast   our   peace re - stored, And the    lost sheep   dost
+verse      fail  -  ing,  From Sa - tan's snares our   souls up - lift    And let    Thy  pow'r   a -
+
+verse      end -  ed.  God  show -  eth  His   good will    to     men,    And
+verse      nev -  er;  Thy  bound - less pow'r o'er all     things reigns, Done
+verse      gath - er,  Thou Lamb    of   God,  en - throned on     high    Be -
+verse      vail - ing  A -  vert    our  woes  and  calm    our    dread:  For
+
+verse      peace shall  reign on     earth a -  gain;  O    thank Him for   His   good - ness!
+verse      is    what - e'er  Thy    will  or - dains: Well for   us  that  Thou  rul -  est!
+verse      hold  our    need  and    hear  our  cry;   Have mer - cy  on    us,   Je  -  sus!
+verse      us    the    Sav - iour's blood was  shed;  Do   Thou  in  faith sus - tain   us!
