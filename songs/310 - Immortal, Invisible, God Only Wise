@@ -10,7 +10,7 @@ key        G
 rhythm     3 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,23 @@ soprano    g e a | f d- g | b b a       | g/2
 alto       e c e | d d  b | d g f       | g/2
 tenor      g g c | a f  g | g d d/8 c/8 | b/2
 bass       c c a | d d  e | d d d       | g-/2
+
+verse      Im -  mor -  tal, in - vis -  i -  ble, God  on -  ly  wise,
+verse      Un -  rest - ing, un - hast - ing, and  si - lent  as  light,
+verse      To    all,   life Thou giv -  est, to   both great and small;
+verse      Great Fa  -  ther of   glo -  ry,  pure Fa - ther  of  light,
+
+verse      In    light  in - ac - ces -  si -  ble  hid    from our   eyes,
+verse      Nor   want - ing, nor  wast - ing,  thou rul -  est  in    might;
+verse      In    all    life Thou liv -  est,  the  true   life of    all;
+verse      Thine an  -  gels a -  dore   Thee, all  veil - ing  their sight;
+
+verse      Most bless - ed,  most  glo  -  rious, the  An  -  cient of  Days,
+verse      Thy  jus  -  tice like  moun -  tains  high soar - ing   a - bove
+verse      We   blos -  som  and   flour - ish    as   leaves on    the tree,
+verse      All  laud    we   would ren  -  der;   O    help   us    to  see
+
+verse      Al - might - y,    vic - to  -   rious, Thy great  name    we  praise.
+verse      Thy  clouds  which are   foun  - tains  of  good - ness    and love.
+verse      And  with -  er    and   per  -  ish    but naught chang - eth Thee.
+verse      'Tis on   -  ly    the   splen - dor    of  light  hid  -  eth Thee.
