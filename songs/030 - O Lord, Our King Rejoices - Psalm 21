@@ -11,7 +11,7 @@ key        F
 rhythm     0 : 4
 tempo      220
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,23 @@ soprano    c d/2 c b g/2 f/2. = f/2
 alto       f f/2 f d c/2 c/2. = c/2
 tenor      a b/2 f f e/2 f/2. = f/2
 bass       f b/2 a b c/2 f-/2. = f-/2
+
+verse      O       Lord, our   king  re - joic -  es   Be -  cause  Your  strength is    great,
+verse      He      asked for   life, You  gave    it,  He    prayed for   length   of    days,
+verse      Our     king  in    God   has  trust - ed,  Your  mer -  cy    holds    him   fast.
+verse      Their   fruit shall all   be   ta  -   ken, You   shall  de  - stroy    their seed.
+
+verse      And in    sal - va   -  tion, voic - es   Shall Your  great strength re - late.
+verse      His glo - ry    stands, You   save   it   In    maj - es -  ty       and  praise.
+verse      His en -  e  -  mies    have  lust - ed   For   blood their hour     is   past.
+verse      The harm  they  sought  is    sha -  ken, Your  wrath is    wrath    in - deed.
+
+verse      In   good -  ness he   is    plant - ed,   What he    de -  sired
+verse      You  blessed Your king for - ev  -   er    And  shall for - sake
+verse      You  take    them with great burn  - ing,  Your wrath is    here
+verse      They turn    to   flee Your  ar  -   rows, And  face  e  -  ter -
+
+verse      You  grant - ed;   You gave   a    crown     of   gold.
+verse      him  nev  -  er,   His glad - ness now       as - cends.
+verse      re - turn -  ing   And You    de - stroy     them all.
+verse      nal  sor  -  rows, We  sing   Your strength, O    God.

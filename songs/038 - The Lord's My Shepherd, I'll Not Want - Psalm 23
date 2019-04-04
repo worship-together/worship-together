@@ -12,7 +12,7 @@ key        F
 rhythm     3 : 4
 tempo      110
 
-status     header  tune  double  checked
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -33,3 +33,21 @@ soprano    b c b       | a/2 a       | g b d  | f/2 e | f/2
 alto       f e g       | f/2 f/8 e/8 | d/2 d  | c/2 c | c/2
 tenor      d c c       | c/2 c       | b g b  | a/2 g | a/2
 bass       g c d/8 e/8 | f/2 a       | b/2 g- | c/2 c | f/2
+
+verse      The    Lord's my  Shep - herd,   I'll    not    want; He
+verse      My     soul   He  doth   re   -  store   a  -   gain, And
+verse      Yea,   though I   walk   through death's dark   vale, Yet
+verse      My     ta  -  ble Thou   hast    fur  -  nish - ed    In
+verse      Good - ness   and mer -  cy      all     my     life  Shall
+
+verse      makes  me   down  to   lie   In     pas - tures green; He
+verse      me     to   walk  doth make  With - in    the   paths  of
+verse      will   I    fear  none ill,  For    Thou  art   with   me,
+verse      pres - ence of    my   foes; My     head  Thou  dost   with
+verse      sure - ly   fol - low  me;   And    in    God's house  for -
+
+verse      lead -  eth    me     The  qui  -  et  wa -  ters   by.
+verse      right - eous - ness,  E'en for     His own   name's sake.
+verse      and     Thy    rod    And  staff   me  com - fort   still.
+verse      oil     a   -  noint, And  my      cup o  -  ver -  flows.
+verse      ev   -  er  -  more   My   dwell - ing place shall  be.
