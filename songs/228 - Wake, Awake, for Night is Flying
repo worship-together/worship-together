@@ -11,7 +11,7 @@ key        C
 rhythm     0 : 4
 tempo      160
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -52,3 +52,31 @@ soprano    c/2 g/2 | c g a e f  d- | c-/1
 alto       e/2 e/2 | e e c c c  b  | c/1
 tenor      c/2 c/2 | c b a g a  g  | e/1
 bass       c/2 c/2 | a e f c f- g- | c/1
+
+verse      Wake, a - wake, for night   is  fly -  ing,  The watch - men on
+verse      Zi -  on  hears the watch - men sing - ing,  And all     her heart
+verse      Now   let all   the heav'ns a - dore   Thee, And men     and an -
+
+verse      the  heights are  cry   -  ing;  A -  wake,  Je - ru -  sa -  lem,    at  last!
+verse      with joy     is   spring - ing;  She  wakes, she  ris - es    from    her gloom;
+verse      gels sing    be - fore     Thee, With harp   and  cym - bals' clear - est tone;
+
+verse      Mid - night hears the   wel -  come  voic - es    And   at     the thrill -
+verse      For   her   Lord  comes down   all - glor - ious; The   strong in  grace,
+verse      Of    one   pearl each  shin - ing   por -  tal,  Where we     are with
+
+verse      ing cry   re -  joic - es:   Come forth, ye   vir -  gins, night is    past!
+verse      in  truth vic - tor -  ious; Her  Star   is   ris'n, her   Light is    come!
+verse      the choir im -  mor -  tal,  Of   an  -  gels round  Thy   daz - zling throne.
+
+verse      The Bride - groom comes:  a - wake!  Your  lamps with glad - ness
+verse      Ah  come,   Thou  bless - ed  One,   God's own   be - lov -  ed
+verse      No  eye     hath  seen,   nor ear    Hath  yet   at - tained to
+
+verse      take!  Al - le -  lu - ia!   And for   His  mar -  riage feast pre -
+verse      Son.   Al - le -  lu - ia!   We  fol - low  till   the   halls we
+verse      hear   What there is   ours; But we    re - joice, and   sing  to
+
+verse      pare, For   ye   must go  to  meet  Him   there.
+verse      see   Where Thou hast bid us  sup   with  Thee.
+verse      Thee  Our   hymn of   joy e - ter - nal - ly.

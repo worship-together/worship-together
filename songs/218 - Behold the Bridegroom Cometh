@@ -11,7 +11,7 @@ key        G
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,23 @@ soprano    R g d- e f a g f/8 e/8 d- e g   f. - e/8   e/2 d#- e/1
 alto       R b b  b d d b b       b  b g-  d    b/2.      b   b/1
 tenor      R g f  g a f g g       f  e e   d-   e/2   f/2     e/1
 bass       R e b  e d d e e       b  e b+. a+/8 g - e b/2     e/1
+
+verse      Be - hold  the Bride - groom com - eth   in    the  mid - dle   of     the  night,
+verse      Do   thou, my  soul,   be -  ware, be -  ware  lest thou  in    sleep  sink down,
+verse      That day,  the day     of    fear, shall come; my   soul, slack not    thy  toil,
+verse      Be - ware, my  soul;   be -  ware, be -  ware, lest thou  in    slum - ber  lie,
+
+verse      And  blest is  he    whose loins are    girt,  whose lamp   is  burn - ing  bright;
+verse      Lest thou  be  giv - en    o’er  to     death, and   lose   the gold - en   crown;
+verse      But  light thy lamp, and   feed  it     well,  and   make   it  bright with oil;
+verse      And, like  the five, re -  main  with - out,   and   knock, and vain - ly   cry;
+
+verse      But woe    to   that dull ser - vant, whom    the Mas  -  ter   shall sur - prise
+verse      But see    that thou be   so -  ber,  with    a   watch - ful   eye,  and   thus
+verse      Who know - est  not  how  soon  may   sound   the cry     at    e  -  ven - tide,
+verse      But watch, and  bear thy  lamp  un -  dimmed, and Christ  shall gird  thee  on
+
+verse      With lamp un  -  trimmed, un  -  burn - ing and    with slum - ber in   his eyes.
+verse      Cry, Ho - ly,    ho   -   ly,    ho  -  ly  God,   have mer -  cy  up - on  us!
+verse      Be - hold the    Bride -  groom  comes! A - rise!  Go   forth  to  meet the Bride!
+verse      His  own  bright wed  -   ding - robe   of  light, the  glo -  ry  of   the Son.
