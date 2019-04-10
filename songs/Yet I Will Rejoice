@@ -7,7 +7,7 @@ key        G
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -25,3 +25,15 @@ unison     b g a b | a/8 - g/8 f/8 g/8 a b/8 a/8 | g g/8 f/8 e/8 f/8 g/8 a/8 | b
 unison     b g f e | d-/8 - e/8 - f/8 - g/8 - a b/8 a/8 | g e a/8 f/8 e/8 - d-/8
 
 unison     e f g a | b g f e | a - f e - d- | e/2.
+
+verse      Though the fig tree may not blos - som, Nor fruit be on the vines;
+
+verse      Though the la - bor of the o - live may fail, And the fields yield no food;
+
+verse      Though the flock may be cut off from the fold, And there be no herd in the stalls
+
+verse      Yet I will re - joice in the Lord, I will joy in the God of my sal - va - tion.
+
+verse      The Lord God is my strength; He will make my feet like deer’s feet,
+
+verse      And He will make me walk on my high hills.

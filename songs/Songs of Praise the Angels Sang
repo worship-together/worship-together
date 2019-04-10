@@ -6,7 +6,7 @@ key        C
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -22,3 +22,19 @@ soprano    d- f e/8 f/8 g | g f# g/2 | a/8 g/8 a/8 b/8 c c- | f/8 e/8 d-  c-/2
 alto       d  d c       b | d d  d/2 | f       c       c c  | d       b   c/2
 tenor      f  a a       g | a a  b/2 | c       c       g a  | a   g/8 f/8 e/2
 bass       d  d a       e | d d  g/2 | f       f       e a  | d       g-  c/2
+
+verse      Songs  of   praise the   an -  gels sang,   Heav'n with  al  -  le -  lu  -  ias  rang,
+verse      Songs  of   praise a  -  woke  the  morn    When   the   Prince of    Peace  was  born;
+verse      Heav'n and  earth  must  pass  a -  way!    Songs  of    praise shall crown  that day!
+verse      And    can  man    a  -  lone  be   dumb    Till   that  glor - ious  king - dom  come?
+verse      Saints be - low,   with  heart and  voice,  Still  in    songs  of    praise re - joice,
+verse      Borne  up - on     their lat - est  breath, Songs  of    praise shall con -  quer death;
+verse      Hymns  of   glo -  ry,   songs of   praise, Fa  -  ther, un  -  to    Thee   we   raise,
+
+verse      When    Je - ho  -  vah's work     be - gun,   When   He   spake, and   it     was   done.
+verse      Songs   of   praise a  -  rose     when He     Cap -  tive led    cap - ti  -  vi -  ty.
+verse      God     will make   new   heav'ns, new  earth; Songs  of   praise shall hail   their birth.
+verse      No;     the  church de -  lights   to   raise  Psalms and  hymns  and   songs  of    praise.
+verse      Learn - ing  here,  by    faith    and  love,  Songs  of   praise to    sing   a  -  bove.
+verse      Then,   a -  midst  e  -  ter   -  nal  joy,   Songs  of   praise their pow'rs em -  ploy.
+verse      Je  -  sus,  glo -  ry    un   -   to   Thee,  With   the  Spir - it,   ev  -  er    be.

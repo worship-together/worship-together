@@ -6,7 +6,7 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -27,3 +27,15 @@ soprano    b a g f | e d- c- c- | d-/8 - e/8 f b  g | f/2 e/2   | f/2.
 alto       e f c c | c/2.    g- | b          c b  d | f/2 c/2   | c/2.
 tenor      g f e f | g/2.    e  | f          f g  g | a/2 g - b | a/2.
 bass       c c b a | c d  e  c  | b          a g- b | c/2 c/2   | f/2.
+
+verse      Lo,    God,   our God, has  come!  To   us   a    Child is   born, To
+verse      Re  -  joice! our God  has  come,  In   love and  low - li - ness; The
+verse      Praise ye     the Word made flesh  True God, true man   is   He.   Praise
+
+verse      us  a   Son    is  giv'n; Bless, bless the bless - ed morn,  O
+verse      Son of  God    has come   The    sons  of  men     to bless; God
+verse      ye  the Christ of  God    To     whom  al  glo  -  ry be!    Praise
+
+verse      hap - py, low - ly,  lof -  ty  birth,  Now    God, our God    has  come  to  earth!
+verse      with  us  now   de - scends to  dwell,  God    in   our flesh, Im - man - u - el.
+verse      ye    the Lamb  that once   was slain!  Praise ye   the King   that comes to  reign!

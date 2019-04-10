@@ -5,7 +5,7 @@ key        Eb
 rhythm     0 : 4
 tempo      190
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -71,3 +71,27 @@ soprano    db-/1     c-/1  | c/2.    b a/2 g f | g/2 f/2.  g - en/2 | f/1
 alto       b/1       a/1 = | a/2  a+ g f/2 e d | e/2.   db c/1      | c/1
 tenor      a/2 - g/2 a/1 = | a/1       c/2.  a | g/2 a  b  g g g/2  | an/1
 bass       b/1       a/1 = | a/1       f/2.  f | e/2 db b  c c c/2  | f/1
+
+verse      Christian, what do you be - lieve?  I be - lieve in God the
+
+verse      Fa - ther Al - might - y, Mak - er of heav'n and earth.  And in Je - sus
+
+verse      Christ, His on - ly be - got - ten Son, our Lord.  He was con - ceived by the Ho - ly
+
+verse      Ghost, and born of the vir - gin Mar - y.  He suf - fered un - der
+
+verse      Pon - tius Pi - late; was cru - ci - fied, dead, and bur - ied.  He de - scend - ed
+
+verse      in - to Hades.  On the third day He rose a - gain
+
+verse      from the dead, as - cend - ed in - to Heav -
+
+verse      en, and sits at the right hand of God the Fa - ther Al - might -
+
+verse      y; from thence He shall come to judge the liv - ing and the dead.
+
+verse      I be - lieve in the Ho - ly Ghost, the ho - ly cath - 'lic church, the com -
+
+verse      mu - nion of saints, the for - give - ness of sins, the res - ur - rec - tion of the
+
+verse      bod - y; and the life ev - er - last - ing.  A - men.

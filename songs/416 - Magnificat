@@ -3,6 +3,8 @@ hymnal     Cantus Christi
 page       416
 author     Thomas Talis, The Dorian Service, c. 1550
 
+status     header  tune  checked
+
 key        D
 rhythm     0 : 4
 tempo      140
@@ -43,7 +45,7 @@ bass         e  b   f/2   | b/2 R g | g/2 g d | e/2 b d
 # Page 2
 
 soprano      a. a/8 g f = | f g f e | e d#- e/2 | R b  b  b =
-alto         e. e/8 d d = | d b c a | d d   d/2 | R g  g  g =
+alto         e. e/8 d d = | d b c a | b b   b/2 | R g  g  g =
 tenor        c. c/8 b a = | a g a e | f f   e/2 | R e+ e+ d =
 bass         a. a/8 b d = | d e a c | b b   e/2 | R e  e  g =
 
@@ -84,10 +86,10 @@ alto         b/2 b   b   | c d/2 d  | cn b  g-  a
 tenor        g/2 f   f   | a a/2 b  | a  d- e/2
 bass         e e b   b   | a d/2 g- | a  b  cn/2
 
-soprano      e d# e/2 | R g/2 a | b/2 b b  | b. a/8   g g
-alto         b/2  b/2 | R e/2 f | g/2 d g  | f/2      e b
-tenor        f f  e/2 | R b/2 d | d/2 b e+ | d. c/8 - b g
-bass         b b  e/2 | R e/2 d | g/2 g e  | b+/2     e e
+soprano      e d#- e/2 | R g/2 a | b/2 b b  | b. a/8   g g
+alto         b/2   b/2 | R e/2 f | g/2 d g  | f/2      e b
+tenor        f f   e/2 | R b/2 d | d/2 b e+ | d. c/8 - b g
+bass         b b   e/2 | R e/2 d | g/2 g e  | b+/2     e e
 
 soprano      f f/8 f/8 f b  | b.  b/8  b/2  | R b a g =
 alto         d d/8 e/8 f e  | d#. d#/8 d#/2 | R b d e =
@@ -116,7 +118,7 @@ alto         R d. d/8 g- | a b/8 c/8 d/2 | d  d d       g-
 tenor        R b. c/8 d  | d g/8 g/8 a/2 | g  g g/8 a/8 b/8 c/8
 bass         R g. g/8 g  | f e/8 e/8 d/2 | g- g g       g
 
-soprano      a g. a/8  f   | g  g g g | f              e. f/8 d#  | e/1
-alto         a b/8 c/8 d/2 | d  e e b | d                 a - b/2 | b/1
-tenor        d g       a/2 | g  b b g | a/8 g/8 - f/8 - e/8 - f/2 | e/1
-bass         f e       d/2 | g- e e e | d     c - b/8 - a/8 - b   | e/1
+soprano      a g. a/8  f   | g  g g g | f              e. f/8 d#-  | e/1
+alto         a b/8 c/8 d/2 | d  e e b | d                 a - b/2  | b/1
+tenor        d g       a/2 | g  b b g | a/8 g/8 - f/8 - e/8 - f/2  | e/1
+bass         f e       d/2 | g- e e e | d     c - b/8 - a/8 - b    | e/1

@@ -8,7 +8,7 @@ key        C
 rhythm     0 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -34,3 +34,23 @@ unison     e/8 - f/8 - e/8 - d-/8 e f/8 f/8 | g# f e e | a - g#/8 - a/8 b/8 - a/
 unison     e/8 - f/8 - e/8 - d-/8 e d-/8 d-/8 | c- d- e e | f a/8 a/8 c f | e/8 - f/8 e/8 d-/8 e/2
 
 unison     e/8 - f/8 - e/8 - d-/8 e f | g# f/8 f/8 e g# | a b/8 c/8 d/8 c/8 b/8 - c/8 | b/2. b | e+/2 d c | b - a g# a | g# g#/2.
+
+verse      And seeing the multitudes, He went up into a moun - tain:
+
+verse      And when He was set, His disciples came un - to Him: And he opened his mouth, and taught them, saying,
+
+verse      Bless - ed are the poor in spir - it, For theirs is the king - dom of Heav - en.
+
+verse      Bless - ed are they that mourn, For they shall be com - fort - ed.
+
+verse      Bless - ed are the meek: for they shall in - her - it the earth.
+
+verse      Bless - ed are they which do hun - ger and thirst after right - eous - ness, For they shall be filled.
+
+verse      Bless - ed are the mer - ci - ful, For they shall ob - tain mer - cy.
+
+verse      Bless - ed are the pure in heart, For they shall see God.
+
+verse      Bless - ed are the peace - mak - ers, For they shall be called the chil - dren of God.
+
+verse      Bless - ed are they which are per - se - cu - ted for right - eous - ness' sake, For theirs is the king - dom of heav - en.
