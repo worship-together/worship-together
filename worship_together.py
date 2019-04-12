@@ -3,7 +3,8 @@ import sound
 import midi
 import sheet_music
 import storage
-from objc_util import *
+import objc_util
+import ctypes
 import os
 import sound
 
@@ -17,15 +18,17 @@ last_position = 0.0000000
 satb_page = None
 song = None
 
+
 def bring_up_sheet_music(sender):
 	music = sheet_music.MyView(song)
 	music.present('fullscreen')
 
+
 def write_midi(song):
 	midi.Song(song).write_midi('output.midi', [
-		int(get_subview('soprano_volume').value * 120), 
-		int(get_subview('alto_volume').value * 120), 
-		int(get_subview('tenor_volume').value * 120), 
+		int(get_subview('soprano_volume').value * 120),
+		int(get_subview('alto_volume').value * 120),
+		int(get_subview('tenor_volume').value * 120),
 		int(get_subview('bass_volume').value * 120)])
 
 
@@ -34,8 +37,8 @@ def play():
 	if player:
 		player.play()
 		player.rate = rate
-	
-	
+
+
 def stop():
 	global rate
 	if player:
@@ -45,13 +48,14 @@ def stop():
 
 def playing():
 	return get_subview('play_button').title == 'Pause'
-	
-	
+
+
 def get_subview(name):
 	for subview in satb_page.subviews:
 		if subview.name == name:
 			return subview
 	raise RuntimeError('nutn is namd ' + name)
+
 
 def track_time(slider):
 	global player, dragging, last_position, rate, position
@@ -71,7 +75,7 @@ def track_time(slider):
 		stop()
 	else:
 		ui.delay(lambda: track_time(slider), 0.05)
-	
+
 
 def change_tempo(sender):
 	player.rate = sender.value + 0.5
@@ -85,7 +89,7 @@ def adjust_time(slider):
 		position = player.current_time
 		last_position = slider.value
 		dragging = False
-		
+
 
 def play_pause(sender):
 	global song, player, rate, position
@@ -98,17 +102,18 @@ def play_pause(sender):
 		sender.title = 'Pause'
 		write_midi(song)
 		player = sound.MIDIPlayer('output.midi')
+		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
+		# obc_player.init('output.midi', None)
 		adjust_time(get_subview('time_adjuster'))
 		play()
 		player.rate = get_subview('tempo_slider').value + 0.5
-		
-		
+
+
 def adjust_volume(sender):
 	global player
 	if player != None and playing():
 		play_pause(get_subview('play_button'))
 		play_pause(get_subview('play_button'))
-
 
 
 def present_song(sender):
@@ -144,18 +149,22 @@ start_screen.background_color = 'white'
 
 table = ui.TableView()
 btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:coffee_32']]
-btn_container = ui.View(frame=(0, 0, len(btn_images)*32, 44))
+btn_container = ui.View(frame=(0, 0, len(btn_images) * 32, 44))
 btn = ui.Button(image=ui.Image.named('iob:loop_256'))
 btn.frame = (64, 0, 32, 44)
+
+
 def sync_songs_and_tunes():
 	storage.synchronize('songs', 'songs')
 	storage.synchronize('tunes', 'tunes')
+
+
 btn.action = lambda sender: sync_songs_and_tunes()
 btn_container.add_subview(btn)
 
 btn_item = ui.ButtonItem()
-btn_item_objc = ObjCInstance(btn_item)
-btn_item_objc.customView = ObjCInstance(btn_container)
+btn_item_objc = objc_util.ObjCInstance(btn_item)
+btn_item_objc.customView = objc_util.ObjCInstance(btn_container)
 song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
 song_list = ui.ListDataSource(sorted(song_files))
 song_list.action = present_song
