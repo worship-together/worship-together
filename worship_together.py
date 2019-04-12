@@ -4,6 +4,34 @@ import midi
 import sync
 import os
 
+
+# *******************************************************
+#
+#      Hello World App
+#
+#
+# def button_handler(widget):
+#     print("hello")
+#
+#
+# def build(app):
+#     box = toga.Box()
+#
+#     button = toga.Button('Hello world', on_press=button_handler)
+#     button.style.padding = 50
+#     button.style.flex = 1
+#     box.add(button)
+#
+#     return box
+#
+#
+# def main():
+#     return toga.App('First App', 'org.pybee.helloworld', startup=build)
+#
+#
+# if __name__ == '__main__':
+#     main().main_loop()
+
 exiting = False
 player = None
 rate = 1
@@ -139,8 +167,8 @@ class StartScreen(toga.Box):
 start_screen = StartScreen()
 start_screen.background_color = 'white'
 
-table = toga.interface.widgets.detailedlist.DetailedList()
-btn = toga.interface.widgets.button.Button(label="Sync")
+table = toga.DetailedList()
+btn = toga.Button(label="Sync")
 #image=toga.interface.widgets.imageview.ImageView('iob:loop_256')
 btn.frame = (64, 0, 32, 44)
 def sync_songs_and_tunes():
@@ -149,14 +177,16 @@ def sync_songs_and_tunes():
 btn.action = lambda sender: sync_songs_and_tunes()
 
 
-btn_item = toga.interface.widgets.button.Button(label="Huh")
-song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
-song_list = ui.ListDataSource(sorted(song_files))
-song_list.action = present_song
-table.data_source = table.delegate = song_list
-screen_width, screen_height = ui.get_screen_size()
-table.row_height = 40
-table.frame = 0, 0, screen_width, screen_height - 64
-start_screen.add_subview(table)
-start_screen.right_button_items = [btn_item]
-start_screen.present('fullscreen')
+# btn_item = toga.interface.widgets.button.Button(label="Huh")
+# song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
+# song_list = ui.ListDataSource(sorted(song_files))
+# song_list.action = present_song
+# table.data_source = table.delegate = song_list
+# screen_width, screen_height = ui.get_screen_size()
+# table.row_height = 40
+# table.frame = 0, 0, screen_width, screen_height - 64
+# start_screen.add_subview(table)
+# start_screen.right_button_items = [btn_item]
+# start_screen.present('fullscreen')
+
+
