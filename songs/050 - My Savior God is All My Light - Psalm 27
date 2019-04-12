@@ -11,7 +11,7 @@ key        C
 rhythm     0 : 4
 tempo      190
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -29,7 +29,7 @@ tenor      f/2  f/2 f a/2 f g  d- e/2  | a/2 a/2. a g# a g#/2 a/1
 bass       d/2  d/2 d a/2 d g- bb a/2  | a/2 d/2. a e  f e/2  a/1
 
 soprano    a/2 g f d-/2 | e/2 g  e c-/2 | c-/2 f/2 g a/2 c  bb/2 a/2
-alto       f/2 e d b/2  | c/2 d  c a/2  | a/2  d/2 d f/2 e  g/2  f#/2
+alto       f/2 e d b/2  | c/2 d  c a/2  | a/2  d/2 e f/2 e  g/2  f#/2
 tenor      c/2 c a g/2  | g/2 d- g f/2  | f/2  a/2 c c/2 c  d/2  d/2
 bass       f/2 c d g-/2 | c/2 b  c f-/2 | f/2  d/2 c f/2 a+ g/2  d/2
 
@@ -37,3 +37,27 @@ soprano    f/2 a b c/2 | c-/2 g a bb/2 | a/2 c/2.         d e+ d d/2 - c#/2 d/1
 alto       d/2 c f e/2 | e/2  e f g/2  | f/2 e/2.         g g  f e/1        f#/1
 tenor      a/2 a d g/2 | g/2  c c d/2  | d/2 c. - b/8 - a b c  a a/1        a/1
 bass       d/2 f d c/2 | c/2  c a g-/2 | d/2 a+/2.        g c  d a+/2 - a/2 d/1
+
+verse      My     Sav - ior  God    is     all    my    light, Whom   shall I     fear  be - side   Him?
+verse      Though ar -  mies camp   a   -  round  me    here   My     heart shall nev - er   trem - ble.
+verse      In     times of   trou - ble    I      will  seek   To     hide  in    His   pa - vil -  ion.
+verse      O      LORD  my   God,   please hear   with  grace, Please hear  my    fer - vent cry -  ing.
+verse      My     fa -  ther and    my     moth - er    flee,  Yet    still the   LORD  will save   me.
+
+verse      My     God  is  strength, and  life   and  sight, I   can -  not   fear  be - side   Him.
+verse      Though wars a - rise,     I    will   not  fear,  His grac - es    I     as - sem -  ble.
+verse      He     sets me  on        a    moun - tain peak,  My  God    pro - tects His  chil - dren.
+verse      Your   Word has said      to   seek   Your face,  You save   my    soul  from dy  -  ing.
+verse      Teach  me,  O   God,      that I      may  see    The path   of    life  You  gave   me.
+
+verse      And  when  my   foes   Would eat    my   flesh, In   pride those foes have stum - bled.
+verse      I    seek  one  thing, The   house  of   God,   That I     may   see  His  beau - ty.
+verse      And  so    my   head   Is    lift - ed   up,    My   en -  e  -  mies will suf -  fer.
+verse      Turn not   Your face   A  -  way    from me,    Nor  turn  a  -  way  in   an  -  ger.
+verse      With cru - el   breath My    foes   a -  rise,  Full ha -  tred  they en - cour - age.
+
+verse      Their ha - tred grows, Their traps  are   mesh, But  head - long they have tum -  bled.
+verse      And   I    will sing   My    praise to    God,  With ho  -  li - ness my   du  -  ty.
+verse      With  joy  my   bread, With  praise my    cup,  My   wor -  ship I    will of  -  fer.
+verse      Ex -  tend Your grace  So    I      might see;  And  save   me   from all  dan -  ger.
+verse      Spare me   from death, And   from   their lies, wait on     the  LORD with cour - age.
