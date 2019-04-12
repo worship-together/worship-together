@@ -10,7 +10,7 @@ key        F
 rhythm     0 : 4
 tempo      140
 
-status     header  tune  double  checked
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,24 @@ soprano    f g e/2 | b/2    | a a g g       | f/2
 alto       f d c/2 | d. e/8 | f f f e       | f/2
 tenor      a b g/2 | g/2    | c a d c/8 b/8 | a/2
 bass       d b c/2 | g-/2   | a d b c       | f-/2
+
+verse      I       in    the    Lord   do     put     my    trust:   How
+verse      For,    lo,   the    wick - ed     bend    their bow,     Their
+verse      If      the   foun - da  -  tions  be      de -  stroyed, What
+verse      His     eyes  do     see,   His    eye  -  lids  try      Men’s
+verse      Snares, fire  and    brim - stone, fur  -  ious  storms,  On
+verse      Be   -  cause the    Lord   most   right - eous  doth     In
+
+verse      is      it     then    that  ye      Say   to    my   soul,   Flee,
+verse      shafts  on     string  they  fit,    That  those who  up  -   right
+verse      hath    the    right - eous  done?   God   in    His  ho  -   ly
+verse      sons.   The    just    He    proves: But   His   soul hates   the
+verse      sin  -  ners   He      shall rain:   This, as    the  por  -  tion
+verse      right - eous - ness    de -  light;  And   with  a    pleas - ant
+
+verse      as     a     bird, Un - to     your moun - tain  high?
+verse      are    in    heart They priv - i -  ly     may   hit.
+verse      tem -  ple   is,   In   heav - en   is     His   throne:
+verse      wick - ed    man,  And  Him    that vio -  lence loves.
+verse      of     their cup,  Doth un  -  to   them   per - tain.
+verse      coun - te -  nance Be - hold - eth  the    up -  right.

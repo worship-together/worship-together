@@ -11,7 +11,7 @@ key        G
 rhythm     4 : 4
 tempo      110
 
-status     header  tune  double  checked
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,19 @@ soprano    e e       e/8 d-/8 e/8 f/8 | g       g        a g/8 a/8  | b  b a/8 g
 alto       d d       c        c       | d       d/8 c#/8 d d/8 cn/8 | b  d e       c | b/2.
 tenor      g g       a        c       | b/8 a/8 g        f g/8 f/8  | g  f e e/8 f/8 | g/2.
 bass       c c/8 b/8 a        a+      | g/8 f/8 e        d b/8 a/8  | g- b c       a | e/2.
+
+verse      Be not      far off,  for grief is     near,  And none  to  help   is   found;
+verse      My strength is  on -  ly  bro - ken    clay;  My  mouth and tongue are  dry,
+verse      My bones    are plain for me    to     count; men see   me  and    they stare.
+
+verse      For bulls   of  Ba -  shan in   their strength Now cir - cle  me  a  -  round.
+verse      For in      the ver - y    dust of    death    You there make me  to    lie.
+verse      My  clothes a - mong  them they di -  vide,    And gam - ble  for their share.
+
+verse      Their li -  on - jaws they o    -    pen wide,  And roar  to tear their prey.
+verse      For   see   how  dogs en - cir   -   cle me!    On  eve - ry side there stands
+verse      Now   hur - ry,  O    my   Strength, to  help!  Do  not   be far, O     LORD!
+
+verse      My  heart   is   wax, my   bones un - knit, My   life   is poured a - way.
+verse      A   broth - er - hood of   cru - el - ty;   They pierce my feet   and hands.
+verse      But snatch  my   soul from rag - ing  dogs, And  spare  me from   the sword.

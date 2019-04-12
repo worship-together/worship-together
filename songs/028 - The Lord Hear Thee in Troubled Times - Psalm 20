@@ -11,7 +11,7 @@ key        G
 rhythm     0 : 4
 tempo      200
 
-status     header  tune  double  checked
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -42,3 +42,23 @@ soprano    b/2 g/2 f e/2 d- g/1 g/1
 alto       d/2 e/2 d b/2 d  c/1 b/1
 tenor      b/2 c/2 a g/2 f  e/1 d-/1
 bass       g/2 c/2 d e/2 b  c/1 g-/1
+
+verse      The  LORD hear thee   in    trou - bled times,  May Ja -  cob's God   de - fend   thee,
+verse      We   will re - joice; sal - va  -  tion comes!  In  God's name  lift  our  ban -  ners.
+verse      Some al - ways trust  in    char - i -  ots     And oth - ers   trust in   hors - es,
+
+verse      And send out   strength from Zi - on's hill   And    from His sanc - tu - ar  -   y.
+verse      May God  ful - fill     all  thy  re - quests And    lift up  all    thy  ban  -  ners.
+verse      But we   re -  call     our  LORD and  God,   Strong past our own    re - sourc - es.
+
+verse      May  He   re - call thine of  -  fer - ings, With all   thy sac - ri - fic -  es,
+verse      Thus now  I    know God   saves  His   own,  God  saves His own   a -  noin - ted.
+verse      Our  en - e -  mies have  fall - en    low   But  we    are held  and  up  -  right.
+
+verse      And grant thee all    thy  heart's de -  sire, Ful - fill - ing  all    thy
+verse      He  al -  ways hears, with His     right hand  He    comes  from heav'n a -
+verse      So  save  us,  LORD,  our  God     and   King  As    we     in   trou - ble
+
+verse      pur - pose, As  His good grace    suf - fic  -  es.
+verse      bove  us,   And in  the  strength ap -  point - ed.
+verse      call  Thee, As  we  in   trou  -  ble   call    Thee.

@@ -12,7 +12,7 @@ key        C
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -43,3 +43,23 @@ soprano    a/2 g e g/2  f d- e/2 d-/1
 alto       e/2 e c d/2  d d/2 c# d/1
 tenor      c/2 c g bb/2 a a  a/2 a/1
 bass       a/2 c c g-/2 d d  a/2 d/1
+
+verse      How   long,   O    LORD, wilt Thou for - get?
+verse      Look, LORD    my   God,  and  an - swer  me;
+verse      Thy   stead - fast love  has  been my    stay;
+
+verse      Far   from  Thy   face   I    wait  and fret.
+verse      Grant that  my    eyes   Thy  light may see,
+verse      My    heart shall praise Thee night and day
+
+verse      How   long  yet  must  I  bear my    sor - row?
+verse      Lest, when  the  light of life shall fail  me,
+verse      And   shall re - joice in Thy  sal - va -  tion,
+
+verse      My   heart longs for    Thy  mer - cy's  mor - -  row.
+verse      When foes  with  joy    and  pride as -  sail     me,
+verse      And  I     will  praise with ju -  bi -  la - - - tion
+
+verse      Why am     I    still with foes  be - set?
+verse      My  fall   de - light my   en -  e -  my.
+verse      Thy boun - ty,  LORD  Most High, for  aye!
