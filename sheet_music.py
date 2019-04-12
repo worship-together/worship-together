@@ -174,19 +174,22 @@ class MusicView(ui.View):
 			if isinstance(voice_selected, list):
 				loop = 0
 				run = []
+				slur = []
 				note_tied = False
 				for note in voice_selected:
-					
+
 					#define variables
 					prev_note_tied = note_tied
 					if inspect.isclass(note):
 						note_name = note.__name__
 						note_beats = note().beats
 						note_tied = note().tie
+						note_slurred = note().slur
 					else:
 						note_name = type(note).__name__
 						note_beats = note.beats
 						note_tied = note.tie
+						note_slurred = note.slur
 					note_index = create_index(note_name)
 					note_pos = position, clef_C0 - (note_index * step)
 					prev_bars_to_draw = bars_to_draw
@@ -195,7 +198,7 @@ class MusicView(ui.View):
 						next_bars_to_draw = int((1/(voice_selected[loop + 1]().beats if inspect.isclass(voice_selected[loop + 1]) else voice_selected[loop + 1].beats)) / 2)
 					else:
 						next_bars_to_draw = None
-						
+
 					# draw note
 					if not note_index == -1:
 						#note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
@@ -209,7 +212,7 @@ class MusicView(ui.View):
 						note_dot.add_arc(rel_x + (step * 2.2), (step * 0.6) + note_y, step * 0.6, 6.9, 5, False)
 						note_dot.add_arc(rel_x + (step * 2.2), (step * 1.7) + note_y, step * 1.7, 4.8, 3.5, False)
 						note_dot.add_arc(rel_x + (step * 1.1), (step * 1.4) + note_y, step * 0.6, 3.5, 2, False)
-						
+
 						# hollow/solid notes
 						if note_beats < 2:
 							note_dot.fill()
@@ -224,12 +227,12 @@ class MusicView(ui.View):
 							note_dot.fill()
 							#x, y = note_pos
 							#note_dot.move_to(x, y)
-							
+
 							#rad = step * 2
 							#x_offset = step
 							#note_dot.add_arc(x + x_offset, y, rad, 0.1, 1)
 							note_dot.stroke()
-						
+
 						# draw dots
 						if note_beats % 1.5 == 0:
 							note_dotted = ui.Path()
@@ -237,8 +240,34 @@ class MusicView(ui.View):
 							note_dotted.stroke()
 							ui.set_color('black')
 							note_dotted.fill()
-						
-						# draw ties	
+
+						#draw slurs
+						if note_slurred:
+							slur.append((position, clef_C0 - (note_index * step)))
+						elif not slur == []:
+							f_x, f_y = slur[0]
+							note_tie = ui.Path()
+							thickness = 3
+							tail_end = -(((3.5 * tail_direction) - 3.5) * step)
+							f_y += tail_end
+							y_pos = (clef_C0 - (note_index * step)) + tail_end
+							t_b = step * (1 - tail_direction)
+							curve_y = (step * tail_direction * -2) + t_b
+							prev_note_side = f_x + (note_width * step * 2)
+							middle_x = prev_note_side + ((position - prev_note_side) / 2)
+							middle_y = f_y + ((y_pos - f_y) / 2)
+							center_s = 3 * ((middle_x - prev_note_side) / 200)
+							note_tie.move_to(position, y_pos + t_b)
+							note_tie.add_quad_curve(middle_x, middle_y + curve_y, position - (step * center_s), y_pos + curve_y)
+							note_tie.add_quad_curve(prev_note_side, f_y + t_b, prev_note_side + (step * center_s), f_y + curve_y)
+							note_tie.add_quad_curve(middle_x, middle_y + curve_y + ((step * tail_direction) / thickness), prev_note_side + (step * center_s), f_y + curve_y)
+							note_tie.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
+							#note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + step, y_pos + curve_y)
+							note_tie.fill()
+							note_tie.stroke()
+							slur = []
+
+						# draw ties
 						if prev_note_tied:
 							note_tie = ui.Path()
 							thickness = 3
@@ -248,7 +277,6 @@ class MusicView(ui.View):
 							prev_note_side = prev_note_pos + (note_width * step * 2)
 							middle = prev_note_side + ((position - prev_note_side) / 2)
 							center_s = 3 * ((middle - prev_note_side) / 200)
-							#print(prev_note_side - middle)
 							note_tie.move_to(position, y_pos + t_b)
 							note_tie.add_quad_curve(middle, y_pos + curve_y, position - (step * center_s), y_pos + curve_y)
 							note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + (step * center_s), y_pos + curve_y)

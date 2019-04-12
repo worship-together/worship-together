@@ -1,36 +1,12 @@
-import toga
+import ui
+import sound
 import midi
-#import sheet_music
-import sync
+import sheet_music
+import storage
+import objc_util
+import ctypes
 import os
-
-
-# *******************************************************
-#
-#      Hello World App
-#
-#
-# def button_handler(widget):
-#     print("hello")
-#
-#
-# def build(app):
-#     box = toga.Box()
-#
-#     button = toga.Button('Hello world', on_press=button_handler)
-#     button.style.padding = 50
-#     button.style.flex = 1
-#     box.add(button)
-#
-#     return box
-#
-#
-# def main():
-#     return toga.App('First App', 'org.pybee.helloworld', startup=build)
-#
-#
-# if __name__ == '__main__':
-#     main().main_loop()
+import sound
 
 exiting = False
 player = None
@@ -42,15 +18,17 @@ last_position = 0.0000000
 satb_page = None
 song = None
 
+
 def bring_up_sheet_music(sender):
 	music = sheet_music.MyView(song)
 	music.present('fullscreen')
 
+
 def write_midi(song):
 	midi.Song(song).write_midi('output.midi', [
-		int(get_subview('soprano_volume').value * 120), 
-		int(get_subview('alto_volume').value * 120), 
-		int(get_subview('tenor_volume').value * 120), 
+		int(get_subview('soprano_volume').value * 120),
+		int(get_subview('alto_volume').value * 120),
+		int(get_subview('tenor_volume').value * 120),
 		int(get_subview('bass_volume').value * 120)])
 
 
@@ -59,8 +37,8 @@ def play():
 	if player:
 		player.play()
 		player.rate = rate
-	
-	
+
+
 def stop():
 	global rate
 	if player:
@@ -70,13 +48,14 @@ def stop():
 
 def playing():
 	return get_subview('play_button').title == 'Pause'
-	
-	
+
+
 def get_subview(name):
 	for subview in satb_page.subviews:
 		if subview.name == name:
 			return subview
 	raise RuntimeError('nutn is namd ' + name)
+
 
 def track_time(slider):
 	global player, dragging, last_position, rate, position
@@ -96,7 +75,7 @@ def track_time(slider):
 		stop()
 	else:
 		ui.delay(lambda: track_time(slider), 0.05)
-	
+
 
 def change_tempo(sender):
 	player.rate = sender.value + 0.5
@@ -110,7 +89,7 @@ def adjust_time(slider):
 		position = player.current_time
 		last_position = slider.value
 		dragging = False
-		
+
 
 def play_pause(sender):
 	global song, player, rate, position
@@ -123,17 +102,18 @@ def play_pause(sender):
 		sender.title = 'Pause'
 		write_midi(song)
 		player = sound.MIDIPlayer('output.midi')
+		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
+		# obc_player.init('output.midi', None)
 		adjust_time(get_subview('time_adjuster'))
 		play()
 		player.rate = get_subview('tempo_slider').value + 0.5
-		
-		
+
+
 def adjust_volume(sender):
 	global player
 	if player != None and playing():
 		play_pause(get_subview('play_button'))
 		play_pause(get_subview('play_button'))
-
 
 
 def present_song(sender):
@@ -157,36 +137,41 @@ def present_song(sender):
 		track_time(slider)
 
 
-class StartScreen(toga.Box):
+class StartScreen(ui.View):
 	def will_close(self):
 		global exiting
 		exiting = True
 
 
-###################satb_page = ui.load_view('midi_ui') need this
+satb_page = ui.load_view('midi_ui')
 start_screen = StartScreen()
 start_screen.background_color = 'white'
 
-table = toga.DetailedList()
-btn = toga.Button(label="Sync")
-#image=toga.interface.widgets.imageview.ImageView('iob:loop_256')
+table = ui.TableView()
+btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:coffee_32']]
+btn_container = ui.View(frame=(0, 0, len(btn_images) * 32, 44))
+btn = ui.Button(image=ui.Image.named('iob:loop_256'))
 btn.frame = (64, 0, 32, 44)
+
+
 def sync_songs_and_tunes():
-	sync.synchronize('songs', 'songs')
-	sync.synchronize('tunes', 'tunes')
+	storage.synchronize('songs', 'songs')
+	storage.synchronize('tunes', 'tunes')
+
+
 btn.action = lambda sender: sync_songs_and_tunes()
+btn_container.add_subview(btn)
 
-
-# btn_item = toga.interface.widgets.button.Button(label="Huh")
-# song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
-# song_list = ui.ListDataSource(sorted(song_files))
-# song_list.action = present_song
-# table.data_source = table.delegate = song_list
-# screen_width, screen_height = ui.get_screen_size()
-# table.row_height = 40
-# table.frame = 0, 0, screen_width, screen_height - 64
-# start_screen.add_subview(table)
-# start_screen.right_button_items = [btn_item]
-# start_screen.present('fullscreen')
-
-
+btn_item = ui.ButtonItem()
+btn_item_objc = objc_util.ObjCInstance(btn_item)
+btn_item_objc.customView = objc_util.ObjCInstance(btn_container)
+song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
+song_list = ui.ListDataSource(sorted(song_files))
+song_list.action = present_song
+table.data_source = table.delegate = song_list
+screen_width, screen_height = ui.get_screen_size()
+table.row_height = 40
+table.frame = 0, 0, screen_width, screen_height - 64
+start_screen.add_subview(table)
+start_screen.right_button_items = [btn_item]
+start_screen.present('fullscreen')
