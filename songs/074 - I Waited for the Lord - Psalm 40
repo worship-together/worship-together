@@ -11,7 +11,7 @@ key        F
 rhythm     3 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,23 @@ soprano    a d d | c - a g | a/2 g | f - d- e | d-/2          d-      | d-/2.
 alto       f g f | e/2   e | e/2 e | d/2    c | c - b         b       | a/2.
 tenor      a a a | a - c c | c/2 c | a - f  a | f - b/8 - c/8 d/8 e/8 | f/2.
 bass       d e d | a/2   c | a/2 c | d/2    a | b/2           g-      | d/2.
+
+verse      I     wait - ed   for   the   LORD; He  stooped and  heard my   cry.
+verse      Man - y      will see   with  awe,  And so      will trust the  LORD.
+verse      You   want   no   of -  fer - ing,  Nor ask     a    sac - ri - fice,
+verse      To    do     Your will, O     God,  To  me      is   my    de - light.
+
+verse      He      brought me   from   the pit, Out  of     the dun -  geon  mire,
+verse      Blessed he      who  trusts in  God, And  turns  not to     false men.
+verse      But     You     have giv -  en  me   A    read - y   ear    to    hear.
+verse      Your    law     is   part   of  me,  Deep in     my  heart, O     God.
+
+verse      My  feet  set    on    a       rock, My  foot - steps made    se  -  cure.
+verse      You have  worked won - ders,   LORD; No  one    com - pares   to     You!
+verse      You ask   no     of -  f'rings burnt Nor sac -  ri -  fice    for    sin.
+verse      In  con - gre -  ga -  tion    great I   told   Your  right - eous - ness.
+
+verse      My     lips  He    gave  a     song, A     song  to  praise our  God.
+verse      Should I     de -  clare each  one,  Their num - ber is     too  great.
+verse      So     I     say,  Here  I     come, As    in    the scroll in - scribed.
+verse      You    know, LORD, I     spoke out;  I     did   not close  my   lips.
