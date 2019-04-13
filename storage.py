@@ -159,33 +159,24 @@ def remote_file_exists(remote_dir, name):
 
 
 def upload_laptop_to_remote(local_dir, remote_dir):
-	print("uploading local " + local_dir + " to remote " + remote_dir)
 	for song in os.listdir(local_dir):
 		if os.path.isfile(song):
-			# Create local song
-			if local_file_exists(local_dir, song) is True:
-				if remote_file_exists(remote_dir, song) is False:
-					sync_upload_file(remote_dir, song, local_dir + '/' + song)
-					if remote_file_exists(remote_dir, song) is True:
-						print('newly uploaded ' + song)
-				# Newer local song
-				local_time = get_local_modified_time(local_dir, song)
+			if not remote_file_exists(remote_dir, song):
+				sync_upload_file(remote_dir, song, local_dir + '/' + song)
+			else:
+				local_time = get_local_modified_time(local_dir, 'last_upload')
 				remote_time = get_remote_modified_time(remote_dir, song)
-				if remote_time < local_time:
+				if remote_time > local_time:
 					sync_upload_file(remote_dir, song, local_dir + '/' + song)
-					print('updated ' + song)
-	# Delete song
-	for song in service.list_directories_and_files(share, remote_dir):
-		if local_file_exists(local_dir, song.name) is False and remote_file_exists(remote_dir, song.name) is True:
-			sync_delete_remote_file(remote_dir, song.name)
-			if remote_file_exists(remote_dir, song) is False:
-				print('successfully deleted ' + song.name + ' from remote')
-	# Update last_upload time
 	time.sleep(1)
 	os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
 									datetime.datetime.timestamp(datetime.datetime.now())))
-	print('modified last_upload file')
 
+def delete_laptop_to_remote(local_dir, remote_dir):
+	for song in service.list_directories_and_files(share, remote_dir):
+		if (not local_file_exists(local_dir, song.name)):
+			sync_delete_remote_file(remote_dir, song.name)
+	
 
 #
 # VERIFICATION
