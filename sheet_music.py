@@ -64,7 +64,24 @@ def calculate_length(song):
 					note_beats = note.beats
 				end += note_gap * note_beats
 	return end
-			
+
+def play_pause(sender):
+	global song, player, rate, position
+	if playing():
+		sender.title = 'Play'
+		position = player.current_time
+		rate = player.rate
+		stop()
+	else:
+		sender.title = 'Pause'
+		write_midi(song)
+		player = sound.MIDIPlayer('output.midi')
+		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
+		# obc_player.init('output.midi', None)
+		adjust_time(get_subview('time_adjuster'))
+		play()
+		player.rate = get_subview('tempo_slider').value + 0.5
+		
 def sharp(self, size, x, y):
 	ui.set_color("black")
 	self.left = ui.Path()

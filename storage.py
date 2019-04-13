@@ -100,7 +100,7 @@ upload_suffix = ".UPLOAD"
 delete_suffix = ".DELETE"
 
 
-def sync_upload_file(remote_dir, remote_file, local_file_path):
+def upload_file_to_remote(remote_dir, remote_file, local_file_path):
 	service.create_file_from_path(share, remote_dir,
 	                              remote_file, local_file_path)
 
@@ -111,7 +111,7 @@ def sync_upload_files(local_dir, remote_dir):
 			old_path = local_dir+'/'+file
 			new_path = local_dir+'/'+new_name
 			os.rename(old_path, new_path)
-			sync_upload_file(remote_dir, new_name, new_path)
+			upload_file_to_remote(remote_dir, new_name, new_path)
 			
 			
 def sync_download_files(local_dir, remote_dir):
@@ -129,7 +129,7 @@ def sync_download_files(local_dir, remote_dir):
 			os.utime(local_dir + '/' + file.name, (datetime.datetime.timestamp(datetime.datetime.now()), datetime.datetime.timestamp(datetime.datetime.now())))
 
 
-def sync_delete_remote_file(remote_dir, remote_file):
+def delete_remote_file(remote_dir, remote_file):
 	service.delete_file(share, remote_dir, remote_file)
 
 
@@ -138,7 +138,7 @@ def sync_delete_files(local_dir, remote_dir):
 		if file.endswith(delete_suffix) or not service.exists(share, directory_name=remote_dir, file_name=file):
 			os.remove(local_dir+'/'+file)
 			if service.exists(share, directory_name=remote_dir, file_name=file[:-(len(delete_suffix))]):
-				sync_delete_remote_file(remote_dir, file[:-(len(delete_suffix))])
+				delete_remote_file(remote_dir, file[:-(len(delete_suffix))])
 				
 				
 def synchronize(local_dir, remote_dir):
@@ -148,7 +148,7 @@ def synchronize(local_dir, remote_dir):
 
 
 def local_file_exists(local_dir, name):
-	return os.path.exists(local_dir + '/' + name)
+	return os.path.isfile(local_dir + '/' + name)
 
 
 def remote_file_exists(remote_dir, name):
@@ -159,32 +159,21 @@ def remote_file_exists(remote_dir, name):
 
 
 def upload_laptop_to_remote(local_dir, remote_dir):
-	print("uploading local " + local_dir + " to remote " + remote_dir)
 	for song in os.listdir(local_dir):
-		if os.path.isfile(song):
-			# Create local song
-			if local_file_exists(local_dir, song) is True:
-				if remote_file_exists(remote_dir, song) is False:
-					sync_upload_file(remote_dir, song, local_dir + '/' + song)
-					if remote_file_exists(remote_dir, song) is True:
-						print('newly uploaded ' + song)
-				# Newer local song
+		if local_file_exists(local_dir, song):
+			if not remote_file_exists(remote_dir, song):
+				upload_file_to_remote(remote_dir, song, local_dir + '/' + song)
+			else:
 				local_time = get_local_modified_time(local_dir, song)
 				remote_time = get_remote_modified_time(remote_dir, song)
-				if remote_time < local_time:
-					sync_upload_file(remote_dir, song, local_dir + '/' + song)
-					print('updated ' + song)
-	# Delete song
+				if local_time > remote_time:
+					upload_file_to_remote(remote_dir, song, local_dir + '/' + song)
 	for song in service.list_directories_and_files(share, remote_dir):
-		if local_file_exists(local_dir, song.name) is False and remote_file_exists(remote_dir, song.name) is True:
-			sync_delete_remote_file(remote_dir, song.name)
-			if remote_file_exists(remote_dir, song) is False:
-				print('successfully deleted ' + song.name + ' from remote')
-	# Update last_upload time
+		if not local_file_exists(local_dir, song.name):
+			delete_remote_file(remote_dir, song.name)
 	time.sleep(1)
 	os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
 									datetime.datetime.timestamp(datetime.datetime.now())))
-	print('modified last_upload file')
 
 
 #
