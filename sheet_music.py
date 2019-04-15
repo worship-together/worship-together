@@ -11,15 +11,21 @@ Test cases
 import ui
 import midi
 import inspect
+import objc_util
 
 screen_width, screen_height = ui.get_screen_size()
 notes_drawn = 0
 screen_padding = 1/6#of the screen
 note_gap = 125
 origin = screen_width / 2
-#note_tied = False
 note_pos = 0, 0
 bars_to_draw = 0
+player = None
+rate = 1
+play_back_location = 0
+tracking_song = False
+dragging = False
+song = None
 
 treble_lines = []
 bass_lines = []
@@ -51,6 +57,33 @@ assert create_index('C1') == 7
 assert create_index('C8') == 56
 assert create_index('R') == -1
 
+def write_midi(song):
+	midi.Song(song).write_midi('output.midi', [
+		int(get_subview('soprano_volume').value * 120),
+		int(get_subview('alto_volume').value * 120),
+		int(get_subview('tenor_volume').value * 120),
+		int(get_subview('bass_volume').value * 120)])
+
+def play():
+	global rate
+	if player:
+		player.play()
+		player.rate = rate
+
+def stop():
+	global rate
+	if player:
+		player.stop()
+		rate = player.rate
+		
+def playing():
+	return get_subview('play_button').title == 'Pause'
+	
+def get_subview(name):
+	for subview in satb_page.subviews:
+		if subview.name == name:
+			return subview
+	raise RuntimeError('nutn is namd ' + name)
 
 def calculate_length(song):
 	end = origin
@@ -66,22 +99,49 @@ def calculate_length(song):
 	return end
 
 def play_pause(sender):
-	global song, player, rate, position
-	if playing():
-		sender.title = 'Play'
-		position = player.current_time
-		rate = player.rate
-		stop()
+	#global song, player, rate, position
+	if sender.playing:
+		sender.image = ui.Image.named('iob:ios7_play_outline_256')
+		sender.playing = False
 	else:
-		sender.title = 'Pause'
-		write_midi(song)
-		player = sound.MIDIPlayer('output.midi')
+		sender.image = ui.Image.named('iob:ios7_pause_outline_256')
+		sender.playing = True
+		#position = player.current_time
+		#rate = player.rate
+		#stop()
+	#else:
+		#sender.title = 'Pause'
+		#write_midi(song)
+		#player = sound.MIDIPlayer('output.midi')
 		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
 		# obc_player.init('output.midi', None)
-		adjust_time(get_subview('time_adjuster'))
-		play()
-		player.rate = get_subview('tempo_slider').value + 0.5
-		
+		#adjust_time(get_subview('time_adjuster'))
+		#play()
+		#player.rate = get_subview('tempo_slider').value + 0.5
+	
+def track_time(slider):
+	global player, dragging, last_position, rate, position
+	if player and not dragging:
+		if slider.value == last_position:
+			slider.value = player.current_time / float(player.duration)
+			if slider.value == 1 and get_subview('play_button').title == 'Pause':
+				player.current_time = 0
+				rate = player.rate
+				play()
+				slider.value = player.current_time / float(player.duration)
+			last_position = slider.value
+		else:
+			dragging = True
+			position = player.current_time
+	if exiting:
+		stop()
+	else:
+		ui.delay(lambda: track_time(slider), 0.05)
+	
+def settings(sender):
+	satb_page = ui.load_view('midi_ui')
+	satb_page.present('sheet')
+	
 def sharp(self, size, x, y):
 	ui.set_color("black")
 	self.left = ui.Path()
@@ -184,7 +244,9 @@ class MusicView(ui.View):
 			position -= note_gap / 2
 			measure_bar = ui.Path()
 			measure_bar.move_to(position, treble_lines[0])
-			measure_bar.line_to(position, bass_lines[0])
+			measure_bar.line_to(position, treble_lines[4])
+			measure_bar.move_to(position, bass_lines[0])
+			measure_bar.line_to(position, bass_lines[4])
 			measure_bar.stroke()
 			position += note_gap / 2
 			voice_selected = measure[voice]
@@ -459,7 +521,24 @@ class Signature(ui.View):
 		f_clef(self, step * 4)
 		
 		
-	
+class Controls(ui.View):
+	def __init__(self, width, height, button_width):
+		self.width = width
+		self.frame = (0, 0, width, height)
+		play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
+		play_btn.frame = (0, 0, button_width, button_width)
+		play_btn.action = play_pause
+		play_btn.playing = False
+		play_btn.name = 'play_button'
+		
+		settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
+		settings_btn.frame = (button_width, 0, button_width * 2, button_width)
+		settings_btn.action = settings
+		
+		self.add_subview(play_btn)
+		self.add_subview(settings_btn)
+		
+
 class MyView(ui.View):
 	def __init__(self, song):
 		self.name = song
@@ -467,14 +546,25 @@ class MyView(ui.View):
 		self.sv = ui.ScrollView()
 		self.sv.width = w
 		self.sv.height = h
+		heading_thickness = 20
+		self.sv.frame = (0, -heading_thickness, w, h)
 		length = calculate_length(song)
-		self.sv.content_size = (length, h)
+		self.sv.content_size = (length, h - heading_thickness)
 		self.sv.add_subview(MusicView(song, length, screen_height))
+		self.sv.shows_horizontal_scroll_indicator = False
+		self.sv.shows_vertical_scroll_indicator = False
 		self.sig = ui.View()
 		self.sig.width = w * screen_padding * 0.8
 		self.sig.height = h
 		self.sig.add_subview(Signature(self.sig.width, self.sig.height))
-		
+		button_width = 50
+		self.controls = ui.View()
+		self.controls.width = button_width * 2
+		self.controls.height = button_width
+		print(h)
+		self.controls.frame = ((w / 2) - button_width, 718, (w/2) + button_width, 768)
+		self.controls.add_subview(Controls(self.controls.width, self.controls.height, button_width))
 		
 		self.add_subview(self.sv)
 		self.add_subview(self.sig)
+		self.add_subview(self.controls)

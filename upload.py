@@ -2,5 +2,5 @@
 
 import storage
 
-storage.upload_laptop_to_remote('songs', 'songs')
-storage.upload_laptop_to_remote('tunes', 'tunes')
+storage.Laptop('songs', 'songs').synchronize()
+storage.Laptop('tunes', 'tunes').synchronize()
