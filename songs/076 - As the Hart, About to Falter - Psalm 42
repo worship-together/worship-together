@@ -11,7 +11,7 @@ key        F
 rhythm     0 : 4
 tempo      180
 
-status     header  tune  double  checked
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,35 @@ soprano    a/2 c b/2 a f g a/2 f/2. R a/2  a  b/2 a  g f/2 e   f/1
 alto       f/2 e g/2 f d e f/2 d/2. R f/2  f  d/2 c  c a   c/2 c/1
 tenor      c/2 c d/2 d a c c/2 b/2. R c/2  c  f/2 f  e f   g/2 f/1
 bass       f/2 c g/2 d d c f/2 b/2. R f-/2 f- b/2 f- c d   c/2 f-/1
+
+verse      As    the  hart, a -  bout to    fal  -  ter,   In   its   trem - bling ag -  o  -  ny,
+verse      Bit - ter  tears of   la - men - ta   -  tion   Are  my    food   by    night and   day.
+verse      O     my   soul, why  are  you   griev - ing,   Why  dis - qui -  et -  ed    in    me?
+verse      From  the  land  be - yond the   Jor  -  dan,   With my    soul   cast  down  in    me,
+verse      But   the  LORD  will send sal - va   -  tion,  And  by    day    His   love  pro - vide.
+verse      I     will say   to   God, my    for  -  tress, Why  hast  Thou   for - got - ten   me?
+verse      O     my   soul, why  are  you   griev - ing,   Why  dis - qui -  et -  ed    in    me?
+
+verse      Longs for   flow - ing   streams of    wa   -  ter,  So,     O    God,  I    long  for   Thee.
+verse      In    my    deep   hu -  mil  -  i  -  a   -   tion  Where   is   now   your God?  they  say.
+verse      Hope  in    God,   your  faith   re -  triev - ing:  He      will still your ref - uge   be.
+verse      From  Mount Mi  -  zar   and     Mount Her  -  mon   I       will yet   re - mem - ber   Thee.
+verse      He    shall be     my    ex   -  ul -  ta   -  tion, And     my   song  at   e  -  ven - tide.
+verse      Why   must  I      pro - ceed    in    sad  -  ness, Hound - ed   by    the  en -  em -  y?
+verse      Hope  in    God,   your  faith   re -  triev - ing:  He      will still your ref - uge   be.
+
+verse      Yes,  a -  thirst for    Thee    I   cry;  God    of   life, O    when    shall I
+verse      Oh,   my   soul's poured out     in  me,   When   I    bring to   mem  -  o  -  ry
+verse      I     a -  gain   shall  laud    His grace For    the  com - fort of      His   face:
+verse      As    the  wa  -  ters   plunge  and leap, Deep   re - ech - oes  un   -  to    deep;
+verse      On    His  praise e'en   in      the night I      will pon - der  with    de -  light,
+verse      Their re - bukes  and    scoff - ing words Pierce my   bones like point - ed    swords,
+verse      I     a -  gain   shall  laud    His grace For    the  com - fort of      His   face:
+
+verse      Come a -  gain    to     stand   be - fore   Thee   In      Thy tem  -  ple  and  a -  dore   Thee?
+verse      How  the  throngs I      would   as - sem -  ble,   Shout - ing prais - es   in   Thy  tem -  ple.
+verse      He   will show    His    help    and  fa  -  vor,   For     He  is      my   God  and  Sav -  ior.
+verse      All  Thy  waves   and    bil  -  lows roar - ing    O'er    my  trou -  bled soul are  pour - ing.
+verse      And  in   prayer, tran - scend - ing  dis -  tance, Seek    the God     of   my   ex - ist -  ence.
+verse      As   they say     with   proud   de - fi  -  ance,  Where   is  God,    your firm re - li  -  ance?
+verse      He   will show    His    help    and  fa  -  vor,   For     He  is      my   God  and  Sav -  ior.

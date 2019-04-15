@@ -243,15 +243,15 @@ def upload(songs):
 		if midi.is_song(os.path.basename(song)):
 			test_and_delete_midi(song)
 			print('Uploading ' + song)
-			storage.sync_upload_file('songs', os.path.basename(song), song)
+			storage.upload_file_to_remote('songs', os.path.basename(song), song)
 	for tune in tunes:
-		storage.sync_upload_file('tunes', os.path.basename(tune), tune)
+		storage.upload_file_to_remote('tunes', os.path.basename(tune), tune)
 
 
 def delete(songs):
 	for song in songs:
 		print('Deleting ' + song)
-		storage.sync_delete_remote_file('songs', os.path.basename(song))
+		storage.delete_remote_file('songs', os.path.basename(song))
 
 
 def test(songs):
