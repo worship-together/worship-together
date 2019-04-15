@@ -118,6 +118,8 @@ def adjust_volume(sender):
 
 def present_song(sender):
 	global satb_page, song, player, tracking_song, position, dragging, last_position
+	if not satb_page:
+		satb_page = ui.load_view('midi_ui')
 	song = sender.items[sender.selected_row]
 	# write_midi(song)
 	play_button = get_subview('play_button')
@@ -125,8 +127,6 @@ def present_song(sender):
 		play_pause(play_button)
 	if player:
 		player.current_time = 0
-	if not satb_page:
-		satb_page = ui.load_view('midi_ui')
 	satb_page.name = str(song)
 	satb_page.present('sheet')
 	position = 0

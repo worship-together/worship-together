@@ -25,7 +25,7 @@ import inspect
 
 import notes
 import events
-import parser
+import song_parser
 import keys
 
 ticks_per_beat = 1024
@@ -207,7 +207,7 @@ def is_song(filename):
 class Song:
 	def __init__(self, filename):
 		song_path = os.path.join('songs', filename)
-		self.module = parser.parse_song(song_path)
+		self.module = song_parser.parse_song(song_path)
 
 	@property
 	def title(self):
