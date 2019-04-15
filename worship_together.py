@@ -14,14 +14,12 @@ rate = 1
 position = 0
 tracking_song = False
 dragging = False
-last_position = 0.0000000
-satb_page = None
 song = None
 
 
 def bring_up_sheet_music(sender):
 	music = sheet_music.MyView(song)
-	music.present('fullscreen')
+	music.present('fullscreen', hide_title_bar=True)
 
 
 def write_midi(song):
@@ -149,9 +147,9 @@ start_screen.background_color = 'white'
 
 table = ui.TableView()
 btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:coffee_32']]
-btn_container = ui.View(frame=(0, 0, len(btn_images) * 32, 44))
+btn_container = ui.View(frame=(0, 0, 32, 44))
 btn = ui.Button(image=ui.Image.named('iob:loop_256'))
-btn.frame = (64, 0, 32, 44)
+btn.frame = (0, 0, 32, 44)
 
 
 def sync_songs_and_tunes():
