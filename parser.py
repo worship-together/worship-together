@@ -201,3 +201,11 @@ def parse_song(filename):
 	song = NewSong(attributes)
 	#print(song.measures)
 	return song
+
+
+def test_verse_parser():
+	pass
+
+
+if __name__ == '__main__':
+	test_verse_parser()

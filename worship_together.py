@@ -117,7 +117,7 @@ def adjust_volume(sender):
 
 
 def present_song(sender):
-	global song, player, tracking_song, position, dragging, last_position
+	global satb_page, song, player, tracking_song, position, dragging, last_position
 	song = sender.items[sender.selected_row]
 	# write_midi(song)
 	play_button = get_subview('play_button')
@@ -125,6 +125,8 @@ def present_song(sender):
 		play_pause(play_button)
 	if player:
 		player.current_time = 0
+	if not satb_page:
+		satb_page = ui.load_view('midi_ui')
 	satb_page.name = str(song)
 	satb_page.present('sheet')
 	position = 0
@@ -143,35 +145,38 @@ class StartScreen(ui.View):
 		exiting = True
 
 
-satb_page = ui.load_view('midi_ui')
+def sync_songs_and_tunes():
+	storage.iPad('songs', 'songs').synchronize()
+	storage.iPad('songs', 'songs').synchronize()
+
+
+def create_sync_button():
+	btn_container = ui.View(frame=(0, 0, 32, 44))
+	btn = ui.Button(image=ui.Image.named('iob:loop_256'))
+	btn.frame = (64, 0, 32, 44)
+	btn.action = lambda sender: sync_songs_and_tunes()
+	btn_container.add_subview(btn)
+	btn_item = ui.ButtonItem()
+	btn_item_objc = objc_util.ObjCInstance(btn_item)
+	btn_item_objc.customView = objc_util.ObjCInstance(btn_container)
+	return btn_item
+
+
+def create_song_list():
+	table = ui.TableView()
+	song_files = [file for file in os.listdir('./songs')
+				  if midi.is_song(file)]
+	song_list = ui.ListDataSource(sorted(song_files))
+	song_list.action = present_song
+	table.data_source = table.delegate = song_list
+	screen_width, screen_height = ui.get_screen_size()
+	table.row_height = 40
+	table.frame = 0, 0, screen_width, screen_height - 64
+	return table
+
+
 start_screen = StartScreen()
 start_screen.background_color = 'white'
-
-table = ui.TableView()
-btn_images = [ui.Image.named(n) for n in ['iob:beaker_32', 'iob:beer_32', 'iob:coffee_32']]
-btn_container = ui.View(frame=(0, 0, len(btn_images) * 32, 44))
-btn = ui.Button(image=ui.Image.named('iob:loop_256'))
-btn.frame = (64, 0, 32, 44)
-
-
-def sync_songs_and_tunes():
-	storage.synchronize('songs', 'songs')
-	storage.synchronize('tunes', 'tunes')
-
-
-btn.action = lambda sender: sync_songs_and_tunes()
-btn_container.add_subview(btn)
-
-btn_item = ui.ButtonItem()
-btn_item_objc = objc_util.ObjCInstance(btn_item)
-btn_item_objc.customView = objc_util.ObjCInstance(btn_container)
-song_files = [file for file in os.listdir('./songs') if midi.is_song(file)]
-song_list = ui.ListDataSource(sorted(song_files))
-song_list.action = present_song
-table.data_source = table.delegate = song_list
-screen_width, screen_height = ui.get_screen_size()
-table.row_height = 40
-table.frame = 0, 0, screen_width, screen_height - 64
-start_screen.add_subview(table)
-start_screen.right_button_items = [btn_item]
+start_screen.add_subview(create_song_list())
+start_screen.right_button_items = [create_sync_button()]
 start_screen.present('fullscreen')
