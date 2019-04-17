@@ -18,10 +18,14 @@ last_position = 0.0000000
 satb_page = None
 song = None
 
-
 def bring_up_sheet_music(sender):
+	button_width = 50
 	music = sheet_music.MyView(song)
 	music.present('fullscreen', hide_title_bar=True)
+	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
+	exit_btn.frame = (0, 10, button_width, button_width + 10)
+	exit_btn.action = lambda sender: music.close()
+	music.add_subview(exit_btn)
 
 
 def write_midi(song):

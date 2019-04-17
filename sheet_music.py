@@ -142,6 +142,9 @@ def settings(sender):
 	satb_page = ui.load_view('midi_ui')
 	satb_page.present('sheet')
 	
+def close(sender, self):
+	self.close()
+	
 def sharp(self, size, x, y):
 	ui.set_color("black")
 	self.left = ui.Path()
@@ -231,33 +234,22 @@ class MusicView(ui.View):
 			self.staff.line_to(self.width, bass_lines[i])
 			
 		self.staff.stroke()
-		#g_clef(self, 40)
-		#f_clef(self, 40)
-			
+		
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
 		global origin, end, note_tied, note_pos, bars_to_draw
 		position = origin
 		note_width = 1.15
 		note_tied = False
 		for measure in measures:
-			#measure bars
-			position -= note_gap / 2
-			measure_bar = ui.Path()
-			measure_bar.move_to(position, treble_lines[0])
-			measure_bar.line_to(position, treble_lines[4])
-			measure_bar.move_to(position, bass_lines[0])
-			measure_bar.line_to(position, bass_lines[4])
-			measure_bar.stroke()
-			position += note_gap / 2
+			self.measure_bars(position)
 			voice_selected = measure[voice]
 			if isinstance(voice_selected, list):
 				loop = 0
 				run = []
 				slur = []
 				note_tied = False
+				prev_note_pos = origin
 				for note in voice_selected:
-
-					#define variables
 					prev_note_tied = note_tied
 					if inspect.isclass(note):
 						note_name = note.__name__
@@ -278,228 +270,235 @@ class MusicView(ui.View):
 					else:
 						next_bars_to_draw = None
 
-					# draw note
-					if not note_index == -1:
-						#note_dot = ui.Path.oval(position, clef_C0 - (note_index * step), 3 * step, 2 * step)
-						ui.set_color('black')
-						#note_dot.stroke()
-						note_dot = ui.Path()
-						rel_x = position - (step * 0.53)
-						note_y = clef_C0 - (note_index * step)
-						note_dot.move_to(rel_x + step, (step * 2) + note_y)
-						note_dot.add_arc(rel_x + (step * 1.1), (step * 0.3) + note_y, step * 1.7, 1.7, 0.25, False)
-						note_dot.add_arc(rel_x + (step * 2.2), (step * 0.6) + note_y, step * 0.6, 6.9, 5, False)
-						note_dot.add_arc(rel_x + (step * 2.2), (step * 1.7) + note_y, step * 1.7, 4.8, 3.5, False)
-						note_dot.add_arc(rel_x + (step * 1.1), (step * 1.4) + note_y, step * 0.6, 3.5, 2, False)
-
-						# hollow/solid notes
-						if note_beats < 2:
-							note_dot.fill()
-							note_dot.stroke()
-						else:
-							note_dot.add_arc(rel_x + (step * 1.12), (step * 1.38) + note_y, step * 0.6, 2, 2.8)
-							note_dot.add_arc(rel_x + (step * 2.8), (step * 2.3) + note_y, step * 2.3, 3.5, 4.5)
-							note_dot.add_arc(rel_x + (step * 2.15), (step * 0.65) + note_y, step * 0.6, 5.1, 0)
-							note_dot.add_arc(rel_x + (step * 0.35), (step * -0.6) + note_y, step * 2.6, 0.5, 1.35)
-							note_dot.stroke()
-							note_dot.close()
-							note_dot.fill()
-							#x, y = note_pos
-							#note_dot.move_to(x, y)
-
-							#rad = step * 2
-							#x_offset = step
-							#note_dot.add_arc(x + x_offset, y, rad, 0.1, 1)
-							note_dot.stroke()
-
-						# draw dots
-						if note_beats % 1.5 == 0:
-							note_dotted = ui.Path()
-							note_dotted = ui.Path.oval(position + (4 * step), clef_C0 - ((note_index - 0.6) * step), 0.4 * step, 0.4 * step)
-							note_dotted.stroke()
-							ui.set_color('black')
-							note_dotted.fill()
-
-						#draw slurs
-						if note_slurred:
-							slur.append((position, clef_C0 - (note_index * step)))
-						elif not slur == []:
-							f_x, f_y = slur[0]
-							note_tie = ui.Path()
-							thickness = 3
-							tail_end = -(((3.5 * tail_direction) - 3.5) * step)
-							f_y += tail_end
-							y_pos = (clef_C0 - (note_index * step)) + tail_end
-							t_b = step * (1 - tail_direction)
-							curve_y = (step * tail_direction * -2) + t_b
-							prev_note_side = f_x + (note_width * step * 2)
-							middle_x = prev_note_side + ((position - prev_note_side) / 2)
-							middle_y = f_y + ((y_pos - f_y) / 2)
-							center_s = 3 * ((middle_x - prev_note_side) / 200)
-							note_tie.move_to(position, y_pos + t_b)
-							note_tie.add_quad_curve(middle_x, middle_y + curve_y, position - (step * center_s), y_pos + curve_y)
-							note_tie.add_quad_curve(prev_note_side, f_y + t_b, prev_note_side + (step * center_s), f_y + curve_y)
-							note_tie.add_quad_curve(middle_x, middle_y + curve_y + ((step * tail_direction) / thickness), prev_note_side + (step * center_s), f_y + curve_y)
-							note_tie.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
-							#note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + step, y_pos + curve_y)
-							note_tie.fill()
-							note_tie.stroke()
-							slur = []
-
-						# draw ties
-						if prev_note_tied:
-							note_tie = ui.Path()
-							thickness = 3
-							y_pos = clef_C0 - (note_index * step)
-							t_b = step * (1 - tail_direction)
-							curve_y = (step * tail_direction * -2) + t_b
-							prev_note_side = prev_note_pos + (note_width * step * 2)
-							middle = prev_note_side + ((position - prev_note_side) / 2)
-							center_s = 3 * ((middle - prev_note_side) / 200)
-							note_tie.move_to(position, y_pos + t_b)
-							note_tie.add_quad_curve(middle, y_pos + curve_y, position - (step * center_s), y_pos + curve_y)
-							note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + (step * center_s), y_pos + curve_y)
-							note_tie.add_quad_curve(middle, y_pos + curve_y + ((step * tail_direction) / thickness), prev_note_side + (step * center_s), y_pos + curve_y)
-							note_tie.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
-							#note_tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + step, y_pos + curve_y)
-							note_tie.fill()
-							note_tie.stroke()
-							
-						# draw bars
-						if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
-							run.append(note_pos)
-						elif not run == []:
-							
-							#run bar
-							for b in range(0, bars_to_draw):
-								bar = ui.Path()
-								offset = step * 2 * b * tail_direction
-								line_thickness = step * tail_direction
-								
-								x, y = run[0]
-								xcoord = x + (step * note_width * (1 + tail_direction))
-								tail_length = y + (step * -6 * tail_direction)
-								bar.move_to(xcoord, tail_length + step + offset)
-								bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
-								
-								x, y = note_pos
-								xcoord = x + (step * note_width * (1 + tail_direction))
-								tail_length = y + (step * -6 * tail_direction)
-								bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
-								bar.line_to(xcoord, tail_length + step + offset)
-								
-								bar.close()
-								bar.stroke()
-								bar.fill()
-							
-							# tails in bar
-							for run_note in run:
-								note_tail = ui.Path()
-								x, y = run_note
-								fx, fy = run[0]
-								cx, cy = note_pos
-								abs_pos = x - fx
-								run_length = cx - fx
-								run_height = cy - fy
-								note_side = ((tail_direction * note_width) + note_width) * step
-								rel_pos = abs_pos / run_length
-								grad_pos = (rel_pos * run_height) + fy
-								tail_length = -7 * step * tail_direction
-								note_tail.move_to(x + note_side, grad_pos + tail_length + step)
-								note_tail.line_to(x + note_side, y + step)
-									#((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
-								note_tail.stroke()
-								
-							run = []
-						else:
-							
-							# note flag
-							for bar in range(0, bars_to_draw):
-								x, y = note_pos
-								flag = ui.Path()
-								
-								x_offset = step * note_width * (1 + tail_direction)
-								tail_length = step * -5.5 * tail_direction
-								y_offset = step * 1.5 * bar * tail_direction
-								y_dis = step - (tail_direction * step)
-								
-								y_pos = y + tail_length + y_dis + y_offset
-								rad = step / 2
-								flag.move_to(x + x_offset, y_pos)
-								flag.add_arc(x + rad + x_offset, y_pos, rad, 3 * tail_direction, 2 * tail_direction, tail_direction < 0)
-								
-								rad = step * 2.5
-								tail_length = step * -2.5 * tail_direction
-								y_pos = y + tail_length + y_dis + y_offset
-								flag.add_arc(x + x_offset, y_pos, rad, 5 * tail_direction, tail_direction, tail_direction > 0)
-								
-								rad = step * 2
-								tail_length = step * -2 * tail_direction
-								y_pos = y + tail_length + y_dis + y_offset
-								flag.add_arc(x + x_offset, y_pos, rad, tail_direction,  4.8 * tail_direction, tail_direction < 0)
-								
-								tail_length = step * -4 * tail_direction
-								y_pos = y + tail_length + y_dis + y_offset
-								flag.line_to(x + x_offset, y_pos)
-								
-								ui.set_color("black")
-								flag.close()
-								flag.stroke()
-								flag.fill()
-								run = []
-								
-						# tails
-						if note_beats < 4 and run == []:
-							note_tail = ui.Path()
-							note_tail.move_to(
-								position + (((tail_direction * note_width) + note_width) * step),
-								(clef_C0 - (note_index * step)) + step)
-							note_tail.line_to(
-								position + (((tail_direction * note_width) + note_width) * step),
-								((clef_C0 - (note_index * step)) + step) - (tail_direction * (7 * step)))
-							note_tail.stroke()
-					
-					else:
-						rests = []
-						rest_beats = note_beats
-						rest_div = 4
-						for i in range(0, 16):
-							while rest_beats - rest_div >= 0:
-								rest_beats -= rest_div
-								rests.append(rest_div)
-							rest_div /= 2
-						for rest_type in rests:
-							if clef_C0 == C0_treble_y:
-								bottom = treble_lines[4]
-							else:
-								bottom = bass_lines[0]
-							if rest_type == 4:
-								rest = ui.Path.rect(position + (note_gap * 1.5), bottom - (step * 4), step * 3, step)
-								rest.fill()
-							if rest_type == 2:
-								rest = ui.Path.rect(position + (note_gap / 2), bottom - (step * 5), step * 3, step)
-								rest.fill()
-							if rest_type == 1:
-								rest = ui.Path()
-								rest.move_to(position - (step / 3), bottom - (step * 7.1))
-								rest.add_arc(position + (step * 2.5), bottom - (step * 4), step * 2, 4, 2.3, False)
-								rest.add_quad_curve(position, bottom - step, position - (step * 0.7), bottom - (step * 2.9))
-								rest.add_quad_curve(position + step, bottom - (step * 2.6), position - (step * 1.7), bottom - (step * 3.9))
-								rest.add_arc(position - (step * 2), bottom - (step * 6), step * 2, 1, 5.7, False)
-								rest.close()
-								rest.stroke()
-								rest.fill()
-						#draw rest
-						rest = ui.Label()
-						rest.center = position, 30
-						rest.text = 'Rest'
-						rest.font = 'Helvetica', 30
-						self.add_subview(rest)
-						
+					self.draw_note(note_index, note_beats, clef_C0, note_slurred, slur, prev_note_tied, prev_note_pos, tail_direction, run, bars_to_draw, next_bars_to_draw, position, note_width)
+									
 					#increment
 					prev_note_pos = position
 					position += note_gap * note_beats
 					loop += 1
+					
+	def measure_bars(self, position):
+		position += note_gap / 2
+		measure_bar = ui.Path()
+		measure_bar.move_to(position, treble_lines[0])
+		measure_bar.line_to(position, treble_lines[4])
+		measure_bar.move_to(position, bass_lines[0])
+		measure_bar.line_to(position, bass_lines[4])
+		measure_bar.stroke()
+		position -= note_gap / 2
+		
+	def draw_note(self, index, beats, C0, slurred, slur, prev_note_tied, prev_note_pos, tail_direction, run, bars_to_draw, next_bars_to_draw, position, width):
+		if not index == -1:
+			oval = self.draw_dot(C0, index, position)
+			self.fill_note(C0, index, oval, beats, position)
+			self.dots(index, beats, C0, position)
+			self.slur(slurred, slur, index, C0, tail_direction, position)
+			self.tie(index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width)		
+			if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
+				run.append(note_pos)
+			elif not run == []:
+				self.run_bar(bars_to_draw, tail_direction, run, position, width)
+				self.tails(tail_direction, run, position)
+				run = []
+			else:
+				self.flag(note_pos, tail_direction, position)
+				self.tail(beats, index, C0, tail_direction, run, position, width)
+				
+		else:
+				self.rest(beats, position, C0)
+				
+	def draw_dot(self, C0, index, position):
+		ui.set_color('black')
+		note_dot = ui.Path()
+		rel_x = position - (step * 0.53)
+		note_y = C0 - (index * step)
+		note_dot.move_to(rel_x + step, (step * 2) + note_y)
+		note_dot.add_arc(rel_x + (step * 1.1), (step * 0.3) + note_y, step * 1.7, 1.7, 0.25, False)
+		note_dot.add_arc(rel_x + (step * 2.2), (step * 0.6) + note_y, step * 0.6, 6.9, 5, False)
+		note_dot.add_arc(rel_x + (step * 2.2), (step * 1.7) + note_y, step * 1.7, 4.8, 3.5, False)
+		note_dot.add_arc(rel_x + (step * 1.1), (step * 1.4) + note_y, step * 0.6, 3.5, 2, False)	
+		return note_dot
+		
+	def fill_note(self, C0, index, note, beats, position):
+		if beats < 2:
+			note.fill()
+			note.stroke()
+		else:
+			rel_x = position - (step * 0.53)
+			note_y = C0 - (index * step)
+			note.add_arc(rel_x + (step * 1.12), (step * 1.38) + note_y, step * 0.6, 2, 2.8)
+			note.add_arc(rel_x + (step * 2.8), (step * 2.3) + note_y, step * 2.3, 3.5, 4.5)
+			note.add_arc(rel_x + (step * 2.15), (step * 0.65) + note_y, step * 0.6, 5.1, 0)
+			note.add_arc(rel_x + (step * 0.35), (step * -0.6) + note_y, step * 2.6, 0.5, 1.35)
+			note.stroke()
+			note.close()
+			note.fill()
+			note.stroke()
+			
+	def dots(self, index, beats, C0, position):
+		if beats % 1.5 == 0:
+			dot = ui.Path()
+			dot = ui.Path.oval(position + (4 * step), C0 - ((index - 0.6) * step), 0.4 * step, 0.4 * step)
+			dot.stroke()
+			ui.set_color('black')
+			dot.fill()
+			
+	def slur(self, slurred, slurs, index, C0, tail_direction, position):
+		if slurred:
+			slurs.append((position, C0 - (index * step)))
+		elif not slurs == []:
+			f_x, f_y = slurs[0]
+			thickness = 3
+			tail_end = -(((3.5 * tail_direction) - 3.5) * step)
+			f_y += tail_end
+			y_pos = (C0 - (index * step)) + tail_end
+			t_b = step * (1 - tail_direction)
+			curve_y = (step * tail_direction * -2) + t_b
+			prev_note_side = f_x + (note_width * step * 2)
+			middle_x = prev_note_side + ((position - prev_note_side) / 2)
+			middle_y = f_y + ((y_pos - f_y) / 2)
+			center_s = 3 * ((middle_x - prev_note_side) / 200)
+			
+			slur = ui.Path()
+			slur.move_to(position, y_pos + t_b)
+			slur.add_quad_curve(middle_x, middle_y + curve_y, position - (step * center_s), y_pos + curve_y)
+			slur.add_quad_curve(prev_note_side, f_y + t_b, prev_note_side + (step * center_s), f_y + curve_y)
+			slur.add_quad_curve(middle_x, middle_y + curve_y + ((step * tail_direction) / thickness), prev_note_side + (step * center_s), f_y + curve_y)
+			slur.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
+			slur.fill()
+			slur.stroke()
+			slurs = []
+			
+	def tie(self, index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width):
+		if prev_note_tied:
+			thickness = 3
+			y_pos = C0 - (index * step)
+			t_b = step * (1 - tail_direction)
+			curve_y = (step * tail_direction * -2) + t_b
+			prev_note_side = prev_note_pos + (width * step * 2)
+			middle = prev_note_side + ((position - prev_note_side) / 2)
+			center_s = 3 * ((middle - prev_note_side) / 200)
+			
+			tie = ui.Path()
+			tie.move_to(position, y_pos + t_b)
+			tie.add_quad_curve(middle, y_pos + curve_y, position - (step * center_s), y_pos + curve_y)
+			tie.add_quad_curve(prev_note_side, y_pos + t_b, prev_note_side + (step * center_s), y_pos + curve_y)
+			tie.add_quad_curve(middle, y_pos + curve_y + ((step * tail_direction) / thickness), prev_note_side + (step * center_s), y_pos + curve_y)
+			tie.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
+			tie.fill()
+			tie.stroke()
+	
+	def run_bar(self, bars, tail_direction, run, position, width):
+		for b in range(0, bars):
+			bar = ui.Path()
+			offset = step * 2 * b * tail_direction
+			line_thickness = step * tail_direction
+			
+			x, y = run[0]
+			xcoord = x + (step * width * (1 + tail_direction))
+			tail_length = y + (step * -6 * tail_direction)
+			bar.move_to(xcoord, tail_length + step + offset)
+			bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
+			
+			x, y = note_pos
+			xcoord = x + (step * width * (1 + tail_direction))
+			tail_length = y + (step * -6 * tail_direction)
+			bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
+			bar.line_to(xcoord, tail_length + step + offset)
+			
+			bar.close()
+			bar.stroke()
+			bar.fill()
+			
+	def tails(self, tail_direction, run, position):
+		for run_note in run:
+			note_tail = ui.Path()
+			x, y = run_note
+			fx, fy = run[0]
+			cx, cy = note_pos
+			abs_pos = x - fx
+			run_length = cx - fx
+			run_height = cy - fy
+			note_side = ((tail_direction * note_width) + note_width) * step
+			rel_pos = abs_pos / run_length
+			grad_pos = (rel_pos * run_height) + fy
+			tail_length = -7 * step * tail_direction
+			note_tail.move_to(x + note_side, grad_pos + tail_length + step)
+			note_tail.line_to(x + note_side, y + step)
+			note_tail.stroke()
+			
+	def flag(self, pos, tail_direction, position):
+		for bar in range(0, bars_to_draw):
+			x, y = pos
+			flag = ui.Path()
+			
+			x_offset = step * note_width * (1 + tail_direction)
+			tail_length = step * -5.5 * tail_direction
+			y_offset = step * 1.5 * bar * tail_direction
+			y_dis = step - (tail_direction * step)
+			
+			y_pos = y + tail_length + y_dis + y_offset
+			rad = step / 2
+			flag.move_to(x + x_offset, y_pos)
+			flag.add_arc(x + rad + x_offset, y_pos, rad, 3 * tail_direction, 2 * tail_direction, tail_direction < 0)
+								
+			rad = step * 2.5
+			tail_length = step * -2.5 * tail_direction
+			y_pos = y + tail_length + y_dis + y_offset
+			flag.add_arc(x + x_offset, y_pos, rad, 5 * tail_direction, tail_direction, tail_direction > 0)
+								
+			rad = step * 2
+			tail_length = step * -2 * tail_direction
+			y_pos = y + tail_length + y_dis + y_offset
+			flag.add_arc(x + x_offset, y_pos, rad, tail_direction,  4.8 * tail_direction, tail_direction < 0)
+								
+			tail_length = step * -4 * tail_direction
+			y_pos = y + tail_length + y_dis + y_offset
+			flag.line_to(x + x_offset, y_pos)
+								
+			ui.set_color("black")
+			flag.close()
+			flag.stroke()
+			flag.fill()
+			run = []
+			
+	def tail(self, beats, index, C0, direction, run, position, width):
+		if beats < 4 and run == []:
+			note_tail = ui.Path()
+			note_tail.move_to(position + (((direction * width) + width) * step),(C0 - (index * step)) + step)
+			note_tail.line_to(position + (((direction * width) + width) * step),((C0 - (index * step)) + step) - (direction * (7 * step)))
+			note_tail.stroke()
+	
+	def rest(self, beats, position, C0):
+		rests = []
+		rest_beats = beats
+		rest_div = 4
+		for i in range(0, 16):
+			while rest_beats - rest_div >= 0:
+				rest_beats -= rest_div
+				rests.append(rest_div)
+			rest_div /= 2
+		for rest_type in rests:
+			if C0 == C0_treble_y:
+				bottom = treble_lines[4]
+			else:
+				bottom = bass_lines[0]
+			if rest_type == 4:
+				rest = ui.Path.rect(position + (note_gap * 1.5), bottom - (step * 4), step * 3, step)
+				rest.fill()
+			elif rest_type == 2:
+				rest = ui.Path.rect(position + (note_gap / 2), bottom - (step * 5), step * 3, step)
+				rest.fill()
+			elif rest_type == 1:
+				rest = ui.Path()
+				rest.move_to(position - (step / 3), bottom - (step * 7.1))
+				rest.add_arc(position + (step * 2.5), bottom - (step * 4), step * 2, 4, 2.3, False)
+				rest.add_quad_curve(position, bottom - step, position - (step * 0.7), bottom - (step * 2.9))
+				rest.add_quad_curve(position + step, bottom - (step * 2.6), position - (step * 1.7), bottom - (step * 3.9))
+				rest.add_arc(position - (step * 2), bottom - (step * 6), step * 2, 1, 5.7, False)
+				rest.close()
+				rest.stroke()
+				rest.fill()
 
 class Signature(ui.View):
 	def __init__(self, width, height):
@@ -535,6 +534,7 @@ class Controls(ui.View):
 		settings_btn.frame = (button_width, 0, button_width * 2, button_width)
 		settings_btn.action = settings
 		
+		
 		self.add_subview(play_btn)
 		self.add_subview(settings_btn)
 		
@@ -564,7 +564,6 @@ class MyView(ui.View):
 		print(h)
 		self.controls.frame = ((w / 2) - button_width, 718, (w/2) + button_width, 768)
 		self.controls.add_subview(Controls(self.controls.width, self.controls.height, button_width))
-		
 		self.add_subview(self.sv)
 		self.add_subview(self.sig)
 		self.add_subview(self.controls)
