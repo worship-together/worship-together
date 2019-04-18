@@ -11,7 +11,7 @@ key        Ab
 rhythm     0 : 4
 tempo      220
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -57,3 +57,43 @@ soprano    a/2 b  c/2  c  | d  c  b a/2 g | a/2. = a/2
 alto       c/2 b  e/2  a+ | a+/2  f e f e | e/2. = e/2
 tenor      a/2 e+ c/2  e+ | f+ e+ d c b/2 | c/2. = c/2
 bass       f/2 g  a+/2 a  | d  a  b c d e | a/2. = a/2
+
+verse      My    soul, now bless Thy  Mak  -  er!  Let  all    with -  in     me
+verse      He    shows to  man    His  treas - ure  Of   judg - ment,  truth, and
+verse      For   as    a   ten -  der  fa   -  ther Hath pit -  y      on     His
+verse      God's grace a - lone   en - dur  -  eth, And  chil - dren's chil - dren
+
+verse      bless   His    name  Who mak - eth  thee     par - tak -  er   Of
+verse      right - eous - ness, His love  be - yond     all   meas - ure, His
+verse      chil -  dren   here, He  in    His  arms     will  gath - er   All
+verse      yet     shall  prove How He    with strength as -  sur -  eth  The
+
+verse      mer  -  cies more  than thou    dar'st claim.  For - get    Him
+verse      yearn - ing  pit - y    o'er    dis -  tress,  Nor   treats us
+verse      who     are  His   in   child - like   fear.   He    knows  how
+verse      hearts  of   all   that seek    His    love.   In    heav'n is
+
+verse      not   whose meek -  ness Still bears with all  thy sin,  Who
+verse      as    we    mer  -  it   But   lays  His  an - ger by.   The
+verse      frail our   pow  -  ers  Who   but   from dust are made; We
+verse      fixed His   dwell - ing, His   rule  is   o -  ver all;  An -
+
+verse      heal -  eth all   thy   weak - ness, Re  -  news  your  life  with - in;
+verse      poor    and con - trite spir - it    Finds  His   com - pas - sion   nigh;
+verse      flour - ish like  the   flow - ers,  And    e  -  ven   so    we     fade;
+verse      gels,   in  might ex  - cel -  ling, Bright hosts be -  fore  Him    fall.
+
+verse      Whose  grace and care   are  end  -  less And saved thee  through the
+verse      And    high  as  heav'n a -  bove    us,  As  break from  close   of
+verse      The    wind  but o'er   them pass -  es,  And all   their bloom   is
+verse      Praise Him   who ev  -  er   reign - eth, All ye    who   hear    His
+
+verse      past; Who leaves no    suf - f'rer friend - less But rights the
+verse      day,  So  far,   since He    doth  loved    us,  He  puts   our
+verse      o'er, We  with - er    like  the   grass -  es;  Our place  knows
+verse      word, Nor our    poor  hymns dis - dain  -  eth  My  soul,  O
+
+verse      wronged at  last.  But rights the   wronged at  last.
+verse      sins    a - way,   He  puts   our   sings   a - way.
+verse      us      no  more,  Our place  knows us      no  more.
+verse      bless   the LORD;  My  soul,  O     bless   the LORD!

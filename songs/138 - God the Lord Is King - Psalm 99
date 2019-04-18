@@ -13,7 +13,7 @@ key        G
 rhythm     0 : 4
 tempo      170
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -39,3 +39,31 @@ soprano    d-/2 g/2  a b c/2 b g/2 a b c a/2 g/1
 alto       b/2  d/2  d d e/2 d b/2 d d e d/2 d/1
 tenor      g/2  b/2  a g a/2 f e/2 f g g/2 f g/1
 bass       g-/2 g-/2 d b a/2 b e/2 d g c d/2 g-/1
+
+verse      God  the  LORD   is    King,   throned on    cher - u  -  bim.
+verse      Let  them spread the   fame    of      His   awe  - some  Name;
+verse      Thou in   Ja  -  cob's land    hast    by    Thy    own   hand
+verse      Mo - ses  ro     Him   prayed, Aar  -  on    sought His   aid;
+verse      He   to   Is  -  rael  spoke   in      a     cloud  of    smoke;
+verse      When they called on    Thee,   Thou    didst hear   their plea;
+
+verse      Let   the   peo - ple's  quake,  earth's foun -  da  -  tions shake,
+verse      Ho -  ly    is    the    LORD    and     to      be     a  -  dored.
+verse      Right and   truth main - tained, eq  -   ui   -  ty     or -  dained.
+verse      Lat - er    Sam - u   -  el      called  on      Him    as    well.
+verse      They  His   glo - ry     saw,    wor  -  shipped Him    with  awe.
+verse      Thou  didst par - don    them,   though  a   -   veng - ing   sin.
+
+verse      For  in    Zi  -  on    He     shows  His   maj - es  -  ty
+verse      Let  them  praise their King,  of     His   jus - tice   sing.
+verse      At   His   foot - stool bow    and    re -  vere  Him    now.
+verse      They cried out    to    Him    and    He    an -  swered them;
+verse      He,  the   LORD,  their Guide, stat - utes  did   pro -  vide
+verse      Come to    Zi  -  on's  hill   and    per - form  God's  will;
+
+verse      And    His  ex  -  al - ta   -  tion o  -  ver   ev -  'ry   na   -  tion.
+verse      Wor -  ship Him    up - right - ly;  He,   the   King, is    might - y.
+verse      Praise Him, high   and  low  -  ly,  for   the   LORD  is    ho   -  ly.
+verse      He     in   trib - u -  la   -  tion heard their sup - pli - ca   -  tion.
+verse      Which  His  cho -  sen  na   -  tion kept  with  ded - i  -  ca   -  tion.
+verse      Praise Him, high   and  low  -  ly,  for   the   LORD  is    ho   -  ly.
