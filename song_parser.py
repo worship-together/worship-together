@@ -172,17 +172,40 @@ def _parse_lines(filename, attributes):
 				raise RuntimeError(
 					'Error parsing file ' + filename + '@' +
                     str(number+1) + ': ' + str(line) + ' ' + str(e))
-	if 'import' in attributes:
-		imports = attributes['import']
-		attributes.pop('import')
-		for _import in imports if isinstance(imports, list) else [imports]:
-			try:
-				_parse_lines(_import, attributes)
-			except Exception as e:
-				message = 'Error importing ' + _import + ' from ' + filename
-				message += ': ' + str(e)
-				print(message)
-				raise RuntimeError(message)
+
+
+class _Line:
+	def __init__(self, filename, number, text):
+		self.filename = filename
+		self.number = number
+		self.text = text
+
+
+def _read_lines(filename):
+	with open(filename, 'r') as file:
+		return [_Line(filename, number + 1, text.strip())
+				for number, text in enumerate(file)]
+
+
+def _verify_file_exists(filename, from_line):
+	if not os.path.isfile(filename):
+		message = 'Error importing ' + filename
+		message += ' from ' + from_line.filename
+		message += ' at line ' + str(from_line.number)
+		raise RuntimeError(message)
+
+
+def _expand_imports(lines):
+	regex = re.compile(r'import\s+(?P<filename>[^\n]+)')
+	for line in lines:
+		match = regex.match(line.text)
+		if match:
+			filename = match.group('filename')
+			_verify_file_exists(filename, line)
+			yield from _expand_imports(_read_lines(filename))
+		else:
+			yield line
+
 
 def parse_song(filename):
 	attributes={}
@@ -201,3 +224,64 @@ def parse_song(filename):
 	song = NewSong(attributes)
 	#print(song.measures)
 	return song
+
+
+_test_import_file_a = '''a b
+import songs/test_b
+c d
+'''
+
+_test_import_file_b = '''e f
+import songs/test_c
+g h
+'''
+
+_test_import_file_c = '''i j
+'''
+
+_test_import_error = '''a b
+import songs/missing_file
+c d'''
+
+def _test_imports():
+	def write_test_file(filename, content):
+		with open(filename, 'w') as file:
+			file.write(content)
+
+	def check_line(filename, index, number, text):
+		assert lines[index].filename == filename
+		assert lines[index].number == number
+		assert lines[index].text == text
+
+	write_test_file('songs/test_a', _test_import_file_a)
+	write_test_file('songs/test_b', _test_import_file_b)
+	write_test_file('songs/test_c', _test_import_file_c)
+	write_test_file('songs/import_error', _test_import_error)
+
+	lines = list(_expand_imports(_read_lines('songs/test_a')))
+	check_line('songs/test_a', index=0, number=1, text='a b')
+	check_line('songs/test_b', index=1, number=1, text='e f')
+	check_line('songs/test_c', index=2, number=1, text='i j')
+	check_line('songs/test_b', index=3, number=3, text='g h')
+	check_line('songs/test_a', index=-1, number=3, text='c d')
+
+	try:
+		lines = _read_lines('songs/import_error')
+		list(_expand_imports(lines))
+		raise AssertionError('Expected import error')
+	except RuntimeError as e:
+		assert 'Error importing' in str(e)
+		assert 'at line 2' in str(e)
+
+	os.remove('songs/test_a')
+	os.remove('songs/test_b')
+	os.remove('songs/test_c')
+	os.remove('songs/import_error')
+
+
+def _run_parser_tests():
+	_test_imports()
+
+
+if __name__ == '__main__':
+	_run_parser_tests()
