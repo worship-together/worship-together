@@ -11,7 +11,7 @@ key        Eb
 rhythm     0 : 4
 tempo      150
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,18 @@ soprano    b an b/2 | g/2 | f e        e d- | e/2
 alto       c c  d/2 | b/2 | c g-/8 a/8 b b  | b/2
 tenor      g f  f/2 | g/2 | a e        f f  | g/2
 bass       e f  b/2 | e/2 | a c        b b  | e/2
+
+verse      I   to   the   hills  will lift   mine eyes, From
+verse      Thy foot He'll not    let  slide, nor  will  He
+verse      The Lord thee  keeps; the  Lord   thy  shade On
+verse      The Lord shall keep   thy  soul;  He   shall Pre -
+
+verse      whence doth  come mine aid?    My      safe - ty  com - eth
+verse      slum - ber   that thee keeps.  Be   -  hold,  He  that  keeps
+verse      thy    right hand doth stay;   The     moon   by  night thee
+verse      serve  thee  from all  ill;    Hence - forth  thy go -  ing
+
+verse      from  the  Lord, Who heav'n and  earth hath made.
+verse      Is -  ra - el,   He  slum - bers not,  nor  sleeps.
+verse      shall not  smite Nor yet    the  sun   by   day.
+verse      out   and  in    God keep   for  ev -  er   will.
