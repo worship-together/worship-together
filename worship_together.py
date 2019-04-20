@@ -18,6 +18,15 @@ last_position = 0.0000000
 satb_page = None
 song = None
 
+def adjust_volume(sender):
+	global player
+	if player != None and get_play_button().playing:
+		play_pause(get_play_button())
+		play_pause(get_play_button())
+		
+def change_tempo(sender):
+	player.rate = sender.value + 0.5
+
 settings = ui.load_view('midi_ui')
 
 def bring_up_sheet_music(sender):
@@ -69,39 +78,32 @@ def get_play_button():
 			return subview
 	raise RuntimeError('fruvit nub it')
 
-def track_time(slider):
-	global player, dragging, last_position, rate, position
-	if player and not dragging:
-		if slider.value == last_position:
-			slider.value = player.current_time / float(player.duration)
-			if slider.value == 1 and get_play_button().playing:
+def track_time(scrollview):
+	global player, rate, position
+	screen_w, screen_h = ui.get_screen_size()
+	if player:
+		if not scrollview.dragging:
+			w, h = scrollview.content_size
+			scroll_x, scroll_y = scrollview.content_offset
+			scrollview.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
+			if scroll_x > w - screen_w and get_play_button().playing:
 				player.current_time = 0
 				rate = player.rate
 				play()
-				slider.value = player.current_time / float(player.duration)
-			last_position = slider.value
+				scrollview.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
 		else:
-			dragging = True
-			position = player.current_time
+			adjust_time(scrollview)
 	if exiting:
 		stop()
 	else:
-		ui.delay(lambda: track_time(slider), 0.05)
+		ui.delay(lambda: track_time(scrollview), 0.01)
 
-
-def change_tempo(sender):
-	player.rate = sender.value + 0.5
-	print(player.rate)
-
-
-def adjust_time(slider):
-	global player, position, last_position, dragging
+def adjust_time(scrollview):
+	global player, position
 	if player:
-		player.current_time = slider.value * player.duration
+		scroll_x, scroll_y = scrollview.content_offset
+		player.current_time = scroll_x * player.duration
 		position = player.current_time
-		last_position = slider.value
-		dragging = False
-
 
 def play_pause(sender):
 	global song, player, rate, position
@@ -121,20 +123,14 @@ def play_pause(sender):
 		adjust_time(satb_page.sv)
 		play()
 		player.rate = get_subview('tempo_slider').value + 0.5
-
-
-def adjust_volume(sender):
-	global player
-	if player != None and playing():
-		play_pause(get_play_button())
-		play_pause(get_play_button())
+		player.current_time = position
 
 def present_settings(sender):
 	global settings
 	settings.present('sheet')
 
 def present_song(sender):
-	global satb_page, song, player, tracking_song, position, dragging, last_position
+	global satb_page, song, player, tracking_song, position, last_position
 	song = sender.items[sender.selected_row]
 	if not satb_page:
 		satb_page = sheet_music.MyView(song)
@@ -164,13 +160,12 @@ def present_song(sender):
 		player.current_time = 0
 	satb_page.present('fullscreen', hide_title_bar=True)
 	position = 0
-	satb_page.sv.value = 0
-	slider = satb_page.sv
-	dragging = False
-	last_position = slider.value
+	scrollview = satb_page.sv
+	scroll_x, scroll_y = scrollview.content_offset
+	last_position = scroll_x
 	if not tracking_song:
 		tracking_song = True
-		track_time(slider)
+		track_time(scrollview)
 
 
 class StartScreen(ui.View):
