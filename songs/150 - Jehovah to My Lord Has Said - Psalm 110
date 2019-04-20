@@ -11,7 +11,7 @@ key        Bb
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,19 @@ soprano    d-. e/8 f b | b. a/8 a b | d c b a | b/2.
 alto       b.  c/8 d d | e. e/8 e f | f g f e | d/2.
 tenor      f.  f/8 f d | c. c/8 c b | b g d c | b/2.
 bass       b.  b/8 b b | c. c/8 c d | b e f f | b/2.
+
+verse      Je - ho -  vah  to    my    LORD has   said, Sit     Thou  at    My   right hand
+verse      A    wil - ling peo - ple   in   Thy   day   Of      pow'r shall come to    Thee.
+verse      The  Lord  at   Thy   right hand shall smite Earth's rul - ers   in   His   wrath.
+
+verse      Un - til   I    make  Thy   foes a     stool  Where - on     Thy   feet may   stand.
+verse      Thy  youth ar - rayed in    ho - li -  ness   Like    morn - ing   dew  shall be.
+verse      A -  mong  the  na -  tions He   shall judge; The     slain  shall fill His   path.
+
+verse      Je - ho -  vah shall  from  Zi - on    send  The   scep - ter  of   Thy  pow'r.
+verse      Je - ho -  vah swore, and   from His   oath  He    nev -  er   will de - part:
+verse      In   man - y   lands  He'll o -  ver - throw Their kings  with ru - in   dread;
+
+verse      In   bat   -  tle  with  Thine en  -  e - mies  Be  Thou   the  con - quer - or.
+verse      Of   the'or - der  of    Mel - chiz - e - dek   A   priest Thou ev -  er     art.
+verse      And, march -  ing, He'll drink from   the brook And so     lift up    His    head.

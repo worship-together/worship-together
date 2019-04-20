@@ -11,7 +11,7 @@ key        C
 rhythm     4 : 4
 tempo      160
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,27 @@ soprano    c  c       b  b  | a. a/8 g c | d b c/2
 alto       e  e       e  e  | c. f/8 e g | f d e/2
 tenor      a  a       g# g# | a. c/8 c c | a g g/2
 bass       a+ c/8 d/8 e  e  | f. f/8 c e | f g c/2
+
+verse      God   the   Lord   is  known in    Ju  -   dah;  Great His  name  in
+verse      Ex -  cel - lent   art Thou  and   glo  -  rious Com - ing  from  the
+verse      Horse and   char - iot low   are   ly   -  ing   In    the  sleep of
+verse      When  from  heav'n Thy sen - tence sound - ed,   All   the  earth in
+verse      Make  your  vows   now to    Je -  ho   -  vah;  Pay   your God   what
+
+verse      Is   -  ra - el;     His   pa -  vil  -  ion  is    in     Sa   -  lem;
+verse      hills   of   prey.   Thou  hast  spoiled the  val - iant - heart - ed;
+verse      death's dark night.  Ja -  cob's God,    Thou didst re  -  buke    them;
+verse      fear    was  still,  While to    save    the  meek  and    low  -  ly
+verse      is      His  own;    All   men,  bring   your gifts be  -  fore    Him;
+
+verse      His   a - bode    on   Zi  -   on  hill.   There   He     broke the
+verse      Wrapt in  sleep   of   death   are they.   Might - y      men   have
+verse      Thou  art fear -  ful  in      Thy might.  When    Thine  an -  ger
+verse      God   in  judg  - ment wrought His will.   Ev'n    the    wrath of
+verse      Fear  is  due     to   Him     a - lone;   He      brings low   the
+
+verse      bow   and   ar   -  rows, Bade  the   sword  and  shield be   still.
+verse      lost  their cun  -  ning; None  are   read - y    for    the  fray.
+verse      once  is    ris  -  en,   Who   may   stand  be - fore   Thy  sight?
+verse      man   shall praise  Thee; What  re -  mains  is   kept   from ill.
+verse      pride of    princ - es;   Kings shall trem - ble  at     His  frown.
