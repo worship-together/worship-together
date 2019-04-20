@@ -12,7 +12,7 @@ key        C
 rhythm     0 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,47 @@ soprano    f  e d-/2. R d-/2 e/2 g f  e/2  d-/2 c-/1
 alto       d  c b/2.  R b/2  c/2 c d/2 c/2 b    c/1
 tenor      bb g g/2.  R g/2  g/2 e a  g/2  g/2  g/1
 bass       bb c g-/2. R g-/2 c/2 c f- g-/2 g-/2 c/1
+
+verse      Hal  - le  -  lu   -  jah!  Praise  the     LORD     And    ex  -  tol     His
+verse      Praise the    LORD,   for   He      is      good;    Sing   your   praise  to
+verse      He     does   all     that  pleas - es      Him;     Heav - en,    earth,  the
+verse      E  -   gypt's first - born  He      de   -  stroyed; Man    and    beast   He
+verse      Man -  y      na   -  tions He      struck  down,    Kings  and    princ - es
+verse      Thy    ex  -  alt  -  ed    Name,   O       LORD,    Will   stand  firm    for -
+verse      I   -  dols   are     but   pre  -  cious   ore,     Fash - ioned  by      the
+verse      They   have   ears,   but   can  -  not     hear;    Noth - ing    can     they
+verse      Come,  O      house   of    Is   -  ra   -  el,      Sing   the    prais - es
+verse      Blest  from   Zi   -  on    be      the     LORD,    Who    dwells in      Je -
+
+verse      ho  -  ly    Name.   You   that  stand  with - in       His    house,
+verse      Him    a  -  lone.   He    chose Ja  -  cob    for      Him -  self;
+verse      deep - est   sea     Do    His   bid -  ding,  heed     His    will;
+verse      both   did   smite.  He    His   sings  and    won   -  ders   sent
+verse      great  in    might:  Og,   the   king   of     Ba   -   shan's hills,
+verse      ev  -  er -  more;   Thy   great glo -  ry     and      re  -  nown
+verse      hands  of    men.    They  have  eyes,  but    can   -  not    see;
+verse      un  -  der - stand.  In    their mouths there  is       no     breath,
+verse      of     the   LORD.   Come, O     Aar -  on's   priest - ly     house,
+verse      ru  -  sa -  lem.    Let   His   peo -  ple    all      re  -  joice;
+
+verse      Praise  His   great - ness, voice His    fame.   You    His   ser  -  vants,
+verse      Is  -   ra -  el      He    made  His    own.    Far    a  -  bove    all
+verse      Clouds  rise  up      at    His   de  -  cree.   With   the   rain    He
+verse      And     so    hum  -  bled  E  -  gypt's might,  Show - ing   Phar -  aoh
+verse      Si  -   hon   of      the   Am -  o   -  rites.  He     smote Ca  -   naan's
+verse      Through all   a    -  ges   will  en  -  dure.   For    the   LORD    will
+verse      Na   -  tions wor  -  ship  them  in     vain.   They   have  mouths, but
+verse      And     their mak  -  ers,  in    the    end,    Like   their i   -   dols
+verse      Bless   His   Name    with  one   ac  -  cord.   Le  -  vi's  house,  your
+verse      Let     them  praise  and   wor - ship   Him.    Hal -  le -  lu   -  jah!
+
+verse      shout   His  laud    In    the    tem - ple   courts of    God.
+verse      gods    is   He,     Great in     power and   maj -  es -  ty.
+verse      light - ning sends;  Winds and    tem - pests He     com - mands.
+verse      and     his  court   That  no     man   His   will   can   thwart.
+verse      king -  doms all,    Gave  their  land  to    Is  -  ra -  el.
+verse      vin  -  di - cate    All   who    for   His   mer -  cy    wait.
+verse      can  -  not  speak.  Why   should men   their fa  -  vor   seek?
+verse      will    be - come;   So    will   all   who   trust  in    them.
+verse      voic -  es   raise.  You   that   fear  Him,  sing   His   praise.
+verse      Praise  the  LORD!   Bless His    Name  with  one    ac -  cord.

@@ -11,7 +11,7 @@ key        F
 rhythm     0 : 4
 tempo      170
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -42,3 +42,18 @@ soprano    c/2  c/2  a a f/2 g/2 a a  g b  a/2 g/2 f/1
 alto       a/2  g/2  f f d/2 e/2 f f  e g/2 f/2 e  f/1
 tenor      f+/2 e+/2 d d a/2 c/2 c c  c d  c/2 c/2 c/1
 bass       f/2  c/2  d d d/2 c/2 f f- c g- a/2 c/2 f-/1
+
+verse      To Thee, O   LORD Who   dwell - est in    the height, My    eyes
+verse      O  LORD, our God, grant us      Thy grace a - gain,   Grant us
+
+verse      look up    for light.  Lo,  as  the eyes of  ser - vants, when  ne - glect - ed,
+verse      Thy  grace a - gain,   For, lo, our ears are full  of     man's de - ri   -  sion
+
+verse      Are to  their lord    di -  rect - ed,   And as   a  maid - en's glance for
+verse      At  our es -  tranged con - di  -  tion; Our soul is sat -  ed   with   the
+
+verse      fa -  vor lin -  gers Up - on    here mis - tress' fin - gers, Thus, too, our
+verse      scorn and chid - ing  Of   these at   ease  a   -  bid - ing,  And   of   the
+
+verse      eyes  look to our   Mas - ter's face Till He   pro - vide    us   grace.
+verse      proud who  in their van - i  -  ty   Re - gard us    haugh - ti - ly.

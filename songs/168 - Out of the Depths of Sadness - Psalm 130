@@ -12,7 +12,7 @@ key        F
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    f/2  f g a b g/2 f/2.  R a/2  g f g/2  e/2 d-/1
 alto       a/2  d e f f e/2 c/2.  R f/2  e d e d/2 c# d/1
 tenor      d-/2 a c c d c/2 a/2.  R c/2  c a b/2  a/2 a/1
 bass       d/2  d c f b c/2 f-/2. R f-/2 c d g-/2 a/2 d/1
+
+verse      Out  of     the depths of    sad - ness,  O    LORD,     I    cried   to   Thee;
+verse      If,  show - ing no     com - pas - sion,  Thou should'st our  sins    re - cord
+verse      I    wait   for God    to    hide  me;    My   soul,     with long -  ing  stirred,
+verse      Hope in     the LORD,  O     na -  tion!  With Him       is   stead - fast love;
+
+verse      Thou  Who    canst  fill with    glad - ness,  Lend  now  Thy   ear    to  me.
+verse      And   mark   all    our  trans - gres - sions, Who   then could stand, O   Lord?
+verse      Shall hope,  what - e'er be   -  tide   me,    In    His  un -  fail - ing word.
+verse      His   plen - te  -  ous  sal  -  va  -  tion   He'll send you   from   a - bove.
+
+verse      O   Fount of    con - so - la   -  tion, At - tend  un - to    my   cry;
+verse      But Thou  dost  par - don  ful  -  ly    All  our   in - iq -  ui - ty,
+verse      For Thee, LORD, I     a    yearn - ing   With more  in - tense de - sire
+verse      He  will  re -  deem  His  peo  -  ple,  His  cho - sen  Is -  ra - el,
+
+verse      Hear Thou    my    sup - pli - ca  -  tion And  to   my  help   draw nigh.
+verse      That we      may   serve Thee  tru -  ly   And  fear Thy maj -  es - ty.
+verse      Than watch - ers   for   the   morn - ing  To   dawn of  day    as - spire.
+verse      From all     their sin   and   e   -  vil, That they His praise may  tell.

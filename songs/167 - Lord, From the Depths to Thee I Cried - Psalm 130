@@ -10,7 +10,7 @@ key        G
 rhythm     3 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,21 @@ soprano    c/2    b       | a/2 b | d- - e g/8 a/8 | b/2   a | g/2
 alto       e - f# g       | f/2 d | d - c  b/8 c/8 | d/2   c | b/2
 tenor      g - a  b/8 c/8 | d/2 g | g/2    g       | g - e f | g/2
 bass       c/2    g-      | d/2 g | b - c  e       | d/2   d | g-/2
+
+verse      Lord, from   the   depths to   Thee   I    cried.  My
+verse      Lord, who    shall stand, if   Thou,  O    Lord,   Should'st
+verse      I     wait   for   God,   my   soul   doth wait,   My
+verse      I     say,   more  than   they that   do   watch   The
+verse      And   plen - te -  ous    re - demp_   -   tion    Is
+
+verse      voice, Lord, do    Thou hear:  Un - to   my   sup - pli -
+verse      mark   in -  iq -  ui - ty?    But  yet  with Thee  for -
+verse      hope   is    in    His  word.  More than they that  for
+verse      morn - ing   light to   see.   Let  Is - ra - el    hope
+verse      ev  -  er    found with Him.   And  from all  their in -
+
+verse      ca  -  tions' voice  Give an     at  -  ten - tive ear.
+verse      give - ness   is,    That feared though may - est  be.
+verse      morn - ing    watch, My   soul   waits  for   the  Lord;
+verse      in     the    Lord,  For  with   Him    mer - cies be;
+verse      iq  -  ui  -  ties   He   Is  -  rael   shall re - deem.

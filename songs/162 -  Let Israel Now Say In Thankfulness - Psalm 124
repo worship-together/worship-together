@@ -11,7 +11,7 @@ key        F
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -42,3 +42,23 @@ soprano    a/2 g f e/2  f/2 g b       a/2 g/2 f/1
 alto       f/2 e d c#/2 d/2 d d/8 e/8 f/2 e/2 cn/1
 tenor      f/2 c a a/2  a/2 g g       c/2. b  a/1
 bass       f/2 c d a/2  d/2 b g-      a b c/2 f-/1
+
+verse      Let   Is - ra -  el    now say    in thank -  ful - ness
+verse      Yea,  when their wrath a - gainst us fierce - ly    rose,
+verse      Blest be   the   LORD  who made   us not      their prey;
+
+verse      That if    the LORD  had   not our  right  main - tained
+verse      Then would the tide  o'er  us  have spread its    wave;
+verse      As   from  the fow - ler's net a    bird   may    flee,
+
+verse      And if    the   LORD   had   not   with us   re - mained,
+verse      The rag - ing   stream would have  be - come our  grave;
+verse      So  from  their bro -  ken   snare did  we   go   free.
+
+verse      When cru -  el  men    a - gainst  us    rose    to  strive,
+verse      The  surg - ing flood, in  proud - ly    swell - ing roll,
+verse      Our  on  -  ly  help   is  in      God's ho   -  ly  Name;
+
+verse      We'd sure - ly  have  been swal - lowed up       a - live.
+verse      Most sure - ly  would have o   -  ver - whelmed  us  all.
+verse      He   made   the earth and  all    the   heaven - ly  frame.

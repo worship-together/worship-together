@@ -11,7 +11,7 @@ key        G
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,19 @@ soprano    d/2  b/2  g/2 a c   b/2 a/2 g/1
 alto       g/2  g/2  e/2 e a/2 g/2 f   g/1
 tenor      b/2  d/2  c/2 c e+  d/2 d/2 d/1
 bass       g-/2 g-/2 c/2 a a   b/2 d/2 g-/1
+
+verse      Come, bless the  LORD   with one    ac - cord,
+verse      Lift  up    your hands, in   prayer draw nigh
+verse      The   LORD  now  bless  you  from   a -  bove,
+
+verse      You  faith - ful ser -  vants of      the  LORD,
+verse      Un - to      His sanc - tu -  ar   -  y    high;
+verse      From Zi   -  on  in     His   bound - less love;
+
+verse      Who in    His house  do    stand by  night;
+verse      O   bless the LORD,  kneel at    His feet,
+verse      Our God,  who heav'n and   earth did frame,
+
+verse      And   praise Him  there with all   your   might.
+verse      And   wor -  ship Him   with rev - 'rence meet.
+verse      Blest be     His  great and  ho -  ly     Name.

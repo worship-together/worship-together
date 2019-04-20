@@ -11,7 +11,7 @@ key        C
 rhythm     0 : 4
 tempo      170
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -47,3 +47,33 @@ soprano    f-/2 f g a/2 g/2 g a  g f e/2  d-/1
 alto       d/2  d e f/2 e/2 e f  e d/2 c# d/1
 tenor      a/2  a c c/2 c/2 c c  c a a/2  a/1
 bass       d/2  d c f/2 c/2 c f- c d a/2  d/1
+
+verse      A -  long  the  streams of   Bab  -  y -  lon,   in    sad - ness
+verse      How  shall we   sing    the  LORD's  song in     our   an -  guish
+verse      Re - mem - ber, LORD,   how  E   -   dom  showed no    pit - y
+verse      O    Bab - y -  lon,    de - stroy - er,  God    shall smite you!
+
+verse      We   sat   and  wept, re - mem  -  b'ring Zi -  on's glad - ness,
+verse      When in    a    for - eign land    we     mourn and  lan -  guish?
+verse      That day   when Bab - y -  lon     razed  Zi -  on's cit -  y,
+verse      How  hap - py   he,   ap - point - ed     to    re - quite  you
+
+verse      And  on   the   wil - lows there  we  hung our  lyre,
+verse      Je - ru - sa -  lem,  for  love   of  you  I    cry;
+verse      How  E -  sau's sons  re - joiced and said to   them,
+verse      With all  the   e  -  vil  you    to  us   have done!
+
+verse      For  there our   cap -  tors did    our  songs re -  quire;
+verse      My   right hand  with - er   if     I    you   den - y.
+verse      Tear down, tear  down   all  of     Je - ru -  sa -  lem.
+verse      May  all   man - kind   your lone - ly   ru -  ins   shun.
+
+verse      While we    la - ment - ed, joy    and  mirth they   want - ed.
+verse      My    mouth be   dumb   if  ev  -  er   I     for -  get    you,
+verse      De -  stroy and  raze   it  down   to   its   foun - da -   tions!
+verse      How   hap - py   he     who shall, de - void  of     pit -  y,
+
+verse      Sing for  us  one  of    Zi  -  on's  songs! they taunt - ed.
+verse      If   not  a - bove my    high - est   joy    I    set     you!
+verse      O    God, do  not  for - get    their prov - o -  ca   -  tions.
+verse      Dash on   the rock the   chil - dren  of     your cit  -  y!
