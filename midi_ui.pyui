@@ -77,7 +77,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{90, 124}, {304, 34}}",
+        "frame" : "{{90, 124}, {333, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "adjust_volume",
@@ -95,7 +95,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{90, 85}, {304, 34}}",
+        "frame" : "{{90, 85}, {333, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "adjust_volume",
@@ -113,7 +113,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{90, 43}, {304, 34}}",
+        "frame" : "{{90, 43}, {333, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "adjust_volume",
@@ -131,7 +131,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{90, 7}, {304, 34}}",
+        "frame" : "{{90, 7}, {333, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "adjust_volume",
@@ -149,42 +149,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 163}, {76, 34}}",
-        "class" : "Button",
-        "attributes" : {
-          "action" : "play_pause",
-          "frame" : "{{160, 123}, {80, 32}}",
-          "title" : "Play",
-          "uuid" : "776AA832-0D35-44BB-A282-6F756BEDE2EE",
-          "class" : "Button",
-          "name" : "play_button",
-          "font_size" : 15
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{90, 163}, {304, 34}}",
-        "class" : "Slider",
-        "attributes" : {
-          "action" : "adjust_time",
-          "flex" : "W",
-          "continuous" : false,
-          "frame" : "{{100, 122}, {200, 34}}",
-          "uuid" : "4069A055-7B8E-482F-8655-B2E01736613E",
-          "class" : "Slider",
-          "value" : 0,
-          "name" : "time_adjuster"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{90, 205}, {219, 34}}",
+        "frame" : "{{90, 166}, {333, 34}}",
         "class" : "Slider",
         "attributes" : {
           "action" : "change_tempo",
@@ -202,7 +167,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 205}, {76, 32}}",
+        "frame" : "{{6, 163}, {76, 32}}",
         "class" : "Label",
         "attributes" : {
           "name" : "tempo_label",
@@ -215,32 +180,15 @@
           "font_name" : "<System>"
         },
         "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{317, 205}, {77, 32}}",
-        "class" : "Button",
-        "attributes" : {
-          "action" : "bring_up_sheet_music",
-          "frame" : "{{160, 108}, {80, 32}}",
-          "title" : "Music",
-          "uuid" : "2C613C1F-9584-42F2-B299-C6E2D3FAD2E6",
-          "class" : "Button",
-          "name" : "view",
-          "font_size" : 15
-        },
-        "selected" : true
       }
     ],
-    "frame" : "{{0, 0}, {400, 248}}",
+    "frame" : "{{0, 0}, {429, 206}}",
     "class" : "View",
     "attributes" : {
-      "name" : "",
-      "enabled" : true,
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "name" : "",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "flex" : ""
     },

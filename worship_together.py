@@ -18,10 +18,16 @@ last_position = 0.0000000
 satb_page = None
 song = None
 
+settings = ui.load_view('midi_ui')
 
 def bring_up_sheet_music(sender):
+	button_width = 50
 	music = sheet_music.MyView(song)
 	music.present('fullscreen', hide_title_bar=True)
+	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
+	exit_btn.frame = (0, 10, button_width, button_width + 10)
+	exit_btn.action = lambda sender: music.close()
+	music.add_subview(exit_btn)
 
 
 def write_midi(song):
@@ -47,22 +53,28 @@ def stop():
 
 
 def playing():
-	return get_subview('play_button').title == 'Pause'
+	return get_play_button().title == 'Pause'
 
 
 def get_subview(name):
-	for subview in satb_page.subviews:
+	global settings
+	for subview in settings.subviews:
 		if subview.name == name:
 			return subview
 	raise RuntimeError('nutn is namd ' + name)
 
+def get_play_button():
+	for subview in satb_page.subviews:
+		if subview.name == 'play_button':
+			return subview
+	raise RuntimeError('fruvit nub it')
 
 def track_time(slider):
 	global player, dragging, last_position, rate, position
 	if player and not dragging:
 		if slider.value == last_position:
 			slider.value = player.current_time / float(player.duration)
-			if slider.value == 1 and get_subview('play_button').title == 'Pause':
+			if slider.value == 1 and get_play_button().playing:
 				player.current_time = 0
 				rate = player.rate
 				play()
@@ -93,18 +105,20 @@ def adjust_time(slider):
 
 def play_pause(sender):
 	global song, player, rate, position
-	if playing():
-		sender.title = 'Play'
+	if sender.playing:
+		sender.image = ui.Image.named('iob:ios7_play_outline_256')
+		sender.playing = False
 		position = player.current_time
 		rate = player.rate
 		stop()
 	else:
-		sender.title = 'Pause'
+		sender.image = ui.Image.named('iob:ios7_pause_outline_256')
+		sender.playing = True
 		write_midi(song)
 		player = sound.MIDIPlayer('output.midi')
 		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
 		# obc_player.init('output.midi', None)
-		adjust_time(get_subview('time_adjuster'))
+		adjust_time(satb_page.sv)
 		play()
 		player.rate = get_subview('tempo_slider').value + 0.5
 
@@ -112,26 +126,46 @@ def play_pause(sender):
 def adjust_volume(sender):
 	global player
 	if player != None and playing():
-		play_pause(get_subview('play_button'))
-		play_pause(get_subview('play_button'))
+		play_pause(get_play_button())
+		play_pause(get_play_button())
 
+def present_settings(sender):
+	global settings
+	settings.present('sheet')
 
 def present_song(sender):
 	global satb_page, song, player, tracking_song, position, dragging, last_position
-	if not satb_page:
-		satb_page = ui.load_view('midi_ui')
 	song = sender.items[sender.selected_row]
-	# write_midi(song)
-	play_button = get_subview('play_button')
-	if play_button.title == 'Pause':
+	if not satb_page:
+		satb_page = sheet_music.MyView(song)
+		w, h = ui.get_screen_size()
+		exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
+		button_width = 50
+		exit_btn.frame = (0, 10, button_width, button_width + 10)
+		exit_btn.action = lambda sender: satb_page.close()
+		satb_page.add_subview(exit_btn)
+		play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
+		play_btn.frame = ((h/2) - button_width, h - button_width, h/2, button_width)
+		play_btn.action = play_pause
+		play_btn.playing = False
+		play_btn.name = 'play_button'
+		
+		settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
+		settings_btn.frame = (h/2, h - button_width, button_width, button_width)
+		settings_btn.action = present_settings
+		
+		
+		satb_page.add_subview(play_btn)
+		satb_page.add_subview(settings_btn)
+	play_button = get_play_button()
+	if play_button.playing:
 		play_pause(play_button)
 	if player:
 		player.current_time = 0
-	satb_page.name = str(song)
-	satb_page.present('sheet')
+	satb_page.present('fullscreen', hide_title_bar=True)
 	position = 0
-	get_subview('time_adjuster').value = 0
-	slider = get_subview("time_adjuster")
+	satb_page.sv.value = 0
+	slider = satb_page.sv
 	dragging = False
 	last_position = slider.value
 	if not tracking_song:
