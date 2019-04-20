@@ -56,28 +56,6 @@ assert create_index('B0') == 6
 assert create_index('C1') == 7
 assert create_index('C8') == 56
 assert create_index('R') == -1
-
-def write_midi(song):
-	midi.Song(song).write_midi('output.midi', [
-		int(get_subview('soprano_volume').value * 120),
-		int(get_subview('alto_volume').value * 120),
-		int(get_subview('tenor_volume').value * 120),
-		int(get_subview('bass_volume').value * 120)])
-
-def play():
-	global rate
-	if player:
-		player.play()
-		player.rate = rate
-
-def stop():
-	global rate
-	if player:
-		player.stop()
-		rate = player.rate
-		
-def playing():
-	return get_subview('play_button').title == 'Pause'
 	
 def get_subview(name):
 	for subview in satb_page.subviews:
@@ -98,49 +76,6 @@ def calculate_length(song):
 				end += note_gap * note_beats
 	return end
 
-def play_pause(sender):
-	#global song, player, rate, position
-	if sender.playing:
-		sender.image = ui.Image.named('iob:ios7_play_outline_256')
-		sender.playing = False
-	else:
-		sender.image = ui.Image.named('iob:ios7_pause_outline_256')
-		sender.playing = True
-		#position = player.current_time
-		#rate = player.rate
-		#stop()
-	#else:
-		#sender.title = 'Pause'
-		#write_midi(song)
-		#player = sound.MIDIPlayer('output.midi')
-		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
-		# obc_player.init('output.midi', None)
-		#adjust_time(get_subview('time_adjuster'))
-		#play()
-		#player.rate = get_subview('tempo_slider').value + 0.5
-	
-def track_time(slider):
-	global player, dragging, last_position, rate, position
-	if player and not dragging:
-		if slider.value == last_position:
-			slider.value = player.current_time / float(player.duration)
-			if slider.value == 1 and get_subview('play_button').title == 'Pause':
-				player.current_time = 0
-				rate = player.rate
-				play()
-				slider.value = player.current_time / float(player.duration)
-			last_position = slider.value
-		else:
-			dragging = True
-			position = player.current_time
-	if exiting:
-		stop()
-	else:
-		ui.delay(lambda: track_time(slider), 0.05)
-	
-def settings(sender):
-	satb_page = ui.load_view('midi_ui')
-	satb_page.present('sheet')
 	
 def close(sender, self):
 	self.close()
@@ -292,13 +227,13 @@ class MusicView(ui.View):
 			oval = self.draw_dot(C0, index, position)
 			self.fill_note(C0, index, oval, beats, position)
 			self.dots(index, beats, C0, position)
-			self.slur(slurred, slur, index, C0, tail_direction, position)
+			self.slur(slurred, slur, index, C0, tail_direction, position, width)
 			self.tie(index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width)		
 			if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
 				run.append(note_pos)
 			elif not run == []:
 				self.run_bar(bars_to_draw, tail_direction, run, position, width)
-				self.tails(tail_direction, run, position)
+				self.tails(tail_direction, run, position, width)
 				run = []
 			else:
 				self.flag(note_pos, tail_direction, position)
@@ -343,7 +278,7 @@ class MusicView(ui.View):
 			ui.set_color('black')
 			dot.fill()
 			
-	def slur(self, slurred, slurs, index, C0, tail_direction, position):
+	def slur(self, slurred, slurs, index, C0, tail_direction, position, note_width):
 		if slurred:
 			slurs.append((position, C0 - (index * step)))
 		elif not slurs == []:
@@ -410,7 +345,7 @@ class MusicView(ui.View):
 			bar.stroke()
 			bar.fill()
 			
-	def tails(self, tail_direction, run, position):
+	def tails(self, tail_direction, run, position, note_width):
 		for run_note in run:
 			note_tail = ui.Path()
 			x, y = run_note
@@ -558,12 +493,13 @@ class MyView(ui.View):
 		self.sig.height = h
 		self.sig.add_subview(Signature(self.sig.width, self.sig.height))
 		button_width = 50
-		self.controls = ui.View()
-		self.controls.width = button_width * 2
-		self.controls.height = button_width
-		print(h)
-		self.controls.frame = ((w / 2) - button_width, 718, (w/2) + button_width, 768)
-		self.controls.add_subview(Controls(self.controls.width, self.controls.height, button_width))
+		#self.controls = ui.View()
+		#self.controls.width = button_width * 2
+		#self.controls.height = button_width
+		#print(h)
+		#self.controls.frame = ((w / 2) - button_width, 718, (w/2) + button_width, 768)
+		#self.add_subview(Controls(button_width * 2, button_width, button_width))
 		self.add_subview(self.sv)
 		self.add_subview(self.sig)
-		self.add_subview(self.controls)
+		#self.add_subview(self.controls)
+		
