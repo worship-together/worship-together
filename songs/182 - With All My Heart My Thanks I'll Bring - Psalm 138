@@ -10,7 +10,7 @@ key        C
 rhythm     4 : 4
 tempo      180
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,31 @@ soprano    e c- g e | c g e+ d | c/2 b/2  | c/1
 alto       c/2  e c | e/2 g  f | e/2 d f  | e/1
 tenor      g e  c g | g c/2  a | g/2 g/2  | g/1
 bass       c/2  c/2 | c/2.   f | g/2 g-/2 | c/1
+
+verse      With    all    my   heart  my    thanks I'll bring, Be -
+verse      For     Thou   a -  bove   Thy   name   a -  dored  Hast
+verse      All     kings  of   earth  shall thanks ac - cord   When
+verse      Al   -  though Je - ho  -  vah   is     most high,  On
+verse      Through trou - ble  though my    path - way  be,    Thou
+verse      Thy     hand,  O    LORD,  shall set    me   free   And
+
+verse      fore  the  gods  Thy   prais - es   sing;  I'll
+verse      mag - ni - fied  Thy   faith - ful  word.  The
+verse      they  have heard Thy   words,  O    LORD;  Je -
+verse      low - ly   ones  He    bends   His  eye;   But
+verse      wilt  re - vive  and   com  -  fort me.    Thine
+verse      per - fect what  con - cern -  eth  me;    Thy
+
+verse      wor - ship      in     Thy     ho   -  ly   place   And
+verse      day   I         called Thy     help    ap - peared; With
+verse      ho  - vah's     ways   they'll cel  -  e -  brate;  The
+verse      those that      proud  and     haugh - ty   are     He
+verse      out - stretched hand   Thou    wilt    op - pose    A -
+verse      mer - cy,       LORD,  for  -  ev   -  er   stands; Leave
+
+verse      praise Thy  name     for truth and grace;
+verse      in  -  ward strength my  soul  was cheered.
+verse      glo -  ry   of       the LORD  is  great.
+verse      know - eth  on   -   ly  from  a - far.
+verse      gainst the  wrath    of  all   my  foes.
+verse      not    the  work     of  Thine own hands.

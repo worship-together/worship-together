@@ -9,7 +9,7 @@ key        D
 rhythm     4 : 4
 tempo      140
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
@@ -35,3 +35,19 @@ soprano    d d d d  | d/2  c b  | a f e c- | d-/2.
 alto       a d e f  | g/2  d d  | d d a a  | a/2.
 tenor      d a b cn | d/2  d g  | f a g e  | f/2.
 bass       f f g a+ | b+/2 g g- | a a a a  | d/2.
+
+verse      The day    of  re   -  sur - rec - tion!  Earth, tell  it  out  a -  broad;
+verse      Our hearts be  pure    from  e  -  vil,   That   we    may see  a -  right
+verse      Now let    the heav'ns be    joy - ful,   Let    earth her song be - gin,
+
+verse      The Pass - o  -  ver  of   glad - ness, The Pass - o  -  ver   of      God.
+verse      The Lord   in    rays e   -  ter - nal  Of  re  -  sur - rec - tion    light;
+verse      The round  world keep high tri -  umph, And all    that  is    there - in;
+
+verse      From death  to     life e - ter - nal,   From  earth un - to   the  sky,
+verse      And, list - 'ning  to   his ac -  cents, May   hear  so   calm and  plain
+verse      Let  all    things seen and un -  seen   Their notes to - ge - ther blend,
+
+verse      Our Christ hath brought us   o   -  ver  With hymns of   vic - to - ry.
+verse      His own    All  hail!   and, hear - ing, May  raise the  vic - tor  strain.
+verse      For Christ the  Lord    is   ris -  en,  Our  joy   that hath  no   end.

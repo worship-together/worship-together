@@ -10,7 +10,7 @@ key        Eb
 rhythm     3 : 4
 tempo      120
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,21 @@ soprano    e+ g an | b/2 e | a/2 g | f/2 e | e/8. f/16 g f | e/2
 alto       e/2  e  | d/2 b | c d e | d/2 e | e/2         d | e/2
 tenor      b c  c  | b/2 b | a/2 b | b a g | c b         a | g/2
 bass       g c  f  | b/2 g | f/2 e | b/2 c | a b         b | e/2
+
+verse      The  eyes of   all    up - on   Thee  wait; Their food in
+verse      The  LORD is   just   in   His  ways  all;  In    all  His
+verse      He   will the  just   de - sire ful - fill  Of    such as
+verse      The  LORD doth safe - ly   keep all   those Who   bear to
+verse      Then with my   mouth  and  lips I     will  Je -  ho - vah's
+
+verse      sea - son  Thou   dost give;  Thine o   -  pened hand  doth
+verse      works His  grace  is   shown; The   LORD   is    nigh  to
+verse      do    Him  fear   in - deed;  Their cry    re -  gard  and
+verse      Him   a    lov -  ing  heart, But   work - ers   all   of
+verse      name  with praise a -  dore.  And   let    all   bless His
+
+verse      sat -  is - fy    The   wants of   all   on    earth that  live.
+verse      all    that call, Who   call  in   truth on    Him   a  -  lone.
+verse      hear   He   will, And   save  them in    the   time  of    need.
+verse      wick - ed - ness  De -  stroy will He    and   clean sub - vert.
+verse      ho  -  ly   name  For - ev -  er   and   for - ev -  er -  more.

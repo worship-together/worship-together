@@ -12,7 +12,7 @@ key        D
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,19 @@ soprano    d-/2 g/2  f e f g a/2. R d/2 b/2  a g f d- e/2 d-/1
 alto       b/2  d/2  d a d e f/2. R f/2 g/2  f e d d/2  c d/1
 tenor      f/2  b/2  a a b b d/2. R a/2 d/2  d b b f  a/2 a/1
 bass       b/2  g-/2 d c b e d/2. R d/2 g-/2 d e b b  a/2 d/1
+
+verse      Hal -  le - lu   -  jah!  Praise the  LORD!  In  His house, with  one    ac - cord!
+verse      Praise Him  with    the   trum - pet  sound; Let His glo -  rious praise a -  bound.
+verse      Let    the  clash - ing   cym -  bals ring   To  the praise of    God    the  King.
+
+verse      Praise Him in   the wide    ex -  tent   Of   His  spa -  cious fir - ma - ment;
+verse      Praise Him with the psal -  ter - y,     With the  harp   His   maj - es - ty;
+verse      Praise Him with a   might - y     sound; Let  your voic - es    shake the  ground.
+
+verse      Sing   and shout   His  praise up - right - ly.    His    un - bound -  ed       great - ness   praise
+verse      Praise Him with    the  pipe   and  tim  -  brel.  Praise Him  with     stringed in   -  stru - ments,
+verse      Sing   His prais - es   with   re - joic -  ing.   All    that breathe, ex   -   alt     the    LORD;
+
+verse      And  ex - tol   His won - drous ways;  Praise Him for     His  deeds   so   might - y.
+verse      With the  flute His ex -  cel - lence; Praise Him with    the  sound - ing  cym  -  bal.
+verse      Let  all  men   His fame  re -  cord:  Sing   His prais - es!  Hal  -  le - lu   -  jah!

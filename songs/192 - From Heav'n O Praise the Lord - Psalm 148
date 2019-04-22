@@ -10,7 +10,7 @@ key        C
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,27 @@ soprano    e+ d c  g | a b c d       | c/2 b/2   | c/2.
 alto       g  f e  c | f f e a/8 f/8 | e/2 d - f | e/2.
 tenor      c  b c  c | c d c a       | g/2 g/2   | g/2.
 bass       c+ g a+ e | f d e f       | g/2 g-/2  | c/2.
+
+verse      From heav'n O     praise the   LORD;   Ye   heights, His   glo  -  ry   raise.
+verse      Yea  let    them  glo -  rious make    Je - ho   -   vah's match - less name;
+verse      From earth  O     praise the   LORD,   Ye   deeps    and   all     be - low;
+verse      Let  all    the   peo -  ple   praise, And  kings    of    ev   -  'ry  land;
+verse      Je - ho  -  vah's name   be    praised A -  bove     the   earth   and  sky.
+
+verse      All  an -  gels, praise ac - cord;  Let  all     His   host  give  praise.
+verse      For  when  the   word   He   spake  They in   -  to    be -  ing   came.
+verse      Wild winds that  do     His  word,  Ye   clouds, fire, hail, and   snow;
+verse      Let  all   their voic - es   raise  Who  judge   and   give  com - mand.
+verse      For  He    His   saints has  raised And  set     their power on    high.
+
+verse      Praise Him    on    high, Sun,  moon, and    star,
+verse      And    from   that  place Where fixed they   be,
+verse      Ye     moun - tains high, Ye    ce -  dars   tall,
+verse      By     young  and   old,  By    maid  and    youth,
+verse      Him    praise ac -  cord, O     Is -  rael's race,
+
+verse      Sun,  moon, and    star,  Ye     heav'ns a -  far,    And    cloud - y    sky.
+verse      Where fixed they   be,    By     His     de - cree    They   can  -  not  pass.
+verse      Ye    ce -  dars   tall,  Beasts great   and  small,  And    birds   that fly.
+verse      By    maid  and    youth, His    name    in   truth   Should be      ex - tolled.
+verse      O     Is -  rael's race,  Near   to      His  grace.  Praise ye      the  LORD.
