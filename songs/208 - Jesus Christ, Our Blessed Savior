@@ -12,7 +12,7 @@ key        C
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,39 @@ soprano    c d  c - a  f/2    g/2    a. - g/8 - f  e    d-/1
 alto       f f  e - f  d - c  d - c  c/2 - c/8 - d c#/8 d/1
 tenor      a bb g - f  f/2    d- - e f. - g/8 - a  a    f#/1
 bass       f bb c - f- bb - a bb - c f-/2.         a    d/1
+
+verse      Je  -  sus   Christ, our   bless - ed    Sav -  ior,
+verse      As     His   pledge  of    love    un -  dy  -  ing,
+verse      Who -  so    to      this  Board   re -  pair - ing
+verse      Praise the   Fa  -   ther, who     from  heav - en
+verse      Thou   shalt hold    with  faith   un -  shak - en
+verse      Christ says: Come,   all   ye      that  la  -  bor,
+verse      Use -  less  were    for   thee    My    Pas -  sion,
+verse      If     thy   heart   this  truth   pro - fess - es
+
+verse      Turned a - way   God's wrath for - ev  -  er;
+verse      He,   this pre - cious food  sup - ply -  ing,
+verse      May   take heed  how   He    pre - par -  eth;
+verse      To    His  own   this  food  hath  giv -  en,
+verse      That  this food  is    to    be    tak -  en
+verse      And   re - ceive My    grace and   fa  -  vor:
+verse      If    thy  works thy   weal  could fash - ion.
+verse      And   your mouth your  sin   con - fess - es,
+
+verse      By    His   bit - ter  grief  and   woe
+verse      Gives His   bod - y    with   the   bread,
+verse      For   if    he    does not    be -  lieve,
+verse      Who,  to    mend  what we     have  done,
+verse      By    the   sick  who  are    dis - tressed,
+verse      They  who   feel  no   want   nor   ill
+verse      This  feast is    not  spread for   thee
+verse      His   dear  guest thou here   shalt be,
+
+verse      He   saved   us    from  the    e  -  vil  Foe.
+verse      And  with    the   wine  the    blood He   shed.
+verse      Then death   for   life  he     shall re - ceive.
+verse      Gave in   -  to    death His    on -  ly   Son.
+verse      By   hearts  that  long  for    peace and  rest.
+verse      Need no      phy - si -  cian's help  nor  skill.
+verse      If   thine   own   Sav - ior    thou  wilt be.
+verse      And  Christ  Him - self  shall  ban - quet thee.

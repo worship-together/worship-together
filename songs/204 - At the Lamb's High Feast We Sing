@@ -12,7 +12,7 @@ key        D
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    f f b       a | a        g#       a/2 | b  a       g       f | e.    
 alto       d d d       c | d        d        c/2 | d  d/8 c/8 b/8 c/8 d | d       c         d/2
 tenor      a a g/8 f/8 e | d-/8 f/8 e/8 d-/8 e/2 | g  f       g       a | b       a/8. g/16 f/2
 bass       d d g-      a | b        b        a/2 | g- d       e       f | g/8 e/8 a+/8 a/8  d/2
+
+verse       At      the  Lamb's high  feast we   sing    Praise  to   our  vic - tor   -  ious King,
+verse       Where   the  Pas -  chal  blood is   poured, Death's dark an - gel   sheathes his  sword;
+verse       Might - y    vic -  tim   from  the  sky,    Pow'rs  of   hell be -  neath    Thee lie;
+verse       Pas  -  chal tri -  umph, Pas - chal joy,    On   -  ly   sin  can   this     de - stroy;
+
+verse       Who   hath    washed us     in   the   tide   Flow -  ing  from    His  pierc - ed  side;
+verse       Is -  rael's  hosts  tri -  um - phant go     Through the  wave    that drowns  the foe.
+verse       Death is      con -  quered in   the   fight, Thou    hast brought us   life    and light:
+verse       From  sin's   power  do     Thou set   free   Souls   re - born,   O    Lord,   in  Thee.
+
+verse       Praise we  Him     whose love  di - vine    Gives His     sa -  cred blood for  wine,
+verse       Praise we  Christ, Whose blood was  shed,   Pas - chal    vic - tim, pas - chal bread;
+verse       Now    Thy ban  -  ner   Thou  dost wave;   Van - quished Sa -  tan  and   the  grave:
+verse       Hymns  of  glo  -  ry,   songs of   praise, Fa -  ther,   un -  to   Thee  we   raise;
+
+verse       Gives His   bod - y   for    the feast, Christ the    vic -  tim, Christ the priest.
+verse       With  sin - cer - i - ty     and love   Eat    we     man -  na   from   a - bove.
+verse       An -  gels  join  His praise to  tell,  See    o'er - thrown the  prince of  hell.
+verse       Ris - en    Lord, all praise to  Thee,  Ev  -  er     with   the  Spir - it  be.
