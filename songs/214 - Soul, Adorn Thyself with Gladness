@@ -11,7 +11,7 @@ key        D
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,39 @@ soprano    e/2  f/2  g g        f  e  e  d#- e/2 | f/2 a/2  g  f e d- e/2 d-/2
 alto       c/2  d#/2 e e        d# e  cn b   b/2 | d/2 d/2  d  d c d  d c d/2
 tenor      a/2  a/2  b b        b  g  a  f   g/2 | a/2 a/2  b  a a f  a/2 f/2
 bass       a+/2 f/2  e g-/8 a/8 b  cn a  b   e/2 | d/2 f-/2 g- d a b  a/2 d/2
+
+verse      Soul  a -  dorn   thy - self  with  glad -  ness, Leave be - hind   all  gloom  and    sad  -  ness;
+verse      Has - ten  as     a     bride to    meet    Him   And   with lov -  ing  rev  - 'rence greet   Him;
+verse      He    who  craves a     pre - cious treas - ure   Nei - ther cost   not  pain   will   meas -  ure;
+verse      Ah,   how  hun -  gers  all   my    spir -  it    For   the  love   I    do     not    mer  -  it!
+verse      In    my   heart  I     find  as -  cend -  ing   Ho -  ly   awe,   with rap -  ture   blend - ing,
+verse      Je -  sus, Sun    of    Life, my    Splen - dor,  Je -  sus, Thou   my   Friend most   ten  -  der,
+verse      Lord, by   love   and   mer - cy    driv -  en,   Thou  hast left   Thy  throne in     heav -  en,
+verse      Je -  sus, Bread  of    Life, I     pray    Thee, Let   me   glad - ly   here   o   -  bey     Thee.
+
+verse      Come in - to      the   day - light's splen -  dor,  There   with joy     thy  prais - es   ren -  der
+verse      For  with words   of    life  im   -  mor   -  tal   Now     He   knock - eth  at      thy  por -  tal.
+verse      But  the  price - less  gifts of      heav  -  en    God     to   us      hath free -  ly   giv -  en.
+verse      Oft  have I,      with  sighs fast    throng - ing,  Thought up - on      this food    with long - ing,
+verse      As   this mys  -  ter - y     I       pon   -  der,  Fill -  ing  all     my   soul    with won -  der,
+verse      Je - sus, Joy     of    my    de   -  sir   -  ing,  Fount   of   Life,   my   soul    in - spir - ing
+verse      On   the  cross   for   me    to      lan   -  guish And     to   die     in   bit  -  ter  an  -  guish,
+verse      By   Thy  love    I     am    in   -  vit   -  ed,   Be      Thy  love    with love    re - quit - ed;
+
+verse      Un  -  to    Him    whose grace  un - bound - ed     Hath   this  won  -  drous ban - quet   found -  ed.
+verse      Haste  to    ope    the   gates  be - fore    Him,   Say -  ing,  while   thou  dost  a  -   dore     Him,
+verse      Tho'   the   wealth of    earth  were prof -  fered, Naught would buy     the   gifts here   of   -   fered:
+verse      In     the   bat -  tle   well - nigh worst - ed,    For    this  cup     of    life  have   thirst - ed,
+verse      Bear - ing   wit -  ness  at     this hour_          Of     the   great - ness  of    God's  pow   -  er;
+verse      At     Thy   feet   I     cry,   my   Mak  -  er,    Let    me    be      a     fit   par -  tak   -  er
+verse      To     for - go     all   joy    and  glad -  ness   And    to    shed    Thy   blood in     sad   -  ness.
+verse      From   this  Sup -  per   let    me   meas -  ure,   Lord,  how   vast    and   deep  love's treas -  ure.
+
+verse      High     o'er  all     the  heav'ns He   reign - eth,  Yet   to  dwell  with   thee   He       deign - eth.
+verse      Suf   -  fer,  Lord,   that I       re - ceive   Thee, And   I   nev -  er  -  more   will     leave   Thee.
+verse      Christ's true  bod  -  y,   for     thee riv  -  en,   And   His blood, for    thee   once     giv  -  en.
+verse      For      the   Friend  who  here    in - vites   us    And   to  God    Him -  self   u    -   nites   us.
+verse      Far      bey - ond     all  hu   -  man  tell -  ing   Is    the pow'r  with - in     Him      dwell - ing.
+verse      Of       this  bless - ed   food    from heav -  en,   For   our good,  Thy    glo -  ry,      giv  -  en.
+verse      By       this  blood   re - deemed  and  liv  -  ing,  Lord, I   praise Thee   with   thanks - giv  -  ing.
+verse      Through  the   gifts   Thou here    dost give    me    As    Thy guest  in     heav'n re   -   ceive   me.
