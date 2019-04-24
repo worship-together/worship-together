@@ -10,7 +10,7 @@ key        G
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -41,3 +41,28 @@ soprano    b   c d e+ | b  a g f  | e/2.
 alto       g/2   g g  | g  f e d# | e/2.
 tenor      b   g d c  | d  c b b  | g/2.
 bass       g-  e b c  | g- a b b  | e/2.
+
+verse      God  rest   you   mer   -  ry,   gen  -  tle -  men,  let  noth -  ing    you  dis - may,
+verse      In   Beth - le -  hem,     in    Is   -  ra  -  el,   this bless - ed     Babe was   born,
+verse      From God    our   heav'n - ly    Fath_    -     er,   a    bless - ed     an - gel   came;
+verse      Fear not,   then, said     the   an_      -     gel,  let  noth -  ing    you  af -  fright;
+verse      The  shep - herds at       those ti_      -     dings re - joic -  ed     much in    mind,
+verse      Now  to     the   Lord     sing  prais_   -     es    all  you     with - in   this  place,
+
+verse      Re - mem - ber    Christ our  Sav_     -     ior   was     born  on    Christ - mas  day,
+verse      And  laid  with - in     a    man_     -     ger   up   -  on    this  bless -  ed   morn;
+verse      And  un -  to     cer -  tain shep_    -     herds brought ti -  dings of       the  same:
+verse      This day   is     born   a    Sav_     -     ior   of      a     pure  vir   -  gin  bright,
+verse      And  left  their  flocks a -  feed_    -     ing,  in      tem - pest, storm,   and  wind,
+verse      And  with  true   love   and  broth -  er -  hood  each    oth - er    now      em - brace;
+
+verse      To   save  us  all    from Sa -  tan's      pow'r when we      were  gone  a -  stray;
+verse      The  which His moth - er   Mar_      -      y     did  noth -  ing   take  in   scorn.
+verse      How  that  in  Beth - le - hem   was        born  the  son     of    God   by   name,
+verse      To   free  all those  who  trust in         Him   from Sa   -  tan's pow'r and  might.
+verse      And  went  to  Beth - le - hem   straight - way,  this bless - ed    Babe  to   find.
+verse      This ho -  ly  tide   of   Christ_   -      mas   all  oth  -  ers   doth  de - face.
+
+verse      O ti - dings of com - fort and joy, com - fort and joy,
+
+verse      O ti - dings of com - fort and joy.
