@@ -8,170 +8,16 @@ import ctypes
 import os
 import sound
 
-exiting = False
-player = None
-rate = 1
-position = 0
-tracking_song = False
-dragging = False
-last_position = 0.0000000
-satb_page = None
-song = None
-
-def adjust_volume(sender):
-	global player
-	if player != None and get_play_button().playing:
-		play_pause(get_play_button())
-		play_pause(get_play_button())
-		
-def change_tempo(sender):
-	player.rate = sender.value + 0.5
-
-settings = ui.load_view('midi_ui')
-
-def bring_up_sheet_music(sender):
-	button_width = 50
-	music = sheet_music.MyView(song)
-	music.present('fullscreen', hide_title_bar=True)
-	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
-	exit_btn.frame = (0, 10, button_width, button_width + 10)
-	exit_btn.action = lambda sender: music.close()
-	music.add_subview(exit_btn)
-
-
-def write_midi(song):
-	midi.Song(song).write_midi('output.midi', [
-		int(get_subview('soprano_volume').value * 120),
-		int(get_subview('alto_volume').value * 120),
-		int(get_subview('tenor_volume').value * 120),
-		int(get_subview('bass_volume').value * 120)])
-
-
-def play():
-	global rate
-	if player:
-		player.play()
-		player.rate = rate
-
-
-def stop():
-	global rate
-	if player:
-		player.stop()
-		rate = player.rate
-
-
-def playing():
-	return get_play_button().title == 'Pause'
-
-
 def get_subview(name):
-	global settings
-	for subview in settings.subviews:
+	for subview in satb_page.subviews:
 		if subview.name == name:
 			return subview
 	raise RuntimeError('nutn is namd ' + name)
 
-def get_play_button():
-	for subview in satb_page.subviews:
-		if subview.name == 'play_button':
-			return subview
-	raise RuntimeError('fruvit nub it')
-
-def track_time(scrollview):
-	global player, rate, position
-	screen_w, screen_h = ui.get_screen_size()
-	if player:
-		if not scrollview.dragging:
-			w, h = scrollview.content_size
-			scroll_x, scroll_y = scrollview.content_offset
-			scrollview.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
-			if scroll_x > w - screen_w and get_play_button().playing:
-				player.current_time = 0
-				rate = player.rate
-				play()
-				scrollview.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
-		else:
-			adjust_time(scrollview)
-	if exiting:
-		stop()
-	else:
-		ui.delay(lambda: track_time(scrollview), 0.01)
-
-def adjust_time(scrollview):
-	global player, position
-	if player:
-		scroll_x, scroll_y = scrollview.content_offset
-		player.current_time = scroll_x * player.duration
-		position = player.current_time
-
-def play_pause(sender):
-	global song, player, rate, position
-	if sender.playing:
-		sender.image = ui.Image.named('iob:ios7_play_outline_256')
-		sender.playing = False
-		position = player.current_time
-		rate = player.rate
-		stop()
-	else:
-		sender.image = ui.Image.named('iob:ios7_pause_outline_256')
-		sender.playing = True
-		write_midi(song)
-		player = sound.MIDIPlayer('output.midi')
-		# obc_player = objc_util.ObjCClass('AVMIDIPlayer')
-		# obc_player.init('output.midi', None)
-		adjust_time(satb_page.sv)
-		play()
-		player.rate = get_subview('tempo_slider').value + 0.5
-		player.current_time = position
-
-def present_settings(sender):
-	global settings
-	settings.present('sheet')
-
-def present_song(sender):
-	global satb_page, song, player, tracking_song, position, last_position
-	song = sender.items[sender.selected_row]
-	if not satb_page:
-		satb_page = sheet_music.MyView(song)
-		w, h = ui.get_screen_size()
-		exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
-		button_width = 50
-		exit_btn.frame = (0, 10, button_width, button_width + 10)
-		exit_btn.action = lambda sender: satb_page.close()
-		satb_page.add_subview(exit_btn)
-		play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
-		play_btn.frame = ((h/2) - button_width, h - button_width, h/2, button_width)
-		play_btn.action = play_pause
-		play_btn.playing = False
-		play_btn.name = 'play_button'
-		
-		settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
-		settings_btn.frame = (h/2, h - button_width, button_width, button_width)
-		settings_btn.action = present_settings
-		
-		
-		satb_page.add_subview(play_btn)
-		satb_page.add_subview(settings_btn)
-	play_button = get_play_button()
-	if play_button.playing:
-		play_pause(play_button)
-	if player:
-		player.current_time = 0
-	satb_page.present('fullscreen', hide_title_bar=True)
-	position = 0
-	scrollview = satb_page.sv
-	scroll_x, scroll_y = scrollview.content_offset
-	last_position = scroll_x
-	if not tracking_song:
-		tracking_song = True
-		track_time(scrollview)
-
-
 class StartScreen(ui.View):
 	def will_close(self):
 		global exiting
-		exiting = True
+		sheet_music.exiting = True
 
 
 def sync_songs_and_tunes():
@@ -196,7 +42,7 @@ def create_song_list():
 	song_files = [file for file in os.listdir('./songs')
 				  if midi.is_song(file)]
 	song_list = ui.ListDataSource(sorted(song_files))
-	song_list.action = present_song
+	song_list.action = sheet_music.present_song
 	table.data_source = table.delegate = song_list
 	screen_width, screen_height = ui.get_screen_size()
 	table.row_height = 40
