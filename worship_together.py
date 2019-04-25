@@ -2,11 +2,15 @@ import ui
 import sound
 import midi
 import sheet_music
+import original_song_view
 import storage
 import objc_util
 import ctypes
 import os
 import sound
+
+experimental_view = False
+
 
 def get_subview(name):
 	for subview in satb_page.subviews:
@@ -14,10 +18,11 @@ def get_subview(name):
 			return subview
 	raise RuntimeError('nutn is namd ' + name)
 
+
 class StartScreen(ui.View):
 	def will_close(self):
-		global exiting
 		sheet_music.exiting = True
+		original_song_view.exiting = True
 
 
 def sync_songs_and_tunes():
@@ -37,12 +42,19 @@ def create_sync_button():
 	return btn_item
 
 
+def present_song(sender):
+	if experimental_view:
+		sheet_music.present_song(sender)
+	else:
+		original_song_view.present_song(sender)
+
+
 def create_song_list():
 	table = ui.TableView()
 	song_files = [file for file in os.listdir('./songs')
 				  if midi.is_song(file)]
 	song_list = ui.ListDataSource(sorted(song_files))
-	song_list.action = sheet_music.present_song
+	song_list.action = present_song
 	table.data_source = table.delegate = song_list
 	screen_width, screen_height = ui.get_screen_size()
 	table.row_height = 40
