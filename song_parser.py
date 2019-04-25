@@ -25,10 +25,128 @@ import os
 def parse_song(filename):
 	lines = _Import.expand(filename)
 	lines = [_Comment.strip(line) for line in lines]
+	lines = _Repeat.expand(lines)
 	song_lines, tune_lines = _Splitter.split(lines)
 	song = Song(song_lines)
 	tune = Tune(tune_lines)
 	return song
+
+
+class Song:
+	def __init__(self, lines):
+		self.title = _Attribute.get('title', lines)
+		if not self.title:
+			raise RuntimeError('Song ' + lines[0].filename +
+							   ' must have title attribute')
+		self.page = _Attribute.get('page', lines)
+		self.author = _Attribute.get('author', lines)
+		self.translator = _Attribute.get('translator', lines)
+		self.psalm = _Attribute.get('psalm', lines)
+		# if 'page' in attributes:
+		# 	self.page = attributes['page']
+		# self.key = attributes['key']
+		# self.measures = attributes['measures']
+		# self.beats_per_measure = attributes['beats_per_measure']
+		# self.beat_value = attributes['beat_value']
+		# self.tempo = int(attributes['tempo'])
+		# if 'psalm' in attributes:
+		# 	self.psalm = attributes['psalm']
+		# self.is_unison = 'unison' in attributes
+
+	# def _parse_lines(lines, attributes):
+	# 	for line in lines:
+	# 		if line:
+	# 			try:
+	# 				parse_line(line, attributes)
+	# 			except Exception as e:
+	# 				raise RuntimeError(
+	# 					'Error parsing file ' + line.filename + ' at line ' +
+	# 					str(line.number) + ': ' + str(e))
+
+
+class Tune:
+	def __init__(self, lines):
+		self._lines = lines
+		self.name = self._get('tune')
+		self.composer = self._get('composer')
+		self.meter = self._get('meter')
+		unison = self._get_lines('unison')
+		if unison:
+			self.measures = [(measure, [], [], [])
+							 for measure in self._parse_measures(unison)]
+		else:
+			self.measures = zip(
+				*(self._parse_measures(self._get_lines(voice))
+				  for voice in ['soprano', 'alto', 'tenor', 'bass'])
+			)
+		# self.key = attributes['key']
+		# self.measures = attributes['measures']
+		# self.beats_per_measure = attributes['beats_per_measure']
+		# self.beat_value = attributes['beat_value']
+		# self.tempo = int(attributes['tempo'])
+
+	def _get(self, attribute_name):
+		return _Attribute.get(attribute_name, self._lines)
+
+	def _get_lines(self, voice):
+		attribute_names = [voice, 'key', 'rhythm', 'tempo', 'repeat']
+		return _Attribute.get_lines(attribute_names, self._lines)
+
+	def _parse_measures(self, lines):
+		return []
+
+
+	# def _parse_lines(lines, attributes):
+	# 	for line in lines:
+	# 		if line:
+	# 			try:
+	# 				parse_line(line, attributes)
+	# 			except Exception as e:
+	# 				raise RuntimeError(
+	# 					'Error parsing file ' + line.filename + ' at line ' +
+	# 					str(line.number) + ': ' + str(e))
+
+	# def parse_line(line, attributes):
+	# 	match = attribute_re.match(line)
+	# 	if match:
+	# 		name = match.group('name').lower()
+	# 		raw_value = match.group('value')
+	# 		if name == 'key':
+	# 			if len(raw_value) > 1:
+	# 				if raw_value.endswith('b'):
+	# 					raw_value = raw_value[0:-1] + '_Flat'
+	# 				elif raw_value.endswith('#'):
+	# 					raw_value = raw_value[0:-1] + '_Sharp'
+	# 			value = getattr(keys, raw_value)
+	# 		elif name == 'rhythm':
+	# 			rhythm = rhythm_re.match(raw_value)
+	# 			beats_per_measure = rhythm.group('beats_per_measure')
+	# 			beat_value = int(rhythm.group('beat_value'))
+	# 			attributes['beats_per_measure'] = int(beats_per_measure)
+	# 			attributes['beat_value'] = int(beat_value)
+	# 			value = raw_value
+	# 		elif name in ['soprano', 'alto', 'tenor', 'bass', 'unison']:
+	# 			value = attributes[name] if name in attributes else []
+	# 			if 'beat_value' not in attributes:
+	# 				raise RuntimeError('missing "rhythm" attribute')
+	# 			elif 'key' not in attributes:
+	# 				raise RuntimeError('key must be declared before notes')
+	# 			beat_value = attributes['beat_value']
+	# 			key = attributes['key']
+	# 			value += parse_notes(beat_value, key, name, raw_value)
+	# 		else:
+	# 			value = raw_value
+	# 			if name in attributes:
+	# 				non_list_attributes = [ 'tempo', 'beats' ]
+	# 				if name in non_list_attributes:
+	# 					raise RuntimeError('Error: Multiple {name} attributes')
+	# 				if not attributes[name] is list:
+	# 					value = [attributes[name], value]
+	# 				else:
+	# 					value = attributes[name].append(value)
+	# 		attributes[name] = value
+	# 	else:
+	# 		raise RuntimeError('Cannot parse attribute')
 
 
 class _Line:
@@ -205,139 +323,56 @@ class _Attribute:
 		assert foo_rum[1].text == 'rum sap'
 
 
-class Song:
-	def __init__(self, lines):
-		self.title = _Attribute.get('title', lines)
-		if not self.title:
-			raise RuntimeError('Song ' + lines[0].filename +
-							   ' must have title attribute')
-		self.page = _Attribute.get('page', lines)
-		self.author = _Attribute.get('author', lines)
-		self.translator = _Attribute.get('translator', lines)
-		self.psalm = _Attribute.get('psalm', lines)
-		# if 'page' in attributes:
-		# 	self.page = attributes['page']
-		# self.key = attributes['key']
-		# self.measures = attributes['measures']
-		# self.beats_per_measure = attributes['beats_per_measure']
-		# self.beat_value = attributes['beat_value']
-		# self.tempo = int(attributes['tempo'])
-		# if 'psalm' in attributes:
-		# 	self.psalm = attributes['psalm']
-		# self.is_unison = 'unison' in attributes
+class _Repeat:
+	@staticmethod
+	def expand(lines):
+		repeated_lines = []
+		inside_repeat = False
+		for line in lines:
+			directive = _Attribute.get('repeat', [line])
+			if directive == 'begin':
+				inside_repeat = True
+			elif directive == 'end':
+				inside_repeat = False
+				yield from repeated_lines
+				repeated_lines.clear()
+			else:
+				if inside_repeat:
+					repeated_lines.append(line)
+				yield line
 
-	# def _parse_lines(lines, attributes):
-	# 	for line in lines:
-	# 		if line:
-	# 			try:
-	# 				parse_line(line, attributes)
-	# 			except Exception as e:
-	# 				raise RuntimeError(
-	# 					'Error parsing file ' + line.filename + ' at line ' +
-	# 					str(line.number) + ': ' + str(e))
-
-
-class Tune:
-	def __init__(self, lines):
-		self._lines = lines
-		self.name = _Attribute.get('tune', lines)
-		self.composer = _Attribute.get('composer', lines)
-		self.meter = _Attribute.get('meter', lines)
-		unison = self._get_lines('unison', lines)
-		if unison:
-			self.measures = [(measure, [], [], [])
-							 for measure in self._parse_measures(unison)]
-		else:
-			self.measures = zip(
-				*(self._parse_measures(self._get_lines(voice, lines))
-				  for voice in ['soprano', 'alto', 'tenor', 'bass'])
-			)
-		# self.key = attributes['key']
-		# self.measures = attributes['measures']
-		# self.beats_per_measure = attributes['beats_per_measure']
-		# self.beat_value = attributes['beat_value']
-		# self.tempo = int(attributes['tempo'])
-		# self.is_unison = 'unison' in attributes
-		# if 'unison' in attributes:
-		# 	attributes['measures'] = [(measure, [], [], [])
-		# 							  for measure in attributes['unison']]
-		# elif 'soprano' in attributes:
-		# 	attributes['measures'] = [measure for measure in
-		# 							zip(attributes['soprano'],
-		# 								attributes['alto'],
-		# 								attributes['tenor'],
-		# 								attributes['bass'])]
-		# else:
-		# 	attributes['measures'] = []
-
-	def _get(self, attribute_name):
-		return _Attribute.get(attribute_name, self._lines)
-
-	def _get_lines(self, voice, lines):
-		attribute_names = [voice, 'key', 'rhythm', 'tempo', 'repeat']
-		return _Attribute.get_lines(attribute_names, lines)
-
-	def _parse_measures(self, lines):
-		return []
-
-
-	# def _parse_lines(lines, attributes):
-	# 	for line in lines:
-	# 		if line:
-	# 			try:
-	# 				parse_line(line, attributes)
-	# 			except Exception as e:
-	# 				raise RuntimeError(
-	# 					'Error parsing file ' + line.filename + ' at line ' +
-	# 					str(line.number) + ': ' + str(e))
-
-	# def parse_line(line, attributes):
-	# 	match = attribute_re.match(line)
-	# 	if match:
-	# 		name = match.group('name').lower()
-	# 		raw_value = match.group('value')
-	# 		if name == 'key':
-	# 			if len(raw_value) > 1:
-	# 				if raw_value.endswith('b'):
-	# 					raw_value = raw_value[0:-1] + '_Flat'
-	# 				elif raw_value.endswith('#'):
-	# 					raw_value = raw_value[0:-1] + '_Sharp'
-	# 			value = getattr(keys, raw_value)
-	# 		elif name == 'rhythm':
-	# 			rhythm = rhythm_re.match(raw_value)
-	# 			beats_per_measure = rhythm.group('beats_per_measure')
-	# 			beat_value = int(rhythm.group('beat_value'))
-	# 			attributes['beats_per_measure'] = int(beats_per_measure)
-	# 			attributes['beat_value'] = int(beat_value)
-	# 			value = raw_value
-	# 		elif name in ['soprano', 'alto', 'tenor', 'bass', 'unison']:
-	# 			value = attributes[name] if name in attributes else []
-	# 			if 'beat_value' not in attributes:
-	# 				raise RuntimeError('missing "rhythm" attribute')
-	# 			elif 'key' not in attributes:
-	# 				raise RuntimeError('key must be declared before notes')
-	# 			beat_value = attributes['beat_value']
-	# 			key = attributes['key']
-	# 			value += parse_notes(beat_value, key, name, raw_value)
-	# 		else:
-	# 			value = raw_value
-	# 			if name in attributes:
-	# 				non_list_attributes = [ 'tempo', 'beats' ]
-	# 				if name in non_list_attributes:
-	# 					raise RuntimeError('Error: Multiple {name} attributes')
-	# 				if not attributes[name] is list:
-	# 					value = [attributes[name], value]
-	# 				else:
-	# 					value = attributes[name].append(value)
-	# 		attributes[name] = value
-	# 	else:
-	# 		raise RuntimeError('Cannot parse attribute')
+	@staticmethod
+	def _test():
+		lines = [
+			_Line('file', number=1, text='foo bar'),
+			_Line('file', number=2, text='repeat begin'),
+			_Line('file', number=3, text=''),
+			_Line('file', number=4, text='bop dum'),
+			_Line('file', number=5, text=''),
+			_Line('file', number=6, text='repeat end'),
+			_Line('file', number=7, text='rum sap')
+		]
+		lines = list(_Repeat.expand(lines))
+		for line in lines:
+			print(line.text)
+		assert lines[0].text == 'foo bar'
+		assert lines[1].text == ''
+		assert lines[1].number == 3
+		assert lines[2].text == 'bop dum'
+		assert lines[2].number == 4
+		assert lines[3].text == ''
+		assert lines[3].number == 5
+		assert lines[4].text == ''
+		assert lines[4].number == 3
+		assert lines[5].text == 'bop dum'
+		assert lines[5].number == 4
+		assert lines[6].text == ''
+		assert lines[6].number == 5
+		assert lines[7].text == 'rum sap'
+		assert lines[7].number == 7
 
 
 class _Note:
-
-
-
 	note_re = re.compile(r'^'
 						 r'(?P<name>[a-gR])' +
 						 r'(?P<accidental>[#bn])?'
@@ -421,6 +456,7 @@ def _run_parser_tests():
 	_Comment._test()
 	_Splitter._test()
 	_Attribute._test()
+	_Repeat._test()
 
 
 if __name__ == '__main__':
