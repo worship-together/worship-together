@@ -33,7 +33,7 @@ def sync_songs_and_tunes():
 def create_sync_button():
 	btn_container = ui.View(frame=(0, 0, 32, 44))
 	btn = ui.Button(image=ui.Image.named('iob:loop_256'))
-	btn.frame = (64, 0, 32, 44)
+	btn.frame = (0, 0, 32, 44)
 	btn.action = lambda sender: sync_songs_and_tunes()
 	btn_container.add_subview(btn)
 	btn_item = ui.ButtonItem()
