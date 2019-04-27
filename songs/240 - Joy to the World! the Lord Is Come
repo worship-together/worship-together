@@ -10,7 +10,7 @@ key        D
 rhythm     2 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,23 @@ soprano    g.          f/16 e/16 | e/8 d b/8 | a/8. g/16 f/8 g/8 | f e       | d
 alto       e.          d/16 c/16 | d/8 f g/8 | f/8. e/16 d/8 e/8 | d c       | d/2
 tenor      a. a/8                | f/8 a d/8 | d.            b/8 | a a/8 g/8 | f/2
 bass       a/8 a/8 a/8 a/8       | d.    d/8 | d.            g/8 | a a       | d/2
+
+verse      Joy to    the world! The  Lord  is   come:   Let earth  re -  ceive her   King;
+verse      Joy to    the earth! The  Sav - ior  reigns: Let men    their songs em -  ploy;
+verse      No  more  let sins   and  sor - rows grow,   Nor thorns in -  fest  the   ground;
+verse      He  rules the world  with truth and  grace,  And makes  the   na -  tions prove
+
+verse      Let   ev  -  'ry  heart   pre -  pare    Him    room,
+verse      While fields and  floods, rocks, hills,  and    plains
+verse      He    comes  to   make    His    bless - ings   flow
+verse      The   glo -  ries of      His    right - eous - ness
+
+verse      And  heav'n and  na   -  ture sing,  And  heav'n and  na   -  ture
+verse      Re - peat   the  sound - ing  joy,   Re - peat   the  sound - ing
+verse      Far  as     the  curse   is   found, Far  as     the  curse   is
+verse      And  won -  ders of      His  love,  And  won -  ders of      His
+
+verse      sing,  And  heav'n, and   heav'n and  na   -  ture sing.
+verse      joy,   Re - peat,   re -  peat   the  sound - ing  joy.
+verse      found, Far  as,     far   as     the  curse   is   found.
+verse      love,  And  won  -  ders, won -  ders of      His  love.

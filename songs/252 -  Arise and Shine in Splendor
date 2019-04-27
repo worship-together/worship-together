@@ -12,7 +12,7 @@ key        F
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,27 @@ soprano    f/2  e c- | f g       a/8  b/8  c/8 b/8 | a g f(1)
 alto       d/2  c b  | c d/8 e/8 f         f       | f e c(1)
 tenor      a g  g e  | f b       c.            d/8 | c b a(1)
 bass       c bn c bb | a g-      f-/8 g-/8 a/8 b/8 | c c f-(1)
+
+verse      A -  rise    and  shine  in   splen - dor, Let  night to    day    sur -
+verse      See  earth   in   dark - ness ly   -  ing, The  hea - then  na  -  tions
+verse      The  world's re - mot -  est  rac  -  es,  Up - on    whose wear - y
+verse      Lift up      thy  eyes   in   won  -  der; See  na -  tions gath - er
+verse      Thy  heart   will leap   for  glad -  ness When from  the   realms of
+
+verse      ren - der; Thy  light  is    draw - ing near,   A -
+verse      dy -  ing  In   hope - less  gloom  and night.  To
+verse      fac - es   The  sun    looks from   the sky,    Shall
+verse      yon - der, They all    come  un  -  to  thee.   The
+verse      sad - ness They come   o'er  land   and sea.    Thine
+
+verse      bove  thee day   is   beam - ing  In   match - less beau - ty
+verse      thee  the  Lord  of   heav - en   Thy  life,   thy  hope   hath
+verse      run   with zeal  un - tir -  ing, With joy     thy  Light  de -
+verse      world has  heard thy  sto -  ry   Thy  sons    come to     thy
+verse      eyes  will wake  from slum - ber  When peo  -  ple  with - out
+
+verse      gleam - ing; The   glo   -  ry   of    the  Lord  is   here.
+verse      giv  -  en   Great glo   -  ry,  hon - or   and   de - light.
+verse      sir  -  ing  That  breaks   up - on    them from  on   high.
+verse      glo  -  ry,  And   daugh -  ters haste thy  Light to   see.
+verse      num  -  ber  Come  throng - ing  from  a    far   to   thee.

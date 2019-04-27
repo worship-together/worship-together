@@ -11,7 +11,7 @@ key        Bb
 rhythm     6 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,18 @@ soprano    c/2 c e+. c/8 a | b/2. d/2. | b f d- f. e/8 c- | b-/1.
 alto       e/2 e c.  e/8 e | d/2. f/2. | d/2 b  a. a/8 a  | b/1.
 tenor      a/2 a a.  a/8 c | b/2. b/2. | f/2 f  f. f/8 e  | d/1.
 bass       f/2 f f.  f/8 f | b/2. b/2. | b/2 b  f. f/8 f  | b/1.
+
+verse      Si - lent night! Ho - ly night!  All    is    calm, all    is   bright
+verse      Si - lent night! Ho - ly night!  Shep - herds quake at     the  sight!
+verse      Si - lent night! Ho - ly night!  Son    of    God,  love's pure light
+verse      Si - lent night! Ho - ly night!  Won -  drous star, lend   thy  light;
+
+verse      'Round yon   vir -  gin  moth - er   and  child.  Ho   -   ly   in -  fant, so   ten -  der  and  mild,
+verse      Glo -  ries  stream from heav - en   a -  far,    Heav'n - ly   hosts_      sing al  -  le - lu - ia;
+verse      Ra  -  diant beams  from Thy    ho - ly   face,   With     the  dawn  of    re - deem_   -   ing  grace,
+verse      With   the   an  -  gels let_        us   sing    Al   -   le - lu_    -    ia   to_         our  King;
+
+verse      Sleep   in   heav - en - ly  peace, Sleep   in   heav - en - ly  peace.
+verse      Christ, the  Sav -  ior, is  born!  Christ, the  Sav -  ior, is  born!
+verse      Je   -  sus, Lord,  at   Thy birth, Je   -  sus, Lord,  at   Thy birth.
+verse      Christ, the  Sav -  ior, is  born!  Christ, the  Sav -  ior, is  born!

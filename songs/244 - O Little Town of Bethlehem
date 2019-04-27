@@ -10,7 +10,7 @@ key        F
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,23 @@ soprano    a a g# a | c  b d- d       | c f       a. g/8  | f/2.
 alto       c c bn c | d  d b  d/8 e/8 | f bn      c. bb/8 | a/2.
 tenor      c a f  f | f# g g  b       | a g/8 f/8 f. e/8  | f/2.
 bass       f f f  f | b  b b  b       | c d       c. c/8  | f-/2.
+
+verse      O   lit -  tle    town  of  Beth - le  -  hem, How  still  we    see  thee lie;
+verse      For Christ is     born  of  Mar_    -     y,   And  gath - ered  all  a -  bove,
+verse      How si  -  lent - ly,   how si  -  lent - ly,  The  won -  drous gift is   giv'n!
+verse      O   ho  -  ly     child of  Beth - le  -  hem, De - scend  to    us,  we   pray;
+
+verse      A  -  bove  thy  deep   and dream - less sleep  The   si   -  lent stars go     by:
+verse      While mor - tals sleep, the an   -  gels keep   Their watch   of   won - d'ring love.
+verse      So    God   im - parts  to  hu   -  man  hearts The   bless - ings of    His    heav'n.
+verse      Cast  out   our  sin    and en   -  ter  in;    Be    born    in   us    to  -  day.
+
+verse      Yet in     thy dark     streets shin - eth  The   ev -  er - last - ing   Light;
+verse      O   morn - ing stars,   to   -  geth - er   Pro - claim the  ho  -  ly    birth!
+verse      No  ear    may hear     His     com -  ing, But   in    this world  of    sin,
+verse      We  hear   the Christ - mas     an  -  gels The   great glad ti  -  dings tell;
+
+verse      The   hopes   and   fears of   all   the  years  Are met   in     thee  to - night.
+verse      And   prais - es    sing  to   God   the  King,  And peace to     men   on   earth.
+verse      Where meek    souls will  re - ceive Him  still, The dear  Christ en -  ters in.
+verse      O     come    to    us,   a -  bide  with us,    Our Lord  Em  -  man - u -  el!
