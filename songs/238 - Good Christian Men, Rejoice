@@ -12,7 +12,7 @@ key        F
 rhythm     0 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,19 @@ soprano    d-/2 d- e/2 e f/2. c/2. | a/2 a   g/2   g    f/2. f/2
 alto       b/2  b  c/2 c d/2. g/2. | f   c/2     c d  c c/2. c/2
 tenor      f/2  g  g/2 a a/2. e/2. | f   g   a   e d- e f/2. a/2
 bass       b/2  g- c/2 a d/2. c/2. | d   e   f   c b  c f-/2. f-/2
+
+verse      Good Chris - tian men, re - joice With heart and soul and voice;
+verse      Good Chris - tian men, re - joice With heart and soul and voice;
+verse      Good Chris - tian men, re - joice With heart and soul and voice;
+
+verse      Give ye heed to  what  we   say:   Je - sus Christ was born to - day.
+verse      Now  ye hear of  end - less bliss: Je - sus Christ was born for  this!
+verse      Now  ye need not fear  the  grave: Je - sus Christ was born to   save!
+
+verse      Ox    and  ass  be - fore     Him bow,  And He   is  in    the   man -  ger  now.
+verse      He    hath oped the  heav'n - ly  door, And man  is  blest for - ev  -  er - more.
+verse      Calls you  one  and  calls    you all   To  gain His ev -  er -  last - ing  hall.
+
+verse      Christ is  born to - day!   Christ is  born to - day!
+verse      Christ was born for  this!  Christ was born for  this!
+verse      Christ was born to   save!  Christ was born to   save!

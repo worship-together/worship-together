@@ -11,7 +11,7 @@ key        F
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -45,3 +45,29 @@ alto       b+. b+/8 b+ a+ | g f# g/2  | c e       f. c/8 | c c c/2
 tenor      d.  d/8  d  c  | b a  b/2  | c c       c. a/8 | a b a/2
 bass       b+. b+/8 b+ a+ | g f# g fn | e b+      a+ f   | c c f/2
 #last note on the bass has a duplicate an octave lower
+
+verse      Hark!   the  her   -  ald   an  -  gels   sing,   Glo  -  ry    to   the  new  -  born   King:
+verse      Christ, by   high  -  est   heav'n a   -  dored,  Christ, the   ev - er - last -  ing    Lord,
+verse      Come,   De - sire     of    na  -  tions, come,   Fix     in    us   Thy  hum  -  ble    home;
+verse      Ad  -   am's like  -  ness, Lord,  ef  -  face,   Stamp   Thine im - age  in      its    place:
+verse      Hail    the  heav'n - born  Prince of     Peace!  Hail    the   Sun  of   Right - eous - ness!
+
+verse      Peace on  earth, and  mer - cy      mild,   God    and    sin -  ners re -  con -  ciled!
+verse      Late  in  time   be - hold  Him     come,   Off -  spring of     the  Vir - gin's  womb:
+verse      Rise, the wom -  an's con - qu'ring Seed,   Bruise in     us     the  ser - pent's head.
+verse      Sec - ond Ad  -  am   from  a   -   bove,   Re  -  in  -  state  us   in    Thy    love.
+verse      Light and life   to   all   He      brings, Ris'n  with   heal - ing  in    His    wings.
+
+verse      Joy -  ful,  all   ye     na -  tions, rise,  Join  the     tri - umph of   the  skies;
+verse      Veiled in    flesh the    God - head   see;   Hail  th'in - car - nate De - i -  ty,
+verse      Now    dis - play  Thy    sav - ing    pow'r, Ru -  ined    na -  ture now  re - store;
+verse      Let    us    Thee, though lost, re  -  gain,  Thee, the     Life, the  in - ner  man:
+verse      Mild   He    lays  His    glo - ry     by,    Born  that    man   no   more may  die,
+
+verse      With    th'an - gel - ic    host pro - claim, Christ is   born  in   Beth - le - hem!
+verse      Pleased as      men   with  men  to    dwell, Je  -  sus, our   Em - man -  u -  el.
+verse      Now     in      mys - tic   un - ion   join   Thine  to   ours, and  ours   to   Thine.
+verse      O,      to      all   Thy - self im -  part,  Formed in   each  be - liev - ing  heart.
+verse      Born    to      raise the   sons of    earth, Born   to   give  them sec -  ond  birth.
+
+verse      Hark! the her - ald an - gels sing, Glo - ry to the new - born King!

@@ -10,7 +10,7 @@ key        Bb
 rhythm     3 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,7 +32,27 @@ alto       d  d/8  d         d/8  | d d/8  d d/8 | f       f/8 en      en/8 | f.
 tenor      d- f#/8 f#/8 g/8  a/8  | g f#/8 g g/8 | a/8 d/8 c/8 b/8 c/8 b/8  | a. a a/8
 bass       d  d/8  d         c/8  | b d/8  g b/8 | c       c/8 c       c/8  | f. f f/8
 
-soprano    d a/8  c/8 b/8 g/8 | f g/8 f f/8 | g g/8 a/8 g/8 f/8 | b/8 b
+soprano    d a/8  c/8 b/8 g/8 | f g/8 f f/8 | g g/8 a/8 g/8 f/8 | b. b
 alto       d d/8  e       e/8 | d e/8 d f/8 | e e/8 e       e/8 | d. d
 tenor      b f#/8 g       a/8 | b f/8 f b/8 | b c/8 c/8 b/8 a/8 | b. b
 bass       b b/8  b       b/8 | b a/8 b d/8 | e c/8 f       f/8 | b. b
+
+verse      It    came    up - on    the    mid  -  night  clear, That  glo  -  rious song   of   old,
+verse      Still through the  clo - ven    skies   they   come   With  peace - ful   wings  un - furled,
+verse      And   ye,     be - neath life's crush - ing    load,  Whose forms   are   bend - ing  low,
+verse      For   lo!     the  days  are    has  -  t'ning on,    By    proph - et -  bards  of   old,
+
+verse      From an -  gels  bend  -  ing  near    the   earth  To    touch  their harps of     gold:
+verse      And  still their heav'n - ly   mu   -  sic   floats O'er  all    the   wea - ry     world;
+verse      Who  toil  a  -  long     the  climb - ing   way    With  pain - ful   steps and    slow,
+verse      When with  the   ev   -   er - cir  -  cling years  Shall come   the   time  fore - told
+
+verse      Peace on    the   earth, good will   to  men,    From heav'n's all - gra  -  cious King.
+verse      A  -  bove  its   sad    and  low -  ly  plains, They bend     on    hov  -  'ring wing,
+verse      Look  now!  for   glad   and  gold - en  hours   Come swift -  ly    on      the   wing.
+verse      When  peace shall o   -  ver  all    the earth   Its  an   -   cient splen - dors  fling,
+
+verse      The world in    sol  - emn  still - ness lay,   To    hear    the an - gels sing.
+verse      And ev -  er    o'er   its  Ba   -  bel  sounds The   bless - ed  an - gels sing.
+verse      O   rest  be -  side   the  wea  -  ry   road,  And   hear    the an - gels sing!
+verse      And the   whole world  send back    the  song   Which now     the an - gels sing.
