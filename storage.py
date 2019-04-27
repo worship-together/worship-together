@@ -113,92 +113,268 @@ class Device(abc.ABC):
 	def synchronize(self):
 		pass
 
+	def upload_file_to_remote(self, remote_file, local_file_path):
+		service.create_file_from_path(share, self.remote_dir,
+									  remote_file, local_file_path)
+
+	def delete_remote_file(self, remote_file):
+		service.delete_file(share, self.remote_dir, remote_file)
+
+	def get_local_modified_time(self, file):
+		mtime = os.path.getmtime(self.local_dir + '/' + file)
+		dtime = datetime.datetime.fromtimestamp(mtime, datetime.timezone.utc)
+		return dtime.replace(microsecond=0)
+
+	def get_remote_modified_time(self, file):
+		dtime = service.get_file_properties(share, self.remote_dir, file).properties.last_modified
+		return dtime.replace(microsecond=0)
+
+	def local_file_exists(self, name):
+		return os.path.isfile(self.local_dir + '/' + name)
+
+	def remote_file_exists(self, name):
+		for file in service.list_directories_and_files(share, self.remote_dir):
+			if file.name == name:
+				return True
+		return False
+
+	def create_remote_file(self, name, content):
+		service.create_file_from_text(share, self.remote_dir, name, content)
+
+	def create_local_file(self, name, content):
+		with open(test_dir + '/' + name, 'w') as file:
+			file.write(content)
+
+	def list_all_remote_files(self):
+		for file in service.list_directories_and_files(share, self.remote_dir):
+			print(file.name)
+
+	def remote_file_deleted(self, name):
+		file_found = False
+		for file in service.list_directories_and_files(share, self.remote_dir):
+			if file.name == name:
+				file_found = True
+		return not file_found
+
+	def test_if_remote_file_exists(self, name):
+		for file in service.list_directories_and_files(share, self.remote_dir):
+			if file.name == name:
+				return True
+		return False
+
+	def delete_all_local_and_remote(self, create_dir=True):
+		if os.path.exists(self.local_dir):
+			shutil.rmtree(self.local_dir)
+		if create_dir:
+			os.mkdir(self.local_dir)
+		if service.exists(share, self.remote_dir):
+			for file in service.list_directories_and_files(share, self.remote_dir):
+				service.delete_file(share, self.remote_dir, file.name)
+			service.delete_directory(share, self.remote_dir)
+		if create_dir:
+			service.create_directory(share, self.remote_dir)
+
 
 class iPad(Device):
 	def synchronize(self):
-		synchronize(self.local_dir, self.remote_dir)
+		self.sync_upload_files()
+		self.sync_delete_files()
+		self.sync_download_files()
 
+
+	def sync_upload_files(self):
+		for file in os.listdir(self.local_dir):
+			if file.endswith(upload_suffix):
+				new_name = file[:-(len(upload_suffix))]
+				old_path = self.local_dir + '/' + file
+				new_path = self.local_dir + '/' + new_name
+				os.rename(old_path, new_path)
+				self.upload_file_to_remote(new_name, new_path)
+
+	def sync_delete_files(self):
+		for file in os.listdir(self.local_dir):
+			if file.endswith(delete_suffix) or not service.exists(share, directory_name=self.remote_dir, file_name=file):
+				os.remove(self.local_dir + '/' + file)
+				if service.exists(share, directory_name=self.remote_dir, file_name=file[:-(len(delete_suffix))]):
+					self.delete_remote_file(file[:-(len(delete_suffix))])
+
+	def sync_download_files(self):
+		for file in service.list_directories_and_files(share, self.remote_dir):
+			if os.path.exists(self.local_dir + '/' + file.name):
+				local_time = self.get_local_modified_time(file.name)
+				remote_time = self.get_remote_modified_time(file.name)
+				if remote_time > local_time:
+					service.get_file_to_path(share, self.remote_dir, file.name, self.local_dir + '/' + file.name)
+					time.sleep(1)
+					os.utime(self.local_dir + '/' + file.name, (datetime.datetime.timestamp(datetime.datetime.now()),
+														   datetime.datetime.timestamp(datetime.datetime.now())))
+			else:
+				service.get_file_to_path(share, self.remote_dir, file.name, self.local_dir + '/' + file.name)
+				time.sleep(1)
+				os.utime(self.local_dir + '/' + file.name, (datetime.datetime.timestamp(datetime.datetime.now()),
+													   datetime.datetime.timestamp(datetime.datetime.now())))
+
+	def verify_file_uploaded(self, name, content):
+		file_found = False
+		for file in service.list_directories_and_files(share, self.remote_dir):
+			assert not file_found
+			assert file.name == name
+			file_found = True
+			remote = service.get_file_to_text(share, self.remote_dir, name)
+			if remote.content != content:
+				print('remote content different from local content for ' + name + ':')
+				print('remote content: ' + remote.content)
+				print('local content: ' + content)
+				assert remote.content == content
+		assert file_found
+
+	def test_if_local_file_exists(self, name):
+		return os.path.exists(self.local_dir + '/' + name)
+
+	@staticmethod
+	def local_to_remote_upload():
+		ipad = iPad(test_dir, test_dir)
+		ipad.delete_all_local_and_remote()
+		ipad.create_local_file('file a.UPLOAD', 'content a')
+		ipad.create_local_file('file b', 'content b')
+		ipad.synchronize()
+		ipad.verify_file_uploaded('file a', 'content a')
+		assert ipad.test_if_local_file_exists('file a')
+		assert not ipad.test_if_local_file_exists('file a.UPLOAD')
+		assert not ipad.test_if_remote_file_exists('file b')
+
+	@staticmethod
+	def local_to_remote_delete():
+		ipad = iPad(test_dir, test_dir)
+		ipad.delete_all_local_and_remote()
+		ipad.create_local_file('file a.DELETE', 'content a')
+		ipad.create_local_file('file b', 'content b')
+		ipad.create_local_file('file d.DELETE', 'content d')
+		ipad.create_remote_file('file a', 'content a')
+		ipad.create_remote_file('file b', 'content b')
+		ipad.create_remote_file('file c', 'content c')
+		ipad.synchronize()
+		assert ipad.remote_file_deleted('file a')
+		assert not ipad.remote_file_deleted('file b')
+		assert not ipad.remote_file_deleted('file c')
+		assert not ipad.test_if_local_file_exists('file d')
+		assert not ipad.test_if_local_file_exists('file d.DELETE')
+		assert ipad.remote_file_deleted('file d')
+		assert not ipad.test_if_local_file_exists('file a')
+		assert not ipad.test_if_local_file_exists('file a.DELETE')
+
+	@staticmethod
+	def remote_to_local_download():
+		ipad = iPad(test_dir, test_dir)
+		ipad.delete_all_local_and_remote()
+		ipad.create_local_file('file a', 'content a outdated')
+		ipad.create_local_file('file b', 'content b')
+		time.sleep(1)
+		ipad.create_remote_file('file a', 'content a updated')
+		ipad.create_remote_file('file c', 'content c')
+		ipad.synchronize()
+		local_time_a = ipad.get_local_modified_time('file a')
+		remote_time_a = ipad.get_remote_modified_time('file a')
+		assert local_time_a > remote_time_a
+		assert not ipad.test_if_local_file_exists('file b')
+		assert ipad.test_if_local_file_exists('file c')
+		assert not ipad.test_if_remote_file_exists('file b')
+
+	@staticmethod
+	def test():
+		iPad.local_to_remote_upload()
+		iPad.local_to_remote_delete()
+		iPad.remote_to_local_download()
 
 class Laptop(Device):
 	def synchronize(self):
-		synchronize_laptop_to_remote(self.local_dir, self.remote_dir)
+		for song in os.listdir(self.local_dir):
+			if self.local_file_exists(song):
+				if not self.remote_file_exists(song):
+					self.upload_file_to_remote(song, self.local_dir + '/' + song)
+				else:
+					local_time = self.get_local_modified_time(song)
+					remote_time = self.get_remote_modified_time(song)
+					if local_time > remote_time:
+						self.upload_file_to_remote(song, self.local_dir + '/' + song)
+		for song in service.list_directories_and_files(share, self.remote_dir):
+			if not self.local_file_exists(song.name):
+				self.delete_remote_file(song.name)
+		time.sleep(1)
+		os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
+									   datetime.datetime.timestamp(datetime.datetime.now())))
 
+	def get_local_file_content(self, filename):
+		with open(self.local_dir + '/' + filename, 'r') as file:
+			return file.read()
 
-def upload_file_to_remote(remote_dir, remote_file, local_file_path):
-	service.create_file_from_path(share, remote_dir,
-	                              remote_file, local_file_path)
+	def get_remote_file_content(self, remote_file):
+		return service.get_file_to_text(share, self.remote_dir, remote_file.name).content
 
+	@staticmethod
+	def test_create_song():
+		laptop = Laptop(test_dir, test_dir)
+		laptop.delete_all_local_and_remote()
+		laptop.create_local_file('new_file', 'new file content')
+		laptop.synchronize()
+		assert laptop.test_if_remote_file_exists('new_file')
 
-def sync_upload_files(local_dir, remote_dir):
-	for file in os.listdir(local_dir):
-		if file.endswith(upload_suffix):
-			new_name = file[:-(len(upload_suffix))]
-			old_path = local_dir+'/'+file
-			new_path = local_dir+'/'+new_name
-			os.rename(old_path, new_path)
-			upload_file_to_remote(remote_dir, new_name, new_path)
-			
-			
-def sync_download_files(local_dir, remote_dir):
-	for file in service.list_directories_and_files(share, remote_dir):
-		if os.path.exists(local_dir+'/'+file.name):
-			local_time = get_local_modified_time(local_dir, file.name)
-			remote_time = get_remote_modified_time(remote_dir, file.name)
-			if remote_time > local_time:
-				service.get_file_to_path(share, remote_dir, file.name, local_dir+'/'+file.name)
-				time.sleep(1)
-				os.utime(local_dir+'/'+file.name, (datetime.datetime.timestamp(datetime.datetime.now()), datetime.datetime.timestamp(datetime.datetime.now())))
-		else:
-			service.get_file_to_path(share, remote_dir, file.name, local_dir + '/' + file.name)
-			time.sleep(1)
-			os.utime(local_dir + '/' + file.name, (datetime.datetime.timestamp(datetime.datetime.now()), datetime.datetime.timestamp(datetime.datetime.now())))
+	@staticmethod
+	def test_delete_song():
+		laptop = Laptop(test_dir, test_dir)
+		laptop.delete_all_local_and_remote()
+		laptop.create_remote_file('new_file', 'new file content')
+		laptop.synchronize()
+		assert laptop.remote_file_deleted('new_file')
+		assert not laptop.test_if_remote_file_exists('new_file')
 
+	@staticmethod
+	def test_newer_local_song():
+		laptop = Laptop(test_dir, test_dir)
+		laptop.delete_all_local_and_remote()
+		laptop.create_remote_file('new_file', 'new file content')
+		print('waiting for local clock to exceed remote clock')
+		time.sleep(5)
+		laptop.create_local_file('new_file', 'new file with newer content')
+		remote_time = laptop.get_remote_modified_time('new_file')
+		local_time = laptop.get_local_modified_time('new_file')
+		assert remote_time < local_time
+		laptop.synchronize()
+		for local_file in os.listdir(test_dir):
+			local_content = laptop.get_local_file_content(local_file)
+			for remote_file in service.list_directories_and_files(share, test_dir):
+				if remote_file.name != last_upload_filename:
+					assert local_file == remote_file.name
+					remote_content = laptop.get_remote_file_content(remote_file)
+					assert remote_content == local_content
 
-def delete_remote_file(remote_dir, remote_file):
-	service.delete_file(share, remote_dir, remote_file)
+	@staticmethod
+	def test_older_local_song():
+		laptop = Laptop(test_dir, test_dir)
+		laptop.delete_all_local_and_remote()
+		laptop.create_local_file('new_file', 'new file with older content')
+		print('waiting for remote clock to exceed local clock')
+		time.sleep(15)
+		laptop.create_remote_file('new_file', 'new file content')
+		local_time = laptop.get_local_modified_time('new_file')
+		remote_time = laptop.get_remote_modified_time('new_file')
+		assert local_time < remote_time
+		Laptop(test_dir, test_dir).synchronize()
+		for local_file in os.listdir(test_dir):
+			local_content = laptop.get_local_file_content(local_file)
+			for remote_file in service.list_directories_and_files(share, test_dir):
+				if remote_file.name != last_upload_filename:
+					assert local_file == remote_file.name
+					remote_content = laptop.get_remote_file_content(remote_file)
+					assert remote_content != local_content
 
+	@staticmethod
+	def test():
+		Laptop.test_create_song()
+		Laptop.test_newer_local_song()
+		Laptop.test_older_local_song()
+		Laptop.test_delete_song()
 
-def sync_delete_files(local_dir, remote_dir):
-	for file in os.listdir(local_dir):
-		if file.endswith(delete_suffix) or not service.exists(share, directory_name=remote_dir, file_name=file):
-			os.remove(local_dir+'/'+file)
-			if service.exists(share, directory_name=remote_dir, file_name=file[:-(len(delete_suffix))]):
-				delete_remote_file(remote_dir, file[:-(len(delete_suffix))])
-
-
-def synchronize(local_dir, remote_dir):
-	sync_upload_files(local_dir, remote_dir)
-	sync_delete_files(local_dir, remote_dir)
-	sync_download_files(local_dir, remote_dir)
-
-
-def local_file_exists(local_dir, name):
-	return os.path.isfile(local_dir + '/' + name)
-
-
-def remote_file_exists(remote_dir, name):
-	for file in service.list_directories_and_files(share, remote_dir):
-		if file.name == name:
-			return True
-	return False
-
-
-def synchronize_laptop_to_remote(local_dir, remote_dir):
-	for song in os.listdir(local_dir):
-		if local_file_exists(local_dir, song):
-			if not remote_file_exists(remote_dir, song):
-				upload_file_to_remote(remote_dir, song, local_dir + '/' + song)
-			else:
-				local_time = get_local_modified_time(local_dir, song)
-				remote_time = get_remote_modified_time(remote_dir, song)
-				if local_time > remote_time:
-					upload_file_to_remote(remote_dir, song, local_dir + '/' + song)
-	for song in service.list_directories_and_files(share, remote_dir):
-		if not local_file_exists(local_dir, song.name):
-			delete_remote_file(remote_dir, song.name)
-	time.sleep(1)
-	os.utime('songs/last_upload', (datetime.datetime.timestamp(datetime.datetime.now()),
-									datetime.datetime.timestamp(datetime.datetime.now())))
 
 
 #
@@ -207,214 +383,9 @@ def synchronize_laptop_to_remote(local_dir, remote_dir):
 
 test_dir = 'test'
 
-
-def delete_all_local_and_remote(create_dir=True):
-	if os.path.exists(test_dir):
-		shutil.rmtree(test_dir)
-	if create_dir:
-		os.mkdir(test_dir)
-	if service.exists(share, test_dir):
-		for file in service.list_directories_and_files(share, test_dir):
-			service.delete_file(share, test_dir, file.name)
-		service.delete_directory(share, test_dir)
-	if create_dir:
-		service.create_directory(share, test_dir)
-	
-	
-def create_local_file(name, content):
-	with open(test_dir + '/' + name, 'w') as file:
-		file.write(content)
-		
-		
-def create_remote_file(name, content):
-	service.create_file_from_text(share, test_dir, name, content)
-	
-	
-def list_all_remote_files(remote_dir):
-	for file in service.list_directories_and_files(share, remote_dir):
-		print(file.name)
-
-
-def verify_file_uploaded(name, content):
-	file_found = False
-	for file in service.list_directories_and_files(share, test_dir):
-		assert not file_found
-		assert file.name == name
-		file_found = True
-		remote = service.get_file_to_text(share, test_dir, name)
-		if remote.content != content:
-			print('remote content different from local content for ' + name + ':')
-			print('remote content: ' + remote.content)
-			print('local content: ' + content)
-			assert remote.content == content
-	assert file_found
-	
-	
-def remote_file_deleted(name):
-	file_found = False
-	for file in service.list_directories_and_files(share, test_dir):
-		if file.name == name:
-			file_found = True
-	return not file_found
-	
-	
-def test_if_remote_file_exists(name):
-	for file in service.list_directories_and_files(share, test_dir):
-		if file.name == name:
-			return True
-	return False
-	
-	
-def test_if_local_file_exists(name):
-	return os.path.exists(test_dir + '/' + name)
-
-
-def calculate_month_days(month):
-	if month == 0:
-		return 0
-	elif month == 9 or month == 4 or month == 6 or month == 11:
-		return calculate_month_days(month - 1) + 30
-	elif month == 2:
-		return calculate_month_days(month - 1) + 28
-	else:
-		return calculate_month_days(month - 1) + 30
-
-
-def get_local_modified_time(dir, file):
-	mtime = os.path.getmtime(dir + '/' + file)
-	dtime = datetime.datetime.fromtimestamp(mtime, datetime.timezone.utc)
-	return dtime.replace(microsecond=0)
-
-
-def get_remote_modified_time(dir, file):
-	dtime = service.get_file_properties(share, dir, file).properties.last_modified
-	return dtime.replace(microsecond=0)
-
-
-def test_sync_local_to_remote_upload():
-	delete_all_local_and_remote()
-	create_local_file('file a.UPLOAD', 'content a')
-	create_local_file('file b', 'content b')
-	synchronize(test_dir, test_dir)
-	verify_file_uploaded('file a', 'content a')
-	assert test_if_local_file_exists('file a')
-	assert not test_if_local_file_exists('file a.UPLOAD')
-	assert not test_if_remote_file_exists('file b')
-	
-	
-def test_sync_local_to_remote_delete():
-	delete_all_local_and_remote()
-	create_local_file('file a.DELETE', 'content a')
-	create_local_file('file b', 'content b')
-	create_local_file('file d.DELETE', 'content d')
-	create_remote_file('file a', 'content a')
-	create_remote_file('file b', 'content b')
-	create_remote_file('file c', 'content c')
-	synchronize(test_dir, test_dir)
-	assert remote_file_deleted('file a')
-	assert not remote_file_deleted('file b')
-	assert not remote_file_deleted('file c')
-	assert not test_if_local_file_exists('file d')
-	assert not test_if_local_file_exists('file d.DELETE')
-	assert remote_file_deleted('file d')
-	assert not test_if_local_file_exists('file a')
-	assert not test_if_local_file_exists('file a.DELETE')
-
-	
-def test_sync_remote_to_local_download():
-	delete_all_local_and_remote()
-	create_local_file('file a', 'content a outdated')
-	create_local_file('file b', 'content b')
-	time.sleep(1)
-	create_remote_file('file a', 'content a updated')
-	create_remote_file('file c', 'content c')
-	synchronize(test_dir, test_dir)
-	local_time_a = get_local_modified_time(test_dir, 'file a')
-	remote_time_a = get_remote_modified_time(test_dir, 'file a')
-	assert local_time_a > remote_time_a
-	assert not test_if_local_file_exists('file b')
-	assert test_if_local_file_exists('file c')
-	assert not test_if_remote_file_exists('file b')
-	
-
-def test_upload_laptop_to_remote_create_song():
-	delete_all_local_and_remote()
-	create_local_file('new_file', 'new file content')
-	synchronize_laptop_to_remote(test_dir, test_dir)
-	assert test_if_remote_file_exists('new_file')
-
-
-def get_local_file_content(local_dir, filename):
-	with open(local_dir + '/' + filename, 'r') as file:
-		return file.read()
-
-
-def get_remote_file_content(remote_dir, remote_file):
-	return service.get_file_to_text(share, remote_dir, remote_file.name).content
-
-
-def test_upload_laptop_to_remote_newer_local_song():
-	delete_all_local_and_remote()
-	create_remote_file('new_file', 'new file content')
-	print('waiting for local clock to exceed remote clock')
-	time.sleep(5)
-	create_local_file('new_file', 'new file with newer content')
-	remote_time = get_remote_modified_time(test_dir, 'new_file')
-	local_time = get_local_modified_time(test_dir, 'new_file')
-	assert remote_time < local_time
-	synchronize_laptop_to_remote(test_dir, test_dir)
-	for local_file in os.listdir(test_dir):
-		local_content = get_local_file_content(test_dir, local_file)
-		for remote_file in service.list_directories_and_files(share, test_dir):
-			if remote_file.name != last_upload_filename:
-				assert local_file == remote_file.name
-				remote_content = get_remote_file_content(test_dir, remote_file)
-				assert remote_content == local_content
-
-
-def test_upload_laptop_to_remote_older_local_song():
-	delete_all_local_and_remote()
-	create_local_file('new_file', 'new file with older content')
-	print('waiting for remote clock to exceed local clock')
-	time.sleep(15)
-	create_remote_file('new_file', 'new file content')
-	local_time = get_local_modified_time(test_dir, 'new_file')
-	remote_time = get_remote_modified_time(test_dir, 'new_file')
-	assert local_time < remote_time
-	synchronize_laptop_to_remote(test_dir, test_dir)
-	for local_file in os.listdir(test_dir):
-		local_content = get_local_file_content(test_dir, local_file)
-		for remote_file in service.list_directories_and_files(share, test_dir):
-			if remote_file.name != last_upload_filename:
-				assert local_file == remote_file.name
-				remote_content = get_remote_file_content(test_dir, remote_file)
-				assert remote_content != local_content
-
-
-def test_upload_laptop_to_remote_delete_song():
-	delete_all_local_and_remote()
-	create_remote_file('new_file', 'new file content')
-	synchronize_laptop_to_remote(test_dir, test_dir)
-	assert remote_file_deleted('new_file')
-	assert not test_if_remote_file_exists('new_file')
-
-
-def run_upload_tests():
-	test_upload_laptop_to_remote_create_song()
-	test_upload_laptop_to_remote_newer_local_song()
-	test_upload_laptop_to_remote_older_local_song()
-	test_upload_laptop_to_remote_delete_song()
-
-
-def run_sync_tests():
-	test_sync_local_to_remote_upload()
-	test_sync_local_to_remote_delete()
-	test_sync_remote_to_local_download()
-
-
 if __name__ == '__main__':
-	run_upload_tests()
-	run_sync_tests()
-	delete_all_local_and_remote(create_dir=False)
+	Laptop.test()
+	iPad.test()
+	laptop = Laptop(test_dir, test_dir)
+	laptop.delete_all_local_and_remote(create_dir=False)
 	print('all tests succeeded')
-

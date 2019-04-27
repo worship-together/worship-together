@@ -234,24 +234,10 @@ def test_and_delete_midi(song):
 		delete_midi()
 
 
-def upload(songs):
-	tunes = []
-	if not songs:
-		songs = glob.glob('songs/*')
-		tunes = glob.glob('tunes/*')
-	for song in songs:
-		if midi.is_song(os.path.basename(song)):
-			test_and_delete_midi(song)
-			print('Uploading ' + song)
-			storage.upload_file_to_remote('songs', os.path.basename(song), song)
-	for tune in tunes:
-		storage.upload_file_to_remote('tunes', os.path.basename(tune), tune)
-
-
 def delete(songs):
 	for song in songs:
 		print('Deleting ' + song)
-		storage.delete_remote_file('songs', os.path.basename(song))
+		storage.Device.delete_remote_file(os.path.basename(song))
 
 
 def test(songs):
@@ -264,9 +250,8 @@ if __name__ == '__main__':
 	if arguments['<song>']:
 		check_songs(arguments['<song>'])
 	if arguments['--list']:
-		storage.list_all_remote_files('songs')
-	elif arguments['--upload']:
-		upload(arguments['<song>'])
+		laptop = storage.Laptop('songs', 'songs')
+		storage.laptop.list_all_remote_files()
 	elif arguments['--delete']:
 		delete(arguments['<song>'])
 	elif arguments['<song>']:
