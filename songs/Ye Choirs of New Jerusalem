@@ -31,7 +31,7 @@ alto       e/2.          a+      | f/2 e/2 | e/1
 tenor      e+. - d/8 - c c/8 b/8 | a/2 g/2 | a/1
 bass       a+/2.         c       | d/2 e/2 | a+/1
 
-soprano    c b | a/2 - g/2    | a/1
-alto       e e | f/2 - e/2    | e/1
-tenor      a a | d. - c/8 b/2 | c/1
-bass       c c | d/2 - e/2    | a/1
+#soprano    c b | a/2 - g/2    | a/1
+#alto       e e | f/2 - e/2    | e/1
+#tenor      a a | d. - c/8 b/2 | c/1
+#bass       c c | d/2 - e/2    | a/1
