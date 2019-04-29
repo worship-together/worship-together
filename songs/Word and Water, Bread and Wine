@@ -5,7 +5,7 @@ tune       COWPER
 meter      L.M.
 composer   Oliver Holden, 1803
 key        G
-rhythm     4 : 4
+rhythm     0 : 4
 tempo      150
 
 status     header  tune  checked
