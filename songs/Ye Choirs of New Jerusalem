@@ -4,7 +4,7 @@ key        Ab
 rhythm     4 : 4
 tempo      170
 
-status     header  tune  checked
+status     header  tune  checked  partial lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -35,3 +35,11 @@ bass       a+/2.         c       | d/2 e/2 | a+/1
 #alto       e e | f/2 - e/2    | e/1
 #tenor      a a | d. - c/8 b/2 | c/1
 #bass       c c | d/2 - e/2    | a/1
+
+#first stanza
+verse       Ye    choirs of    new    Je - ru  -  sa - lem,   Your sweet - est notes  em  -  ploy,
+verse       How   Ju  -  dah's Li  -  on   burst  His  chains And  crushed the ser -  pent's head;
+verse       From  hell's de -  vour - ing  jaws   the  prey   A -  lone    our Lead - er     bore;
+verse       Tri - um  -  phant in     His  glo -  ry   now    His  scep -  tre rul -  eth    all,
+verse       While joy -  ful   thus   His  praise we   sing,  His  mer  -  cy  we     im  -  plore,
+verse       All   glo -  ry    to     the  Fa  -  ther be,    All  glo  -  ry  to     the    Son,
