@@ -12,7 +12,7 @@ key        C
 rhythm     4 : 4
 tempo      90
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,19 @@ soprano    b/8 c/8 d        c        b       | a/2            b  e       | f    
 alto       d       d        e        d       | e - d          d  c       | c/8 b/8 c  c  b        | c/2.
 tenor      g       g/8 f#/8 g/8 a/8  b/8 g/8 | e/8 - a/8 - f# g  g       | f       g  a  d-/8 g/8 | g/2.
 bass       g       b        e/8 f#/8 g       | c - d          g- c/8 b/8 | a       g- f- g-       | c-/2.
+
+verse      O    sa -  cred  Head, now  wound - ed,   With grief and   shame  weighed down;
+verse      What Thou, my    Lord, hast suf  -  fered Was  all   for   sin -  ners'   gain:
+verse      What lan - guage shall I    bor  -  row   To   thank Thee, dear - est     Friend,
+
+verse      Now   scorn - ful - ly   sur  -  round - ed    With thorns, Thine on  -  ly  crown;
+verse      Mine, mine    was   the  trans - gres -  sion, But  Thine   the   dead - ly  pain.
+verse      For   this,   Thy   dy - ing     sor  -  row,  Thy  pit  -  y     with - out end?
+
+verse      How art  Thou pale  with  an -  guish, With sore   a -  buse    and scorn!
+verse      Lo, here I    fall, my    Sav - ior!   'Tis I      de - serve   Thy place;
+verse      O   make me   Thine for - ev -  er;    And  should I    faint - ing be,
+
+verse      How   does that vis - age lan - guish, Which   once was bright as  morn!
+verse      Look  on   me   with  Thy fa -  vor,   Vouch - safe to  me     Thy grace.
+verse      Lord, let  me   nev - er, nev - er     Out  -  live my  love   to  Thee.

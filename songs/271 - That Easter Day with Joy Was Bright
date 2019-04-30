@@ -11,7 +11,7 @@ key        C
 rhythm     3 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,27 @@ soprano    a/2  g | f c/2 | a/2 g | f. - g/8  e  | d-/2.
 alto       f/2  e | d c/2 | c/2 e | d/2       c# | d/2.
 tenor      c/2  c | a g/2 | f/2 c | a. - bb/8 a  | f#/2.
 bass       f-/2 c | d e/2 | f/2 c | d. - g-/8 a  | d/2.
+
+verse      That Eas  -  ter  day   with joy    was   bright:
+verse      He   bade    them see   His  hands, His   side,
+verse      O    Je   -  sus, King  of   gen -  tle - ness,
+verse      O    Lord    of   all,  with us     a  -  bide
+verse      All  praise, O    ris - en   Lord,  we    give
+
+verse      The   sun   shone out   with  fair - er    light, When to     their
+verse      Where yet   the   glo - rious wounds a  -  bide;  The  to  -  kens
+verse      Do    Thou  Thy - self  our   hearts pos - sess,  That we     may
+verse      In    this, our   joy - ful   Eas -  ter - tide;  From ev  -  'ry
+verse      To    Thee, Who,  dead, a  -  gain   dost  live;  All  praise to
+
+verse      long - ing   eyes  re - stored, The   glad  a -
+verse      true   which made  it   plain   Their Lord  in -
+verse      give   Thee  all   our  days    The   tri - bute
+verse      wea -  pon   death can  wield   Thine own   re -
+verse      God    the   Fa -  ther be      And   Ho -  ly
+
+verse      pos -  tles  saw     their Lord.    Hal - le - lu - jah!
+verse      deed   was   ris'n   a  -  gain.    Hal - le - lu - jah!
+verse      of     our   grate - ful   praise.  Hal - le - lu - jah!
+verse      deemed for - ev   -  er    shield.  Hal - le - lu - jah!
+verse      Ghost  e  -  ter  -  nal - ly.      Hal - le - lu - jah!

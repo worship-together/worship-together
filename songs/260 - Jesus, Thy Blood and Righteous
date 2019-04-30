@@ -12,7 +12,7 @@ key        A
 rhythm     3 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -33,3 +33,21 @@ soprano    e/2 c | c - b a  | g/2 d  | d - c b | a - b g | a/2.
 alto       e/2 e | f/2   f  | e/2 g  | a+/2  f | e/2   d | c/2.
 tenor      a/2 a | a - d cn | b/2 b  | a/2   d | c - d b | a/2.
 bass       c/2 a | d/2   d# | e/2 e# | f/2   d | e/2   e | a/2.
+
+verse      Je - sus,  Thy blood and  right - eous - ness   My    beau - ty
+verse      Bold shall I   stand in   Thy     great  day;   For   who     aught
+verse      When from  the dust  of   death   I      rise   To    claim   my
+verse      Je - sus,  be  end - less praise  to     Thee,  Whose bound - less
+verse      O    let   the dead  now  hear    Thy    voice; Now   bid     Thy
+
+verse      are,  my    glo -  rious dress; 'Midst flam - ing  worlds, in
+verse      to    my    charge shall lay?   Ful -  ly     ab - solved  through
+verse      man - sion  in     the   skies, E'en   then   this shall   be
+verse      mer - cy    hath   for   me,    For    me     a    full    a -
+verse      ban - ished ones   re -  joice; Their  beau - ty   this,   their
+
+verse      these  ar -  rayed, With joy  shall I      lift up      my     head.
+verse      these  I     am     From sin  and   fear,  from guilt   and    shame.
+verse      all    my    plea,  Je - sus  hath  lived, hath died,   for    me.
+verse      tone - ment  made,  An   ev - er -  last - ing  ran  -  som    paid.
+verse      glo -  rious dress, Je - sus, Thy   blood  and  right - eous - ness.
