@@ -10,7 +10,7 @@ key        Eb
 rhythm     6 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -31,3 +31,25 @@ soprano    g/1     f/2 | e/1 g/2 | b/1      a/2 | g/1 f/2 | e/1
 alto       f/2 e/2 d/2 | e/1 e/2 | e/1      e/2 | e/1 d/2 | e/1
 tenor      b/1     a/2 | g/1 g/2 | e+/2 d/2 c/2 | b/1 b a | g/1
 bass       g-/2. a b/2 | c/1 c/2 | g-/1     a/2 | b/1 b/2 | e/1
+
+verse      How     sweet and  aw  -  ful    is       the place
+verse      While   all   our  hearts and    all      our songs
+verse      Why     was   I    made   to     hear     Thy voice,
+verse      'Twas   the   same love   that   spread   the feast
+verse      Pit  -  y     the  na  -  tions, O        our God,
+verse      We      long  to   see    Thy    church - es  full,
+
+verse      With  Christ  with - in    the     doors, While ev -  er -  last - ing
+verse      Join  to      ad  -  mire  the     feast, Each of     us    cries, with
+verse      And   en   -  ter    while there's room,  When thou - sands make   a
+verse      That  sweet - ly     drew  us      in;    Else we     had   still  re -
+verse      Con - strain  the    earth to      come;  Send Thy    vic - tor -  ious
+verse      That  all     the    cho - sen     race   May, with   one   voice  and
+
+verse      love     dis - plays   The   choic - est   of      her  stores.
+verse      thank -  ful   tongue, Lord, why     was   I       a    guest?
+verse      wretch - ed    choice, And   rath -  er    starve  than come?
+verse      fused    to    taste,  And   per  -  ished in      our  sin.
+verse      Word     a  -  broad,  And   bring   the   stran - gers home.
+verse      heart    and   soul,   Sing  Thy     re -  deem -  ing  grace.
+

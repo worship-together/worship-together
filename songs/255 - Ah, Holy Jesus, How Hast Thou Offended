@@ -11,7 +11,7 @@ key        Bb
 rhythm     4 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,21 @@ soprano    f/2 d-/2 | f f g  f | e/2 d-/2 | d/2 c b  | a/2  g/2
 alto       d/2 b/2  | d c d  d | c b a/2  | d/2 e d  | d/2  b/2
 tenor      b/2 f/2  | f a b  b | g/2 f#/2 | f b g g  | g f# g/2
 bass       b/2 b/2  | b a g- b | c/2 d/2  | b/2 c g- | d/2  g-/2
+
+verse      Ah,     ho -  ly   Je  -  sus, how   hast    Thou  of -  fend - ed,
+verse      Who     was   the  guil - ty?  Who   brought this  up -  on     Thee?
+verse      Lo,     the   Good Shep - herd for   the     sheep is    of  -  fered;
+verse      For     me,   kind Je  -  sus, was   Thy     in -  car - na  -  tion,
+verse      There - fore, kind Je  -  sus, since I       can - not   pay    Thee,
+
+verse      That man   to   judge  Thee  hath in   hate   pre - tend - ed?     By    foes de -
+verse      Al - as,   my   trea - son,  Je - sus, hath   un -  done   Thee!   'Twas I,    Lord
+verse      The  slave hath sin -  ned,  and  the  Son    hath  suf -  fered.  For   man's a -
+verse      Thy  mor - tal  sor -  row,  and  Thy  life's ob -  la  -  tion;   Thy   death of
+verse      I    do    a  - dore   Thee, and  will ev  -  er    pray   Thee,   Think on    Thy
+
+verse      rid -  ed,   by    Thine own    re - ject -  ed,   O   most  af -  flict - ed!
+verse      Je  -  sus,  I     it    was    de - nied    Thee; I   cru - ci -  fied    Thee.
+verse      tone - ment, while we    noth - ing  heed -  ed,   God in -  ter - ced  -  ed.
+verse      an  -  guish and   Thy   bit -  ter  pas  -  sion, For my    sal - va   -  tion.
+verse      pit -  y     and   Thy   love   un - swerv - ing,  Not my    de -  serv -  ing.

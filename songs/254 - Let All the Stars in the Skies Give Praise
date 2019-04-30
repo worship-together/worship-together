@@ -10,7 +10,7 @@ key        D
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,19 @@ soprano    b/2 d b  | a/2  f       d- | f/2  e/2 | d-/1
 alto       g f e d  | c d  c       b  | b d  c b | a/1
 tenor      b a g g  | a b  a/8 g/8 f  | g b  a g | f/1
 bass       e/2 e e- | f-/2 a       b  | g-/2 a/2 | d/1
+
+verse      Let all  the   stars in   the skies  give praise,
+verse      Let Ra - chel  weep  for  her chil - dren lost
+verse      Let Ja - cob's star  rise in  east - ern  skies,
+
+verse      Let all  the heav - ens their an - thems raise,
+verse      And Ra - mah cry    at  the   aw - ful   cost.
+verse      And let  a   scep - ter from  Is - rael  rise,
+
+verse      Come down and sing  them in   the shep - herd's night,
+verse      Jo - seph is  warned_    in   a   dream  to     run,
+verse      Come down and guide the  wise men to     the    place
+
+verse      Glo - ry  to  God   for  in - car -  nate  Light.
+verse      And   out of  E  -  gypt is   called the   Son.
+verse      Where God has vis - i -  ted  A   -  dam's race.
