@@ -106,6 +106,42 @@ title      Test Song
 page       342
 author     The Book of Psalms for Singing, 1973
 
+verse      'Tis    by      thy    strength  the   moun - tains stand,
+verse      Thy     morn -  ing    light     and   ev -   'ning shade
+
+verse      God     of     e -  ter - nal   power;
+verse      Suc -   ces -  sive com - forts bring;
+
+verse      O come,_ let us a - dore Him, Christ the Lord!
+
+soprano  [ The  sea    grows calm   at    thy     com - mand,
+soprano  [ Thy  plen - teous fruits make  har -   vest  glad,
+
+alto       _  _  _  The  sea    grows calm   at    thy     com - mand,
+alto       _  _  _  Thy  plen - teous fruits make  har -   vest  glad,
+
+tenor      _  _  _  _  The  sea    grows calm   at    thy     com - mand,
+tenor      _  _  _  _  Thy  plen - teous fruits make  har -   vest  glad,
+
+bass       _  _  _  _  _  The  sea    grows calm   at    thy     com - mand,
+bass       _  _  _  _  _  Thy  plen - teous fruits make  har -   vest  glad,
+
+soprano    And tem -   pests cease  to   roar.    _  _  _  _
+
+alto       And tem -   pests cease  to   roar.    _  _  _
+
+tenor      And tem -   pests cease  to   roar.    _  _
+
+bass       And tem -   pests cease  to   roar.
+
+verse      And tem -   pests cease  to   roar.
+verse      Thy flowers a -   dorn   the  spring.
+
+verse      And tem -   pests cease  to   roar.
+verse      Thy flowers a -   dorn   the  spring.
+
+verse      O come, let us a - dore Him, Christ the Lord! ]
+
 tune       WESLEY (L.M.)
 composer   Isaac B. Woodbury
 key        C
@@ -117,54 +153,10 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    e/2 e e | g/2. c+ | c+ a a f | e/2 d R | d#/1               | a
-alto       c/2 c c | e/2. c  | f/2  f d | c/2 b R | bb. c/8 d/2        | b
-tenor      g/2 g g | c/2. g  | a  c c a | g/2.  R | en-(3) f/2.        | c
-bass       c/1 | c/1  | f/1 | g/1   | g#+/32.(1.2) f/64 a/16 c/8 d e f | d
-
-verse    'Tis    by      thy    strength  the   moun - tains stand,
-verse    Thy     morn -  ing    light     and   ev -   'ning shade
-
-verse    God     of     e -  ter - nal   power;
-verse    Suc -   ces -  sive com - forts bring;
-
-verse    O come,_ let us a - dore Him, Christ the Lord!
-
-
-repeat	begin
-
-s_verse  The  sea    grows calm   at    thy     com - mand,
-s_verse  Thy  plen - teous fruits make  har -   vest  glad,
-
-a_verse  _  _  _  The  sea    grows calm   at    thy     com - mand,
-a_verse  _  _  _  Thy  plen - teous fruits make  har -   vest  glad,
-
-t_verse  _  _  _  _  The  sea    grows calm   at    thy     com - mand,
-t_verse  _  _  _  _  Thy  plen - teous fruits make  har -   vest  glad,
-
-b_verse  _  _  _  _  _  The  sea    grows calm   at    thy     com - mand,
-b_verse  _  _  _  _  _  Thy  plen - teous fruits make  har -   vest  glad,
-
-
-s_verse  And tem -   pests cease  to   roar.    _  _  _  _
-
-a_verse  And tem -   pests cease  to   roar.    _  _  _
-
-t_verse  And tem -   pests cease  to   roar.    _  _
-
-b_verse  And tem -   pests cease  to   roar.
-
-
-verse    And tem -   pests cease  to   roar.
-verse    Thy flowers a -   dorn   the  spring.
-
-verse    And tem -   pests cease  to   roar.
-verse    Thy flowers a -   dorn   the  spring.
-
-verse    O come, let us a - dore Him, Christ the Lord!
-
-repeat   end
-
+soprano    [ e/2 e e | g/2. c+ | c+ a a f | e/2 d R | d#/1               | a ]
+alto       [ c/2 c c | e/2. c  | f/2  f d | c/2 b R | bb. c/8 d/2        | b ]
+tenor      [ g/2 g g | c/2. g  | a  c c a | g/2.  R | en-(3) f/2.        | c ]
+bass       [ c/1 | c/1  | f/1 | g/1   | g#+/32.(1.2) f/64 a/16 c/8 d e f | d ]
 """
 
 

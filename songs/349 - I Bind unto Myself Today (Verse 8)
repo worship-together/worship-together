@@ -4,14 +4,23 @@ page       349
 author     Ascribed to St. Patrick, 372-466
 translator Cecil Frances Humphreys Alexander, 1889
 
+repeat     begin
+
+verse      Christ be   with  me, Christ with - in   me, Christ be - hind  me, Christ be - fore  me,
+verse      Christ be - neath me, Christ a   -  bove me, Christ in   qui - et, Christ in   dan - ger,
+
+verse      Christ be - side   me, Christ to   win  me, Christ to com - fort and    re - store   me.
+verse      Christ in   hearts of  all    that love me, Christ in mouth of   friend and  stran - ger.
+
+repeat     end
+
+
 tune       DEIRDRE
 metre      L.M.
 composer   Adapted from an ancient Irish hymn melody
 key        G
 rhythm     3 : 4
 tempo      100
-
-status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -34,12 +43,4 @@ bass       c  e  b/8. d/16 | a c b/8. c/16 | b e/8 d/8 c/8. g-/16 | c/8 d/8 g-
 repeat     end
 
 
-repeat     begin
-
-verse      Christ be   with  me, Christ with - in   me, Christ be - hind  me, Christ be - fore  me,
-verse      Christ be - neath me, Christ a   -  bove me, Christ in   qui - et, Christ in   dan - ger,
-
-verse      Christ be - side   me, Christ to   win  me, Christ to com - fort and    re - store   me.
-verse      Christ in   hearts of  all    that love me, Christ in mouth of   friend and  stran - ger.
-
-repeat     end
+status     header  tune  checked  lyrics

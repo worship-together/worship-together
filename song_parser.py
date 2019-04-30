@@ -353,8 +353,6 @@ class _Repeat:
 			_Line('file', number=7, text='rum sap')
 		]
 		lines = list(_Repeat.expand(lines))
-		for line in lines:
-			print(line.text)
 		assert lines[0].text == 'foo bar'
 		assert lines[1].text == ''
 		assert lines[1].number == 3
