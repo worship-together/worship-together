@@ -11,7 +11,7 @@ key        D
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    a  b  a g       | f d- e f/8 g/8 | e/2      d-/2
 alto       d  d  c d/8 e/8 | d d  d d       | d - c    d/2
 tenor      a  g  e b       | a a  b g       | a. - g/8 f/2
 bass       f- g- a b/8 c/8 | d f  g e       | a/2      d/2
+
+verse      Come down, O   Love    di - vine,   Seek Thou    this soul  of    mine,
+verse      O    let   it  free -  ly   burn,   Till earth - ly   pas - sions turn
+verse      Let  ho -  ly  char -  i -  ty      Mine out  -  ward ves - ture  be,
+verse      And  so    the yearn - ing  strong, With which   the  soul  will  long,
+
+verse      And   vis - it    it    with Thine own  ar - dor   glow -  ing;
+verse      To    dust  and   ash - es   in    its  heat con - sum  -  ing;
+verse      And   low - li -  ness  be - come  mine in - ner   cloth - ing
+verse      Shall far   out - pass  the  pow'r of   hu - man   tell -  ing;
+
+verse      O    Com - fort - er,   draw  near,  With - in    my    heart ap - pear,
+verse      And  let   Thy    glo - rious light  Shine  ev -  er    on    my   sight,
+verse      True low - li  -  ness  of    heart, Which  takes the   hum - bler part,
+verse      For  none  can    guess its   grace, Till   Love  cre - ate   a    place
+
+verse      And     kin -  dle it,    Thy     ho  -  ly   flame bes - tow  -  ing.
+verse      And     clothe me  round, the     while  my   path  il -  lum  -  ing.
+verse      And     o'er   its own    short - com -  ings weeps with  loath - ing.
+verse      Where - in     the Ho  -  ly      Spir - it   makes a     dwell - ing.

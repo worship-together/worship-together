@@ -10,7 +10,7 @@ key        F
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -36,3 +36,47 @@ soprano    c  eb+ d  c    | b a g b  | a       g       d- e | f/2
 alto       f  f   f. eb/8 | d d d g  | f/8 e/8 d       b  b | a/2
 tenor      c  c   b  a    | b f g d  | c       b/8 a/8 g  g | f/2
 bass       a+ a+  b+ f    | g d b g- | a       b       b  c | f-/2
+
+verse      See,  the  Con   -  qu'ror mounts in   tri  -  umph; See      the  King   in     roy  -  al    state,
+verse      Who   is   this     that   comes  in   glo  -  ry,   With     the  trump  of     ju   -  bi -  lee?
+verse      While He   lifts    His    hands  in   bless - ing,  He       is   part - ed     from    His   friends,
+verse      Now   our  heav'n - ly     Aar -  on   en   -  ters, With     His  blood, with - in      the   veil;
+verse      Thou  have raised   our    hu  -  man  na   -  ture  In       the  clouds to     God's   right hand;
+verse      Ho -  ly   Ghost,   Il  -  lu  -  mi - na   -  tor,  Shed     Thy  beams  up  -  on      our   eyes,
+verse      See   Him, Who      is     gone   be - fore    us,   Heav'n - ly   man -  sions  to      pre - pare,
+verse      Lifts us   up       from   earth  to   heav -  en;   Give     us   wings  of     faith - ful   love,
+verse      So    at   last,    when   He     ap - pear -  eth,  We       from out    our    graves  may   spring,
+verse      Glo - ry   be       to     God    the  Fa   -  ther, Glo   -  ry   be     to     God     the   Son,
+
+verse      Rid -  ing   on     the   clouds,  His  char -  iot,  To      His  heav'n - ly    pal  -   ace  gate.
+verse      Lord   of    bat -  tles, God      of   ar  -   mies, He      has  gained   the   vic  -   to - ry.
+verse      While  their ea  -  ger   eyes     be - hold    Him,  He      up - on       the   clouds   as - cends.
+verse      Josh - ua    now    is    come     to   Ca  -   naan, And     the  kings    be -  fore     Him  quail;
+verse      There  we    sit    in    heav'n - ly   plac -  es,   There   with Thee     in    glo  -   ry   stand.
+verse      Help   us    to     look  up       with Ste  -  phen, And     to   see      be -  yond     the  skies,
+verse      See    Him,  who    is    ev   -   er   plead - ing   For     us   with     pre - vail  -  ing  prayer,
+verse      Gales  of    ho  -  ly    as   -   pi - ra  -   tions Waft -  ing  us       to    realms   a -  bove;
+verse      With   our   youth  re -  newed    like ea  -   gles, Flock - ing  round    our   heav'n - ly   king;
+verse      Dy  -  ing,  risen, as -  cend  -  ing  for     us,   Who     the  heav'n - ly    realm    has  won;
+
+verse      Hear   the  choir   of   an  -  gel  voic -  es    Joy   -  ful   al  -  le - lu  -  ias   sing,
+verse      He     Who  on      the  cross  did  suf  -  fer,  He       Who   from   the  grave  a  -  rose,
+verse      He     Who  walked  with God,   and  pleased Him,  Preach - ing   truth  and  doom   to    come,
+verse      Now    He   plants  the  tribes of   Is   -  rael  In       their prom - ised rest - ing   place;
+verse      Je  -  sus  reigns, a -  dored  by   an   -  gels, Man      with  God    is   on     the   throne;
+verse      Where  the  Son     of   Man    in   glo  -  ry    Stand -  ing   is     at   God's  right hand,
+verse      See    Him, Who     with sound  of   trum -  pet,  And      with  His    an - gel -  ic    train
+verse      That   with hearts  and  minds  up - lift -  ed    We       with  Christ our  Lord   may   dwell,
+verse      Caught up   in      the  clouds of   heav -  en,   And      may   meet   Him  in     the   air,
+verse      Glo -  ry   to      the  Ho  -  ly   Spir -  it,   To       one   God    in   per -  sons  Three;
+
+verse      And     the   por -  tals    high    are     o   -   pened To    re -  ceive    their heav'n - ly  King.
+verse      He      has   van -  quished sin     and     Sa   -  tan,  He    by    death    has   spoiled  His foes.
+verse      He,     our   E  -   noch,   is      trans - lat  -  ed    To    His   ev   -   er -  last  -  ing home.
+verse      Now     our   great  E   -   li   -  jah     of   -  fers  Dou - ble   por   -  tion  of       His grace.
+verse      Might - y     Lord,  in      your    as   -  cen  -  sion  We    by    faith    be -  hold     our own.
+verse      Beck -  'ning on     His     mar  -  tyr     ar  -   my,   Suc - cor - ing      His   faith -  ful band.
+verse      Sum  -  mon - ing    the     world   to      judg -  ment, On    the   clouds   will  come     a - gain.
+verse      Where   He    sits   en   -  throned in      glo  -  ry    In    His   heav'n - ly    cit   -  a - del.
+verse      Rise    to    realms where   He      is      reign - ing,  And   may   reign    for - ev   -   er  there.
+verse      Glo  -  ry    both   in      earth   and     heav -  en,   Glo - ry,   end  -   less  glo   -  ry, be.
