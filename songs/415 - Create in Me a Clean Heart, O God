@@ -10,7 +10,7 @@ key        Eb
 rhythm     0 : 4
 tempo      120
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -41,3 +41,13 @@ soprano    a g f  b  | e/2 f g | a/2   g - f | e/2 e/2
 alto       d e c  d  | e/2 d e | f - e d/2   | b/2 b/2
 tenor      f e b  b  | b/2 a g | c/2   b - a | a/2 g/2
 bass       b c b+ a+ | g/2 f e | a/2   b/2   | e/2 e/2
+
+verse      Cre - ate in me a clean heart, O God: and re -
+
+verse      new a right spir - it with - in me.  Cast me not a -
+
+verse      way from Thy pres - ence: and take not Thy Ho - ly
+
+verse      Spir - it from me.  Re - store un - to me the joy of
+
+verse      Thy sal - va - tion: and up - hold me with Thy free Spir - it.
