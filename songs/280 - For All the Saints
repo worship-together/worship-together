@@ -10,7 +10,7 @@ key        G
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,32 @@ soprano    e+ d/8 c/8 d/2    | g/2.  a/8 - b/8 -     | c b a/2   | g/1
 alto       e  g       g - f# | e/2   g - fn -        | e d c - d | b/1
 tenor      c  e+      d/2    | d - c b - a/8 - b/8 - | c g g - f | g/1
 bass       c  a       b/2    | e/2   d/2 -           | c d e - d | g-/1
+
+verse      For  all     the   saints  who    from     their  la   -  bors  rest,  Who
+verse      Thou wast    their rock,   their  for   -  tress, and     their might;
+verse      O    may     Thy   sol  -  diers, faith -  ful,   true,   and   bold,_
+verse      O    blest   com - mun  -  ion,   fel   -  low -  ship    di -  vine,_
+verse      And  when    the   strife  is     fierce,  the    war  -  fare  long,
+verse      The  gol  -  den   eve  -  ning   bright - ens    in      the   west;
+verse      But  lo!     there breaks  a      yet      more   glo  -  rious day;   The
+verse      From earth's wide  bounds, from   o    -   cean's farth - est   coast, Through
+
+verse      Thee_        by    faith   be   -  fore  the  world   con  - fessed, Thy
+verse      Thou,  Lord, their cap  -  tain    in    the  well -  fought fight;_
+verse      Fight  as    the   saints  who     no -  bly  fought  of     old,    And
+verse      We     fee - bly   strug - gle,    they  in   glo  -  ry     shine;  Yet
+verse      Steals on    the   ear     the     dis - tant tri  -  umph   song,   And
+verse      Soon,  soon  to    faith - ful     war - rior com  -  eth    rest;_
+verse      saints_      tri - um  -   phant   rise  in   bright  ar  -  ray;    The
+verse      gates_       of    pearl   streams in    the  count - less   host,_
+
+verse      name,  O_      Je   -   sus,  be     for - ev -  er   blest.
+verse      Thou,  in  the dark  -  ness  drear, their one   true light.
+verse      win    with_   them     the   vic -  tor's crown of   gold.
+verse      all    are_    one      in    Thee,  for   all   are  Thine.
+verse      hearts are_    brave    a  -  gain,  and   arms  are  strong.
+verse      Sweet  is_     the'calm of    Par -  a  -  dise  the  blest.
+verse      King   of_     glo  -   ry    pass - es    on    His  way.
+verse      Sing - ing to  Fa   -   ther, Son,   and   Ho -  ly   Ghost.
+
+verse      Al - le - lu - ia!  Al - le - lu - ia!
