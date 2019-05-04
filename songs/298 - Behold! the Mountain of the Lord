@@ -11,7 +11,7 @@ key        G
 rhythm     3 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,3 +32,27 @@ soprano    d         c b        | a/2 d       | g a b | c  b a       | g/2
 alto       d/8. e/16 f g        | f/2 f       | g d g | g/2  f       | g/2
 tenor      g         a b/8 c#/8 | d/2 d/8 c/8 | b d d | e+ d d/8 c/8 | b/2
 bass       b         a g-       | d/2 d       | e f g | c  d d       | g-/2
+
+verse      Be - hold!  the   moun - tain  of     the    Lord   In
+verse      To   this   the   joy -  ful   na  -  tions  round, All
+verse      The  beam   that  shines from  Zi  -  on     hill   Shall
+verse      A -  mong   the   na  -  tions He     shall  judge; His
+verse      No   strife shall rage,  nor   hos -  tile   feuds  Dis -
+verse      No   long - er    hosts, en -  coun - t'ring hosts, Shall
+verse      Come then,  O     house  of    Ja  -  cob!   come   To
+
+verse      lat  -  ter   days     shall rise    On   moun  -  tain   tops   a -
+verse      tribes  and   tongues, shall flow;   Up   to       the    hill   of
+verse      light - en    ev    -  'ry   land;   The  King     who    reigns in
+verse      judg -  ments truth    shall guide;  His  scep  -  ter    shall  pro -
+verse      turb    those peace -  ful   years;  To   plough - shares men    shall
+verse      crowds  of    slain    de -  plore:  They hang     the    trum - pet
+verse      wor  -  ship  at       His   shrine; And, walk  -  ing    in     the
+
+verse      bove  the     hills,  And   draw   the   won -  d'ring eyes.
+verse      God,  they'll say,    And   to     His   house  we'll  go.
+verse      Sa -  lem's   towers  Shall all    the   world  com -  mand.
+verse      tect  the     just,   And   quell  the   sin -  ner’s  pride.
+verse      beat  their   swords, To    prun - ing - hooks  their  spears.
+verse      in    the     hall,   And   stud - y     war    no     more.
+verse      light of      God,    With  ho  -  ly    beau - ties   shine.

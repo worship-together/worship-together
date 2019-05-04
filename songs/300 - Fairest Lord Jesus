@@ -13,7 +13,7 @@ key        Eb
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -30,7 +30,22 @@ alto       e/2 e  f  | f e d e | f/2 e/2 | d/1     | e/2  e e | en/2 f/2
 tenor      b/2 c  d  | b/2 b/2 | b/2 b/2 | b/1     | b/2  a g | g c  c/2
 bass       g/2 a+ a+ | g/2 f e | d/2 e/2 | b/2 a/2 | g-/2 a b | c/2  f/2
 
-soprano    a/2 b  a  | a f g  g | g g b  a | g/2 f/2 | e/1
-alto       c/2 c  c  | d/2 e  e | e e e  e | e/2 d/2 | e/1
-tenor      f/2 en f  | f b b  b | b c db c | b/2.  a | g/1
-bass       f-/2 g- a | b/2 e- e | d c g- a | b/2 b/2 | e/1
+soprano    a/2  b  a  | a f g  g | g g b  a | g/2 f/2 | e/1
+alto       c/2  c  c  | d/2 e  e | e e e  e | e/2 d/2 | e/1
+tenor      f/2  en f  | f b b  b | b c db c | b/2.  a | g/1
+bass       f-/2 g- a  | b/2 e- e | d c g- a | b/2 b/2 | e/1
+
+verse      Fair - est  Lord Je  -  sus,   King of  cre - a   -  tion,
+verse      Fair   are  the  mead - ows,   Fair are the   wood - lands,
+verse      Fair   is   the  sun -  shine, Fair is  the   moon - light,
+verse      Beau - ti - ful  Sav -  ior!   Lord of  the   na  -  tions!
+
+verse      Son   of      God     and   Son    of  Man!    Thee  will I      cher  -  ish,
+verse      Robed in  the bloom - ing   garb   of  spring: Je -  sus  is     fair  -  er,
+verse      And   all the twink - ling, star - ry  host:   Je -  sus  shines bright - er,
+verse      Son   of      God     and   Son    of  Man!    Glo - ry   and    hon   -  or,
+
+verse      Thee    will I      hon - or,   Thou, my    soul's glo - ry,  joy,   and crown.
+verse      Je   -  sus  is     pur - er,   Who   makes the    woe - ful  heart  to  sing.
+verse      Je   -  sus  shines pur - er    Than  all   the    an -  gels heav'n can boast.
+verse      Praise, ad - o  -   ra -  tion, Now   and   for -  ev -  er - more   be  thine!
