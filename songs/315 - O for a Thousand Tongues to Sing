@@ -11,7 +11,7 @@ key        G
 rhythm     6 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -27,3 +27,17 @@ soprano    a/1 d/2 | d b b/2 g/2 | g e e/2 g e | d- g g/2 a/2 | g/1
 alto       d/1 f/2 | g d d/2 d/2 | e c c/2 e c | b  b b/2 c/2 | b/1
 tenor      f/1 a/2 | b g g/2 g/2 | g g g/2 g/2 | g  g g/2 f/2 | g/1
 bass       d/1 d/2 | g g g/2 b/2 | c c c/2 c/2 | d  d d/2 d/2 | g-/1
+
+verse      O    for     a     thou - sand   tongues to     sing   My   great  Re - deem -  er's  praise,
+verse      My   gra  -  cious Mas -  ter    and     my     God,   As - sist   me   to      pro - claim,
+verse      Je - sus!    the   name   that   charms  our    fears, That bids   our  sor -   rows  cease,
+verse      He   breaks  the   power  of     can  -  celled sin,   He   sets   the  pris  - oner  free;
+verse      He   speaks, and,  lis -  t'ning to      His    voice, New  life   the  dead    re -  ceive,
+verse      Hear Him,    ye    deaf;  His    praise, ye     dumb,  Your loos - ened tongues em -  ploy;
+
+verse      The  glo  -  ries    of    my   God    and   King,  The  tri - umphs of     His  grace!
+verse      To   spread  through all   the  earth  a  -  broad  The  hon - ors   of     Thy  name.
+verse      'Tis mu  -   sic     in    the  sin -  ner's ears,  'Tis life  and   health and  peace.
+verse      His  blood   can     make  the  foul - est   clean; His  blood a  -  vailed for  me.
+verse      The  mourn - ful,    bor - ken  hearts re -  joice, The  hum - ble   poor   be - lieve.
+verse      Ye   blind,  be   -  hold  your Sav -  ior   come,  And  leap, ye    lame,  for  joy.
