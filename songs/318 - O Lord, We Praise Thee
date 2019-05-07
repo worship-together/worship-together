@@ -13,7 +13,7 @@ key        C
 rhythm     0 : 4
 tempo      110
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -49,3 +49,27 @@ soprano    d- f e       d- e d- c-/2 | g  g/8 g/8  a/8. - g/16 - f# g/1
 alto       a  d c       b  c b  g-/2 | d  e/8 d/8  f# - d           d/1
 tenor      f  a a/8 g/8 g  g g  e/2  | b  c/8 b/8  d - a            b/1
 bass       d  d a/8 c/8 g- c g- c/2  | g- c/8 g-/8 d/2              g-/1
+
+verse      O   Lord, we   praise Thee, bless Thee, and   a - dore  Thee, In   thanks - giv - ing
+verse      Thy ho -  ly   bod -  y     in -  to    death was giv - en,   Life to       win   for
+verse      May God   be - stow   on    us    His   grace and fa -  vor   To   please   Him   with
+
+verse      bow be - fore   Thee.  Thou with    Thy bod  -  y    and  Thy blood didst nour - ish
+verse      us  in   heav - en.    No   great - er  love    than this to  Thee  could bind   us;
+verse      our be - hav -  ior    And  live    as  breth - ren  here in  love  and   un  -  ion
+
+verse      Our weak souls that    they    may   flour - ish.  O Lord, have mer - cy!
+verse      May this feast there - of      re -  mind    us!   O Lord, have mer - cy!
+verse      Nor re - pent  this    blessed Com - mun  -  ion!  O Lord, have mer - cy!
+
+verse      May   Thy bod -  y,   Lord,  born of    Mar -  y    That  our  sins     and
+verse      Lord, Thy kind - ness did    so   con - strain Thee That  Thy  blood    should
+verse      Let   not Thy    good Spir - it   for - sake   us;  Grant that heav'n - ly -
+
+verse      sor -  rows did   car - - ry,  And  Thy blood   for   us   plead
+verse      bless  and  sus - tain    me.  All  our debt    Thou  hast paid;
+verse      mind - ed   He    make    us;  Give Thy church, Lord, to   see
+
+verse      In    all  tri - al,  fear, and  need: O Lord, have mer - cy!
+verse      Peace with God   once more  is   made: O Lord, have mer - cy!
+verse      Days  of   peace and  u  -  ni - ty;   O Lord, have mer - cy!

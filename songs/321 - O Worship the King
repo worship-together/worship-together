@@ -11,7 +11,7 @@ key        Ab
 rhythm     3 : 4
 tempo      140
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -37,3 +37,27 @@ soprano    a a b | c  c  d | e+/8. d/16 c b | a/2
 alto       c e e | e  e  f | e/8.  f/16 e d | c/2
 tenor      a a g | a  a  a | a          a g | a/2
 bass       a c e | a+ a+ f | c/8. d/16  e e | a/2
+
+verse      O     wor -  ship  the  King   all - glo -  rious a -  bove,  O
+verse      O     tell   of    His  might  and   sing   of    His  grace, Whose
+verse      Thy   boun - ti -  ful  care,  what  tongue can   re - cite?  It
+verse      Frail chil - dren  of   dust,  and   fee -  ble   as   frail, In
+verse      O     meas - ure - less Might, In -  ef  -  fa -  ble  Love,  Whom
+
+verse      grate -  ful - ly   sing   His   power  and  His love:   Our
+verse      robe     is    the  light, whose can -  o -  py  space.  His
+verse      breathes in    the  air,   it    shines in   the light;  It
+verse      You      do    we   trust, nor   find   You  to  fail.   Your
+verse      an   -   gels  de - light  to    wor -  ship a - bove!   Your
+
+verse      Shield  and   De -  fend - er,   the  An  -  cient of     Days,  Pa -
+verse      char -  iots  of    wrath  the   deep thun - der - clouds form,  And
+verse      streams from  the   hills, it    de - scends to    the    plain, And
+verse      mer  -  cies, how   ten -  der,  how  firm   to    the    end,   Our
+verse      ran  -  somed cre - a   -  tion, with glo -  ry    a   -  blaze, In
+
+verse      vil  -  ioned in    splen - dor  and   gird - ed   with praise.
+verse      dark    is    His   path    on   the   wings  of   the  storm.
+verse      sweet - ly    dis - tills   in   the   dew    and  the  rain.
+verse      Mak  -  er,   De -  fend -  er,  Re -  deem - er,  and  Friend!
+verse      true    a  -  dor - a   -   tion shall all    sing Thy  praise!
