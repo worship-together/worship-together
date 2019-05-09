@@ -9,23 +9,35 @@ composer   Pfalz, 1557
 harmony    Regina H. Fryxell, 1958
 key        D
 rhythm     0 : 4
-tempo      180
+tempo      160
 
-status     header  tune
+status     header  tune  checked  lyrics
 
 voice      unison E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-unison     d-/2 d- d- d- f g a b a a b d c b/2 a a a f g e d-/2
+unison     d-/2 d- d- d- f g a - b a a b - d c b/2 a a a f g e - d-/2
 
-unison     d- d- d- d- f f g a b a a b d c b/2 a a a
+unison     d- d- d- d- f f g a - b a a b d c b/2 a a a
 
-unison     f g f d- e e d-/2 d- a/2 g f e f a b a/2
+unison     f g f - d- - e e d-/2 d- a/2 g f - e f a b a/2
 
-unison     a b a g f e a d- g f e d- d-/2 a a f f g a a
+unison     a b a g f e a d- g - f - e d- d-/2(1) a a f f g a a
 
 unison     a a b a f f f g e d-/2 a a d- g f e f f
 
-unison     a a b a g f e f f f e a f d- g f e d-/2
+unison     a a b a - g - f e f f f e a - f d-(0.5) g - f - e d-/2(1)
+
+verse      Lord, now let - test Thou Thy ser - vant de - part in peace: ac - cord - ing to Thy word;
+
+verse      For mine eyes have seen Thy sal - va - tion: which Thou hast pre - pared be - fore the
+
+verse      face of all peo - ple; A light to light - en the Gen - tiles:
+
+verse      and the glo - ry of Thy peo - ple Is - ra - el.  Glo - ry be to the Fa - ther
+
+verse      and to the Son, and to the Ho - ly Ghost; as it was in the beg - gin - ning,
+
+verse      is now and ev - er shall be, world with - out end.  A - men.
