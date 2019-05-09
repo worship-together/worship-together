@@ -12,7 +12,7 @@ key        F
 rhythm     0 : 4
 tempo      90
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -39,3 +39,23 @@ unison     a/8 f/8 a a g/8 a/8 b/8 a/8 g/8 g/8 f/8 g/8 a(1) | f/8 g g/8 g/8 a/8 
 unison     b/8 b/8 a/8 g/8 g/8 f#/8 g(1) | g/8 a/8 a/8 b/8 c b/8 b/8 a/8 g/8 a
 
 unison     f/8 f/8 g/8 - f/8 - g/8 - a g/8 a/8 c/8 b/8 c/8 b/8 a g/8 f/8 g f(1) | e(1) f(2)
+
+verse      Glo - ry be to God on high!  And on earth peace, good will toward men.
+
+verse      We praise Thee, we bless Thee, we wor - ship Thee, we glo - ri - fy Thee,
+
+verse      we give thanks to Thee for Thy great glo - ry, O Lord God, heaven - ly King,
+
+verse      God the Fa - ther Al - might - y.  O Lord, the on - ly be - got - ten Son,
+
+verse      Je - sus Christ; O Lord God, Lamb of God, Son of the Fa - ther,
+
+verse      that tak - est a - way the sin of the world, have mer - cy up - on us.  Thou that tak - est a -
+
+verse      way the sin of the world, re - ceive our prayer.  Thou that sit - est at the right hand of
+
+verse      God the Fa - ther, have mer - cy up - on us.  For Thou on - ly art ho - ly;
+
+verse      Thou on - ly art the Lord; Thou on - ly, O Christ, with the Ho - ly Ghost,
+
+verse      art most high in the glo - ry of God the Fa - ther.  A - men.
