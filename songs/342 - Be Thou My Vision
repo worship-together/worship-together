@@ -13,7 +13,7 @@ key        Eb
 rhythm     3 : 4
 tempo      180
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -28,3 +28,23 @@ unison     f f f | f g b | c b g | b/2.
 unison     c c/8 d/8 e+/8 d/8 | c b g | b e d- | c-/2 b-
 
 unison     e g b | c/8 b/8 g e/8 g/8 | f e e | e/2.
+
+verse      Be     Thou my vis -  ion, O   Lord  of    my   heart;
+verse      Be     Thou my wis -  dom, and Thou  my    true word;
+verse      Rich - es   I  heed   not, nor man’s emp - ty   praise,
+verse      High   King of heav - en,  my  vic - to -  ry   won,
+
+verse      Nought be   all   else     to    me,    save   that   Thou art -
+verse      I      ev - er    with     Thee  and    Thou   with   me,  Lord;
+verse      Thou   mine in -  her   -  i  -  tance, now    and    al - ways:
+verse      May    I    reach heav'n's joys, O      bright heav - en's Sun!
+
+verse      Thou  my  best  thought_       by     day   or  by   night,
+verse      Thou  my  great Fa_     -      ther,  I     Thy true son;
+verse      Thou  and Thou  on_     -      ly,    first in  my   heart,
+verse      Heart of  my    own     heart, what - ev -  er  be - fall,
+
+verse      Wak - ing  or sleep - ing, Thy pres -  ence my   light.
+verse      Thou  in   me dwell - ing, and I       with Thee one.
+verse      High  King of heav -  en,  my  Treas - ure  Thou art.
+verse      Still be   my vis  -  ion, O   Ru   -  ler  of   all.

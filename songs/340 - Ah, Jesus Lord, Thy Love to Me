@@ -12,7 +12,7 @@ key        C
 rhythm     6 : 4
 tempo      140
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,39 @@ soprano    a  g/8 f/8 c/2   d-/2  | f g  a/2  g/2   | f       d-/8 c-/8 d-/2
 alto       c  d       e - c b/2   | c b  c/2  d - c | b/8 a/8 g-        a/2
 tenor      c  a       g/2   a - g | f d- f/2  e/2   | d-      e         f#/2
 bass       f- d       c/2   g-/2  | a g- f-/2 c/2   | g-      a         d-/2
+
+verse      Ah,   Je  - sus    Lord,  Thy   love to    me     No   thought can    reach, no
+verse      O,    grant that   noth - ing   in   my    soul   May  dwell   but    Thy    pure
+verse      O     Lord, how    gra -  cious is   thy   way!   All  fear    be  -  fore   Thy
+verse      This  love  un  -  wear - ied   I    pur - sue    And  daunt - less - ly     to
+verse      O,    draw  me,    Sav -  ior,  e'er to    Thee;  So   shall   I      run    and
+verse      More  hard  than   mar -  ble   is   my    heart, And  foul    with   sins   of
+verse      Still let   Thy    love   point out  my    way;   What won  -  drous  things Thy
+verse      In    suf - f'ring be     Thy   love my    peace, In   weak -  ness   be     Thy
+
+verse      tongue de - clare;    O     bind  my     thank - ful   heart to    Thee   And
+verse      love   a -  lone!     O,    may   Thy    love    pos - sess  me    whole, My
+verse      pres - ence flies;    Care, an -  guish, sor  -  row,  melt  a  -  way    Wher -
+verse      Thee   as - pire.     O,    may   Thy    love    my    hope  re -  new,   Burn
+verse      nev -  er   tire.     With  gra - cious  words   still com - fort  me;    Be
+verse      deep - est  stain;    But   Thou  the    might - y     Sav - ior   art,   Nor
+verse      love   hath wrought!  Still lead  me     lest    I     go    a  -  stray; Di -
+verse      love   my   pow'r;    And   when  the    storms  of    live  shall cease, O
+
+verse      reign  with - our      a    ri    -  val  there.   Thine, whol - ly   Thine, a -
+verse      joy,   my     treas -  ure, and      my   crown!   All    cold - ness from   my
+verse      e'er   thy    heal  -  ing  hands    a -  rise.    O      Je  -  sus, noth - ing
+verse      in     my     soul     like heav'n - ly   fire!    And    day    and  night  be
+verse      Thou   my     Hope,    my   sole     De - sire.    Free   me     from ev  -  ery
+verse      flowed Thy    cleans - ing  blood    in   vain;    Ah     soft - en,  melt   this
+verse      rect   my     work,    in - spire    my   thought; And    if     I    fall,  soon
+verse      Je  -  sus,   in       that fi   -   nal  khour    Be     Thou   my   Rod    and
+
+verse      lone, I'd  live; My  -  self  to   Thee   en -  tire  -  ly  give.
+verse      heart re - move; My     ev -  ery  act,   word, thought, be  love.
+verse      may   I    see,  Noth - ing   de - sire   or    seek,    but Thee!
+verse      all   my   care  To     guard this sa  -  cred  treas -  ure there.
+verse      guilt and  fear; No     sin   can  harm   if    Thou     art near.
+verse      rock, and  may   Thy    blood wash all    these stains   a - way!
+verse      may   I    hear  Thy    voice and  know   that  love     is  near!
+verse      Staff and  Guide And    draw  me   safe - ly    to       Thy side.

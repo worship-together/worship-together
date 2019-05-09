@@ -11,7 +11,7 @@ key        D
 rhythm     6 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -43,17 +43,37 @@ alto       d d  c/2     d/2       | d d c/2    d/2   | d - c    a/2
 tenor      b b  a/2     d. - cn/8 | b b a/2    a - b | a. - g/8 f/2
 bass       b e  a+ - gn f/2       | g e a+ - g f - e | a+ a     d/2
 
-verse      Sing praise to God who reigns a - bove, The
-verse      What God's al - might - y pow'r hath made His
+verse      Sing praise to    God     who      reigns a -  bove,  The
+verse      What God's  al -  might - y        pow'   hath made   His
+verse      I    cried  to    Him     in       time   of   need:  Lord
+verse      The  Lord   for - sak  -  eth      not    His  flock, His
+verse      Ye   who    con - fess    Christ's ho  -  ly   name,  To
+verse      Then come   be -  fore    His      pres - ence now    And
 
-verse      God of all cre - a - tion, The God of power, the
-verse      gra - cious mer - cy keep - eth; By morn - ing glow or
+verse      God   of    all    cre - a  -   tion, The God    of    power, the
+verse      gra - cious mer -  cy    keep - eth;  By  morn - ing   glow   or
+verse      God,  O     hear   my    call - ing!  For death  He    gave   me
+verse      cho - sen   gen -  er -  a  -   tion; He  is     their Ref -  uge
+verse      God   give  praise and   glo -  ry!   Ye  who    the   Fa  -  ther's
+verse      ban - ish   fear   and   sad -  ness; To  your   Re -  deem - er
 
-verse      God of love, The God of our sal - va - tion.  With
-verse      eve - ning shade His watch - ful eye ne'er sleep - eth; With -
+verse      God   of    love,  The   God     of   our    sal - va   -  tion.  With
+verse      eve - ning  shade  His   watch - ful  eye    ne'er sleep - eth;   With -
+verse      life  in -  deed   And   kept    my   feet   from  fall -  ing.   For
+verse      and   their Rock,  Their Peace   and  their  Sal - va  -   tion.  As
+verse      pow'r pro - claim, To    God     give praise and   glo  -  ry!    All
+verse      pay   your  vow    And   sing    with joy    and   glad -  ness:  Though
 
-verse      heal - ing balm my soul He fills The God Who ev - 'ry
-verse      in the king - dom of His might, Lo! all is just and
+verse      heal - ing   balm   my    soul  He   fills  The God   Who  ev -  'ry
+verse      in     the   king - dom   of    His  might, Lo! all   is   just  and
+verse      this   my    thanks shall end - less be;    O   thank Him, thank our
+verse      with   a     moth - er's  ten - der  hand,  He  leads His  own,  His
+verse      i  -   dols  un  -  der - foot  be   trod,  The Lord  is   God!  The
+verse      great  dis - tress  my    soul  be - fell,  The Lord  my   God   did
 
-verse      sor - row stills.  To God all praise and glo - ry!
-verse      all is right.  To God all praise and glo - ry!
+verse      sor - row    stills.  To God all praise and glo - ry!
+verse      all   is     right.   To God all praise and glo - ry!
+verse      God   with   me.      To God all praise and glo - ry!
+verse      cho - sen    band.    To God all praise and glo - ry!
+verse      Lord  is     God!     To God all praise and glo - ry!
+verse      all   things well.    To God all praise and glo - ry!

@@ -12,7 +12,7 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked
+status     header  tune  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -38,3 +38,23 @@ soprano    d- d-  c- c  | b         a         g       a        | g  g  f(2)
 alto       g- g-  g- f- | f-/8 g-/8 a/8  b/8  c       c        | c  c  c(2)
 tenor      c- bn- e  c- | d-        c-/8 d-/8 e       f        | f  e  a(2)
 bass       g- g-  c- a  | d/8  e/8  f         c/8 b/8 a/8 f-/8 | c- c- f-(2)
+
+verse      What - e'er my God or - dains is right: His    ho -  ly   will  a -
+verse      What - e'er my God or - dains is right: He     nev - er   will  de -
+verse      What - e'er my God or - dains is right: Though now   this cup,  in
+verse      What - e'er my God or - dains is right: Here   shall my   stand be
+
+verse      bid  -  eth; I      will  be   still, what - e'er   He    doth,  And fol - low where He
+verse      ceive   me;  He     leads me   by     the    prop - er    path;  I   know  He  will  not
+verse      drink - ing, May    bit - ter  seem   to     my     faint heart, I   take  it, all   un -
+verse      tak  -  en;  Though sor - row, need,  or     death  be    mine,  Yet am    I   not   for -
+
+verse      guid  -  eth.  He is    my     God;  though dark  my   road,  He    holds me
+verse      leave    me.   I  take, con -  tent, what   He    hath sent;  His   hand  can
+verse      shrink - ing.  My God   is     true; each   morn  a -  new    Sweet com - fort
+verse      sak   -  en.   My Fa -  ther's care  is     round me   there; He    holds me
+
+verse      that I     shall  not fall:  Where - fore to      Him   I   leave it   all.
+verse      turn my    griefs a - way,   And     pa - tient - ly    I   wait  His  day.
+verse      yet  shall fill   my  heart, And     pain and     sor - row shall de - part.
+verse      that I     shall  not fall:  And     so   to      Him   I   leave it   all.
