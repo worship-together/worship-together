@@ -125,29 +125,6 @@ def get_play_button():
 			return subview
 	raise RuntimeError('fruvit nub it')
 
-def track_time(scrollview):
-	global player, rate, position, dragging
-	screen_w, screen_h = ui.get_screen_size()
-	if player:
-		if not dragging:
-			w, h = scrollview.content_size
-			scroll_x, scroll_y = scrollview.content_offset
-			scrollview.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
-			if scroll_x > w - screen_w and get_play_button().playing:
-				player.current_time = 0
-				rate = player.rate
-				play()
-				scrollview.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
-			if scrollview.tracking:
-				dragging = True
-		else:
-			adjust_time(scrollview)
-			if scrollview.decelerating:
-				dragging = False
-	if exiting:
-		stop()
-	else:
-		ui.delay(lambda: track_time(scrollview), 0.01)
 
 def adjust_time(scrollview):
 	global player, position, dragging
@@ -180,27 +157,26 @@ def present_settings(sender):
 def present_song(sender):
 	global satb_page, song, player, tracking_song, position, last_position
 	song = sender.items[sender.selected_row]
-	if not satb_page:
-		satb_page = MyView(song)
-		w, h = ui.get_screen_size()
-		exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
-		button_width = 50
-		exit_btn.frame = (0, 10, button_width, button_width + 10)
-		exit_btn.action = lambda sender: satb_page.close()
-		satb_page.add_subview(exit_btn)
-		play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
-		play_btn.frame = ((h/2) - button_width, h - button_width, h/2, button_width)
-		play_btn.action = play_pause
-		play_btn.playing = False
-		play_btn.name = 'play_button'
-		
-		settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
-		settings_btn.frame = (h/2, h - button_width, button_width, button_width)
-		settings_btn.action = present_settings
-		
-		
-		satb_page.add_subview(play_btn)
-		satb_page.add_subview(settings_btn)
+	satb_page = MyView(song)
+	w, h = ui.get_screen_size()
+	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
+	button_width = 50
+	exit_btn.frame = (0, 10, button_width, button_width + 10)
+	exit_btn.action = lambda sender: satb_page.close()
+	satb_page.add_subview(exit_btn)
+	play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
+	play_btn.frame = ((h/2) - button_width, h - button_width, h/2, button_width)
+	play_btn.action = play_pause
+	play_btn.playing = False
+	play_btn.name = 'play_button'
+	
+	settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
+	settings_btn.frame = (h/2, h - button_width, button_width, button_width)
+	settings_btn.action = present_settings
+	
+	
+	satb_page.add_subview(play_btn)
+	satb_page.add_subview(settings_btn)
 	play_button = get_play_button()
 	if play_button.playing:
 		play_pause(play_button)
@@ -212,7 +188,7 @@ def present_song(sender):
 	last_position = scroll_x
 	if not tracking_song:
 		tracking_song = True
-		track_time(satb_page.sv)
+		#track_time(satb_page.sv)
 		satb_page.sv.delegate = MyScrollViewDelegate()
 		#satb_page.sv.
 
@@ -332,7 +308,7 @@ class MusicView(ui.View):
 		self.staff.stroke()
 		
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
-		global origin, end, note_tied, note_pos, bars_to_draw
+		global origin, end, note_tied, note_pos, bars_to_draw, slurs, run
 		position = origin
 		note_width = 1.15
 		note_tied = False
@@ -342,7 +318,7 @@ class MusicView(ui.View):
 			if isinstance(voice_selected, list):
 				loop = 0
 				run = []
-				slur = []
+				slurs = []
 				note_tied = False
 				prev_note_pos = origin
 				for note in voice_selected:
@@ -366,7 +342,7 @@ class MusicView(ui.View):
 					else:
 						next_bars_to_draw = None
 
-					self.draw_note(note_index, note_beats, clef_C0, note_slurred, slur, prev_note_tied, prev_note_pos, tail_direction, run, bars_to_draw, next_bars_to_draw, position, note_width)
+					self.draw_note(note_index, note_beats, clef_C0, note_slurred, prev_note_tied, prev_note_pos, tail_direction, bars_to_draw, next_bars_to_draw, position, note_width)
 									
 					#increment
 					prev_note_pos = position
@@ -383,21 +359,23 @@ class MusicView(ui.View):
 		measure_bar.stroke()
 		position -= note_gap / 2
 		
-	def draw_note(self, index, beats, C0, slurred, slur, prev_note_tied, prev_note_pos, tail_direction, run, bars_to_draw, next_bars_to_draw, position, width):
+	def draw_note(self, index, beats, C0, slurred, prev_note_tied, prev_note_pos, tail_direction, bars_to_draw, next_bars_to_draw, position, width):
+		global run
 		if not index == -1:
 			oval = self.draw_dot(C0, index, position)
 			self.fill_note(C0, index, oval, beats, position)
 			self.dots(index, beats, C0, position)
-			self.slur(slurred, slur, index, C0, tail_direction, position, width)
+			self.slur(slurred, index, C0, tail_direction, position, width)
 			self.tie(index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width)		
 			if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
 				run.append(note_pos)
 			elif not run == []:
-				self.run_bar(bars_to_draw, tail_direction, run, position, width)
+				self.run_bar(bars_to_draw, tail_direction, position, width)
 				self.tails(tail_direction, run, position, width)
+				self.tail(beats, index, C0, tail_direction, run, position, width)
 				run = []
 			else:
-				self.flag(note_pos, tail_direction, position)
+				self.flag(note_pos, tail_direction, position, width)
 				self.tail(beats, index, C0, tail_direction, run, position, width)
 				
 		else:
@@ -439,13 +417,14 @@ class MusicView(ui.View):
 			ui.set_color('black')
 			dot.fill()
 			
-	def slur(self, slurred, slurs, index, C0, tail_direction, position, note_width):
+	def slur(self, slurred, index, C0, tail_direction, position, note_width):
+		global slurs
 		if slurred:
 			slurs.append((position, C0 - (index * step)))
 		elif not slurs == []:
 			f_x, f_y = slurs[0]
 			thickness = 3
-			tail_end = -(((3.5 * tail_direction) - 3.5) * step)
+			tail_end = -7 * tail_direction * step
 			f_y += tail_end
 			y_pos = (C0 - (index * step)) + tail_end
 			t_b = step * (1 - tail_direction)
@@ -484,7 +463,8 @@ class MusicView(ui.View):
 			tie.fill()
 			tie.stroke()
 	
-	def run_bar(self, bars, tail_direction, run, position, width):
+	def run_bar(self, bars, tail_direction, position, width):
+		global run
 		for b in range(0, bars):
 			bar = ui.Path()
 			offset = step * 2 * b * tail_direction
@@ -523,12 +503,12 @@ class MusicView(ui.View):
 			note_tail.line_to(x + note_side, y + step)
 			note_tail.stroke()
 			
-	def flag(self, pos, tail_direction, position):
+	def flag(self, pos, tail_direction, position, width):
 		for bar in range(0, bars_to_draw):
 			x, y = pos
 			flag = ui.Path()
 			
-			x_offset = step * note_width * (1 + tail_direction)
+			x_offset = step * width * (1 + tail_direction)
 			tail_length = step * -5.5 * tail_direction
 			y_offset = step * 1.5 * bar * tail_direction
 			y_dis = step - (tail_direction * step)
@@ -638,6 +618,7 @@ class Controls(ui.View):
 class MyView(ui.View):
 	def __init__(self, song):
 		self.name = song
+		self.update_interval = 0.005
 		w, h = ui.get_screen_size()
 		self.sv = ui.ScrollView()
 		self.sv.width = w
@@ -664,3 +645,27 @@ class MyView(ui.View):
 		self.add_subview(self.sig)
 		#self.add_subview(self.controls)
 		
+	def update(self):
+		global player, rate, position, dragging, exiting
+		screen_w, screen_h = ui.get_screen_size()
+		if player and get_play_button().playing:
+			if not dragging:
+				w, h = self.sv.content_size
+				scroll_x, scroll_y = self.sv.content_offset
+				self.sv.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
+				if scroll_x > w - screen_w and get_play_button().playing:
+					player.current_time = 0
+					rate = player.rate
+					play()
+					self.sv.content_offset = (player.current_time / float(player.duration)) * (w - screen_w), scroll_y
+				if self.sv.tracking:
+					dragging = True
+		if dragging:
+			w, h = self.sv.content_size
+			scroll_x, scroll_y = self.sv.content_offset
+			player.current_time = (scroll_x / w) * player.duration
+			if not self.sv.tracking:
+				dragging = False
+		if exiting:
+			player.stop()
+	
