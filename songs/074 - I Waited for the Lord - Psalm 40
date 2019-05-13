@@ -18,25 +18,25 @@ voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    a a a | a - f g | a/2 g | f - d- d- | f/2 g | a/2 - g(2)
-alto       a g f | e - d d | e/2 e | d - a  b  | c/2 e | f/2 - e(2)
-tenor      f a a | a - b d | c/2 c | a - f  f  | f/2 c | c/2.(2)
-bass       d e d | c - b b | a/2 c | d/2    b  | a/2 c | f/2 - c(2)
+soprano    a  a a | a - f g | a/2 g | f - d- d- | f/2 g | a/2 - g(2)
+alto       a+ g f | e - d d | e/2 e | d - a  b  | c/2 e | f/2 - e(2)
+tenor      f  a a | a - b d | c/2 c | a - f  f  | f/2 c | c/2.(2)
+bass       d  e d | c - b b | a/2 c | d/2    b  | a/2 c | f/2 - c(2)
 
-soprano    a d d | c - a g | a/2 g | f - d- e | d-/2          d-      | d-/2.
-alto       a g f | e/2   e | e/2 e | d/2    c | c - b         b       | a/2.
-tenor      f g a | a - c c | c/2 c | a - f  a | f - b/8 - c/8 d/8 e/8 | f/2.
-bass       f e d | a/2   c | a/2 c | d/2    a | b/2           g-      | d/2.
+soprano    a  d d | c - a g | a/2 g | f - d- e | d-/2          d-      | d-/2.
+alto       a+ g f | e/2   e | e/2 e | d/2    c | c - b         b       | a/2.
+tenor      f  g a | a - c c | c/2 c | a - f  a | f - b-/8 - c-/8 d-/8 e/8 | f/2.
+bass       f  e d | a/2   c | a/2 c | d/2    a | b/2           g-      | d/2.
 
 soprano    f f f | f - a c | d/2 d | d - c a | a/2 g | f/2 - g(2)
 alto       f e d | c - f f | d/2 f | f - e f | f/2 d | d/2 - e(2)
 tenor      a a b | a - c a | b/2 b | b - g a | d/2 b | a/2 - c(2)
 bass       d c b | f/2   f | b/2 b | b - c f | d/2 g | d/2 - c(2)
 
-soprano    a d d | c - a g | a/2 g | f - d- e | d-/2          d-      | d-/2.
-alto       f g f | e/2   e | e/2 e | d/2    c | c - b         b       | a/2.
-tenor      a a a | a - c c | c/2 c | a - f  a | f - b/8 - c/8 d/8 e/8 | f/2.
-bass       d e d | a/2   c | a/2 c | d/2    a | b/2           g-      | d/2.
+soprano    a d d | c - a g | a/2 g | f - d- e | d-/2            d-      | d-/2.
+alto       f g f | e/2   e | e/2 e | d/2    c | c - b           b       | a/2.
+tenor      a a a | a - c c | c/2 c | a - f  a | f - b-/8 - c-/8 d-/8 e/8 | f/2.
+bass       d e d | a/2   c | a/2 c | d/2    a | b/2             g-      | d/2.
 
 verse      I     wait - ed   for   the   LORD; He  stooped and  heard my   cry.
 verse      Man - y      will see   with  awe,  And so      will trust the  LORD.

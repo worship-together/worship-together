@@ -12,7 +12,7 @@ key        D
 rhythm     0 : 4
 tempo      170
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -27,7 +27,7 @@ bass       d/2  b/2 e/2 d/2 a/2 d d b a g-/2 d
 soprano    g f f e/2 a/2 b  a  g  f e/2 d-/2. R
 alto       e e d e/2 f/2 g  f  e  d/2 c d/2.  R
 tenor      b b b b/2 d/2 d  cn cn a a/2 a/2.  R
-bass       e b b e/2 d/2 g- a  cn d a/2 a/2.  R
+bass       e b b e/2 d/2 g- a  cn d a/2 d/2.  R
 
 soprano    d-/2 f g a/2 a/2 b  a g g f/2. R
 alto       a/2  d e e/2 f/2 g  f e e d#/2. R
