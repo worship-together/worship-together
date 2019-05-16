@@ -8,7 +8,7 @@ key        G
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked
+status     header  tune  checked  partial lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -49,3 +49,9 @@ soprano    d d g g | f. a/8 d b  | b/2 b/2  | b/1
 alto       b d e d | d. f/8 f g  | e/2 d#/2 | e/1
 tenor      g a b g | a. a/8 a b  | g/2 f/2  | e/1
 bass       g f e b | d. d/8 d g- | b/2 b/2  | e/1
+
+verse      Our   tri - une   God    rules o  -  ver all,   And  feeds all  crea - tures great  and  small.
+verse      His   Word  re -  stores the   blind to  sight; Our  God   has  made   the   dark - ness light.
+verse      At    this  white ta  -  ble,  wine  and bread  Will weave us   now    in -  to     the  Head,
+verse      The   Lord  has   spo -  ken   liv - ing words, He   gave  us   ears,  and   thus   we   heard.
+verse      Sal - va -  tion  comes  and,  face  to  face,  He   sets  be - fore   us    means  of   grace.
