@@ -97,8 +97,6 @@ service = FileService(
     account_key='33TG6/7zK8TmKHmlSRthHpGxve8YJfu3M9ut77vn0lUy'
                 'B2ZQqfL8ZdDiucbB8MAyg59707Mcxywhy2fFG/ISZA==')
 share = 'songs'
-upload_suffix = ".UPLOAD"
-delete_suffix = ".DELETE"
 
 last_upload_filename = 'last_upload'
 
@@ -177,26 +175,13 @@ class Device(abc.ABC):
 
 class iPad(Device):
 	def synchronize(self):
-		self.sync_upload_files()
 		self.sync_delete_files()
 		self.sync_download_files()
 
-
-	def sync_upload_files(self):
-		for file in os.listdir(self.local_dir):
-			if file.endswith(upload_suffix):
-				new_name = file[:-(len(upload_suffix))]
-				old_path = self.local_dir + '/' + file
-				new_path = self.local_dir + '/' + new_name
-				os.rename(old_path, new_path)
-				self.upload_file_to_remote(new_name, new_path)
-
 	def sync_delete_files(self):
 		for file in os.listdir(self.local_dir):
-			if file.endswith(delete_suffix) or not service.exists(share, directory_name=self.remote_dir, file_name=file):
+			if not service.exists(share, directory_name=self.remote_dir, file_name=file):
 				os.remove(self.local_dir + '/' + file)
-				if service.exists(share, directory_name=self.remote_dir, file_name=file[:-(len(delete_suffix))]):
-					self.delete_remote_file(file[:-(len(delete_suffix))])
 
 	def sync_download_files(self):
 		for file in service.list_directories_and_files(share, self.remote_dir):

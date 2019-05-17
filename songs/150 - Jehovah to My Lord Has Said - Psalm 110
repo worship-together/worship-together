@@ -11,7 +11,7 @@ key        Bb
 rhythm     4 : 4
 tempo      120
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4

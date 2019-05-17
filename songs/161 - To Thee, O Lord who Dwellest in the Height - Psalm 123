@@ -11,7 +11,7 @@ key        F
 rhythm     0 : 4
 tempo      170
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -19,7 +19,7 @@ voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
 soprano    a/2  f/2 g/2  a  a  g f a/2 b/2 c  a a
-alto       f/2  d/2 d/2  f  f  e d f/2 g/2 a  f c
+alto       f/2  d/2 d/2  f  f  e d f/2 g/2 a+ f c
 tenor      c/2  b/2 b/2  c  c  c a d/2 d/2 f+ c f
 bass       f-/2 b/2 g-/2 f- f- c d d/2 g/2 f  f f
 
@@ -28,15 +28,15 @@ alto       c a/2 c/2 c/2.  R c/2 d e f f f f f/2 e/2 d/2 c
 tenor      e f/2 g/2 a/2.  R a/2 a c c c a d c/2 c/2 a/2 a
 bass       c d/2 c/2 f-/2. R f/2 d c f f f b f/2 c/2 d/2 a
 
-soprano    f g a b/2 a/2 g/2 f/2.  R a/2 a b c/2   b/2 a g
-alto       d e f/2 g/2 f/2 e f/2.  R f/2 f g a/2  f/2 f e
+soprano    f g a b/2 a/2 g/2 f/2.  R a/2 a b c/2  b/2 a g
+alto       d e f/2 g/2 f/2 e f/2.  R f/2 f g a+/2 f/2 f e
 tenor      a c c d/2 c/2 c/2 c/2.  R c/2 d d f+/2 d/2 c c
 bass       d c f b/2 c/2 c/2 f-/2. R f/2 d g f/2  b/2 f c
 
-soprano    f g  a/2 g  b  a g  f e d-/2 c-/2. R f/2 a b
-alto       d g/2 f# g  g  f e  d c/2 bn c/2.  R a/2 f g
-tenor      a c  d/2 bn d  d b  b g g/2  g/2.  R d/2 d d
-bass       d eb d/2 g- g- d g- b c g-/2 c/2.  R d/2 d g
+soprano    f  g  a/2 g  b  a g  f e d-/2 c-/2. R f/2 a b
+alto       d  g/2 f# g  g  f e  d c/2 bn c/2.  R a/2 f g
+tenor      a+ c  d/2 bn d  d b  b g g/2  g/2.  R d/2 d d
+bass       d  eb d/2 g- g- d g- b c g-/2 c/2.  R d/2 d g
 
 soprano    c/2  c/2  a a f/2 g/2 a a  g b  a/2 g/2 f/1
 alto       a/2  g/2  f f d/2 e/2 f f  e g/2 f/2 e  f/1

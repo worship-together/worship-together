@@ -27,7 +27,7 @@ class StartScreen(ui.View):
 
 def sync_songs_and_tunes():
 	storage.iPad('songs', 'songs').synchronize()
-	storage.iPad('songs', 'songs').synchronize()
+	storage.iPad('tunes', 'tunes').synchronize()
 
 
 def create_sync_button():

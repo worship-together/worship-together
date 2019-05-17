@@ -3,7 +3,7 @@ hymnal     Cantus Christi
 page       154
 author     William Helder, 1972
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 import     tunes/RENDEZ A DIEU       OR SUS, LOUEZ DIEU TOUT LE MONDE
 

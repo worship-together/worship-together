@@ -5,4 +5,4 @@ author     "The Book of Psalms for Singing", 1973
 
 import     tunes/DESERT LYINGHAM
 
-status     header  tune  checked
+status     header  tune  double  checked

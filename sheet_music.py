@@ -350,14 +350,14 @@ class MusicView(ui.View):
 					loop += 1
 					
 	def measure_bars(self, position):
-		position += note_gap / 2
+		position -= note_gap / 4
 		measure_bar = ui.Path()
 		measure_bar.move_to(position, treble_lines[0])
 		measure_bar.line_to(position, treble_lines[4])
 		measure_bar.move_to(position, bass_lines[0])
 		measure_bar.line_to(position, bass_lines[4])
 		measure_bar.stroke()
-		position -= note_gap / 2
+		position += note_gap / 2
 		
 	def draw_note(self, index, beats, C0, slurred, prev_note_tied, prev_note_pos, tail_direction, bars_to_draw, next_bars_to_draw, position, width):
 		global run
@@ -523,8 +523,8 @@ class MusicView(ui.View):
 			y_pos = y + tail_length + y_dis + y_offset
 			flag.add_arc(x + x_offset, y_pos, rad, 5 * tail_direction, tail_direction, tail_direction > 0)
 								
-			rad = step * 2
-			tail_length = step * -2 * tail_direction
+			rad = step * 2.25
+			tail_length = step * -2.25 * tail_direction
 			y_pos = y + tail_length + y_dis + y_offset
 			flag.add_arc(x + x_offset, y_pos, rad, tail_direction,  4.8 * tail_direction, tail_direction < 0)
 								
