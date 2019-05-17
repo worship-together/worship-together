@@ -9,9 +9,9 @@ metre      8 7. 8 7. 8 7
 composer   Joachim Neander, 1680
 key        C
 rhythm     4 : 4
-tempo      160
+tempo      155
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
