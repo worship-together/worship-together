@@ -62,8 +62,24 @@ def size(filename):
 	return os.stat(filename).st_size
 
 
+def is_valid_char(char):
+	return (ord(char) >= ord(' ') and ord(char) < ord('~')) or str.isspace(char)
+
+
+def report_invalid_characters(filename):
+	with open(os.path.join('songs', filename), 'r') as file:
+		for line_num, line in enumerate(file, 1):
+			for char_num, char in enumerate(line, 1):
+				if not is_valid_char(char):
+					print('Invalid character ' +
+						  '"' + char + '"' +
+						  ' in song ' + filename +
+						  ' at line ' + str(line_num) +
+						  ' at character ' + str(char_num))
+
 def test_song(filename):
 	try:
+		report_invalid_characters(filename)
 		song = generate_midi(filename)
 		if not song.is_unison and size('full.midi') > 100:
 			assert size('soprano.midi') < size('full.midi') / 1.5
@@ -71,12 +87,12 @@ def test_song(filename):
 			assert size('soprano_bass.midi') < size('full.midi') * 3.0 / 4.0
 			assert size('soprano_bass.midi') > size('full.midi') / 3.0
 	except AssertionError as e:
-		print(filename + ': AssertionError', file=sys.stderr)
+		print(filename + ': AssertionError')
 		traceback.print_exc()
-		print(file=sys.stderr)
+		print()
 	except Exception as e:
-		print(filename + ': ' + str(e), file=sys.stderr)
-		print(file=sys.stderr)
+		print(filename + ': ' + str(e))
+		print()
 
 
 
