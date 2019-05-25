@@ -10,7 +10,7 @@ key        C
 rhythm     4 : 4
 tempo      180
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,10 +32,10 @@ alto       f/2 e/2 | f/2. g | f/2 e/2 | f/2. g
 tenor      d/2 c/2 | b/2. g | d/2 c/2 | b/2. g
 bass       R g g g | g/2. R | R g g g | g/2. g
 
-soprano    e+ d c  g | a b c d       | c/2 b/2   | c/2.
-alto       g  f e  c | f f e a/8 f/8 | e/2 d - f | e/2.
-tenor      c  b c  c | c d c a       | g/2 g/2   | g/2.
-bass       c+ g a+ e | f d e f       | g/2 g-/2  | c/2.
+soprano    e+ d c  g | a b c d        | c/2 b/2   | c/2.
+alto       g  f e  c | f f e a+/8 f/8 | e/2 d - f | e/2.
+tenor      c  b c  c | c d c a        | g/2 g/2   | g/2.
+bass       c+ g a+ e | f d e f        | g/2 g-/2  | c/2.
 
 verse      From heav'n O     praise the   LORD;   Ye   heights, His   glo  -  ry   raise.
 verse      Yea  let    them  glo -  rious make    Je - ho   -   vah's match - less name;

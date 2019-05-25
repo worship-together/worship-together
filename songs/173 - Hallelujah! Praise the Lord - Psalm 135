@@ -12,7 +12,7 @@ key        C
 rhythm     0 : 4
 tempo      140
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -34,10 +34,10 @@ alto       c/2 b/2 d  d g  f# g/2.  R e/2 d/2 c# d
 tenor      g/2 e/2 f# g e+ d  d/2.  R c/2 a/2 a  bb
 bass       c/2 e/2 d  g c  d  g-/2. R c/2 d/2 a  g-
 
-soprano    f  e d-/2. R d-/2 e/2 g f  e/2  d-/2 c-/1
-alto       d  c b/2.  R b/2  c/2 c d/2 c/2 b    c/1
-tenor      bb g g/2.  R g/2  g/2 e a  g/2  g/2  g/1
-bass       bb c g-/2. R g-/2 c/2 c f- g-/2 g-/2 c/1
+soprano    f  e d-/2. R d-/2 e/2 g f   e/2  d-/2 c-/1
+alto       d  c b/2.  R b/2  c/2 c d/2 c/2  b    c/1
+tenor      bb g g/2.  R g/2  g/2 e a   g/2  g/2  g/1
+bass       bb c g-/2. R g-/2 c/2 c f-  g-/2 g-/2 c/1
 
 verse      Hal  - le  -  lu   -  jah!  Praise  the     LORD     And    ex  -  tol     His
 verse      Praise the    LORD,   for   He      is      good;    Sing   your   praise  to
