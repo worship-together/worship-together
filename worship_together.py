@@ -1,13 +1,10 @@
 import ui
-import sound
 import midi
 import sheet_music
 import original_song_view
 import storage
 import objc_util
-import ctypes
 import os
-import sound
 
 experimental_view = False
 

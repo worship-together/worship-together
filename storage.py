@@ -199,57 +199,11 @@ class iPad(Device):
 				os.utime(self.local_dir + '/' + file.name, (datetime.datetime.timestamp(datetime.datetime.now()),
 													   datetime.datetime.timestamp(datetime.datetime.now())))
 
-	def verify_file_uploaded(self, name, content):
-		file_found = False
-		for file in service.list_directories_and_files(share, self.remote_dir):
-			assert not file_found
-			assert file.name == name
-			file_found = True
-			remote = service.get_file_to_text(share, self.remote_dir, name)
-			if remote.content != content:
-				print('remote content different from local content for ' + name + ':')
-				print('remote content: ' + remote.content)
-				print('local content: ' + content)
-				assert remote.content == content
-		assert file_found
-
 	def test_if_local_file_exists(self, name):
 		return os.path.exists(self.local_dir + '/' + name)
 
 	@staticmethod
-	def local_to_remote_upload():
-		ipad = iPad(test_dir, test_dir)
-		ipad.delete_all_local_and_remote()
-		ipad.create_local_file('file a.UPLOAD', 'content a')
-		ipad.create_local_file('file b', 'content b')
-		ipad.synchronize()
-		ipad.verify_file_uploaded('file a', 'content a')
-		assert ipad.test_if_local_file_exists('file a')
-		assert not ipad.test_if_local_file_exists('file a.UPLOAD')
-		assert not ipad.test_if_remote_file_exists('file b')
-
-	@staticmethod
-	def local_to_remote_delete():
-		ipad = iPad(test_dir, test_dir)
-		ipad.delete_all_local_and_remote()
-		ipad.create_local_file('file a.DELETE', 'content a')
-		ipad.create_local_file('file b', 'content b')
-		ipad.create_local_file('file d.DELETE', 'content d')
-		ipad.create_remote_file('file a', 'content a')
-		ipad.create_remote_file('file b', 'content b')
-		ipad.create_remote_file('file c', 'content c')
-		ipad.synchronize()
-		assert ipad.remote_file_deleted('file a')
-		assert not ipad.remote_file_deleted('file b')
-		assert not ipad.remote_file_deleted('file c')
-		assert not ipad.test_if_local_file_exists('file d')
-		assert not ipad.test_if_local_file_exists('file d.DELETE')
-		assert ipad.remote_file_deleted('file d')
-		assert not ipad.test_if_local_file_exists('file a')
-		assert not ipad.test_if_local_file_exists('file a.DELETE')
-
-	@staticmethod
-	def remote_to_local_download():
+	def test_download():
 		ipad = iPad(test_dir, test_dir)
 		ipad.delete_all_local_and_remote()
 		ipad.create_local_file('file a', 'content a outdated')
@@ -267,9 +221,7 @@ class iPad(Device):
 
 	@staticmethod
 	def test():
-		iPad.local_to_remote_upload()
-		iPad.local_to_remote_delete()
-		iPad.remote_to_local_download()
+		iPad.test_download()
 
 class Laptop(Device):
 	def synchronize(self):
