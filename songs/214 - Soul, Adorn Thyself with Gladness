@@ -11,7 +11,7 @@ key        D
 rhythm     0 : 4
 tempo      150
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -33,10 +33,10 @@ alto       d/2 g a+/2 f g a+ a+ g f/2 | d/2 g f/2 f e c e. d/8 c/2
 tenor      a/2 d d/2  a c d  d/2  d/2 | d/2 b b/2 f a a a  g#  a/2
 bass       f/2 g f/2  d e f  g/2  d/2 | f/2 e b/2 b c f e/2    a/2
 
-soprano    e/2  f/2  g g        f  e  e  d#- e/2 | f/2 a/2  g  f e d- e/2 d-/2
-alto       c/2  d#/2 e e        d# e  cn b   b/2 | d/2 d/2  d  d c d  d c d/2
-tenor      a/2  a/2  b b        b  g  a  f   g/2 | a/2 a/2  b  a a f  a/2 f/2
-bass       a+/2 f/2  e g-/8 a/8 b  cn a  b   e/2 | d/2 f-/2 g- d a b  a/2 d/2
+soprano    e/2  f/2  g g        f  e  e  d#- e/2 | f/2 a/2  g  f e d- e/2 d-/2(1)
+alto       c/2  d#/2 e e        d# e  cn b   b/2 | d/2 d/2  d  d c d  d c d/2(1)
+tenor      a/2  a/2  b b        b  g  a  f   g/2 | a/2 a/2  b  a a f  a/2 f/2(1)
+bass       a+/2 f/2  e g-/8 a/8 b  cn a  b   e/2 | d/2 f-/2 g- d a b  a/2 d/2(1)
 
 verse      Soul  a -  dorn   thy - self  with  glad -  ness, Leave be - hind   all  gloom  and    sad  -  ness;
 verse      Has - ten  as     a     bride to    meet    Him   And   with lov -  ing  rev  - 'rence greet   Him;

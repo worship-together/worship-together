@@ -13,7 +13,7 @@ key        F
 rhythm     4 : 4
 tempo      110
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -35,10 +35,10 @@ alto       d       c       c       d  | d/8 c/8 d/8 e/8 f# f       | g       f/8
 tenor      a/8 b/8 a/8 g/8 f/8 g/8 a  | g/8 a/8 b/8 c/8 d  d       | c/8 b/8 a       bn      e
 bass       d       e       f       f# | g - g-          d  d       | e       f       f/8 e/8 d/8 c#/8
 
-soprano    f/2             e  cn- | f       g       a       b       | a g             f(2)
-alto       e - d           c# c   | c/8 d/8 c/8 b/8 a/8 c/8 d/8 e/8 | f e             c(2)
-tenor      a/2             a  a   | a/8 b/8 a/8 g/8 f       f       | d g/8 a/16 b/16 a(2)
-bass       d/8 e/8 f/8 g/8 a+ a   | d       e       f/8 e/8 d/8 c/8 | b c             f-(2)
+soprano    f/2             e  c- | f       g       a       b       | a g             f(2)
+alto       e - d           c# c  | c/8 d/8 c/8 b/8 a/8 c/8 d/8 e/8 | f e             c(2)
+tenor      a/2             a  a  | a/8 b/8 a/8 g/8 f       f       | d g/8 a/16 b/16 a(2)
+bass       d/8 e/8 f/8 g/8 a+ a  | d       e       f/8 e/8 d/8 c/8 | b c             f-(2)
 
 verse      O Bread  of Life from  heav - en,  To wea - ry    pil - grims
 verse      O fount  of grace re - deem - ing, O  riv - er     ev -  er
