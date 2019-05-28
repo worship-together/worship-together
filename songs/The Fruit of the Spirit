@@ -7,17 +7,17 @@ key        F
 rhythm     4 : 4
 tempo      130
 
-status     header  tune  checked(but unsure)
+status     header  tune  double checked(but unsure)
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    c- d- | f g/8 a/8 g/8 f/8 d- | c- d- f/2 | g - a c a  | g/1
-alto       R/2   | a/2       g/2        | f/2   d c | d   f g/2  | a/2  g/2
-tenor      R/2   | c-/2      d-/2       | f/2   g a | g   f d-/2 | c-/2 d-/2
-bass       a+ g  | f d/8 c/8 d/8 f/8 g  | a+ g  f/2 | d - c a c  | d/1
+soprano    c- d- | f g/8 a/8  g/8 f/8 d- | c- d- f/2 | g - a c a  | g/1
+alto       R/2   | a+/2       g/2        | f/2   d c | d   f g/2  | a+/2  g/2
+tenor      R/2   | c-/2       d-/2       | f/2   g a | g   f d-/2 | c-/2  d-/2
+bass       a+ g  | f d/8 c/8  d/8 f/8 g  | a+ g  f/2 | d - c a c  | d/1
 
 soprano    a c a/8 - g/8 f | g f   d-/2 | c-/8 d-/8 f g f | f/2 c- d-
 alto       f/1             | d/2 - c/2  | a/2         c/2 | d/1
@@ -29,7 +29,7 @@ alto       c/2       a/2        | c - d  f/2 | d/2   f/2 | g/1
 tenor      a/2       c/2        | a - g  f/2 | g/2   f/2 | d-/1
 bass       f d/8 c/8 d/8 f/8 g  | a+  g  f/2 | d - c a c | d/1
 
-soprano    a  c  a/8 - g/8 f | g f d-/2 | c-/8 d-/8 f g f | f/2
-alto       a  g  f/2         | d/2 f/2  | f/1 =           | f/2
-tenor      c- d- f/2         | g/2 f/2  | f/1 =           | f/2
-bass       c  a  c/8 - d/8 f | d f g/2  | a+/8 g/8  f d f | f/2
+soprano    a   c  a/8 - g/8 f | g f d-/2 | c-/8 d-/8 f g f | f/2
+alto       a+  g  f/2         | d/2 f/2  | f/1 =           | f/2
+tenor      c-  d- f/2         | g/2 f/2  | f/1 =           | f/2
+bass       c   a  c/8 - d/8 f | d f g/2  | a+/8 g/8  f d f | f/2
