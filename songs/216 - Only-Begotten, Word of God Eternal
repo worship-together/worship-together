@@ -15,24 +15,24 @@ tempo      150
 status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
-voice      p-alto  A3 to G4
-voice      p-tenor E3 to D4
-voice      p-bass  A2 to G3
+voice      alto  A3 to G4
+voice      tenor E3 to D4
+voice      bass  A2 to G3
 
 soprano    d-/2 a f | g/2 a/2 | d-. e/8  f g | f e d-/2 | d-/2 a  f
-p-alto     a/2  a a | c/2 c/2 | b/2      c d | c/2 a/2  | b/2  a  d
-p-tenor    f/2  a f | g/2 a/2 | f.  g/8  f b | a g f/2  | f/2  f  a
-p-bass     d/2  c d | c/2 a/2 | b.  g-/8 a b | c/2 d c  | b/2  f- d
+alto       a/2  a a | c/2 c/2 | b/2      c d | c/2 a/2  | b/2  a  d
+tenor      f/2  a f | g/2 a/2 | f.  g/8  f b | a g f/2  | f/2  f  a
+bass       d/2  c d | c/2 a/2 | b.  g-/8 a b | c/2 d c  | b/2  f- d
 
 soprano    g/2 a/2 | a. g/8 a bn | c bn a/2 | d/2  c  d    | c  b  a/2
-p-alto     e/2 f/2 | f. c/8 c f  | e/2  c/2 | d/2  g  a+ = | a+ g  e/2
-p-tenor    c/2 c/2 | d. g/8 f f  | g/2  a/2 | d/2  c  f+   | f+ d  d c
-p-bass     c/2 f e | d. e/8 f d  | c e  a/2 | d-/2 e- d-   | f- g- a/2
+alto       e/2 f/2 | f. c/8 c f  | e/2  c/2 | d/2  g  a+ = | a+ g  e/2
+tenor      c/2 c/2 | d. g/8 f f  | g/2  a/2 | d/2  c  f+   | f+ d  d c
+bass       c/2 f e | d. e/8 f d  | c e  a/2 | d-/2 e- d-   | f- g- a/2
 
 soprano    c.  b/8  a b  | a   g f/2 | a/2 d- e  | f/2    e/2       | d-/1
-p-alto     f.  e/8  f g  | f - e d/2 | c/2 b/2   | c  d = d c/8 b/8 | a/1
-p-tenor    a.  b/8  c d  | c   c a/2 | a/2 f  g  | a  b   g/2 =     | g/2 f/2
-p-bass     f-. g-/8 a g- | a   c d/2 | a/2 b  g- | f- b   c c-      | d-/1
+alto       f.  e/8  f g  | f - e d/2 | c/2 b/2   | c  d = d c/8 b/8 | a/1
+tenor      a.  b/8  c d  | c   c a/2 | a/2 f  g  | a  b   g/2 =     | g/2 f/2
+bass       f-. g-/8 a g- | a   c d/2 | a/2 b  g- | f- b   c c-      | d-/1
 
 verse      On  -  ly -  be -  got - ten,  Word   of   God    e -  ter -  nal, Lord  of  cre -
 verse      This   is   Thy    tem - ple   here   Thy pres - ence  ho  -  ly;  Here  may Thy
