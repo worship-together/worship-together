@@ -6,22 +6,22 @@ key        C
 rhythm     4 : 4
 tempo      140
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-soprano    c- c g c- | e g     bb/2 | a g a/8 b/8 c | b  a   g/2
-alto       c  e c c  | c c     d e  | f e e       e | d. c/8 b/2
-tenor      c  g g e  | g e      g/2 | c c c/8 b/8 a | g  f#  g/2
-bass       c  c e c  | bb. a/8 g-/2 | f- c   a    a | d  d   g-/2
+soprano    c- c g c- | e g     bb/2  | a  g a/8 - b/8 c | b  a   g/2
+alto       c  e c c  | c c     d - e | f  e e         e | d. c/8 b/2
+tenor      c  g g e  | g e     g/2   | c  c c/8 - b/8 a | g  f#  g/2
+bass       c  c e c  | bb. a/8 g-/2  | f- c a         a | d  d   g-/2
 
-soprano    d- f e/8 f/8 g | g f# g/2 | a/8 g/8 a/8 b/8 c c- | f/8 e/8 d-  c-/2
-alto       d  d c       b | d d  d/2 | f       c       c c  | d       b   c/2
-tenor      f  a a       g | a a  b/2 | c       c       g a  | a   g/8 f/8 e/2
-bass       d  d a       e | d d  g/2 | f       f       e a  | d       g-  c/2
+soprano    d- f e/8 - f/8 g | g f# g/2 | a/8 - g/8 a/8 - b/8 c c- | f/8 - e/8 d-        c-/2
+alto       d  d c         b | d d  d/2 | f         c         c c  | d         b         c/2
+tenor      f  a a         g | a a  b/2 | c         c         g a  | a         g/8 - f/8 e/2
+bass       d  d a         e | d d  g/2 | f         f         e a  | d         g-        c/2
 
 verse      Songs  of   praise the   an -  gels sang,   Heav'n with  al  -  le -  lu  -  ias  rang,
 verse      Songs  of   praise a  -  woke  the  morn    When   the   Prince of    Peace  was  born;

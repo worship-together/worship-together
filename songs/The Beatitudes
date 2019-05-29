@@ -8,7 +8,7 @@ key        C
 rhythm     0 : 4
 tempo      140
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4

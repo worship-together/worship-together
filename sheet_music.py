@@ -328,11 +328,13 @@ class MusicView(ui.View):
 						note_beats = note().beats
 						note_tied = note().tie
 						note_slurred = note().slur
+						fermata = note().fermata_beats
 					else:
 						note_name = type(note).__name__
 						note_beats = note.beats
 						note_tied = note.tie
 						note_slurred = note.slur
+						fermata = note.fermata_beats
 					note_index = create_index(note_name)
 					note_pos = position, clef_C0 - (note_index * step)
 					prev_bars_to_draw = bars_to_draw
@@ -346,7 +348,7 @@ class MusicView(ui.View):
 									
 					#increment
 					prev_note_pos = position
-					position += note_gap * note_beats
+					position += note_gap * (note_beats + fermata)
 					loop += 1
 					
 	def measure_bars(self, position):
@@ -367,12 +369,12 @@ class MusicView(ui.View):
 			self.dots(index, beats, C0, position)
 			self.slur(slurred, index, C0, tail_direction, position, width)
 			self.tie(index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width)		
-			if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1:
+			if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1 and len(run) < 3:
 				run.append(note_pos)
 			elif not run == []:
+				run.append(note_pos)
 				self.run_bar(bars_to_draw, tail_direction, position, width)
 				self.tails(tail_direction, run, position, width)
-				self.tail(beats, index, C0, tail_direction, run, position, width)
 				run = []
 			else:
 				self.flag(note_pos, tail_direction, position, width)
