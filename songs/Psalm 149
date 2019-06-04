@@ -7,14 +7,14 @@ key        G
 rhythm     0 : 4
 tempo      130
 
-status     header  tune  checked  lyrics
+status     header  tune   checked  lyrics
 
 voice      unison  E4 to D5
 voice      alto    A3 to G4
 voice      tenor   E3 to D4
 voice      bass    A2 to G3
 
-unison     d- e g/2 g g g g a g/2 g g g g g g f g e d-/2
+unison     d- e g/2 g/1 a g/2 g g g g g g f g e d-/2
 
 unison     d- e/8 g/8 g/8 g/8 g/8 e/8 g/8 a g R | g/8 g/8 g/8 g/8 g/8 g/8 g/8 g/8 f/8 g/8 e/8 d-/8 d- R
 

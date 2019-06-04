@@ -207,7 +207,6 @@ class iPad(Device):
 		ipad = iPad(test_dir, test_dir)
 		ipad.delete_all_local_and_remote()
 		ipad.create_local_file('file a', 'content a outdated')
-		ipad.create_local_file('file b', 'content b')
 		time.sleep(1)
 		ipad.create_remote_file('file a', 'content a updated')
 		ipad.create_remote_file('file c', 'content c')
@@ -215,13 +214,21 @@ class iPad(Device):
 		local_time_a = ipad.get_local_modified_time('file a')
 		remote_time_a = ipad.get_remote_modified_time('file a')
 		assert local_time_a > remote_time_a
-		assert not ipad.test_if_local_file_exists('file b')
 		assert ipad.test_if_local_file_exists('file c')
+
+	@staticmethod
+	def test_delete():
+		ipad = iPad(test_dir, test_dir)
+		ipad.delete_all_local_and_remote()
+		ipad.create_local_file('file b', 'content b')
+		ipad.synchronize()
+		assert not ipad.test_if_local_file_exists('file b')
 		assert not ipad.test_if_remote_file_exists('file b')
 
 	@staticmethod
 	def test():
 		iPad.test_download()
+		iPad.test_delete()
 
 class Laptop(Device):
 	def synchronize(self):
