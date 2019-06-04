@@ -1,0 +1,33 @@
+tune       MELITA
+metre      8 8. 8 8. 8 8
+composer   John B. Dykes, 1861
+key        C
+rhythm     4 : 4
+tempo      140
+
+status     header  tune  double  checked
+
+voice      soprano E4 to D5
+voice      alto    A3 to G4
+voice      tenor   E3 to D4
+voice      bass    A2 to G3
+
+soprano    c- | e. e/8 g  g   | a       a         g  g  | c  d    b g
+alto       c  | c. c/8 e  e   | f       f         e  g  | g. f#/8 g d-/8 e/8
+tenor      e  | g. g/8 c. b/8 | a/8 b/8 c/8  d/8  e+ d  | c  a    b d/8  c/8
+bass       c  | c. c/8 c  c   | f/8 g/8 a+/8 b+/8 c+ b+ | a+ d    g b/8  c/8
+
+soprano    g f# g  d- | f. f/8 e e | g.  g/8  f# b
+alto       d d  d  b  | d. d/8 c c | e.  e/8  d  f#
+tenor      a a  b  g  | g. g/8 g g | a.  a/8  a  b
+bass       d d  g  g  | b. b/8 c c | c#. c#/8 d  d#
+
+soprano    g  f#   e  a    | g  f# e e | e.  e/8  f f
+alto       e. d#/8 e. f#/8 | e  d# e b | bb. bb/8 a c
+tenor      b  a    b  c    | b  b  g g | g.  g/8  f a
+bass       e  f#   g  a+   | b+ b  e e | c.  c/8  f f
+
+soprano    f#. f#/8 g g | g a   g  e  | d-. c-/8 c-(1)
+alto       c.  c/8  b f | e d   e  c  | b.  c/8  c(1)
+tenor      a.  a/8  g d | c c   c  g  | f.  e/8  e(1)
+bass       d.  d/8  g b | c f#- g- g- | g-. c/8  c(1)
