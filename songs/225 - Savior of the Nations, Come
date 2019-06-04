@@ -10,9 +10,9 @@ metre      7 7. 7 7
 composer   Johann Walter, "Geystliche gesangle Buchleyn", 1524
 key        Bb
 rhythm     8 : 4
-tempo      180
+tempo      160
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
