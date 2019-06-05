@@ -13,6 +13,7 @@ import midi
 import inspect
 import objc_util
 import sound
+import os
 
 screen_width, screen_height = ui.get_screen_size()
 notes_drawn = 0
@@ -46,7 +47,7 @@ for i in range(0, 5):
 	bass_lines.append(screen_height - (screen_height * (screen_padding*((i+7)/8))))
 step = (treble_lines[1] - treble_lines[0]) / 2
 C0_treble_y = treble_lines[4] + step + ((step * 7) * 4)
-C0_bass_y = (bass_lines[4] - (3 * step)) + ((step * 7) * 4) 
+C0_bass_y = (bass_lines[4] - (3 * step)) + ((step * 7) * 4)
 def create_index(note_name):
 	note_name.split()
 	index = ord(note_name[0]) - ord('C')
@@ -56,7 +57,7 @@ def create_index(note_name):
 		if index < 0:
 			index += 7
 		return index + (int(note_name[1]) * 7)
-	
+
 assert create_index('C0') == 0
 assert create_index('G0') == 4
 assert create_index('A0') == 5
@@ -70,21 +71,26 @@ def adjust_volume(sender):
 	if player != None and get_play_button().playing:
 		play_pause(get_play_button())
 		play_pause(get_play_button())
-		
+
 def change_tempo(sender):
 	player.rate = sender.value + 0.5
 
 settings = ui.load_view('midi_ui')
 
-def bring_up_sheet_music(sender):
-	button_width = 50
-	music = sheet_music.MyView(song)
-	music.present('fullscreen', hide_title_bar=True)
-	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
-	exit_btn.frame = (0, 10, button_width, button_width + 10)
-	exit_btn.action = lambda sender: music.close()
-	music.add_subview(exit_btn)
+#def bring_up_sheet_music(sender):
+#	button_width = 50
+#	music = sheet_music.MyView(song)
+#	music.present('fullscreen', hide_title_bar=True)
+#	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
+#	exit_btn.frame = (0, 10, button_width, button_width + 10)
+#	exit_btn.action = lambda sender: exit_music(music)
+#	music.add_subview(exit_btn)
 
+def exit_music(view):
+	global player
+	if player:
+		player.stop()
+	view.close()
 
 def write_midi(song):
 	midi.Song(song).write_midi('output.midi', [
@@ -149,48 +155,11 @@ def play_pause(sender):
 		player.rate = get_subview('tempo_slider').value + 0.5
 		player.current_time = position
 		play()
-		
+
 def present_settings(sender):
 	global settings
 	settings.present('sheet')
 
-def present_song(sender):
-	global satb_page, song, player, tracking_song, position, last_position
-	song = sender.items[sender.selected_row]
-	satb_page = MyView(song)
-	w, h = ui.get_screen_size()
-	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
-	button_width = 50
-	exit_btn.frame = (0, 10, button_width, button_width + 10)
-	exit_btn.action = lambda sender: satb_page.close()
-	satb_page.add_subview(exit_btn)
-	play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
-	play_btn.frame = ((h/2) - button_width, h - button_width, h/2, button_width)
-	play_btn.action = play_pause
-	play_btn.playing = False
-	play_btn.name = 'play_button'
-	
-	settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
-	settings_btn.frame = (h/2, h - button_width, button_width, button_width)
-	settings_btn.action = present_settings
-	
-	
-	satb_page.add_subview(play_btn)
-	satb_page.add_subview(settings_btn)
-	play_button = get_play_button()
-	if play_button.playing:
-		play_pause(play_button)
-	if player:
-		player.current_time = 0
-	satb_page.present('fullscreen', hide_title_bar=True)
-	position = 0
-	scroll_x, scroll_y = satb_page.sv.content_offset
-	last_position = scroll_x
-	if not tracking_song:
-		tracking_song = True
-		#track_time(satb_page.sv)
-		satb_page.sv.delegate = MyScrollViewDelegate()
-		#satb_page.sv.
 
 class MyScrollViewDelegate (object):
     def scrollview_did_scroll(self, scrollview):
@@ -213,32 +182,35 @@ def calculate_length(song):
 				end += note_gap * note_beats
 	return end
 
-	
+
 def close(sender, self):
+	global player
 	self.close()
-	
+	if player:
+		player.stop()
+
 def sharp(self, size, x, y):
 	ui.set_color("black")
 	self.left = ui.Path()
 	self.left.move_to(x + (size * (3/8)), y + (size / 6))
 	self.left.line_to(x + (size * (3/8)), y + size)
 	self.left.stroke()
-	
+
 	self.right = ui.Path()
 	self.right.move_to(x + (size * (5/8)), y)
 	self.right.line_to(x + (size * (5/8)), y + (size * (5/6)))
 	self.right.stroke()
-	
+
 	self.upper = ui.Path()
 	self.upper.move_to(x + (size / 6), y + (size / 1.8))
 	self.upper.line_to(x + (size * (5/6)), y + (size / 8))
 	self.upper.stroke()
-	
+
 	self.lower = ui.Path()
 	self.lower.move_to(x + (size / 6), y + (size / 1.8) + (size / 3))
 	self.lower.line_to(x + (size * (5/6)), y + (size / 8) + (size / 3))
 	self.lower.stroke()
-	
+
 def g_clef(self, x):
 	self.gclef = ui.Path()
 	self.gclef.move_to(x - step, treble_lines[4] - step)
@@ -262,7 +234,7 @@ def g_clef(self, x):
 	ui.set_color("black")
 	self.gclef.stroke()
 	self.gclef.fill()
-	
+
 def f_clef(self, x):
 	self.fclef = ui.Path()
 	self.fclef.move_to(x - (step * 3), bass_lines[1] + step)
@@ -281,32 +253,32 @@ def f_clef(self, x):
 	ui.set_color("black")
 	self.fclef.stroke()
 	self.fclef.fill()
-	
+
 class MusicView(ui.View):
 	def __init__(self, song, width=1024, height=1024):
 		self.song = song
 		self.width = width
 		self.frame = (0, 0, width, height)
 		self.bg_color = 'white'
-		
-	
-			
+
+
+
 	def draw(self):
 		measures = midi.Song(self.song).measures
 		self.draw_notes(midi.Voice.Soprano, measures, C0_treble_y, 1)
 		self.draw_notes(midi.Voice.Alto, measures, C0_treble_y, -1)
 		self.draw_notes(midi.Voice.Tenor, measures, C0_bass_y, 1)
 		self.draw_notes(midi.Voice.Bass, measures, C0_bass_y, -1)
-				
+
 		self.staff = ui.Path()
 		for i in range(0, 5):
 			self.staff.move_to(0, treble_lines[i])
 			self.staff.line_to(self.width, treble_lines[i])
 			self.staff.move_to(0, bass_lines[i])
 			self.staff.line_to(self.width, bass_lines[i])
-			
+
 		self.staff.stroke()
-		
+
 	def draw_notes(self, voice, measures, clef_C0, tail_direction):
 		global origin, end, note_tied, note_pos, bars_to_draw, slurs, run
 		position = origin
@@ -345,12 +317,12 @@ class MusicView(ui.View):
 						next_bars_to_draw = None
 
 					self.draw_note(note_index, note_beats, clef_C0, note_slurred, prev_note_tied, prev_note_pos, tail_direction, bars_to_draw, next_bars_to_draw, position, note_width)
-									
+
 					#increment
 					prev_note_pos = position
 					position += note_gap * (note_beats + fermata)
 					loop += 1
-					
+
 	def measure_bars(self, position):
 		position -= note_gap / 4
 		measure_bar = ui.Path()
@@ -359,8 +331,8 @@ class MusicView(ui.View):
 		measure_bar.move_to(position, bass_lines[0])
 		measure_bar.line_to(position, bass_lines[4])
 		measure_bar.stroke()
-		position += note_gap / 2
-		
+		position += note_gap / 4
+
 	def draw_note(self, index, beats, C0, slurred, prev_note_tied, prev_note_pos, tail_direction, bars_to_draw, next_bars_to_draw, position, width):
 		global run
 		if not index == -1:
@@ -368,7 +340,7 @@ class MusicView(ui.View):
 			self.fill_note(C0, index, oval, beats, position)
 			self.dots(index, beats, C0, position)
 			self.slur(slurred, index, C0, tail_direction, position, width)
-			self.tie(index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width)		
+			self.tie(index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width)
 			if bars_to_draw == next_bars_to_draw and bars_to_draw >= 1 and len(run) < 3:
 				run.append(note_pos)
 			elif not run == []:
@@ -379,10 +351,10 @@ class MusicView(ui.View):
 			else:
 				self.flag(note_pos, tail_direction, position, width)
 				self.tail(beats, index, C0, tail_direction, run, position, width)
-				
+
 		else:
 				self.rest(beats, position, C0)
-				
+
 	def draw_dot(self, C0, index, position):
 		ui.set_color('black')
 		note_dot = ui.Path()
@@ -392,9 +364,9 @@ class MusicView(ui.View):
 		note_dot.add_arc(rel_x + (step * 1.1), (step * 0.3) + note_y, step * 1.7, 1.7, 0.25, False)
 		note_dot.add_arc(rel_x + (step * 2.2), (step * 0.6) + note_y, step * 0.6, 6.9, 5, False)
 		note_dot.add_arc(rel_x + (step * 2.2), (step * 1.7) + note_y, step * 1.7, 4.8, 3.5, False)
-		note_dot.add_arc(rel_x + (step * 1.1), (step * 1.4) + note_y, step * 0.6, 3.5, 2, False)	
+		note_dot.add_arc(rel_x + (step * 1.1), (step * 1.4) + note_y, step * 0.6, 3.5, 2, False)
 		return note_dot
-		
+
 	def fill_note(self, C0, index, note, beats, position):
 		if beats < 2:
 			note.fill()
@@ -410,7 +382,7 @@ class MusicView(ui.View):
 			note.close()
 			note.fill()
 			note.stroke()
-			
+
 	def dots(self, index, beats, C0, position):
 		if beats % 1.5 == 0:
 			dot = ui.Path()
@@ -418,7 +390,7 @@ class MusicView(ui.View):
 			dot.stroke()
 			ui.set_color('black')
 			dot.fill()
-			
+
 	def slur(self, slurred, index, C0, tail_direction, position, note_width):
 		global slurs
 		if slurred:
@@ -435,7 +407,7 @@ class MusicView(ui.View):
 			middle_x = prev_note_side + ((position - prev_note_side) / 2)
 			middle_y = f_y + ((y_pos - f_y) / 2)
 			center_s = 3 * ((middle_x - prev_note_side) / 200)
-			
+
 			slur = ui.Path()
 			slur.move_to(position, y_pos + t_b)
 			slur.add_quad_curve(middle_x, middle_y + curve_y, position - (step * center_s), y_pos + curve_y)
@@ -445,7 +417,7 @@ class MusicView(ui.View):
 			slur.fill()
 			slur.stroke()
 			slurs = []
-			
+
 	def tie(self, index, C0, prev_note_tied, prev_note_pos, tail_direction, position, width):
 		if prev_note_tied:
 			thickness = 3
@@ -455,7 +427,7 @@ class MusicView(ui.View):
 			prev_note_side = prev_note_pos + (width * step * 2)
 			middle = prev_note_side + ((position - prev_note_side) / 2)
 			center_s = 3 * ((middle - prev_note_side) / 200)
-			
+
 			tie = ui.Path()
 			tie.move_to(position, y_pos + t_b)
 			tie.add_quad_curve(middle, y_pos + curve_y, position - (step * center_s), y_pos + curve_y)
@@ -464,30 +436,30 @@ class MusicView(ui.View):
 			tie.add_quad_curve(position, y_pos + t_b, position - (step * center_s), y_pos + curve_y)
 			tie.fill()
 			tie.stroke()
-	
+
 	def run_bar(self, bars, tail_direction, position, width):
 		global run
 		for b in range(0, bars):
 			bar = ui.Path()
 			offset = step * 2 * b * tail_direction
 			line_thickness = step * tail_direction
-			
+
 			x, y = run[0]
 			xcoord = x + (step * width * (1 + tail_direction))
 			tail_length = y + (step * -6 * tail_direction)
 			bar.move_to(xcoord, tail_length + step + offset)
 			bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
-			
+
 			x, y = note_pos
 			xcoord = x + (step * width * (1 + tail_direction))
 			tail_length = y + (step * -6 * tail_direction)
 			bar.line_to(xcoord, tail_length + (step - line_thickness) + offset)
 			bar.line_to(xcoord, tail_length + step + offset)
-			
+
 			bar.close()
 			bar.stroke()
 			bar.fill()
-			
+
 	def tails(self, tail_direction, run, position, note_width):
 		for run_note in run:
 			note_tail = ui.Path()
@@ -504,49 +476,49 @@ class MusicView(ui.View):
 			note_tail.move_to(x + note_side, grad_pos + tail_length + step)
 			note_tail.line_to(x + note_side, y + step)
 			note_tail.stroke()
-			
+
 	def flag(self, pos, tail_direction, position, width):
 		for bar in range(0, bars_to_draw):
 			x, y = pos
 			flag = ui.Path()
-			
+
 			x_offset = step * width * (1 + tail_direction)
 			tail_length = step * -5.5 * tail_direction
 			y_offset = step * 1.5 * bar * tail_direction
 			y_dis = step - (tail_direction * step)
-			
+
 			y_pos = y + tail_length + y_dis + y_offset
 			rad = step / 2
 			flag.move_to(x + x_offset, y_pos)
 			flag.add_arc(x + rad + x_offset, y_pos, rad, 3 * tail_direction, 2 * tail_direction, tail_direction < 0)
-								
+
 			rad = step * 2.5
 			tail_length = step * -2.5 * tail_direction
 			y_pos = y + tail_length + y_dis + y_offset
 			flag.add_arc(x + x_offset, y_pos, rad, 5 * tail_direction, tail_direction, tail_direction > 0)
-								
+
 			rad = step * 2.25
 			tail_length = step * -2.25 * tail_direction
 			y_pos = y + tail_length + y_dis + y_offset
 			flag.add_arc(x + x_offset, y_pos, rad, tail_direction,  4.8 * tail_direction, tail_direction < 0)
-								
-			tail_length = step * -4 * tail_direction
+
+			tail_length = step * -4.5 * tail_direction
 			y_pos = y + tail_length + y_dis + y_offset
 			flag.line_to(x + x_offset, y_pos)
-								
+
 			ui.set_color("black")
 			flag.close()
 			flag.stroke()
 			flag.fill()
 			run = []
-			
+
 	def tail(self, beats, index, C0, direction, run, position, width):
 		if beats < 4 and run == []:
 			note_tail = ui.Path()
 			note_tail.move_to(position + (((direction * width) + width) * step),(C0 - (index * step)) + step)
 			note_tail.line_to(position + (((direction * width) + width) * step),((C0 - (index * step)) + step) - (direction * (7 * step)))
 			note_tail.stroke()
-	
+
 	def rest(self, beats, position, C0):
 		rests = []
 		rest_beats = beats
@@ -582,8 +554,8 @@ class Signature(ui.View):
 	def __init__(self, width, height):
 		self.width = width
 		self.frame = (0, 0, width, height)
-		self.bg_color = 'white'		
-		
+		self.bg_color = 'white'
+
 	def draw(self):
 		self.lines = ui.Path()
 		for i in range(0, 5):
@@ -591,13 +563,13 @@ class Signature(ui.View):
 			self.lines.line_to(self.width, treble_lines[i])
 			self.lines.move_to(0, bass_lines[i])
 			self.lines.line_to(self.width, bass_lines[i])
-			
+
 		self.lines.stroke()
 		#sharp(self, step * 3, step, 10)
 		g_clef(self, step * 4)
 		f_clef(self, step * 4)
-		
-		
+
+
 class Controls(ui.View):
 	def __init__(self, width, height, button_width):
 		self.width = width
@@ -607,15 +579,15 @@ class Controls(ui.View):
 		play_btn.action = play_pause
 		play_btn.playing = False
 		play_btn.name = 'play_button'
-		
+
 		settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
 		settings_btn.frame = (button_width, 0, button_width * 2, button_width)
 		settings_btn.action = settings
-		
-		
+
+
 		self.add_subview(play_btn)
 		self.add_subview(settings_btn)
-		
+
 
 class MyView(ui.View):
 	def __init__(self, song):
@@ -646,9 +618,9 @@ class MyView(ui.View):
 		self.add_subview(self.sv)
 		self.add_subview(self.sig)
 		#self.add_subview(self.controls)
-		
+
 	def update(self):
-		global player, rate, position, dragging, exiting
+		global player, rate, position, dragging
 		screen_w, screen_h = ui.get_screen_size()
 		if player and get_play_button().playing:
 			if not dragging:
@@ -669,5 +641,43 @@ class MyView(ui.View):
 			if not self.sv.tracking:
 				dragging = False
 		if exiting:
+			print('called')
 			player.stop()
-	
+
+def present_song(sender, dir):
+	global satb_page, song, player, tracking_song, position, last_position
+	song = sender.items[sender.selected_row]
+	satb_page = MyView(song)
+	w, h = ui.get_screen_size()
+	exit_btn = ui.Button(image=ui.Image.named('iob:ios7_arrow_left_256'))
+	button_width = 50
+	exit_btn.frame = (0, 10, button_width, button_width + 10)
+	exit_btn.action = lambda sender: exit_music(satb_page)
+	satb_page.add_subview(exit_btn)
+	play_btn = ui.Button(image=ui.Image.named('iob:ios7_play_outline_256'))
+	play_btn.frame = ((h/2) - button_width, h - button_width, h/2, button_width)
+	play_btn.action = play_pause
+	play_btn.playing = False
+	play_btn.name = 'play_button'
+
+	settings_btn = ui.Button(image=ui.Image.named('iob:ios7_gear_outline_256'))
+	settings_btn.frame = (h/2, h - button_width, button_width, button_width)
+	settings_btn.action = present_settings
+
+
+	satb_page.add_subview(play_btn)
+	satb_page.add_subview(settings_btn)
+	play_button = get_play_button()
+	if play_button.playing:
+		play_pause(play_button)
+	if player:
+		player.current_time = 0
+	satb_page.present('fullscreen', hide_title_bar=True)
+	position = 0
+	scroll_x, scroll_y = satb_page.sv.content_offset
+	last_position = scroll_x
+	if not tracking_song:
+		tracking_song = True
+		#track_time(satb_page.sv)
+		satb_page.sv.delegate = MyScrollViewDelegate()
+		#satb_page.sv.
