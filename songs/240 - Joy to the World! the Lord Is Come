@@ -8,9 +8,9 @@ metre      C.M.
 composer   Lowell Mason, 1836
 key        D
 rhythm     2 : 4
-tempo      180
+tempo      95
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
@@ -32,10 +32,10 @@ alto       d/8 d/8 d/8 d/16 e/16 | f.  e/16 d/16    | c/8 c/8 c/8 c/16 d/16
 tenor      R.          a/8       | a/8 a/8  a/8 a/8 | a/2
 bass       R.          d/8       | d/8 d/8  d/8 d/8 | a.  a/8
 
-soprano    g.          f/16 e/16 | e/8 d b/8 | a/8. g/16 f/8 g/8 | f e       | d-/2
-alto       e.          d/16 c/16 | d/8 f g/8 | f/8. e/16 d/8 e/8 | d c       | d/2
-tenor      a. a/8                | f/8 a d/8 | d.            b/8 | a a/8 g/8 | f/2
-bass       a/8 a/8 a/8 a/8       | d.    d/8 | d.            g/8 | a a       | d/2
+soprano    g.          f/16 e/16 | d-/8 d b/8 | a/8. g/16 f/8 g/8 | f e       | d-/2
+alto       e.          d/16 c/16 | d/8  f g/8 | f/8. e/16 d/8 e/8 | d c       | d/2
+tenor      a. a/8                | f/8  a d/8 | d.            b/8 | a a/8 g/8 | f/2
+bass       a/8 a/8 a/8 a/8       | d.     d/8 | d.            g/8 | a a       | d/2
 
 verse      Joy to    the world! The  Lord  is   come:   Let earth  re -  ceive her   King;
 verse      Joy to    the earth! The  Sav - ior  reigns: Let men    their songs em -  ploy;

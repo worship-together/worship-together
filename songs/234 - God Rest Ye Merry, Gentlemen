@@ -8,9 +8,9 @@ metre      8 6. 8 6. 8 6. 8 4 8
 composer   English melody, 18th century
 key        G
 rhythm     4 : 4
-tempo      180
+tempo      165
 
-status     header  tune  checked  lyrics
+status     header  tune  double  checked  lyrics
 
 voice      soprano E4 to D5
 voice      alto    A3 to G4
